@@ -2,6 +2,8 @@
 
 [@bs.module] external logo : string = "./logo.svg";
 
+include Dictionaries;
+
 type action =
   | Tick;
 
