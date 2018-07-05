@@ -12,6 +12,8 @@ type state = {
   timerId: ref(option(Js.Global.intervalId)),
 };
 
+Js.log("sdfdsfsdf   1111");
+
 let component = ReasonReact.reducerComponent("App");
 
 let make = (~message, _children) => {
