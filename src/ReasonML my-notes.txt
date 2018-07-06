@@ -14,6 +14,7 @@ It compiles to straightforward JS files, so you can open index.html directly fro
 
 3. Увидел много   <div> (ReasonReact.string(...) </div>  - многословность ReasonReact.string(
 
+5. Размер js бандла reason React - 126 кБ. (  cra - 118 кБ)
 
 4. Странный способ комментировать - не удобный
    Странный let в отличии от  "let in" в OCaml
@@ -28,6 +29,7 @@ It compiles to straightforward JS files, so you can open index.html directly fro
 
 6. Lists vs Arrays - Array
 	let myList = [1, 2, 3];
+	( in js it  [1,[2,[3]]]  - если очень много маленьких элементов в списке, то будет большой оверхед, в этом случае нужно испльзовать чистый массив  )
 
 
 	Arrays are like lists, except they are:
@@ -37,6 +39,30 @@ It compiles to straightforward JS files, so you can open index.html directly fro
 		You'd surround them with [| and |].
 
 		let myArray = [|"hello", "world", "how are you"|];
- 
 
- 
+
+7.  Функции - как в стрелочные функции  в Js.
+	- есть возможность именнованных аргументов.
+	In OCaml/Reason, you can attach labels to an argument:
+	let addCoordinates = (~x, ~y) => {
+  	/* use x and y here */
+	};
+
+  - rec - для рекурсивных функций
+
+	- аноноимные функции
+	   /* anonymous function. Listed for completeness only */
+				(x) => (y) => 1;
+				/* sugar for the above */
+				(x, y) => 1;
+				/* assign to a name */
+				let add = (x, y) => 1;
+
+				With Type Annotation:   let add = (x: int, y: int): int => 1;
+
+
+
+Standalone Type Signature
+
+And In Interface Files
+

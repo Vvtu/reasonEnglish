@@ -12,9 +12,17 @@ type state = {
   timerId: ref(option(Js.Global.intervalId)),
 };
 
-Js.log("sdfdsfsdf   1111");
+let rec fact = n =>
+  switch (n) {
+  | 0 => 1
+  | 1 => 1
+  | _ => n * fact(n - 1)
+  };
+
+let su = (a, b) => a + b;
 
 let component = ReasonReact.reducerComponent("App");
+Js.log("sdfdsfsdf   1111  fact(5) = " ++ string_of_int(fact(5)));
 
 let make = (~message, _children) => {
   ...component,
