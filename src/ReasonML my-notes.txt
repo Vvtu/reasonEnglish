@@ -40,6 +40,25 @@ It compiles to straightforward JS files, so you can open index.html directly fro
 
 		let myArray = [|"hello", "world", "how are you"|];
 
+		--  Списки - очень удобная вещь для
+		let a = [1,2,3];
+		let b = [0, ...a];
+
+		Will memory for the list a be actually allocated, or will doSomething simply reuse the list b?
+
+		In the worst case, both a and b will exist in memory in their entirety.
+		Note that even then, the contents of the two lists will only exist once,
+		shared between both lists, so we're only talking about the "spine" of the lists existing twice.
+
+		In the best case, depending on how b is defined and what doSomething does,
+		the compiler might do some hoopy magic
+		to turn the whole thing into a tight constant-space loop
+		that generates the contents of the list as it processes them,
+		possibly involving no memory allocation at all. Maybe.
+
+		But even in the very worst case, you're duplicating the spine of the lists.
+		You'll never duplicate the actual elements in the list.
+
 
 7.  Функции - как в стрелочные функции  в Js.
 	- есть возможность именнованных аргументов.
@@ -65,4 +84,26 @@ It compiles to straightforward JS files, so you can open index.html directly fro
 Standalone Type Signature
 
 And In Interface Files
+
+8. let rec qsort = a =>
+  switch (a) {
+  | [] => []
+  | [x, ...y] => {
+    let p1 = qsort(List.filter(e => e > x, y));
+    let p2 = qsort(List.filter(e => e <= x, y));
+    p1 @ [x, ...p2]
+    }
+  };
+
+let c = qsort([5,10,1,3,6,8,2]);
+Js.log(c);
+
+List.filter( - не удобно
+@ - не удобно
+
+В общем - на половину Ocaml, на половину JavaScript
+больше в сторону Ocaml
+
+Может лучще полностью прогрммировать на Ocaml ?
+
 
