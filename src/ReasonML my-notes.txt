@@ -109,3 +109,54 @@ List.filter( - не удобно
 
 9.  Если компилируется, то значит работает.  Это правда.
 
+10. ReasonML records -  это массивы JS.
+Массивы - в 2.5 раза быстрее чем объекты (мои измерения)
+Значит - рекогдс быстрее чем объекты.  Стейт - это в основном рекордс.
+Таким образом работа со стейтом - очень быстрая.
+
+11. Почему не TypeScript ?
+
+12.
+“Most people make the mistake of thinking design is what it looks like.
+People think it’s this veneer – that the designers are handed this box and told,
+‘Make it look good!’
+That’s not what we think design is.
+It’s not just what it looks like and feels like.
+Design is how it works.” – Steve Jobs
+
+This quote is from the 2003 New York Times article “The Guts of a New Machine.”
+
+
+13. Когда работаеш с рекордами - компилятор плодит много доп переменных
+type person = {
+  age: string,
+  name: string,
+  birthDate: string,
+};
+let me = {
+  age: "5" ++ " " ++ string_of_int(Random.int(100)),
+  name: "Big Reason" ++ " " ++ string_of_int(Random.int(100)),
+  birthDate: "11.03.1980" ++ " " ++ string_of_int(Random.int(100)),
+};
+let notMe = {...me, name: "VVtu XA " ++ string_of_int(Random.int(10))};
+Js.log(notMe);
+-----------------
+var me_000 = /* age */"5 " + String(Random.$$int(100));
+var me_001 = /* name */"Big Reason " + String(Random.$$int(100));
+var me_002 = /* birthDate */"11.03.1980 " + String(Random.$$int(100));
+var me = /* record */[
+  me_000,
+  me_001,
+  me_002
+];
+
+Чтобы можно было легко создавать новые рекорды из  старых
+
+var notMe_000 = me_000;
+var notMe_001 = /* name */"VVtu XA " + String(Random.$$int(10));
+var notMe_002 = me_002;
+var notMe = /* record */[
+  notMe_000,
+  notMe_001,
+  notMe_002
+];
