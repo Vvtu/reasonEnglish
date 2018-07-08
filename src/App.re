@@ -2,6 +2,7 @@
 
 [@bs.module] external logo : string = "./logo.svg";
 
+include Reshuffle;
 include Dictionaries;
 
 type action =

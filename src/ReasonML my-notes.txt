@@ -114,7 +114,7 @@ List.filter( - не удобно
 Значит - рекогдс быстрее чем объекты.  Стейт - это в основном рекордс.
 Таким образом работа со стейтом - очень быстрая.
 
-11. Почему не TypeScript ?
+11. Почему не TypeScript ? Я думаю - иммутаельность !
 
 12.
 “Most people make the mistake of thinking design is what it looks like.
