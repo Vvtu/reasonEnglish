@@ -1,7 +1,5 @@
 [%bs.raw {|require('./App.css')|}];
 
-[@bs.module] external logo : string = "./logo.svg";
-
 include Reshuffle;
 include Dictionaries;
 
@@ -13,17 +11,7 @@ type state = {
   timerId: ref(option(Js.Global.intervalId)),
 };
 
-let rec fact = n =>
-  switch (n) {
-  | 0 => 1
-  | 1 => 1
-  | _ => n * fact(n - 1)
-  };
-
-let su = (a, b) => a + b;
-
 let component = ReasonReact.reducerComponent("App");
-Js.log("sdfdsfsdf   1111  fact(5) = " ++ string_of_int(fact(5)));
 
 let make = (~message, _children) => {
   ...component,
@@ -43,7 +31,6 @@ let make = (~message, _children) => {
   render: ({state}) =>
     <div className="App">
       <div className="App-header">
-        <img src=logo className="App-logo" alt="logo" />
         <h2> (ReasonReact.string(message)) </h2>
         <div> (ReasonReact.string(string_of_int(state.count))) </div>
       </div>
