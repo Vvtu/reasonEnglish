@@ -3,19 +3,25 @@
 include Reshuffle;
 include Dictionaries;
 
-type action =
-  | Tick;
-
 type state = {
-  count: int,
-  timerId: ref(option(Js.Global.intervalId)),
+  activeIndex: int,
+  showEnglish: bool,
+  showAdvanced: bool,
+  appcodeIsSpeaking: bool,
+  randomDictionary: Dictionaries.pairList,
 };
 
 let component = ReasonReact.reducerComponent("App");
 
 let make = (~message, _children) => {
   ...component,
-  initialState: () => {count: 0, timerId: ref(None)},
+  initialState: () => {
+    activeIndex: 0,
+    showEnglish: false,
+    showAdvanced: false,
+    appcodeIsSpeaking: false,
+    randomDictionary: Reshuffle.reshuffle(Dictionaries.dictionary1),
+  },
   reducer: (action, state) =>
     switch (action) {
     | Tick => ReasonReact.Update({...state, count: state.count + 1})

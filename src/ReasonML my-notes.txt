@@ -160,3 +160,11 @@ var notMe = /* record */[
   notMe_001,
   notMe_002
 ];
+
+13. Отличный каринг на примере перетасовки любых сущностей
+let reshuffle = dic =>
+  dic
+  |> List.map(item => (item, Random.int(1000000)))
+  |> List.sort(((_, a), (_, b)) => a - b)
+  |> List.map((a, _) => a);
+

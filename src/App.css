@@ -1,28 +1,136 @@
-.App {
-	text-align: center;
+:root {
+	--font-size: 24px;
+
+	--overlap_bottom: 8px;
+	--info_panel_height: calc(var(--font-size)*2);
+	--main_gap: calc(var(--font-size) / 2);
+
+	/*
+	 This properties will be possible changed in run time in
+	 AppCode.js componentDidMount().
+	============================================================= */
+	--screen-height: 100vh;
+	--screen-width: 100vh;
+	/* ========================================================== */
+
+	--text-height-portrait: calc(
+			(
+				var(--screen-height) - var(--overlap_bottom) - calc(var(--main_gap) * 2) -
+					calc(var(--info_panel_height)*2)
+			) / 2
+	);
+
+	--text-height-landscape: calc(
+		var(--screen-width) - calc(var(--info_panel_height)*2) - var(--main_gap) -
+			var(--overlap_bottom)
+	);
+
+	--advanced-color: #522719;
+	--background-color: #000000;
+	--base-text-color: #ffffff;
+	--danger-color: #ff4000;
+	--english-appcode__speaking-text-color: #6b5ee0;
+	--english-text-color: #94a11f;
+	--grey-color: #777777;
+	--shadow-color: #dddddd;
 }
 
-.App-logo {
-	animation: App-logo-spin infinite 20s linear;
-	height: 80px;
+/* grid
+============================================================= */
+
+.appcode__grid {
+	background-color: var(--background-color);
+	color: var(--base-text-color);
+	display: grid;
+	filter: invert(100%);
+	font-size: var(--font-size);
+	grid-column-gap: var(--main_gap);
+	grid-row-gap: var(--main_gap);
+	padding: 0 8px;
+	margin: 0;
+	font-family: sans-serif;
 }
 
-.App-header {
-	background-color: #222;
-	height: 150px;
-	padding: 20px;
-	color: white;
-}
-
-.App-intro {
-	font-size: large;
-}
-
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
+@media (orientation: portrait) {
+	.appcode__grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: var(--text-height-portrait) var(--info_panel_height)
+			var(--text-height-portrait);
+		grid-template-areas: 'russian' 'info' 'english';
 	}
-	to {
-		transform: rotate(360deg);
+	.appcode__icon_rotate {
+		transform: rotate(270deg);
 	}
+	.appcode__icon_rotate_back {
+		transform: rotate(90deg);
+	}
+}
+
+@media (orientation: landscape) {
+	.appcode__grid {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: var(--text-height-landscape) var(--info_panel_height);
+		grid-template-areas: 'russian english' 'info info';
+	}
+	.appcode__icon_rotate {
+		transform: rotate(90deg);
+	}
+	.appcode__icon_rotate_back {
+		transform: rotate(270deg);
+	}
+}
+
+.appcode__info {
+	grid-area: info;
+}
+
+.appcode__russian {
+	grid-area: russian;
+}
+
+.appcode__english {
+	grid-area: english;
+}
+
+.appcode__scroll {
+	max-height: 100%;
+	overflow-y: scroll;
+	/* -webkit-overflow-scrolling: touch; */
+}
+
+/* font size and colors
+============================================================= */
+
+.appcode__eng_text_color {
+	color: var(--english-text-color);
+}
+
+.appcode__speaking {
+	color: var(--english-appcode__speaking-text-color);
+}
+
+/* icons
+============================================================= */
+
+.appcode__icon_invert__horizontal {
+	transform: scaleX(-1);
+}
+
+/* flex boxes
+============================================================= */
+
+.appcode__center {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.appcode__info2 {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
