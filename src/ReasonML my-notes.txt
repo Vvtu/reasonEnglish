@@ -162,9 +162,11 @@ var notMe = /* record */[
 ];
 
 13. Отличный каринг на примере перетасовки любых сущностей
-let reshuffle = dic =>
-  dic
-  |> List.map(item => (item, Random.int(1000000)))
-  |> List.sort(((_, a), (_, b)) => a - b)
-  |> List.map((a, _) => a);
+ let reshuffle = dic =>
+    dic
+    |> List.map(item => (item, Random.int(10000000)))
+    |> List.sort(((_, i), (_, j)) => i - j)
+    |> List.map(((item, _)) => item);
+
+		но нужны лишние скобки в последнем List.map
 
