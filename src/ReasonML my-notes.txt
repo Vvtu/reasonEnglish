@@ -179,4 +179,40 @@ var notMe = /* record */[
 
 14. В общем - гораздо меньше хлама.
 
+15. Первым делом подключил css и сделал инклюды
+[%bs.raw {|require('./App.css')|}];  -- css взял из своего старого проекта без изменений
+
+include Reshuffle;
+include Dictionaries;   --  Вместе инклюдами подтянул типы данных
+
+
+
+16. Вторым делом написал тип state
+type state = {
+  activeIndex: int,
+  showEnglish: bool,
+  showAdvanced: bool,
+  appcodeIsSpeaking: bool,
+  randomDictionary: Dictionaries.pairList,
+};
+
+тоже очень удобно для исключения дальнейших ошибок
+
+17. Дальше написал
+	initialState: () => {
+    activeIndex: 0,
+    showEnglish: false,
+    showAdvanced: false,
+    appcodeIsSpeaking: false,
+    randomDictionary: Reshuffle.reshuffle(Dictionaries.dictionary1),
+  },
+
+18. Пропсы - как именованные аргументы
+	let make = (~message, _children) => { }
+
+	In OCaml/Reason, you can attach labels to an argument:
+		let addCoordinates = (~x, ~y) => {
+  		/* use x and y here */
+		};
+------
 
