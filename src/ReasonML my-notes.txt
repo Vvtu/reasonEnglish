@@ -302,3 +302,79 @@ foldl :: (b -> a -> b) -> b -> [a] -> b
 foldr :: (a -> b -> b) -> b -> [a] -> b
 
 
+21. Unit  type - like void, nil, null in other languages.
+// ------------------------------------------------
+ReasonML unit — what does unit mean?
+In a strongly typed language you need to define what a function returns every time,
+but sometimes a function does not return something.
+This is what unit is used for, unit is used to defining when a function does not return anything.
+let log = () => {
+  print_endline("hello");
+  print_endline("world")
+};
+log();
+Functions always need argument
+and with reason when you call the function “()” evaluates to “unit” and
+since the last line in a function is automatically returned the function has also a return type of unit,
+because print_endline returns “unit”.
+So unit can be a bit confusing at the start coming from JavaScript
+which is a weakly typed language,
+but once you begin to use it more and understand the basic principals
+like there always needs type even when nothing is given.
+
+// ------------------------------------------------
+Type option('a) for optional values
+
+In many object-oriented languages, a variable having type string means that the variable can be either null or a string value. Types that include null are called nullable. Nullable types are problematic in that it’s easy to work with their values while forgetting to handle null. If – unexpectedly – a null appears, you get the infamous null pointer exceptions.
+
+In ReasonML, types are never nullable. Instead, potentially missing values are handled via the following parameterized variant:
+
+type option('a) =
+  | None
+  | Some('a);
+option forces you to always consider the None case.
+
+ReasonML’s support for option is minimal. The definition of this variant is part of the language, but the core standard library has no utility functions for working with optional values, yet. Until they are, you can use BuckleScript’s Js.Option.
+
+// ------------------------------------------------
+Type result('a) for error handling
+result is another standard variant for error-handling in OCaml:
+type result('good, 'bad) =
+  | Ok('good)
+  | Error('bad);
+Until ReasonML’s core library supports it, you can use BuckleScript’s Js.Result.
+
+// ------------------------------------------------
+// epic type - не нашел информацию об этом типе !!!!
+
+22.  История ReasonML Backlesript  и их взаимотношения.
+https://www.imaginarycloud.com/blog/reasonml-react-as-first-intended/
+Если бы ReasonML появился раньше  - реадкс бы не понадобился.
+This made Facebook believe that it could be feasible and convenient
+to move React itself closer to its roots. Eventuay,
+they wouldn't have done so if they didn't have so much of the work already done...
+
+Сравнительная таблица ReasonML и Elm
+
+
+23. Everything is camel-cased in ReasonML
+
+ReasonML is based on OCaml,
+which uses snake-casing for lowercase names (create_resource)
+and camel-casing for uppercase names (StringUtilities).
+That’s why you’ll occasionally see snake-cased names.
+But all new ReasonML code is camel-cased (StringUtilities, createResource).
+
+Special prefixes and suffixes for variable names
+
+A prefixed underscore means: don’t warn me about this variable not being used.
+
+let f = (x, _y) => x;
+  /* No warning about _y */
+Suffixed apostrophes are legal (in math, x' means a modified version of x):
+
+let x = 23;
+let x' = x + 1;
+Prefixed apostrophes are reserved for type variables (think generic types in C-style languages):
+
+let len = (arr: array('a)) => Array.length(arr);

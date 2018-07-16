@@ -49,12 +49,7 @@ let make = (~message, _children) => {
     <div className="appcode__grid">
       <div className="appcode__info">
         <div className="appcode__info2">
-          (
-            ReasonReact.wrapJsForReason(
-              ~reactClass=arrowIcon,
-              ~props=jsProps(~show=true),
-            )
-          )
+          <arrowIcon />
           /* <arrow /> */
           /* <advancedIcon
                height=ICON_SIZE
