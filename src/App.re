@@ -1,19 +1,8 @@
 [%bs.raw {|require('./App.css')|}];
-/* ReactJS used by ReasonReact */
-/* This component wraps a ReactJS one, so that ReasonReact components can consume it */
-/* Typing the myBanner.js component's output as a `reactClass`. */
-[@bs.module] external arrowIcon : ReasonReact.reactClass = "svg/ArrowIcon";
-[@bs.deriving abstract]
-type jsProps = {
-  show: bool,
-  /* message: string,
-     height: string,
-     width: string,
-     fill: string, */
-};
 
 include Reshuffle;
 include Dictionaries;
+include ArrowIconM;
 
 type state = {
   activeIndex: int,
@@ -49,7 +38,7 @@ let make = (~message, _children) => {
     <div className="appcode__grid">
       <div className="appcode__info">
         <div className="appcode__info2">
-          <arrowIcon />
+          <arrow />
           /* <arrow /> */
           /* <advancedIcon
                height=ICON_SIZE
