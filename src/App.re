@@ -1,8 +1,5 @@
 [%bs.raw {|require('./App.css')|}];
 
-include Reshuffle;
-include Dictionaries;
-
 type state = {
   activeIndex: int,
   showEnglish: bool,
@@ -10,7 +7,6 @@ type state = {
   appcodeIsSpeaking: bool,
   randomDictionary: Dictionaries.pairList,
 };
-
 type action =
   | Tick;
 
@@ -35,20 +31,19 @@ let make = (~message, _children) => {
        Some(Js.Global.setInterval(() => self.send(Tick), 1000)), */
   render: ({state}) =>
     <div className="appcode__grid">
-
-        <div className="appcode__info">
-          <div className="appcode__info2">
-            <ArrowIconWrapper color="red" height="20" />
-          </div>
+      <div className="appcode__info">
+        <div className="appcode__info2">
+          <ArrowIconWrapper color="red" height="20" />
         </div>
-      </div>,
-      /* <arrow /> */
-      /* <advancedIcon
-           height=ICON_SIZE
-           onClick=this.handleAdvancedClicked
-           onDoubleClick=this.handleAdvancedClicked
-           width=ICON_SIZE
-           fill=advancedColor
-         /> */
-      /* (ReasonReact.string("To get started, edit")) */
+      </div>
+    </div>,
+  /* <arrow /> */
+  /* <advancedIcon
+       height=ICON_SIZE
+       onClick=this.handleAdvancedClicked
+       onDoubleClick=this.handleAdvancedClicked
+       width=ICON_SIZE
+       fill=advancedColor
+     /> */
+  /* (ReasonReact.string("To get started, edit")) */
 };
