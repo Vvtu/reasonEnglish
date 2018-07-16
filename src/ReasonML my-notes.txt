@@ -347,6 +347,24 @@ Until ReasonML’s core library supports it, you can use BuckleScript’s Js.Res
 // ------------------------------------------------
 // epic type - не нашел информацию об этом типе !!!!
 
+
+Полная гарантия покрытия типами в отличии от flow + быстрый код после компиляции
+Джаваскрипт не полностью функциональный язык, purescript - да
+
+21.1 Refmt  like
+
+refmt ("Reason format") is the binary that powers our editors' auto-formatting feature.
+ It takes in your code and spits it out, nicely formatted.
+ It also serves to convert to/from Reason/OCaml syntax.
+ The Reason community uses it to achieve a consistent code style throughout different projects,
+and to avoid time-consuming manual formatting & stylistic debates.
+
+It responsively formats the code based on the editor width.
+In other words, it doesn't just naively break to the next line at a certain characters limit;
+it solves the layout constraints and arranges your code accordingly.
+
+
+
 22.  История ReasonML Backlesript  и их взаимотношения.
 https://www.imaginarycloud.com/blog/reasonml-react-as-first-intended/
 Если бы ReasonML появился раньше  - реадкс бы не понадобился.
@@ -378,3 +396,5 @@ let x' = x + 1;
 Prefixed apostrophes are reserved for type variables (think generic types in C-style languages):
 
 let len = (arr: array('a)) => Array.length(arr);
+
+25.

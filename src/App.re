@@ -2,7 +2,7 @@
 
 include Reshuffle;
 include Dictionaries;
-include ArrowIconM;
+include ArrowIcon;
 
 type state = {
   activeIndex: int,
@@ -38,7 +38,7 @@ let make = (~message, _children) => {
     <div className="appcode__grid">
       <div className="appcode__info">
         <div className="appcode__info2">
-          <arrow />
+          <ArrowIcon.component />
           /* <arrow /> */
           /* <advancedIcon
                height=ICON_SIZE
