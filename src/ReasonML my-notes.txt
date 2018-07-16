@@ -106,6 +106,13 @@ List.filter( - не удобно
 
 Может лучще полностью прогрммировать на Ocaml ?
 
+8.1 https://wiki.haskell.org/OCaml
+OCaml's let is non-recursive by default,
+but has the form let rec for defining recursive functions.
+OCaml is impure: although it makes heavy use of immutable data,
+it also has mutable references and arrays available,
+and IO is performed by ordinary functions.
+
 
 9.  Если компилируется, то значит работает.  Это правда.
 
@@ -398,4 +405,6 @@ Prefixed apostrophes are reserved for type variables (think generic types in C-s
 
 let len = (arr: array('a)) => Array.length(arr);
 
-25.
+25.  https://wiki.haskell.org/The_JavaScript_Problem
+
+26.
