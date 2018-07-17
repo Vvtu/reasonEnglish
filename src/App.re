@@ -39,29 +39,25 @@ let make = (~message, _children) => {
         appcodeIsSpeaking: false,
       })
     | GoNext =>
-      state.activeIndex == List.length(state.randomDictionary) - 1 ?
-        ReasonReact.Update({
-          ...state,
-          activeIndex: 0,
-          appcodeIsSpeaking: false,
-        }) :
-        ReasonReact.Update({
-          ...state,
-          activeIndex: state.activeIndex + 1,
-          appcodeIsSpeaking: false,
-        })
+      let newIndex =
+        state.activeIndex == List.length(state.randomDictionary) - 1 ?
+          0 : state.activeIndex + 1;
+      ReasonReact.Update({
+        ...state,
+        activeIndex: newIndex,
+        appcodeIsSpeaking: false,
+        showEnglish: false,
+      });
     | GoPrevious =>
-      state.activeIndex == 0 ?
-        ReasonReact.Update({
-          ...state,
-          activeIndex: List.length(state.randomDictionary) - 1,
-          appcodeIsSpeaking: false,
-        }) :
-        ReasonReact.Update({
-          ...state,
-          activeIndex: state.activeIndex - 1,
-          appcodeIsSpeaking: false,
-        })
+      let newIndex =
+        state.activeIndex == 0 ?
+          List.length(state.randomDictionary) - 1 : state.activeIndex - 1;
+      ReasonReact.Update({
+        ...state,
+        activeIndex: newIndex,
+        appcodeIsSpeaking: false,
+        showEnglish: false,
+      });
     },
   didMount: _self => Js.log("didMount"),
   /*    self.state.timerId :=
