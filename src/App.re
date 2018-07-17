@@ -8,7 +8,10 @@ type state = {
   randomDictionary: Dictionaries.pairList,
 };
 type action =
-  | Tick;
+  | GoPrevious
+  | GoNext
+  | ShowEnglish
+  | HideEnglish;
 
 let component = ReasonReact.reducerComponent("App");
 
@@ -23,13 +26,15 @@ let make = (~message, _children) => {
   },
   reducer: (action, state) =>
     switch (action) {
-    | Tick =>
+    | ShowEnglish => ReasonReact.Update({...state, showEnglish: true})
+    | HideEnglish => ReasonReact.Update({...state, showEnglish: false})
+    | GoNext =>
       ReasonReact.Update({...state, activeIndex: state.activeIndex + 1})
     },
   didMount: _self => Js.log("didMount"),
   /*    self.state.timerId :=
         Some(Js.Global.setInterval(() => self.send(Tick), 1000)), */
-  render: ({state}) => {
+  render: ({state, send}) => {
     let count = List.length(state.randomDictionary);
     let activeObj = List.nth(state.randomDictionary, state.activeIndex);
     let item = Dom.Storage.(localStorage |> getItem(activeObj.rus));
@@ -57,13 +62,17 @@ let make = (~message, _children) => {
           </div>
           (
             state.showEnglish ?
-              <div className="appcode__icon_rotate_back">
+              <div
+                className="appcode__icon_rotate_back"
+                onClick=(_ => send(HideEnglish))>
                 <IconArrow
                   color=Constants.whiteColor
                   height=Constants.iconSize
                 />
               </div> :
-              <div className="appcode__icon_rotate">
+              <div
+                className="appcode__icon_rotate"
+                onClick=(_ => send(ShowEnglish))>
                 <IconArrow
                   color=Constants.whiteColor
                   height=Constants.iconSize
@@ -84,7 +93,9 @@ let make = (~message, _children) => {
               (ReasonReact.string("(" ++ string_of_int(shown) ++ ")"))
             </span>
           </div>
-          <div className="appcode__icon_invert__horizontal">
+          <div
+            className="appcode__icon_invert__horizontal"
+            onClick=(_ => send(GoNext))>
             <IconArrow color=Constants.whiteColor height=Constants.iconSize />
           </div>
         </div>
