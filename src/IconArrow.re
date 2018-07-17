@@ -1,6 +1,6 @@
-let component = ReasonReact.statelessComponent("ArrowIc");
+let component = ReasonReact.statelessComponent("IconArrow");
 
-let make = (~color: string, ~height: string) => {
+let make = (~color: string, ~height: string, _children) => {
   ...component,
   render: _self =>
     <svg
