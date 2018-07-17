@@ -1,4 +1,4 @@
-[@bs.module "./svg/ArrowIcon.jsx"]
+[@bs.module "./ArrowIcon.jsx"]
 external arrowIcon : ReasonReact.reactClass = "default";
 
 let make = (~color: string, ~height: string, children) =>

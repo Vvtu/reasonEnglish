@@ -34,16 +34,9 @@ let make = (~message, _children) => {
       <div className="appcode__info">
         <div className="appcode__info2">
           <ArrowIconWrapper color="red" height="20" />
+          <AdvancedIconWrapper height="20" color="red" />
         </div>
       </div>
     </div>,
-  /* <arrow /> */
-  /* <advancedIcon
-       height=ICON_SIZE
-       onClick=this.handleAdvancedClicked
-       onDoubleClick=this.handleAdvancedClicked
-       width=ICON_SIZE
-       fill=advancedColor
-     /> */
   /* (ReasonReact.string("To get started, edit")) */
 };
