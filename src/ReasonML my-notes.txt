@@ -407,4 +407,44 @@ let len = (arr: array('a)) => Array.length(arr);
 
 25.  https://wiki.haskell.org/The_JavaScript_Problem
 
-26.
+26. Сделал обертки вокруг reactjs компонентов:
+
+// ---------------------------------------------------------
+файл ArrowIconWrapper.re:
+
+[@bs.module "./ArrowIcon.jsx"]
+external arrowIcon : ReasonReact.reactClass = "default";
+
+let make = (~color: string, ~height: string, children) =>
+  ReasonReact.wrapJsForReason(
+    ~reactClass=arrowIcon,
+    ~props={"fill": color, "height": height, "width": height},
+    children,
+  );
+
+и вызывать его надо как  <ArrowIconWrapper color="red" height="32" />
+// ---------------------------------------------------------
+
+ 27.  Папки и подпапки проекта -
+    пришлось исправить bsconfig.json
+  	"sources": [ "src", "src/svg" ],
+    перечислены подпапки, где лежат sources
+    никаких инклюдов - очень хорошо. если проект скомпилился,
+    то он нашел все модули и сверил типы пропсов
+
+
+28. Сообщения об ошибках не очень информативны
+
+  This function has type
+    (~color: string, ~height: string) =>
+    ReasonReact.componentSpec(ReasonReact.stateless, ReasonReact.stateless,
+                               ReasonReact.noRetainedProps,
+                               ReasonReact.noRetainedProps,
+                               ReasonReact.actionless)
+  It only accepts 2 arguments; here, it's called with more.
+    at Array.map (<anonymous>)
+    at <anonymous>
+
+    добавил как аргумент   _children  - и ошибка ушла
+
+
