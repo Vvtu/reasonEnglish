@@ -26,19 +26,42 @@ let make = (~message, _children) => {
   },
   reducer: (action, state) =>
     switch (action) {
-    | ShowEnglish => ReasonReact.Update({...state, showEnglish: true})
-    | HideEnglish => ReasonReact.Update({...state, showEnglish: false})
+    | ShowEnglish =>
+      ReasonReact.Update({
+        ...state,
+        showEnglish: true,
+        appcodeIsSpeaking: false,
+      })
+    | HideEnglish =>
+      ReasonReact.Update({
+        ...state,
+        showEnglish: false,
+        appcodeIsSpeaking: false,
+      })
     | GoNext =>
       state.activeIndex == List.length(state.randomDictionary) - 1 ?
-        ReasonReact.Update({...state, activeIndex: 0}) :
-        ReasonReact.Update({...state, activeIndex: state.activeIndex + 1})
+        ReasonReact.Update({
+          ...state,
+          activeIndex: 0,
+          appcodeIsSpeaking: false,
+        }) :
+        ReasonReact.Update({
+          ...state,
+          activeIndex: state.activeIndex + 1,
+          appcodeIsSpeaking: false,
+        })
     | GoPrevious =>
       state.activeIndex == 0 ?
         ReasonReact.Update({
           ...state,
           activeIndex: List.length(state.randomDictionary) - 1,
+          appcodeIsSpeaking: false,
         }) :
-        ReasonReact.Update({...state, activeIndex: state.activeIndex - 1})
+        ReasonReact.Update({
+          ...state,
+          activeIndex: state.activeIndex - 1,
+          appcodeIsSpeaking: false,
+        })
     },
   didMount: _self => Js.log("didMount"),
   /*    self.state.timerId :=
@@ -119,7 +142,11 @@ let make = (~message, _children) => {
       <div className="appcode__english">
         <div className="appcode__center">
           <div className="appcode__scroll">
-            <div className="dddd">
+            <div
+              className=(
+                "appcode__eng_text_color"
+                ++ (state.appcodeIsSpeaking ? " appcode__speaking" : "")
+              )>
               <div>
                 (ReasonReact.string(state.showEnglish ? activeObj.eng : ""))
               </div>
