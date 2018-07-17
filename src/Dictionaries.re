@@ -6,16 +6,16 @@ type wordPair = {
 type pairList = list(wordPair);
 
 let dictionary1: pairList = [
-  {rus: "тушить огонь", eng: "to put out a fire"},
-  {rus: "бросать мусор", eng: "to drop a litter"},
-  {rus: "овощи", eng: "vegetables"},
-  {rus: "сладости", eng: "sweets"},
-  {rus: "в хорошей форме", eng: "fit"},
-  {rus: "сильный", eng: "strong"},
-  {rus: "упражнение", eng: "exercise"},
-  {rus: "богатый", eng: "rich"},
-  {rus: "бедный", eng: "poor"},
-  {rus: "здоровый", eng: "healthy"},
+  {rus: "111", eng: "to put out a fire"},
+  {rus: "222", eng: "to drop a litter"},
+  {rus: "333", eng: "vegetables"},
+  {rus: "444", eng: "sweets"},
+  {rus: "555", eng: "fit"},
+  {rus: "666", eng: "strong"},
+  {rus: "777", eng: "exercise"},
+  {rus: "888", eng: "rich"},
+  {rus: "999", eng: "poor"},
+  {rus: "000", eng: "healthy"},
 ];
 
 let oldDictionary1: pairList = [
