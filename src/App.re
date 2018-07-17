@@ -33,8 +33,8 @@ let make = (~message, _children) => {
     <div className="appcode__grid">
       <div className="appcode__info">
         <div className="appcode__info2">
-          <ArrowIconWrapper color="red" height="20" />
-          <AdvancedIconWrapper height="20" color="red" />
+          <ArrowIconWrapper color="red" height=Constants.iconSize />
+          <AdvancedIconWrapper color="red" height=Constants.iconSize />
         </div>
       </div>
     </div>,
