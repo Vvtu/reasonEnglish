@@ -29,7 +29,16 @@ let make = (~message, _children) => {
     | ShowEnglish => ReasonReact.Update({...state, showEnglish: true})
     | HideEnglish => ReasonReact.Update({...state, showEnglish: false})
     | GoNext =>
-      ReasonReact.Update({...state, activeIndex: state.activeIndex + 1})
+      state.activeIndex == List.length(state.randomDictionary) - 1 ?
+        ReasonReact.Update({...state, activeIndex: 0}) :
+        ReasonReact.Update({...state, activeIndex: state.activeIndex + 1})
+    | GoPrevious =>
+      state.activeIndex == 0 ?
+        ReasonReact.Update({
+          ...state,
+          activeIndex: List.length(state.randomDictionary) - 1,
+        }) :
+        ReasonReact.Update({...state, activeIndex: state.activeIndex - 1})
     },
   didMount: _self => Js.log("didMount"),
   /*    self.state.timerId :=
@@ -51,7 +60,7 @@ let make = (~message, _children) => {
     <div className="appcode__grid">
       <div className="appcode__info">
         <div className="appcode__info2">
-          <div>
+          <div onClick=(_ => send(GoPrevious))>
             <IconArrow color=Constants.whiteColor height=Constants.iconSize />
           </div>
           <div>
