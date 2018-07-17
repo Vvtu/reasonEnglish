@@ -26,9 +26,9 @@ let make = (~message, _children) => {
     | Tick =>
       ReasonReact.Update({...state, activeIndex: state.activeIndex + 1})
     },
-  /* didMount: self =>
-     self.state.timerId :=
-       Some(Js.Global.setInterval(() => self.send(Tick), 1000)), */
+  didMount: _self => Js.log("didMount"),
+  /*    self.state.timerId :=
+        Some(Js.Global.setInterval(() => self.send(Tick), 1000)), */
   render: ({state}) => {
     let count = List.length(state.randomDictionary);
     let activeObj = List.nth(state.randomDictionary, state.activeIndex);
