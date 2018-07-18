@@ -451,4 +451,70 @@ let make = (~color: string, ~height: string, children) =>
 
     добавил как аргумент   _children  - и ошибка ушла
 
+29. Chenglou -> Yes, the first prototype of React was written in SML; we then moved onto OCaml.
+
+Chenglou  - twitter
+Cheng Lou
+@_chenglou
+
+Swift: Apple's OCaml
+Reason: Facebook's OCaml
+F#: Microsoft's OCaml
+
+Rust: - Can't believe I forgot to include Rust... thanks
+
+(Rust and swift - не очень близки к Ocaml)
+
+
+29. По докладу https://ruvid.net/video/reasonreact-functional-programming-for-javascript-developers-lfA8qy0V34Y.html
+
+29.1. 2016 - год   Bloomberg L.P. — один из двух ведущих поставщиков финансовой информации
+ для профессиональных участников финансовых рынков - создал (и сделал open source)
+ BuckleScript - компилятор Ocaml -> Js   (Пряжка, скоба, застежка)
+
+ BuckleScript: A JavaScript backend for OCaml focused on smooth integration and clean generated code.
+
+29.2. Будете ли более продуктивны и быстры, при использовании ReasonReact вместо ReactJS ?
+
+29.3. При использовании ReactJS вы обычно используете
+  NPM, ReactRouter, Immutable.js, Prettier, Eslint, Flow, Redux, ReduxActions
+Если использовать reasonreact - Нужно  NPM
+Остальное   (ReactRouter, Immutable.js, Prettier, Eslint, Flow, Redux + ReduxActions) - уже есть в ReasonReact
+Кстати , сильно ументшится количество папок и файлов
+  - файлы reducer, actions, selectors, constants - контейнер и сам компонент.
+  см про папки п. 27
+
+
+29.4. LifeCycle hooks - практически совпадают
+   (за исключением componentWillUnmount - нужно испльзовать componentDidUnmount)
+
+29.5. Есть statelessComponent и (statefullСomponent - заменент на reducerComponent) - в нем вы должны определить
+    type action =
+      | GoPrevious
+      | GoNext
+      | ShowEnglish
+      | HideEnglish;
+
+30. ReasonReact - не использует и не нуждается в Джаваскипт классах.
+component - это просто рекорд, чьи поля вы можете перезаписать (с помощью функции make).
+рекорд компилируется в джаваскрит массив - поэтому component - это JS array
+
+31. Пока - плохая поддержка Unicode. Пришлось использовать
+let dictionary1: pairList = [
+  rus: {js|Юникод. Плохая поддержка.|js},
+
+  ReasonML strings are encoded as UTF-8 and not compatible with JavaScript’s UTF-16 strings.
+  ReasonML’s support for Unicode is also worse than JavaScript’s – already limited – one.
+  As a short-term workaround, you can use BuckleScript’s JavaScript strings in ReasonML:
+
+  let a ="Hello";
+  Js.log(a);
+  let aa = "Привет";
+  Js.log(aa);
+  let aaa = {js|Привет|js};
+  Js.log(aaa);
+
+  These strings are produced via multi-line string literals annotated with js,
+  which are only treated specially by BuckleScript.
+  In native ReasonML, you get normal strings.
 
