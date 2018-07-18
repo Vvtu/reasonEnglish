@@ -9,8 +9,7 @@ type state = {
 };
 type action =
   | ChangeActiveIndex(int)
-  | SwitchEnglishShowing
-  | HideEnglish;
+  | SwitchEnglishShowing;
 
 let component = ReasonReact.reducerComponent("App");
 
@@ -31,12 +30,6 @@ let make = (~message, _children) => {
         showEnglish: state.showEnglish != true,
         appcodeIsSpeaking: false,
       })
-    | HideEnglish =>
-      ReasonReact.Update({
-        ...state,
-        showEnglish: false,
-        appcodeIsSpeaking: false,
-      })
     | ChangeActiveIndex(ince) =>
       let nI = state.activeIndex + ince;
       let newIndex =
@@ -47,7 +40,6 @@ let make = (~message, _children) => {
         } else {
           nI;
         };
-      Js.log(newIndex);
       ReasonReact.Update({
         ...state,
         activeIndex: newIndex,
@@ -88,7 +80,7 @@ let make = (~message, _children) => {
             state.showEnglish ?
               <div
                 className="appcode__icon_rotate_back"
-                onClick=(_ => send(HideEnglish))>
+                onClick=(_ => send(SwitchEnglishShowing))>
                 <IconArrow
                   color=Constants.whiteColor
                   height=Constants.iconSize

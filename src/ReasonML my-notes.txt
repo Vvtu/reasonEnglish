@@ -573,3 +573,7 @@ let middle = getMiddle(myData);
 let right = getRight(myData);
 Convenient for certain kind of operations.
 
+36. action with parameter - ok
+
+37. Feel free to trigger another action in SideEffects and UpdateWithSideEffects -
+  мало примеров
