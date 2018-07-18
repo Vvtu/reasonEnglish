@@ -8,9 +8,8 @@ type state = {
   randomDictionary: Dictionaries.pairList,
 };
 type action =
-  | GoPrevious
-  | GoNext
-  | ShowEnglish
+  | ChangeActiveIndex(int)
+  | SwitchEnglishShowing
   | HideEnglish;
 
 let component = ReasonReact.reducerComponent("App");
@@ -26,10 +25,10 @@ let make = (~message, _children) => {
   },
   reducer: (action, state) =>
     switch (action) {
-    | ShowEnglish =>
+    | SwitchEnglishShowing =>
       ReasonReact.Update({
         ...state,
-        showEnglish: true,
+        showEnglish: state.showEnglish != true,
         appcodeIsSpeaking: false,
       })
     | HideEnglish =>
@@ -38,20 +37,17 @@ let make = (~message, _children) => {
         showEnglish: false,
         appcodeIsSpeaking: false,
       })
-    | GoNext =>
+    | ChangeActiveIndex(ince) =>
+      let nI = state.activeIndex + ince;
       let newIndex =
-        state.activeIndex == List.length(state.randomDictionary) - 1 ?
-          0 : state.activeIndex + 1;
-      ReasonReact.Update({
-        ...state,
-        activeIndex: newIndex,
-        appcodeIsSpeaking: false,
-        showEnglish: false,
-      });
-    | GoPrevious =>
-      let newIndex =
-        state.activeIndex == 0 ?
-          List.length(state.randomDictionary) - 1 : state.activeIndex - 1;
+        if (nI < 0) {
+          List.length(state.randomDictionary) - 1;
+        } else if (nI >= List.length(state.randomDictionary)) {
+          0;
+        } else {
+          nI;
+        };
+      Js.log(newIndex);
       ReasonReact.Update({
         ...state,
         activeIndex: newIndex,
@@ -79,7 +75,7 @@ let make = (~message, _children) => {
     <div className="appcode__grid">
       <div className="appcode__info">
         <div className="appcode__info2">
-          <div onClick=(_ => send(GoPrevious))>
+          <div onClick=(_ => send(ChangeActiveIndex(-1)))>
             <IconArrow color=Constants.whiteColor height=Constants.iconSize />
           </div>
           <div>
@@ -100,7 +96,7 @@ let make = (~message, _children) => {
               </div> :
               <div
                 className="appcode__icon_rotate"
-                onClick=(_ => send(ShowEnglish))>
+                onClick=(_ => send(SwitchEnglishShowing))>
                 <IconArrow
                   color=Constants.whiteColor
                   height=Constants.iconSize
@@ -123,19 +119,23 @@ let make = (~message, _children) => {
           </div>
           <div
             className="appcode__icon_invert__horizontal"
-            onClick=(_ => send(GoNext))>
+            onClick=(_ => send(ChangeActiveIndex(1)))>
             <IconArrow color=Constants.whiteColor height=Constants.iconSize />
           </div>
         </div>
       </div>
-      <div className="appcode__russian">
+      <div
+        className="appcode__russian"
+        onClick=(_ => send(SwitchEnglishShowing))>
         <div className="appcode__center">
           <div className="appcode__scroll">
             <div> (ReasonReact.string(activeObj.rus)) </div>
           </div>
         </div>
       </div>
-      <div className="appcode__english">
+      <div
+        className="appcode__english"
+        onClick=(_ => send(SwitchEnglishShowing))>
         <div className="appcode__center">
           <div className="appcode__scroll">
             <div

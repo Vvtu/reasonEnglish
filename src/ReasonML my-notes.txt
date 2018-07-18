@@ -518,3 +518,58 @@ let dictionary1: pairList = [
   which are only treated specially by BuckleScript.
   In native ReasonML, you get normal strings.
 
+32.   Object
+JavaScript objects are used for two major purposes:
+
+As a hash map (or "dictionary"), where keys can be dynamically added/removed
+and where values are of the same type.
+As a record, where fields are fixed (though still maybe sometimes optional)
+and where values can be of different types.
+Correspondingly, BuckleScript works with JS objects in these 2 ways.
+
+33. Export
+BuckleScript allows compiling to:
+CommonJS (require('myFile'))
+ES6 modules (import * from 'myFile')
+AMD (define(['myFile'], ...))
+The output format is configurable in bsb, described in a later section.
+
+By default, every let binding is exported.
+If their values are safe to use on the JS side,
+you can directly require the generated JS file and use them (see the JS file itself!).
+
+To only export a few selected lets,
+simply add an interface file that hides some of the let bindings.
+
+
+34. JSON
+There are several ways to work with JSON right now, that we'll unify and polish very soon.
+
+35. Composition operators
+
+Pipelining - Great for building pipelines of data processing:
+
+   1.   f(g(x)) ===  x |. g |. f     -- Fast pipe (нигде особо не описан) похоже это из за js
+   2.   f(g(x)) ===  x |> g |> f     -- Reverse-application operator
+
+   3.   f(g(x)) ===  f @@ g @@ x     -- Application operator
+
+   Между 1 и 2 есть разница !!! если есть еще агрументы у функций
+      a |. foo(b) |. bar === bar(foo(a, b))
+      a |> foo(b) |> bar === bar(foo(b, a))
+
+Операторы - это просто функции.  Их можно переопределить
+
+
+Get Multiple Results
+
+The fast pipe operator can also be used on a tuple:
+
+let (left, middle, right) = myData |. (getLeft, getMiddle, getRight)
+This turns into:
+
+let left = getLeft(myData);
+let middle = getMiddle(myData);
+let right = getRight(myData);
+Convenient for certain kind of operations.
+
