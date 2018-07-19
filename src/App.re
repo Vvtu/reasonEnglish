@@ -22,14 +22,23 @@ let make = (~message, _children) => {
     appcodeIsSpeaking: false,
     randomDictionary: Reshuffle.reshuffle(Dictionaries.dictionary1),
   },
+  /* reducer must be pure */
   reducer: (action, state) =>
     switch (action) {
     | SwitchEnglishShowing =>
-      ReasonReact.Update({
-        ...state,
-        showEnglish: state.showEnglish != true,
-        appcodeIsSpeaking: false,
-      })
+      /* ReasonReact.Update({
+           ...state,
+           showEnglish: state.showEnglish != true,
+           appcodeIsSpeaking: false,
+         }) */
+      ReasonReact.SideEffects(
+        (
+          self => {
+            self.send(ChangeActiveIndex(1));
+            self.send(ChangeActiveIndex(1));
+          }
+        ),
+      )
     | ChangeActiveIndex(ince) =>
       let nI = state.activeIndex + ince;
       let newIndex =
@@ -40,15 +49,12 @@ let make = (~message, _children) => {
         } else {
           nI;
         };
-      ReasonReact.UpdateWithSideEffects(
-        {
-          ...state,
-          activeIndex: newIndex,
-          appcodeIsSpeaking: false,
-          showEnglish: false,
-        },
-        (self => self.send(SwitchEnglishShowing)),
-      );
+      ReasonReact.Update({
+        ...state,
+        activeIndex: newIndex,
+        appcodeIsSpeaking: false,
+        showEnglish: false,
+      });
     },
   didMount: _self => Js.log("didMount"),
   /*    self.state.timerId :=
