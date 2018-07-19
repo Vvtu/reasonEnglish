@@ -648,3 +648,18 @@ This makes all your state updates & side-effects
  much easier to scan through.
 Also more ReactJS fiber async-mode resilient.
 
+
+
+38.  Managed to get scrollTop value from ref, but failed to set it.
+'magic syntax accessor'  - obj##scrollTop
+
+self =>
+            switch (self.state.russianSectionRef^) {
+            | None => ()
+            | Some(domElement) =>
+              let obj = ReactDOMRe.domElementToObj(domElement);
+              let scrollTop = obj##scrollTop;
+              Js.log("scrollTop = ");
+              Js.log(scrollTop);
+            }
+        ),
