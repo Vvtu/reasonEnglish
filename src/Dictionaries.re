@@ -5,7 +5,7 @@ type wordPair = {
 
 type pairList = list(wordPair);
 
-let dictionary1: pairList = [
+let dictionary2: pairList = [
   {rus: {js|тушить огонь|js}, eng: "to put out a fire"},
   {rus: {js|бросать мусор|js}, eng: "to drop a litter"},
   {rus: {js|овощи|js}, eng: "vegetables"},
@@ -46,26 +46,14 @@ let oldDictionary1: pairList = [
   {rus: {js|падать|js}, eng: "fall, fell, fallen"},
 ];
 
-let dictionary2: pairList = [
+let dictionary1: pairList = [
   {
-    rus: {js|По умолчанию, при рекурсии на дочерних узлах DOM, React просто перебирает оба списка дочерних узлов одновременно и генерирует мутацию всякий раз, когда есть разница.|js},
+    rus: {js|По умолчанию, при рекурсии на дочерних узлах DOM, React просто перебирает оба списка дочерних узлов одновременно и генерирует мутацию всякий раз, когда есть разница. По умолчанию, при рекурсии на дочерних узлах DOM, React просто перебирает оба списка дочерних узлов одновременно и генерирует мутацию всякий раз, когда есть разница.|js},
     eng: "By default, when recursing on the children of a DOM node, React just iterates over both lists of children at the same time and generates a mutation whenever there’s a difference.",
   },
   {
-    rus: {js|Когда у детей есть ключи, React использует ключ для сопоставления детей в исходном дереве с детьми в последующем дереве.|js},
+    rus: {js|Когда у детей есть ключи, React использует ключ для сопоставления детей в исходном дереве с детьми в последующем дереве. Когда у детей есть ключи, React использует ключ для сопоставления детей в исходном дереве с детьми в последующем дереве.|js},
     eng: "When children have keys, React uses the key to match children in the original tree with children in the subsequent tree.",
-  },
-  {
-    rus: {js|На практике найти ключ обычно не сложно. Элемент, который вы собираетесь отобразить, может уже иметь уникальный ID, поэтому ключ может просто прийти из ваших данных.|js},
-    eng: "In practice, finding a key is usually not hard. The element you are going to display may already have a unique ID, so the key can just come from your data.",
-  },
-  {
-    rus: {js|Когда это не так, вы можете добавить новое свойство ID в свою модель или хэшировать некоторые части контента для создания ключа.|js},
-    eng: "When that’s not the case, you can add a new ID property to your model or hash some parts of the content to generate a key.",
-  },
-  {
-    rus: {js|Ключ должен быть уникальным только среди своих братьев и сестер, а не глобально уникальным.|js},
-    eng: "The key only has to be unique among its siblings, not globally unique.",
   },
 ];
 

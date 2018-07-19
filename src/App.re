@@ -6,10 +6,17 @@ type state = {
   showAdvanced: bool,
   appcodeIsSpeaking: bool,
   randomDictionary: Dictionaries.pairList,
+  russianSectionRef: ref(option(Dom.element)),
+  englishSectionRef: ref(option(Dom.element)),
 };
 type action =
   | ChangeActiveIndex(int)
   | SwitchEnglishShowing;
+
+let setRussianSectionRef = (theRef, {ReasonReact.state}) =>
+  state.russianSectionRef := Js.Nullable.toOption(theRef);
+let setEnglishSectionRef = (theRef, {ReasonReact.state}) =>
+  state.englishSectionRef := Js.Nullable.toOption(theRef);
 
 let component = ReasonReact.reducerComponent("App");
 
@@ -21,6 +28,8 @@ let make = (~message, _children) => {
     showAdvanced: false,
     appcodeIsSpeaking: false,
     randomDictionary: Reshuffle.reshuffle(Dictionaries.dictionary1),
+    russianSectionRef: ref(None),
+    englishSectionRef: ref(None),
   },
   /* reducer must be pure */
   reducer: (action, state) =>
@@ -41,17 +50,30 @@ let make = (~message, _children) => {
         } else {
           nI;
         };
-      ReasonReact.Update({
-        ...state,
-        activeIndex: newIndex,
-        appcodeIsSpeaking: false,
-        showEnglish: false,
-      });
+      ReasonReact.UpdateWithSideEffects(
+        {
+          ...state,
+          activeIndex: newIndex,
+          appcodeIsSpeaking: false,
+          showEnglish: false,
+        },
+        (
+          self =>
+            switch (self.state.russianSectionRef^) {
+            | None => ()
+            | Some(domElement) =>
+              let obj = ReactDOMRe.domElementToObj(domElement);
+              let scrollTop = obj##scrollTop;
+              Js.log("scrollTop = ");
+              Js.log(scrollTop);
+            }
+        ),
+      );
     },
   didMount: _self => Js.log("didMount"),
   /*    self.state.timerId :=
         Some(Js.Global.setInterval(() => self.send(Tick), 1000)), */
-  render: ({state, send}) => {
+  render: ({state, send, handle}) => {
     let count = List.length(state.randomDictionary);
     let activeObj = List.nth(state.randomDictionary, state.activeIndex);
     let item = Dom.Storage.(localStorage |> getItem(activeObj.rus));
@@ -123,7 +145,7 @@ let make = (~message, _children) => {
         className="appcode__russian"
         onClick=(_ => send(SwitchEnglishShowing))>
         <div className="appcode__center">
-          <div className="appcode__scroll">
+          <div className="appcode__scroll" ref=(handle(setRussianSectionRef))>
             <div> (ReasonReact.string(activeObj.rus)) </div>
           </div>
         </div>
@@ -132,7 +154,7 @@ let make = (~message, _children) => {
         className="appcode__english"
         onClick=(_ => send(SwitchEnglishShowing))>
         <div className="appcode__center">
-          <div className="appcode__scroll">
+          <div className="appcode__scroll" ref=(handle(setEnglishSectionRef))>
             <div
               className=(
                 "appcode__eng_text_color"
