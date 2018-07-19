@@ -26,19 +26,11 @@ let make = (~message, _children) => {
   reducer: (action, state) =>
     switch (action) {
     | SwitchEnglishShowing =>
-      /* ReasonReact.Update({
-           ...state,
-           showEnglish: state.showEnglish != true,
-           appcodeIsSpeaking: false,
-         }) */
-      ReasonReact.SideEffects(
-        (
-          self => {
-            self.send(ChangeActiveIndex(1));
-            self.send(ChangeActiveIndex(1));
-          }
-        ),
-      )
+      ReasonReact.Update({
+        ...state,
+        showEnglish: state.showEnglish != true,
+        appcodeIsSpeaking: false,
+      })
     | ChangeActiveIndex(ince) =>
       let nI = state.activeIndex + ince;
       let newIndex =
