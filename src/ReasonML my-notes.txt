@@ -577,6 +577,32 @@ Convenient for certain kind of operations.
 
 37. Feel free to trigger another action in SideEffects and UpdateWithSideEffects -
   мало примеров
+  -  сделал сам
+
+ reducer: (action, state) =>
+    switch (action) {
+      | ChangeActiveIndex(ince) =>
+          let nI = state.activeIndex + ince;
+          let newIndex =
+            if (nI < 0) {
+              List.length(state.randomDictionary) - 1;
+            } else if (nI >= List.length(state.randomDictionary)) {
+              0;
+            } else {
+              nI;
+            };
+          ReasonReact.UpdateWithSideEffects(
+            {
+              ...state,
+              activeIndex: newIndex,
+              appcodeIsSpeaking: false,
+              showEnglish: false,
+            },
+            (self => self.send(SwitchEnglishShowing)),    /*  но делает два рендера */
+          );
+      |  ....
+    },
+
 
   Important Notes
 
@@ -590,5 +616,10 @@ Feel free to trigger another action in SideEffects and UpdateWithSideEffects, e.
 If your state only holds instance variables, it also means (by the convention in the instance variables section) that your component only contains self.handle, no self.send. You still needs to specify a reducer like so: reducer: ((), _state) => ReasonReact.NoUpdate. Otherwise you'll get a variable cannot be generalized type error.
 Tip
 
-Cram as much as possible into reducer. Keep your actual callback handlers (the self.send(Foo) part) dumb and small. This makes all your state updates & side-effects (which itself should mostly only be inside ReasonReact.SideEffects and ReasonReact.UpdateWithSideEffects) much easier to scan through. Also more ReactJS fiber async-mode resilient.
+Cram as much as possible into reducer.
+Keep your actual callback handlers (the self.send(Foo) part) dumb and small.
+This makes all your state updates & side-effects
+(which itself should mostly only be inside ReasonReact.SideEffects and ReasonReact.UpdateWithSideEffects)
+ much easier to scan through.
+Also more ReactJS fiber async-mode resilient.
 

@@ -40,12 +40,15 @@ let make = (~message, _children) => {
         } else {
           nI;
         };
-      ReasonReact.Update({
-        ...state,
-        activeIndex: newIndex,
-        appcodeIsSpeaking: false,
-        showEnglish: false,
-      });
+      ReasonReact.UpdateWithSideEffects(
+        {
+          ...state,
+          activeIndex: newIndex,
+          appcodeIsSpeaking: false,
+          showEnglish: false,
+        },
+        (self => self.send(SwitchEnglishShowing)),
+      );
     },
   didMount: _self => Js.log("didMount"),
   /*    self.state.timerId :=
@@ -63,6 +66,8 @@ let make = (~message, _children) => {
       | Some(n) => int_of_string(n)
       | None => 0
       };
+
+    Js.log("App render");
 
     <div className="appcode__grid">
       <div className="appcode__info">
