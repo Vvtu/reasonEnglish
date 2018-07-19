@@ -464,6 +464,7 @@ F#: Microsoft's OCaml
 Rust: - Can't believe I forgot to include Rust... thanks
 
 (Rust and swift - не очень близки к Ocaml)
+Первый компилятор языка Rust был написан на Ocaml.  Сейчас - Rust на Ruste.
 
 
 29. По докладу https://ruvid.net/video/reasonreact-functional-programming-for-javascript-developers-lfA8qy0V34Y.html

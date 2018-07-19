@@ -6,17 +6,10 @@ type state = {
   showAdvanced: bool,
   appcodeIsSpeaking: bool,
   randomDictionary: Dictionaries.pairList,
-  russianSectionRef: ref(option(Dom.element)),
-  englishSectionRef: ref(option(Dom.element)),
 };
 type action =
   | ChangeActiveIndex(int)
   | SwitchEnglishShowing;
-
-let setRussianSectionRef = (theRef, {ReasonReact.state}) =>
-  state.russianSectionRef := Js.Nullable.toOption(theRef);
-let setEnglishSectionRef = (theRef, {ReasonReact.state}) =>
-  state.englishSectionRef := Js.Nullable.toOption(theRef);
 
 let component = ReasonReact.reducerComponent("App");
 
@@ -28,8 +21,6 @@ let make = (~message, _children) => {
     showAdvanced: false,
     appcodeIsSpeaking: false,
     randomDictionary: Reshuffle.reshuffle(Dictionaries.dictionary1),
-    russianSectionRef: ref(None),
-    englishSectionRef: ref(None),
   },
   /* reducer must be pure */
   reducer: (action, state) =>
@@ -50,25 +41,12 @@ let make = (~message, _children) => {
         } else {
           nI;
         };
-      ReasonReact.UpdateWithSideEffects(
-        {
-          ...state,
-          activeIndex: newIndex,
-          appcodeIsSpeaking: false,
-          showEnglish: false,
-        },
-        (
-          self =>
-            switch (self.state.russianSectionRef^) {
-            | None => ()
-            | Some(domElement) =>
-              let obj = ReactDOMRe.domElementToObj(domElement);
-              let scrollTop = obj##scrollTop;
-              Js.log("scrollTop = ");
-              Js.log(scrollTop);
-            }
-        ),
-      );
+      ReasonReact.Update({
+        ...state,
+        activeIndex: newIndex,
+        appcodeIsSpeaking: false,
+        showEnglish: false,
+      });
     },
   didMount: _self => Js.log("didMount"),
   /*    self.state.timerId :=
@@ -144,8 +122,8 @@ let make = (~message, _children) => {
       <div
         className="appcode__russian"
         onClick=(_ => send(SwitchEnglishShowing))>
-        <div className="appcode__center">
-          <div className="appcode__scroll" ref=(handle(setRussianSectionRef))>
+        <div className="appcode__center" key=activeObj.rus>
+          <div className="appcode__scroll">
             <div> (ReasonReact.string(activeObj.rus)) </div>
           </div>
         </div>
@@ -153,25 +131,22 @@ let make = (~message, _children) => {
       <div
         className="appcode__english"
         onClick=(_ => send(SwitchEnglishShowing))>
-        <div className="appcode__center">
-          <div className="appcode__scroll" ref=(handle(setEnglishSectionRef))>
-            <div
-              className=(
-                "appcode__eng_text_color"
-                ++ (state.appcodeIsSpeaking ? " appcode__speaking" : "")
-              )>
-              <div>
-                (ReasonReact.string(state.showEnglish ? activeObj.eng : ""))
+        (
+          state.showEnglish ?
+            <div className="appcode__center">
+              <div className="appcode__scroll">
+                <div
+                  className=(
+                    "appcode__eng_text_color"
+                    ++ (state.appcodeIsSpeaking ? " appcode__speaking" : "")
+                  )>
+                  <div> (ReasonReact.string(activeObj.eng)) </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
+            </div> :
+            <div className="appcode__center" />
+        )
       </div>
     </div>;
   },
 };
-
-/*
- {
-   'appcode__eng_text_color' + (appcodeIsSpeaking ? ' appcode__speaking' : '')
- } */
