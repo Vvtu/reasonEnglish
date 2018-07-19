@@ -9,7 +9,6 @@ It compiles to straightforward JS files, so you can open index.html directly fro
 	--- Reason Scripts (Aka Create-React-App) As with create-react-app, reason-scripts comes with a server and hot-reloading built in.
 
 
-
 3. Need to switch to nam 4.0.0 again - to install ocamlmerlin
 
 3. Увидел много   <div> (ReasonReact.string(...) </div>  - многословность ReasonReact.string(
@@ -115,9 +114,14 @@ and IO is performed by ordinary functions.
 
 
 9.  Если компилируется, то значит работает.  Это правда.
+    Програмирование в хороших языках превратилось в борьбу с компилятором
+    А в плохих - в борьбу с рантаймом
+    При рефакторинге - пусть лучше компилятор сообщит мне об ошибке и покажет, где она,
+    чем тесты (если они есть) станут красными и предется разбираться, почему они покраснели.
+    Или еще хуже - ждать проблем в рантайме через пару месяцев, когда уже все забыл
 
 10. ReasonML records -  это массивы JS.
-Массивы - в 2.5 раза быстрее чем объекты (мои измерения)
+Массивы - в 4 раза быстрее чем объекты (мои измерения a-new-app)
 Значит - рекогдс быстрее чем объекты.  Стейт - это в основном рекордс.
 Таким образом работа со стейтом - очень быстрая.
 
@@ -195,6 +199,10 @@ var notMe = /* record */[
 
 include Reshuffle;
 include Dictionaries;   --  Вместе инклюдами подтянул типы данных
+
+никаких инклюдов не надо - все импортируется под капотом по имени файла
+файл становиться модулем
+имя файла, всегда должно быть с большой буквы
 
 
 
@@ -336,9 +344,15 @@ like there always needs type even when nothing is given.
 // ------------------------------------------------
 Type option('a) for optional values
 
-In many object-oriented languages, a variable having type string means that the variable can be either null or a string value. Types that include null are called nullable. Nullable types are problematic in that it’s easy to work with their values while forgetting to handle null. If – unexpectedly – a null appears, you get the infamous null pointer exceptions.
+In many object-oriented languages, a variable having type string means
+that the variable can be either null or a string value.
+Types that include null are called nullable.
+Nullable types are problematic in that it’s easy to work with their values
+while forgetting to handle null.
+If – unexpectedly – a null appears, you get the infamous null pointer exceptions.
 
-In ReasonML, types are never nullable. Instead, potentially missing values are handled via the following parameterized variant:
+In ReasonML, types are never nullable.
+Instead, potentially missing values are handled via the following parameterized variant:
 
 type option('a) =
   | None
@@ -652,6 +666,7 @@ Also more ReactJS fiber async-mode resilient.
 
 
 38.  Managed to get scrollTop value from ref, but failed to set it.
+It turns out to be immutable !!!
 'magic syntax accessor'  - obj##scrollTop
 
 self =>
@@ -664,3 +679,15 @@ self =>
               Js.log(scrollTop);
             }
         ),
+
+  39. reset scrolling without ref - only by applying key prop  (key=activeObj.eng)
+
+
+40. работа с window
+    middleware - для редьюсера
+    css modules
+    generators  - redux saga
+    devtools - like redux devtools
+    debuging
+    testing - jest
+

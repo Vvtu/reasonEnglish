@@ -122,7 +122,7 @@ let make = (~message, _children) => {
       <div
         className="appcode__russian"
         onClick=(_ => send(SwitchEnglishShowing))>
-        <div className="appcode__center" key=activeObj.rus>
+        <div className="appcode__center" key=activeObj.eng>
           <div className="appcode__scroll">
             <div> (ReasonReact.string(activeObj.rus)) </div>
           </div>
