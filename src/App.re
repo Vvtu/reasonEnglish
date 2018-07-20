@@ -1,5 +1,5 @@
-[%bs.raw {|require('./App.css')|}];
-[@bs.val] external setTimeout : (unit => unit, int) => float = "setTimeout";
+/* [%bs.raw {|require('./App.css')|}];
+   [@bs.val] external setTimeout : (unit => unit, int) => float = "setTimeout"; */
 
 type state = {
   activeIndex: int,
@@ -51,11 +51,9 @@ let make = (~message, _children) => {
       });
     },
   didMount: _self => {
-    let _ = setTimeout(() => Js.log("didMount 3000"), 3000); /* it works */
+    let _ = Js.Global.setTimeout(() => Js.log("didMount 3000"), 3000);
     ();
   },
-  /*    self.state.timerId :=
-        Some(Js.Global.setInterval(() => self.send(Tick), 1000)), */
   render: ({state, send}) => {
     let count = List.length(state.randomDictionary);
     let activeObj = List.nth(state.randomDictionary, state.activeIndex);

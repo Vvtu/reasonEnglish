@@ -759,4 +759,10 @@ exapmle ====>
     ();
   },
 
+  можно еще проще - без всяких обявлений
+  didMount: _self => {
+    let _ = Js.Global.setTimeout(() => Js.log("didMount 3000"), 3000);
+    ();
+  },
+
 -------
