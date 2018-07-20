@@ -42,6 +42,7 @@ let make = (~message, _children) => {
         } else {
           nI;
         };
+
       ReasonReact.Update({
         ...state,
         activeIndex: newIndex,
