@@ -30,6 +30,7 @@ It compiles to straightforward JS files, so you can open index.html directly fro
 	let myList = [1, 2, 3];
 	( in js it  [1,[2,[3]]]  - если очень много маленьких элементов в списке, то будет большой оверхед, в этом случае нужно испльзовать чистый массив  )
 
+Массивы и списки могут содержать елементы только одинакового типа !!!
 
 	Arrays are like lists, except they are:
 		mutable
@@ -691,3 +692,71 @@ self =>
     debuging
     testing - jest
 
+41.  Ocaml for Haskellers
+http://science.raphael.poss.name/haskell-for-ocaml-programmers.html
+
+Module system.
+OCaml does not have type classes but it does have modules
+and you can achieve fairly similar effects with them.
+(Another classic way of getting type class style effects is to use objects,
+but I’m not covering them today.)
+
+----
+http://science.raphael.poss.name/haskell-for-ocaml-programmers.html#type-classes-in-a-nutshell
+
+Type classes in a nutshell
+
+A common task in software engineering is to advertise a set of services using an abstract interface that hides the internal implementation. For this purpose, OCaml programmers can use objects or parametric modules.
+
+Since Haskell provides neither objects nor parametric modules, Haskell programmers rely on another mechanism entirely, called “type classes”. Type classes are nothing like modules but they can help for encapsulation given the right mindset.
+
+In a nutshell, Haskell type classes express a programming contract over a set of types (hence the name): that all types in the class, ie. its “instances”, are guaranteed to provide some other related functions. Moreover, a class can also provide a default implementation for some of its functions.
+
+The usual example is the Eq class, written as follows:
+
+class Eq a where
+    (==) :: a -> a -> Bool
+    (/=) :: a -> a -> Bool
+    (/=) x y = not (x == y)
+This definition expresses the following:
+“for all types a in the class Eq a, there exist two operators (==) and (/=)
+that accept two arguments of type a and returns a boolean value.
+Moreover, the class Eq provides a default implementation of (/=)
+that uses the actual implementation of (==) by each particular instance.”
+
+Once a class is specified, a programmer can do two things with it:
+define type instances of the class,
+or define functions over instances of the class.
+
+To define an instance of a class, you first define a type,
+ then you define how the type belongs to the class.
+  For example, one can first define a new type that implements Peano integers:
+
+data Peano = Zero | Succ Peano
+
+Then, express that Peano is a member of Eq:
+
+instance Eq Peano where
+    (==) Zero Zero = True
+    (==) (Succ x) (Succ x) = (x == x)
+    (==) _ _ = False
+Once this definition is visible,
+automatically any expression of the form “x /= y” becomes valid,
+thanks to the default implementation of (/=) already provided by Eq.
+
+
+41. window setTimeout ...
+https://bucklescript.github.io/docs/en/bind-to-global-values.html
+
+Now, here's how you bind to a JS value:
+
+[@bs.val] external setTimeout : (unit => unit, int) => float = "setTimeout";
+[@bs.val] external clearTimeout : float => unit = "clearTimeout";
+
+exapmle ====>
+  didMount: _self => {
+    let _ = setTimeout(() => Js.log("didMount 3000"), 3000); /* it works */
+    ();
+  },
+
+-------
