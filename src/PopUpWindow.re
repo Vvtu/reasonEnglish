@@ -6,8 +6,8 @@ external requestAnimationFrame : (unit => unit) => float =
 
 type state = {increaseOpacity: bool};
 type action =
-  | SetIncreaseOpacityFalse
-  | SetIncreaseOpacityTrue;
+  | SetIncreaseOpacityTrue
+  | ClosePopUp;
 let component = ReasonReact.reducerComponent("PopUpWindow");
 
 let make = (~handleClosePopupClicked, _children) => {
@@ -16,21 +16,30 @@ let make = (~handleClosePopupClicked, _children) => {
   reducer: (action, _state) =>
     switch (action) {
     | SetIncreaseOpacityTrue => ReasonReact.Update({increaseOpacity: true})
-    | SetIncreaseOpacityFalse => ReasonReact.Update({increaseOpacity: false})
+    | ClosePopUp =>
+      ReasonReact.UpdateWithSideEffects(
+        {increaseOpacity: false},
+        (
+          _ => {
+            let _ = Js.Global.setTimeout(handleClosePopupClicked, 500);
+            ();
+          }
+        ),
+      )
     },
   didMount: ({send}) => {
     let _ = requestAnimationFrame(_ => send(SetIncreaseOpacityTrue));
     ();
   },
-  render: ({state}) => {
+  render: ({state, send}) => {
     Js.log("PopUpWindow render");
     <div
       className=(
         state.increaseOpacity === true ?
           "popup__opacity_1" : "popup__opacity_0"
       )
-      onClick=handleClosePopupClicked
-      onDoubleClick=handleClosePopupClicked>
+      onClick=(_ => send(ClosePopUp))
+      onDoubleClick=(_ => send(ClosePopUp))>
       <div className="popup__full_screen_div_opacity" />
       <div className="popup__full_screen_div">
         <div className="popup__window">

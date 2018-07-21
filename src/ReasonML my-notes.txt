@@ -780,3 +780,7 @@ exapmle ====>
 
 43. Понадобилось сделать requestAnimationFrame - сделал
 [@bs.val] external requestAnimationFrame : (unit => unit) => float = "requestAnimationFrame";
+
+45. finish Animation of PopUpWindow - commit
+
+
