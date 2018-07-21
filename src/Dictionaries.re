@@ -53,7 +53,7 @@ let dictionary1: pairList = [
   },
   {
     rus: {js|React предоставляет декларативный API, так что вам не придется беспокоиться о том, что именно изменяется в каждом обновлении.|js},
-    eng: "React provides a declarative API so that you don’t have to worry about exactly what changes on every update.",
+    eng: "React provides a declarative API so that you don't have to worry about exactly what changes on every update.",
   },
   {
     rus: {js|Это делает написание приложений намного проще, но может быть не очевидно, как это реализуется в React.|js},
@@ -69,7 +69,7 @@ let dictionary1: pairList = [
   },
   {
     rus: {js|При следующем обновлении state или props эта функция render вернет другое дерево элементов React.|js},
-    eng: "On the next state or props update, that render() function will return a different tree of React elements.",
+    eng: "On the next state or props update, that render function will return a different tree of React elements.",
   },
   {
     rus: {js|React-у затем необходимо выяснить, как эффективно обновить пользовательский интерфейс, чтобы соотвествовать последниму дереву.|js},

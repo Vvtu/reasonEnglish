@@ -1,6 +1,6 @@
 [%bs.raw {|require('./App.css')|}];
-/*   [@bs.val] external setTimeout : (unit => unit, int) => float = "setTimeout"; */
-
+/* [@bs.val] external setTimeout : (unit => unit, int) => float = "setTimeout";
+   [@bs.val] external clearTimeout : float => unit = "clearTimeout"; */
 type state = {
   activeIndex: int,
   showEnglish: bool,
@@ -36,29 +36,20 @@ let make = (~message, _children) => {
         (
           self => {
             let ut = SpeechSynthesis.Utterance.create("");
-            Js.log("Speech start");
-            let _ =
+            let ti =
               Js.Global.setTimeout(
-                () => {
-                  SpeechSynthesis.Utterance.on_end(
-                    ut,
-                    _ => {
-                      Js.log("SpeechEnd");
-                      self.send(SpeechEnd);
-                    },
-                  );
-                  SpeechSynthesis.Utterance.set_text(ut, text);
-                  let _ =
-                    Js.Global.setTimeout(
-                      () => SpeechSynthesis.speak(ut),
-                      1000,
-                    );
-                  ();
-                },
-                0,
+                _ => self.send(SpeechEnd),
+                7000 /* in case of utterThis.onend failed */
               );
-
-            ();
+            SpeechSynthesis.Utterance.on_end(
+              ut,
+              _ => {
+                self.send(SpeechEnd);
+                Js.Global.clearTimeout(ti);
+              },
+            );
+            SpeechSynthesis.Utterance.set_text(ut, text);
+            SpeechSynthesis.speak(ut);
           }
         ),
       )
