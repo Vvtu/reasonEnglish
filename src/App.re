@@ -12,7 +12,9 @@ type action =
   | ChangeActiveIndex(int)
   | SwitchEnglishShowing
   | SpeakEnglish(string)
-  | SpeechEnd;
+  | SpeechEnd
+  | ShowAdvancedMenu
+  | HideAdvancedMenu;
 
 let component = ReasonReact.reducerComponent("App");
 
@@ -28,6 +30,10 @@ let make = (~message, _children) => {
   /* reducer must be pure */
   reducer: (action, state) =>
     switch (action) {
+    | ShowAdvancedMenu => ReasonReact.Update({...state, showAdvanced: true})
+
+    | HideAdvancedMenu => ReasonReact.Update({...state, showAdvanced: false})
+
     | SpeechEnd => ReasonReact.Update({...state, appcodeIsSpeaking: false})
 
     | SpeakEnglish(text) =>
@@ -112,7 +118,7 @@ let make = (~message, _children) => {
           <div onClick=(_ => send(ChangeActiveIndex(-1)))>
             <IconArrow color=Constants.whiteColor height=Constants.iconSize />
           </div>
-          <div>
+          <div onClick=(_ => send(ShowAdvancedMenu))>
             <IconAdvanced
               color=Constants.advancedColor
               height=Constants.iconSize
@@ -186,6 +192,13 @@ let make = (~message, _children) => {
             <div className="appcode__center" />
         )
       </div>
+      (
+        state.showAdvanced ?
+          <PopUpWindow
+            handleClosePopupClicked=(_ => send(HideAdvancedMenu))
+          /> :
+          <div />
+      )
     </div>;
   },
 };
