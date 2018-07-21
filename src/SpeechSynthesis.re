@@ -23,17 +23,21 @@ module Utterance = {
 };
 
 /* Methods on global `speechSynthesis` object */
-[@bs.scope "window.speechSynthesis"] [@bs.val] external getVoices : unit => array(Voice.t) = "";
+[@bs.scope "window.speechSynthesis"] [@bs.val]
+external getVoices : unit => array(Voice.t) = "";
 
-[@bs.scope "window.speechSynthesis"] [@bs.val] external speak : Utterance.t => unit = "";
+[@bs.scope "window.speechSynthesis"] [@bs.val]
+external speak : Utterance.t => unit = "";
 
 /* Setters */
 type t_globalSpeechSynthesis;
 
-[@bs.val] [@bs.scope "window"] external globalSpeechSynthesis : t_globalSpeechSynthesis =
-  "speechSynthesis";
+[@bs.val] [@bs.scope "window"]
+external globalSpeechSynthesis : t_globalSpeechSynthesis = "speechSynthesis";
 
-[@bs.set] external setOnVoicesChanged : (t_globalSpeechSynthesis, unit => unit) => unit =
+[@bs.set]
+external setOnVoicesChanged : (t_globalSpeechSynthesis, unit => unit) => unit =
   "onvoiceschanged";
 
-let onVoicesChanged = (cb: unit => unit) => setOnVoicesChanged(globalSpeechSynthesis, cb);
+let onVoicesChanged = (cb: unit => unit) =>
+  setOnVoicesChanged(globalSpeechSynthesis, cb);

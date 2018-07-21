@@ -1,5 +1,5 @@
-/* [%bs.raw {|require('./App.css')|}];
-   [@bs.val] external setTimeout : (unit => unit, int) => float = "setTimeout"; */
+[%bs.raw {|require('./App.css')|}];
+/*   [@bs.val] external setTimeout : (unit => unit, int) => float = "setTimeout"; */
 
 type state = {
   activeIndex: int,
@@ -35,9 +35,30 @@ let make = (~message, _children) => {
         {...state, appcodeIsSpeaking: true},
         (
           self => {
-            let ut = SpeechSynthesis.Utterance.create(text);
-            SpeechSynthesis.Utterance.on_end(ut, _ => self.send(SpeechEnd));
-            SpeechSynthesis.speak(ut);
+            let ut = SpeechSynthesis.Utterance.create("");
+            Js.log("Speech start");
+            let _ =
+              Js.Global.setTimeout(
+                () => {
+                  SpeechSynthesis.Utterance.on_end(
+                    ut,
+                    _ => {
+                      Js.log("SpeechEnd");
+                      self.send(SpeechEnd);
+                    },
+                  );
+                  SpeechSynthesis.Utterance.set_text(ut, text);
+                  let _ =
+                    Js.Global.setTimeout(
+                      () => SpeechSynthesis.speak(ut),
+                      1000,
+                    );
+                  ();
+                },
+                0,
+              );
+
+            ();
           }
         ),
       )
@@ -66,8 +87,16 @@ let make = (~message, _children) => {
         showEnglish: false,
       });
     },
-  didMount: _self => {
-    let _ = Js.Global.setTimeout(() => Js.log("didMount 3000"), 3000);
+  didMount: self => {
+    let _ =
+      Js.Global.setTimeout(
+        () =>
+          Js.log(
+            "didMount 3000 "
+            ++ string_of_int(List.length(self.state.randomDictionary)),
+          ),
+        3000,
+      );
     ();
   },
   render: ({state, send}) => {
@@ -149,7 +178,7 @@ let make = (~message, _children) => {
       </div>
       <div
         className="appcode__english"
-        onClick=(_ => send(SwitchEnglishShowing))>
+        onClick=(_ => send(SpeakEnglish(activeObj.eng)))>
         (
           state.showEnglish ?
             <div className="appcode__center">

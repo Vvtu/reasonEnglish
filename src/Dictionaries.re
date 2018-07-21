@@ -48,12 +48,32 @@ let oldDictionary1: pairList = [
 
 let dictionary1: pairList = [
   {
-    rus: {js|По умолчанию, при рекурсии на дочерних узлах DOM, React просто перебирает оба списка дочерних узлов одновременно и генерирует мутацию всякий раз, когда есть разница. По умолчанию, при рекурсии на дочерних узлах DOM, React просто перебирает оба списка дочерних узлов одновременно и генерирует мутацию всякий раз, когда есть разница.|js},
-    eng: "By default, when recursing on the children of a DOM node, React just iterates over both lists of children at the same time and generates a mutation whenever there’s a difference. By default, when recursing on the children of a DOM node, React just iterates over both lists of children at the same time and generates a mutation whenever there’s a difference.",
+    rus: {js|По умолчанию, при рекурсии на дочерних узлах DOM, React просто перебирает оба списка дочерних узлов одновременно и генерирует мутацию всякий раз, когда есть разница.|js},
+    eng: "By default, when recursing on the children of a DOM node, React just iterates over both lists of children at the same time and generates a mutation whenever there’s a difference.",
   },
   {
-    rus: {js|Когда у детей есть ключи, React использует ключ для сопоставления детей в исходном дереве с детьми в последующем дереве. Когда у детей есть ключи, React использует ключ для сопоставления детей в исходном дереве с детьми в последующем дереве.|js},
-    eng: "When children have keys, React uses the key to match children in the original tree with children in the subsequent tree.",
+    rus: {js|React предоставляет декларативный API, так что вам не придется беспокоиться о том, что именно изменяется в каждом обновлении.|js},
+    eng: "React provides a declarative API so that you don’t have to worry about exactly what changes on every update.",
+  },
+  {
+    rus: {js|Это делает написание приложений намного проще, но может быть не очевидно, как это реализуется в React.|js},
+    eng: "This makes writing applications a lot easier, but it might not be obvious how this is implemented within React.",
+  },
+  {
+    rus: {js|Эта статья объясняет выбор, который мы сделали в алгоритме react 'diffing', так что обновления компонентов предсказуемы, будучи достаточно быстрыми для высокопроизводительных приложений.|js},
+    eng: "This article explains the choices we made in React’s 'diffing' algorithm so that component updates are predictable while being fast enough for high-performance apps.",
+  },
+  {
+    rus: {js|Когда вы используете React, в каждый момент времени вы можете думать о функции render() как создающий дерево элементов React.|js},
+    eng: "When you use React, at a single point in time you can think of the render function as creating a tree of React elements.",
+  },
+  {
+    rus: {js|При следующем обновлении state или props эта функция render вернет другое дерево элементов React.|js},
+    eng: "On the next state or props update, that render() function will return a different tree of React elements.",
+  },
+  {
+    rus: {js|React-у затем необходимо выяснить, как эффективно обновить пользовательский интерфейс, чтобы соотвествовать последниму дереву.|js},
+    eng: "React then needs to figure out how to efficiently update the UI to match the most recent tree.",
   },
 ];
 
