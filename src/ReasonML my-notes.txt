@@ -1,3 +1,7 @@
+Checklist
+https://gist.github.com/askd/e7f1e313dfd751331bc54a8cea15b1b3
+
+
 1. Build a local version of OCaml compiler touch: s.h: Permission denied - Пришлось делать даунгрейд версии npm 4.0.0. - иначе не проходила установка
 
 2. Два варианта создания стартового проекта:

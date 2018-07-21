@@ -10,7 +10,9 @@ type state = {
 };
 type action =
   | ChangeActiveIndex(int)
-  | SwitchEnglishShowing;
+  | SwitchEnglishShowing
+  | SpeakEnglish(string)
+  | SpeechEnd;
 
 let component = ReasonReact.reducerComponent("App");
 
@@ -26,6 +28,20 @@ let make = (~message, _children) => {
   /* reducer must be pure */
   reducer: (action, state) =>
     switch (action) {
+    | SpeechEnd => ReasonReact.Update({...state, appcodeIsSpeaking: false})
+
+    | SpeakEnglish(text) =>
+      ReasonReact.UpdateWithSideEffects(
+        {...state, appcodeIsSpeaking: true},
+        (
+          self => {
+            let ut = SpeechSynthesis.Utterance.create(text);
+            SpeechSynthesis.Utterance.on_end(ut, _ => self.send(SpeechEnd));
+            SpeechSynthesis.speak(ut);
+          }
+        ),
+      )
+
     | SwitchEnglishShowing =>
       ReasonReact.Update({
         ...state,
