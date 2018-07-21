@@ -1,3 +1,9 @@
+[%bs.raw {|require('./PopUpWindow.css')|}];
+
+[@bs.val]
+external requestAnimationFrame : (unit => unit) => float =
+  "requestAnimationFrame";
+
 type state = {increaseOpacity: bool};
 type action =
   | SetIncreaseOpacityFalse
@@ -12,7 +18,10 @@ let make = (~handleClosePopupClicked, _children) => {
     | SetIncreaseOpacityTrue => ReasonReact.Update({increaseOpacity: true})
     | SetIncreaseOpacityFalse => ReasonReact.Update({increaseOpacity: false})
     },
-  didMount: self => self.send(SetIncreaseOpacityTrue),
+  didMount: ({send}) => {
+    let _ = requestAnimationFrame(_ => send(SetIncreaseOpacityTrue));
+    ();
+  },
   render: ({state}) => {
     Js.log("PopUpWindow render");
     <div
@@ -27,9 +36,9 @@ let make = (~handleClosePopupClicked, _children) => {
         <div className="popup__window">
           <div className="popup__cancel">
             <IconCancel color=Constants.whiteColor height="16" />
-            <div className="popup__list">
-              <div> (ReasonReact.string("activeObj.eng")) </div>
-            </div>
+          </div>
+          <div className="popup__list">
+            <div> (ReasonReact.string("activeObj.eng")) </div>
           </div>
         </div>
       </div>

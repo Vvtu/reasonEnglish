@@ -777,3 +777,6 @@ exapmle ====>
 <div style=(ReactDOMRe.Style.make(~color="#444444", ~fontSize="68px", ()))/>
 
       Так работать со стилями.
+
+43. Понадобилось сделать requestAnimationFrame - сделал
+[@bs.val] external requestAnimationFrame : (unit => unit) => float = "requestAnimationFrame";
