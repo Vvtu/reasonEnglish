@@ -713,14 +713,21 @@ self =>
   - Constantly referring to a value/type in a module can be tedious. We can open a module's definition and refer to its contents without prepending them with the module's name. Two ways:
 
       1. Local open.
-          let message =
-              School.(
-                switch (person1) {
-                  | Teacher => "Hello teacher!"
-                  | Director => "Hello director!"
-                }
-              );
+            let item = Dom.Storage.(localStorage |> getItem(activeObj.rus) );
+                что означает:
+            let item = Dom.Storage.localStorage |> Dom.Storage.getItem(activeObj.rus));
+
+
       2. Global open
+
+          let item = {
+            open Dom.Storage;
+            localStorage |> getItem(activeObj.rus);
+          }
+                что означает:
+          let item = Dom.Storage.localStorage |> Dom.Storage.getItem(activeObj.rus));
+
+
           open School;
           let anotherPerson: profession = Teacher;
           printProfession(anotherPerson);
