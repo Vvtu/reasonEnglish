@@ -2,11 +2,15 @@ Checklist
 https://gist.github.com/askd/e7f1e313dfd751331bc54a8cea15b1b3
 
 
-1. Build a local version of OCaml compiler touch: s.h: Permission denied - Пришлось делать даунгрейд версии npm 4.0.0. - иначе не проходила установка
+1. Build a local version of OCaml compiler touch: s.h:
+Permission denied - Пришлось делать даунгрейд версии npm 4.0.0. - иначе не проходила установка
+
+Главное - vscode-reasonml -  расширение для vscode
 
 2. Два варианта создания стартового проекта:
 
-	--- BuckleScript's bsb build system has an init command that generates a project template. The react theme offers a lightweight solution optimized for low learning overhead and ease of integration into an existing project.
+	--- BuckleScript's bsb build system has an init command that generates a project template.
+  The react theme offers a lightweight solution optimized for low learning overhead and ease of integration into an existing project.
 It compiles to straightforward JS files, so you can open index.html directly from the file system. No server needed.
 
 
@@ -201,6 +205,9 @@ var notMe = /* record */[
 
 15. Первым делом подключил css и сделал инклюды
 [%bs.raw {|require('./App.css')|}];  -- css взял из своего старого проекта без изменений
+css классы не проверяются на существование. Если какой-то класс отсуствует,
+то в reasonml не будет никаких предупреждений и сообщений. (Это плохо)
+
 
 include Reshuffle;
 include Dictionaries;   --  Вместе инклюдами подтянул типы данных
@@ -782,5 +789,118 @@ exapmle ====>
 [@bs.val] external requestAnimationFrame : (unit => unit) => float = "requestAnimationFrame";
 
 45. finish Animation of PopUpWindow - commit
+
+
+46. debuging
+chenglou commented on Sep 14, 2017
+I can promise that the quality of vscode-reasonml is solid! We use it daily for both OCaml and Reason syntax. I've submitted a PR to redirect folks to vscode-reasonml. It's a deprecation notice; if that's too much then I can change the wording to something else.
+
+Thanks for the consideration =)
+
+
+47. Обработка исключений. Exception.
+Исключения не укладываются в строгую правильную типизацию. Они нарушают её.
+Также страдает preformance!
+
+Исключения есть в языке ReasonMl. Пример:
+
+Exceptions are just a special kind of variant,
+"thrown" in exceptional cases (don't abuse them!). - не злоупотребляйте ими !
+
+let getItem = (index, theArr) =>
+  if (index < Array.length(theArr) && index >= 0) {
+    theArr[index]
+  } else {
+    raise(Not_found)
+  };
+let result =
+  try (getItem(5,[|1, 2, 3|])) {
+  | Not_found => -1000 /* Default value if getItem throws */
+  };
+Js.log(result);
+но стайлгайд (как и Гугловский стайлгайд) прямо рекомендует не использовать их.
+
+Newer standard library alternatives usually come with option-returning functions
+ rather than exception-throwing ones.
+ For example, List.find has the option-returning counterpart List.find_opt,
+which doesn't throw.
+
+Вариант без исключений с использованием optional
+
+let getItem = (index, theArr) =>
+  if (index < Array.length(theArr) && index >= 0) {
+    Some(theArr[index])
+  } else {
+    None
+  };
+let result = switch (getItem(2,[|1, 2, 3|]) ) {
+  | Some(res)=>res;
+  | None => -1000;
+};
+
+// В общем рекомендуется использовать optional, а не бросать исключение
+
+Хотя исключения еще широко испльуются в Ocaml - это дань традиции.
+
+Код для проверки того, что происходит при обращении к несуществующему элементу массива
+
+let a = [|1,2,3,4,5,6|];
+let index = Random.int(10);
+Js.log(index);
+let b = a[index];
+Js.log(b);
+
+Видно, что брасается исключение!!!
+
+48.  Functor Map.Make
+
+module StringMap =
+  Map.Make(
+    {
+      type t = string;
+      let compare = compare;
+    },
+  );
+
+type scores = StringMap.t(int);
+type scores2 = StringMap.t(string);
+
+let myMap0 = StringMap.empty;
+let myMap00 = StringMap.add("k2", "vvvv", myMap0);
+
+
+let myMap1 = StringMap.empty;
+let myMap2 = StringMap.add("k2", 100, myMap1);
+let myMap3 = StringMap.add("k003", 100, myMap2);
+let myMap4 = StringMap.add("k4", 100, myMap3);
+let myMap5 = StringMap.add("k0005", 100, myMap4);
+let myMap6 = StringMap.add("k6", 100, myMap5);
+Js.log(myMap1);
+Js.log(myMap2);
+Js.log(myMap3);
+Js.log(myMap4);
+Js.log(myMap5);
+Js.log(myMap6);
+
+Js.log(StringMap.mem("k0005", myMap6)); /* has it */
+
+Js.log(StringMap.equal( (_,_) => true, myMap6, myMap6));  /* strange equals */
+Js.log( myMap6 == myMap6); /* do not know if it runs throughout the trees */
+
+Js.log(StringMap.map(v => v + 1000, myMap6));
+Js.log(StringMap.mapi((key, v) => string_of_int(v) ++ " " ++ key, myMap6));
+
+let result =
+  try (StringMap.find("k6", myMap6)) {
+  | Not_found => (-1000)
+  };
+Js.log(result);
+
+/* New type scrore2 for string values (not for int values as before) */
+type scores2 = StringMap.t(string);
+let myMap0:scores2 = StringMap.empty;
+let myMap000 = StringMap.add("k2", "v100", myMap0);
+Js.log(myMap000);
+
 
 
