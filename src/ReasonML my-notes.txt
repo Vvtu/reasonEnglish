@@ -703,6 +703,41 @@ self =>
     debuging
     testing - jest
 
+40.1  Модуль   (Module) - мощное средство в ReasonMl
+  - Каждый файл  .re - это тоже модуль (автоматически)
+      The file React.re implicitly forms a module React,
+      which can be seen by other source files
+  - Модули могут быть вложенными (nested)
+  - Имя модуля должно начинаться с большой буквы.
+
+  - Constantly referring to a value/type in a module can be tedious. We can open a module's definition and refer to its contents without prepending them with the module's name. Two ways:
+
+      1. Local open.
+          let message =
+              School.(
+                switch (person1) {
+                  | Teacher => "Hello teacher!"
+                  | Director => "Hello director!"
+                }
+              );
+      2. Global open
+          open School;
+          let anotherPerson: profession = Teacher;
+          printProfession(anotherPerson);
+
+   - Module functor      заменитель type classes
+   ( такая функция, которая берет модуль,
+      навешивает на него некоторую функциональность,
+      и возвращает другой модуль)
+
+      module StringMap =
+        Map.Make(
+          {
+            type t = string;
+            let compare = compare;
+          },
+        );
+
 41.  Ocaml for Haskellers
 http://science.raphael.poss.name/haskell-for-ocaml-programmers.html
 
@@ -755,6 +790,7 @@ Once this definition is visible,
 automatically any expression of the form “x /= y” becomes valid,
 thanks to the default implementation of (/=) already provided by Eq.
 
+- Заменитель type classes  это
 
 41. window setTimeout ...
 https://bucklescript.github.io/docs/en/bind-to-global-values.html
@@ -862,13 +898,12 @@ module StringMap =
     },
   );
 
-type scores = StringMap.t(int);
-type scores2 = StringMap.t(string);
-
+/* use value of string type */
 let myMap0 = StringMap.empty;
 let myMap00 = StringMap.add("k2", "vvvv", myMap0);
+Js.log(myMap00);
 
-
+/* use value of int type */
 let myMap1 = StringMap.empty;
 let myMap2 = StringMap.add("k2", 100, myMap1);
 let myMap3 = StringMap.add("k003", 100, myMap2);
