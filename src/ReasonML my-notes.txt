@@ -951,6 +951,7 @@ Js.log(myMap000);
 
 
 50. Нарвался на ошибку
+
   Pitfall
 
   Following the above section's reasoning, this code should work:
@@ -962,6 +963,8 @@ Js.log(myMap000);
   ReasonReact.createDomElement("div", ~props={"className": bar}, children);
 
   https://stackoverflow.com/questions/51501359/handling-children-in-reasonml
+
+  https://reasonml.github.io/reason-react/docs/en/jsx#children
 
 
 51. Component as Prop

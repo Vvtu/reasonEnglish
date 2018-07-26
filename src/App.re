@@ -10,7 +10,7 @@ type state = {
 };
 type action =
   | ChangeActiveIndex(int)
-  | SwitchEnglishShowing
+  | SwitchEnglishShowing(string, int)
   | SpeakEnglish(string)
   | SpeechEnd
   | ShowAdvancedMenu
@@ -61,12 +61,14 @@ let make = (~message, _children) => {
         ),
       )
 
-    | SwitchEnglishShowing =>
+    | SwitchEnglishShowing(str, shown) =>
+      Dom.Storage.(localStorage |> setItem(str, string_of_int(shown + 1)));
+
       ReasonReact.Update({
         ...state,
         showEnglish: state.showEnglish != true,
         appcodeIsSpeaking: false,
-      })
+      });
     | ChangeActiveIndex(ince) =>
       let nI = state.activeIndex + ince;
       let newIndex =
@@ -86,7 +88,7 @@ let make = (~message, _children) => {
       });
 
     | Restart =>
-      Js.log("Restart 2");
+      Js.log("Restart");
       let item = Dom.Storage.(localStorage |> getItem(Constants.dict));
       let dict =
         switch (item) {
@@ -105,7 +107,7 @@ let make = (~message, _children) => {
   render: ({state, send}) => {
     let count = List.length(state.randomDictionary);
     if (count === 0) {
-      <div />;
+      <div> (ReasonReact.string("No records found!")) </div>;
     } else {
       let activeObj = List.nth(state.randomDictionary, state.activeIndex);
       let item = Dom.Storage.(localStorage |> getItem(activeObj.rus));
@@ -137,7 +139,9 @@ let make = (~message, _children) => {
               state.showEnglish ?
                 <div
                   className="appcode__icon_rotate_back"
-                  onClick=(_ => send(SwitchEnglishShowing))>
+                  onClick=(
+                    _ => send(SwitchEnglishShowing(activeObj.rus, shown))
+                  )>
                   <IconArrow
                     color=Constants.whiteColor
                     height=Constants.iconSize
@@ -145,7 +149,9 @@ let make = (~message, _children) => {
                 </div> :
                 <div
                   className="appcode__icon_rotate"
-                  onClick=(_ => send(SwitchEnglishShowing))>
+                  onClick=(
+                    _ => send(SwitchEnglishShowing(activeObj.rus, shown))
+                  )>
                   <IconArrow
                     color=Constants.whiteColor
                     height=Constants.iconSize
@@ -178,7 +184,7 @@ let make = (~message, _children) => {
         </div>
         <div
           className="appcode__russian"
-          onClick=(_ => send(SwitchEnglishShowing))>
+          onClick=(_ => send(SwitchEnglishShowing(activeObj.rus, shown)))>
           <div className="appcode__center" key=activeObj.eng>
             <div className="appcode__scroll">
               <div> (ReasonReact.string(activeObj.rus)) </div>
