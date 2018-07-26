@@ -62,11 +62,13 @@ let make = (~message, _children) => {
       )
 
     | SwitchEnglishShowing(str, shown) =>
-      Dom.Storage.(localStorage |> setItem(str, string_of_int(shown + 1)));
-
+      let newShowEnglish = state.showEnglish != true;
+      if (newShowEnglish) {
+        Dom.Storage.(localStorage |> setItem(str, string_of_int(shown + 1)));
+      };
       ReasonReact.Update({
         ...state,
-        showEnglish: state.showEnglish != true,
+        showEnglish: newShowEnglish,
         appcodeIsSpeaking: false,
       });
     | ChangeActiveIndex(ince) =>
