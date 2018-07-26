@@ -948,3 +948,37 @@ Js.log(myMap000);
 
 49.  Similarly, to pre-process a value before sending it back to the component's owner:
 
+
+
+50. Нарвался на ошибку
+  Pitfall
+
+  Following the above section's reasoning, this code should work:
+
+  let children = [| <div /> |];
+  <div> ...children </div>; /* <--- this line */
+  It does work for custom components (upper-case), But it doesn't for DOM components (lower-cased). This is due to some bindings-related constraints; we'll make this better in the future! In the meantime, for passing to DOM element, e.g. <div className=bar> ...children </div> use the following:
+
+  ReasonReact.createDomElement("div", ~props={"className": bar}, children);
+
+  https://stackoverflow.com/questions/51501359/handling-children-in-reasonml
+
+
+51. Component as Prop
+
+In ReactJS, <Menu banner=MyBanner /> is easy;
+in ReasonReact, we can't trivially pass the whole component module
+(it wouldn't even be syntactically valid.
+A module resides in another layer of language. Explanations).
+Solution:
+
+let bannerCallback = (prop1, prop2) => <MyBanner message=prop1 count=prop2 />;
+
+<Menu bannerFunc=bannerCallback />;
+This also has some added advantages:
+
+The owner is the one controlling how the component renders,
+not some opaque logic inside MyBanner.
+Circumvents the tendency of needing a props spread in MyBanner's render,
+since passing a component to a child
+and the child using prop spread on said component usually go together.

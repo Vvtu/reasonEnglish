@@ -5,6 +5,7 @@ let whiteColor = "#ffffff";
 let advancedColor = "#522719";
 let baseTextColor = "#ffffff";
 let englishTextColor = "#94a11f";
+let redColor = "red";
 
 /*
  --danger-color: #ff4000;

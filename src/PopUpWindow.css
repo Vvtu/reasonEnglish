@@ -78,3 +78,7 @@
 	overflow-y: scroll;
 	/* -webkit-overflow-scrolling: touch; */
 }
+
+.popup__width35 {
+	width: 35px;
+}
