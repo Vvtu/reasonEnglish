@@ -44,7 +44,10 @@ let make = (~handleClosePopupClicked, ~handleRestart, _children) => {
       <div className="popup__full_screen_div">
         <div className="popup__window">
           <div className="popup__cancel">
-            <IconCancel color=Constants.whiteColor height="16" />
+            <IconCancel
+              color=Constants.whiteColor
+              height=Constants.iconSmallSize
+            />
           </div>
           <div className="popup__list">
             <PopUpMenuItem label="Advanced" onClick=(_ => send(ClosePopUp))>
@@ -59,7 +62,10 @@ let make = (~handleClosePopupClicked, ~handleRestart, _children) => {
                   send(ClosePopUp);
                 }
               )>
-              <ClearAllInfo color=Constants.redColor height="24" />
+              <ClearAllInfo
+                color=Constants.redColor
+                height=Constants.iconSize
+              />
             </PopUpMenuItem>
             <PopUpMenuItem
               label="dict #1"
