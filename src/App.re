@@ -87,9 +87,18 @@ let make = (~message, _children) => {
 
     | Restart =>
       Js.log("Restart 2");
+      let item = Dom.Storage.(localStorage |> getItem(Constants.dict));
+      let dict =
+        switch (item) {
+        | Some(_) => Dictionaries.dictionary2
+        | None => Dictionaries.dictionary1
+        };
       ReasonReact.Update({
         ...state,
-        randomDictionary: Reshuffle.reshuffle(Dictionaries.dictionary1),
+        activeIndex: 0,
+        appcodeIsSpeaking: false,
+        showEnglish: false,
+        randomDictionary: Reshuffle.reshuffle(dict),
       });
     },
   didMount: self => self.send(Restart),
@@ -100,8 +109,6 @@ let make = (~message, _children) => {
     } else {
       let activeObj = List.nth(state.randomDictionary, state.activeIndex);
       let item = Dom.Storage.(localStorage |> getItem(activeObj.rus));
-      /* let saveTokenToStorage = value =>
-         Dom.Storage.(localStorage |> setItem("jwt", value)); */
 
       let shown =
         switch (item) {
@@ -201,6 +208,7 @@ let make = (~message, _children) => {
           state.showAdvanced ?
             <PopUpWindow
               handleClosePopupClicked=(_ => send(HideAdvancedMenu))
+              handleRestart=(_ => send(Restart))
             /> :
             <div />
         )

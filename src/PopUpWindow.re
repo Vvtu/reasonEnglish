@@ -10,7 +10,7 @@ type action =
   | ClosePopUp;
 let component = ReasonReact.reducerComponent("PopUpWindow");
 
-let make = (~handleClosePopupClicked, _children) => {
+let make = (~handleClosePopupClicked, ~handleRestart, _children) => {
   ...component,
   initialState: () => {increaseOpacity: false},
   reducer: (action, _state) =>
@@ -51,15 +51,42 @@ let make = (~handleClosePopupClicked, _children) => {
               <div />
             </PopUpMenuItem>
             <PopUpMenuItem
-              label="reset all info" onClick=(_ => send(ClosePopUp))>
+              label="reset all info"
+              onClick=(
+                _ => {
+                  let _ = Dom.Storage.(clear(localStorage));
+                  handleRestart();
+                  send(ClosePopUp);
+                }
+              )>
               <ClearAllInfo color=Constants.redColor height="24" />
             </PopUpMenuItem>
-            <PopUpMenuItem label="dict #1" onClick=(_ => send(ClosePopUp))>
+            <PopUpMenuItem
+              label="dict #1"
+              onClick=(
+                _ => {
+                  let _ =
+                    Dom.Storage.(localStorage |> removeItem(Constants.dict));
+                  handleRestart();
+                  send(ClosePopUp);
+                }
+              )>
               <div className="appcode__eng_text_color">
                 (ReasonReact.string("D1"))
               </div>
             </PopUpMenuItem>
-            <PopUpMenuItem label="dict #2" onClick=(_ => send(ClosePopUp))>
+            <PopUpMenuItem
+              label="dict #2"
+              onClick=(
+                _ => {
+                  let _ =
+                    Dom.Storage.(
+                      localStorage |> setItem(Constants.dict, "+")
+                    );
+                  handleRestart();
+                  send(ClosePopUp);
+                }
+              )>
               <div className="appcode__eng_text_color">
                 (ReasonReact.string("D2"))
               </div>
