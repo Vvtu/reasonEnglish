@@ -982,3 +982,6 @@ not some opaque logic inside MyBanner.
 Circumvents the tendency of needing a props spread in MyBanner's render,
 since passing a component to a child
 and the child using prop spread on said component usually go together.
+
+
+52. Очень удобно с пропсами - если пропустил пропс, то компилятор не даст скомпилировать код
