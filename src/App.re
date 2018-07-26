@@ -60,7 +60,6 @@ let make = (~message, _children) => {
           }
         ),
       )
-
     | SwitchEnglishShowing(str, shown) =>
       let newShowEnglish = state.showEnglish != true;
       if (newShowEnglish) {
