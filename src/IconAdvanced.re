@@ -2,7 +2,9 @@ let component = ReasonReact.statelessComponent("IconAdvanced");
 
 let make = (~color: string, ~height: string, _children) => {
   ...component,
-  render: _self =>
+  shouldUpdate: _ => false,
+  render: _self => {
+    Js.log("IconAdvanced render");
     <svg
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
@@ -15,5 +17,6 @@ let make = (~color: string, ~height: string, _children) => {
           id="settings"
         />
       </g>
-    </svg>,
+    </svg>;
+  },
 };

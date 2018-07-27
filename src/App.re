@@ -154,7 +154,7 @@ let make = (~message, _children) => {
                     _ => send(SwitchEnglishShowing(activeObj.rus, shown))
                   )>
                   <IconArrow
-                    color=Constants.whiteColor
+                    color=Constants.englishTextColor
                     height=Constants.iconSize
                   />
                 </div>

@@ -515,12 +515,32 @@ Rust: - Can't believe I forgot to include Rust... thanks
 29.4. LifeCycle hooks - практически совпадают
    (за исключением componentWillUnmount - нужно испльзовать componentDidUnmount)
 
-29.5. Есть statelessComponent и (statefullСomponent - заменент на reducerComponent) - в нем вы должны определить
-    type action =
-      | GoPrevious
-      | GoNext
-      | ShowEnglish
-      | HideEnglish;
+   https://github.com/reasonml/reason-react/blob/master/docs/lifecycles.md
+
+  Много ньюансов.
+
+  Для всех иконок в моем приложени пришлось сделать
+      shouldUpdate: _ => false,
+      чтобы они не перерендеривались каждый раз.
+
+
+29.5. Есть statelessComponent и
+      (statefullСomponent - заменент на reducerComponent) - в нем вы должны определить
+            type action =
+              | GoPrevious
+              | GoNext
+              | ShowEnglish
+              | HideEnglish;
+
+    есть еще  statelessComponentWithRetainedProps  для доступа к  (prevProps и nextProps)
+
+    Access next or previous props: retainedProps
+
+One pattern that's sometimes used in ReactJS is accessing a lifecyle event's prevProps
+(componentDidUpdate), nextProps (componentWillUpdate), and so on.
+ReasonReact doesn't automatically keep copies of previous props for you.
+We provide the retainedProps API for this purpose: https://github.com/reasonml/reason-react/blob/master/docs/lifecycles.md#access-next-or-previous-props-retainedprops
+
 
 30. ReasonReact - не использует и не нуждается в Джаваскипт классах.
 component - это просто рекорд, чьи поля вы можете перезаписать (с помощью функции make).
