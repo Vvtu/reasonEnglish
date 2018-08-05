@@ -388,6 +388,25 @@ Until ReasonML’s core library supports it, you can use BuckleScript’s Js.Res
 Полная гарантия покрытия типами в отличии от flow + быстрый код после компиляции
 Джаваскрипт не полностью функциональный язык, purescript - да
 
+
+20.2  Be careful not to confuse a constructor carrying 2 arguments with a constructor
+ carrying a single tuple argument:
+
+type account =
+  | Facebook(string, int) /* 2 arguments */;
+type account2 =
+  | Instagram((string, int)) /* 1 argument - happens to be a 2-tuple */;
+Variants Must Have constructors
+
+If you come from an untyped language, you might be tempted to try type foo = int | string.
+This isn't possible in Reason;
+you'd have to give each branch a constructor: type foo = Int(int) | String(string).
+Though usually, needing this might be an anti-pattern.
+The Design Decisions section below explains more.
+
+
+
+
 21.1 Refmt  like
 
 refmt ("Reason format") is the binary that powers our editors' auto-formatting feature.
