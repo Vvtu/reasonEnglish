@@ -137,6 +137,28 @@ and IO is performed by ordinary functions.
 11. Почему не TypeScript ? Я думаю - иммутаельность !
 Чанг Лу -  потому, что производительность (execution), package managment, build system, комьюнити, ...
 https://www.youtube.com/watch?time_continue=13&v=ADMeIhjaKnQ на 26-ой минуте
+Успех Реакта  - это скорость его работы. Джордан сделал 10 итераций Реакта,
+и только потом сказал,  что Реакт готов к опен сурсу
+
++   https://medium.com/reasonconf/reasonml-conference-2018-8283b1e4c437
+
+11.1  Если это первый ваш FP язык, то будут проблемы с терминологией с
+
+11.2  Jeason -  The crappy js-to-reason converter anyone can contribute to!
+https://github.com/chenglou/jeason
+
+11.3 https://www.youtube.com/watch?v=4xr0WE49eik   8 минуа
+ Неожиданные (странные) вещи в реазон
+    - JS.log() ,
+     - LIst    let a = [1,2,3,4,5,6,7,8];
+var a = [ 1, [ 2, [ 3, [ 4, [ 5, [ 6, [ 7, [ 8, 0 ] ] ] ] ] ] ] ];
+--------------------------------------
+let a = [1, 2, 3]; /* ok */
+let b = [0, ...a]; /* ok */
+let c = [...a, 4]; /* syntax error */
+let d = [10,11,12, ...a]; /* ok */
+
+
 
 12.
 “Most people make the mistake of thinking design is what it looks like.
