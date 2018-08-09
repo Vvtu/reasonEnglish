@@ -135,6 +135,8 @@ and IO is performed by ordinary functions.
 Таким образом работа со стейтом - очень быстрая.
 
 11. Почему не TypeScript ? Я думаю - иммутаельность !
+Чанг Лу -  потому, что производительность (execution), package managment, build system, комьюнити, ...
+https://www.youtube.com/watch?time_continue=13&v=ADMeIhjaKnQ на 26-ой минуте
 
 12.
 “Most people make the mistake of thinking design is what it looks like.
