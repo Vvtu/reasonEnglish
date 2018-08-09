@@ -1,0 +1,24 @@
+1. История: ReasonMl, BuckleScript, ReasonReact.
+
+ 2016 - год   Bloomberg L.P. — один из двух ведущих поставщиков финансовой информации
+ для профессиональных участников финансовых рынков - создал (и сделал open source)
+ BuckleScript - компилятор Ocaml -> Js   (Пряжка, скоба, застежка)
+
+ (На сайте http://ocaml.org первое что мы видим -
+ OCaml is an industrial strength programming language supporting functional,
+ imperative and object-oriented styles)
+
+ http://Haskell.org - An advanced, purely functional programming language
+
+Ocaml не использует indention
+
+
+ReasonML - это старый добрый OCaml, но с похожим на JS синтаксисом.
+В
+
+
+
+
+
+
+2. 100% иммутабельность + статическая типизация
