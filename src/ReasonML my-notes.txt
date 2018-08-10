@@ -158,7 +158,10 @@ let b = [0, ...a]; /* ok */
 let c = [...a, 4]; /* syntax error */
 let d = [10,11,12, ...a]; /* ok */
 
-
+11.4  НАшел в проекте PPRB страховки место, где в редьюсере модифицируют payload
+src/components/common/Documents/reducer.jsx c. 34-37
+изменил - а тесты проходят без проблем
+обязательно нужна immutability !
 
 12.
 “Most people make the mistake of thinking design is what it looks like.
