@@ -1,8 +1,6 @@
-ReasonMl, ReasonReact - первый опыт использования в реальном проекте. Плюсы и минусы.
-Куда движется ReactJs?
-Почему immutability, алгебраические типы данных, ?
 
-1. История: Ocaml  =>BuckleScript=>  (ReasonMl, ReasonReact).
+
+
 
  2016 - год   Bloomberg L.P. — один из двух ведущих поставщиков финансовой информации
  для профессиональных участников финансовых рынков - создал (и сделал open source)
@@ -13,10 +11,12 @@ ReasonMl, ReasonReact - первый опыт использования в ре
  imperative and object-oriented styles
 
  а js - это просто ассеблер, со всеми признаками ассеблера
- Это видно из  http://Haskell.org - An advanced, purely functional programming language
+ Это видно из  https://wiki.haskell.org/The_JavaScript_Problem - An advanced, purely functional programming language
+ Types become not only a form of guarantee, but a language for expressing the construction of programs.
  где описаны недостатки js
 
  Ocaml  отметился так же тем, что на нем были написаны первые версии реакта. Это сделал Джордан и ...
+Ссылка на подкаст про Ocaml
 
 Ocaml - похож на хаскель, но более неказистый, чем хаскель
 Но не ленивый. Время ленивости еще не пришло.
@@ -29,7 +29,35 @@ Ocaml не использует indention.
 ReasonML - это старый добрый OCaml, но с похожим на JS синтаксисом.
 Примеры кода Ocaml и js  (дальше - будем рассмривать подробно)
 
+Ocaml - неказистый хаскель.
 
+let a = [1, 2, 3, 4, 5, 6, 7, 8, 9];   -- ReasonML
+let a = [1; 2; 3; 4; 5; 6; 7; 8; 9]   -- Ocaml (еще встречаются двойные семиколоны, не разобрался)
+
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9]   -- Haskell
+
+
+очень хороший пример на try - https://reasonml.github.io/en/try  my-notes.txttype tree = Leaf | Node(int, tree, tree);
+
+type tree = Leaf | Node(int, tree, tree);
+
+let myTree =
+  Node(
+    1,                                                                          1
+    Node(2, Node(4, Leaf, Leaf), Node(6, Leaf, Leaf)),                    2           3
+    Node(3, Node(5, Leaf, Leaf), Node(7, Leaf, Leaf))                   4   6       5   7
+  );
+
+let rec sum = (item) => {
+  switch (item) {
+  | Leaf => 0
+  | Node(value, left, right) => value + sum(left) + sum(right);
+  }
+};
+
+
+
+Js.log(sum(myTree));
 
 2. 100% иммутабельность + статическая типизация + алгебраические типы данных
 
@@ -1071,7 +1099,11 @@ Js.log(myMap000);
 
   let children = [| <div /> |];
   <div> ...children </div>; /* <--- this line */
-  It does work for custom components (upper-case), But it doesn't for DOM components (lower-cased). This is due to some bindings-related constraints; we'll make this better in the future! In the meantime, for passing to DOM element, e.g. <div className=bar> ...children </div> use the following:
+  It does work for custom components (upper-case), But it doesn't for DOM components (lower-cased).
+  This is due to some bindings-related constraints;
+   we'll make this better in the future!
+   In the meantime, for passing to DOM element, e.g.
+    <div className=bar> ...children </div> use the following:
 
   ReasonReact.createDomElement("div", ~props={"className": bar}, children);
 
@@ -1101,3 +1133,35 @@ and the child using prop spread on said component usually go together.
 
 
 52. Очень удобно с пропсами - если пропустил пропс, то компилятор не даст скомпилировать код
+
+
+53.
+
+4
+down vote
+Similar but more detailed answer from Herbert Schildt C++ book:-
+
+Early binding refers to events that occur at compile time.
+In essence, early binding occurs when all information needed to call
+a function is known at compile time.
+ (Put differently, early binding means that an object and a function call are bound during compilation.)
+ Examples of early binding include normal function calls (including standard library functions),
+ overloaded function calls, and overloaded operators.
+ The main advantage to early binding is efficiency.
+ Because all information necessary to call a function is determined at compile time,
+ these types of function calls are very fast.
+
+The opposite of early binding is late binding.
+ Late binding refers to function calls that are not resolved until run time.
+  Virtual functions are used to achieve late binding.
+  As you know, when access is via a base pointer or reference,
+  the virtual function actually called is determined by the type of object pointed to by the pointer.
+   Because in most cases this cannot be determined at compile time,
+   the object and the function are not linked until run time.
+   The main advantage to late binding is flexibility.
+    Unlike early binding, late binding allows you to create programs
+    that can respond to events occurring while the program executes
+     without having to create a large amount of "contingency code."
+     Keep in mind that because a function call is not resolved until run time,
+     late binding can make for somewhat slower execution times.
+     However today, fast computers have significantly reduced the execution times related to late binding.
