@@ -90,6 +90,7 @@ let make = (~message, _children) => {
 
     | Restart =>
       Js.log("Restart");
+      Random.self_init();
       let item = Dom.Storage.(localStorage |> getItem(Constants.dict));
       let dict =
         switch (item) {
