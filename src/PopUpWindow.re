@@ -1,7 +1,7 @@
 [%bs.raw {|require('./PopUpWindow.css')|}];
 
 [@bs.val]
-external requestAnimationFrame : (unit => unit) => float =
+external requestAnimationFrame: (unit => unit) => float =
   "requestAnimationFrame";
 
 type state = {increaseOpacity: bool};
