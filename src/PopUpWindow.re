@@ -44,7 +44,7 @@ let make = (~handleClosePopupClicked, ~handleRestart, _children) => {
       <div className="popup__full_screen_div">
         <div className="popup__window">
           <div className="popup__cancel">
-            <IconCancel
+            <Icon.Cancel
               color=Constants.whiteColor
               height=Constants.iconSmallSize
             />
@@ -62,7 +62,7 @@ let make = (~handleClosePopupClicked, ~handleRestart, _children) => {
                   send(ClosePopUp);
                 }
               )>
-              <ClearAllInfo
+              <Icon.ClearAllInfo
                 color=Constants.redColor
                 height=Constants.iconSize
               />
