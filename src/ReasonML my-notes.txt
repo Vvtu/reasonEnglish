@@ -1165,3 +1165,10 @@ The opposite of early binding is late binding.
      Keep in mind that because a function call is not resolved until run time,
      late binding can make for somewhat slower execution times.
      However today, fast computers have significantly reduced the execution times related to late binding.
+
+
+
+
+     https://medium.com/reasonconf/reasonml-conference-2018-8283b1e4c437 Translating JS Idioms  !!!
+     !!!
+
