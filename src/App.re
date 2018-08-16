@@ -126,13 +126,13 @@ let make = (~message, _children) => {
         <div className="appcode__info">
           <div className="appcode__info2">
             <div onClick=(_ => send(ChangeActiveIndex(-1)))>
-              <IconArrow
+              <Icon.Arrow
                 color=Constants.whiteColor
                 height=Constants.iconSize
               />
             </div>
             <div onClick=(_ => send(ShowAdvancedMenu))>
-              <IconAdvanced
+              <Icon.Advanced
                 color=Constants.advancedColor
                 height=Constants.iconSize
               />
@@ -144,7 +144,7 @@ let make = (~message, _children) => {
                   onClick=(
                     _ => send(SwitchEnglishShowing(activeObj.rus, shown))
                   )>
-                  <IconArrow
+                  <Icon.Arrow
                     color=Constants.whiteColor
                     height=Constants.iconSize
                   />
@@ -154,7 +154,7 @@ let make = (~message, _children) => {
                   onClick=(
                     _ => send(SwitchEnglishShowing(activeObj.rus, shown))
                   )>
-                  <IconArrow
+                  <Icon.Arrow
                     color=Constants.englishTextColor
                     height=Constants.iconSize
                   />
@@ -177,7 +177,7 @@ let make = (~message, _children) => {
             <div
               className="appcode__icon_invert__horizontal"
               onClick=(_ => send(ChangeActiveIndex(1)))>
-              <IconArrow
+              <Icon.Arrow
                 color=Constants.whiteColor
                 height=Constants.iconSize
               />
