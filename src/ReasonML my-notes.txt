@@ -1175,3 +1175,5 @@ The opposite of early binding is late binding.
 
 Instructions on Getting Started with Windows #195
 https://github.com/reasonml/reasonml.github.io/issues/195
+OCaml and Reason IDE - for WSL
+
