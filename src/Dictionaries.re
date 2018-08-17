@@ -5,46 +5,6 @@ type wordPair = {
 
 type pairList = list(wordPair);
 
-let dictionary2: pairList = [
-  {rus: {js|тушить огонь|js}, eng: "to put out a fire"},
-  {rus: {js|бросать мусор|js}, eng: "to drop a litter"},
-  {rus: {js|овощи|js}, eng: "vegetables"},
-  {rus: {js|сладости|js}, eng: "sweets"},
-  {rus: {js|в хорошей форме|js}, eng: "fit"},
-  {rus: {js|сильный|js}, eng: "strong"},
-  {rus: {js|упражнение|js}, eng: "exercise"},
-  {rus: {js|богатый|js}, eng: "rich"},
-  {rus: {js|бедный|js}, eng: "poor"},
-  {rus: {js|здоровый|js}, eng: "healthy"},
-];
-
-let oldDictionary1: pairList = [
-  {
-    rus: {js|Ты меня понимаешь?|js},
-    eng: "Do you understand me?",
-  },
-  {rus: {js|Дай мне ручку.|js}, eng: "Give me a pen."},
-  {rus: {js|Дай мне ручку.|js}, eng: "Give me a pen."},
-  {
-    rus: {js|Встреть меня в кинотеатре|js},
-    eng: "Meet me in the theatre.",
-  },
-  {rus: {js|начинать|js}, eng: "begin, began, begun"},
-  {rus: {js|ломать|js}, eng: "break, broke, broken"},
-  {rus: {js|приносить|js}, eng: "bring, brought, brought"},
-  {rus: {js|покупать|js}, eng: "buy, bought, bought"},
-  {rus: {js|выбирать|js}, eng: "choose, chose, chosen"},
-  {
-    rus: {js|приходить, приезжать|js},
-    eng: "come, came, come",
-  },
-  {rus: {js|резать|js}, eng: "cut, cut, cut"},
-  {rus: {js|делать|js}, eng: "do, did, done"},
-  {rus: {js|рисовать|js}, eng: "draw, drew, drawn"},
-  {rus: {js|пить|js}, eng: "drink, drank, drunk"},
-  {rus: {js|есть, кушать|js}, eng: "eat, ate, eaten"},
-  {rus: {js|падать|js}, eng: "fall, fell, fallen"},
-];
 
 let dictionary1: pairList = [
   {
@@ -76,6 +36,49 @@ let dictionary1: pairList = [
     eng: "React then needs to figure out how to efficiently update the UI to match the most recent tree.",
   },
 ];
+let oldDictionary1: pairList = [
+  {
+    rus: {js|Ты меня понимаешь?|js},
+    eng: "Do you understand me?",
+  },
+  {rus: {js|Дай мне ручку.|js}, eng: "Give me a pen."},
+  {rus: {js|Дай мне ручку.|js}, eng: "Give me a pen."},
+  {
+    rus: {js|Встреть меня в кинотеатре|js},
+    eng: "Meet me in the theatre.",
+  },
+  {rus: {js|начинать|js}, eng: "begin, began, begun"},
+  {rus: {js|ломать|js}, eng: "break, broke, broken"},
+  {rus: {js|приносить|js}, eng: "bring, brought, brought"},
+  {rus: {js|покупать|js}, eng: "buy, bought, bought"},
+  {rus: {js|выбирать|js}, eng: "choose, chose, chosen"},
+  {
+    rus: {js|приходить, приезжать|js},
+    eng: "come, came, come",
+  },
+  {rus: {js|резать|js}, eng: "cut, cut, cut"},
+  {rus: {js|делать|js}, eng: "do, did, done"},
+  {rus: {js|рисовать|js}, eng: "draw, drew, drawn"},
+  {rus: {js|пить|js}, eng: "drink, drank, drunk"},
+  {rus: {js|есть, кушать|js}, eng: "eat, ate, eaten"},
+  {rus: {js|падать|js}, eng: "fall, fell, fallen"},
+];
+
+
+
+let dictionary2: pairList = [
+  {rus: {js|тушить огонь|js}, eng: "to put out a fire"},
+  {rus: {js|бросать мусор|js}, eng: "to drop a litter"},
+  {rus: {js|овощи|js}, eng: "vegetables"},
+  {rus: {js|сладости|js}, eng: "sweets"},
+  {rus: {js|в хорошей форме|js}, eng: "fit"},
+  {rus: {js|сильный|js}, eng: "strong"},
+  {rus: {js|упражнение|js}, eng: "exercise"},
+  {rus: {js|богатый|js}, eng: "rich"},
+  {rus: {js|бедный|js}, eng: "poor"},
+  {rus: {js|здоровый|js}, eng: "healthy"},
+];
+
 
 let oldDictionary2: pairList = [
   {
