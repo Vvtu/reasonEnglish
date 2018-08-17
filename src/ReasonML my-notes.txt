@@ -1172,3 +1172,6 @@ The opposite of early binding is late binding.
      https://medium.com/reasonconf/reasonml-conference-2018-8283b1e4c437 Translating JS Idioms  !!!
      !!!
 
+
+Instructions on Getting Started with Windows #195
+https://github.com/reasonml/reasonml.github.io/issues/195
