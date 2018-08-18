@@ -1,8 +1,7 @@
+[%bs.raw {|require('./PopUpWindow.css')|}];
+
 module PopUpMenuItem = {
-  [%bs.raw {|require('./PopUpWindow.css')|}];
-
   let component = ReasonReact.statelessComponent("PopUpMenuItem");
-
   let make = (~label, ~onClick, children) => {
     ...component,
     render: _self =>
@@ -13,8 +12,6 @@ module PopUpMenuItem = {
       </div>,
   };
 };
-
-[%bs.raw {|require('./PopUpWindow.css')|}];
 
 [@bs.val]
 external requestAnimationFrame : (unit => unit) => float =
