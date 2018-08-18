@@ -1181,6 +1181,10 @@ OCaml and Reason IDE - for WSL
 
 // ----------------------------------------
 
+Brendan Eich - создатель js  (месть геев)
+
+
+
 He said JavaScript could never target WASM  because it's weakly typed but that's not really true.
 There won't be a JS to WASM compiler simply because it'd be slower than just plain old JS due to the extra layer of abstraction.
 
