@@ -1177,3 +1177,18 @@ Instructions on Getting Started with Windows #195
 https://github.com/reasonml/reasonml.github.io/issues/195
 OCaml and Reason IDE - for WSL
 
+
+
+// ----------------------------------------
+
+He said JavaScript could never target WASM  because it's weakly typed but that's not really true.
+There won't be a JS to WASM compiler simply because it'd be slower than just plain old JS due to the extra layer of abstraction.
+
+opitonal channing operator in js:   var y = foo ?. bar ?. y;
+
+JS is a languge to comunicatre with each other      lingua franca
+
+Ли́нгва фра́нка (итал. lingua franca — «франкский язык») — язык или диалект,
+ систематически используемый для коммуникации между людьми,
+ родными языками которых являются другие языки.
+
