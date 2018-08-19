@@ -1,5 +1,3 @@
-[%bs.raw {|require('./PopUpWindow.css')|}];
-
 module PopUpMenuItem = {
   let component = ReasonReact.statelessComponent("PopUpMenuItem");
   let make = (~label, ~onClick, children) => {
