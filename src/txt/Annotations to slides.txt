@@ -15,5 +15,47 @@
 Целью данного эксперимента повысить эффктивность работы фронтендера с помощью надежных и удобных инструментов.
 Причины поиска новых иструментов это:  боль и лень.
 
+Ну и конечно поиграться с настоящим функциональным языком.
 
 
+2. План
+
+1. История: OCaml, Haskell,  BuckleScript, ReasonMl, ReasonReact
+
+"The Whitespace Thing" is an alternative syntax for OCaml
+that uses indentation to group multi-line expressions,
+like Python and Haskell.
+This is a controversial feature that some people will always love and some people will always hate.
+Using pretty much the same indentation patterns you put in your code anyway, "The Whitespace Thing" eliminates:
+          The ; operator for sequences of expressions
+          Multi-line parenthesizations in nested function applications
+          Ambiguity involving nested let, if-else, and try-with expressions, and associated parenthesization
+          The parenthetical keywords in, done, end, and begin
+          The heinous ;; toplevel statement operator
+
+В Ризон вместо скоуп отделяется фигурными скобками, а не отступами.
+
+  В кратце сравним язык OCaml, Haskell.
+  Кто на кого повлиял.
+  Красота синтаксиса , новый синтаксис Хаскел.
+  Недостатки Javascript по версии хаскелистов.
+  Позднее связывание - пример с тестом на BroadBar.Item
+  Мутабельность - примеры с пул реквестами от Димы.
+  Джаваскрипт - не функциональный язык. Множество сайд эффектов
+
+Зачем мучится с изучением нового языка ?
+
+  80% семантики OCaml (то есть, как он работает) уже прямо сопоставляется
+  с современным JavaScript и наоборот*;
+  если убрать некоторые нехорошие части JavaScript и добавить несколько приятных вещей,
+  можно на самом деле получить то, что компилируется в довольно читаемый JS.
+
+  Тем не менее, не совсем ясно, какие части JS убрать,
+  чтобы вписать его в форму языка с хорошей семантикой и 100% типизацией.
+  Но мы можем пойти в обратном направлении от уже солидного простого и быстрого языка,
+  и немного донастроить его так, чтобы он выглядел как JS и был лучше, чем JS.
+
+2. Плюсы Reason
+3. Минусы Reason
+4. Сравнение ReasonML и JS на простых задачках
+5. Как я переписал свой микро-проект с ReactJS на ReasonReact.
