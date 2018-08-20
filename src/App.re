@@ -29,8 +29,12 @@ let make = (~message, _children) => {
     randomDictionary: [],
   },
   /* reducer must be pure */
-  reducer: (action, state) =>
-    switch (action) {
+  reducer: (action, state) => {
+    Js.log("App reducer action = ");
+    Js.log(action);
+    Js.log("App reducer state activeIndex = " ++ string_of_int(   state.activeIndex));
+
+   switch (action) {
     | ShowAdvancedMenu => ReasonReact.Update({...state, showAdvanced: true})
 
     | HideAdvancedMenu => ReasonReact.Update({...state, showAdvanced: false})
@@ -104,7 +108,8 @@ let make = (~message, _children) => {
         showEnglish: false,
         randomDictionary: Reshuffle.reshuffle(dict),
       });
-    },
+    };
+  },
   didMount: self => self.send(Restart),
   render: ({state, send}) => {
     let count = List.length(state.randomDictionary);
