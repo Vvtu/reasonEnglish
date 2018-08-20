@@ -32,15 +32,14 @@ let make = (~message, _children) => {
   reducer: (action, state) => {
     Js.log("App reducer action = ");
     Js.log(action);
-    Js.log("App reducer state activeIndex = " ++ string_of_int(   state.activeIndex));
+    Js.log(
+      "App reducer state activeIndex = " ++ string_of_int(state.activeIndex),
+    );
 
-   switch (action) {
+    switch (action) {
     | ShowAdvancedMenu => ReasonReact.Update({...state, showAdvanced: true})
-
     | HideAdvancedMenu => ReasonReact.Update({...state, showAdvanced: false})
-
     | SpeechEnd => ReasonReact.Update({...state, appcodeIsSpeaking: false})
-
     | SpeakEnglish(text) =>
       ReasonReact.UpdateWithSideEffects(
         {...state, appcodeIsSpeaking: true},
@@ -91,7 +90,6 @@ let make = (~message, _children) => {
         appcodeIsSpeaking: false,
         showEnglish: false,
       });
-
     | Restart =>
       Js.log("Restart");
       Random.self_init();
