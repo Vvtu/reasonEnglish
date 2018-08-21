@@ -1,3 +1,43 @@
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+
 let reshuffle1 = dic => {
   let a = List.map(item => (Random.int(1000000), item), dic);
   let b = List.sort(((i, _), (j, _)) => i - j, a);

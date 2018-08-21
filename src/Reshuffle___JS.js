@@ -4,7 +4,31 @@ const reshuffle1 = (dic) => {
 	const c = b.map((elem) => elem[1]);
 	return c;
 };
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 const reshuffle2 = (dic) =>
 	dic
 		.map((item) => [ Math.random(), item ])
