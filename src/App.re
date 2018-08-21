@@ -17,6 +17,8 @@ type action =
   | HideAdvancedMenu
   | Restart;
 
+open List;
+
 let component = ReasonReact.reducerComponent("App");
 
 let make = (~message, _children) => {
@@ -73,12 +75,12 @@ let make = (~message, _children) => {
         showEnglish: newShowEnglish,
         appcodeIsSpeaking: false,
       });
-    | ChangeActiveIndex(ince) =>
-      let nI = state.activeIndex + ince;
+    | ChangeActiveIndex(incValue) =>
+      let nI = state.activeIndex + incValue;
       let newIndex =
         if (nI < 0) {
-          List.length(state.randomDictionary) - 1;
-        } else if (nI >= List.length(state.randomDictionary)) {
+          length(state.randomDictionary) - 1;
+        } else if (nI >= length(state.randomDictionary)) {
           0;
         } else {
           nI;
@@ -90,6 +92,7 @@ let make = (~message, _children) => {
         appcodeIsSpeaking: false,
         showEnglish: false,
       });
+
     | Restart =>
       Js.log("Restart");
       Random.self_init();
@@ -110,11 +113,13 @@ let make = (~message, _children) => {
   },
   didMount: self => self.send(Restart),
   render: ({state, send}) => {
-    let count = List.length(state.randomDictionary);
+    Js.log("App render");
+
+    let count = length(state.randomDictionary);
     if (count === 0) {
       <div> (ReasonReact.string("No records found!")) </div>;
     } else {
-      let activeObj = List.nth(state.randomDictionary, state.activeIndex);
+      let activeObj = nth(state.randomDictionary, state.activeIndex);
       let item = Dom.Storage.(localStorage |> getItem(activeObj.rus));
 
       let shown =
@@ -122,8 +127,6 @@ let make = (~message, _children) => {
         | Some(n) => int_of_string(n)
         | None => 0
         };
-
-      Js.log("App render");
 
       <div className="appcode__grid">
         <div className="appcode__info">
