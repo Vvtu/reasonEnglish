@@ -87,7 +87,7 @@ let reshuffle8 = dic =>
   );
 
 
-/* ERROR !!!
+/* ERROR
 let reshuffle9 =
   map(item => (Random.int(1000000), item))
   ==> sort(((i, _), (j, _)) => i - j)
