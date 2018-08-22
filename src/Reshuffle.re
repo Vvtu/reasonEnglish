@@ -63,3 +63,49 @@ let reshuffle5 = dic =>
          a, b, and c are all options, but d is not
          let x = a |? b |? c |> default(d);
  */
+
+
+let (==>) = (f1, f2, x) => f2(f1(x));
+
+let reshuffle11 = dic => {
+  let f1 = x => map(item => (Random.int(1000000), item), x);
+  let f2 = x => sort(((i, _), (j, _)) => i - j, x);
+  let f3 = x => map(((_, item)) => item, x);
+  (f1 ==> f2 ==> f3)(dic);
+};
+
+
+let reshuffle12 = dic => {
+  let f1 = map(item => (Random.int(1000000), item));
+  let f2 = sort(((i, _), (j, _)) => i - j);
+  let f3 = map(((_, item)) => item);
+  (f1 ==> f2 ==> f3)(dic);
+};
+
+let reshuffle13 = dic =>
+  (
+    map(item => (Random.int(1000000), item))
+    ==> sort(((i, _), (j, _)) => i - j)
+    ==> map(((_, item)) => item)
+  )(
+    dic,
+  );
+
+
+let reshuffle14 =
+  map(item => (Random.int(1000000), item))
+  ==> sort(((i, _), (j, _)) => i - j)
+  ==> map(((_, item)) => item);
+
+/* OCaml
+let (==>) f1 f2 x = f2 (f1 x)
+
+let reshuffleOc =
+    (map (fun item  -> ((Random.int 1000000), item))
+    ==> (sort (fun (i,_)  -> fun (j,_)  -> i - j)))
+    ==> (map (fun (_,item)  -> item))
+
+Скобки вокруг первого выражения обязательны.
+Появилось fun для объявления функций
+В OCaml   let f=(x,y,z)  =>  .... let f = (x) => (y) => (z)
+    */
