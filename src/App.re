@@ -107,7 +107,7 @@ let make = (~message, _children) => {
         activeIndex: 0,
         appcodeIsSpeaking: false,
         showEnglish: false,
-        randomDictionary: Reshuffle.reshuffle(dict),
+        randomDictionary: Reshuffle.reshuffle4(dict),
       });
     };
   },

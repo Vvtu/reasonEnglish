@@ -26,7 +26,7 @@ let reshuffle3 = dic =>
   );
 /* -----------------------------------------------------------*/
 
-let reshuffle = dic =>
+let reshuffle4 = dic =>
   dic
   |> map(item => (Random.int(1000000), item))
   |> sort(((i, _), (j, _)) => i - j)
@@ -40,11 +40,6 @@ let reshuffle5 = dic =>
   +> sort(((i, _), (j, _)) => i - j)
   +> map(((_, item)) => item);
 /* -----------------------------------------------------------*/
-
-/* !!! Окончательно dic убрать не удалось,
-   в отличии от Haskell или OCaml */
-
-/* fast pipe -  "|."  and  "<-"  not working,  */
 
 /*  Ramda inspired library of helper functions for ReasonML */
 /* https://github.com/jonlaing/rationale  */
@@ -67,7 +62,7 @@ let reshuffle5 = dic =>
 
 let (==>) = (f1, f2, x) => f2(f1(x));
 
-let reshuffle11 = dic => {
+let reshuffle6 = dic => {
   let f1 = x => map(item => (Random.int(1000000), item), x);
   let f2 = x => sort(((i, _), (j, _)) => i - j, x);
   let f3 = x => map(((_, item)) => item, x);
@@ -75,14 +70,14 @@ let reshuffle11 = dic => {
 };
 
 
-let reshuffle12 = dic => {
+let reshuffle7 = dic => {
   let f1 = map(item => (Random.int(1000000), item));
   let f2 = sort(((i, _), (j, _)) => i - j);
   let f3 = map(((_, item)) => item);
   (f1 ==> f2 ==> f3)(dic);
 };
 
-let reshuffle13 = dic =>
+let reshuffle8 = dic =>
   (
     map(item => (Random.int(1000000), item))
     ==> sort(((i, _), (j, _)) => i - j)
@@ -92,10 +87,15 @@ let reshuffle13 = dic =>
   );
 
 
-let reshuffle14 =
+/* ERROR !!!
+let reshuffle9 =
   map(item => (Random.int(1000000), item))
   ==> sort(((i, _), (j, _)) => i - j)
   ==> map(((_, item)) => item);
+
+  This expression's type contains type variables that can't be generalized:
+  list('_a) => list('_a)
+*/
 
 /* OCaml
 let (==>) f1 f2 x = f2 (f1 x)
