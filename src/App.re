@@ -103,20 +103,20 @@ let make = (~message, _children) => {
         | Some(_) => (Dictionaries.dictionary2, Dictionaries.oldDictionary2)
         | None => (Dictionaries.dictionary1, Dictionaries.oldDictionary1)
         };
-
-        let randomDictionary =
+      let randomDictionary =
         List.append(
           TakeItems.takeItems(3, Reshuffle.reshuffle4(dictOld)),
           Reshuffle.reshuffle4(dict),
         );
-        ReasonReact.Update({
-          ...state,
-          activeIndex: 0,
-          appcodeIsSpeaking: false,
-          showEnglish: false,
-          randomDictionary,
-        });
-      };
+
+      ReasonReact.Update({
+        ...state,
+        activeIndex: 0,
+        appcodeIsSpeaking: false,
+        showEnglish: false,
+        randomDictionary,
+      });
+    };
   },
   didMount: self => self.send(Restart),
   render: ({state, send}) => {
