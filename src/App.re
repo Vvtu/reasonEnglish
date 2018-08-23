@@ -97,19 +97,26 @@ let make = (~message, _children) => {
       Js.log("Restart");
       Random.self_init();
       let item = Dom.Storage.(localStorage |> getItem(Constants.dict));
-      let dict =
+
+      let (dict, dictOld) =
         switch (item) {
-        | Some(_) => Dictionaries.dictionary2
-        | None => Dictionaries.dictionary1
+        | Some(_) => (Dictionaries.dictionary2, Dictionaries.oldDictionary2)
+        | None => (Dictionaries.dictionary1, Dictionaries.oldDictionary1)
         };
-      ReasonReact.Update({
-        ...state,
-        activeIndex: 0,
-        appcodeIsSpeaking: false,
-        showEnglish: false,
-        randomDictionary: Reshuffle.reshuffle4(dict),
-      });
-    };
+
+        let randomDictionary =
+        List.append(
+          TakeItems.takeItems(3, Reshuffle.reshuffle4(dictOld)),
+          Reshuffle.reshuffle4(dict),
+        );
+        ReasonReact.Update({
+          ...state,
+          activeIndex: 0,
+          appcodeIsSpeaking: false,
+          showEnglish: false,
+          randomDictionary,
+        });
+      };
   },
   didMount: self => self.send(Restart),
   render: ({state, send}) => {
