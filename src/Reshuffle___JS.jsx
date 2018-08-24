@@ -1,8 +1,8 @@
 const reshuffle1 = (dic) => {
-	const a = dic.map((item) => [ Math.random(), item ]);
-	const b = a.sort((a, b) => a[0] - b[0]);
-	const c = b.map((elem) => elem[1]);
-	return c;
+	const p1 = dic.map((x) => [ Math.random(), x ]);
+	const p2 = p1.sort((x, y) => x[0] - y[0]);
+	const p3 = p2.map((x) => x[1]);
+	return p3;
 };
 //
 //
@@ -10,22 +10,32 @@ const reshuffle1 = (dic) => {
 //
 const reshuffle2 = (dic) =>
 	dic
-		.map((item) => [ Math.random(), item ])
-		.sort((a, b) => a[0] - b[0])
-		.map((elem) => elem[1]);
-
+		.map((x) => [ Math.random(), x ])
+		.sort((x, y) => x[0] - y[0])
+		.map((x) => x[1]);
 //
 //
 //
 //
-
 const reshuffle3 = (dic) => {
-	const copy = dic.slice();
-	for (let i = arr.length - 1; i > 0; i -= 1) {
-		const j = Math.flor(Math.random() * (i + 1));
+	const copy = dic.slice(0);
+	for (let i = copy.length - 1; i > 0; i -= 1) {
+		const j = Math.floor(Math.random() * (i + 1));
 		[ copy[i], copy[j] ] = [ copy[j], copy[i] ];
 	}
 	return copy;
 };
 
+//
+//
+//
 // проблема разреженных массивов
+
+const reshuffle4 = (dic) => {
+	const copy = dic.filter((x) => x !== undefined);
+	for (let i = copy.length - 1; i > 0; i -= 1) {
+		const j = Math.floor(Math.random() * (i + 1));
+		[ copy[i], copy[j] ] = [ copy[j], copy[i] ];
+	}
+	return copy;
+};
