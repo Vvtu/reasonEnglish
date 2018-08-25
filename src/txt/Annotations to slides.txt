@@ -133,3 +133,78 @@ Using pretty much the same indentation patterns you put in your code anyway, "Th
 4. Сравнение ReasonML и JS на простых задачках
 5. Как я переписал свой микро-проект с ReactJS на ReasonReact.
 
+
+Описание кода на джаваскриптере:
+
+Перемешивание карточек (любых элементов).
+
+1. reshuffle1
+Сначало мы делаем map, в котором навешиваем нашим карточкам
+случайные числа.
+Потом мы сортируем этот массив, в котором каждый элемент это
+массив из двух элементов. Случайное число и карточка.
+Затем мы делаем map, с помощью которого очищаем наши карточки
+от навешеных случайных чисел.
+Получаем перемещанный массив.
+
+reshuffle2
+2. Можем сделать код более красивым, скомбинировав все в одно выражение,
+применяя очередную функцию к результату предыдущей.
+Лаконичный код.
+Проблема в том, он проходится отладчиком как одна строка.
+
+Возможность применять функцию к аргументу, а не вставлять аргумент
+в вызов функции считается очень большим достижением JS.
+
+Считается, что для этого в том числе и нужен this.
+Один програмист менеджер с большим стажем работы в Яндексе,
+говорил, что когда проводит собеседования при приеме на работу в
+яндекс, очень много уделяет времени вопросам про this.
+Видимо, влюбился в this и считает это огромным достижением
+Скорее всего не знает, как такие вещи пишутся на функциональных языках.
+
+
+reshuffle3
+3. Есть еще вариант написания перемешивания reshuffle3
+Может быть он быстрее, но он более чувствительный к качеству
+функции Math.random().
+В строке где используется slice делается копия массива,
+чтобы вернуть перемешанную копию и не испортить исходный массив.
+
+reshuffle4
+4.reshuffle3 нарвется на проблему разрещенных массивов.
+
+Чтобы не сортировать элементы, которых нет, можно вместе
+slice использовать filter.
+
+Теперь оставим этот код reshuffle2 на экране, и будем сравнивать его
+с кодом на Reason.
+
+
+
+
+
+
+
+
+
+
+
+
+You can do this with Ramda's transducers.
+
+(Disclaimer: I'm a Ramda author)
+
+While a normal composition of regular Ramda functions will loop for every list transformation,
+a transduced one will run each function in the composition on each iteration.
+Note that for technical reasons,
+the composition runs in the reverse order when using transducers.
+Not every function is a transducer.
+The documentation uses this note to indicate one:
+ "Acts as a transducer if a transformer is given in list position."
+  This is included in both map and filter.
+  There are several functions that make it easier to work with transducers.
+  into is one of them.
+
+Still, it might be easier to write your own filterMap function.
+ Is isn't hard:
