@@ -68,21 +68,21 @@ let reshuffle5 = dic =>
 
 let (==>) = (f1, f2, x) => f2(f1(x)); /* композиция функций */
 
-let reshuffle6 = dic => {
+let reshuffle7 = dic => {
   let f1 = x => map(x => (Random.int(1000000), x), x);
   let f2 = x => sort(((x, _), (y, _)) => x - y, x);
   let f3 = x => map(((_, x)) => x, x);
   (f1 ==> f2 ==> f3)(dic);
 };
 
-let reshuffle7 = dic => {
+let reshuffle8 = dic => {
   let f1 = map(x => (Random.int(1000000), x));
   let f2 = sort(((x, _), (y, _)) => x - y);
   let f3 = map(((_, x)) => x);
   (f1 ==> f2 ==> f3)(dic);
 };
 
-let reshuffle8 = dic =>
+let reshuffle9 = dic =>
   (
     map(x => (Random.int(1000000), x))
     ==> sort(((x, _), (y, _)) => x - y)
@@ -92,7 +92,7 @@ let reshuffle8 = dic =>
   );
 
 /* ERROR
-   let reshuffle9 =
+   let reshuffle10 =
      map(x => (Random.int(1000000), x))
      ==> sort(((x, _), (y, _)) => x - y)
      ==> map(((_, x)) => x);
@@ -104,7 +104,7 @@ let reshuffle8 = dic =>
 /* OCaml
    let (==>) f1 f2 x = f2 (f1 x)
 
-   let reshuffleOc =
+   let reshuffle11c =
        (map (fun x  -> ((Random.int 1000000), x))
        ==> (sort (fun (x,_)  -> fun (y,_)  -> x - y)))
        ==> (map (fun (_,x)  -> x))

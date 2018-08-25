@@ -191,6 +191,8 @@ slice использовать filter.
 
 
 
+
+
 You can do this with Ramda's transducers.
 
 (Disclaimer: I'm a Ramda author)
