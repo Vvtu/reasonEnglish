@@ -2,14 +2,15 @@
 /* [@bs.val] external setTimeout : (unit => unit, int) => float = "setTimeout";
    [@bs.val] external clearTimeout : float => unit = "clearTimeout"; */
 type state = {
-  activeIndex: int,
   showEnglish: bool,
   showAdvanced: bool,
   appcodeIsSpeaking: bool,
-  randomDictionary: Dictionaries.pairList,
+  originalDictionary: Dictionaries.pairList,
+  currentDictionary: Dictionaries.pairList,
 };
 type action =
-  | ChangeActiveIndex(int)
+  | GotoNextItem(Dictionaries.pairList)
+  | GotoPreviousItem(int)
   | SwitchEnglishShowing(string, int)
   | SpeakEnglish(string)
   | SpeechEnd
@@ -24,21 +25,26 @@ let component = ReasonReact.reducerComponent("App");
 let make = (~message, _children) => {
   ...component,
   initialState: () => {
-    activeIndex: 0,
     showEnglish: false,
     showAdvanced: false,
     appcodeIsSpeaking: false,
-    randomDictionary: [],
+    originalDictionary: [],
+    currentDictionary: [],
   },
   /* reducer must be pure */
-  reducer: (action, state) => {
-    Js.log("App reducer action = ");
-    Js.log(action);
-    Js.log(
-      "App reducer state activeIndex = " ++ string_of_int(state.activeIndex),
-    );
-
+  reducer: (action, state) =>
     switch (action) {
+    | GotoNextItem(tail) =>
+      ReasonReact.Update({...state, currentDictionary: tail})
+    | GotoPreviousItem(index) =>
+      let newCurrentDictionary =
+        if (index < 0) {
+          state.originalDictionary;
+        } else {
+          ItemFunc.dropItems(index, state.originalDictionary);
+        };
+      ReasonReact.Update({...state, currentDictionary: newCurrentDictionary});
+
     | ShowAdvancedMenu => ReasonReact.Update({...state, showAdvanced: true})
     | HideAdvancedMenu => ReasonReact.Update({...state, showAdvanced: false})
     | SpeechEnd => ReasonReact.Update({...state, appcodeIsSpeaking: false})
@@ -75,23 +81,6 @@ let make = (~message, _children) => {
         showEnglish: newShowEnglish,
         appcodeIsSpeaking: false,
       });
-    | ChangeActiveIndex(incValue) =>
-      let nI = state.activeIndex + incValue;
-      let newIndex =
-        if (nI < 0) {
-          length(state.randomDictionary) - 1;
-        } else if (nI >= length(state.randomDictionary)) {
-          0;
-        } else {
-          nI;
-        };
-
-      ReasonReact.Update({
-        ...state,
-        activeIndex: newIndex,
-        appcodeIsSpeaking: false,
-        showEnglish: false,
-      });
 
     | Restart =>
       Js.log("Restart");
@@ -103,32 +92,33 @@ let make = (~message, _children) => {
         | Some(_) => (Dictionaries.dictionary2, Dictionaries.oldDictionary2)
         | None => (Dictionaries.dictionary1, Dictionaries.oldDictionary1)
         };
-      let randomDictionary =
+      let originalDictionary =
         List.append(
-          TakeItems.takeItems(3, Reshuffle.reshuffle5(dictOld)),
+          ItemFunc.takeItems(3, Reshuffle.reshuffle5(dictOld)),
           Reshuffle.reshuffle5(dict),
         );
 
       ReasonReact.Update({
         ...state,
-        activeIndex: 0,
         appcodeIsSpeaking: false,
         showEnglish: false,
-        randomDictionary,
+        originalDictionary,
+        currentDictionary: originalDictionary,
       });
-    };
-  },
+    },
   didMount: self => self.send(Restart),
   render: ({state, send}) => {
     Js.log("App render");
 
-    let count = length(state.randomDictionary);
-    if (count === 0) {
-      <div> (ReasonReact.string("No records found!")) </div>;
-    } else {
-      let activeObj = nth(state.randomDictionary, state.activeIndex);
+    switch (state.currentDictionary) {
+    | [] =>
+      <div onClick=(_ => send(Restart))>
+        (ReasonReact.string("The end!"))
+      </div>
+    | [activeObj, ...tail] =>
+      let countAll = length(state.originalDictionary);
+      let countRemain = length(tail);
       let item = Dom.Storage.(localStorage |> getItem(activeObj.rus));
-
       let shown =
         switch (item) {
         | Some(n) => int_of_string(n)
@@ -138,7 +128,10 @@ let make = (~message, _children) => {
       <div className="appcode__grid">
         <div className="appcode__info">
           <div className="appcode__info2">
-            <div onClick=(_ => send(ChangeActiveIndex(-1)))>
+            <div
+              onClick=(
+                _ => send(GotoPreviousItem(countAll - countRemain - 2))
+              )>
               <Icon.Arrow
                 color=Constants.whiteColor
                 height=Constants.iconSize
@@ -177,9 +170,9 @@ let make = (~message, _children) => {
               <span>
                 (
                   ReasonReact.string(
-                    string_of_int(state.activeIndex + 1)
+                    string_of_int(countAll - countRemain)
                     ++ "/"
-                    ++ string_of_int(count),
+                    ++ string_of_int(countAll),
                   )
                 )
               </span>
@@ -189,7 +182,7 @@ let make = (~message, _children) => {
             </div>
             <div
               className="appcode__icon_invert__horizontal"
-              onClick=(_ => send(ChangeActiveIndex(1)))>
+              onClick=(_ => send(GotoNextItem(tail)))>
               <Icon.Arrow
                 color=Constants.whiteColor
                 height=Constants.iconSize
