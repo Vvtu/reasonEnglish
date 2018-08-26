@@ -105,8 +105,8 @@ let make = (~message, _children) => {
         };
       let randomDictionary =
         List.append(
-          TakeItems.takeItems(3, Reshuffle.reshuffle4(dictOld)),
-          Reshuffle.reshuffle4(dict),
+          TakeItems.takeItems(3, Reshuffle.reshuffle5(dictOld)),
+          Reshuffle.reshuffle5(dict),
         );
 
       ReasonReact.Update({

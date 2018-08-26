@@ -46,6 +46,16 @@ let reshuffle5 = dic =>
   +> map(x => (Random.int(1000000), x))
   +> sort(((x, _), (y, _)) => x - y)
   +> map(((_, x)) => x);
+
+/*  Переопределили +
+    let (+) = (x, f) => f(x);
+    let reshuffle5 = dic =>
+      dic
+      + map(x => (Random.int(1000000), x))
+      + sort(((x, _), (y, _)) => x - y)
+      + map(((_, x)) => x);
+    */
+
 /* -----------------------------------------------------------*/
 
 /*  Ramda inspired library of helper functions for ReasonML */
