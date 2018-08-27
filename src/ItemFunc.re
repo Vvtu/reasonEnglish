@@ -9,5 +9,5 @@ let rec dropItems = (n, list) =>
   switch (n, list) {
   | (_, []) => []
   | (0, _) => list
-  | (_, [x, ...tail]) => dropItems(n - 1, tail)
+  | (_, [_, ...tail]) => dropItems(n - 1, tail)
   };

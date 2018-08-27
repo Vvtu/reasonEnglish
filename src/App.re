@@ -5,8 +5,8 @@ type state = {
   showEnglish: bool,
   showAdvanced: bool,
   appcodeIsSpeaking: bool,
-  originalDictionary: Dictionaries.pairList,
-  currentDictionary: Dictionaries.pairList,
+  allCards: Dictionaries.pairList,
+  remainingCards: Dictionaries.pairList,
 };
 type action =
   | GotoNextItem(Dictionaries.pairList)
@@ -28,22 +28,22 @@ let make = (~message, _children) => {
     showEnglish: false,
     showAdvanced: false,
     appcodeIsSpeaking: false,
-    originalDictionary: [],
-    currentDictionary: [],
+    allCards: [],
+    remainingCards: [],
   },
   /* reducer must be pure */
   reducer: (action, state) =>
     switch (action) {
     | GotoNextItem(tail) =>
-      ReasonReact.Update({...state, currentDictionary: tail})
+      ReasonReact.Update({...state, remainingCards: tail})
     | GotoPreviousItem(index) =>
       let newCurrentDictionary =
         if (index < 0) {
-          state.originalDictionary;
+          state.allCards;
         } else {
-          ItemFunc.dropItems(index, state.originalDictionary);
+          ItemFunc.dropItems(index, state.allCards);
         };
-      ReasonReact.Update({...state, currentDictionary: newCurrentDictionary});
+      ReasonReact.Update({...state, remainingCards: newCurrentDictionary});
 
     | ShowAdvancedMenu => ReasonReact.Update({...state, showAdvanced: true})
     | HideAdvancedMenu => ReasonReact.Update({...state, showAdvanced: false})
@@ -92,7 +92,7 @@ let make = (~message, _children) => {
         | Some(_) => (Dictionaries.dictionary2, Dictionaries.oldDictionary2)
         | None => (Dictionaries.dictionary1, Dictionaries.oldDictionary1)
         };
-      let originalDictionary =
+      let allCards =
         List.append(
           ItemFunc.takeItems(3, Reshuffle.reshuffle5(dictOld)),
           Reshuffle.reshuffle5(dict),
@@ -102,21 +102,21 @@ let make = (~message, _children) => {
         ...state,
         appcodeIsSpeaking: false,
         showEnglish: false,
-        originalDictionary,
-        currentDictionary: originalDictionary,
+        allCards,
+        remainingCards: allCards,
       });
     },
   didMount: self => self.send(Restart),
   render: ({state, send}) => {
     Js.log("App render");
 
-    switch (state.currentDictionary) {
+    switch (state.remainingCards) {
     | [] =>
       <div onClick=(_ => send(Restart))>
         (ReasonReact.string("The end!"))
       </div>
     | [activeObj, ...tail] =>
-      let countAll = length(state.originalDictionary);
+      let countAll = length(state.allCards);
       let countRemain = length(tail);
       let item = Dom.Storage.(localStorage |> getItem(activeObj.rus));
       let shown =
