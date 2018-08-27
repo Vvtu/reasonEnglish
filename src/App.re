@@ -9,8 +9,8 @@ type state = {
   remainingCards: Dictionaries.pairList,
 };
 type action =
-  | GotoNextItem(Dictionaries.pairList)
-  | GotoPreviousItem(int)
+  | GotoNextCard(Dictionaries.pairList)
+  | GotoPreviousCard(int)
   | SwitchEnglishShowing(string, int)
   | SpeakEnglish(string)
   | SpeechEnd
@@ -34,9 +34,9 @@ let make = _children => {
   /* reducer must be pure */
   reducer: (action, state) =>
     switch (action) {
-    | GotoNextItem(tail) =>
+    | GotoNextCard(tail) =>
       ReasonReact.Update({...state, remainingCards: tail})
-    | GotoPreviousItem(index) =>
+    | GotoPreviousCard(index) =>
       let newCurrentDictionary =
         if (index < 0) {
           state.allCards;
@@ -115,10 +115,10 @@ let make = _children => {
       <div onClick=(_ => send(Restart))>
         (ReasonReact.string("The end !"))
       </div>
-    | [activeObj, ...tail] =>
+    | [currentCard, ...tail] =>
       let countAll = length(state.allCards);
       let countRemain = length(tail);
-      let item = Dom.Storage.(localStorage |> getItem(activeObj.rus));
+      let item = Dom.Storage.(localStorage |> getItem(currentCard.rus));
       let shown =
         switch (item) {
         | Some(n) => int_of_string(n)
@@ -130,7 +130,7 @@ let make = _children => {
           <div className="appcode__info2">
             <div
               onClick=(
-                _ => send(GotoPreviousItem(countAll - countRemain - 2))
+                _ => send(GotoPreviousCard(countAll - countRemain - 2))
               )>
               <Icon.Arrow
                 color=Constants.whiteColor
@@ -148,7 +148,7 @@ let make = _children => {
                 <div
                   className="appcode__icon_rotate_back"
                   onClick=(
-                    _ => send(SwitchEnglishShowing(activeObj.rus, shown))
+                    _ => send(SwitchEnglishShowing(currentCard.rus, shown))
                   )>
                   <Icon.Arrow
                     color=Constants.whiteColor
@@ -158,7 +158,7 @@ let make = _children => {
                 <div
                   className="appcode__icon_rotate"
                   onClick=(
-                    _ => send(SwitchEnglishShowing(activeObj.rus, shown))
+                    _ => send(SwitchEnglishShowing(currentCard.rus, shown))
                   )>
                   <Icon.Arrow
                     color=Constants.englishTextColor
@@ -182,7 +182,7 @@ let make = _children => {
             </div>
             <div
               className="appcode__icon_invert__horizontal"
-              onClick=(_ => send(GotoNextItem(tail)))>
+              onClick=(_ => send(GotoNextCard(tail)))>
               <Icon.Arrow
                 color=Constants.whiteColor
                 height=Constants.iconSize
@@ -192,16 +192,16 @@ let make = _children => {
         </div>
         <div
           className="appcode__russian"
-          onClick=(_ => send(SwitchEnglishShowing(activeObj.rus, shown)))>
-          <div className="appcode__center" key=activeObj.eng>
+          onClick=(_ => send(SwitchEnglishShowing(currentCard.rus, shown)))>
+          <div className="appcode__center" key=currentCard.eng>
             <div className="appcode__scroll">
-              <div> (ReasonReact.string(activeObj.rus)) </div>
+              <div> (ReasonReact.string(currentCard.rus)) </div>
             </div>
           </div>
         </div>
         <div
           className="appcode__english"
-          onClick=(_ => send(SpeakEnglish(activeObj.eng)))>
+          onClick=(_ => send(SpeakEnglish(currentCard.eng)))>
           (
             state.showEnglish ?
               <div className="appcode__center">
@@ -211,7 +211,7 @@ let make = _children => {
                       "appcode__eng_text_color"
                       ++ (state.appcodeIsSpeaking ? " appcode__speaking" : "")
                     )>
-                    <div> (ReasonReact.string(activeObj.eng)) </div>
+                    <div> (ReasonReact.string(currentCard.eng)) </div>
                   </div>
                 </div>
               </div> :
