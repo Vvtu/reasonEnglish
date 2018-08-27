@@ -22,7 +22,7 @@ open List;
 
 let component = ReasonReact.reducerComponent("App");
 
-let make = (~message, _children) => {
+let make = _children => {
   ...component,
   initialState: () => {
     showEnglish: false,
@@ -113,7 +113,7 @@ let make = (~message, _children) => {
     switch (state.remainingCards) {
     | [] =>
       <div onClick=(_ => send(Restart))>
-        (ReasonReact.string("The end!"))
+        (ReasonReact.string("The end !"))
       </div>
     | [activeObj, ...tail] =>
       let countAll = length(state.allCards);
