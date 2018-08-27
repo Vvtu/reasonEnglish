@@ -204,7 +204,7 @@ let dictionary2: pairList = [
     eng: "The type coverage is always 100%. We don't need a 'type coverage' tool! Every piece of Reason code has a type.",
   },
   {
-    rus: "Cистема типов полностью 'здравая'. Это означает, что пока код компилируется нормально, каждый Тип гарантирует, что он не лжет сам о себе.",
+    rus: {js|Cистема типов полностью 'здравая'. Это означает, что пока код компилируется нормально, каждый Тип гарантирует, что он не лжет сам о себе.|js},
     eng: "The type system is completely 'sound'. This means that, as long as your code compiles fine, every type guarantees that it's not lying about itself.",
   },
   {
@@ -228,9 +228,12 @@ let dictionary2: pairList = [
     eng: "Reason has a type for a string with a single letter. Char doesn't support Unicode or UTF-8.",
   },
   {
-    rus: "Char компилируется в целое число от 0 до 255, для дополнительной скорости. Вы можете также паттерн-матчинг на нем.",
+    rus: {js|Char компилируется в целое число от 0 до 255, для дополнительной скорости. Вы можете также паттерн-матчинг на нем.|js},
     eng: "A character compiles to an integer ranging from 0 to 255, for extra speed. You can also pattern-match on it.",
   },
+];
+
+let oldDictionary2: pairList = [
   /* ************************************************************************************************************************** */
   {
     rus: {js|Наша первоочередная задача состоит в том, чтобы удовлетворить потребности клиентов в своевременной и непрерывной поставке ценного программного обеспечения.|js},
@@ -241,7 +244,7 @@ let dictionary2: pairList = [
     eng: "Welcome changing requirements, even late in development. Agile processes harness change for the customer's competive advantage.",
   },
   {
-    rus: {js|Поставляйте рабочее программное обеспечение часто, от нескольких недель до нескольких месяцев, с предпочтением к более коротким временным рамкам.|js},
+    rus: {js|Поставляйте рабочее программное обеспечение часто, от нескольких недель до нескольких месяцев, с предпочтением к более кор��тким временным рамкам.|js},
     eng: "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.",
   },
   {
@@ -281,19 +284,19 @@ let dictionary2: pairList = [
     eng: "At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.",
   },
   {
-    rus: "Scrum-это framework, в котором люди могут решать сложные адаптивные проблемы, продуктивно и творчески доставляя продукты максимально возможной ценности",
+    rus: {js|Scrum-это framework, в котором люди могут решать сложные адаптивные проблемы, продуктивно и творчески доставляя продукты максимально возможной ценности|js},
     eng: "Scrum is a framework within which people can address complex adaptive problems, while productively and creatively delivering products of the highest possible value.",
   },
   {
-    rus: "Scrum-это не методология. Scrum реализует научный метод эмпиризма. Scrum заменяет запрограммированный алгоритмический подход эвристическим, с уважением к людям и самоорганизацией для решения непредсказуемости и решения сложных проблем.",
+    rus: {js|Scrum-это не методология. Scrum реализует научный метод эмпиризма. Scrum заменяет запрограммированный алгоритмический подход эвристическим, с уважением к людям и самоорганизацией для решения непредсказуемости и решения сложных проблем.|js},
     eng: "Scrum is not a methodology. Scrum implements the scientific method of empiricism. Scrum replaces a programmed algorithmic approach with a heuristic one, with respect for people and self-organization to deal with unpredictability and solving complex problems.",
   },
   {
-    rus: "Scrum не является процессом, техникой или окончательным методом. Скорее, это framework, в которыом вы можете использовать различные процессы и методы.",
+    rus: {js|Scrum не является процессом, техникой или окончательным методом. Скорее, это framework, в которыом вы можете использовать различные процессы и методы.|js},
     eng: "Scrum is not a process, technique, or definitive method. Rather, it is a framework within which you can employ various processes and techniques.",
   },
   {
-    rus: "Framework Scrum состоит из команд Scrum и связанных с ними ролей, событий, артефактов и правил. Каждый компонент в рамках служит определенной цели и имеет важное значение для успеха и использования Скрама.",
+    rus: {js|Framework Scrum состоит из команд Scrum и связанных с ними ролей, событий, артефактов и правил. Каждый компонент в рамках служит определенной цели и имеет важное значение для успеха и использования Скрама.|js},
     eng: "The Scrum framework consists of Scrum Teams and their associated roles, events, artifacts, and rules. Each component within the framework serves a specific purpose and is essential to Scrum’s success and usage.",
   },
   {
@@ -334,7 +337,7 @@ let dictionary2: pairList = [
   },
   /* https:reactjs.org/docs/reconciliation.html */
   {
-    rus: {js|Компонент более высокого порядка (HOC) - это продвинутая техника в React для повторного использования компонентной логики. Hoc не являются частью React API, как таковые. Это паттерны, которые возникают из композиционной природы React.|js},
+    rus: {js|Компонент более высокого порядка (HOC) - это продвинутая техника в React для повторного использования компонентной логики. Hoc не являются частью React API, как таковые. ��то паттерны, которые возникают из композиционной природы React.|js},
     eng: "A higher-order component (HOC) is an advanced technique in React for reusing component logic. HOCs are not part of the React API, per se. They are a pattern that emerges from React’s compositional nature.",
   },
   {
@@ -342,7 +345,7 @@ let dictionary2: pairList = [
     eng: "Concretely, a higher-order component is a function that takes a component and returns a new component.",
   },
   {
-    rus: "HOCs распространены в сторонних библиотеках React, таких как connect Redux и Relay’s createFragmentContainer.",
+    rus: {js|HOCs распространены в сторонних библиотеках React, таких как connect Redux и Relay’s createFragmentContainer.|js},
     eng: "HOCs are common in third-party React libraries, such as Redux’s connect and Relay’s createFragmentContainer.",
   },
   {
@@ -378,7 +381,7 @@ let dictionary2: pairList = [
     eng: "And that’s it! The wrapped component receives all the props of the container, along with a new prop, data, which it uses to render its output.",
   },
   {
-    rus: "HOC не имеет отношения к тому, как и почему используются данные, и обернутый компонент не связан с тем, откуда пришли данные.",
+    rus: {js|HOC не имеет отношения к тому, как и почему используются данные, и обернутый компонент не связан с тем, откуда пришли данные.|js},
     eng: "The HOC isn’t concerned with how or why the data is used, and the wrapped component isn’t concerned with where the data came from.",
   },
   {
@@ -538,7 +541,7 @@ let dictionary2: pairList = [
     eng: "It is important to remember that the reconciliation algorithm is an implementation detail.",
   },
   {
-    rus: "React может перерендеривать все приложение на каждое действие; конечный результат будет одинаковым.",
+    rus: {js|React может перерендеривать все приложение на каждое действие; конечный результат будет одинаковым.|js},
     eng: "React could rerender the whole app on every action; the end result would be the same.",
   },
   {
@@ -570,9 +573,6 @@ let dictionary2: pairList = [
     eng: "Unstable keys (like those produced by Math.random()) will cause many component instances and DOM nodes to be unnecessarily recreated, which can cause performance degradation and lost state in child components.",
   },
   /* https:reactjs.org/docs/reconciliation.html */
-];
-
-let oldDictionary2: pairList = [
   {
     rus: {js|Приведенные ниже примеры были обновлены для использования React.createRef() API, представленый в React 16.3. Если используется более раннюю версию React, мы рекомендуем использовать callback refs.|js},
     eng: "The examples below have been updated to use the React.createRef() API introduced in React 16.3. If you are using an earlier release of React, we recommend using callback refs instead.",
@@ -598,7 +598,7 @@ let oldDictionary2: pairList = [
     eng: "This code uses a ref to store a reference to a DOM node",
   },
   {
-    rus: "React присваивает текущему свойству элемент DOM при монтировании компонента и присваивает ему обратно значение null при размонтировании.",
+    rus: {js|React присваивает текущему свойству элемент DOM при монтировании компонента и присваивает ему обратно значение null при размонтировании.|js},
     eng: "React will assign the current property with the DOM element when the component mounts, and assign it back to null when it unmounts.",
   },
   {
@@ -622,7 +622,7 @@ let oldDictionary2: pairList = [
     eng: "If you use React 16.3 or higher, we recommend to use ref forwarding for these cases.",
   },
   {
-    rus: "Ref forwarding позволяет компонентам выбрать отображение рефа любого дочернего компонента как собственного.",
+    rus: {js|Ref forwarding позволяет компонентам выбрать отображение рефа любого дочернего компонента как собственного.|js},
     eng: "Ref forwarding lets components opt into exposing any child component’s ref as their own.",
   },
   {
@@ -687,7 +687,7 @@ let oldDictionary2: pairList = [
     eng: "To run typechecking on the props for a component, you can assign the special propTypes property.",
   },
   {
-    rus: "PropTypes содержит ряд валидаторов, которые могут быть использованы, чтобы убедиться, что данные, которые вы получаете, валидны.",
+    rus: {js|PropTypes содержит ряд валидаторов, которые могут быть использованы, чтобы убедиться, что данные, которые вы получаете, валидны.|js},
     eng: "PropTypes exports a range of validators that can be used to make sure the data you receive is valid.",
   },
   {
@@ -715,7 +715,7 @@ let oldDictionary2: pairList = [
     eng: "This static property syntax has not yet been finalized though and will require a compilation step to work within a browser.",
   },
   {
-    rus: "DefaultProps будет использоваться для обеспечения того, что this.props.name будет иметь значение, если оно не было специфицировано родительским компонентом.",
+    rus: {js|DefaultProps будет использоваться для обеспечения того, что this.props.name будет иметь значение, если оно не было специфицировано родительским компонентом.|js},
     eng: "The defaultProps will be used to ensure that this.props.name will have a value if it was not specified by the parent component.",
   },
   {
@@ -735,7 +735,7 @@ let oldDictionary2: pairList = [
     eng: "For this reason, we recommend using Flow or TypeScript instead of PropTypes for larger code bases.",
   },
   {
-    rus: "Flow позволяет аннотировать переменные, функции и компоненты с помощью специального синтаксиса типов, а также выявлять ошибки на ранних этапах.",
+    rus: {js|Flow позволяет аннотировать переменные, функции и компоненты с помощью специального синтаксиса типов, а также выявлять ошибки на ранних этапах.|js},
     eng: "Flow lets you annotate the variables, functions, and React components with a special type syntax, and catch mistakes early.",
   },
   {
@@ -755,7 +755,7 @@ let oldDictionary2: pairList = [
     eng: "But it does require a little more typing than traditional two-way data binding.",
   },
   {
-    rus: "React делает этот поток данных явным, чтобы было легко понять, как работает ваша программа.",
+    rus: {js|React делает этот поток данных явным, чтобы было легко понять, как работает ваша программа.|js},
     eng: "React makes this data flow explicit to make it easy to understand how your program works.",
   },
   {

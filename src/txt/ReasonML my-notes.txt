@@ -717,14 +717,37 @@ There are several ways to work with JSON right now, that we'll unify and polish 
 
 Pipelining - Great for building pipelines of data processing:
 
-   1.   f(g(x)) ===  x |. g |. f     -- Fast pipe (нигде особо не описан) похоже это из за js
+   1.   f(g(x)) ===  x -> g -> f     -- Fast pipe (нигде особо не описан) похоже это из за js
+      ( |. устарел - теперь   -> )
    2.   f(g(x)) ===  x |> g |> f     -- Reverse-application operator
 
    3.   f(g(x)) ===  f @@ g @@ x     -- Application operator
 
    Между 1 и 2 есть разница !!! если есть еще агрументы у функций
-      a |. foo(b) |. bar === bar(foo(a, b))
+      a -> foo(b) -> bar === bar(foo(a, b))
       a |> foo(b) |> bar === bar(foo(b, a))
+
+-> отличается от  |>
+
+Random.init(100);
+
+let a = "a = " ++ string_of_int(Random.int(10)) ++ ";";
+let b = "b = " ++ string_of_int(Random.int(10) + 100) ++ ";";
+
+let con = (x, y) => x ++ y;
+
+let p1 = con(a, b);
+
+let p2 = b |> con(a);
+
+let p3 = b->con(a);
+
+Js.log(p1);
+Js.log(p2);
+Js.log(p3);
+
+и форматируется подругому, синтаксический сахар
+
 
 Операторы - это просто функции.  Их можно переопределить
 
@@ -733,7 +756,7 @@ Get Multiple Results
 
 The fast pipe operator can also be used on a tuple:
 
-let (left, middle, right) = myData |. (getLeft, getMiddle, getRight)
+let (left, middle, right) = myData -> (getLeft, getMiddle, getRight)
 This turns into:
 
 let left = getLeft(myData);
@@ -1207,27 +1230,6 @@ Finally, since a record type is resolved through finding that single explicit ty
 * And we're not just finding excuses for ourselves! Reason objects do support these features.
 
 
-/////////////////////////////////////
--> отличается от  |>
-
-Random.init(100);
-
-let a = "a = " ++ string_of_int(Random.int(10)) ++ ";";
-let b = "b = " ++ string_of_int(Random.int(10) + 100) ++ ";";
-
-let con = (x, y) => x ++ y;
-
-let p1 = con(a, b);
-
-let p2 = b |> con(a);
-
-let p3 = b->con(a);
-
-Js.log(p1);
-Js.log(p2);
-Js.log(p3);
-
-и форматируется подругому, синтаксический сахар
 
 ------------
  Размеры бандлов

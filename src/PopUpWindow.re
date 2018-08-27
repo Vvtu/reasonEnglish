@@ -32,7 +32,7 @@ let make = (~handleClosePopupClicked, ~handleRestart, _children) => {
         {increaseOpacity: false},
         (
           _ => {
-            let _ = Js.Global.setTimeout(handleClosePopupClicked, 500);
+            let _ = Js.Global.setTimeout(handleClosePopupClicked, 1000);
             ();
           }
         ),
