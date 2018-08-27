@@ -244,7 +244,7 @@ let oldDictionary2: pairList = [
     eng: "Welcome changing requirements, even late in development. Agile processes harness change for the customer's competive advantage.",
   },
   {
-    rus: {js|Поставляйте рабочее программное обеспечение часто, от нескольких недель до нескольких месяцев, с предпочтением к более кор��тким временным рамкам.|js},
+    rus: {js|Поставляйте рабочее программное обеспечение часто, от нескольких недель до нескольких месяцев, с предпочтением к более кор����������������тким временным рамкам.|js},
     eng: "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.",
   },
   {
@@ -297,7 +297,7 @@ let oldDictionary2: pairList = [
   },
   {
     rus: {js|Framework Scrum состоит из команд Scrum и связанных с ними ролей, событий, артефактов и правил. Каждый компонент в рамках служит определенной цели и имеет важное значение для успеха и использования Скрама.|js},
-    eng: "The Scrum framework consists of Scrum Teams and their associated roles, events, artifacts, and rules. Each component within the framework serves a specific purpose and is essential to Scrum’s success and usage.",
+    eng: "The Scrum framework consists of Scrum Teams and their associated roles, events, artifacts, and rules. Each component within the framework serves a specific purpose and is essential to Scrum's success and usage.",
   },
   {
     rus: {js|Правила Scrum связывают вместе роли, события и артефакты, управляя отношениями и взаимодействием между ними. Правила Scrum описаны всюду по телу этого документа.|js},
@@ -337,24 +337,24 @@ let oldDictionary2: pairList = [
   },
   /* https:reactjs.org/docs/reconciliation.html */
   {
-    rus: {js|Компонент более высокого порядка (HOC) - это продвинутая техника в React для повторного использования компонентной логики. Hoc не являются частью React API, как таковые. ��то паттерны, которые возникают из композиционной природы React.|js},
-    eng: "A higher-order component (HOC) is an advanced technique in React for reusing component logic. HOCs are not part of the React API, per se. They are a pattern that emerges from React’s compositional nature.",
+    rus: {js|Компонент более высокого порядка (HOC) - это продвинутая техника в React для повторного использования компонентной логики. Hoc не являются частью React API, как т��ко��ые. ��то паттерны, которые возникают из композиционной природы React.|js},
+    eng: "A higher-order component (HOC) is an advanced technique in React for reusing component logic. HOCs are not part of the React API, per se. They are a pattern that emerges from React's compositional nature.",
   },
   {
     rus: {js|Конкретно, компонент более высокого порядка является функцией, которая берет компонент и возвращает новый компонент.|js},
     eng: "Concretely, a higher-order component is a function that takes a component and returns a new component.",
   },
   {
-    rus: {js|HOCs распространены в сторонних библиотеках React, таких как connect Redux и Relay’s createFragmentContainer.|js},
-    eng: "HOCs are common in third-party React libraries, such as Redux’s connect and Relay’s createFragmentContainer.",
+    rus: {js|HOCs распространены в сторонних библиотеках React, таких как connect Redux и Relay's createFragmentContainer.|js},
+    eng: "HOCs are common in third-party React libraries, such as Redux's connect and Relay's createFragmentContainer.",
   },
   {
     rus: {js|В этом документе мы обсудим, почему компоненты более высокого порядка полезны и как написать свои собственные.|js},
-    eng: "In this document, we’ll discuss why higher-order components are useful, and how to write your own.",
+    eng: "In this document, we'll discuss why higher-order components are useful, and how to write your own.",
   },
   {
     rus: {js|Компоненты-основная единица повторного использования кода в React. Однако, вы обнаружите, что некоторые патерны не подходят для традиционных компонентов.|js},
-    eng: "Components are the primary unit of code reuse in React. However, you’ll find that some patterns aren’t a straightforward fit for traditional components.",
+    eng: "Components are the primary unit of code reuse in React. However, you'll find that some patterns aren't a straightforward fit for traditional components.",
   },
   {
     rus: {js|Мы хотим абстракцию, которая позволяет определить эту логику в одном месте и разделить ее между многими компонентами.|js},
@@ -366,7 +366,7 @@ let oldDictionary2: pairList = [
   },
   {
     rus: {js|Обратите внимание, что HOC не изменяет входной компонент и не использует наследование для копирования его поведения.|js},
-    eng: "Note that a HOC doesn’t modify the input component, nor does it use inheritance to copy its behavior.",
+    eng: "Note that a HOC doesn't modify the input component, nor does it use inheritance to copy its behavior.",
   },
   {
     rus: {js|Скорее, HOC составляет исходный компонент, заключая его в компонент контейнера.|js},
@@ -378,11 +378,11 @@ let oldDictionary2: pairList = [
   },
   {
     rus: {js|И это все! Обернутый компонент получает все реквизиты контейнера вместе с новым реквизитом, данные, которые он использует для визуализации своих выходных данных.|js},
-    eng: "And that’s it! The wrapped component receives all the props of the container, along with a new prop, data, which it uses to render its output.",
+    eng: "And that's it! The wrapped component receives all the props of the container, along with a new prop, data, which it uses to render its output.",
   },
   {
     rus: {js|HOC не имеет отношения к тому, как и почему используются данные, и обернутый компонент не связан с тем, откуда пришли данные.|js},
-    eng: "The HOC isn’t concerned with how or why the data is used, and the wrapped component isn’t concerned with where the data came from.",
+    eng: "The HOC isn't concerned with how or why the data is used, and the wrapped component isn't concerned with where the data came from.",
   },
   {
     rus: {js|Как в компонентах, контракт между withSubscription и обернутым компонентом полностью основан на props.|js},
@@ -394,7 +394,7 @@ let oldDictionary2: pairList = [
   },
   {
     rus: {js|Не изменяйте исходный компонент. Используйте копозицию.|js},
-    eng: "Don’t Mutate the Original Component. Use Composition.",
+    eng: "Don't Mutate the Original Component. Use Composition.",
   },
   {
     rus: {js|Вместо мутации HOCs следует использовать композицию, заключив входной компонент в компонент-контейнер.|js},
@@ -409,8 +409,8 @@ let oldDictionary2: pairList = [
     eng: "It works equally well with class and functional components.",
   },
   {
-    rus: {js|И потому, что это чистая функция, он компонуем с другими hoc, или даже с самим собой.|js},
-    eng: "And because it’s a pure function, it’s composable with other HOCs, or even with itself.",
+    rus: {js|И потому, что это чистая функция, он компонуем с другими HOC, или даже с самим собой.|js},
+    eng: "And because it's a pure function, it's composable with other HOCs, or even with itself.",
   },
   {
     rus: {js|Возможно, вы заметили сходство между HOCs и паттерном, называемым контейнер-компоненты.|js},
@@ -433,7 +433,7 @@ let oldDictionary2: pairList = [
     eng: "Convention: Pass Unrelated Props Through to the Wrapped Component",
   },
   {
-    rus: {js|HOCs должны пропускать props, которые не связаны с его конкретной работой.|js},
+    rus: {js|HOCs должны пропускать props, которые не связаны с его конкрет��ой работой.|js},
     eng: "HOCs should pass through props that are unrelated to its specific concern.",
   },
   {
@@ -450,15 +450,15 @@ let oldDictionary2: pairList = [
   },
   {
     rus: {js|Предостережения. Компоненты более высокого порядка имеют несколько предостережений, которые не сразу очевидны, если вы новичок в React.|js},
-    eng: "Caveats. Higher-order components come with a few caveats that aren’t immediately obvious if you’re new to React.",
+    eng: "Caveats. Higher-order components come with a few caveats that aren't immediately obvious if you're new to React.",
   },
   {
     rus: {js|Не используйте HOCs внутри метода рендеринга. Проблема здесь не только в производительности - перемонтирование компонента приводит к потере состояния этого компонента и всех его дочерних элементов.|js},
-    eng: "Don’t Use HOCs Inside the render Method. The problem here isn’t just about performance — remounting a component causes the state of that component and all of its children to be lost.",
+    eng: "Don-t Use HOCs Inside the render Method. The problem here isn't just about performance — remounting a component causes the state of that component and all of its children to be lost.",
   },
   {
     rus: {js|Хотя соглашение для HOC - пропустить все props к обернутому компоненту, это не работает для ссылок. Это потому, что ref на самом деле не prop — как и key, он обрабатывается специально React-ом.|js},
-    eng: "While the convention for higher-order components is to pass through all props to the wrapped component, this does not work for refs. That’s because ref is not really a prop — like key, it’s handled specially by React.",
+    eng: "While the convention for higher-order components is to pass through all props to the wrapped component, this does not work for refs. That's because ref is not really a prop — like key, it's handled specially by React.",
   },
   {
     rus: {js|Термин 'Render prop' относится к простой технике обмена кодом между компонентами React с использованием prop, значение которого является функцией.|js},
@@ -470,7 +470,7 @@ let oldDictionary2: pairList = [
   },
   {
     rus: {js|В этом документе мы обсудим, почему рендер props полезны, и как написать свои собственные.|js},
-    eng: "In this document, we’ll discuss why render props are useful, and how to write your own.",
+    eng: "In this document, we'll discuss why render props are useful, and how to write your own.",
   },
   {
     rus: {js|Используйте Render Props для Пересекающихся Задач|js},
@@ -478,7 +478,7 @@ let oldDictionary2: pairList = [
   },
   {
     rus: {js|Компоненты являются основной единицей переиспользования кода в React, но не всегда очевидно, как поделиться состоянием или поведением, которое один компонент инкапсулирует, с другими компонентами, которые нуждаются в том же состоянии.|js},
-    eng: "Components are the primary unit of code reuse in React, but it’s not always obvious how to share the state or behavior that one component encapsulates to other components that need that same state.",
+    eng: "Components are the primary unit of code reuse in React, but it's not always obvious how to share the state or behavior that one component encapsulates to other components that need that same state.",
   },
   {
     rus: {js|Теперь вопрос: Как мы можем переиспользовать это поведение в другом компоненте?|js},
@@ -514,10 +514,10 @@ let oldDictionary2: pairList = [
   },
   {
     rus: {js|По умолчанию, при рекурсии на дочерних узлах DOM, React просто перебирает оба списка дочерних узлов одновременно и генерирует мутацию всякий раз, когда есть разница.|js},
-    eng: "By default, when recursing on the children of a DOM node, React just iterates over both lists of children at the same time and generates a mutation whenever there’s a difference.",
+    eng: "By default, when recursing on the children of a DOM node, React just iterates over both lists of children at the same time and generates a mutation whenever there's a difference.",
   },
   {
-    rus: {js|Когда у детей есть ключи, React использует ключ для сопоставления детей в исходном дереве с детьми в последующем дереве.|js},
+    rus: {js|Когда у детей есть ключи, React ��споль��ует ключ д��я сопоставления детей в исходном дереве с детьми в последующем дереве.|js},
     eng: "When children have keys, React uses the key to match children in the original tree with children in the subsequent tree.",
   },
   {
@@ -526,7 +526,7 @@ let oldDictionary2: pairList = [
   },
   {
     rus: {js|Когда это не так, вы можете добавить новое свойство ID в свою модель или хэшировать некоторые части контента для создания ключа.|js},
-    eng: "When that’s not the case, you can add a new ID property to your model or hash some parts of the content to generate a key.",
+    eng: "When that's not the case, you can add a new ID property to your model or hash some parts of the content to generate a key.",
   },
   {
     rus: {js|Ключ должен быть уникальным только среди своих братьев и сестер, а не глобально уникальным.|js},
@@ -546,7 +546,7 @@ let oldDictionary2: pairList = [
   },
   {
     rus: {js|Чтобы быть ясным, rerender в этом контексте означает вызов render для всех компонентов, это не значит, что React размонтирует и перемонтирует их. Он будет применять только различия в соответствии с Правилами, изложенными в предыдущих разделах.|js},
-    eng: "Just to be clear, rerender in this context means calling render for all components, it doesn’t mean React will unmount and remount them. It will only apply the differences following the rules stated in the previous sections.",
+    eng: "Just to be clear, rerender in this context means calling render for all components, it doesn't mean React will unmount and remount them. It will only apply the differences following the rules stated in the previous sections.",
   },
   {
     rus: {js|Мы регулярно совершенствуем эвристику, чтобы ускорить общие случаи использования.|js},
@@ -566,7 +566,7 @@ let oldDictionary2: pairList = [
   },
   {
     rus: {js|Если вы видите себя чередующимся между двумя типами компонентов с очень похожими выходными данными, вы можете сделать его тем же типом. На практике мы не обнаружили, что это проблема.|js},
-    eng: "If you see yourself alternating between two component types with very similar output, you may want to make it the same type. In practice, we haven’t found this to be an issue.",
+    eng: "If you see yourself alternating between two component types with very similar output, you may want to make it the same type. In practice, we haven't found this to be an issue.",
   },
   {
     rus: {js|Нестабильные ключи (как те, которые производятся Math.random()) приведет к ненужному воссозданию многих экземпляров компонентов и узлов DOM, что может привести к снижению производительности и потере состояния в дочерних компонентах|js},
@@ -591,14 +591,14 @@ let oldDictionary2: pairList = [
   },
   {
     rus: {js|Вы не можете использовать атрибут ref для функциональных компонентов, потому что у них нет экземпляров.|js},
-    eng: "You may not use the ref attribute on functional components because they don’t have instances.",
+    eng: "You may not use the ref attribute on functional components because they don't have instances.",
   },
   {
     rus: {js|Этот код использует ref для хранения ссылки на узел DOM.|js},
     eng: "This code uses a ref to store a reference to a DOM node",
   },
   {
-    rus: {js|React присваивает текущему свойству элемент DOM при монтировании компонента и присваивает ему обратно значение null при размонтировании.|js},
+    rus: {js|React присваивает текущему свойству элемент DOM при монтировании компонента и присваивает ему обратно значение null при размонтирова��ии.|js},
     eng: "React will assign the current property with the DOM element when the component mounts, and assign it back to null when it unmounts.",
   },
   {
@@ -611,7 +611,7 @@ let oldDictionary2: pairList = [
   },
   {
     rus: {js|В редких случаях вам может потребоваться доступ к ДОЧЕРНЕМУ узлу DOM из родительского компонента.|js},
-    eng: "In rare cases, you might want to have access to a child’s DOM node from a parent component.",
+    eng: "In rare cases, you might want to have access to a child's DOM node from a parent component.",
   },
   {
     rus: {js|Обычно это не рекомендуется, поскольку это нарушает инкапсуляцию компонентов, но иногда это может быть полезно для запуска фокуса или измерения размера или положения дочернего узла DOM.|js},
@@ -623,11 +623,11 @@ let oldDictionary2: pairList = [
   },
   {
     rus: {js|Ref forwarding позволяет компонентам выбрать отображение рефа любого дочернего компонента как собственного.|js},
-    eng: "Ref forwarding lets components opt into exposing any child component’s ref as their own.",
+    eng: "Ref forwarding lets components opt into exposing any child component's ref as their own.",
   },
   {
     rus: {js|Вы можете найти подробный пример того, как предоставить дочерний узел DOM родительскому компоненту в документации ref forwarding.|js},
-    eng: "You can find a detailed example of how to expose a child’s DOM node to a parent component in the ref forwarding documentation.",
+    eng: "You can find a detailed example of how to expose a child's DOM node to a parent component in the ref forwarding documentation.",
   },
   /* https:reactjs.org/docs/refs-and-the-dom.html */
   {
@@ -691,7 +691,7 @@ let oldDictionary2: pairList = [
     eng: "PropTypes exports a range of validators that can be used to make sure the data you receive is valid.",
   },
   {
-    rus: {js|Если для prop указано недопустимое значение, в консоли JavaScript будет показано предупреждение.|js},
+    rus: {js|Если для prop указано недопустимое значение, в консоли JavaScript будет показан�� предуп��еждение.|js},
     eng: "When an invalid value is provided for a prop, a warning will be shown in the JavaScript console.",
   },
   {
@@ -791,7 +791,7 @@ let oldDictionary2: pairList = [
     eng: "As you start to build large libraries of components, you'll appreciate this explicitness and modularity.",
   },
   {
-    rus: {js|И при переиспользовании кода ваши строки кода начнут сжиматься.|js},
+    rus: {js|И при переис��ол��зовании кода ваши строки кода начнут сжиматься.|js},
     eng: "And with code reuse, your lines of code will start to shrink.",
   },
   {
