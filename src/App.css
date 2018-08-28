@@ -17,12 +17,12 @@
 
 			(
 				var(--screen-height) - var(--overlap_bottom) -
-					calc(var(--main_gap) * 2) - calc(var(--info_panel_height)*2)
+					calc(var(--main_gap) * 2) - calc(var(--info_panel_height)*1)
 			) / 2
 	);
 
 	--text-height-landscape: calc(
-		var(--screen-width) - calc(var(--info_panel_height)*2) -
+		var(--screen-width) - calc(var(--info_panel_height)*1) -
 			var(--main_gap) - var(--overlap_bottom)
 	);
 
