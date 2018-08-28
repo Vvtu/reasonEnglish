@@ -1,12 +1,17 @@
 [%bs.raw {|require('./App.css')|}];
 /* [@bs.val] external setTimeout : (unit => unit, int) => float = "setTimeout";
    [@bs.val] external clearTimeout : float => unit = "clearTimeout"; */
+
+
 type state = {
   showEnglish: bool,
   showAdvanced: bool,
   appcodeIsSpeaking: bool,
   allCards: Dictionaries.pairList,
   remainingCards: Dictionaries.pairList,
+  whiteColor: string,
+  advancedColor: string,
+  englishTextColor: string,
 };
 type action =
   | GotoNextCard(Dictionaries.pairList)
@@ -30,6 +35,9 @@ let make = _children => {
     appcodeIsSpeaking: false,
     allCards: [],
     remainingCards: [],
+    whiteColor: "#000000",
+    advancedColor: "#000000",
+    englishTextColor: "#000000",
   },
   /* reducer must be pure */
   reducer: (action, state) =>
@@ -98,12 +106,22 @@ let make = _children => {
           Reshuffle.reshuffle5(dict),
         );
 
+      /* open Webapi.Dom;
+      let styles = Window.getComputedStyle(el, window);
+          greenColor: "#6b5ee0", /*styles.getPropertyValue("--english-text-color"),*/
+        advancedColor: "#add8e6", /*styles.getPropertyValue("--advanced-color"),*/
+        whiteColor: "#000000", /*styles.getPropertyValue("--base-text-color"),*/
+        */
+
       ReasonReact.Update({
         ...state,
         appcodeIsSpeaking: false,
         showEnglish: false,
         allCards,
         remainingCards: allCards,
+        whiteColor: "#000000",
+        advancedColor: "#add8e6",
+        englishTextColor: "#6b5ee0",
       });
     },
   didMount: self => self.send(Restart),
@@ -132,14 +150,11 @@ let make = _children => {
               onClick=(
                 _ => send(GotoPreviousCard(countAll - countRemain - 2))
               )>
-              <Icon.Arrow
-                color=Constants.whiteColor
-                height=Constants.iconSize
-              />
+              <Icon.Arrow color=state.whiteColor height=Constants.iconSize />
             </div>
             <div onClick=(_ => send(ShowAdvancedMenu))>
               <Icon.Advanced
-                color=Constants.advancedColor
+                color=state.advancedColor
                 height=Constants.iconSize
               />
             </div>
@@ -151,7 +166,7 @@ let make = _children => {
                     _ => send(SwitchEnglishShowing(currentCard.rus, shown))
                   )>
                   <Icon.Arrow
-                    color=Constants.whiteColor
+                    color=state.whiteColor
                     height=Constants.iconSize
                   />
                 </div> :
@@ -161,7 +176,7 @@ let make = _children => {
                     _ => send(SwitchEnglishShowing(currentCard.rus, shown))
                   )>
                   <Icon.Arrow
-                    color=Constants.englishTextColor
+                    color=state.englishTextColor
                     height=Constants.iconSize
                   />
                 </div>
@@ -183,10 +198,7 @@ let make = _children => {
             <div
               className="appcode__icon_invert__horizontal"
               onClick=(_ => send(GotoNextCard(tail)))>
-              <Icon.Arrow
-                color=Constants.whiteColor
-                height=Constants.iconSize
-              />
+              <Icon.Arrow color=state.whiteColor height=Constants.iconSize />
             </div>
           </div>
         </div>

@@ -244,11 +244,11 @@ let oldDictionary2: pairList = [
     eng: "Welcome changing requirements, even late in development. Agile processes harness change for the customer's competive advantage.",
   },
   {
-    rus: {js|Поставляйте рабочее программное обеспечение часто, от нескольких недель до нескольких месяцев, с предпочтением к более кор������������������тким временным рамкам.|js},
+    rus: {js|Поставляйте рабочее программное обеспечение часто, от нескольких недель до нескольких месяцев, с предпочтением к более кор��тким временным рамкам.|js},
     eng: "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.",
   },
   {
-    rus: {js|Заказчики и разработчики должны ежедневно работать вместе на протяжении всего проекта.|js},
+    rus: {js|Заказчики и разработчики должны ежедневно ��аботать вместе на протяжении всего проекта.|js},
     eng: "Business people and developers must work together daily throughout the project.",
   },
   {
@@ -337,7 +337,7 @@ let oldDictionary2: pairList = [
   },
   /* https:reactjs.org/docs/reconciliation.html */
   {
-    rus: {js|Компонент более высокого порядка (HOC) - это продвинутая техника в React для повторного использования компонентной логики. Hoc не являются частью React API, как т��ко��ые. ��то паттерны, которые возникают из композиционной природы React.|js},
+    rus: {js|Компонент более высокого порядка (HOC) - это продвинутая техника в React для повторного использования компонентной логики. Hoc не являются частью React API, как т��ко��������е. Э��о паттерны, которые возникают из композиционной природы React.|js},
     eng: "A higher-order component (HOC) is an advanced technique in React for reusing component logic. HOCs are not part of the React API, per se. They are a pattern that emerges from React's compositional nature.",
   },
   {
@@ -433,7 +433,7 @@ let oldDictionary2: pairList = [
     eng: "Convention: Pass Unrelated Props Through to the Wrapped Component",
   },
   {
-    rus: {js|HOCs должны пропускать props, которые не связаны с его конк��ет��ой работой.|js},
+    rus: {js|HOCs должны пропускать props, которые не связаны с его конкретной работой.|js},
     eng: "HOCs should pass through props that are unrelated to its specific concern.",
   },
   {
@@ -517,7 +517,7 @@ let oldDictionary2: pairList = [
     eng: "By default, when recursing on the children of a DOM node, React just iterates over both lists of children at the same time and generates a mutation whenever there's a difference.",
   },
   {
-    rus: {js|Когда у детей есть к��ючи, React ��споль��ует ключ д��я сопоставления детей в исходном дереве с детьми в последующем дереве.|js},
+    rus: {js|Когда у детей есть ключи, React использ��ет ключ ����я сопоставления детей в исходном дереве с детьми в последующем дереве.|js},
     eng: "When children have keys, React uses the key to match children in the original tree with children in the subsequent tree.",
   },
   {
@@ -598,11 +598,11 @@ let oldDictionary2: pairList = [
     eng: "This code uses a ref to store a reference to a DOM node",
   },
   {
-    rus: {js|React присваивает текущему свойству элемент DOM при монтировании компонента и присваивает ему обратно значение null при размонт��ровании.|js},
+    rus: {js|React присваивает текущему свойству элемент DOM при монтировании компонента и присваивает ему обратно значение null при размонтировании.|js},
     eng: "React will assign the current property with the DOM element when the component mounts, and assign it back to null when it unmounts.",
   },
   {
-    rus: {js|Обновления рефов происходят до componentdidmount или componentdidupdate хуков жизненного цикла.|js},
+    rus: {js|Обновления рефов происходят до componentdidmount или componentdidupdate хуков жизненного ци��ла.|js},
     eng: "ref updates happen before componentDidMount or componentDidUpdate lifecycle hooks.",
   },
   {
@@ -691,7 +691,7 @@ let oldDictionary2: pairList = [
     eng: "PropTypes exports a range of validators that can be used to make sure the data you receive is valid.",
   },
   {
-    rus: {js|Если для prop указано недопустимое значение, в консоли JavaScript будет по��азан�� предуп��еждение.|js},
+    rus: {js|Если для prop указано недопустимое значение, в консоли JavaScript будет показано предупреждение.|js},
     eng: "When an invalid value is provided for a prop, a warning will be shown in the JavaScript console.",
   },
   {
@@ -791,7 +791,7 @@ let oldDictionary2: pairList = [
     eng: "As you start to build large libraries of components, you'll appreciate this explicitness and modularity.",
   },
   {
-    rus: {js|И при переис��ол��зовании кода ваши строки кода начнут сжиматься.|js},
+    rus: {js|И при пер��и��пользовании кода ваши строки кода начнут сжиматься.|js},
     eng: "And with code reuse, your lines of code will start to shrink.",
   },
   {
