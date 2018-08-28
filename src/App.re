@@ -35,7 +35,7 @@ let make = _children => {
   reducer: (action, state) =>
     switch (action) {
     | GotoNextCard(tail) =>
-      ReasonReact.Update({...state, remainingCards: tail})
+      ReasonReact.Update({...state, remainingCards: tail, showEnglish: false})
     | GotoPreviousCard(index) =>
       let newCurrentDictionary =
         if (index < 0) {

@@ -106,7 +106,9 @@ It compiles to straightforward JS files, so you can open index.html directly fro
 
   Отличаются символы арифметических операций для целых  и плавающих чисел. "Why the heck can't I just use an overloaded + for both int and float?"
 
-5.  Mutable Update.    Record fields can optionally be mutable. This allows you to update those fields in-place with the = operator.
+5.  Mutable Update.
+Record fields can optionally be mutable.
+This allows you to update those fields in-place with the = operator.
 
 
 6. Lists vs Arrays - Array
@@ -473,7 +475,11 @@ type option('a) =
   | Some('a);
 option forces you to always consider the None case.
 
-ReasonML’s support for option is minimal. The definition of this variant is part of the language, but the core standard library has no utility functions for working with optional values, yet. Until they are, you can use BuckleScript’s Js.Option.
+ReasonML’s support for option is minimal.
+ The definition of this variant is part of the language,
+  but the core standard library has no utility functions
+  for working with optional values, yet.
+  Until they are, you can use BuckleScript’s Js.Option.
 
 // ------------------------------------------------
 Type result('a) for error handling
@@ -1242,6 +1248,25 @@ JS 272
 RE 169
 JS 146
 
- Итого:  +25 kB кода для Reason в среднем
+ Итого:  +24 kB кода для Reason в среднем
 ----------
+Backlescript
+Поменялось представление optional. Теперь, None === undefined , Some("Hello") = "Hello"
 
+-----------------
+
+So, if Facebook intended to make the React ecosystem statically typed,
+Bucklescript was certainly a nice candidate,
+since they seemed to believe that JavaScript -
+with its popular curly braced syntax -
+was largely responsible for React's success.
+
+In order to keep the JavaScript syntax they created an additional parser,
+ handling a new language called ReasonML,
+ that is simply OCaml with a javascript-like curly-braced syntax.
+
+What's up with Redux?
+
+Redux is a state manager that's very popular amongst React projects. Simply put, it allows organizing the application domain logic as a set of composed reducer functions, which are meant to express how the state of the application should be transformed as external events (such as user interactions).
+
+When using ReasonML, we don't need Redux anymore. ReactReason stateless components already come with the concept of a build in reducer, which is meant to take care of the problems Redux used to address.
