@@ -12,6 +12,7 @@ type state = {
   whiteColor: string,
   advancedColor: string,
   englishTextColor: string,
+  dangerColor: string,
 };
 type action =
   | GotoNextCard(Dictionaries.pairList)
@@ -38,6 +39,7 @@ let make = _children => {
     whiteColor: "#000000",
     advancedColor: "#000000",
     englishTextColor: "#000000",
+    dangerColor: "#000000",
   },
   /* reducer must be pure */
   reducer: (action, state) =>
@@ -122,6 +124,7 @@ let make = _children => {
         whiteColor: "#000000",
         advancedColor: "#add8e6",
         englishTextColor: "#6b5ee0",
+        dangerColor: "#00bfff",
       });
     },
   didMount: self => self.send(Restart),
@@ -235,6 +238,8 @@ let make = _children => {
             <PopUpWindow
               handleClosePopupClicked=(_ => send(HideAdvancedMenu))
               handleRestart=(_ => send(Restart))
+              whiteColor = state.whiteColor
+              dangerColor = state.dangerColor
             /> :
             <div />
         )

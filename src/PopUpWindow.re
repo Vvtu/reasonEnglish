@@ -21,7 +21,14 @@ type action =
   | ClosePopUp;
 let component = ReasonReact.reducerComponent("PopUpWindow");
 
-let make = (~handleClosePopupClicked, ~handleRestart, _children) => {
+let make =
+    (
+      ~handleClosePopupClicked,
+      ~handleRestart,
+      ~whiteColor,
+      ~dangerColor,
+      _children,
+    ) => {
   ...component,
   initialState: () => {increaseOpacity: false},
   reducer: (action, _state) =>
@@ -55,10 +62,7 @@ let make = (~handleClosePopupClicked, ~handleRestart, _children) => {
       <div className="popup__full_screen_div">
         <div className="popup__window">
           <div className="popup__cancel">
-            <Icon.Cancel
-              color=Constants.whiteColor
-              height=Constants.iconSmallSize
-            />
+            <Icon.Cancel color=whiteColor height=Constants.iconSmallSize />
           </div>
           <div className="popup__list">
             <PopUpMenuItem label="Advanced" onClick=(_ => send(ClosePopUp))>
@@ -73,10 +77,7 @@ let make = (~handleClosePopupClicked, ~handleRestart, _children) => {
                   send(ClosePopUp);
                 }
               )>
-              <Icon.ClearAllInfo
-                color=Constants.redColor
-                height=Constants.iconSize
-              />
+              <Icon.ClearAllInfo color=dangerColor height=Constants.iconSize />
             </PopUpMenuItem>
             <PopUpMenuItem
               label="dict #1"
