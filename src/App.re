@@ -2,7 +2,6 @@
 /* [@bs.val] external setTimeout : (unit => unit, int) => float = "setTimeout";
    [@bs.val] external clearTimeout : float => unit = "clearTimeout"; */
 
-
 type state = {
   showEnglish: bool,
   showAdvanced: bool,
@@ -109,11 +108,11 @@ let make = _children => {
         );
 
       /* open Webapi.Dom;
-      let styles = Window.getComputedStyle(el, window);
-          greenColor: "#6b5ee0", /*styles.getPropertyValue("--english-text-color"),*/
-        advancedColor: "#add8e6", /*styles.getPropertyValue("--advanced-color"),*/
-        whiteColor: "#000000", /*styles.getPropertyValue("--base-text-color"),*/
-        */
+         let styles = Window.getComputedStyle(el, window);
+             greenColor: "#6b5ee0", /*styles.getPropertyValue("--english-text-color"),*/
+           advancedColor: "#add8e6", /*styles.getPropertyValue("--advanced-color"),*/
+           whiteColor: "#000000", /*styles.getPropertyValue("--base-text-color"),*/
+           */
 
       ReasonReact.Update({
         ...state,
@@ -238,8 +237,8 @@ let make = _children => {
             <PopUpWindow
               handleClosePopupClicked=(_ => send(HideAdvancedMenu))
               handleRestart=(_ => send(Restart))
-              whiteColor = state.whiteColor
-              dangerColor = state.dangerColor
+              whiteColor=state.whiteColor
+              dangerColor=state.dangerColor
             /> :
             <div />
         )

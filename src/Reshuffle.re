@@ -1,4 +1,4 @@
-let reshuffle0 = dic => {
+let reshuffle1 = dic => {
   let p1 = List.map(x => (Random.int(1000000), x), dic);
   let p2 = List.sort((x, y) => fst(x) - fst(y), p1);
   let p3 = List.map(x => snd(x), p2);
@@ -7,31 +7,6 @@ let reshuffle0 = dic => {
 /* */
 /* */
 /* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* -----------------------------------------------------------*/
-
-let reshuffle1 = dic => {
-  let p1 = List.map(x => (Random.int(1000000), x), dic);
-  let p2 = List.sort(((x, _), (y, _)) => x - y, p1);
-  let p3 = List.map(((_, x)) => x, p2);
-  p3;
-};
 /* */
 /* */
 /* */
@@ -203,7 +178,6 @@ let reshuffle7 = dic => {
   let f3 = x => map(((_, x)) => x, x);
   (f1 ==> f2 ==> f3)(dic);
 };
-
 /* */
 /* */
 /* */
@@ -224,6 +198,7 @@ let reshuffle7 = dic => {
 /* */
 /* */
 /* */
+/* -----------------------------------------------------------*/
 let reshuffle8 = dic => {
   let f1 = map(x => (Random.int(1000000), x));
   let f2 = sort(((x, _), (y, _)) => x - y);

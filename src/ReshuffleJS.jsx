@@ -31,12 +31,11 @@ const reshuffleJS1 = (dic) => {
 //
 //
 //
-//
-const reshuffleJS2 = (dic) =>
-	dic
-		.map((x) => [ Math.random(), x ])
-		.sort((x, y) => x[0] - y[0])
-		.map((x) => x[1]);
+//const reshuffleJS2 = (dic) =>
+dic
+	.map((x) => [ Math.random(), x ])
+	.sort((x, y) => x[0] - y[0])
+	.map((x) => x[1]);
 //
 //
 //
