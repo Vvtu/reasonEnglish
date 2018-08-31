@@ -184,10 +184,6 @@ let oldDictionary2: pairList = [
     eng: "Why the heck can't I just use an overloaded + for both int and float?",
   },
   {
-    rus: {js|В этом есть много истории, но однажды мы сможем. Давай держись =)|js},
-    eng: "There's a lot of history to this, but one day we'll be able to. Let's hang in there =)",
-  },
-  {
     rus: {js|Кортежи иммутаблельные, упорядоченные, фиксированного размера во время создания размера, гетерогенные (могут содержать различные типы значений).|js},
     eng: "Tuples are immutable, ordered, fix-sized at creation time, heterogeneous (can contain different types of values).",
   },
@@ -441,7 +437,7 @@ let oldOldDictionary2: pairList = [
     eng: "This HOC has the same functionality as the mutating version while avoiding the potential for clashes.",
   },
   {
-    rus: {js|Он одинаково хорошо работает с класс и функциональными компонентами.|js},
+    rus: {js|Он одинаково хорошо работает с класс и ф��нкциональными компонентами.|js},
     eng: "It works equally well with class and functional components.",
   },
   {
@@ -610,7 +606,7 @@ let oldOldDictionary2: pairList = [
   },
   /* https:reactjs.org/docs/reconciliation.html */
   {
-    rus: {js|Приведенные ниже примеры были обновлены для использования React.createRef() API, представленый в React 16.3. Если используется более раннюю версию React, мы рекомендуем использовать callback refs.|js},
+    rus: {js|Приведенные ниже примеры были обновлены для использования React.createRef() API, пре��ставленый в React 16.3. Если используется более раннюю версию React, мы рекомендуем использовать callback refs.|js},
     eng: "The examples below have been updated to use the React.createRef() API introduced in React 16.3. If you are using an earlier release of React, we recommend using callback refs instead.",
   },
   {
