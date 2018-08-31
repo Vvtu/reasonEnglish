@@ -66,22 +66,19 @@ let make =
           </div>
           <div className="popup__list">
             (
-              ReasonReact.array(
-                Array.of_list(
-                  List.map(
-                    item =>
-                      <PopUpMenuItem
-                        key=(string_of_int(item))
-                        label="dict #2"
-                        onClick=(_ => ())>
-                        <div className="appcode__eng_text_color">
-                          (ReasonReact.string("D2"))
-                        </div>
-                      </PopUpMenuItem>,
-                    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
-                  ),
-                ),
-              )
+              [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+              |> List.map(item =>
+                   <PopUpMenuItem
+                     key=(string_of_int(item))
+                     label="dict #2"
+                     onClick=(_ => ())>
+                     <div className="appcode__eng_text_color">
+                       (ReasonReact.string("D2"))
+                     </div>
+                   </PopUpMenuItem>
+                 )
+              |> Array.of_list
+              |> ReasonReact.array
             )
           </div>
         </div>
