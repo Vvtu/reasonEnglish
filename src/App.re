@@ -5,6 +5,7 @@
 type state = {
   showEnglish: bool,
   showAdvanced: bool,
+  showVoiceMenu: bool,
   appcodeIsSpeaking: bool,
   allCards: Dictionaries.pairList,
   remainingCards: Dictionaries.pairList,
@@ -20,6 +21,7 @@ type action =
   | SpeakEnglish(string)
   | SpeechEnd
   | ShowAdvancedMenu
+  | ShowVoiceMenu
   | HideAdvancedMenu
   | Restart;
 
@@ -32,6 +34,7 @@ let make = _children => {
   initialState: () => {
     showEnglish: false,
     showAdvanced: false,
+    showVoiceMenu: false,
     appcodeIsSpeaking: false,
     allCards: [],
     remainingCards: [],
@@ -55,7 +58,13 @@ let make = _children => {
       ReasonReact.Update({...state, remainingCards: newCurrentDictionary});
 
     | ShowAdvancedMenu => ReasonReact.Update({...state, showAdvanced: true})
-    | HideAdvancedMenu => ReasonReact.Update({...state, showAdvanced: false})
+    | HideAdvancedMenu =>
+      ReasonReact.Update({
+        ...state,
+        showAdvanced: false,
+        showVoiceMenu: false,
+      })
+    | ShowVoiceMenu => ReasonReact.Update({...state, showVoiceMenu: true})
     | SpeechEnd => ReasonReact.Update({...state, appcodeIsSpeaking: false})
     | SpeakEnglish(text) =>
       ReasonReact.UpdateWithSideEffects(
@@ -235,6 +244,17 @@ let make = _children => {
         (
           state.showAdvanced ?
             <PopUpWindow
+              handleClosePopupClicked=(_ => send(HideAdvancedMenu))
+              handleVoiceMenuClicked=(_ => send(ShowAdvancedMenu))
+              handleRestart=(_ => send(Restart))
+              whiteColor=state.whiteColor
+              dangerColor=state.dangerColor
+            /> :
+            <div />
+        )
+        (
+          state.showVoiceMenu ?
+            <PopUpVoiceMenu
               handleClosePopupClicked=(_ => send(HideAdvancedMenu))
               handleRestart=(_ => send(Restart))
               whiteColor=state.whiteColor

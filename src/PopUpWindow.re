@@ -24,6 +24,7 @@ let component = ReasonReact.reducerComponent("PopUpWindow");
 let make =
     (
       ~handleClosePopupClicked,
+      ~handleVoiceMenuClicked,
       ~handleRestart,
       ~whiteColor,
       ~dangerColor,
@@ -108,6 +109,9 @@ let make =
               <div className="appcode__eng_text_color">
                 (ReasonReact.string("D2"))
               </div>
+            </PopUpMenuItem>
+            <PopUpMenuItem label="voices" onClick=handleVoiceMenuClicked>
+              <Icon.Voices color=dangerColor height=Constants.iconSize />
             </PopUpMenuItem>
           </div>
         </div>
