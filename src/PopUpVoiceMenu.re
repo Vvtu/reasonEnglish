@@ -51,6 +51,7 @@ let make =
   },
   render: ({state, send}) => {
     Js.log("PopUpVoiceMenu render");
+
     <div
       className=(
         state.increaseOpacity === true ?
@@ -58,53 +59,46 @@ let make =
       )
       onClick=(_ => send(ClosePopUp))
       onDoubleClick=(_ => send(ClosePopUp))>
-      <div className="popup__window">
-        <div className="popup__cancel">
-          <Icon.Cancel color=whiteColor height=Constants.iconSmallSize />
-        </div>
-        <div className="popup__list">
-          <PopUpMenuItem label="Advanced" onClick=(_ => send(ClosePopUp))>
-            <div />
-          </PopUpMenuItem>
-          <PopUpMenuItem
-            label="reset all info"
-            onClick=(
-              _ => {
-                let _ = Dom.Storage.(clear(localStorage));
-                handleRestart();
-                send(ClosePopUp);
-              }
-            )>
-            <Icon.ClearAllInfo color=dangerColor height=Constants.iconSize />
-          </PopUpMenuItem>
-          <PopUpMenuItem
-            label="dict #1"
-            onClick=(
-              _ => {
-                let _ =
-                  Dom.Storage.(localStorage |> removeItem(Constants.dict));
-                handleRestart();
-                send(ClosePopUp);
-              }
-            )>
-            <div className="appcode__eng_text_color">
-              (ReasonReact.string("D1"))
-            </div>
-          </PopUpMenuItem>
-          <PopUpMenuItem
-            label="dict #2"
-            onClick=(
-              _ => {
-                let _ =
-                  Dom.Storage.(localStorage |> setItem(Constants.dict, "+"));
-                handleRestart();
-                send(ClosePopUp);
-              }
-            )>
-            <div className="appcode__eng_text_color">
-              (ReasonReact.string("D2"))
-            </div>
-          </PopUpMenuItem>
+      <div className="popup__full_screen_div">
+        <div className="popup__window">
+          <div className="popup__cancel">
+            <Icon.Cancel color=whiteColor height=Constants.iconSmallSize />
+          </div>
+          <div className="popup__list">
+            <PopUpMenuItem label="reset all info" onClick=(_ => ())>
+              <Icon.ClearAllInfo color=dangerColor height=Constants.iconSize />
+            </PopUpMenuItem>
+            <PopUpMenuItem
+              label="dict #1"
+              onClick=(
+                _ => {
+                  let _ =
+                    Dom.Storage.(localStorage |> removeItem(Constants.dict));
+                  handleRestart();
+                  send(ClosePopUp);
+                }
+              )>
+              <div className="appcode__eng_text_color">
+                (ReasonReact.string("D1"))
+              </div>
+            </PopUpMenuItem>
+            <PopUpMenuItem
+              label="dict #2"
+              onClick=(
+                _ => {
+                  let _ =
+                    Dom.Storage.(
+                      localStorage |> setItem(Constants.dict, "+")
+                    );
+                  handleRestart();
+                  send(ClosePopUp);
+                }
+              )>
+              <div className="appcode__eng_text_color">
+                (ReasonReact.string("D2"))
+              </div>
+            </PopUpMenuItem>
+          </div>
         </div>
       </div>
     </div>;

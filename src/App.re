@@ -64,7 +64,8 @@ let make = _children => {
         showAdvanced: false,
         showVoiceMenu: false,
       })
-    | ShowVoiceMenu => ReasonReact.Update({...state, showVoiceMenu: true})
+    | ShowVoiceMenu =>
+      ReasonReact.Update({...state, showAdvanced: false, showVoiceMenu: true})
     | SpeechEnd => ReasonReact.Update({...state, appcodeIsSpeaking: false})
     | SpeakEnglish(text) =>
       ReasonReact.UpdateWithSideEffects(
@@ -245,7 +246,7 @@ let make = _children => {
           state.showAdvanced ?
             <PopUpWindow
               handleClosePopupClicked=(_ => send(HideAdvancedMenu))
-              handleVoiceMenuClicked=(_ => send(ShowAdvancedMenu))
+              handleVoiceMenuClicked=(_ => send(ShowVoiceMenu))
               handleRestart=(_ => send(Restart))
               whiteColor=state.whiteColor
               dangerColor=state.dangerColor
