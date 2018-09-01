@@ -4,13 +4,13 @@
 
 type state = {
   showEnglish: bool,
-  showAdvanced: bool,
+  showSettings: bool,
   showVoiceMenu: bool,
   appcodeIsSpeaking: bool,
   allCards: Dictionaries.pairList,
   remainingCards: Dictionaries.pairList,
   whiteColor: string,
-  advancedColor: string,
+  settingsColor: string,
   englishTextColor: string,
   dangerColor: string,
 };
@@ -20,9 +20,9 @@ type action =
   | SwitchEnglishShowing(string, int)
   | SpeakEnglish(string)
   | SpeechEnd
-  | ShowAdvancedMenu
+  | ShowSettingsMenu
   | ShowVoiceMenu
-  | HideAdvancedMenu
+  | HideSettingsMenu
   | Restart;
 
 open List;
@@ -33,13 +33,13 @@ let make = _children => {
   ...component,
   initialState: () => {
     showEnglish: false,
-    showAdvanced: false,
+    showSettings: false,
     showVoiceMenu: false,
     appcodeIsSpeaking: false,
     allCards: [],
     remainingCards: [],
     whiteColor: "#000000",
-    advancedColor: "#000000",
+    settingsColor: "#000000",
     englishTextColor: "#000000",
     dangerColor: "#000000",
   },
@@ -57,15 +57,9 @@ let make = _children => {
         };
       ReasonReact.Update({...state, remainingCards: newCurrentDictionary});
 
-    | ShowAdvancedMenu => ReasonReact.Update({...state, showAdvanced: true})
-    | HideAdvancedMenu =>
-      ReasonReact.Update({
-        ...state,
-        showAdvanced: false,
-        showVoiceMenu: false,
-      })
-    | ShowVoiceMenu =>
-      ReasonReact.Update({...state, showAdvanced: false, showVoiceMenu: true})
+    | ShowSettingsMenu => ReasonReact.Update({...state, showSettings: true})
+    | HideSettingsMenu => ReasonReact.Update({...state, showSettings: false})
+    | ShowVoiceMenu => ReasonReact.Update({...state, showVoiceMenu: true})
     | SpeechEnd => ReasonReact.Update({...state, appcodeIsSpeaking: false})
     | SpeakEnglish(text) =>
       ReasonReact.UpdateWithSideEffects(
@@ -120,7 +114,7 @@ let make = _children => {
       /* open Webapi.Dom;
          let styles = Window.getComputedStyle(el, window);
              greenColor: "#6b5ee0", /*styles.getPropertyValue("--english-text-color"),*/
-           advancedColor: "#add8e6", /*styles.getPropertyValue("--advanced-color"),*/
+           settingsColor: "#add8e6", /*styles.getPropertyValue("--settings-color"),*/
            whiteColor: "#000000", /*styles.getPropertyValue("--base-text-color"),*/
            */
 
@@ -131,7 +125,7 @@ let make = _children => {
         allCards,
         remainingCards: allCards,
         whiteColor: "#000000",
-        advancedColor: "#add8e6",
+        settingsColor: "#add8e6",
         englishTextColor: "#6b5ee0",
         dangerColor: "#00bfff",
       });
@@ -164,9 +158,9 @@ let make = _children => {
               )>
               <Icon.Arrow color=state.whiteColor height=Constants.iconSize />
             </div>
-            <div onClick=(_ => send(ShowAdvancedMenu))>
-              <Icon.Advanced
-                color=state.advancedColor
+            <div onClick=(_ => send(ShowSettingsMenu))>
+              <Icon.Settings
+                color=state.settingsColor
                 height=Constants.iconSize
               />
             </div>
@@ -243,9 +237,9 @@ let make = _children => {
           )
         </div>
         (
-          state.showAdvanced ?
-            <PopUpAdvancedMenu
-              handleClosePopupClicked=(_ => send(HideAdvancedMenu))
+          state.showSettings ?
+            <PopUpSettingsMenu
+              handleClosePopupClicked=(_ => send(HideSettingsMenu))
               handleVoiceMenuClicked=(_ => send(ShowVoiceMenu))
               handleRestart=(_ => send(Restart))
               whiteColor=state.whiteColor
@@ -256,7 +250,7 @@ let make = _children => {
         (
           state.showVoiceMenu ?
             <PopUpVoiceMenu
-              handleClosePopupClicked=(_ => send(HideAdvancedMenu))
+              handleClosePopupClicked=(_ => send(HideSettingsMenu))
               handleRestart=(_ => send(Restart))
               whiteColor=state.whiteColor
               dangerColor=state.dangerColor

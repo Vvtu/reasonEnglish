@@ -1,11 +1,11 @@
-module Advanced = {
-  let component = ReasonReact.statelessComponent("Icon.Advanced");
+module Settings = {
+  let component = ReasonReact.statelessComponent("Icon.Settings");
 
   let make = (~color: string, ~height: string, _children) => {
     ...component,
     shouldUpdate: _ => false,
     render: _self => {
-      Js.log("IconAdvanced render");
+      Js.log("IconSettings render");
       <svg
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"

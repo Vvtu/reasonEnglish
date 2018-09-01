@@ -326,7 +326,7 @@ include Dictionaries;   --  Вместе инклюдами подтянул т�
 type state = {
   activeIndex: int,
   showEnglish: bool,
-  showAdvanced: bool,
+  showSettings: bool,
   appcodeIsSpeaking: bool,
   randomDictionary: Dictionaries.pairList,
 };
@@ -337,7 +337,7 @@ type state = {
 	initialState: () => {
     activeIndex: 0,
     showEnglish: false,
-    showAdvanced: false,
+    showSettings: false,
     appcodeIsSpeaking: false,
     randomDictionary: Reshuffle.reshuffle(Dictionaries.dictionary1),
   },
@@ -1001,7 +1001,7 @@ exapmle ====>
 43. Понадобилось сделать requestAnimationFrame - сделал
 [@bs.val] external requestAnimationFrame : (unit => unit) => float = "requestAnimationFrame";
 
-45. finish Animation of PopUpAdvancedMenu - commit
+45. finish Animation of PopUpSettingsMenu - commit
 
 
 46. debuging

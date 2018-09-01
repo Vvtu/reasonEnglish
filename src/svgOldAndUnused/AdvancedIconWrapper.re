@@ -1,4 +1,4 @@
-[@bs.module "./AdvancedIcon.jsx"]
+[@bs.module "./SettingsIcon.jsx"]
 external arrowIcon : ReasonReact.reactClass = "default";
 
 let make = (~color: string, ~height: string, children) =>

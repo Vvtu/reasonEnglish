@@ -5,8 +5,9 @@ external requestAnimationFrame : (unit => unit) => float =
 type state = {increaseOpacity: bool};
 type action =
   | SetIncreaseOpacityTrue
-  | ClosePopUp;
-let component = ReasonReact.reducerComponent("PopUpAdvancedMenu");
+  | ClosePopUp
+  | ClosePopUpAndShowVoicesMenu;
+let component = ReasonReact.reducerComponent("PopUpSettingsMenu");
 
 let make =
     (
@@ -32,13 +33,23 @@ let make =
           }
         ),
       )
+    | ClosePopUpAndShowVoicesMenu =>
+      ReasonReact.SideEffects(
+        (
+          self => {
+            self.send(ClosePopUp);
+            let _ = Js.Global.setTimeout(handleVoiceMenuClicked, 800);
+            ();
+          }
+        ),
+      )
     },
   didMount: ({send}) => {
     let _ = requestAnimationFrame(_ => send(SetIncreaseOpacityTrue));
     ();
   },
   render: ({state, send}) => {
-    Js.log("PopUpAdvancedMenu render");
+    Js.log("PopUpSettingsMenu render");
     <div
       className=(
         state.increaseOpacity === true ?
@@ -53,7 +64,7 @@ let make =
             <Icon.Cancel color=whiteColor height=Constants.iconSmallSize />
           </div>
           <div className="popup__list">
-            <PopUpMenuItem label="Advanced" onClick=(_ => send(ClosePopUp))>
+            <PopUpMenuItem label="Settings" onClick=(_ => send(ClosePopUp))>
               <div />
             </PopUpMenuItem>
             <PopUpMenuItem
@@ -97,7 +108,8 @@ let make =
                 (ReasonReact.string("D2"))
               </div>
             </PopUpMenuItem>
-            <PopUpMenuItem label="voices" onClick=handleVoiceMenuClicked>
+            <PopUpMenuItem
+              label="voices" onClick=(_ => send(ClosePopUpAndShowVoicesMenu))>
               <Icon.Voices color=dangerColor height=Constants.iconSize />
             </PopUpMenuItem>
           </div>
