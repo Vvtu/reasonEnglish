@@ -2,6 +2,7 @@
 
 module Voice = {
   type t;
+  [@bs.get] external getVoiceLang : t => string = "lang";
 };
 
 module Utterance = {

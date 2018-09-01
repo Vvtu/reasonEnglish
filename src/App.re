@@ -13,6 +13,7 @@ type state = {
   settingsColor: string,
   englishTextColor: string,
   dangerColor: string,
+  voices: array(SpeechSynthesis.Voice.t),
 };
 type action =
   | GotoNextCard(Dictionaries.pairList)
@@ -24,6 +25,7 @@ type action =
   | ShowVoiceMenu
   | HideSettingsMenu
   | HideVoiceMenu
+  | StoreVoicesToSate(array(SpeechSynthesis.Voice.t))
   | Restart;
 
 open List;
@@ -43,6 +45,7 @@ let make = _children => {
     settingsColor: "#000000",
     englishTextColor: "#000000",
     dangerColor: "#000000",
+    voices: [||],
   },
   /* reducer must be pure */
   reducer: (action, state) =>
@@ -74,6 +77,8 @@ let make = _children => {
                 _ => self.send(SpeechEnd),
                 7000 /* in case of utterThis.onend failed */
               );
+            SpeechSynthesis.Utterance.set_voice(ut, state.voices[6]);
+
             SpeechSynthesis.Utterance.on_end(
               ut,
               _ => {
@@ -96,10 +101,12 @@ let make = _children => {
         showEnglish: newShowEnglish,
         appcodeIsSpeaking: false,
       });
+    | StoreVoicesToSate(voices) => ReasonReact.Update({...state, voices})
 
     | Restart =>
       Js.log("Restart");
       Random.self_init();
+
       let item = Dom.Storage.(localStorage |> getItem(Constants.dict));
 
       let (dict, dictOld) =
@@ -133,12 +140,37 @@ let make = _children => {
         dangerColor: "#00bfff",
       });
     },
-  didMount: self => self.send(Restart),
+  didMount: self => {
+    let _ = SpeechSynthesis.getVoices();
+    let _ =
+      Js.Global.setTimeout(
+        _ => {
+          let voices = SpeechSynthesis.getVoices();
+          Js.log("didMount timeOut=");
+          Js.log(voices);
+
+          let fVoices =
+            voices
+            |> Array.to_list
+            |> List.mapi((i, voice) => (i, voice##lang));
+
+          /* |> List.filter(voice => voice#lang === "asdasda")
+             |> Array.of_list; */
+          Js.log("didMount fVoices=");
+          Js.log(fVoices);
+
+          self.send(StoreVoicesToSate(voices));
+          /* SpeechSynthesis.getVoices() |> Array.filter( voice => voice.lang.startsWith("en-")) -> StoreVoicesToSate |> self.send; */
+        },
+        0,
+      );
+    self.send(Restart);
+  },
   render: ({state, send}) => {
     Js.log("App render");
 
-    Js.log("- showSettings = " ++ (state.showSettings ? "true" : "false"));
-    Js.log("- showVoiceMenu = " ++ (state.showVoiceMenu ? "true" : "false"));
+    Js.log("- voices = ");
+    Js.log(state.voices);
 
     switch (state.remainingCards) {
     | [] =>
