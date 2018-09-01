@@ -73,7 +73,18 @@ let make =
                    <PopUpMenuItem
                      key=(string_of_int(index))
                      label=name
-                     onClick=(_ => handleRestart())
+                     onClick=(
+                       _ => {
+                         Dom.Storage.(
+                           localStorage
+                           |> setItem(
+                                Constants.voiceIndexTeg,
+                                string_of_int(index),
+                              )
+                         );
+                         handleRestart();
+                       }
+                     )
                    />
                  )
               |> Array.of_list

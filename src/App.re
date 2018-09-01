@@ -138,8 +138,10 @@ let make = _children => {
 
       ReasonReact.Update({
         ...state,
-        appcodeIsSpeaking: false,
         showEnglish: false,
+        showSettings: false,
+        showVoiceMenu: false,
+        appcodeIsSpeaking: false,
         allCards,
         remainingCards: allCards,
         whiteColor: "#000000",
