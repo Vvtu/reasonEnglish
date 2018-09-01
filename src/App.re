@@ -244,7 +244,7 @@ let make = _children => {
         </div>
         (
           state.showAdvanced ?
-            <PopUpWindow
+            <PopUpAdvancedMenu
               handleClosePopupClicked=(_ => send(HideAdvancedMenu))
               handleVoiceMenuClicked=(_ => send(ShowVoiceMenu))
               handleRestart=(_ => send(Restart))

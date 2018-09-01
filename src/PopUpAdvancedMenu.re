@@ -1,16 +1,3 @@
-module PopUpMenuItem = {
-  let component = ReasonReact.statelessComponent("PopUpMenuItem");
-  let make = (~label, ~onClick, children) => {
-    ...component,
-    render: _self =>
-      <div className="popup__row" onClick onDoubleClick=onClick>
-        <div className="popup__width35"> ...children </div>
-        <div className="popup__gap" />
-        <div> (ReasonReact.string(label)) </div>
-      </div>,
-  };
-};
-
 [@bs.val]
 external requestAnimationFrame : (unit => unit) => float =
   "requestAnimationFrame";
@@ -19,7 +6,7 @@ type state = {increaseOpacity: bool};
 type action =
   | SetIncreaseOpacityTrue
   | ClosePopUp;
-let component = ReasonReact.reducerComponent("PopUpWindow");
+let component = ReasonReact.reducerComponent("PopUpAdvancedMenu");
 
 let make =
     (
@@ -51,7 +38,7 @@ let make =
     ();
   },
   render: ({state, send}) => {
-    Js.log("PopUpWindow render");
+    Js.log("PopUpAdvancedMenu render");
     <div
       className=(
         state.increaseOpacity === true ?
