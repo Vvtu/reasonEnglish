@@ -112,13 +112,14 @@ let make = _children => {
           ItemFunc.takeItems(3, Reshuffle.reshuffle5(dictOld)),
           Reshuffle.reshuffle5(dict),
         );
+      /* open Webapi.Dom; */
 
-      /* open Webapi.Dom;
-         let styles = Window.getComputedStyle(el, window);
-             greenColor: "#6b5ee0", /*styles.getPropertyValue("--english-text-color"),*/
-           settingsColor: "#add8e6", /*styles.getPropertyValue("--settings-color"),*/
-           whiteColor: "#000000", /*styles.getPropertyValue("--base-text-color"),*/
-           */
+      /* let _ = Window.getComputedStyle(el, window); */
+      /*
+         greenColor: "#6b5ee0", /*styles.getPropertyValue("--english-text-color"),*/
+       settingsColor: "#add8e6", /*styles.getPropertyValue("--settings-color"),*/
+       whiteColor: "#000000", /*styles.getPropertyValue("--base-text-color"),*/
+       */
 
       ReasonReact.Update({
         ...state,
@@ -135,6 +136,9 @@ let make = _children => {
   didMount: self => self.send(Restart),
   render: ({state, send}) => {
     Js.log("App render");
+
+    Js.log("- showSettings = " ++ (state.showSettings ? "true" : "false"));
+    Js.log("- showVoiceMenu = " ++ (state.showVoiceMenu ? "true" : "false"));
 
     switch (state.remainingCards) {
     | [] =>
@@ -242,7 +246,12 @@ let make = _children => {
           state.showSettings ?
             <PopUpSettingsMenu
               handleClosePopupClicked=(_ => send(HideSettingsMenu))
-              handleVoiceMenuClicked=(_ => send(ShowVoiceMenu))
+              handleVoiceMenuClicked=(
+                event => {
+                  ReactEvent.Synthetic.stopPropagation(event);
+                  send(ShowVoiceMenu);
+                }
+              )
               handleRestart=(_ => send(Restart))
               whiteColor=state.whiteColor
               dangerColor=state.dangerColor

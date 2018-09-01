@@ -42,7 +42,8 @@ let make =
     <div
       className=(
         state.increaseOpacity === true ?
-          "popup__opacity_1" : "popup__opacity_0"
+          "popup__opacity_1 popup_voices_zindex" :
+          "popup__opacity_0 popup_voices_zindex"
       )
       onClick=(_ => send(ClosePopUpSettingsMenu))
       onDoubleClick=(_ => send(ClosePopUpSettingsMenu))>

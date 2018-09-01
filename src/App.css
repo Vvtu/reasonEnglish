@@ -225,3 +225,7 @@
 .popup__width35 {
 	width: 35px;
 }
+
+.popup_voices_zindex {
+	z-index: 10;
+}
