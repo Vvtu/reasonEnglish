@@ -77,7 +77,7 @@ let make = _children => {
                 _ => self.send(SpeechEnd),
                 7000 /* in case of utterThis.onend failed */
               );
-            SpeechSynthesis.Utterance.set_voice(ut, state.voices[6]);
+            SpeechSynthesis.Utterance.set_voice(ut, state.voices[0]);
 
             SpeechSynthesis.Utterance.on_end(
               ut,
@@ -149,15 +149,19 @@ let make = _children => {
           Js.log("didMount timeOut=");
           Js.log(voices);
 
-          let fVoices =
-            voices
-            |> Array.to_list
-            |> List.mapi((i, voice) => (i, voice##lang));
+          let v = voices[0];
+
+          Js.log2(" v = ", v);
+
+          /* let fVoices =
+             voices
+             |> Array.to_list
+             |> List.mapi((i, voice) => (i, voice##lang)); */
 
           /* |> List.filter(voice => voice#lang === "asdasda")
              |> Array.of_list; */
           Js.log("didMount fVoices=");
-          Js.log(fVoices);
+          /* Js.log(fVoices); */
 
           self.send(StoreVoicesToSate(voices));
           /* SpeechSynthesis.getVoices() |> Array.filter( voice => voice.lang.startsWith("en-")) -> StoreVoicesToSate |> self.send; */

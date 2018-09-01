@@ -1,8 +1,15 @@
 /* https://github.com/gaelduplessix/speechful */
 
 module Voice = {
-  type t;
-  [@bs.get] external getVoiceLang : t => string = "lang";
+  /* type t; */
+
+  [@bs.deriving abstract]
+  type t = {
+    [@bs.as "lang__"]
+    lang: string,
+    [@bs.as "name__"]
+    name: string,
+  };
 };
 
 module Utterance = {
