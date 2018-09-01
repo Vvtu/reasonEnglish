@@ -73,7 +73,7 @@ let make =
                    <PopUpMenuItem
                      key=(string_of_int(index))
                      label=name
-                     onClick=(_ => ())
+                     onClick=(_ => handleRestart())
                    />
                  )
               |> Array.of_list
