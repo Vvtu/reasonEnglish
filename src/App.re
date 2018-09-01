@@ -23,6 +23,7 @@ type action =
   | ShowSettingsMenu
   | ShowVoiceMenu
   | HideSettingsMenu
+  | HideVoiceMenu
   | Restart;
 
 open List;
@@ -60,6 +61,7 @@ let make = _children => {
     | ShowSettingsMenu => ReasonReact.Update({...state, showSettings: true})
     | HideSettingsMenu => ReasonReact.Update({...state, showSettings: false})
     | ShowVoiceMenu => ReasonReact.Update({...state, showVoiceMenu: true})
+    | HideVoiceMenu => ReasonReact.Update({...state, showVoiceMenu: false})
     | SpeechEnd => ReasonReact.Update({...state, appcodeIsSpeaking: false})
     | SpeakEnglish(text) =>
       ReasonReact.UpdateWithSideEffects(
@@ -250,7 +252,7 @@ let make = _children => {
         (
           state.showVoiceMenu ?
             <PopUpVoiceMenu
-              handleClosePopupClicked=(_ => send(HideSettingsMenu))
+              handleClosePopupClicked=(_ => send(HideVoiceMenu))
               handleRestart=(_ => send(Restart))
               whiteColor=state.whiteColor
               dangerColor=state.dangerColor

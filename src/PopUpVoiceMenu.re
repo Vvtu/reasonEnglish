@@ -5,7 +5,7 @@ external requestAnimationFrame : (unit => unit) => float =
 type state = {increaseOpacity: bool};
 type action =
   | SetIncreaseOpacityTrue
-  | ClosePopUp;
+  | ClosePopUpSettingsMenu;
 let component = ReasonReact.reducerComponent("PopUpVoiceMenu");
 
 let make =
@@ -21,7 +21,7 @@ let make =
   reducer: (action, _state) =>
     switch (action) {
     | SetIncreaseOpacityTrue => ReasonReact.Update({increaseOpacity: true})
-    | ClosePopUp =>
+    | ClosePopUpSettingsMenu =>
       ReasonReact.UpdateWithSideEffects(
         {increaseOpacity: false},
         (
@@ -44,8 +44,8 @@ let make =
         state.increaseOpacity === true ?
           "popup__opacity_1" : "popup__opacity_0"
       )
-      onClick=(_ => send(ClosePopUp))
-      onDoubleClick=(_ => send(ClosePopUp))>
+      onClick=(_ => send(ClosePopUpSettingsMenu))
+      onDoubleClick=(_ => send(ClosePopUpSettingsMenu))>
       <div className="popup__full_screen_div_opacity" />
       <div className="popup__full_screen_div">
         <div className="popup__window popup__scroll">

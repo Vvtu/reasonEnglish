@@ -5,7 +5,7 @@ external requestAnimationFrame : (unit => unit) => float =
 type state = {increaseOpacity: bool};
 type action =
   | SetIncreaseOpacityTrue
-  | ClosePopUp
+  | ClosePopUpSettingsMenu
   | ClosePopUpAndShowVoicesMenu;
 let component = ReasonReact.reducerComponent("PopUpSettingsMenu");
 
@@ -23,7 +23,7 @@ let make =
   reducer: (action, _state) =>
     switch (action) {
     | SetIncreaseOpacityTrue => ReasonReact.Update({increaseOpacity: true})
-    | ClosePopUp =>
+    | ClosePopUpSettingsMenu =>
       ReasonReact.UpdateWithSideEffects(
         {increaseOpacity: false},
         (
@@ -37,7 +37,7 @@ let make =
       ReasonReact.SideEffects(
         (
           self => {
-            self.send(ClosePopUp);
+            self.send(ClosePopUpSettingsMenu);
             let _ = Js.Global.setTimeout(handleVoiceMenuClicked, 800);
             ();
           }
@@ -55,8 +55,8 @@ let make =
         state.increaseOpacity === true ?
           "popup__opacity_1" : "popup__opacity_0"
       )
-      onClick=(_ => send(ClosePopUp))
-      onDoubleClick=(_ => send(ClosePopUp))>
+      onClick=(_ => send(ClosePopUpSettingsMenu))
+      onDoubleClick=(_ => send(ClosePopUpSettingsMenu))>
       <div className="popup__full_screen_div_opacity" />
       <div className="popup__full_screen_div">
         <div className="popup__window">
@@ -64,7 +64,7 @@ let make =
             <Icon.Cancel color=whiteColor height=Constants.iconSmallSize />
           </div>
           <div className="popup__list">
-            <PopUpMenuItem label="Settings" onClick=(_ => send(ClosePopUp))>
+            <PopUpMenuItem label="Settings" onClick=(_ => send(ClosePopUpSettingsMenu))>
               <div />
             </PopUpMenuItem>
             <PopUpMenuItem
@@ -73,7 +73,7 @@ let make =
                 _ => {
                   let _ = Dom.Storage.(clear(localStorage));
                   handleRestart();
-                  send(ClosePopUp);
+                  send(ClosePopUpSettingsMenu);
                 }
               )>
               <Icon.ClearAllInfo color=dangerColor height=Constants.iconSize />
@@ -85,7 +85,7 @@ let make =
                   let _ =
                     Dom.Storage.(localStorage |> removeItem(Constants.dict));
                   handleRestart();
-                  send(ClosePopUp);
+                  send(ClosePopUpSettingsMenu);
                 }
               )>
               <div className="appcode__eng_text_color">
@@ -101,7 +101,7 @@ let make =
                       localStorage |> setItem(Constants.dict, "+")
                     );
                   handleRestart();
-                  send(ClosePopUp);
+                  send(ClosePopUpSettingsMenu);
                 }
               )>
               <div className="appcode__eng_text_color">
