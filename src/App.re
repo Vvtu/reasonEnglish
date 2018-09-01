@@ -146,25 +146,8 @@ let make = _children => {
       Js.Global.setTimeout(
         _ => {
           let voices = SpeechSynthesis.getVoices();
-          Js.log("didMount timeOut=");
-          Js.log(voices);
-
-          let v = voices[0];
-
-          Js.log2(" v = ", v);
-
-          /* let fVoices =
-             voices
-             |> Array.to_list
-             |> List.mapi((i, voice) => (i, voice##lang)); */
-
-          /* |> List.filter(voice => voice#lang === "asdasda")
-             |> Array.of_list; */
-          Js.log("didMount fVoices=");
-          /* Js.log(fVoices); */
-
+          /* Js.log2("didMount timeOut voices=", voices); */
           self.send(StoreVoicesToSate(voices));
-          /* SpeechSynthesis.getVoices() |> Array.filter( voice => voice.lang.startsWith("en-")) -> StoreVoicesToSate |> self.send; */
         },
         0,
       );
@@ -301,6 +284,7 @@ let make = _children => {
               handleRestart=(_ => send(Restart))
               whiteColor=state.whiteColor
               dangerColor=state.dangerColor
+              voices=state.voices
             /> :
             <div />
         )

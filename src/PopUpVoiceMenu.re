@@ -14,6 +14,7 @@ let make =
       ~handleRestart,
       ~whiteColor,
       ~dangerColor,
+      ~voices,
       _children,
     ) => {
   ...component,
@@ -39,6 +40,18 @@ let make =
   render: ({state, send}) => {
     Js.log("PopUpVoiceMenu render");
 
+    let fVoices =
+      voices
+      |> Array.to_list
+      |> List.mapi((i, voice) => {
+           let lang: string = SpeechSynthesis.Voice.langGet(voice);
+           let name: string = SpeechSynthesis.Voice.nameGet(voice);
+           (i, lang ++ " " ++ name);
+         })
+      |> List.filter(((_, name)) => String.sub(name, 0, 2) === "en");
+
+    Js.log2("didMount fVoices=", fVoices);
+
     <div
       className=(
         state.increaseOpacity === true ?
@@ -55,16 +68,13 @@ let make =
           </div>
           <div className="popup__list">
             (
-              [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-              |> List.map(item =>
+              fVoices
+              |> List.map(((index, name)) =>
                    <PopUpMenuItem
-                     key=(string_of_int(item))
-                     label="dict #2"
-                     onClick=(_ => ())>
-                     <div className="appcode__eng_text_color">
-                       (ReasonReact.string("D2"))
-                     </div>
-                   </PopUpMenuItem>
+                     key=(string_of_int(index))
+                     label=name
+                     onClick=(_ => ())
+                   />
                  )
               |> Array.of_list
               |> ReasonReact.array

@@ -5,11 +5,11 @@ module Voice = {
 
   [@bs.deriving abstract]
   type t = {
-    [@bs.as "lang__"]
     lang: string,
-    [@bs.as "name__"]
     name: string,
   };
+  [@bs.get] external langGet : t => string = "lang";
+  [@bs.get] external nameGet : t => string = "name";
 };
 
 module Utterance = {
