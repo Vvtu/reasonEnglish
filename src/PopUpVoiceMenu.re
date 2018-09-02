@@ -70,9 +70,9 @@ let make =
             (
               fVoices
               |> List.map(((index, name)) =>
-                   <PopUpMenuItem
+                   <div
                      key=(string_of_int(index))
-                     label=name
+                     className="popup__row"
                      onClick=(
                        _ => {
                          Dom.Storage.(
@@ -84,8 +84,9 @@ let make =
                          );
                          handleRestart();
                        }
-                     )
-                   />
+                     )>
+                     <div> (ReasonReact.string(name)) </div>
+                   </div>
                  )
               |> Array.of_list
               |> ReasonReact.array
