@@ -90,9 +90,7 @@ let make =
                   send(ClosePopUpSettingsMenu);
                 }
               )>
-              <div className="appcode__eng_text_color">
-                (ReasonReact.string("D1"))
-              </div>
+              <Icon.D1 color=dangerColor height=Constants.iconSize />
             </PopUpMenuItem>
             <PopUpMenuItem
               label="dict #2"
@@ -106,9 +104,7 @@ let make =
                   send(ClosePopUpSettingsMenu);
                 }
               )>
-              <div className="appcode__eng_text_color">
-                (ReasonReact.string("D2"))
-              </div>
+              <Icon.D2 color=dangerColor height=Constants.iconSize />
             </PopUpMenuItem>
             <PopUpMenuItem label="voices" onClick=handleVoiceMenuClicked>
               <Icon.Voices color=dangerColor height=Constants.iconSize />
