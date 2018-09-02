@@ -65,13 +65,12 @@ let make =
           <div className="popup__cancel">
             <Icon.Cancel color=whiteColor height=Constants.iconSmallSize />
           </div>
+          <div className="popup__list popup__row popup__header">
+            (ReasonReact.string("settings:"))
+          </div>
           <div className="popup__list">
             <PopUpMenuItem
-              label="Settings" onClick=(_ => send(ClosePopUpSettingsMenu))>
-              <div />
-            </PopUpMenuItem>
-            <PopUpMenuItem
-              label="reset all info"
+              label="reset all"
               onClick=(
                 _ => {
                   let _ = Dom.Storage.(clear(localStorage));

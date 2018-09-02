@@ -15,5 +15,5 @@ let rec dropItems = (n, list) =>
 let getVoiceIndex = () =>
   switch (Dom.Storage.(localStorage |> getItem(Constants.voiceIndexTeg))) {
   | Some(n) => int_of_string(n)
-  | None => 0
+  | None => (-1)
   };

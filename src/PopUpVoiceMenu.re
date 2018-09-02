@@ -50,7 +50,7 @@ let make =
          })
       |> List.filter(((_, name)) => String.sub(name, 0, 2) === "en");
 
-    let currentVoiceIndex = ItemFunc.getVoiceIndex();
+    let currentVoiceIndex = MyLib.getVoiceIndex();
 
     Js.log2("didMount fVoices=", fVoices);
 
@@ -67,6 +67,9 @@ let make =
         <div className="popup__window popup__scroll">
           <div className="popup__cancel">
             <Icon.Cancel color=whiteColor height=Constants.iconSmallSize />
+          </div>
+          <div className="popup__list popup__row popup__header">
+            (ReasonReact.string("voices:"))
           </div>
           <div className="popup__list">
             (

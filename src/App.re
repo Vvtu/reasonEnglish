@@ -57,7 +57,7 @@ let make = _children => {
         if (index < 0) {
           state.allCards;
         } else {
-          ItemFunc.dropItems(index, state.allCards);
+          MyLib.dropItems(index, state.allCards);
         };
       ReasonReact.Update({...state, remainingCards: newCurrentDictionary});
 
@@ -77,9 +77,13 @@ let make = _children => {
                 _ => self.send(SpeechEnd),
                 7000 /* in case of utterThis.onend failed */
               );
-            let voiceIndex = ItemFunc.getVoiceIndex();
-            SpeechSynthesis.Utterance.set_voice(ut, state.voices[voiceIndex]);
-
+            let voiceIndex = MyLib.getVoiceIndex();
+            if (voiceIndex >= 0) {
+              SpeechSynthesis.Utterance.set_voice(
+                ut,
+                state.voices[voiceIndex],
+              );
+            };
             SpeechSynthesis.Utterance.on_end(
               ut,
               _ => {
@@ -117,7 +121,7 @@ let make = _children => {
         };
       let allCards =
         List.append(
-          ItemFunc.takeItems(3, Reshuffle.reshuffle5(dictOld)),
+          MyLib.takeItems(3, Reshuffle.reshuffle5(dictOld)),
           Reshuffle.reshuffle5(dict),
         );
       /* open Webapi.Dom; */
@@ -158,9 +162,7 @@ let make = _children => {
   },
   render: ({state, send}) => {
     Js.log("App render");
-
-    Js.log("- voices = ");
-    Js.log(state.voices);
+    /* Js.log2("- voices = ", state.voices); */
 
     switch (state.remainingCards) {
     | [] =>
