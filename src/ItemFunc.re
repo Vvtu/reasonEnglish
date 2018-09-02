@@ -11,3 +11,9 @@ let rec dropItems = (n, list) =>
   | (0, _) => list
   | (_, [_, ...tail]) => dropItems(n - 1, tail)
   };
+
+let getVoiceIndex = () =>
+  switch (Dom.Storage.(localStorage |> getItem(Constants.voiceIndexTeg))) {
+  | Some(n) => int_of_string(n)
+  | None => 0
+  };

@@ -77,14 +77,7 @@ let make = _children => {
                 _ => self.send(SpeechEnd),
                 7000 /* in case of utterThis.onend failed */
               );
-            let voiceIndex =
-              switch (
-                Dom.Storage.(localStorage |> getItem(Constants.voiceIndexTeg))
-              ) {
-              | Some(n) => int_of_string(n)
-              | None => 0
-              };
-
+            let voiceIndex = ItemFunc.getVoiceIndex();
             SpeechSynthesis.Utterance.set_voice(ut, state.voices[voiceIndex]);
 
             SpeechSynthesis.Utterance.on_end(

@@ -50,6 +50,8 @@ let make =
          })
       |> List.filter(((_, name)) => String.sub(name, 0, 2) === "en");
 
+    let currentVoiceIndex = ItemFunc.getVoiceIndex();
+
     Js.log2("didMount fVoices=", fVoices);
 
     <div
@@ -72,7 +74,13 @@ let make =
               |> List.map(((index, name)) =>
                    <div
                      key=(string_of_int(index))
-                     className="popup__row"
+                     className=(
+                       "popup__row"
+                       ++ (
+                         index === currentVoiceIndex ?
+                           " popup__row_selected" : ""
+                       )
+                     )
                      onClick=(
                        _ => {
                          Dom.Storage.(
