@@ -48,7 +48,8 @@ let make =
            let name: string = SpeechSynthesis.Voice.nameGet(voice);
            (i, lang ++ " " ++ name);
          })
-      |> List.filter(((_, name)) => String.sub(name, 0, 2) === "en");
+      |> List.filter(((_, name)) => String.sub(name, 0, 2) === "en")
+      |> List.sort(((_, name1), (_, name2)) => name1 > name2 ? 1 : (-1));
 
     let currentVoiceIndex = MyLib.getVoiceIndex();
 
