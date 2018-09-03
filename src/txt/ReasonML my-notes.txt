@@ -1,5 +1,10 @@
 
 
+У list  spread можно использовать только в конце,
+а у record - только в начале!!!
+
+
+
 
 
  2016 - год   Bloomberg L.P. — один из двух ведущих поставщиков финансовой информации
@@ -154,7 +159,7 @@ This allows you to update those fields in-place with the = operator.
 
   - rec - для рекурсивных функций
 
-	- аноноимные функции
+	- анонимные функции
 	   /* anonymous function. Listed for completeness only */
 				(x) => (y) => 1;
 				/* sugar for the above */
