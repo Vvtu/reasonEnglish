@@ -124,18 +124,21 @@ let make = _children => {
         | Some(_) => (Dictionaries.dictionary2, Dictionaries.oldDictionary2)
         | None => (Dictionaries.dictionary1, Dictionaries.oldDictionary1)
         };
+
       let allCards =
         List.append(
           MyLib.takeItems(3, Reshuffle.reshuffle5(dictOld)),
           Reshuffle.reshuffle5(dict),
-        );
+        )
+        |> List.filter(({rus, eng}: Dictionaries.wordPair) =>
+             eng !== "" || rus !== ""
+           );
 
       /* let _ = EventTargetRe.Impl.getComputedStyle(el, window); */
-      
-        /* styles.getPropertyValue("--english-text-color"), */
-        /* styles.getPropertyValue("--settings-color"), */
-        /* styles.getPropertyValue("--base-text-color"), */
 
+      /* styles.getPropertyValue("--english-text-color"), */
+      /* styles.getPropertyValue("--settings-color"), */
+      /* styles.getPropertyValue("--base-text-color"), */
 
       ReasonReact.Update({
         ...state,
