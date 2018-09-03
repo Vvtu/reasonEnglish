@@ -2,10 +2,10 @@
 /* [@bs.val] external setTimeout : (unit => unit, int) => float = "setTimeout";
    [@bs.val] external clearTimeout : float => unit = "clearTimeout"; */
 
-type t = Dom.window;
+/* type t = Dom.window; */
 
 /* include WindowOrWorkerGlobalScope? not really "dom" though */
-include EventTargetRe.Impl({ type nonrec t = t; });
+/* include EventTargetRe.Impl({ type nonrec t = t; }); */
 
 type state = {
   showEnglish: bool,
@@ -131,7 +131,7 @@ let make = _children => {
         );
 
       /* let _ = EventTargetRe.Impl.getComputedStyle(el, window); */
-
+      
         /* styles.getPropertyValue("--english-text-color"), */
         /* styles.getPropertyValue("--settings-color"), */
         /* styles.getPropertyValue("--base-text-color"), */
