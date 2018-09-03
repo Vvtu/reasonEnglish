@@ -173,9 +173,15 @@ let make = _children => {
 
     switch (state.remainingCards) {
     | [] =>
-      <div onClick=(_ => send(Restart))>
-        (ReasonReact.string("The end !"))
-      </div>
+      (<div onClick=(_ => send(Restart)) onDoubleClick=(_ => send(Restart)) className="popup__opacity_1 popup_voices_zindex">
+        <div className="popup__full_screen_div_opacity" />
+          <div className="popup__full_screen_div">
+            <div className="popup__window popup__scroll">
+              (ReasonReact.string("That's all!. Click to restart."))
+            </div>
+          </div>
+        </div>)
+
     | [currentCard, ...tail] =>
       let countAll = length(state.allCards);
       let countRemain = length(tail);
@@ -295,7 +301,6 @@ let make = _children => {
               handleClosePopupClicked=(_ => send(HideVoiceMenu))
               handleRestart=(_ => send(Restart))
               whiteColor=state.whiteColor
-              dangerColor=state.dangerColor
               voices=state.voices
             /> :
             <div />

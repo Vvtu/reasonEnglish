@@ -13,7 +13,6 @@ let make =
       ~handleClosePopupClicked,
       ~handleRestart,
       ~whiteColor,
-      ~dangerColor,
       ~voices,
       _children,
     ) => {
