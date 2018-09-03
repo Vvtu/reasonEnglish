@@ -2,6 +2,11 @@
 /* [@bs.val] external setTimeout : (unit => unit, int) => float = "setTimeout";
    [@bs.val] external clearTimeout : float => unit = "clearTimeout"; */
 
+type t = Dom.window;
+
+/* include WindowOrWorkerGlobalScope? not really "dom" though */
+include EventTargetRe.Impl({ type nonrec t = t; });
+
 type state = {
   showEnglish: bool,
   showSettings: bool,
@@ -124,14 +129,13 @@ let make = _children => {
           MyLib.takeItems(3, Reshuffle.reshuffle5(dictOld)),
           Reshuffle.reshuffle5(dict),
         );
-      /* open Webapi.Dom; */
 
-      /* let _ = Window.getComputedStyle(el, window); */
-      /*
-         greenColor: "#6b5ee0", /*styles.getPropertyValue("--english-text-color"),*/
-       settingsColor: "#add8e6", /*styles.getPropertyValue("--settings-color"),*/
-       whiteColor: "#000000", /*styles.getPropertyValue("--base-text-color"),*/
-       */
+      /* let _ = EventTargetRe.Impl.getComputedStyle(el, window); */
+
+        /* styles.getPropertyValue("--english-text-color"), */
+        /* styles.getPropertyValue("--settings-color"), */
+        /* styles.getPropertyValue("--base-text-color"), */
+
 
       ReasonReact.Update({
         ...state,

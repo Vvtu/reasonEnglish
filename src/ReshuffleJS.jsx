@@ -65,51 +65,12 @@ dic
 //
 //
 const reshuffleJS3 = (dic) => {
-	const copy = dic.slice(0);
-	for (let i = copy.length - 1; i > 0; i -= 1) {
+	const newDic = dic.slice(0);
+	for (let i = newDic.length - 1; i > 0; i -= 1) {
 		const j = Math.floor(Math.random() * (i + 1));
-		[ copy[i], copy[j] ] = [ copy[j], copy[i] ];
+		[ newDic[i], newDic[j] ] = [ newDic[j], newDic[i] ];
 	}
-	return copy;
+	return newDic;
 };
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 // эти алгоритмы более чувствительны к качеству random()
-//
-//
-// проблема разреженных массивов
-
-const reshuffleJS4 = (dic) => {
-	const copy = dic.filter((x) => x !== undefined);
-	for (let i = copy.length - 1; i > 0; i -= 1) {
-		const j = Math.floor(Math.random() * (i + 1));
-		[ copy[i], copy[j] ] = [ copy[j], copy[i] ];
-	}
-	return copy;
-};
