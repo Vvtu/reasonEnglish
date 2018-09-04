@@ -127,8 +127,8 @@ let make = _children => {
 
       let allCards =
         List.append(
-          MyLib.takeItems(3, Reshuffle.reshuffle5(dictOld)),
-          Reshuffle.reshuffle5(dict),
+          MyLib.takeItems(3, Reshuffle.reshuffle4(dictOld)),
+          Reshuffle.reshuffle4(dict),
         )
         |> List.filter(({rus, eng}: Dictionaries.wordPair) =>
              eng !== "" || rus !== ""
@@ -173,14 +173,17 @@ let make = _children => {
 
     switch (state.remainingCards) {
     | [] =>
-      (<div onClick=(_ => send(Restart)) onDoubleClick=(_ => send(Restart)) className="popup__opacity_1 popup_voices_zindex">
+      <div
+        onClick=(_ => send(Restart))
+        onDoubleClick=(_ => send(Restart))
+        className="popup__opacity_1 popup_voices_zindex">
         <div className="popup__full_screen_div_opacity" />
-          <div className="popup__full_screen_div">
-            <div className="popup__window popup__scroll">
-              (ReasonReact.string("That's all!. Click to restart."))
-            </div>
+        <div className="popup__full_screen_div">
+          <div className="popup__window popup__scroll">
+            (ReasonReact.string("That's all!. Click to restart."))
           </div>
-        </div>)
+        </div>
+      </div>
 
     | [currentCard, ...tail] =>
       let countAll = length(state.allCards);

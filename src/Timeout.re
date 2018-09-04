@@ -10,22 +10,19 @@ Js.log(a);
 
 /* -------------------------------------- */
 
+/* setTimeout curring */
 let time = t => Js.Global.setTimeout(_ => Js.log("Time out"), t);
 time(2000);
 
-let take = (a, b) => MyLib.takeItems(a, b);
+/* ----------------------------------------------- */
 
-let a = [3, 4, 5]; /* [3, 4, 5]       */
+let (@@) = (f, x) => f(x);
 
-let b = [2, ...a]; /* [2, 3, 4, 5]    */
+let f1 = x => "f1(" ++ x ++ ")";
+let f2 = x => "f2(" ++ x ++ ")";
 
-let c = [1, ...b]; /* [1, 2, 3, 4, 5] */
+let res1 = f1 @@ f2 @@ "a"; /* left associative conveyer */
+Js.log(res1); /* "f1(f2(a))" */
 
-let d =
-  /* [2, 3, 4, 5]    */
-  switch (c) {
-  | [] => []
-  | [_, ...t] => t
-  };
-
-let e = take(3, c); /* [1, 2, 3]      */
+let res2 = "a" |> f1 |> f2; /* right associative conveyer */
+Js.log(res2); /* "f2(f1(a))" */

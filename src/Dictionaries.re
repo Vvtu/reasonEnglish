@@ -159,83 +159,92 @@ let dictionary2: pairList = [
     rus: {js|Если вы работаете с JavaScript, синтаксис записей и операции должны быть знакомы, и у вас может возникнуть соблазн взаимодействовать с JS, преобразовывая объект JS в запись и наоборот. Это прекрасно, но у нас есть еще лучший способ без накладных расходов!|js},
     eng: "If you're working with JavaScript, the record syntax & operations should feel familiar, and you might be tempted to interop with JS by converting a JS object to a record, and vice-versa. This is fine, but we have an even better way without conversion overhead!",
   },
-  {rus: {js||js}, eng: "Record Types Are Found By Field Name"},
   {
-    rus: {js||js},
+    rus: {js|Типы записей находятся по имени поля|js},
+    eng: "Record Types Are Found By Field Name",
+  },
+  {
+    rus: {js|С записями Вы не можете сказать (Я бы хотел, чтобы эта функция принимала любой тип записи, если у них есть поле 'age').|js},
     eng: "With records, you cannot say (I'd like this function to take any record type, as long as they have the field age).",
   },
   {
-    rus: {js||js},
+    rus: {js|Если определение типа находится в другом файле, необходимо явно указать, какой это файл.|js},
     eng: "If the type definition resides in another file, you need to explicitly indicate which file it is.",
   },
   {
-    rus: {js||js},
+    rus: {js|Если вам нужна такая возможность, используйте объекты Reason, описанные здесь.|js},
     eng: "If you need such capability, use Reason objects, described here.",
   },
   {
-    rus: {js||js},
+    rus: {js|После прочтения ограничения в предыдущих разделах, и если вы из динамического языка, вам может быть интересно, зачем заморачиваться с Record на первом месте, а не прямо через объект, поскольку Record-у необходима явная типизацию, и Record ... написать функцию, которая принимает разные типы записей, с одним и тем же именем поля , и т. д.|js},
     eng: "After reading the constraints in the previous sections, and if you're coming from a dynamic language background, you might be wondering why one would bother with record in the first place instead of straight using object, since the former needs explicit typing and doesn't allow different records with the same field name to be passed to the same function, etc.",
   },
   {
-    rus: {js||js},
-    eng: "The truth is that most of the times in your app, your data's shape is actually fixed, and if it's not, it can potentially be better represented as a combination of variant (introduced next) + record instead.",
+    rus: {js|Правда в том, что в большинстве случаев в вашем приложении форма ваших данных на самом деле фиксирована, и если это не так, она потенциально может быть лучше представлена как комбинация variant + record.|js},
+    eng: "The truth is that most of the times in your app, your data's shape is actually fixed, and if it's not, it can potentially be better represented as a combination of variant + record instead.",
   },
   {
-    rus: {js||js},
+    rus: {js|Запись, так как ее поля фиксированы, компилируется в массив с доступом к индексу массива вместо JS объекта (попробуйте в playground!)|js},
     eng: "Record, since its fields are fixed, is compiled to an array with array index accesses instead of JS object (try it in the playground!).",
   },
   {
-    rus: {js||js},
+    rus: {js|В native запись компилируется в основную область памяти, где доступ к полю-это только один поиск поля + один фактический доступ, ака 2 инструкции по сборке.|js},
     eng: "On native, Record compiles to basically a region of memory where a field access is just one field lookup + one actual access, aka 2 assembly instructions.",
   },
   {
-    rus: {js||js},
+    rus: {js|Наконец, поскольку Тип записи определяется путем нахождения одного явного объявления типа (мы называем это "номинальной типизацией"), сообщения об ошибках типа оказываются лучше, чем аналог ("структурная типизация", как для кортежей)."|js},
     eng: "Finally, since a record type is resolved through finding that single explicit type declaration (we call this 'nominal typing'), the type error messages end up better than the counterpart ('structural typing', like for tuples).",
   },
   {
-    rus: {js||js},
+    rus: {js|Номинальная типизация облегчает рефакторинг; изменение полей типа записи, естественно, позволяет компилятору знать, что это все та же запись, просто неправильно используемая в некоторых местах. В противном случае при структурной типизации может быть трудно определить, является ли сайт определения или сайт использования неправильным.|js},
     eng: "Nominal typing makes refactoring easier; changing a record type's fields naturally allows the compiler to know that it's still the same record, just misused in some places. Otherwise, under structural typing, it might get hard to tell whether the definition site or the usage site is wrong.",
   },
-  {rus: {js||js}, eng: "Behold, the crown jewel of Reason data structures!"},
   {
-    rus: {js||js},
+    rus: {js|Лицезрите, жемчужина структур данных Reason!|js},
+    eng: "Behold, the crown jewel of Reason data structures!",
+  },
+  {
+    rus: {js|Большинство структур данных на большинстве языков это "то и это". Variant позволяет выразить "то или это".|js},
     eng: "Most data structures in most languages are about 'this and that'. A variant allows us to express 'this or that'.",
   },
   {
-    rus: {js||js},
+    rus: {js|Примечание: конструкторы варианта должны быть с большой буквы.|js},
     eng: "Note: a variant's constructors need to be capitalized.",
   },
   {
-    rus: {js||js},
+    rus: {js|Вместе с variant приходит одна из самых важных фич Reason, выражение switch.|js},
     eng: "Along with a variant comes one of the most important features of Reason, the switch expression.",
   },
   {
-    rus: {js||js},
+    rus: {js|Switch позволяет проверить все возможные кейсы variant.|js},
     eng: "Switch allows you to check every possible case of a variant.",
   },
   {
-    rus: {js||js},
+    rus: {js|Вариант имеет чрезвычайно богатое количество системной помощи от типизации.|js},
     eng: "A variant has an extremely rich amount of type system assistance.",
   },
   {
-    rus: {js||js},
+    rus: {js|Например, появится ошибка, если вы забыли покрыть кейс Вашего variant, или если кейс является избыточным.|js},
     eng: "For example, we'll give you a type error if you've forgotten to cover a case of your variant, or if two cases are redundant.",
   },
-  {rus: {js||js}, eng: "Variant Needs an Explicit Definition"},
   {
-    rus: {js||js},
+    rus: {js|Variant требует эксплицитного определения.|js},
+    eng: "Variant Needs an Explicit Definition",
+  },
+  {
+    rus: {js|Если вариант, который вы используете, находится в другом файле, перенесите его в scope, как для записи.|js},
     eng: "If the variant you're using is in a different file, bring it into scope like you'd do for a record.",
   },
   {
-    rus: {js||js},
+    rus: {js|Обратите внимание, как использование конструктора похоже на вызов функции? Это не совпадение; есть причина, по которой данные конструктора называются "аргументом конструктора".|js},
     eng: "Notice how using a constructor is like calling a function? This isn't a coincidence; there's a reason why a constructor's data is called 'constructor argument'.",
   },
   {
-    rus: {js||js},
+    rus: {js|Стандартная библиотека предлагает два важных варианта, о которых вы много услышите. Optional. List.|js},
     eng: "The standard library exposes two important variants you'll come to hear a lot. Optional. List.",
   },
   {
-    rus: {js||js},
+    rus: {js|Знаете ли вы, что вы можете использовать switch для string, int, float, array и большинство других структур данных?|js},
     eng: "Did you know that you can use switch on string, int, float, array, and most other data structures?",
   },
   {rus: {js||js}, eng: ""},
@@ -296,15 +305,15 @@ let oldDictionary2: pairList = [
     eng: "The existence of tuples might seem odd for those coming from untyped languages. 'Why not just use a list or array?'",
   },
   {
-    rus: {js|Система типов не всемогуща и не должна быть такой; некоторые со вкусом подобранные компромиссы должны быть применены д��я того, чтобы язык был простым, производительным (как для компиляции, так и для скорости работы) и легким для понимания.|js},
+    rus: {js|Система типов не всемогуща и не должна быть такой; некоторые со вкусом подобранные компромиссы должны быть применены для того, чтобы язык был простым, производительным (как для компиляции, так и для скорости работы) и легким для понимания.|js},
     eng: "A type system isn't all-powerful, nor should it be; some tasteful trade-offs need to be applied in order to keep the language simple, performant (both compilation and running speed) and easy to understand.",
   },
   {
-    rus: {js|Кортеж Reason типизируется 'структурно'. Это означает, что даже если Вы не аннотирует�� свои данные явным ��ипом, компилятор все равно может вывести их, посмотрев на их содержимое, использование и т. д.|js},
+    rus: {js|Кортеж Reason типизируется 'структурно'. Это означает, что даже если Вы не аннотируете свои данные явным типом, компилятор все равно может вывести их, посмотрев на их содержимое, использование и т. д.|js},
     eng: "A Reason tuple is typed 'structurally'. This means that even if you don't annotate your data with an explicit type, the compiler can still deduce it by looking at its content, its usage, etc.",
   },
   {
-    rus: {js|Типы-это изюминка Ризона! Здесь в�� получаете представление о том, почему так много людей в восторге от них.|js},
+    rus: {js|Типы-это изюминка Ризона! Здесь вы получаете представление о том, почему так много людей в восторге от них.|js},
     eng: "Types are the highlight of Reason! Here, you get a glimpse of why so many are excited about them.",
   },
   {
@@ -312,11 +321,11 @@ let oldDictionary2: pairList = [
     eng: "Types can be inferred. The type system deduces the types for you even if you don't manually write them down. This speeds up the prototyping phase.",
   },
   {
-    rus: {js|Покрытии типами - всегда 100%. Нам не нужен инструмент для пров��рки покрытия! Каждая часть кода на Reason имеет Тип.|js},
+    rus: {js|Покрытии типами - всегда 100%. Нам не нужен инструмент для проверки покрытия! Каждая часть кода на Reason имеет Тип.|js},
     eng: "The type coverage is always 100%. We don't need a 'type coverage' tool! Every piece of Reason code has a type.",
   },
   {
-    rus: {js|Cистема типов полностью 'здравая'. ��то означает, что пока код компилируется нормально, каждый Тип гарантирует, что он не лжет сам о себе.|js},
+    rus: {js|Cистема типов полностью 'здравая'. Что означает, что пока код компилируется нормально, каждый Тип гарантирует, что он не лжет сам о себе.|js},
     eng: "The type system is completely 'sound'. This means that, as long as your code compiles fine, every type guarantees that it's not lying about itself.",
   },
   {
@@ -340,7 +349,7 @@ let oldDictionary2: pairList = [
     eng: "Reason has a type for a string with a single letter. Char doesn't support Unicode or UTF-8.",
   },
   {
-    rus: {js|Char компилируется в целое число от 0 до 255, для дополнит��льной скорости. Вы можете также паттерн-матчинг на нем.|js},
+    rus: {js|Char компилируется в целое число от 0 до 255, для дополнительной скорости. Вы можете также паттерн-матчинг на нем.|js},
     eng: "A character compiles to an integer ranging from 0 to 255, for extra speed. You can also pattern-match on it.",
   },
 ];
@@ -348,19 +357,19 @@ let oldDictionary2: pairList = [
 let oldOldDictionary2: pairList = [
   /* ************************************************************************************************************************** */
   {
-    rus: {js|Наша первоочередная задача состоит в том, чтобы удовлетворить потребности клие��тов в своевременной и непрерывной поставке ценного программного ��беспечения.|js},
+    rus: {js|Наша первоочередная задача состоит в том, чтобы удовлетворить потребности клиентов в своевременной и непрерывной поставке ценного программного обеспечения.|js},
     eng: "Our highest priority is to satisfy the customer trough early and continuous delivery of valueable software.",
   },
   {
-    rus: {js|Приветствуют��я изменения требований, даже на поздних стадиях разработки. Гибкие процессы используют изменения для конкурентного преимущества клиента.|js},
+    rus: {js|Приветствуются изменения требований, даже на поздних стадиях разработки. Гибкие процессы используют изменения для конкурентного преимущества клиента.|js},
     eng: "Welcome changing requirements, even late in development. Agile processes harness change for the customer's competive advantage.",
   },
   {
-    rus: {js|Поставляйте рабочее программное обеспечение часто, от нескольких недель до нескольких месяцев, с предпочтением к более кор��тким временным рамкам.|js},
+    rus: {js|Поставляйте рабочее программное обеспечение часто, от нескольких недель до нескольких месяцев, с предпочтением к более коротким временным рамкам.|js},
     eng: "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.",
   },
   {
-    rus: {js|Заказчики и разработчики должны ежедневно ��аботать вместе на протяжении всего проекта.|js},
+    rus: {js|Заказчики и разработчики должны ежедневно работать вместе на протяжении всего проекта.|js},
     eng: "Business people and developers must work together daily throughout the project.",
   },
   {
@@ -412,7 +421,7 @@ let oldOldDictionary2: pairList = [
     eng: "The Scrum framework consists of Scrum Teams and their associated roles, events, artifacts, and rules. Each component within the framework serves a specific purpose and is essential to Scrum's success and usage.",
   },
   {
-    rus: {js|Правила Scrum связывают вместе роли, события и артефакты, управляя отношениями и взаимодействием между ними. Правила Scrum описаны всюду по телу этого документа.|js},
+    rus: {js|Правила Scrum связывают вместе роли, события и артефакты, управляя отношениями и взаимодействием между ними. Правила Scrum описаны всюду по телу этого документ��.|js},
     eng: "The rules of Scrum bind together the roles, events, and artifacts, governing the relationships and interaction between them. The rules of Scrum are described throughout the body of this document.",
   },
   {
@@ -424,15 +433,15 @@ let oldOldDictionary2: pairList = [
     eng: "Through this work we have come to value.",
   },
   {
-    rus: {js|Люди и взаимодействия выше, чем процессы и инструменты|js},
+    rus: {js|Люди и взаимодействия выше, чем процессы и инс��рументы|js},
     eng: "Individuals and interactions over processes and tools.",
   },
   {
-    rus: {js|Работающее software вы��е, чем всеобъемлющая документация.|js},
+    rus: {js|Работающее software ��ы��е, чем всеобъемлющая документация.|js},
     eng: "Working software over comprehensive documentation.",
   },
   {
-    rus: {js|Сотрудничество с заказчиком выше, чем обсуждение условий контракта.|js},
+    rus: {js|Сотрудничество с заказчико�� выше, чем обсуждение условий контракта.|js},
     eng: "Customer collaboration over contract negotiation.",
   },
   {
@@ -440,7 +449,7 @@ let oldOldDictionary2: pairList = [
     eng: "Responding to change over following a plan.",
   },
   {
-    rus: {js|"пятая ценность": мудрость и здравый смысл превыше знаний и опыта.|js},
+    rus: {js|"пятая ценность": мудрость и здра��ый смысл превыше знаний и опыта.|js},
     eng: {js|'The fifth value':  Wisdom and common sense over knowledge and expertise.|js},
   },
   {
@@ -453,7 +462,7 @@ let oldOldDictionary2: pairList = [
     eng: "A higher-order component (HOC) is an advanced technique in React for reusing component logic. HOCs are not part of the React API, per se. They are a pattern that emerges from React's compositional nature.",
   },
   {
-    rus: {js|Конкретно, компонент более высокого порядка является функцией, которая берет компонент и возвращает новый компонент.|js},
+    rus: {js|Конкретно, компонент более высокого порядка является функцией, которая ��ерет компонент и возвращает новый компонент.|js},
     eng: "Concretely, a higher-order component is a function that takes a component and returns a new component.",
   },
   {
@@ -469,7 +478,7 @@ let oldOldDictionary2: pairList = [
     eng: "Components are the primary unit of code reuse in React. However, you'll find that some patterns aren't a straightforward fit for traditional components.",
   },
   {
-    rus: {js|Мы хотим абстракцию, которая позволяет определить эту логику в одном месте и разделить ее между многими компонентами.|js},
+    rus: {js|Мы хотим абстракцию, которая позволяет определить эту логику в ��дном месте и разделить ее между многими компонентами.|js},
     eng: "We want an abstraction that allows us to define this logic in a single place and share it across many components.",
   },
   {
@@ -513,7 +522,7 @@ let oldOldDictionary2: pairList = [
     eng: "Instead of mutation, HOCs should use composition, by wrapping the input component in a container component.",
   },
   {
-    rus: {js|Этот HOC имеет ту же функциональность, что и мутирующая версия, избегая при этом возможности стол����новений.|js},
+    rus: {js|Этот HOC имеет ту же функциональность, что и мутирующ��я версия, избегая при этом возможности стол����новений.|js},
     eng: "This HOC has the same functionality as the mutating version while avoiding the potential for clashes.",
   },
   {
@@ -533,7 +542,7 @@ let oldOldDictionary2: pairList = [
     eng: "Container components are part of a strategy of separating responsibility between high-level and low-level concerns.",
   },
   {
-    rus: {js|Контейнеры управляют такими вещами, как подписки и состояние, и передают props компонентам, которые обрабат��вают такие вещи, как рендеринг UI. HOCs используют контейнеры как часть их реализации.|js},
+    rus: {js|Контейн��ры управляют такими вещами, как подписки и состояние, и передают props компонентам, которые обрабат��вают такие вещи, ��ак рендеринг UI. HOCs используют контейнеры как часть их реализации.|js},
     eng: "Containers manage things like subscriptions and state, and pass props to components that handle things like rendering UI. HOCs use containers as part of their implementation.",
   },
   {
@@ -541,7 +550,7 @@ let oldOldDictionary2: pairList = [
     eng: "You can think of HOCs as parameterized container component definitions.",
   },
   {
-    rus: {js|Соглашение: Передавать несвязанные props через обернутый компонент.|js},
+    rus: {js|Соглашение: Передавать несвязанные props через оберну��ый компонент.|js},
     eng: "Convention: Pass Unrelated Props Through to the Wrapped Component",
   },
   {
@@ -601,7 +610,7 @@ let oldOldDictionary2: pairList = [
     eng: "In other words, if another component needs to know about the cursor position, can we encapsulate that behavior so that we can easily share it with that component?",
   },
   {
-    rus: {js|Теперь, вместо того, чтобы эффективно клонировать Mouse компонент и жестко кодировать что-то еще в его Render методе для решения для конкретного случая использования, мы предоставляем Render prop, который Mouse может использовать для динамического определения того, что он отображает.|js},
+    rus: {js|Теперь, вместо того, чтобы эффективно клонировать Mouse компонент и жестко кодировать что-то еще в его Render методе для решения для конкретного с��у��ая использования, мы предоставляем Render prop, который Mouse может использовать для динамического опреде��ения того, что он отображает.|js},
     eng: "Now, instead of effectively cloning the Mouse component and hard-coding something else in its render method to solve for a specific use case, we provide a render prop that Mouse can use to dynamically determine what it renders.",
   },
   {
@@ -609,15 +618,15 @@ let oldOldDictionary2: pairList = [
     eng: "More concretely, a render prop is a function prop that a component uses to know what to render.",
   },
   {
-    rus: {js|Этот метод делает поведение, которое нам нужно разделить, чрезвычайно портативным.|js},
+    rus: {js|Этот метод делает поведение, котор��е нам нужно разделить, чрезвычайно портативным.|js},
     eng: "This technique makes the behavior that we need to share extremely portable.",
   },
   {
-    rus: {js|Чтобы получить такое поведение, отрисуйте Mouse с помощью Render prop, которая говорит ему, что отрисовать �� текущим (x, y) курсора.|js},
+    rus: {js|Чтобы получить такое поведение, отрис��йте Mouse с помощью Render prop, которая говорит ему, что отрисовать �� текущим (x, y) ку��сора.|js},
     eng: "To get that behavior, render a <Mouse> with a render prop that tells it what to render with the current x, y of the cursor.",
   },
   {
-    rus: {js|Одна интересной вещью о Render props, которую следуюет отметить, является то, что вы можете реа��изовать большинство компонентов более высокого порядка (HOC), используя обычный компонент с Render prop.|js},
+    rus: {js|Одна интересной вещью о Render props, которую следуюет отметить, является то, что вы можете реа����изовать большинство компонентов более высокого порядка (HOC), используя обычный компонент с Render prop.|js},
     eng: "One interesting thing to note about render props is that you can implement most higher-order components (HOC) using a regular component with a render prop.",
   },
   {
@@ -637,7 +646,7 @@ let oldOldDictionary2: pairList = [
     eng: "In practice, finding a key is usually not hard. The element you are going to display may already have a unique ID, so the key can just come from your data.",
   },
   {
-    rus: {js|Когда это не так, вы можете добавить новое свойство ID в свою модель или хэшировать некоторые части контента для создания ключа.|js},
+    rus: {js|Когда это не так, вы можете добавить новое свойство ID в свою модель или хэшировать некоторые части контент�� для создания ключа.|js},
     eng: "When that's not the case, you can add a new ID property to your model or hash some parts of the content to generate a key.",
   },
   {
@@ -653,7 +662,7 @@ let oldOldDictionary2: pairList = [
     eng: "It is important to remember that the reconciliation algorithm is an implementation detail.",
   },
   {
-    rus: {js|React может перерендеривать все приложение на каждое действие; конечный результат будет одинаковым.|js},
+    rus: {js|React может перере��деривать все приложение на каждое действие; конечный результат будет одинаковым.|js},
     eng: "React could rerender the whole app on every action; the end result would be the same.",
   },
   {
@@ -681,7 +690,7 @@ let oldOldDictionary2: pairList = [
     eng: "If you see yourself alternating between two component types with very similar output, you may want to make it the same type. In practice, we haven't found this to be an issue.",
   },
   {
-    rus: {js|Нестабильные ключи (как те, которые производятся Math.random()) приведет к ненужному воссозданию многих экземпляров компонентов и у��лов DOM, что может привести к снижению производительности и потере состояния в дочерних компонентах|js},
+    rus: {js|Нестабильные ключи (как те, которые производятся Math.random()) приведет к ненужному воссозданию многих экземпляров компонентов и у��лов DOM, что может п��ивести к снижению производительности и потере состояния в дочерних компонентах|js},
     eng: "Unstable keys (like those produced by Math.random()) will cause many component instances and DOM nodes to be unnecessarily recreated, which can cause performance degradation and lost state in child components.",
   },
   /* https:reactjs.org/docs/reconciliation.html */
@@ -698,7 +707,7 @@ let oldOldDictionary2: pairList = [
     eng: "When the ref attribute is used on an HTML element, the ref created in the constructor with React.createRef() receives the underlying DOM element as its current property.",
   },
   {
-    rus: {js|Когда атрибут ref используется на компоненте пользовательского класса, объект ref получает смонтированный экземпляр компонента в качестве текущего.|js},
+    rus: {js|Когда атрибут ref используется на компоненте пользовательского класса, объект ref получает смонт��рованный экзе��пляр компонента в качестве текущего.|js},
     eng: "When the ref attribute is used on a custom class component, the ref object receives the mounted instance of the component as its current.",
   },
   {
@@ -718,11 +727,11 @@ let oldOldDictionary2: pairList = [
     eng: "ref updates happen before componentDidMount or componentDidUpdate lifecycle hooks.",
   },
   {
-    rus: {js|Вы должны преобразовать компонент в класс, если вам нужен реф на него, так же, как вы делаете, когда вам нужны методы жизненного цикла или состояние.|js},
+    rus: {js|Вы должны преобразовать компонент в класс, если вам нужен реф на него, так же, как вы делаете, когда вам нужны мето��ы жизненного цикла или состояние.|js},
     eng: "You should convert the component to a class if you need a ref to it, just like you do when you need lifecycle methods or state.",
   },
   {
-    rus: {js|В редких случаях вам может потребоваться доступ к ДОЧЕРНЕМУ узлу DOM из родительского компонента.|js},
+    rus: {js|В редких случаях вам может потребоваться доступ к ДОЧЕРНЕМУ ��злу DOM из родительского компонента.|js},
     eng: "In rare cases, you might want to have access to a child's DOM node from a parent component.",
   },
   {
@@ -779,19 +788,19 @@ let oldOldDictionary2: pairList = [
     eng: "If this is the case, take a moment and think more critically about where state should be owned in the component hierarchy.",
   },
   {
-    rus: {js|Часто становится ясно, что надлежащее место для 'владения' этим state находится на более высоком уровне в иерархии. См. руководство по поднятию состояния и примеры.|js},
+    rus: {js|Часто становится ясно, что надлежащее место для 'владения' ��тим state находится на более высоком уровне в иерархии. См. руководство по поднятию состояния и примеры.|js},
     eng: "Often, it becomes clear that the proper place to 'own' that state is at a higher level in the hierarchy. See the Lifting State Up guide for examples of this.",
   },
   {
-    rus: {js|По мере роста вашего приложения, вы можете поймать ��ного ошибок с помощью проверки типов.|js},
+    rus: {js|По мере роста вашего пр��ложения, вы можете поймать ��ного ошибок с помо��ью проверки типов.|js},
     eng: "As your app grows, you can catch a lot of bugs with typechecking.",
   },
   {
-    rus: {js|Для некоторых приложений можно использовать JavaScript расшире��ия, такие как Flow или TypeScript для проверки всего при��ожения.|js},
+    rus: {js|Для некоторых приложений можно использовать JavaScript расшире�����ия, такие как Flow или TypeScript для проверки всего при��ожения.|js},
     eng: "For some applications, you can use JavaScript extensions like Flow or TypeScript to typecheck your whole application.",
   },
   {
-    rus: {js|React имеет некоторые вст��оенные возможности проверки типов.|js},
+    rus: {js|React имеет некоторые вс����оенные возможности проверки типов.|js},
     eng: "React has some built-in typechecking abilities.",
   },
   {
@@ -867,11 +876,11 @@ let oldOldDictionary2: pairList = [
     eng: "But it does require a little more typing than traditional two-way data binding.",
   },
   {
-    rus: {js|React делает этот поток данных явным, чтобы было легко понять, как работает ваша программа.|js},
+    rus: {js|React делает этот поток данных явным, чтобы было легко понять, как работает ваш�� программа.|js},
     eng: "React makes this data flow explicit to make it easy to understand how your program works.",
   },
   {
-    rus: {js|Мы хотим убедиться, что всякий р��з, когда пользователь изменяет форму, мы о��новляем состояние, чтобы отразить пользовательский ввод.|js},
+    rus: {js|Мы хотим убе��иться, что всякий р��з, когда пользователь изменяет форму, мы о��новляем состояние, чтобы отразить пользовательский ввод.|js},
     eng: "We want to make sure that whenever the user changes the form, we update the state to reflect the user input.",
   },
   {
@@ -879,15 +888,15 @@ let oldOldDictionary2: pairList = [
     eng: "Since components should only update their own state, FilterableProductTable will pass callbacks to SearchBar that will fire whenever the state should be updated.",
   },
   {
-    rus: {js|Хотя это звучит сложно, на самом деле это всего л��шь несколько строк кода.|js},
+    rus: {js|Хо��я это звучит сложно, на самом деле это всего л��шь несколько строк кода.|js},
     eng: "Though this sounds complex, it's really just a few lines of code.",
   },
   {
-    rus: {js|И это действительно ясно, как ваши данные текут по всему приложению.|js},
+    rus: {js|И это действительно ясно, как ваши данные текут по всему прилож��нию.|js},
     eng: "And it's really explicit how your data is flowing throughout the app.",
   },
   {
-    rus: {js|Надеюсь, это даст вам представление о том, как строить компоненты и приложения с помощью React.|js},
+    rus: {js|Надеюсь, это даст вам представление о том, как строить компо��енты и приложения с помощью React.|js},
     eng: "Hopefully, this gives you an idea of how to think about building components and applications with React.",
   },
   {
@@ -911,7 +920,7 @@ let oldOldDictionary2: pairList = [
     eng: "OK, so we've identified what the minimal set of app state is.",
   },
   {
-    rus: {js|Далее нам нужно определить, какой компонент мутирует или владеет этим состоянием.|js},
+    rus: {js|Далее нам нужно определить, какой компонент мутирует или вл��деет этим состоянием.|js},
     eng: "Next, we need to identify which component mutates, or owns, this state.",
   },
   {

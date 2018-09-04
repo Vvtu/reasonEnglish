@@ -93,6 +93,15 @@ let reshuffle4 = dic =>
   |> map(x => (Random.int(1000000), x))
   |> sort(((x, _), (y, _)) => x - y)
   |> map(((_, x)) => x);
+
+/*
+  let reshuffle4_OCaml dic =
+   ((dic
+     |> (map (fun x  -> ((Random.int 1000000), x))))
+     |> (sort (fun (x,_)  -> fun (y,_)  -> x - y)))
+     |> (map (fun (_,x)  -> x))
+ */
+
 /* */
 /* */
 /* */
@@ -121,6 +130,13 @@ let reshuffle5 = dic =>
   +> map(x => (Random.int(1000000), x))
   +> sort(((x, _), (y, _)) => x - y)
   +> map(((_, x)) => x);
+
+/* */
+/* */
+/* */
+/* */
+/* */
+/* -----------------------------------------------------------*/
 
 /*  Переопределили +
     let (+) = (x, f) => f(x);
@@ -170,13 +186,14 @@ let reshuffle5 = dic =>
          let x = p1 |? p2 |? p3 |> default(d);
  */
 
-let (==>) = (f1, f2, x) => f2(f1(x)); /* композиция функций */
+/* let (@@) = (f, x) => f(x); */
+/* оператор $ — это оператор применения (англ. application operator) */
 
 let reshuffle7 = dic => {
   let f1 = x => map(x => (Random.int(1000000), x), x);
   let f2 = x => sort(((x, _), (y, _)) => x - y, x);
   let f3 = x => map(((_, x)) => x, x);
-  (f1 ==> f2 ==> f3)(dic);
+  f3 @@ f2 @@ f1 @@ dic;
 };
 /* */
 /* */
@@ -203,8 +220,9 @@ let reshuffle8 = dic => {
   let f1 = map(x => (Random.int(1000000), x));
   let f2 = sort(((x, _), (y, _)) => x - y);
   let f3 = map(((_, x)) => x);
-  (f1 ==> f2 ==> f3)(dic);
+  f3 @@ f2 @@ f1 @@ dic;
 };
+
 /* */
 /* */
 /* */
@@ -225,55 +243,11 @@ let reshuffle8 = dic => {
 /* */
 /* */
 /* */
+
 let reshuffle9 = dic =>
-  (
-    map(x => (Random.int(1000000), x))
-    ==> sort(((x, _), (y, _)) => x - y)
-    ==> map(((_, x)) => x)
-  )(
-    dic,
-  );
+  map(((_, x)) => x) @@
+  sort(((x, _), (y, _)) => x - y) @@
+  map(x => (Random.int(1000000), x)) @@
+  dic;
 
-/* ERROR
-   let reshuffle10 =
-     map(x => (Random.int(1000000), x))
-     ==> sort(((x, _), (y, _)) => x - y)
-     ==> map(((_, x)) => x);
-
-     This expression's type contains type variables that can't be generalized:
-     list('_a) => list('_a)
-   */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* OCaml
-   let (==>) f1 f2 x = f2 (f1 x)
-
-   let reshuffle11c =
-       (map (fun x  -> ((Random.int 1000000), x))
-       ==> (sort (fun (x,_)  -> fun (y,_)  -> x - y)))
-       ==> (map (fun (_,x)  -> x))
-
-   Скобки вокруг всех трех выражений обязательны,
-   так как нет скобок у аргументов.
-
-   Появилось fun для объявления функций
-   В OCaml   let f=(x,y,z)  =>  .... let f = (x) => (y) => (z)
-   */
+/* аргумент dic убрать не получается ! */
