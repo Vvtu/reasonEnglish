@@ -6,136 +6,93 @@ type wordPair = {
 type pairList = list(wordPair);
 
 let dictionary1: pairList = [
-  {rus: {js|тушить огонь|js}, eng: "to put out a fire"},
-  {rus: {js|бросать мусор|js}, eng: "to drop a litter"},
-  {rus: {js|овощи|js}, eng: "vegetables"},
-  {rus: {js|сладости|js}, eng: "sweets"},
-  {rus: {js|в хорошей форме|js}, eng: "fit"},
-  {rus: {js|сильный|js}, eng: "strong"},
-  {rus: {js|упражнение|js}, eng: "exercise"},
-  {rus: {js|богатый|js}, eng: "rich"},
-  {rus: {js|бедный|js}, eng: "poor"},
-  {rus: {js|здоровый|js}, eng: "healthy"},
   {
-    rus: {js|Как вы должны содержать своё тело сильным и в хорошей форме?|js},
-    eng: "How can you keep your body strong and fit?",
+    rus: {js|Наша первоочередная задача состоит в том, чтобы удовлетворить потребности клиентов в своевременной и непрерывной поставке ценного программного обеспечения.|js},
+    eng: "Our highest priority is to satisfy the customer trough early and continuous delivery of valueable software.",
   },
   {
-    rus: {js|Что вы должны есть каждый день?|js},
-    eng: "What should you eat every day?",
+    rus: {js|Приветствуются изменения требований, даже на поздних стадиях разработки. Гибкие процессы используют изменения для конкурентного преимущества клиента.|js},
+    eng: "Welcome changing requirements, even late in development. Agile processes harness change for the customer's competive advantage.",
   },
   {
-    rus: {js|Что вы должны пить каждый день?|js},
-    eng: "What should you drink every day?",
+    rus: {js|Поставляйте рабочее программное обеспечение часто, от нескольких недель до нескольких месяцев, с предпочтением к более коротким временным рамкам.|js},
+    eng: "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.",
   },
   {
-    rus: {js|Упражнение это хорошо потому, что позволяет поддерживать ваше тело здоровым.|js},
-    eng: "Exercise is good beacause it keeps you healthy.",
-  },
-  {rus: {js|загородная местность|js}, eng: "countyside"},
-  {rus: {js|простуда|js}, eng: "a cold"},
-  {rus: {js|сыпь|js}, eng: "a rash"},
-  {rus: {js|крем для кожи|js}, eng: "a skin cream"},
-  {rus: {js|боль в животе|js}, eng: "a stomachache"},
-  {rus: {js|головная боль|js}, eng: "a headache"},
-  {rus: {js|зубная боль|js}, eng: "a toothache"},
-  {rus: {js|шуметь|js}, eng: "to make a noise"},
-  {rus: {js|трава|js}, eng: "grass"},
-  {rus: {js|В чем дело?|js}, eng: "What's the matter?"},
-  {
-    rus: {js|У меня зубная боль.|js},
-    eng: "I've got a toothache.",
+    rus: {js|Заказчики и разработчики должны ежедневно работать вместе на протяжении всего проекта.|js},
+    eng: "Business people and developers must work together daily throughout the project.",
   },
   {
-    rus: {js|Тебе следует пойти к дантисту.|js},
-    eng: "You should go to the dentist's.",
+    rus: {js|Стройте проекты вокруг мотивированных людей. Дайте им окружение и поддержку, в которой они нуждаются, и доверяйте им, чтобы работа была сделана.|js},
+    eng: "Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.",
   },
   {
-    rus: {js|Мы не должны мусорить.|js},
-    eng: "We mustn't drop litter.",
-  },
-  {
-    rus: {js|Мы должны держаться вне травы.|js},
-    eng: "We must keep off the grass.",
-  },
-  {
-    rus: {js|Мы должны держать наших собак на поводке.|js},
-    eng: "We must keep our dogs on a lead.",
-  },
-  {
-    rus: {js|Мы не должны рвать цветы.|js},
-    eng: "We must not pick flowers.",
+    rus: {js|Наиболее эффективным и действенным способом передачи информации команде разработчиков и внутри нее является личная беседа.|js},
+    eng: "The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.",
   },
 ];
 
 let oldDictionary1: pairList = [
   {
-    rus: {js|Ты меня понимаешь?|js},
-    eng: "Do you understand me?",
+    rus: {js|Но для этого требуется немного больше ввода, чем при традиционной двусторонней привязке данных.|js},
+    eng: "But it does require a little more typing than traditional two-way data binding.",
   },
-  {rus: {js|Дай мне ручку.|js}, eng: "Give me a pen."},
-  {rus: {js|Дай мне ручку.|js}, eng: "Give me a pen."},
   {
-    rus: {js|Встреть меня в кинотеатре|js},
-    eng: "Meet me in the theatre.",
+    rus: {js|React делает этот поток данных явным, чтобы было легко понять, как работает ваш�� программа.|js},
+    eng: "React makes this data flow explicit to make it easy to understand how your program works.",
   },
-  {rus: {js|начинать|js}, eng: "begin, began, begun"},
-  {rus: {js|ломать|js}, eng: "break, broke, broken"},
-  {rus: {js|приносить|js}, eng: "bring, brought, brought"},
-  {rus: {js|покупать|js}, eng: "buy, bought, bought"},
-  {rus: {js|выбирать|js}, eng: "choose, chose, chosen"},
   {
-    rus: {js|приходить, приезжать|js},
-    eng: "come, came, come",
+    rus: {js|Мы хотим убе��иться, что всякий р��з, когда пользователь изменяет форму, мы о��новляем состояние, чтобы отразить пользовательский ввод.|js},
+    eng: "We want to make sure that whenever the user changes the form, we update the state to reflect the user input.",
   },
-  {rus: {js|резать|js}, eng: "cut, cut, cut"},
-  {rus: {js|делать|js}, eng: "do, did, done"},
-  {rus: {js|рисовать|js}, eng: "draw, drew, drawn"},
-  {rus: {js|пить|js}, eng: "drink, drank, drunk"},
-  {rus: {js|есть, кушать|js}, eng: "eat, ate, eaten"},
-  {rus: {js|падать|js}, eng: "fall, fell, fallen"},
-  {rus: {js|кормить|js}, eng: "feed, fed, fed"},
-  {rus: {js|находить|js}, eng: "find, found, found"},
-  {rus: {js|летать|js}, eng: "fly, flew, flown"},
-  {rus: {js|забывать|js}, eng: "forget, forgot, forgotten"},
-  {rus: {js|получать|js}, eng: "get, got, got"},
-  {rus: {js|давать|js}, eng: "give, gave, given"},
-  {rus: {js|идти, ходить|js}, eng: "go, went, gone"},
-  {rus: {js|иметь|js}, eng: "have, had, had"},
-  {rus: {js|слышать|js}, eng: "hear, heard, heard"},
-  {rus: {js|ушибить|js}, eng: "hurt, hurt, hurt"},
-  {rus: {js|знать|js}, eng: "know, knew, known"},
   {
-    rus: {js|учить (что-то), узнавать (новое)|js},
-    eng: "learn, learned, or, learnt, learned, or, learnt",
+    rus: {js|Поскольку компоненты должны обновлять только свое собственное состояние, FilterableProductTable передаст обратные вызовы в панель поиска, которая будет срабатывать всякий раз, когда состояние должно быть обновлено.|js},
+    eng: "Since components should only update their own state, FilterableProductTable will pass callbacks to SearchBar that will fire whenever the state should be updated.",
   },
-  {rus: {js|делать, заставлять|js}, eng: "make, made, made"},
-  {rus: {js|встречать|js}, eng: "meet, met, met"},
-  {rus: {js|платить|js}, eng: "pay, paid, paid"},
-  {rus: {js|класть, положить|js}, eng: "put, put, put"},
-  {rus: {js|читать|js}, eng: "read, red, [read], red, [read]"},
-  {rus: {js|бежать|js}, eng: "run, ran, run"},
-  {rus: {js|говорить|js}, eng: "say, said, said"},
-  {rus: {js|видеть|js}, eng: "see, saw, seen"},
-  {rus: {js|посылать|js}, eng: "send, sent, sent"},
-  {rus: {js|показывать|js}, eng: "show, showed, shown"},
-  {rus: {js|петь|js}, eng: "sing, sang, sung"},
-  {rus: {js|сидеть|js}, eng: "sit, sat, sat"},
-  {rus: {js|спать|js}, eng: "sleep, slept, slept"},
-  {rus: {js|нюхать, пахнуть|js}, eng: "smell, smelt, smelt"},
-  {rus: {js|говорить|js}, eng: "speak, spoke, spoken"},
-  {rus: {js|стоять|js}, eng: "stand, stood, stood"},
-  {rus: {js|плавать|js}, eng: "swim, swam, swum"},
-  {rus: {js|брать|js}, eng: "take, took, taken"},
-  {rus: {js|учить (кого-то)|js}, eng: "teach, taught, taught"},
   {
-    rus: {js|сказать (кому-то), рассказать|js},
-    eng: "tell, told, told",
+    rus: {js|Хо��я это звучит сложно, на самом деле это всего л��шь несколько строк кода.|js},
+    eng: "Though this sounds complex, it's really just a few lines of code.",
   },
-  {rus: {js|думать|js}, eng: "think, thought, thought"},
-  {rus: {js|понимать|js}, eng: "understand, understood, understood"},
-  {rus: {js|носить (одежду)|js}, eng: "wear, wore, worn"},
-  {rus: {js|писать|js}, eng: "write, wrote, written"},
+  {
+    rus: {js|И это действительно ясно, как ваши данные текут по всему прилож��нию.|js},
+    eng: "And it's really explicit how your data is flowing throughout the app.",
+  },
+  {
+    rus: {js|Надеюсь, это даст вам представление о том, как строить компо��енты и приложения с помощью React.|js},
+    eng: "Hopefully, this gives you an idea of how to think about building components and applications with React.",
+  },
+  {
+    rus: {js|Хотя это может быть немного больше печатания, чем вы привыкли.|js},
+    eng: "While it may be a little more typing than you're used to",
+  },
+  {
+    rus: {js|Помните, что код читается гораздо больше раз, чем пишется, и очень легко читать этот модульный, явный код.|js},
+    eng: "Remember that code is read far more than it's written, and it's extremely easy to read this modular, explicit code.",
+  },
+  {
+    rus: {js|Когда вы начнете создавать большие библиотеки компонентов, вы оцените эту эксплицитность и модульность.|js},
+    eng: "As you start to build large libraries of components, you'll appreciate this explicitness and modularity.",
+  },
+  {
+    rus: {js|И при пер��и��пользовании кода ваши строки кода начнут сжиматься.|js},
+    eng: "And with code reuse, your lines of code will start to shrink.",
+  },
+  {
+    rus: {js|ОК, мы определили, что такое минимальный набор состояния приложения.|js},
+    eng: "OK, so we've identified what the minimal set of app state is.",
+  },
+  {
+    rus: {js|Далее нам нужно определить, какой компонент мутирует или вл��деет этим состоянием.|js},
+    eng: "Next, we need to identify which component mutates, or owns, this state.",
+  },
+  {
+    rus: {js|Запомните: React это односторонний поток данных по иерархии компонентов.|js},
+    eng: "Remember: React is all about one-way data flow down the component hierarchy.",
+  },
+  {
+    rus: {js|Может быть, не сразу ясно, какой компонент должен владеть каким состоянием.|js},
+    eng: "It may not be immediately clear which component should own what state.",
+  },
 ];
 
 let dictionary2: pairList = [
@@ -152,7 +109,7 @@ let dictionary2: pairList = [
     eng: "To reduce redundancy, we provide punning for a record's types and values.",
   },
   {
-    rus: {js|Punning это сокращение синтаксиса, которое вы можете использовать, когда имя поля и есть его значение.|js},
+    rus: {js|Punning это сокращение синтаксиса, которое вы можете исполь����овать, когда имя поля и есть его значение.|js},
     eng: "Punning refers to the syntax shorthand you can use when the name of a field matches the name of its value/type",
   },
   {
@@ -232,7 +189,7 @@ let dictionary2: pairList = [
     eng: "Variant Needs an Explicit Definition",
   },
   {
-    rus: {js|Если вариант, который вы используете, находится в другом файле, перенесите его в scope, как для записи.|js},
+    rus: {js|Если вариант, который вы используете, находится в другом файле, перенесите его в scope, к��к для записи.|js},
     eng: "If the variant you're using is in a different file, bring it into scope like you'd do for a record.",
   },
   {
@@ -244,7 +201,7 @@ let dictionary2: pairList = [
     eng: "The standard library exposes two important variants you'll come to hear a lot. Optional. List.",
   },
   {
-    rus: {js|Знаете ли вы, что вы можете использовать switch для string, int, float, array и большинство других структур данных?|js},
+    rus: {js|Знаете ли вы, что вы мож��те использовать switch для string, int, float, array и большинство других структур данных?|js},
     eng: "Did you know that you can use switch on string, int, float, array, and most other data structures?",
   },
   {rus: {js||js}, eng: ""},
@@ -325,7 +282,7 @@ let oldDictionary2: pairList = [
     eng: "The type coverage is always 100%. We don't need a 'type coverage' tool! Every piece of Reason code has a type.",
   },
   {
-    rus: {js|Cистема типов полностью 'здравая'. Что означает, что пока код компилируется нормально, каждый Тип гарантирует, что он не лжет сам о себе.|js},
+    rus: {js|Cистема типов полностью 'здравая'. Что означает, что пока код ком��илируется нормально, каждый Тип гарантирует, что он не лжет сам о себе.|js},
     eng: "The type system is completely 'sound'. This means that, as long as your code compiles fine, every type guarantees that it's not lying about itself.",
   },
   {
@@ -337,7 +294,7 @@ let oldDictionary2: pairList = [
     eng: "To concatenate strings, use ++.",
   },
   {
-    rus: {js|Существует специальный синтаксис для строк, который позволяет делать многострочные строки, как и раньше, без специальных escape символов, хуки для специальных предпроцессоров.|js},
+    rus: {js|Существует специальный синтаксис для строк, который позволяет делать многострочные строки, как и раньше, без специальных escape символов, хуки для спе��иальных предпроцессоров.|js},
     eng: "There's a special syntax for string that allows multiline string just like before, no special character escaping, hooks for special pre-processors.",
   },
   {
@@ -421,7 +378,7 @@ let oldOldDictionary2: pairList = [
     eng: "The Scrum framework consists of Scrum Teams and their associated roles, events, artifacts, and rules. Each component within the framework serves a specific purpose and is essential to Scrum's success and usage.",
   },
   {
-    rus: {js|Правила Scrum связывают вместе роли, события и артефакты, управляя отношениями и взаимодействием между ними. Правила Scrum описаны всюду по телу этого документ��.|js},
+    rus: {js|Правила Scrum связывают вместе роли, события и артефакты, уп��авляя отношениями и взаимодействием между ними. Правила Scrum описаны всюду по телу этого документ��.|js},
     eng: "The rules of Scrum bind together the roles, events, and artifacts, governing the relationships and interaction between them. The rules of Scrum are described throughout the body of this document.",
   },
   {
@@ -510,7 +467,7 @@ let oldOldDictionary2: pairList = [
     eng: "Like components, the contract between withSubscription and the wrapped component is entirely props-based.",
   },
   {
-    rus: {js|Это упрощает замену одного HOC на другой, если они предоставляют оди��аковые props для обернутого компонента. Это может быть полезно, например, при изменении библиотек фетчинга данных.|js},
+    rus: {js|Это упрощает замену одного HOC на другой, если они предоставляют од����ак��вые props для обернутого компонента. Это может быть полезно, например, при изменении библиотек фетчинга данных.|js},
     eng: "This makes it easy to swap one HOC for a different one, as long as they provide the same props to the wrapped component. This may be useful if you change data-fetching libraries, for example.",
   },
   {
@@ -610,7 +567,7 @@ let oldOldDictionary2: pairList = [
     eng: "In other words, if another component needs to know about the cursor position, can we encapsulate that behavior so that we can easily share it with that component?",
   },
   {
-    rus: {js|Теперь, вместо того, чтобы эффективно клонировать Mouse компонент и жестко кодировать что-то еще в его Render методе для решения для конкретного с��у��ая использования, мы предоставляем Render prop, который Mouse может использовать для динамического опреде��ения того, что он отображает.|js},
+    rus: {js|Теперь, вместо того, чтобы эффективно клонировать Mouse компонент и жестко кодировать что-то еще в его Render методе для решения для конкретного с��у��ая использования, мы предоставляем Render prop, который Mouse может использовать для динамичес��ого опреде��ения того, что он отображает.|js},
     eng: "Now, instead of effectively cloning the Mouse component and hard-coding something else in its render method to solve for a specific use case, we provide a render prop that Mouse can use to dynamically determine what it renders.",
   },
   {
@@ -780,7 +737,7 @@ let oldOldDictionary2: pairList = [
     eng: "For example, instead of exposing open() and close() methods on a Dialog component, pass an isOpen prop to it.",
   },
   {
-    rus: {js|Ваше первое намерение может быть использовать ref-ы, чтобы 'сделать, чтобы что-то произошло' в вашем приложении.|js},
+    rus: {js|Ваше первое намерение может быть использовать ref-��, чтобы 'сделать, чтобы что-то произошло' в вашем приложении.|js},
     eng: "Your first inclination may be to use refs to 'make things happen' in your app.",
   },
   {
@@ -860,7 +817,7 @@ let oldOldDictionary2: pairList = [
     eng: "Flow lets you annotate the variables, functions, and React components with a special type syntax, and catch mistakes early.",
   },
   {
-    rus: {js|До сих пор мы создали приложение, которое корректно рендерится как функция от props и state, стекающих вниз по иерархии.|js},
+    rus: {js|До сих пор мы создали приложение, которое корректно рендерится как функция от props и state, стекающих вниз по иерар��ии.|js},
     eng: "So far, we've built an app that renders correctly as a function of props and state flowing down the hierarchy.",
   },
   {
