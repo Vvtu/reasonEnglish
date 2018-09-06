@@ -1,6 +1,5 @@
 module Settings = {
   let component = ReasonReact.statelessComponent("Icon.Settings");
-
   let make = (~color: string, ~height: string, _children) => {
     ...component,
     shouldUpdate: _ => false,
@@ -24,7 +23,6 @@ module Settings = {
 };
 module Arrow = {
   let component = ReasonReact.statelessComponent("Icon.Arrow");
-
   let make = (~color: string, ~height: string, _children) => {
     ...component,
     shouldUpdate: _ => false,
@@ -46,7 +44,6 @@ module Arrow = {
 
 module Cancel = {
   let component = ReasonReact.statelessComponent("Icon.Cancel");
-
   let make = (~color: string, ~height: string, _children) => {
     ...component,
     shouldUpdate: _ => false,
@@ -68,8 +65,7 @@ module Cancel = {
   };
 };
 module ClearAllInfo = {
-  let component = ReasonReact.statelessComponent("ClearAllInfo");
-
+  let component = ReasonReact.statelessComponent("Icon.ClearAllInfo");
   let make = (~color: string, ~height: string, _children) => {
     ...component,
     render: _self =>
@@ -92,8 +88,7 @@ module ClearAllInfo = {
   };
 };
 module Voices = {
-  let component = ReasonReact.statelessComponent("Voices");
-
+  let component = ReasonReact.statelessComponent("Icon.Voices");
   let make = (~color: string, ~height: string, _children) => {
     ...component,
     render: _self =>
@@ -112,8 +107,7 @@ module Voices = {
 };
 
 module D1 = {
-  let component = ReasonReact.statelessComponent("Voices");
-
+  let component = ReasonReact.statelessComponent("Icon.D1");
   let make = (~color: string, ~height: string, _children) => {
     ...component,
     render: _self =>
@@ -129,8 +123,7 @@ module D1 = {
 };
 
 module D2 = {
-  let component = ReasonReact.statelessComponent("Voices");
-
+  let component = ReasonReact.statelessComponent("Icon.D2");
   let make = (~color: string, ~height: string, _children) => {
     ...component,
     render: _self =>
