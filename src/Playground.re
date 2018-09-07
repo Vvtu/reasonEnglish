@@ -65,3 +65,14 @@ type person = {
 let ivan = {name: "Ivan", group: 5};
 let alex = {...ivan, name: "Alex"};
 let alexGroup = alex.group;
+
+/* List ---------------------------------------*/
+let a = [1, 2, 3]; /* a = [1,[2,[3,0]]] */
+let b = [10, ...a];
+let c =
+  switch (b) {
+  | [] => []
+  | [_, ...tail] => tail
+  };
+let r = c === a;
+Js.log2("r=", r);
