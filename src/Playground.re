@@ -14,11 +14,11 @@ t1 @@ 3000;
    - полный аналог $ - оператора применения из Haskell */
 
 /* inc ----------------------------------------*/
-let a = Random.int(100);
-
 let inc = i => i + 1;
 
-Js.log(2147483647 |> inc);
+let overMax = 2147483647 |> inc;
+
+let a = Random.int(100);
 
 Js.log(inc(inc(inc(inc(inc(a))))));
 Js.log(a |> inc |> inc |> inc |> inc |> inc);
