@@ -69,6 +69,8 @@ let alexGroup = alex.group;
 /* List ---------------------------------------*/
 let a = [1, 2, 3]; /* a = [1,[2,[3,0]]] */
 let b = [10, ...a];
+Js.log2("b=", b);
+
 let c =
   switch (b) {
   | [] => []
