@@ -1,5 +1,7 @@
 [%bs.raw {|require('./App.css')|}];
 
+open List;
+
 type state = {
   allCards: Dictionaries.pairList,
   remainingCards: Dictionaries.pairList,
@@ -26,8 +28,6 @@ type action =
   | HideVoiceMenu
   | StoreVoicesToSate(array(SpeechSynthesis.Voice.t))
   | Restart;
-
-open List;
 
 let initialStateRecord = {
   allCards: [],
