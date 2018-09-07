@@ -8,14 +8,7 @@ type action =
   | ClosePopUpSettingsMenu;
 let component = ReasonReact.reducerComponent("PopUpVoiceMenu");
 
-let make =
-    (
-      ~handleClosePopupClicked,
-      ~handleRestart,
-      ~whiteColor,
-      ~voices,
-      _children,
-    ) => {
+let make = (~handleClosePopupClicked, ~whiteColor, ~voices, _children) => {
   ...component,
   initialState: () => {increaseOpacity: false},
   reducer: (action, _state) =>
@@ -93,7 +86,7 @@ let make =
                                 string_of_int(index),
                               )
                          );
-                         handleRestart();
+                         handleClosePopupClicked();
                        }
                      )>
                      <div> (ReasonReact.string(name)) </div>

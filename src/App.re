@@ -1,25 +1,19 @@
 [%bs.raw {|require('./App.css')|}];
-/* [@bs.val] external setTimeout : (unit => unit, int) => float = "setTimeout";
-   [@bs.val] external clearTimeout : float => unit = "clearTimeout"; */
-
-/* type t = Dom.window; */
-
-/* include WindowOrWorkerGlobalScope? not really "dom" though */
-/* include EventTargetRe.Impl({ type nonrec t = t; }); */
 
 type state = {
+  allCards: Dictionaries.pairList,
+  remainingCards: Dictionaries.pairList,
+  appcodeIsSpeaking: bool,
   showEnglish: bool,
   showSettings: bool,
   showVoiceMenu: bool,
-  appcodeIsSpeaking: bool,
-  allCards: Dictionaries.pairList,
-  remainingCards: Dictionaries.pairList,
-  whiteColor: string,
-  settingsColor: string,
-  englishTextColor: string,
-  dangerColor: string,
   voices: array(SpeechSynthesis.Voice.t),
+  dangerColor: string,
+  englishTextColor: string,
+  settingsColor: string,
+  whiteColor: string,
 };
+
 type action =
   | GotoNextCard(Dictionaries.pairList)
   | GotoPreviousCard(int)
@@ -35,28 +29,31 @@ type action =
 
 open List;
 
+let initialStateRecord = {
+  allCards: [],
+  remainingCards: [],
+  appcodeIsSpeaking: false,
+  showEnglish: false,
+  showSettings: false,
+  showVoiceMenu: false,
+  voices: [||],
+  dangerColor: "#000",
+  englishTextColor: "#000",
+  settingsColor: "#000",
+  whiteColor: "#000",
+};
+
 let component = ReasonReact.reducerComponent("App");
 
 let make = _children => {
   ...component,
-  initialState: () => {
-    showEnglish: false,
-    showSettings: false,
-    showVoiceMenu: false,
-    appcodeIsSpeaking: false,
-    allCards: [],
-    remainingCards: [],
-    whiteColor: "#000000",
-    settingsColor: "#000000",
-    englishTextColor: "#000000",
-    dangerColor: "#000000",
-    voices: [||],
-  },
+  initialState: () => initialStateRecord,
   /* reducer must be pure */
   reducer: (action, state) =>
     switch (action) {
     | GotoNextCard(tail) =>
       ReasonReact.Update({...state, remainingCards: tail, showEnglish: false})
+
     | GotoPreviousCard(index) =>
       let newCurrentDictionary =
         if (index < 0) {
@@ -71,6 +68,7 @@ let make = _children => {
     | ShowVoiceMenu => ReasonReact.Update({...state, showVoiceMenu: true})
     | HideVoiceMenu => ReasonReact.Update({...state, showVoiceMenu: false})
     | SpeechEnd => ReasonReact.Update({...state, appcodeIsSpeaking: false})
+
     | SpeakEnglish(text) =>
       ReasonReact.UpdateWithSideEffects(
         {...state, appcodeIsSpeaking: true},
@@ -83,7 +81,7 @@ let make = _children => {
                 7000 /* in case of utterThis.onend failed */
               );
             let voiceIndex = MyLib.getVoiceIndex();
-            if (voiceIndex >= 0) {
+            if (voiceIndex >= 0 && voiceIndex < Array.length(state.voices)) {
               SpeechSynthesis.Utterance.set_voice(
                 ut,
                 state.voices[voiceIndex],
@@ -101,6 +99,7 @@ let make = _children => {
           }
         ),
       )
+
     | SwitchEnglishShowing(str, shown) =>
       let newShowEnglish = state.showEnglish != true;
       if (newShowEnglish) {
@@ -111,6 +110,7 @@ let make = _children => {
         showEnglish: newShowEnglish,
         appcodeIsSpeaking: false,
       });
+
     | StoreVoicesToSate(voices) => ReasonReact.Update({...state, voices})
 
     | Restart =>
@@ -126,26 +126,21 @@ let make = _children => {
         };
 
       let allCards =
-        List.append(
+        append(
           MyLib.takeItems(3, Reshuffle.reshuffle4(dictOld)),
           Reshuffle.reshuffle4(dict),
         )
-        |> List.filter(({rus, eng}: Dictionaries.wordPair) =>
+        |> filter(({rus, eng}: Dictionaries.wordPair) =>
              eng !== "" || rus !== ""
            );
 
       /* let _ = EventTargetRe.Impl.getComputedStyle(el, window); */
-
       /* styles.getPropertyValue("--english-text-color"), */
       /* styles.getPropertyValue("--settings-color"), */
       /* styles.getPropertyValue("--base-text-color"), */
 
       ReasonReact.Update({
-        ...state,
-        showEnglish: false,
-        showSettings: false,
-        showVoiceMenu: false,
-        appcodeIsSpeaking: false,
+        ...initialStateRecord,
         allCards,
         remainingCards: allCards,
         whiteColor: "#000000",
@@ -169,8 +164,6 @@ let make = _children => {
   },
   render: ({state, send}) => {
     Js.log("App render");
-    /* Js.log2("- voices = ", state.voices); */
-
     switch (state.remainingCards) {
     | [] =>
       <div
@@ -302,7 +295,6 @@ let make = _children => {
           state.showVoiceMenu ?
             <PopUpVoiceMenu
               handleClosePopupClicked=(_ => send(HideVoiceMenu))
-              handleRestart=(_ => send(Restart))
               whiteColor=state.whiteColor
               voices=state.voices
             /> :
