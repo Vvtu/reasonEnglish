@@ -29,25 +29,24 @@ type action =
   | StoreVoicesToSate(array(SpeechSynthesis.Voice.t))
   | Restart;
 
-let initialStateRecord = {
-  allCards: [],
-  remainingCards: [],
-  appcodeIsSpeaking: false,
-  showEnglish: false,
-  showSettings: false,
-  showVoiceMenu: false,
-  voices: [||],
-  dangerColor: "#000",
-  englishTextColor: "#000",
-  settingsColor: "#000",
-  whiteColor: "#000",
-};
-
 let component = ReasonReact.reducerComponent("App");
 
 let make = _children => {
   ...component,
-  initialState: () => initialStateRecord,
+  initialState: () => {
+    /* 11 fields */
+    allCards: [],
+    remainingCards: [],
+    appcodeIsSpeaking: false,
+    showEnglish: false,
+    showSettings: false,
+    showVoiceMenu: false,
+    voices: [||],
+    dangerColor: "#000",
+    englishTextColor: "#000",
+    settingsColor: "#000",
+    whiteColor: "#000",
+  },
   /* reducer must be pure */
   reducer: (action, state) =>
     switch (action) {
@@ -140,9 +139,14 @@ let make = _children => {
       /* styles.getPropertyValue("--base-text-color"), */
 
       ReasonReact.Update({
-        ...initialStateRecord,
+        ...state,
         allCards,
         remainingCards: allCards,
+        appcodeIsSpeaking: false,
+        showEnglish: false,
+        showSettings: false,
+        showVoiceMenu: false,
+        /* only voices field is absent */
         whiteColor: "#000000",
         settingsColor: "#add8e6",
         englishTextColor: "#6b5ee0",
