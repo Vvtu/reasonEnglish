@@ -251,6 +251,7 @@ let make = _children => {
             </div>
           </div>
         </div>
+        /* Russian field */
         <div
           className="appcode__russian"
           onClick=(_ => send(SwitchEnglishShowing(currentCard.rus, shown)))>
@@ -260,6 +261,7 @@ let make = _children => {
             </div>
           </div>
         </div>
+        /* English field */
         <div
           className="appcode__english"
           onClick=(_ => send(SpeakEnglish(currentCard.eng)))>
@@ -279,6 +281,7 @@ let make = _children => {
               <div className="appcode__center" />
           )
         </div>
+        /* ************** */
         (
           state.showSettings ?
             <PopUpSettingsMenu

@@ -78,3 +78,20 @@ let c =
   };
 let r = c === a;
 Js.log2("r=", r);
+
+/* qsort ---------------------------------------*/
+
+let rec qsort = a =>
+  switch (a) {
+  | [] => []
+  | [x, ...y] =>
+    let (p1, p2) =
+      List.fold_left(
+        ((a1, a2), e) => e > x ? ([e, ...a1], a2) : (a1, [e, ...a2]),
+        ([], []),
+        y,
+      );
+    let p1Sort = qsort(p1);
+    let p2Sort = qsort(p2);
+    p1Sort @ [x, ...p2Sort];
+  };
