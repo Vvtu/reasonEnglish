@@ -17,7 +17,7 @@ type state = {
 };
 
 type action =
-  | GotoNextCard(Dictionaries.pairList)
+  | GotoNextCard
   | GotoPreviousCard(int)
   | SwitchEnglishShowing(string, int)
   | SpeakEnglish(string)
@@ -50,8 +50,12 @@ let make = _children => {
   /* reducer must be pure */
   reducer: (action, state) =>
     switch (action) {
-    | GotoNextCard(tail) =>
-      ReasonReact.Update({...state, remainingCards: tail, showEnglish: false})
+    | GotoNextCard =>
+      ReasonReact.Update({
+        ...state,
+        remainingCards: MyLib.dropItems(1, state.remainingCards),
+        showEnglish: false,
+      })
 
     | GotoPreviousCard(index) =>
       let newCurrentDictionary =
@@ -246,7 +250,7 @@ let make = _children => {
             </div>
             <div
               className="appcode__icon_invert__horizontal"
-              onClick=(_ => send(GotoNextCard(tail)))>
+              onClick=(_ => send(GotoNextCard))>
               <Icon.Arrow color=state.whiteColor height=Constants.iconSize />
             </div>
           </div>

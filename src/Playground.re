@@ -95,3 +95,27 @@ let rec qsort = a =>
     let p2Sort = qsort(p2);
     p1Sort @ [x, ...p2Sort];
   };
+
+/* Module functor -----------------------------*/
+
+/* заменитель type classes
+      ( такая функция, которая берет модуль,
+      навешивает на него некоторую функциональность,
+      и возвращает другой модуль)
+   */
+
+module StringMap =
+  Map.Make({
+    type t = string;
+    let compare = compare;
+  });
+
+open StringMap;
+let m = empty |> add("key1", 10) |> add("key2", 20);
+let m2 = m |> add("key2", 200);
+
+m |> mapi((a, b) => Js.log2(a, b));
+Js.log("---------------------");
+m2 |> mapi((a, b) => Js.log2(a, b));
+
+/* qsort ------------------------------------*/
