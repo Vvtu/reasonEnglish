@@ -97,6 +97,43 @@ let oldDictionary1: pairList = [
 
 let dictionary2: pairList = [
   {
+    rus: {js|Variants в их многочисленных формах (полиморфный вариант, открытый вариант, GADT и др.), вероятно, являются фичей системы типов, такой как Reason.|js},
+    eng: "Variants, in their many forms (polymorphic variant, open variant, GADT, etc.), are likely the feature of a type system such as Reason's.",
+  },
+  {
+    rus: {js|Вышеупомянутый option, например, устраняет необходимость в типах, допускающих значение NULL, что является основным источником ошибок в других языках.|js},
+    eng: "The aforementioned option variant, for example, obliterates the need for nullable types, a major source of bugs in other languages.",
+  },
+  {
+    rus: {js|Философски выражаясь, проблема состоит из многих возможных ветвей/условия. Неправильное выполнение этих условий является основной частью того, что мы называем ошибками.|js},
+    eng: "Philosophically speaking, a problem is composed of many possible branches/conditions. Mishandling these conditions is the majority of what we call bugs."
+  },
+    {rus: {js|Система типов не устраняет ошибки волшебным образом; она указывает на необработанные условия и просит Вас покрыть их.|js},
+    eng: "A type system doesn't magically eliminate bugs; it points out the unhandled conditions and asks you to cover them."},
+
+    {rus: {js|Способность правильно моделировать 'то или это' имеет решающее значение.|js},
+    eng: "The ability to model 'this or that' correctly is crucial."},
+  {
+    rus: {js|Например, некоторые люди задаются вопросом, как система типов может безопасно исключить плохо форматированные данные JSON из распространения в их программу.|js},
+
+    eng: "For example, some folks wonder how the type system can safely eliminate badly formatted JSON data from propagating into their program.",
+  },
+  {rus: {js|Если синтаксический анализатор возвращает тип Option None / Some (актуальные данные), то вам придется явно обрабатывать случай None на более поздних вызовов.|js},
+  eng: "If the parser returns the option type None | Some(actualData), then you'd have to handle the None case explicitly in later calls."},
+
+  {rus: {js|Система типов позволяет безопасно вносить большую категорию изменений в кодовые базы без необходимости понимать все это заранее.|js},
+   eng: "A type system allows you to safely make a big category of changes to codebases without needing to understand the whole thing upfront."},
+
+  {rus: {js|Типы уменьшают уровни абстракций, необходимых для "достижения цели", что в свою очередь уменьшает когнитивную нагрузку на вызывающих абонентов.|js},
+   eng: "Types reduce the layers of abstractions needed to 'get things done', which in return reduces callers' cognitive burden."},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+];
+
+let oldDictionary2: pairList = [
+  {
     rus: {js|Новые записи могут быть созданы из старых записей спред оператором (...). Оригинальная запись не мутируется.|js},
     eng: "New records can be created from old records with the ... spread operator. The original record isn't mutated.",
   },
@@ -165,7 +202,7 @@ let dictionary2: pairList = [
     eng: "Most data structures in most languages are about 'this and that'. A variant allows us to express 'this or that'.",
   },
   {
-    rus: {js|Примечание: конструкторы варианта должны быть с большой буквы.|js},
+    rus: {js|Примечание: ��онструкторы варианта должны быть с большой буквы.|js},
     eng: "Note: a variant's constructors need to be capitalized.",
   },
   {
@@ -204,23 +241,7 @@ let dictionary2: pairList = [
     rus: {js|Знаете ли вы, что вы мож��те использовать switch для string, int, float, array и большинство других структур данных?|js},
     eng: "Did you know that you can use switch on string, int, float, array, and most other data structures?",
   },
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
   /* --------------------------------------------- */
-];
-
-let oldDictionary2: pairList = [
   {
     rus: {js|Используйте структурное равенство осторожно. Это удобно, но может привести к случайному сравнению двух глубоко вложенных структур данных и снижению производительности. Также не всегда понятно, что считается 'равным'.|js},
     eng: "Use structural equal tastefully. It's convenient, but might accidentally make you compare two deeply nested data structures and incur a big performance hit. It's also not always clear what counts as 'equal'.",
@@ -362,7 +383,7 @@ let oldOldDictionary2: pairList = [
     eng: "At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.",
   },
   {
-    rus: {js|Scrum-это framework, в котором люди мо��ут решать сложные адаптивные проблемы, продуктивно и творчески доставляя продукты максимально возможной ценности|js},
+    rus: {js|Scrum-это framework, в котором люди мо��ут решать сложные адаптивные проблемы, продуктивно и творчес��и доставляя продукты максимально возможной ценности|js},
     eng: "Scrum is a framework within which people can address complex adaptive problems, while productively and creatively delivering products of the highest possible value.",
   },
   {
@@ -370,7 +391,7 @@ let oldOldDictionary2: pairList = [
     eng: "Scrum is not a methodology. Scrum implements the scientific method of empiricism. Scrum replaces a programmed algorithmic approach with a heuristic one, with respect for people and self-organization to deal with unpredictability and solving complex problems.",
   },
   {
-    rus: {js|Scrum не является процессом, техник��й или окончательным методом. Скорее, это framework, в которыом вы можете использовать различные процессы и методы.|js},
+    rus: {js|Scrum не является процессом, техник��й или окончательны�� методом. Скорее, это framework, в которыом вы можете использовать различные процессы и методы.|js},
     eng: "Scrum is not a process, technique, or definitive method. Rather, it is a framework within which you can employ various processes and techniques.",
   },
   {
@@ -455,7 +476,7 @@ let oldOldDictionary2: pairList = [
     eng: "A HOC is a pure function with zero side-effects.",
   },
   {
-    rus: {js|И это все! Обернутый компонент получает все реквизиты контейнера вместе с новым реквизитом, данн��е, которые он использует для визуализации своих выходных данных.|js},
+    rus: {js|И это все! Обернутый компонент получает все реквизиты контейнера вместе с новым реквизитом, данн����е, которые он использует для визуализации своих выходных данных.|js},
     eng: "And that's it! The wrapped component receives all the props of the container, along with a new prop, data, which it uses to render its output.",
   },
   {
@@ -547,7 +568,7 @@ let oldOldDictionary2: pairList = [
     eng: "A component with a render prop takes a function that returns a React element and calls it instead of implementing its own render logic.",
   },
   {
-    rus: {js|В этом документе мы обсудим, почему рендер props по��езны, и как написать свои собственные.|js},
+    rus: {js|В этом документе мы обсудим, почему рендер props по��езны, и как написа��ь свои собственные.|js},
     eng: "In this document, we'll discuss why render props are useful, and how to write your own.",
   },
   {
@@ -817,7 +838,7 @@ let oldOldDictionary2: pairList = [
     eng: "Flow lets you annotate the variables, functions, and React components with a special type syntax, and catch mistakes early.",
   },
   {
-    rus: {js|До сих пор мы создали приложение, которое корректно рендерится как функция от props и state, стекающих вниз по иерар��ии.|js},
+    rus: {js|До сих пор мы создали приложение, которое корректно рендерится как функция от props и state, стекающих вниз по ��ерар��ии.|js},
     eng: "So far, we've built an app that renders correctly as a function of props and state flowing down the hierarchy.",
   },
   {
