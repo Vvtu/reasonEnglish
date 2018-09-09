@@ -105,7 +105,7 @@ let rec qsort = a =>
 module StringMap =
   Map.Make({
     type t = string;
-    let compare = compare;
+    let compare = (a, b) => a < b ? 1 : (-1);
   });
 
 open StringMap;
