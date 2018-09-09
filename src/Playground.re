@@ -115,4 +115,10 @@ Js.log("---------------------");
 let m2 = m |> add("key2", 200);
 m2 |> mapi((a, b) => Js.log2(a, b));
 
-/*  ------------------------------------*/
+/*  -- Create JS object -------------------*/
+
+let height = 20;
+
+let jsObj = {"height": height, "width": 20, "draw": () => 10};
+
+[%bs.raw {| console.log('jsObj = ', jsObj) |}];
