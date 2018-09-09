@@ -17,3 +17,9 @@ let getVoiceIndex = () =>
   | Some(n) => int_of_string(n)
   | None => (-1)
   };
+
+[@bs.val]
+external requestAnimationFrame : (unit => unit) => float =
+  "requestAnimationFrame";
+
+let aaa = () => 10;

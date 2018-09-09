@@ -1,7 +1,3 @@
-[@bs.val]
-external requestAnimationFrame : (unit => unit) => float =
-  "requestAnimationFrame";
-
 module PopUpMenuItem = {
   let component = ReasonReact.statelessComponent("PopUpMenuItem");
   let make = (~label, ~onClick, children) => {
@@ -47,7 +43,7 @@ let make =
       )
     },
   didMount: ({send}) => {
-    let _ = requestAnimationFrame(_ => send(SetIncreaseOpacityTrue));
+    let _ = MyLib.requestAnimationFrame(_ => send(SetIncreaseOpacityTrue));
     ();
   },
   render: ({state, send}) => {

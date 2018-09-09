@@ -1,7 +1,3 @@
-[@bs.val]
-external requestAnimationFrame : (unit => unit) => float =
-  "requestAnimationFrame";
-
 type state = {increaseOpacity: bool};
 type action =
   | SetIncreaseOpacityTrue
@@ -26,7 +22,7 @@ let make = (~handleClosePopupClicked, ~whiteColor, ~voices, _children) => {
       )
     },
   didMount: ({send}) => {
-    let _ = requestAnimationFrame(_ => send(SetIncreaseOpacityTrue));
+    let _ = MyLib.requestAnimationFrame(_ => send(SetIncreaseOpacityTrue));
     ();
   },
   render: ({state, send}) => {
