@@ -5,7 +5,7 @@ type wordPair = {
 
 type pairList = list(wordPair);
 
-let dictionary1: pairList = [
+let dictionary1 = [
   {
     rus: {js|Наша первоочередная задача состоит в том, чтобы удовлетворить потребности клиентов в своевременной и непрерывной поставке ценного программного обеспечения.|js},
     eng: "Our highest priority is to satisfy the customer trough early and continuous delivery of valueable software.",
@@ -32,7 +32,7 @@ let dictionary1: pairList = [
   },
 ];
 
-let oldDictionary1: pairList = [
+let oldDictionary1 = [
   {
     rus: {js|Но для этого требуется немного больше ввода, чем при традиционной двусторонней привязке данных.|js},
     eng: "But it does require a little more typing than traditional two-way data binding.",
@@ -95,7 +95,7 @@ let oldDictionary1: pairList = [
   },
 ];
 
-let dictionary2: pairList = [
+let dictionary2  = [
   {
     rus: {js|Variants в их многочисленных формах (полиморфный вариант, открытый вариант, GADT и др.), вероятно, являются фичей системы типов, такой как Reason.|js},
     eng: "Variants, in their many forms (polymorphic variant, open variant, GADT, etc.), are likely the feature of a type system such as Reason's.",
@@ -105,34 +105,40 @@ let dictionary2: pairList = [
     eng: "The aforementioned option variant, for example, obliterates the need for nullable types, a major source of bugs in other languages.",
   },
   {
-    rus: {js|Философски выражаясь, проблема состоит из многих возможных ветвей/условия. Неправильное выполнение этих условий является основной частью того, что мы называем ошибками.|js},
-    eng: "Philosophically speaking, a problem is composed of many possible branches/conditions. Mishandling these conditions is the majority of what we call bugs."
+    rus: {js|Философски выражаясь, проблема состоит из многих возможных ветвей/условия. Неправильное выполнение этих условий является ��сновной частью того, что мы называем ошибками.|js},
+    eng: "Philosophically speaking, a problem is composed of many possible branches/conditions. Mishandling these conditions is the majority of what we call bugs.",
   },
-    {rus: {js|Система типов не устраняет ошибки волшебным образом; она указывает на необработанные условия и просит Вас покрыть их.|js},
-    eng: "A type system doesn't magically eliminate bugs; it points out the unhandled conditions and asks you to cover them."},
-
-    {rus: {js|Способность правильно моделировать 'то или это' имеет решающее значение.|js},
-    eng: "The ability to model 'this or that' correctly is crucial."},
+  {
+    rus: {js|Система типов не устраняет ошибки волшебным образом; она указывает на необработанные условия и просит Вас покрыть их.|js},
+    eng: "A type system doesn't magically eliminate bugs; it points out the unhandled conditions and asks you to cover them.",
+  },
+  {
+    rus: {js|Способность правильно моделировать 'то или это' имеет решающее значение.|js},
+    eng: "The ability to model 'this or that' correctly is crucial.",
+  },
   {
     rus: {js|Например, некоторые люди задаются вопросом, как система типов может безопасно исключить плохо форматированные данные JSON из распространения в их программу.|js},
-
     eng: "For example, some folks wonder how the type system can safely eliminate badly formatted JSON data from propagating into their program.",
   },
-  {rus: {js|Если синтаксический анализатор возвращает тип Option None / Some (актуальные данные), то вам придется явно обрабатывать случай None на более поздних вызовов.|js},
-  eng: "If the parser returns the option type None | Some(actualData), then you'd have to handle the None case explicitly in later calls."},
-
-  {rus: {js|Система типов позволяет безопасно вносить большую категорию изменений в кодовые базы без необходимости понимать все это заранее.|js},
-   eng: "A type system allows you to safely make a big category of changes to codebases without needing to understand the whole thing upfront."},
-
-  {rus: {js|Типы уменьшают уровни абстракций, необходимых для "достижения цели", что в свою очередь уменьшает когнитивную нагрузку на вызывающих абонентов.|js},
-   eng: "Types reduce the layers of abstractions needed to 'get things done', which in return reduces callers' cognitive burden."},
+  {
+    rus: {js|Если синтаксический анализатор возвращает тип Option None / Some (актуальные данные), то вам придется явно обрабатывать случай None на более поздних вызовов.|js},
+    eng: "If the parser returns the option type None | Some(actualData), then you'd have to handle the None case explicitly in later calls.",
+  },
+  {
+    rus: {js|Система типов позволяет безопасно вносить большую категорию изменений в кодовые базы без необходимости понимать все это заранее.|js},
+    eng: "A type system allows you to safely make a big category of changes to codebases without needing to understand the whole thing upfront.",
+  },
+  {
+    rus: {js|Типы уменьшают уровни абстракций, необходимых для "достижения цели", что в свою очередь уменьшает когнитивную нагрузку на вызывающих абонентов.|js},
+    eng: "Types reduce the layers of abstractions needed to 'get things done', which in return reduces callers' cognitive burden.",
+  },
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
 ];
 
-let oldDictionary2: pairList = [
+let oldDictionary2 = [
   {
     rus: {js|Новые записи могут быть созданы из старых записей спред оператором (...). Оригинальная запись не мутируется.|js},
     eng: "New records can be created from old records with the ... spread operator. The original record isn't mutated.",
@@ -332,7 +338,7 @@ let oldDictionary2: pairList = [
   },
 ];
 
-let oldOldDictionary2: pairList = [
+let oldOldDictionary2 = [
   /* ************************************************************************************************************************** */
   {
     rus: {js|Наша первоочередная задача состоит в том, чтобы удовлетворить потребности клиентов в своевременной и непрерывной поставке ценного программного обеспечения.|js},
@@ -548,7 +554,7 @@ let oldOldDictionary2: pairList = [
     eng: "Convention: Wrap the Display Name for Easy Debugging.",
   },
   {
-    rus: {js|Предостережения. Компоненты более высокого порядка имеют несколько предостережений, которые не сразу очевидны, если вы новичок в React.|js},
+    rus: {js|Предостережения. Компоненты более высокого порядка имеют несколько предостережений, которые не сразу очевидны, если в�� новичок в React.|js},
     eng: "Caveats. Higher-order components come with a few caveats that aren't immediately obvious if you're new to React.",
   },
   {
@@ -709,7 +715,7 @@ let oldOldDictionary2: pairList = [
     eng: "You should convert the component to a class if you need a ref to it, just like you do when you need lifecycle methods or state.",
   },
   {
-    rus: {js|В редких случаях вам может потребоваться доступ к ДОЧЕРНЕМУ ��злу DOM из родительского компонента.|js},
+    rus: {js|В редких случаях ��ам может потребоваться доступ к ДОЧЕРНЕМУ ��злу DOM из родительского компонента.|js},
     eng: "In rare cases, you might want to have access to a child's DOM node from a parent component.",
   },
   {
@@ -802,7 +808,7 @@ let oldOldDictionary2: pairList = [
     eng: "With PropTypes.element you can specify that only a single child can be passed to a component as children.",
   },
   {
-    rus: {js|Можно определить значения по умолчанию для props, присвоив специальное свойство defaultProps.|js},
+    rus: {js|Можно определить значения по умолчанию для props, пр����воив специальное свойство defaultProps.|js},
     eng: "You can define default values for your props by assigning to the special defaultProps property.",
   },
   {

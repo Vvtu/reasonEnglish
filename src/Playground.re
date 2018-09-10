@@ -1,6 +1,6 @@
 /* setTimeout curring -------------------------*/
-let t0 = Js.Global.setTimeout(() => Js.log("Time out"), 1000);
-let t1 = Js.Global.setTimeout(() => Js.log("Time out"));
+let t0 = Js.Global.setTimeout(() => Js.log("t0 - time out"), 1000);
+let t1 = Js.Global.setTimeout(() => Js.log("t1 - time out"));
 t1(1000);
 2000 |> t1;
 /* let (|>) = ( x, f ) => f( x );
@@ -16,7 +16,8 @@ t1 @@ 3000;
 /* inc ----------------------------------------*/
 let inc = i => i + 1;
 
-let overMax = 2147483647 |> inc;
+let overMax0 = inc(2147483647);
+let overMax1 = 2147483647 |> inc;
 
 let a = Random.int(100);
 
@@ -45,7 +46,7 @@ let sumInt = (i, j) => i + j;
 let k1 = sumInt(5, 10);
 /* let k1 = sumInt(5)(10); */
 let k2 = 10 |> sumInt(5);
-Js.log3(k1, k2);
+Js.log3("k1, k2 = ", k1, k2);
 
 let m = sumInt(2147483647, 1);
 Js.log2("m = ", m);
@@ -62,6 +63,7 @@ type person = {
   name: string,
   group: int,
 };
+/* nominant typing  vs structural typing */
 let ivan = {name: "Ivan", group: 5};
 let alex = {...ivan, name: "Alex"};
 let alexGroup = alex.group;
