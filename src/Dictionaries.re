@@ -95,7 +95,7 @@ let oldDictionary1 = [
   },
 ];
 
-let dictionary2  = [
+let dictionary2 = [
   {
     rus: {js|Variants в их многочисленных формах (полиморфный вариант, открытый вариант, GADT и др.), вероятно, являются фичей системы типов, такой как Reason.|js},
     eng: "Variants, in their many forms (polymorphic variant, open variant, GADT, etc.), are likely the feature of a type system such as Reason's.",
@@ -105,7 +105,7 @@ let dictionary2  = [
     eng: "The aforementioned option variant, for example, obliterates the need for nullable types, a major source of bugs in other languages.",
   },
   {
-    rus: {js|Философски выражаясь, проблема состоит из многих возможных ветвей/условия. Неправильное выполнение этих условий является ��сновной частью того, что мы называем ошибками.|js},
+    rus: {js|Философски выражаясь, проблема состоит из многих возможных ветвей/условия. Неправильное выполнение этих условий является ��сн����������������вной частью того, что мы называем ошибками.|js},
     eng: "Philosophically speaking, a problem is composed of many possible branches/conditions. Mishandling these conditions is the majority of what we call bugs.",
   },
   {
@@ -277,7 +277,7 @@ let oldDictionary2 = [
     eng: "You'd use tuples in handy situations that pass around multiple values without too much ceremony. For example, to return many values.",
   },
   {
-    rus: {js|Старайтесь использовать кортеж локально. Для долгоживущих и часто передаваемых структур данных предпочтительнее использовать записи с именованными полями.|js},
+    rus: {js|Старайтесь использовать кортеж локально. Для долгоживущих и часто передаваемых структур данных предпочтительнее использоват�� записи с именованными полями.|js},
     eng: "Try to keep the usage of tuple local. For data structures that are long-living and passed around often, prefer a record, which has named fields.",
   },
   {
@@ -454,7 +454,7 @@ let oldOldDictionary2 = [
     eng: "HOCs are common in third-party React libraries, such as Redux's connect and Relay's createFragmentContainer.",
   },
   {
-    rus: {js|В этом документе мы обсудим, почему компоненты более высокого порядка полезны и как написать свои собственные.|js},
+    rus: {js|В этом документе мы обсудим, почему к��мп��не��т�� более высокого порядка полезны и как написать свои собственные.|js},
     eng: "In this document, we'll discuss why higher-order components are useful, and how to write your own.",
   },
   {
@@ -554,7 +554,7 @@ let oldOldDictionary2 = [
     eng: "Convention: Wrap the Display Name for Easy Debugging.",
   },
   {
-    rus: {js|Предостережения. Компоненты более высокого порядка имеют несколько предостережений, которые не сразу очевидны, если в�� новичок в React.|js},
+    rus: {js|Предостережения. Компоненты более высокого порядка имеют несколько предостережений, которые не сразу очевидны, если ���� новичок в React.|js},
     eng: "Caveats. Higher-order components come with a few caveats that aren't immediately obvious if you're new to React.",
   },
   {
@@ -622,7 +622,7 @@ let oldOldDictionary2 = [
     eng: "By default, when recursing on the children of a DOM node, React just iterates over both lists of children at the same time and generates a mutation whenever there's a difference.",
   },
   {
-    rus: {js|Когда у детей есть ключи, React использ��ет ключ ����я сопоставления детей в исходном дереве с детьми в последующем дереве.|js},
+    rus: {js|Когда у детей есть ключи, React использует ключ для сопоставления детей в исходном дереве с детьми в последующем дереве.|js},
     eng: "When children have keys, React uses the key to match children in the original tree with children in the subsequent tree.",
   },
   {
@@ -646,7 +646,7 @@ let oldOldDictionary2 = [
     eng: "It is important to remember that the reconciliation algorithm is an implementation detail.",
   },
   {
-    rus: {js|React может перере��деривать все приложение на каждое действие; конечный результат будет одинаковым.|js},
+    rus: {js|React может перерендеривать все приложение на каждое действие; конечный результат будет одинаковым.|js},
     eng: "React could rerender the whole app on every action; the end result would be the same.",
   },
   {
@@ -654,7 +654,7 @@ let oldOldDictionary2 = [
     eng: "Just to be clear, rerender in this context means calling render for all components, it doesn't mean React will unmount and remount them. It will only apply the differences following the rules stated in the previous sections.",
   },
   {
-    rus: {js|Мы регул��рно совершенствуем эвристику, чтобы ус��орить общие случаи использования.|js},
+    rus: {js|Мы регулярно совершенствуем эвристику, чтобы ускорить общие случаи использования.|js},
     eng: "We are regularly refining the heuristics in order to make common use cases faster.",
   },
   {
@@ -679,7 +679,7 @@ let oldOldDictionary2 = [
   },
   /* https:reactjs.org/docs/reconciliation.html */
   {
-    rus: {js|Приведенные ниже примеры были обновлены для использо��ания React.createRef() API, пре��ставленый в React 16.3. Если используется более раннюю версию React, мы рекомендуем использовать callback refs.|js},
+    rus: {js|Приведенные ниже примеры были обновлены для использования React.createRef() API, представленый в React 16.3. Если используется более раннюю версию React, мы рекомендуем использовать callback refs.|js},
     eng: "The examples below have been updated to use the React.createRef() API introduced in React 16.3. If you are using an earlier release of React, we recommend using callback refs instead.",
   },
   {
@@ -715,7 +715,7 @@ let oldOldDictionary2 = [
     eng: "You should convert the component to a class if you need a ref to it, just like you do when you need lifecycle methods or state.",
   },
   {
-    rus: {js|В редких случаях ��ам может потребоваться доступ к ДОЧЕРНЕМУ ��злу DOM из родительского компонента.|js},
+    rus: {js|В редких случаях ����ам может пот��е��оваться доступ к ДОЧЕРНЕМУ ��злу DOM из родительского компонента.|js},
     eng: "In rare cases, you might want to have access to a child's DOM node from a parent component.",
   },
   {
@@ -808,7 +808,7 @@ let oldOldDictionary2 = [
     eng: "With PropTypes.element you can specify that only a single child can be passed to a component as children.",
   },
   {
-    rus: {js|Можно определить значения по умолчанию для props, пр����воив специальное свойство defaultProps.|js},
+    rus: {js|Можно определить значения по умол��ан��ю для props, пр����воив специальное свойство defaultProps.|js},
     eng: "You can define default values for your props by assigning to the special defaultProps property.",
   },
   {
@@ -908,7 +908,7 @@ let oldOldDictionary2 = [
     eng: "Next, we need to identify which component mutates, or owns, this state.",
   },
   {
-    rus: {js|Запомните: React это односторонний поток данных по иерархии компонентов.|js},
+    rus: {js|Запомните: React это односторонний ��ото�� данных по иерархии компонентов.|js},
     eng: "Remember: React is all about one-way data flow down the component hierarchy.",
   },
   {

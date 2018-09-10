@@ -8,6 +8,7 @@ module Voice = {
     lang: string,
     name: string,
   };
+
   [@bs.get] external langGet : t => string = "lang";
   [@bs.get] external nameGet : t => string = "name";
 };
