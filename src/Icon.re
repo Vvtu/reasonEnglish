@@ -21,6 +21,7 @@ module Settings = {
     },
   };
 };
+
 module Arrow = {
   let component = ReasonReact.statelessComponent("Icon.Arrow");
   let make = (~color: string, ~height: string, _children) => {
@@ -64,6 +65,7 @@ module Cancel = {
     },
   };
 };
+
 module ClearAllInfo = {
   let component = ReasonReact.statelessComponent("Icon.ClearAllInfo");
   let make = (~color: string, ~height: string, _children) => {
@@ -87,6 +89,7 @@ module ClearAllInfo = {
       </svg>,
   };
 };
+
 module Voices = {
   let component = ReasonReact.statelessComponent("Icon.Voices");
   let make = (~color: string, ~height: string, _children) => {
