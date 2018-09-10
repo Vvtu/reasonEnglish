@@ -211,6 +211,7 @@
 
 .popup__row_selected {
 	background-color: var(--danger-color);
+	border-radius: 5px;
 }
 
 .popup__header {
