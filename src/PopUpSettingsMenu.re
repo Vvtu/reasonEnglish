@@ -9,7 +9,7 @@ let make =
       ~handleClosePopupClicked,
       ~handleVoiceMenuClicked,
       ~handleRestart,
-      ~whiteColor,
+      ~baseTextColor,
       ~dangerColor,
       _children,
     ) => {
@@ -46,7 +46,7 @@ let make =
       <div className="popup__full_screen_div">
         <div className="popup__window">
           <div className="popup__cancel">
-            <Icon.Cancel color=whiteColor height=Constants.iconSmallSize />
+            <Icon.Cancel color=baseTextColor height=Constants.iconSmallSize />
           </div>
           <div className="popup__list popup__row popup__header">
             (ReasonReact.string("settings:"))

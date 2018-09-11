@@ -4,7 +4,7 @@ type action =
   | ClosePopUpSettingsMenu;
 let component = ReasonReact.reducerComponent("PopUpVoiceMenu");
 
-let make = (~handleClosePopupClicked, ~whiteColor, ~voices, _children) => {
+let make = (~handleClosePopupClicked, ~baseTextColor, ~voices, _children) => {
   ...component,
   initialState: () => {increaseOpacity: false},
   reducer: (action, _state) =>
@@ -55,7 +55,7 @@ let make = (~handleClosePopupClicked, ~whiteColor, ~voices, _children) => {
       <div className="popup__full_screen_div">
         <div className="popup__window popup__scroll">
           <div className="popup__cancel">
-            <Icon.Cancel color=whiteColor height=Constants.iconSmallSize />
+            <Icon.Cancel color=baseTextColor height=Constants.iconSmallSize />
           </div>
           <div className="popup__list popup__row popup__header">
             (ReasonReact.string("voices:"))

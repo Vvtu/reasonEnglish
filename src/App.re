@@ -13,7 +13,7 @@ type state = {
   dangerColor: string,
   englishTextColor: string,
   settingsColor: string,
-  whiteColor: string,
+  baseTextColor: string,
 };
 
 type action =
@@ -45,7 +45,7 @@ let make = _children => {
     dangerColor: "#000",
     englishTextColor: "#000",
     settingsColor: "#000",
-    whiteColor: "#000",
+    baseTextColor: "#000",
   },
   /* reducer must be pure */
   reducer: (action, state) =>
@@ -137,7 +137,7 @@ let make = _children => {
              eng !== "" || rus !== ""
            );
 
-      let (whiteColor, settingsColor, englishTextColor, dangerColor) =
+      let (baseTextColor, settingsColor, englishTextColor, dangerColor) =
         MyLib.getColorsFromCSS();
 
       ReasonReact.Update({
@@ -149,7 +149,7 @@ let make = _children => {
         showSettings: false,
         showVoiceMenu: false,
         /* only voices field is absent */
-        whiteColor,
+        baseTextColor,
         settingsColor,
         englishTextColor,
         dangerColor,
@@ -201,7 +201,7 @@ let make = _children => {
               onClick=(
                 _ => send(GotoPreviousCard(countAll - countRemain - 2))
               )>
-              <Icon.Arrow color=state.whiteColor height=Constants.iconSize />
+              <Icon.Arrow color=state.baseTextColor height=Constants.iconSize />
             </div>
             <div onClick=(_ => send(ShowSettingsMenu))>
               <Icon.Settings
@@ -217,7 +217,7 @@ let make = _children => {
                     _ => send(SwitchEnglishShowing(currentCard.rus, shown))
                   )>
                   <Icon.Arrow
-                    color=state.whiteColor
+                    color=state.baseTextColor
                     height=Constants.iconSize
                   />
                 </div> :
@@ -249,7 +249,7 @@ let make = _children => {
             <div
               className="appcode__icon_invert__horizontal"
               onClick=(_ => send(GotoNextCard))>
-              <Icon.Arrow color=state.whiteColor height=Constants.iconSize />
+              <Icon.Arrow color=state.baseTextColor height=Constants.iconSize />
             </div>
           </div>
         </div>
@@ -295,7 +295,7 @@ let make = _children => {
                 }
               )
               handleRestart=(_ => send(Restart))
-              whiteColor=state.whiteColor
+              baseTextColor=state.baseTextColor
               dangerColor=state.dangerColor
             /> :
             <div />
@@ -304,7 +304,7 @@ let make = _children => {
           state.showVoiceMenu ?
             <PopUpVoiceMenu
               handleClosePopupClicked=(_ => send(HideVoiceMenu))
-              whiteColor=state.whiteColor
+              baseTextColor=state.baseTextColor
               voices=state.voices
             /> :
             <div />
