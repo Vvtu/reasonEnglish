@@ -22,4 +22,20 @@ let getVoiceIndex = () =>
 external requestAnimationFrame : (unit => unit) => float =
   "requestAnimationFrame";
 
+let getColorsFromCSS: unit => (string, string, string, string) =
+  () => (
+    [%bs.raw
+      {| getComputedStyle(document.documentElement).getPropertyValue("--base-text-color") |}
+    ],
+    [%bs.raw
+      {| getComputedStyle(document.documentElement).getPropertyValue("--settings-color") |}
+    ],
+    [%bs.raw
+      {| getComputedStyle(document.documentElement).getPropertyValue("--english-text-color") |}
+    ],
+    [%bs.raw
+      {| getComputedStyle(document.documentElement).getPropertyValue("--danger-color") |}
+    ],
+  );
+
 let aaa = () => 10;

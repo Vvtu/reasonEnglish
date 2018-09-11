@@ -137,10 +137,8 @@ let make = _children => {
              eng !== "" || rus !== ""
            );
 
-      /* let _ = EventTargetRe.Impl.getComputedStyle(el, window); */
-      /* styles.getPropertyValue("--english-text-color"), */
-      /* styles.getPropertyValue("--settings-color"), */
-      /* styles.getPropertyValue("--base-text-color"), */
+      let (whiteColor, settingsColor, englishTextColor, dangerColor) =
+        MyLib.getColorsFromCSS();
 
       ReasonReact.Update({
         ...state,
@@ -151,10 +149,10 @@ let make = _children => {
         showSettings: false,
         showVoiceMenu: false,
         /* only voices field is absent */
-        whiteColor: "#000000",
-        settingsColor: "#add8e6",
-        englishTextColor: "#6b5ee0",
-        dangerColor: "#00bfff",
+        whiteColor,
+        settingsColor,
+        englishTextColor,
+        dangerColor,
       });
     },
   didMount: self => {
