@@ -1,7 +1,6 @@
 :root {
 	--font-size: 24px;
 
-	--overlap_bottom: 8px;
 	--info_panel_height: calc(var(--font-size)*2);
 	--main_gap: calc(var(--font-size) / 2);
 
@@ -10,20 +9,21 @@
 	 AppCode.js componentDidMount().
 	============================================================= */
 	--screen-height: 100vh;
-	--screen-width: 100vh;
+	--screen-width: 100vw;
+	--screen-padding: 8px;
 	/* ========================================================== */
 
 	--text-height-portrait: calc(
 
 			(
-				var(--screen-height) - var(--overlap_bottom) -
+				var(--screen-height) - var(--screen-padding) -
 					calc(var(--main_gap) * 2) - calc(var(--info_panel_height)*2)
 			) / 2
 	);
 
 	--text-height-landscape: calc(
-		var(--screen-width) - calc(var(--info_panel_height)*2) -
-			var(--main_gap) - var(--overlap_bottom)
+		var(--screen-height) - calc(var(--info_panel_height)*2) -
+			var(--main_gap) - var(--screen-padding)
 	);
 
 	--settings-color: #add8e6; /* #522719 */
@@ -47,8 +47,8 @@
 	font-size: var(--font-size);
 	grid-column-gap: var(--main_gap);
 	grid-row-gap: var(--main_gap);
-	padding: 0 8px;
 	margin: 0;
+	padding: 0 var(--screen-padding);
 	font-family: sans-serif;
 }
 
@@ -67,6 +67,12 @@
 		transform: rotate(90deg);
 		margin-right: 7px;
 	}
+	.appcode__scroll {
+		max-height: 100%;
+		width: calc(var(--screen-width) - var(--screen-padding)*2);
+		overflow-y: scroll;
+		overflow-wrap: break-word;
+	}
 }
 
 @media (orientation: landscape) {
@@ -82,6 +88,12 @@
 	.appcode__icon_rotate_back {
 		transform: rotate(270deg);
 	}
+	.appcode__scroll {
+		max-height: 100%;
+		width: calc(var(--screen-width)/2 - var(--main_gap));
+		overflow-y: scroll;
+		overflow-wrap: break-word;
+	}
 }
 
 .appcode__info {
@@ -94,12 +106,6 @@
 
 .appcode__english {
 	grid-area: english;
-}
-
-.appcode__scroll {
-	max-height: 100%;
-	overflow-y: scroll;
-	/* -webkit-overflow-scrolling: touch; */
 }
 
 /* font size and colors

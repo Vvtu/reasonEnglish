@@ -105,7 +105,7 @@ let dictionary2 = [
     eng: "The aforementioned option variant, for example, obliterates the need for nullable types, a major source of bugs in other languages.",
   },
   {
-    rus: {js|Философски выражаясь, проблема состоит из многих возможных ветвей/условия. Неправильное выполнение этих условий является ��сн����������������вной частью того, что мы называем ошибками.|js},
+    rus: {js|Философски выражаясь, проблема состоит из многих возможных ветвей/условия. Неправильное выполнение э��их условий является осн��вной частью того, что мы называем ошибками.|js},
     eng: "Philosophically speaking, a problem is composed of many possible branches/conditions. Mishandling these conditions is the majority of what we call bugs.",
   },
   {
@@ -132,6 +132,25 @@ let dictionary2 = [
     rus: {js|Типы уменьшают уровни абстракций, необходимых для "достижения цели", что в свою очередь уменьшает когнитивную нагрузку на вызывающих абонентов.|js},
     eng: "Types reduce the layers of abstractions needed to 'get things done', which in return reduces callers' cognitive burden.",
   },
+  {
+    rus: {js|Cам Reason не имеет понятия null или undefined. И это хорошо, так как это стирает целую категорию ошибок.|js},
+    eng: "Reason itself doesn't have the notion of null or undefined. This is a great thing, as it wipes out an entire category of bugs.",
+  },
+  {
+    rus: {js|option-to-undefined компиляция не идеальна, потому что с нашей стороны, значения option могут быть композироваться. Some(Some(5)).|js},
+    eng: "The option-to-undefined translation isn't perfect, because on our side, option values can be composed.",
+  },
+  {
+    rus: {js|Вам следует использовать list из за легкого изменения размера, быстрого добавления (добавления во голову) и его быстрого разделения, эти операции иммутабельны, но эффективны!|js},
+    eng: "You'd use list for its resizability, its fast prepend (adding at the head), and its fast split, all of which are immutable yet efficient!",
+  },
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
@@ -180,15 +199,15 @@ let oldDictionary2 = [
     eng: "After reading the constraints in the previous sections, and if you're coming from a dynamic language background, you might be wondering why one would bother with record in the first place instead of straight using object, since the former needs explicit typing and doesn't allow different records with the same field name to be passed to the same function, etc.",
   },
   {
-    rus: {js|Правда в том, что в большинстве случаев в вашем приложении форма ваших данных на самом деле фиксирована, и если это не так, она потенциально может быть лучше представлена как комбинация variant + record.|js},
+    rus: {js|Правда в том, что в большинстве случаев в вашем приложении форма ваших данных на с��мом деле фиксирована, и если это не так, она потенциально может быть лучше представлена как комбинация variant + record.|js},
     eng: "The truth is that most of the times in your app, your data's shape is actually fixed, and if it's not, it can potentially be better represented as a combination of variant + record instead.",
   },
   {
-    rus: {js|Запись, так как ее поля фиксированы, компилируется в массив с доступом к индексу массива вместо JS объекта (попробуйте в playground!)|js},
+    rus: {js|��апись, так как ее поля фиксированы, компилируется в массив с доступом к индексу массива вместо JS объекта (попробуйте в playground!)|js},
     eng: "Record, since its fields are fixed, is compiled to an array with array index accesses instead of JS object (try it in the playground!).",
   },
   {
-    rus: {js|В native запись компилируется в основную область памяти, где доступ к полю-это только один поиск поля + один фактический доступ, ака 2 инструкции по сборке.|js},
+    rus: {js|В native запись компилируется в основную область памяти, где доступ к полю-это только один пои��к поля + один фактический доступ, ака 2 инструкции по сборке.|js},
     eng: "On native, Record compiles to basically a region of memory where a field access is just one field lookup + one actual access, aka 2 assembly instructions.",
   },
   {
@@ -261,7 +280,7 @@ let oldDictionary2 = [
     eng: "Tuples are immutable, ordered, fix-sized at creation time, heterogeneous (can contain different types of values).",
   },
   {
-    rus: {js|Стандартная библиотека предоставляет fst и snd, удобные функции, которые позволяют получить доступ к первому и второму элементу 2-кортежа.|js},
+    rus: {js|Стандартная библиотека предоставляет fst и snd, удобные функции, которые позволяют получить доступ к первому и второму элем��нту 2-к��ртежа.|js},
     eng: "The standard library provides fst and snd, convenience functions that allow you to access the first and second element of a 2-tuple.",
   },
   {
@@ -273,11 +292,11 @@ let oldDictionary2 = [
     eng: "Tuples aren't meant to be updated mutatively; you'd create new ones by destructuring the old ones.",
   },
   {
-    rus: {js|Вы должны использовть кортежи в удобных ситуациях, которые нужно передать несколько значений без особых церемоний. Например, для возврата нескольких значений.|js},
+    rus: {js|Вы должны использовть кортежи в удобных ситуациях, которые нужно передат�� несколько значений без особых церемоний. Например, для возврата нескольких значений.|js},
     eng: "You'd use tuples in handy situations that pass around multiple values without too much ceremony. For example, to return many values.",
   },
   {
-    rus: {js|Старайтесь использовать кортеж локально. Для долгоживущих и часто передаваемых структур данных предпочтительнее использоват�� записи с именованными полями.|js},
+    rus: {js|Старайтесь использовать кортеж локально. Для до��гоживущих и часто передаваемых структур данных предпочтительнее использоват�� записи с именованными полями.|js},
     eng: "Try to keep the usage of tuple local. For data structures that are long-living and passed around often, prefer a record, which has named fields.",
   },
   {
@@ -349,7 +368,7 @@ let oldOldDictionary2 = [
     eng: "Welcome changing requirements, even late in development. Agile processes harness change for the customer's competive advantage.",
   },
   {
-    rus: {js|Поставляйте рабочее программное обеспечение часто, от нескольких недель до нескольких месяцев, с предпочтением к более коротким временным рамкам.|js},
+    rus: {js|Поста����ля������е рабочее программное обеспечение часто, от нескольких недель до нескольких месяцев, с предпочтени��м к более коротким временным рамкам.|js},
     eng: "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.",
   },
   {
@@ -361,7 +380,7 @@ let oldOldDictionary2 = [
     eng: "Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.",
   },
   {
-    rus: {js|Наиболее эффективным и действенным способом передачи информации команде разработчиков и внутри нее является личная беседа.|js},
+    rus: {js|Наиболее эффективным и действенным спосо��ом передачи информации команде разработчиков и внутри нее является личная беседа.|js},
     eng: "The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.",
   },
   {
@@ -442,7 +461,7 @@ let oldOldDictionary2 = [
   },
   /* https:reactjs.org/docs/reconciliation.html */
   {
-    rus: {js|Компонент более высокого порядка (HOC) - это продвинутая техника в React для повторного использования компонентной логики. Hoc не являются частью React API, как т��ко��������е. Э��о паттерны, которые возникают из композиционной природы React.|js},
+    rus: {js|Комп��н��н�� более высокого порядка (HOC) - это продвинутая техника в React для повторного использования компонентной ло��ики. Hoc не являются частью React API, как т��ко��������е. Э��о паттерны, которые возникают из композиционной природы React.|js},
     eng: "A higher-order component (HOC) is an advanced technique in React for reusing component logic. HOCs are not part of the React API, per se. They are a pattern that emerges from React's compositional nature.",
   },
   {
@@ -546,7 +565,7 @@ let oldOldDictionary2 = [
     eng: "Convention: Maximizing Composability",
   },
   {
-    rus: {js|Не все HOCs выглядят одинаково. Иногда они принимают только один аргумент, обернутый компонент. WithRouter.|js},
+    rus: {js|Не все HOCs выглядят одинаково. Иногда они принимают только один аргумент, обернуты�� компонент. WithRouter.|js},
     eng: "Not all HOCs look the same. Sometimes they accept only a single argument, the wrapped component. WithRouter.",
   },
   {
@@ -618,7 +637,7 @@ let oldOldDictionary2 = [
     eng: "So using a render prop makes it possible to use either pattern.",
   },
   {
-    rus: {js|По умолчанию, при рекурсии на дочерних узлах DOM, React просто перебирает оба списка дочерних узлов одновременно и генерирует мутацию всякий раз, когда есть разница.|js},
+    rus: {js|По умолчанию, при рекурсии на дочерни�� узлах DOM, React п��осто перебирает о��а списка дочерних узлов одновременно и генерирует мутацию всякий раз, когда есть разница.|js},
     eng: "By default, when recursing on the children of a DOM node, React just iterates over both lists of children at the same time and generates a mutation whenever there's a difference.",
   },
   {
@@ -792,11 +811,11 @@ let oldOldDictionary2 = [
     eng: "To run typechecking on the props for a component, you can assign the special propTypes property.",
   },
   {
-    rus: {js|PropTypes содержит ряд валидаторов, которые могут быть использованы, чтобы убедиться, что данные, которые вы получаете, валидны.|js},
+    rus: {js|PropTypes содержит ряд валидаторов, которые могут быть использованы, чтобы убедить��я, что данные, которые вы получаете, валидны.|js},
     eng: "PropTypes exports a range of validators that can be used to make sure the data you receive is valid.",
   },
   {
-    rus: {js|Если для prop указано недопустимое значение, в консоли JavaScript будет показано предупреждение.|js},
+    rus: {js|Если для prop у��азано недопустимое значение, в консоли JavaScript будет показано предупреждение.|js},
     eng: "When an invalid value is provided for a prop, a warning will be shown in the JavaScript console.",
   },
   {
@@ -888,11 +907,11 @@ let oldOldDictionary2 = [
     eng: "While it may be a little more typing than you're used to",
   },
   {
-    rus: {js|Помните, что код читается гораздо больше раз, чем пишется, и очень легко читать этот модульный, явный код.|js},
+    rus: {js|П��мните, ��то код ч��тае��с�� гораздо больше раз, чем пишется, и очень легко читать этот модульный, явный код.|js},
     eng: "Remember that code is read far more than it's written, and it's extremely easy to read this modular, explicit code.",
   },
   {
-    rus: {js|Когда вы начнете создавать большие библиотеки компонентов, вы оцените эту эксплицитность и модульность.|js},
+    rus: {js|Когда вы начнете создавать большие библиотеки компонентов, вы оцените эту э��сплицитность и модульность.|js},
     eng: "As you start to build large libraries of components, you'll appreciate this explicitness and modularity.",
   },
   {
@@ -904,7 +923,7 @@ let oldOldDictionary2 = [
     eng: "OK, so we've identified what the minimal set of app state is.",
   },
   {
-    rus: {js|Далее нам нужно определить, какой компонент мутирует или вл��деет этим состоянием.|js},
+    rus: {js|Далее нам нужно определить, какой компонент мутирует или вл��деет этим с��стоянием.|js},
     eng: "Next, we need to identify which component mutates, or owns, this state.",
   },
   {
