@@ -238,7 +238,7 @@ let make = _children => {
                 </div>
             )
             <div>
-              <span>
+              <span onClick=(_ => send(GotoNextCard))>
                 (
                   ReasonReact.string(
                     string_of_int(countAll - countRemain)
