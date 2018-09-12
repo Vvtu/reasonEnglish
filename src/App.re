@@ -123,10 +123,12 @@ let make = _children => {
       let item = Dom.Storage.(localStorage |> getItem(Constants.dict));
 
       let (dict, dictOld) =
-        switch (item) {
-        | Some(_) => (Dictionaries.dictionary2, Dictionaries.oldDictionary2)
-        | None => (Dictionaries.dictionary1, Dictionaries.oldDictionary1)
-        };
+        Dictionaries.(
+          switch (item) {
+          | Some(_) => (dictionary2, oldDictionary2)
+          | None => (dictionary1, oldDictionary1)
+          }
+        );
 
       let allCards =
         append(
@@ -201,7 +203,10 @@ let make = _children => {
               onClick=(
                 _ => send(GotoPreviousCard(countAll - countRemain - 2))
               )>
-              <Icon.Arrow color=state.baseTextColor height=Constants.iconSize />
+              <Icon.Arrow
+                color=state.baseTextColor
+                height=Constants.iconSize
+              />
             </div>
             <div onClick=(_ => send(ShowSettingsMenu))>
               <Icon.Settings
@@ -249,7 +254,10 @@ let make = _children => {
             <div
               className="appcode__icon_invert__horizontal"
               onClick=(_ => send(GotoNextCard))>
-              <Icon.Arrow color=state.baseTextColor height=Constants.iconSize />
+              <Icon.Arrow
+                color=state.baseTextColor
+                height=Constants.iconSize
+              />
             </div>
           </div>
         </div>

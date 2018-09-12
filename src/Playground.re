@@ -117,12 +117,29 @@ Js.log("---------------------");
 let m2 = m |> add("key2", 200);
 m2 |> mapi((a, b) => Js.log2(a, b));
 
+/* switch when   -----------------------------   */
+
+let result =
+  switch (Random.int(100)) {
+  | a when a < 5 => "undershoot"
+  | 5 => "hit the target"
+  | _ => "overshoot"
+  };
+
+/*
+ var a$3 = Random.$$int(100);
+
+ var result = a$3 < 5 ? "undershoot" : (
+     a$3 !== 5 ? "overshoot" : "hit the target"
+   );
+ */
+
 /*  -- Create object (with point) ----------------*/
 
-let _ = {
-  let height = 20;
-  let jsObj = {"height": height, "width": 20, "draw": () => 10};
-  %bs.raw
-  {| console.log('jsObj = ', jsObj) |};
-  Js.log(jsObj);
-};
+/* let _ = {
+     let height = 20;
+     let jsObj = {"height": height, "width": 20, "draw": () => 10};
+     %bs.raw
+     {| console.log('jsObj = ', jsObj) |};
+     Js.log(jsObj);
+   }; */
