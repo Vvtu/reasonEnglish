@@ -53,10 +53,27 @@ Js.log2("m = ", m);
 
 /* sumFloat ------------------------------------*/
 let sumFloat = (x, y) => x +. y;
-let a = sumFloat(0.1, 0.2);
+let a = sumFloat(0.1, 0.2) -. 0.2;
 Js.log2("a = ", a);
 
 a |> Js.log2("a = ");
+
+/* switch when   -----------------------------   */
+
+let result =
+  switch (Random.int(100)) {
+  | a when a < 5 => "undershoot"
+  | 5 => "hit the target"
+  | _ => "overshoot"
+  };
+
+/*
+ var a$3 = Random.$$int(100);
+
+ var result = a$3 < 5 ? "undershoot" : (
+     a$3 !== 5 ? "overshoot" : "hit the target"
+   );
+ */
 
 /* Record --------------------------------------*/
 type person = {
@@ -116,23 +133,6 @@ m |> mapi((a, b) => Js.log2(a, b));
 Js.log("---------------------");
 let m2 = m |> add("key2", 200);
 m2 |> mapi((a, b) => Js.log2(a, b));
-
-/* switch when   -----------------------------   */
-
-let result =
-  switch (Random.int(100)) {
-  | a when a < 5 => "undershoot"
-  | 5 => "hit the target"
-  | _ => "overshoot"
-  };
-
-/*
- var a$3 = Random.$$int(100);
-
- var result = a$3 < 5 ? "undershoot" : (
-     a$3 !== 5 ? "overshoot" : "hit the target"
-   );
- */
 
 /*  -- Create object (with point) ----------------*/
 
