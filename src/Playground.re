@@ -103,16 +103,14 @@ Js.log2("r=", r);
 let rec qsort = a =>
   switch (a) {
   | [] => []
-  | [x, ...y] =>
+  | [x, ...tail] =>
     let (p1, p2) =
       List.fold_left(
         ((a1, a2), e) => e > x ? ([e, ...a1], a2) : (a1, [e, ...a2]),
         ([], []),
-        y,
+        tail,
       );
-    let p1Sort = qsort(p1);
-    let p2Sort = qsort(p2);
-    p1Sort @ [x, ...p2Sort];
+    List.append(qsort(p1), [x, ...qsort(p2)]);
   };
 
 /* Module functor -----------------------------*/
