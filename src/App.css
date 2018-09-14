@@ -17,23 +17,23 @@
 
 			(
 				var(--screen-height) - var(--screen-padding) -
-					calc(var(--main_gap) * 2) - calc(var(--info_panel_height)*2)
+					calc(var(--main_gap) * 2) - calc(var(--info_panel_height)*1)
 			) / 2
 	);
 
 	--text-height-landscape: calc(
-		var(--screen-height) - calc(var(--info_panel_height)*2) -
+		var(--screen-height) - calc(var(--info_panel_height)*1) -
 			var(--main_gap) - var(--screen-padding)
 	);
 
-	--settings-color: #add8e6; /* #522719 */
-	--background-color: #ffffff; /* #000000 */
-	--base-text-color: #000000; /* #ffffff */
-	--danger-color: #00bfff; /* #ff4000 */
-	--english-appcode__speaking-text-color: #94a11f; /* 6b5ee0 */
-	--english-text-color: #6b5ee0; /* #94a11f */
-	--grey-color: #888888; /*   #777777 */
-	--shadow-color: #222222; /* #dddddd */
+	--settings-color: #522719; /* #add8e6; */
+	--background-color: #000000; /* #ffffff; */
+	--base-text-color: #ffffff; /* #000000; */
+	--danger-color: #ff4000; /* #00bfff */
+	--english-appcode__speaking-text-color: #6b5ee0; /*  #94a11f */
+	--english-text-color: #94a11f; /* #6b5ee0 */
+	--grey-color: #777777; /*  #888888 */
+	--shadow-color: #dddddd; /* #222222 */
 }
 
 /* grid
