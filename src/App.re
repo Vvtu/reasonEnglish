@@ -166,7 +166,7 @@ let make = _children => {
           /* Js.log2("didMount timeOut voices=", voices); */
           self.send(StoreVoicesToSate(voices));
         },
-        0,
+        100,
       );
     self.send(Restart);
   },
