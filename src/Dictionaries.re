@@ -6,6 +6,17 @@ type wordPair = {
 type pairList = list(wordPair);
 
 let dictionary1 = [
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
   {
     rus: {js|Наша первоочередная задача состоит в том, чтобы удовлетворить потребности клиентов в своевременной и непрерывной поставке ценного программного обеспечения.|js},
     eng: "Our highest priority is to satisfy the customer trough early and continuous delivery of valueable software.",
@@ -30,70 +41,109 @@ let dictionary1 = [
     rus: {js|Наиболее эффективным и действенным способом передачи информации команде разработчиков и внутри нее является личная беседа.|js},
     eng: "The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.",
   },
+  {
+    rus: {js|Наша первоочередная задача состоит в том, чтобы удовлетворить потребности клиентов в своевременной и непрерывной поставке ценного программного обеспечения.|js},
+    eng: "Our highest priority is to satisfy the customer trough early and continuous delivery of valueable software.",
+  },
+  {
+    rus: {js|Приветствуются изменения требований, даже на поздних стадиях разработки. Гибкие процессы используют изменения для конкурентного преимущества клиента.|js},
+    eng: "Welcome changing requirements, even late in development. Agile processes harness change for the customer's competive advantage.",
+  },
+  {
+    rus: {js|Поста����ля������е рабочее программное обеспечение часто, от нескольких недель до нескольких месяцев, с предпочтени��м к более коротким временным рамкам.|js},
+    eng: "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.",
+  },
+  {
+    rus: {js|Заказчики и разработчики должны ежедневно работать вместе на протяжении всего проекта.|js},
+    eng: "Business people and developers must work together daily throughout the project.",
+  },
+  {
+    rus: {js|Стройте проекты вокруг мотивированных людей. Дайте им окружение и поддержку, в которой они нуждаются, и доверяйте им, чтобы работа была сделана.|js},
+    eng: "Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.",
+  },
+  {
+    rus: {js|Наиболее эффективным и действенным спосо��ом передачи информации команде разработчиков и внутри нее является личная беседа.|js},
+    eng: "The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.",
+  },
+  {
+    rus: {js|Рабочая программа-основной критерий прогресса.|js},
+    eng: "Working software is the primary measure of progress.",
+  },
+  {
+    rus: {js|Гибкие процессы способствуют устойчивому развитию. Спонсоры, разработчики и пользователи должны иметь возможность поддерживать постоянный темп на неопределенный срок.|js},
+    eng: "Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.",
+  },
+  {
+    rus: {js|Постоянное внимание к техническому совершенству и хорошему дизайну повышает гибкость.|js},
+    eng: "Continuous attention to technical excellence and good design enhances agility.",
+  },
+  {
+    rus: {js|Простота - искусство максимизации объема незавершенной работы - имеет важное значение.|js},
+    eng: "Simplicity – the art of maximizing the amount of work not done–is essential.",
+  },
+  {
+    rus: {js|Лучшие архитектуры, требования и проекты появляются из самоорганизую��ихся команд.|js},
+    eng: "The best architectures, requirements, and designs emerge from self-organizing teams.",
+  },
+  {
+    rus: {js|Через регулярные промежутки времени, кома��да размышляет о том, как стать более эффективной, подстраивает и корректирует свое поведение со��тветствующим образом.|js},
+    eng: "At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.",
+  },
+  {
+    rus: {js|Scrum-это framework, в котором люди мо��ут решать сложные адаптивные проблемы, продуктивно и творчес��и доставляя продукты максимально возможной ценности|js},
+    eng: "Scrum is a framework within which people can address complex adaptive problems, while productively and creatively delivering products of the highest possible value.",
+  },
+  {
+    rus: {js|Scrum-это не методология. Scrum реализует научный метод эмпиризма. Scrum заменяет запрограммированный алгоритмический подход эвристическим, с уважением к людям и самоорганизацией для решения непредсказуемости и решения сл��жных проблем.|js},
+    eng: "Scrum is not a methodology. Scrum implements the scientific method of empiricism. Scrum replaces a programmed algorithmic approach with a heuristic one, with respect for people and self-organization to deal with unpredictability and solving complex problems.",
+  },
+  {
+    rus: {js|Scrum не является процессом, техник��й или окончательны�� методом. Скорее, это framework, в которыом вы можете использовать различные процессы и методы.|js},
+    eng: "Scrum is not a process, technique, or definitive method. Rather, it is a framework within which you can employ various processes and techniques.",
+  },
+  {
+    rus: {js|Framework Scrum состоит из команд Scrum и связанных с ними ролей, событий, артефактов и правил. Каждый компонент в рамках служит определенной цели и имеет важное значение для успеха и использования Скрама.|js},
+    eng: "The Scrum framework consists of Scrum Teams and their associated roles, events, artifacts, and rules. Each component within the framework serves a specific purpose and is essential to Scrum's success and usage.",
+  },
+  {
+    rus: {js|Правила Scrum связывают вместе роли, события и артефакты, уп��авляя отношениями и взаимодействием между ними. Правила Scrum описаны всюду по телу этого документ��.|js},
+    eng: "The rules of Scrum bind together the roles, events, and artifacts, governing the relationships and interaction between them. The rules of Scrum are described throughout the body of this document.",
+  },
+  {
+    rus: {js|Мы выявляем лучшие способы разработки программного обеспечения, делая это и помогая другим делать это.|js},
+    eng: "We are uncovering better ways of developing software by doing it and helping others do it.",
+  },
+  {
+    rus: {js|Через эту работу мы пришли к ценности.|js},
+    eng: "Through this work we have come to value.",
+  },
+  {
+    rus: {js|Люди и взаимодействия выше, чем процессы и инс��рументы|js},
+    eng: "Individuals and interactions over processes and tools.",
+  },
+  {
+    rus: {js|Работающее software ��ы��е, чем всеобъемлющая документация.|js},
+    eng: "Working software over comprehensive documentation.",
+  },
+  {
+    rus: {js|Сотрудничество с заказчико�� выше, чем обсуждение условий контракта.|js},
+    eng: "Customer collaboration over contract negotiation.",
+  },
+  {
+    rus: {js|Реагирование на изменения выше, чем следование плану.|js},
+    eng: "Responding to change over following a plan.",
+  },
+  {
+    rus: {js|"пятая ценность": мудрость и здра��ый смысл превыше знаний и опыта.|js},
+    eng: {js|'The fifth value':  Wisdom and common sense over knowledge and expertise.|js},
+  },
+  {
+    rus: {js|То есть, в то время как есть ценность в элементах справа, мы ценим элементы слева больше.|js},
+    eng: "That is, while there is value in the items on the right, we value the items on the left more.",
+  },
 ];
 
-let oldDictionary1 = [
-  {
-    rus: {js|Но для этого требуется немного больше ввода, чем при традиционной двусторонней привязке данных.|js},
-    eng: "But it does require a little more typing than traditional two-way data binding.",
-  },
-  {
-    rus: {js|React делает этот поток данных явным, чтобы было легко понять, как работает ваш�� программа.|js},
-    eng: "React makes this data flow explicit to make it easy to understand how your program works.",
-  },
-  {
-    rus: {js|Мы хотим убе��иться, что всякий р��з, когда пользователь изменяет форму, мы о��новляем состояние, чтобы отразить пользовательский ввод.|js},
-    eng: "We want to make sure that whenever the user changes the form, we update the state to reflect the user input.",
-  },
-  {
-    rus: {js|Поскольку компоненты должны обновлять только свое собственное состояние, FilterableProductTable передаст обратные вызовы в панель поиска, которая будет срабатывать всякий раз, когда состояние должно быть обновлено.|js},
-    eng: "Since components should only update their own state, FilterableProductTable will pass callbacks to SearchBar that will fire whenever the state should be updated.",
-  },
-  {
-    rus: {js|Хо��я это звучит сложно, на самом деле это всего л��шь несколько строк кода.|js},
-    eng: "Though this sounds complex, it's really just a few lines of code.",
-  },
-  {
-    rus: {js|И это действительно ясно, как ваши данные текут по всему прилож��нию.|js},
-    eng: "And it's really explicit how your data is flowing throughout the app.",
-  },
-  {
-    rus: {js|Надеюсь, это даст вам представление о том, как строить компо��енты и приложения с помощью React.|js},
-    eng: "Hopefully, this gives you an idea of how to think about building components and applications with React.",
-  },
-  {
-    rus: {js|Хотя это может быть немного больше печатания, чем вы привыкли.|js},
-    eng: "While it may be a little more typing than you're used to",
-  },
-  {
-    rus: {js|Помните, что код читается гораздо больше раз, чем пишется, и очень легко читать этот модульный, явный код.|js},
-    eng: "Remember that code is read far more than it's written, and it's extremely easy to read this modular, explicit code.",
-  },
-  {
-    rus: {js|Когда вы начнете создавать большие библиотеки компонентов, вы оцените эту эксплицитность и модульность.|js},
-    eng: "As you start to build large libraries of components, you'll appreciate this explicitness and modularity.",
-  },
-  {
-    rus: {js|И при пер��и��пользовании кода ваши строки кода начнут сжиматься.|js},
-    eng: "And with code reuse, your lines of code will start to shrink.",
-  },
-  {
-    rus: {js|ОК, мы определили, что такое минимальный набор состояния приложения.|js},
-    eng: "OK, so we've identified what the minimal set of app state is.",
-  },
-  {
-    rus: {js|Далее нам нужно определить, какой компонент мутирует или вл��деет этим состоянием.|js},
-    eng: "Next, we need to identify which component mutates, or owns, this state.",
-  },
-  {
-    rus: {js|Запомните: React это односторонний поток данных по иерархии компонентов.|js},
-    eng: "Remember: React is all about one-way data flow down the component hierarchy.",
-  },
-  {
-    rus: {js|Может быть, не сразу ясно, какой компонент должен владеть каким состоянием.|js},
-    eng: "It may not be immediately clear which component should own what state.",
-  },
-];
+let oldDictionary1 = [];
 
 let dictionary2 = [
   {
@@ -144,17 +194,6 @@ let dictionary2 = [
     rus: {js|Вам следует использовать list из за легкого изменения размера, быстрого добавления (добавления во голову) и его быстрого разделения, эти операции иммутабельны, но эффективны!|js},
     eng: "You'd use list for its resizability, its fast prepend (adding at the head), and its fast split, all of which are immutable yet efficient!",
   },
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
 ];
 
 let oldDictionary2 = [
@@ -360,104 +399,64 @@ let oldDictionary2 = [
 let oldOldDictionary2 = [
   /* ************************************************************************************************************************** */
   {
-    rus: {js|Наша первоочередная задача состоит в том, чтобы удовлетворить потребности клиентов в своевременной и непрерывной поставке ценного программного обеспечения.|js},
-    eng: "Our highest priority is to satisfy the customer trough early and continuous delivery of valueable software.",
+    rus: {js|Но для этого требуется немного больше ввода, чем при традиционной двусторонней привязке данных.|js},
+    eng: "But it does require a little more typing than traditional two-way data binding.",
   },
   {
-    rus: {js|Приветствуются изменения требований, даже на поздних стадиях разработки. Гибкие процессы используют изменения для конкурентного преимущества клиента.|js},
-    eng: "Welcome changing requirements, even late in development. Agile processes harness change for the customer's competive advantage.",
+    rus: {js|React делает этот поток данных явным, чтобы было легко понять, как работает ваш�� программа.|js},
+    eng: "React makes this data flow explicit to make it easy to understand how your program works.",
   },
   {
-    rus: {js|Поста����ля������е рабочее программное обеспечение часто, от нескольких недель до нескольких месяцев, с предпочтени��м к более коротким временным рамкам.|js},
-    eng: "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.",
+    rus: {js|Мы хотим убе��иться, что всякий р��з, когда пользователь изменяет форму, мы о��новляем состояние, чтобы отразить пользовательский ввод.|js},
+    eng: "We want to make sure that whenever the user changes the form, we update the state to reflect the user input.",
   },
   {
-    rus: {js|Заказчики и разработчики должны ежедневно работать вместе на протяжении всего проекта.|js},
-    eng: "Business people and developers must work together daily throughout the project.",
+    rus: {js|Поскольку компоненты должны обновлять только свое собственное состояние, FilterableProductTable передаст обратные вызовы в панель поиска, которая будет срабатывать всякий раз, когда состояние должно быть обновлено.|js},
+    eng: "Since components should only update their own state, FilterableProductTable will pass callbacks to SearchBar that will fire whenever the state should be updated.",
   },
   {
-    rus: {js|Стройте проекты вокруг мотивированных людей. Дайте им окружение и поддержку, в которой они нуждаются, и доверяйте им, чтобы работа была сделана.|js},
-    eng: "Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.",
+    rus: {js|Хо��я это звучит сложно, на самом деле это всего л��шь несколько строк кода.|js},
+    eng: "Though this sounds complex, it's really just a few lines of code.",
   },
   {
-    rus: {js|Наиболее эффективным и действенным спосо��ом передачи информации команде разработчиков и внутри нее является личная беседа.|js},
-    eng: "The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.",
+    rus: {js|И это действительно ясно, как ваши данные текут по всему прилож��нию.|js},
+    eng: "And it's really explicit how your data is flowing throughout the app.",
   },
   {
-    rus: {js|Рабочая программа-основной критерий прогресса.|js},
-    eng: "Working software is the primary measure of progress.",
+    rus: {js|Надеюсь, это даст вам представление о том, как строить компо��енты и приложения с помощью React.|js},
+    eng: "Hopefully, this gives you an idea of how to think about building components and applications with React.",
   },
   {
-    rus: {js|Гибкие процессы способствуют устойчивому развитию. Спонсоры, разработчики и пользователи должны иметь возможность поддерживать постоянный темп на неопределенный срок.|js},
-    eng: "Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.",
+    rus: {js|Хотя это может быть немного больше печатания, чем вы привыкли.|js},
+    eng: "While it may be a little more typing than you're used to",
   },
   {
-    rus: {js|Постоянное внимание к техническому совершенству и хорошему дизайну повышает гибкость.|js},
-    eng: "Continuous attention to technical excellence and good design enhances agility.",
+    rus: {js|Помните, что код читается гораздо больше раз, чем пишется, и очень легко читать этот модульный, явный код.|js},
+    eng: "Remember that code is read far more than it's written, and it's extremely easy to read this modular, explicit code.",
   },
   {
-    rus: {js|Простота - искусство максимизации объема незавершенной работы - имеет важное значение.|js},
-    eng: "Simplicity – the art of maximizing the amount of work not done–is essential.",
+    rus: {js|Когда вы начнете создавать большие библиотеки компонентов, вы оцените эту эксплицитность и модульность.|js},
+    eng: "As you start to build large libraries of components, you'll appreciate this explicitness and modularity.",
   },
   {
-    rus: {js|Лучшие архитектуры, требования и проекты появляются из самоорганизую��ихся команд.|js},
-    eng: "The best architectures, requirements, and designs emerge from self-organizing teams.",
+    rus: {js|И при пер��и��пользовании кода ваши строки кода начнут сжиматься.|js},
+    eng: "And with code reuse, your lines of code will start to shrink.",
   },
   {
-    rus: {js|Через регулярные промежутки времени, кома��да размышляет о том, как стать более эффективной, подстраивает и корректирует свое поведение со��тветствующим образом.|js},
-    eng: "At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.",
+    rus: {js|ОК, мы определили, что такое минимальный набор состояния приложения.|js},
+    eng: "OK, so we've identified what the minimal set of app state is.",
   },
   {
-    rus: {js|Scrum-это framework, в котором люди мо��ут решать сложные адаптивные проблемы, продуктивно и творчес��и доставляя продукты максимально возможной ценности|js},
-    eng: "Scrum is a framework within which people can address complex adaptive problems, while productively and creatively delivering products of the highest possible value.",
+    rus: {js|Далее нам нужно определить, какой компонент мутирует или вл��деет этим состоянием.|js},
+    eng: "Next, we need to identify which component mutates, or owns, this state.",
   },
   {
-    rus: {js|Scrum-это не методология. Scrum реализует научный метод эмпиризма. Scrum заменяет запрограммированный алгоритмический подход эвристическим, с уважением к людям и самоорганизацией для решения непредсказуемости и решения сложных проблем.|js},
-    eng: "Scrum is not a methodology. Scrum implements the scientific method of empiricism. Scrum replaces a programmed algorithmic approach with a heuristic one, with respect for people and self-organization to deal with unpredictability and solving complex problems.",
+    rus: {js|Запомните: React это односторонний поток данных по иерархии компонентов.|js},
+    eng: "Remember: React is all about one-way data flow down the component hierarchy.",
   },
   {
-    rus: {js|Scrum не является процессом, техник��й или окончательны�� методом. Скорее, это framework, в которыом вы можете использовать различные процессы и методы.|js},
-    eng: "Scrum is not a process, technique, or definitive method. Rather, it is a framework within which you can employ various processes and techniques.",
-  },
-  {
-    rus: {js|Framework Scrum состоит из команд Scrum и связанных с ними ролей, событий, артефактов и правил. Каждый компонент в рамках служит определенной цели и имеет важное значение для успеха и использования Скрама.|js},
-    eng: "The Scrum framework consists of Scrum Teams and their associated roles, events, artifacts, and rules. Each component within the framework serves a specific purpose and is essential to Scrum's success and usage.",
-  },
-  {
-    rus: {js|Правила Scrum связывают вместе роли, события и артефакты, уп��авляя отношениями и взаимодействием между ними. Правила Scrum описаны всюду по телу этого документ��.|js},
-    eng: "The rules of Scrum bind together the roles, events, and artifacts, governing the relationships and interaction between them. The rules of Scrum are described throughout the body of this document.",
-  },
-  {
-    rus: {js|Мы выявляем лучшие способы разработки программного обеспечения, делая это и помогая другим делать это.|js},
-    eng: "We are uncovering better ways of developing software by doing it and helping others do it.",
-  },
-  {
-    rus: {js|Через эту работу мы пришли к ценности.|js},
-    eng: "Through this work we have come to value.",
-  },
-  {
-    rus: {js|Люди и взаимодействия выше, чем процессы и инс��рументы|js},
-    eng: "Individuals and interactions over processes and tools.",
-  },
-  {
-    rus: {js|Работающее software ��ы��е, чем всеобъемлющая документация.|js},
-    eng: "Working software over comprehensive documentation.",
-  },
-  {
-    rus: {js|Сотрудничество с заказчико�� выше, чем обсуждение условий контракта.|js},
-    eng: "Customer collaboration over contract negotiation.",
-  },
-  {
-    rus: {js|Реагирование на изменения выше, чем следование плану.|js},
-    eng: "Responding to change over following a plan.",
-  },
-  {
-    rus: {js|"пятая ценность": мудрость и здра��ый смысл превыше знаний и опыта.|js},
-    eng: {js|'The fifth value':  Wisdom and common sense over knowledge and expertise.|js},
-  },
-  {
-    rus: {js|То есть, в то время как есть ценность в элементах справа, мы ценим элементы слева больше.|js},
-    eng: "That is, while there is value in the items on the right, we value the items on the left more.",
+    rus: {js|Может быть, не сразу ясно, какой компонент должен владеть каким состоянием.|js},
+    eng: "It may not be immediately clear which component should own what state.",
   },
   /* https:reactjs.org/docs/reconciliation.html */
   {
