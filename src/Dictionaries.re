@@ -50,7 +50,7 @@ let dictionary1 = [
     eng: "Welcome changing requirements, even late in development. Agile processes harness change for the customer's competive advantage.",
   },
   {
-    rus: {js|Поста����ля������е рабочее программное обеспечение часто, от нескольких недель до нескольких месяцев, с предпочтени��м к более коротким временным рамкам.|js},
+    rus: {js|Поставляйе рабочее программное обеспечение часто, от нескольких недель до нескольких месяцев, с предпочтением к более коротким временным рамкам.|js},
     eng: "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.",
   },
   {
@@ -62,7 +62,7 @@ let dictionary1 = [
     eng: "Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.",
   },
   {
-    rus: {js|Наиболее эффективным и действенным спосо��ом передачи информации команде разработчиков и внутри нее является личная беседа.|js},
+    rus: {js|Наиболее эффективным и действенным способом передачи информации команде разработчиков и внутри нее является личная беседа.|js},
     eng: "The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.",
   },
   {
@@ -82,23 +82,27 @@ let dictionary1 = [
     eng: "Simplicity – the art of maximizing the amount of work not done–is essential.",
   },
   {
-    rus: {js|Лучшие архитектуры, требования и проекты появляются из самоорганизую��ихся команд.|js},
+    rus: {js|Лучшие архитектуры, требования и проекты появляются из самоорганизующихся команд.|js},
     eng: "The best architectures, requirements, and designs emerge from self-organizing teams.",
   },
   {
-    rus: {js|Через регулярные промежутки времени, кома��да размышляет о том, как стать более эффективной, подстраивает и корректирует свое поведение со��тветствующим образом.|js},
+    rus: {js|Через регулярные промежутки времени, команда размышляет о том, как стать более эффективной, подстраивает и корректирует свое поведение соответствующим образом.|js},
     eng: "At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.",
   },
   {
-    rus: {js|Scrum-это framework, в котором люди мо��ут решать сложные адаптивные проблемы, продуктивно и творчес��и доставляя продукты максимально возможной ценности|js},
+    rus: {js|Scrum-это framework, в котором люди могут решать сложные адаптивные проблемы, продуктивно и творчески доставляя продукты максимально возможной ценности|js},
     eng: "Scrum is a framework within which people can address complex adaptive problems, while productively and creatively delivering products of the highest possible value.",
   },
   {
-    rus: {js|Scrum-это не методология. Scrum реализует научный метод эмпиризма. Scrum заменяет запрограммированный алгоритмический подход эвристическим, с уважением к людям и самоорганизацией для решения непредсказуемости и решения сл��жных проблем.|js},
-    eng: "Scrum is not a methodology. Scrum implements the scientific method of empiricism. Scrum replaces a programmed algorithmic approach with a heuristic one, with respect for people and self-organization to deal with unpredictability and solving complex problems.",
+    rus: {js|Scrum-это не методология. Scrum реализует научный метод эмпиризма.|js},
+    eng: "Scrum is not a methodology. Scrum implements the scientific method of empiricism.",
   },
   {
-    rus: {js|Scrum не является процессом, техник��й или окончательны�� методом. Скорее, это framework, в которыом вы можете использовать различные процессы и методы.|js},
+    rus: {js|Scrum заменяет запрограммированный алгоритмический подход эвристическим, с уважением к людям и самоорганизацией для решения непредсказуемости и решения сложных проблем.|js},
+    eng: "Scrum replaces a programmed algorithmic approach with a heuristic one, with respect for people and self-organization to deal with unpredictability and solving complex problems.",
+  },
+  {
+    rus: {js|Scrum не является процессом, техникой или окончательным методом. Скорее, это framework, в которыом вы можете использовать различные процессы и методы.|js},
     eng: "Scrum is not a process, technique, or definitive method. Rather, it is a framework within which you can employ various processes and techniques.",
   },
   {
@@ -106,8 +110,12 @@ let dictionary1 = [
     eng: "The Scrum framework consists of Scrum Teams and their associated roles, events, artifacts, and rules. Each component within the framework serves a specific purpose and is essential to Scrum's success and usage.",
   },
   {
-    rus: {js|Правила Scrum связывают вместе роли, события и артефакты, уп��авляя отношениями и взаимодействием между ними. Правила Scrum описаны всюду по телу этого документ��.|js},
-    eng: "The rules of Scrum bind together the roles, events, and artifacts, governing the relationships and interaction between them. The rules of Scrum are described throughout the body of this document.",
+    rus: {js|Правила Scrum связывают вместе роли, события и артефакты, управляя отношениями и взаимодействием между ними.|js},
+    eng: "The rules of Scrum bind together the roles, events, and artifacts, governing the relationships and interaction between them.",
+  },
+  {
+    rus: {js|Правила Scrum описаны всюду по телу этого документа.|js},
+    eng: "The rules of Scrum are described throughout the body of this document.",
   },
   {
     rus: {js|Мы выявляем лучшие способы разработки программного обеспечения, делая это и помогая другим делать это.|js},
@@ -118,25 +126,11 @@ let dictionary1 = [
     eng: "Through this work we have come to value.",
   },
   {
-    rus: {js|Люди и взаимодействия выше, чем процессы и инс��рументы|js},
-    eng: "Individuals and interactions over processes and tools.",
+    rus: {js|Люди и взаимодействия выше, чем процессы и инструменты. Работающее software выше, чем всеобъемлющая документация. Сотрудничество с заказчиком выше, чем обсуждение условий контракта. Реагирование на изменения выше, чем следование плану. Мудрость и здравый смысл превыше знаний и опыта.|js},
+    eng: "Individuals and interactions over processes and tools. Working software over comprehensive documentation. Customer collaboration over contract negotiation. Responding to change over following a plan. Wisdom and common sense over knowledge and expertise.",
   },
-  {
-    rus: {js|Работающее software ��ы��е, чем всеобъемлющая документация.|js},
-    eng: "Working software over comprehensive documentation.",
-  },
-  {
-    rus: {js|Сотрудничество с заказчико�� выше, чем обсуждение условий контракта.|js},
-    eng: "Customer collaboration over contract negotiation.",
-  },
-  {
-    rus: {js|Реагирование на изменения выше, чем следование плану.|js},
-    eng: "Responding to change over following a plan.",
-  },
-  {
-    rus: {js|"пятая ценность": мудрость и здра��ый смысл превыше знаний и опыта.|js},
-    eng: {js|'The fifth value':  Wisdom and common sense over knowledge and expertise.|js},
-  },
+
+
   {
     rus: {js|То есть, в то время как есть ценность в элементах справа, мы ценим элементы слева больше.|js},
     eng: "That is, while there is value in the items on the right, we value the items on the left more.",
@@ -548,7 +542,7 @@ let oldOldDictionary2 = [
     eng: "Containers manage things like subscriptions and state, and pass props to components that handle things like rendering UI. HOCs use containers as part of their implementation.",
   },
   {
-    rus: {js|HOCs можно рассматривать как параметризованные определения контейнер-компонента.|js},
+    rus: {js|HOCs можно рассматривать как параметризованные определения кон��ейнер-компонента.|js},
     eng: "You can think of HOCs as parameterized container component definitions.",
   },
   {
@@ -636,7 +630,7 @@ let oldOldDictionary2 = [
     eng: "So using a render prop makes it possible to use either pattern.",
   },
   {
-    rus: {js|По умолчанию, при рекурсии на дочерни�� узлах DOM, React п��осто перебирает о��а списка дочерних узлов одновременно и генерирует мутацию всякий раз, когда есть разница.|js},
+    rus: {js|��о умолчанию, при рекурсии на дочерни�� узлах DOM, React п��осто перебирает о��а списка дочерних узлов одновременно и генерирует мутацию всякий раз, когда есть разница.|js},
     eng: "By default, when recursing on the children of a DOM node, React just iterates over both lists of children at the same time and generates a mutation whenever there's a difference.",
   },
   {
@@ -713,7 +707,7 @@ let oldOldDictionary2 = [
     eng: "When the ref attribute is used on a custom class component, the ref object receives the mounted instance of the component as its current.",
   },
   {
-    rus: {js|Вы не можете использовать атрибут ref для функциональных компонентов, потому что у них нет экземпляров.|js},
+    rus: {js|Вы не можете использовать атрибут ref для функциональных компонентов, потому что у них не�� экземпляров.|js},
     eng: "You may not use the ref attribute on functional components because they don't have instances.",
   },
   {
