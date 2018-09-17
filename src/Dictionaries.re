@@ -42,30 +42,6 @@ let dictionary1 = [
     eng: "The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.",
   },
   {
-    rus: {js|Наша первоочередная задача состоит в том, чтобы удовлетворить потребности клиентов в своевременной и непрерывной поставке ценного программного обеспечения.|js},
-    eng: "Our highest priority is to satisfy the customer trough early and continuous delivery of valueable software.",
-  },
-  {
-    rus: {js|Приветствуются изменения требований, даже на поздних стадиях разработки. Гибкие процессы используют изменения для конкурентного преимущества клиента.|js},
-    eng: "Welcome changing requirements, even late in development. Agile processes harness change for the customer's competive advantage.",
-  },
-  {
-    rus: {js|Поставляйе рабочее программное обеспечение часто, от нескольких недель до нескольких месяцев, с предпочтением к более коротким временным рамкам.|js},
-    eng: "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.",
-  },
-  {
-    rus: {js|Заказчики и разработчики должны ежедневно работать вместе на протяжении всего проекта.|js},
-    eng: "Business people and developers must work together daily throughout the project.",
-  },
-  {
-    rus: {js|Стройте проекты вокруг мотивированных людей. Дайте им окружение и поддержку, в которой они нуждаются, и доверяйте им, чтобы работа была сделана.|js},
-    eng: "Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.",
-  },
-  {
-    rus: {js|Наиболее эффективным и действенным способом передачи информации команде разработчиков и внутри нее является личная беседа.|js},
-    eng: "The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.",
-  },
-  {
     rus: {js|Рабочая программа-основной критерий прогресса.|js},
     eng: "Working software is the primary measure of progress.",
   },
@@ -129,8 +105,6 @@ let dictionary1 = [
     rus: {js|Люди и взаимодействия выше, чем процессы и инструменты. Работающее software выше, чем всеобъемлющая документация. Сотрудничество с заказчиком выше, чем обсуждение условий контракта. Реагирование на изменения выше, чем следование плану. Мудрость и здравый смысл превыше знаний и опыта.|js},
     eng: "Individuals and interactions over processes and tools. Working software over comprehensive documentation. Customer collaboration over contract negotiation. Responding to change over following a plan. Wisdom and common sense over knowledge and expertise.",
   },
-
-
   {
     rus: {js|То есть, в то время как есть ценность в элементах справа, мы ценим элементы слева больше.|js},
     eng: "That is, while there is value in the items on the right, we value the items on the left more.",
