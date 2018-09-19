@@ -73,6 +73,9 @@ let make = _children => {
     | SpeechEnd => ReasonReact.Update({...state, appcodeIsSpeaking: false})
 
     | SpeakEnglish(text) =>
+    if (state.appcodeIsSpeaking) {
+      ReasonReact.NoUpdate
+                } else {
       ReasonReact.UpdateWithSideEffects(
         {...state, appcodeIsSpeaking: true},
         (
@@ -102,6 +105,7 @@ let make = _children => {
           }
         ),
       )
+    }
 
     | SwitchEnglishShowing(str, shown) =>
       let newShowEnglish = state.showEnglish != true;
