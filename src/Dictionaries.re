@@ -54,10 +54,6 @@ let dictionary1 = [
     eng: "Continuous attention to technical excellence and good design enhances agility.",
   },
   {
-    rus: {js|Простота - искусство максимизации объема незавершенной работы - имеет важное значение.|js},
-    eng: "Simplicity – the art of maximizing the amount of work not done–is essential.",
-  },
-  {
     rus: {js|Лучшие архитектуры, требования и проекты появляются из самоорганизующихся команд.|js},
     eng: "The best architectures, requirements, and designs emerge from self-organizing teams.",
   },
