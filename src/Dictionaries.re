@@ -6,18 +6,51 @@ type wordPair = {
 type pairList = list(wordPair);
 
 let dictionary1 = [
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
+  {rus: {js|Три столпа поддерживают каждую реализацию эмпирического управления процессами: прозрачность, инспекция и адаптация.|js},
+   eng: "Three pillars uphold every implementation of empirical process control: transparency, inspection, and adaption."},
+  {rus: {js|Значительные аспекты процесса должны быть видны тем, кто несет ответственность за результат.|js},
+   eng: "Significant aspects of the process must be visible to those responsible for the outcome."},
+  {rus: {js|Transparency требует, чтобы эти аспекты определялись общим стандартом, чтобы наблюдатели разделяли общее понимание того, что наблюдается.|js},
+   eng: "Transparency requires those aspects be defined by common standart so observers share a common undestanding of what is been seen."},
+  {rus: {js|Общий язык, относящийся к процессу, должен быть общим для всех участников.|js},
+   eng: "A common language reffering to the process must be shared by all participans."},
+  {rus: {js|Выполняющие работу и проверяющие результирующее приращение должны иметь общее определение "сделано".|js},
+   eng: "Those performing the work and those inspecting the resulting increment must share common definition of 'Done'"},
+  {rus: {js|Пользователи Scrum должны часто проверять артефакты Scrum и продвигаться к цели Sprint для обнаружения нежелательных отклонений.|js},
+  eng: "Scrum users must frequently inspect Scrum artifacts and progress towards a Sprint Goal to detect undesired variances."},
+  {rus: {js|Их осмотр не должен быть настолько частым, чтобы он мешал работе.|js},
+   eng: "Their inspection should not be so frequent that inspection gets in the way of the work."},
+  {rus: {js|Инспекции приносят наибольшую пользу, если их добросовестно проводят квалифицированные инспекторы в месте работы.|js},
+   eng: "Inspections are most beneficial when diligently performed by slilled inspectors at the point of work."},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {
+    rus: {js|Рабочая программа-основной критерий прогресса.|js},
+    eng: "Working software is the primary measure of progress.",
+  },
+    {
+    rus: {js|Заказчики и разработчики должны ежедневно работать вместе на протяжении всего проекта.|js},
+    eng: "Business people and developers must work together daily throughout the project.",
+  },
+    {
+    rus: {js|Постоянное внимание к техническому совершенству и хорошему дизайну повышает гибкость.|js},
+    eng: "Continuous attention to technical excellence and good design enhances agility.",
+  },
+    {
+    rus: {js|Через регулярные промежутки времени, команда размышляет о том, как стать более эффективной, подстраивает и корректирует свое поведение соответствующим образом.|js},
+    eng: "At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.",
+  },
+    {
+    rus: {js|Люди и взаимодействия выше, чем процессы и инструменты. Работающее software выше, чем всеобъемлющая документация. Сотрудничество с заказчиком выше, чем обсуждение условий контракта. Реагирование на изменения выше, чем следование плану. Мудрость и здравый смысл превыше знаний и опыта.|js},
+    eng: "Individuals and interactions over processes and tools. Working software over comprehensive documentation. Customer collaboration over contract negotiation. Responding to change over following a plan. Wisdom and common sense over knowledge and expertise.",
+  },
+
+];
+
+let oldDictionary1 = [
+
+   {
     rus: {js|Наша первоочередная задача состоит в том, чтобы удовлетворить потребности клиентов в своевременной и непрерывной поставке ценного программного обеспечения.|js},
     eng: "Our highest priority is to satisfy the customer trough early and continuous delivery of valueable software.",
   },
@@ -106,8 +139,6 @@ let dictionary1 = [
     eng: "That is, while there is value in the items on the right, we value the items on the left more.",
   },
 ];
-
-let oldDictionary1 = [];
 
 let dictionary2 = [
   {

@@ -184,7 +184,7 @@ let make = _children => {
         className="popup__opacity_1 popup_voices_zindex">
         <div className="popup__full_screen_div_opacity" />
         <div className="popup__full_screen_div">
-          <div className="popup__window popup__scroll">
+          <div className="popup__window popup__scroll appcode__eng_text_color">
             (ReasonReact.string("That's all!. Click to restart."))
           </div>
         </div>
