@@ -6,6 +6,38 @@ type wordPair = {
 type pairList = list(wordPair);
 
 let dictionary1 = [
+ {rus: {js|Команда Scrum состоит из ПО, команды разработки и мастера Scrum.|js},
+  eng: "The Scrum Team consists of a Product Owner, the Development Team and a Scrum Master."},
+  {rus: {js|Команды Scrum являются самоорганизующимися и кросс-функциональными.|js},
+  eng: "Scrum Teams are self-organizing and cross-functional."},
+  {rus: {js|Самоорганизующиеся команды выбирают, как лучше выполнять свою работу, а не руководятся другими из вне.|js},
+   eng: "Self-organizing teams choose how best to accomplish their work, rather than being directed by other outside the team."},
+  {rus: {js|Кросс-функциональные команды обладают всеми компетенциями, необходимыми для выполнения работы и не зависят от другой части, не входящей в состав команды.|js},
+   eng: "Cross-functional teams have all competencies needed to accomplish the work without depending on the other not part of the team."},
+  {rus: {js|Командная модель в scrum разработана для оптимизации гибкости, креативности и производительности.|js},
+   eng: "The team model in scrum is designed to optimize flexibility, creativity, and productivity."},
+  {rus: {js|Команда scrum зарекомендовала себя все более эффективной для всех ранее заявленных применений и любой сложной работы.|js},
+   eng: "The scrum team has proven itself to be increasingly effective for all the earlier stated uses, and any complex work."},
+  {rus: {js|Scrum-команды поставляют продукты итеративно и инкрементально, максимизируя возможности для обратной связи.|js},
+   eng: "Scrum teams deliver products iteratively and incrementally, maximizing opportunities for feedback."},
+  {rus: {js|Дополнительные поставки готового продукта гарантируют, что потенциально полезная версия рабочего продукта всегда доступна.|js},
+  eng: "Incremental deliveries of 'Done' product ensure a potentially useful version of working product is always available."},
+
+
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+];
+
+let oldDictionary1 = [
   {rus: {js|Три столпа поддерживают каждую реализацию эмпирического управления процессами: прозрачность, инспекция и адаптация.|js},
    eng: "Three pillars uphold every implementation of empirical process control: transparency, inspection, and adaption."},
   {rus: {js|Значительные аспекты процесса должны быть видны тем, кто несет ответственность за результат.|js},
@@ -33,30 +65,10 @@ let dictionary1 = [
    eng: "When the values of commitment, courage, focus, openness and respect are embodied and lived by Scrum Team, the Scrum pillars of transparency, inspection, and adaption come to life and build trust for everyone."},
   {rus: {js|Успешное использование Scrum зависит от того, что люди становятся более опытными в этих пяти ценностях.|js},
    eng: "Successful use of Scrum depends on people becoming more proficient in living these five values."},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {
-    rus: {js|Рабочая программа-основной критерий прогресса.|js},
-    eng: "Working software is the primary measure of progress.",
-  },
-    {
+
+
+
+{
     rus: {js|Заказчики и разработчики должны ежедневно работать вместе на протяжении всего проекта.|js},
     eng: "Business people and developers must work together daily throughout the project.",
   },
@@ -73,9 +85,6 @@ let dictionary1 = [
     eng: "Individuals and interactions over processes and tools. Working software over comprehensive documentation. Customer collaboration over contract negotiation. Responding to change over following a plan. Wisdom and common sense over knowledge and expertise.",
   },
 
-];
-
-let oldDictionary1 = [
 
    {
     rus: {js|Наша первоочередная задача состоит в том, чтобы удовлетворить потребности клиентов в своевременной и непрерывной поставке ценного программного обеспечения.|js},
