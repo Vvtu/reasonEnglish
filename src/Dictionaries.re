@@ -25,15 +25,15 @@ let dictionary1 = [
 
 
   {rus: {js|ПО несет ответственность за максимизацию стоимости продукта в результате работы команды разработчиков.|js},
-   eng: "The Product Owner is resposible for maximizing the value of the product resulting from work of the Development Team."},
+   eng: "The Product Owner is responsible for maximizing the value of the product resulting from work of the Development Team."},
   {rus: {js|ПО является единственным лицом, ответственным за управление беклога продукта.|js},
-   eng: "The Product Owner is the sole person resposible for managing the Product Backlog."},
+   eng: "The Product Owner is the sole person responsible for managing the Product Backlog."},
   {rus: {js|ПО гарантирует, беклог продукта виден, прозрачен и понятен всем, и показывает, над чем будет работать Scrum команда.|js}, eng: "PO ensures that the Product Backlog is visible, transparent, and clear to all, and shows what the Scrum Team will work on next."},
   {rus: {js|ПО гарантирует, что команда разработчиков понимает элементы в беклоге до необходимого уровня.|js},
-  eng: "PO ensures the Development Team understands items in the Product Backlog to the lovel needed."},
+  eng: "PO ensures the Development Team understands items in the Product Backlog to the level needed."},
   {rus: {js|ПО - это один человек, а не комитет.|js}, eng: "PO is one person, not a committee."},
   {rus: {js|Тот, кто хочет изменить приоритет элемента в беклоге, должен обратиться к ПО.|js},
-   eng: "Thoso wanting to change a Product Backlog item's priority must address the Product Owner."},
+   eng: "Those wanting to change a Product Backlog item's priority must address the Product Owner."},
   {rus: {js|Для успеха ПО вся организация должна уважать его или ее решения.|js},
   eng: "For the PO to succeed, the entire organization must respect his or her decisions."},
 
