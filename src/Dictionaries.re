@@ -6,7 +6,47 @@ type wordPair = {
 type pairList = list(wordPair);
 
 let dictionary1 = [
- {rus: {js|Команда Scrum состоит из ПО, команды разработки и мастера Scrum.|js},
+
+
+  {rus: {js|Оптимальный размер команды разработчиков должен быть достаточно мал, чтобы оставаться маневренным, и достаточно большим, чтобы завершить значительную работу в sprint.|js},
+   eng: "Optimal Development Team size is small enough to remain nimble and large enough to complete significant work within sprint."},
+  {rus: {js|Менее трех членов команды разработки уменьшают взаимодействие и приводят к меньшей производительности.|js},
+   eng: "Fewer than three Development Team members decrease interaction and results in smaller productivity gains."},
+  {rus: {js|Наличие более девяти членов команды разработчиков требует слишком большой координации.|js},
+   eng: "Having more than nine Development Team members requires to much coordination."},
+  {rus: {js|Большая команда разработчиков создает большую сложность, чтобы эмпирический процесс был полезен.|js},
+   eng: "Large Development Team generate to much complexity for an empirical process to be useful."},
+  {rus: {js|Scrum Master отвечает за продвижение и поддержку Scrum, как определено в руководстве Scrum.|js},
+  eng: "The Scrum Master is responsible for promoting and supporting Scrum as defined in the Scrum Guide."},
+  {rus: {js|Scrum Master помогает всем понять теорию, практику, правила и ценности Scrum.|js},
+  eng: "The Scrum Master helps everyone understand Scrum theory, practices, rules, and values."},
+  {rus: {js|Scrum Master является слугой-лидером для команды Scrum.|js},
+   eng: "The Scrum Master is servant-leader for the Scrum Team."},
+  {rus: {js|Scrum Master помогает тем, кто не входит в команду Scrum, понять, какое из их взаимодействий с командой Scrum полезно, а какое нет.|js},
+  eng: "The Scrum Master helps those outside the Scrum Team understand which of their interactions with Scrum Team are helpful and which aren't."},
+  {rus: {js|Scrum Master служит продакт оунеру несколькими способами.|js},
+  eng: "The Scrum Master servers the Product Owner in several ways."},
+  {rus: {js|Scrum Master делает коучинг команды разработчиков в самоорганизации и кросс-функциональности.|js},
+  eng: "The Scrum Master make coaching the Development Team in self-organisation and cross-functionality."},
+  {rus: {js|Scrum Master помогает сотрудникам и стекхолдерам понять и принять Scrum и эмпирическую разработку продукта.|js},
+  eng: "The Scrum Master helps employees and stakeholders understand and enact Scrum and empirical product development."},
+
+
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+];
+
+let oldDictionary1 = [
+   {rus: {js|Команда Scrum состоит из ПО, команды разработки и мастера Scrum.|js},
   eng: "The Scrum Team consists of a Product Owner, the Development Team and a Scrum Master."},
   {rus: {js|Команды Scrum являются самоорганизующимися и кросс-функциональными.|js},
   eng: "Scrum Teams are self-organizing and cross-functional."},
@@ -38,13 +78,6 @@ let dictionary1 = [
   eng: "For the PO to succeed, the entire organization must respect his or her decisions."},
 
 
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-];
-
-let oldDictionary1 = [
   {rus: {js|Три столпа поддерживают каждую реализацию эмпирического управления процессами: прозрачность, инспекция и адаптация.|js},
    eng: "Three pillars uphold every implementation of empirical process control: transparency, inspection, and adaption."},
   {rus: {js|Значительные аспекты процесса должны быть видны тем, кто несет ответственность за результат.|js},
