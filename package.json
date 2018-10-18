@@ -2,7 +2,7 @@
 	"name": "reason-english",
 	"version": "1.1.1",
 	"private": true,
-	"homepage": "https://vvtu.github.io/reason-english",
+	"homepage": "http://vvtu.github.io/reasonEnglish",
 	"dependencies": {
 		"react": "^16.4.1",
 		"react-dom": "^16.4.1",
