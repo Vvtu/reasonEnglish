@@ -27,7 +27,6 @@ let make = (~handleClosePopupClicked, ~baseTextColor, ~voices, _children) => {
   },
   render: ({state, send}) => {
     Js.log("PopUpVoiceMenu render");
-
     let fVoices =
       voices
       |> Array.to_list
