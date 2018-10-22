@@ -7,7 +7,6 @@ type pairList = list(wordPair);
 
 let dictionary1 = [
 
-
   {rus: {js||js}, eng: "A new sprint starts immediately after the conclusion of the previous sprint."},
   {rus: {js||js}, eng: "During the sprint no changes are made that would endanger the Sprint Goal."},
   {rus: {js||js}, eng: "During the sprint scope may be clarified and re-negotiated between the Product Owner and Development Team."},
