@@ -5,19 +5,35 @@ type wordPair = {
 
 type pairList = list(wordPair);
 
-let dictionary1 = [
+let oldDictionary1 = [
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+];
 
-  {rus: {js||js}, eng: "By the end of the Sprint Planning, the Development Team should be able to explain to the Product Owner and Scrum Master how it intends to work as a self-organizing team to accomplish the Sprint Goal."},
-  {rus: {js||js}, eng: "The Sprint Goal is an objective set for the Sprint that can be met through the implementation of Product Backlog."},
-  {rus: {js||js}, eng: "The Daily Scrum is a 15-minute time-boxed event for the Development Team."},
-  {rus: {js||js}, eng: "The Daily Scrum is held at the same time and place each day to reduce complexity."},
-  {rus: {js||js}, eng: "The Daily Scrum is an internal meeting for the Development Team. If other are present, the Scrum Master ensures that they do not disturb the meeting."},
-  {rus: {js||js}, eng: "A Sprint Review is held at the end of the Sprint to inspect the increment and adapt the Product Backlog if needed."},
-  {rus: {js||js}, eng: "During the Sprint Preview, the Scrum Team and stakeholders collaborate about what was done in the Sprint."},
-  {rus: {js||js}, eng: "The result of the Sprint Preview is a revised Product Backlog that defines the probable Product Backlog items for the next Sprint."},
-  {rus: {js||js}, eng: "The Sprint Retrospective is an opportunity for the Scrum Team to inspect itself and create a plan for improvements to be enacted during the next Sprint."},
-  {rus: {js||js}, eng: "The purpose of the Sprint Retrospective is to create a plan for implementing improvements to the way the Scrum Team does it work."},
-  {rus: {js||js}, eng: "Although improvements may be implemented at any time, the Sprint Retrospective provides a formal opportunities to focus on inspection and adaption."},
+let dictionary1  = [
+  {rus: {js|К концу планирования спринта команда разработчиков должна быть в состоянии объяснить владельцу продукта и мастеру Scrum, как она намерена работать как самоорганизующаяся команда для достижения цели спринта.|js},
+  eng: "By the end of the Sprint Planning, the Development Team should be able to explain to the Product Owner and Scrum Master how it intends to work as a self-organizing team to accomplish the Sprint Goal."},
+  {rus: {js|Цель спринта это набор целей, которые могут быть достигнуты путем реализации беклога продукта.|js},
+  eng: "The Sprint Goal is an objective set for the Sprint that can be met through the implementation of Product Backlog."},
+  {rus: {js|Ежедневный Scrum-это 15-минутное событие для команды разработчиков.|js},
+   eng: "The Daily Scrum is a 15-minute time-boxed event for the Development Team."},
+  {rus: {js|Ежедневный Scrum проводится в одно и то же время и каждый день, чтобы уменьшить сложность.|js},
+  eng: "The Daily Scrum is held at the same time and place each day to reduce complexity."},
+  {rus: {js|Ежедневный Scrum-это внутреннее собрание команды разработчиков. Если присутствуют другие, Scrum Master гарантирует, что они не нарушают собрание.|js},
+   eng: "The Daily Scrum is an internal meeting for the Development Team. If other are present, the Scrum Master ensures that they do not disturb the meeting."},
+  {rus: {js|Sprint Review проводится в конце спринта для проверки приращения и адаптации беклога продукта, если это необходимо.|js},
+   eng: "A Sprint Review is held at the end of the Sprint to inspect the increment and adapt the Product Backlog if needed."},
+  {rus: {js|Во время Sprint Preview команда Scrum и заинтересованные стороны сотрудничают о том, что было сделано в спринте.|js},
+   eng: "During the Sprint Preview, the Scrum Team and stakeholders collaborate about what was done in the Sprint."},
+  {rus: {js|Результатом Sprint Preview является пересмотренный беклог, который определяет вероятные элементы отставания продукта для следующего спринта.|js},
+   eng: "The result of the Sprint Preview is a revised Product Backlog that defines the probable Product Backlog items for the next Sprint."},
+  {rus: {js|Ретроспектива спринта-это возможность для команды Scrum проверить себя и создать план улучшений, которые будут введены в действие во время следующего спринта.|js},
+   eng: "The Sprint Retrospective is an opportunity for the Scrum Team to inspect itself and create a plan for improvements to be enacted during the next Sprint."},
+  {rus: {js|Цель ретроспективы спринта состоит в том, чтобы создать план реализации улучшений в том, как команда Scrum работает.|js},
+   eng: "The purpose of the Sprint Retrospective is to create a plan for implementing improvements to the way the Scrum Team does it work."},
+  {rus: {js|Хотя улучшения могут быть реализованы в любое время, ретроспектива спринта предоставляет официальные возможности сосредоточиться на проверке и адаптации.|js},
+   eng: "Although improvements may be implemented at any time, the Sprint Retrospective provides a formal opportunities to focus on inspection and adaption."},
 
   {rus: {js|Артефакты Scrum представляют работу или ценность для обеспечения прозрачности и возможностей для проверки и адаптации.|js},
    eng: "Scrum's artifacts represent work or value to provide transparency and opportunities for inspection and adaption."},
@@ -29,12 +45,6 @@ let dictionary1 = [
    eng: "The Product Backlog is the single source of requirements for any changes to be made to the product."},
   {rus: {js|В списке 'Беклог продукта' перечислены все функции, функции, требования, улучшения и исправления, составляющие изменения, которые необходимо внести в продукт в будущих выпусках.|js},
    eng: "The Product Backlog lists all the features, functions, requirements, enhancements, and fixes that constitute the changes to be made to the product in future releases."},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-];
-
-let oldDictionary1 = [
 
   {rus: {js|Новый спринт начинается сразу после завершения предыдущего спринта.|js},
    eng: "A new sprint starts immediately after the conclusion of the previous sprint."},
