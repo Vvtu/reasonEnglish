@@ -5,31 +5,47 @@ type wordPair = {
 
 type pairList = list(wordPair);
 
-let dictionary1  = [
-  {rus: {js|API-интерфейс браузера, объектная модель документа (DOM) - довольно ужасна, и JavaScript-это несправедливо обвинили. С DOM было бы больно работать на любом языке.|js},
-   eng: "The API of the browser, the Document Object Model (DOM) is quite awful, and JavaScript is unfairly blamed. The DOM would be painful to work with in any language."},
-  {rus: {js|Модель DOM плохо определена и непоследовательно реализована.|js},
-  eng: "The DOM is poorly specified and inconsistently implemented."},
-
-  {rus: {js|Если вы хороши в каком-то другом языке, и вы должны программировать в среде, которая поддерживает только JavaScript, то вы вынуждены использовать JavaScript, и это раздражает.|js},
-   eng: "If you are good in some other language and you have to program in an environment that only supports JavaScript, then you are forced to use JavaScript, and that is annoying."},
-
-  {rus: {js|JavaScript построен на нескольких очень хороших идеях и ряда очень плохих. Очень хорошие идеи включают функции, свободную типизацию, динамические объекты и выразительную объектную буквальную нотацию.|js},
-  eng: "JavaScript is built on some very good ideas and a few very bad ones. The very good ideas include functions, loose typing, dynamic objects, and an expressive object literal notation."},
-
-  {rus: {js|Но оказывается, что строгая типизация не устраняет необходимости тщательного тестирования.|js},
-   eng: "But it turns out that strong typing does not eliminate the need for careful testing."},
-  {rus: {js|В своей работе я обнаружил, что ошибки, которые находит сильная проверка типов, не являются ошибками, о которых я беспокоюсь.|js},
-   eng: "I have found in my work that the sorts of errors that strong type checking finds are not the errors I worry about."},
-  {rus: {js|Я нахожу потерю типизации освобождающей. Мне не нужно формировать сложные иерархии классов. И мне никогда не нужно бросать или бороться с системой типов, чтобы получить поведение, которое я хочу.|js},
-   eng: "I find loose typing to be liberating. I don’t need to form complex class hierarchies. And I never have to cast or wrestle with the type system to get the behavior that I want."},
-  {rus: {js|JavaScript зависит от глобальных переменных для компоновки. Все переменные верхнего уровня всех единиц компиляции объединяются в общее пространство имен, называемое глобальным объектом.|js},
-   eng: "JavaScript depends on global variables for linkage. All of the top-level variables of all compilation units are tossed together in a common namespace called the global object."},
-  {rus: {js|Большинство зарезервированных слов в этом списке не используются в языке.|js},
-     eng: "Most of the RESERVED words in this list are not used in the language."},
-  {rus: {js|Список зарезервированных слов не включает некоторые слова, которые должны были быть зарезервированы, но не были, такие как undefined, NaN и Infinity.|js},
-  eng: "The list of RESERVED words does not include some words that should have been reserved but were not, such as undefined, NaN, and Infinity."},
-
+let dictionary1 = [
+  {
+    rus: {js|API-интерфейс браузера, объектная модель документа (DOM) - довольно ужасна, и JavaScript-это несправедливо обвинили. С DOM было бы больно работать на любом языке.|js},
+    eng: "The API of the browser, the Document Object Model (DOM) is quite awful, and JavaScript is unfairly blamed. The DOM would be painful to work with in any language.",
+  },
+  {
+    rus: {js|Модель DOM плохо определена и непоследовательно реализована.|js},
+    eng: "The DOM is poorly specified and inconsistently implemented.",
+  },
+  {
+    rus: {js|Если вы хороши в каком-то другом языке, и вы должны программировать в среде, которая поддерживает только JavaScript, то вы вынуждены использовать JavaScript, и это раздражает.|js},
+    eng: "If you are good in some other language and you have to program in an environment that only supports JavaScript, then you are forced to use JavaScript, and that is annoying.",
+  },
+  {
+    rus: {js|JavaScript построен на нескольких очень хороших идеях и ряда очень плохих. Очень хорошие идеи включают функции, свободную типизацию, динамические объекты и выразительную объектную буквальную нотацию.|js},
+    eng: "JavaScript is built on some very good ideas and a few very bad ones. The very good ideas include functions, loose typing, dynamic objects, and an expressive object literal notation.",
+  },
+  {
+    rus: {js|Но оказывается, что строгая типизация не устраняет необходимости тщательного тестирования.|js},
+    eng: "But it turns out that strong typing does not eliminate the need for careful testing.",
+  },
+  {
+    rus: {js|В своей работе я обнаружил, что ошибки, которые находит сильная проверка типов, не являются ошибками, о которых я беспокоюсь.|js},
+    eng: "I have found in my work that the sorts of errors that strong type checking finds are not the errors I worry about.",
+  },
+  {
+    rus: {js|Я нахожу потерю типизации освобождающей. Мне не нужно формировать сложные иерархии классов. И мне никогда не нужно бросать или бороться с системой типов, чтобы получить поведение, которое я хочу.|js},
+    eng: "I find loose typing to be liberating. I don't need to form complex class hierarchies. And I never have to cast or wrestle with the type system to get the behavior that I want.",
+  },
+  {
+    rus: {js|JavaScript зависит от глобальных переменных для компоновки. Все переменные верхнего уровня всех единиц компиляции объединяются в общее пространство имен, называемое глобальным объектом.|js},
+    eng: "JavaScript depends on global variables for linkage. All of the top-level variables of all compilation units are tossed together in a common namespace called the global object.",
+  },
+  {
+    rus: {js|Большинство зарезервированных слов в этом списке не используются в языке.|js},
+    eng: "Most of the RESERVED words in this list are not used in the language.",
+  },
+  {
+    rus: {js|Список зарезервированных слов не включает некоторые слова, которые должны были быть зарезервированы, но не были, такие как undefined, NaN и Infinity.|js},
+    eng: "The list of RESERVED words does not include some words that should have been reserved but were not, such as undefined, NaN, and Infinity.",
+  },
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
@@ -50,142 +66,236 @@ let dictionary1  = [
   {rus: {js||js}, eng: ""},
 ];
 
-let oldDictionary1  = [
-  {rus: {js|К концу планирования спринта команда разработчиков должна быть в состоянии объяснить владельцу продукта и мастеру Scrum, как она намерена работать как самоорганизующаяся команда для достижения цели спринта.|js},
-  eng: "By the end of the Sprint Planning, the Development Team should be able to explain to the Product Owner and Scrum Master how it intends to work as a self-organizing team to accomplish the Sprint Goal."},
-  {rus: {js|Цель спринта это набор целей, которые могут быть достигнуты путем реализации беклога продукта.|js},
-  eng: "The Sprint Goal is an objective set for the Sprint that can be met through the implementation of Product Backlog."},
-  {rus: {js|Ежедневный Scrum-это 15-минутное событие для команды разработчиков.|js},
-   eng: "The Daily Scrum is a 15-minute time-boxed event for the Development Team."},
-  {rus: {js|Ежедневный Scrum проводится в одно и то же время и каждый день, чтобы уменьшить сложность.|js},
-  eng: "The Daily Scrum is held at the same time and place each day to reduce complexity."},
-  {rus: {js|Ежедневный Scrum-это внутреннее собрание команды разработчиков. Если присутствуют другие, Scrum Master гарантирует, что они не нарушают собрание.|js},
-   eng: "The Daily Scrum is an internal meeting for the Development Team. If other are present, the Scrum Master ensures that they do not disturb the meeting."},
-  {rus: {js|Sprint Review проводится в конце спринта для проверки приращения и адаптации беклога продукта, если это необходимо.|js},
-   eng: "A Sprint Review is held at the end of the Sprint to inspect the increment and adapt the Product Backlog if needed."},
-  {rus: {js|Во время Sprint Preview команда Scrum и заинтересованные стороны сотрудничают о том, что было сделано в спринте.|js},
-   eng: "During the Sprint Preview, the Scrum Team and stakeholders collaborate about what was done in the Sprint."},
-  {rus: {js|Результатом Sprint Preview является пересмотренный беклог, который определяет вероятные элементы отставания продукта для следующего спринта.|js},
-   eng: "The result of the Sprint Preview is a revised Product Backlog that defines the probable Product Backlog items for the next Sprint."},
-  {rus: {js|Ретроспектива спринта-это возможность для команды Scrum проверить себя и создать план улучшений, которые будут введены в действие во время следующего спринта.|js},
-   eng: "The Sprint Retrospective is an opportunity for the Scrum Team to inspect itself and create a plan for improvements to be enacted during the next Sprint."},
-  {rus: {js|Цель ретроспективы спринта состоит в том, чтобы создать план реализации улучшений в том, как команда Scrum работает.|js},
-   eng: "The purpose of the Sprint Retrospective is to create a plan for implementing improvements to the way the Scrum Team does it work."},
-  {rus: {js|Хотя улучшения могут быть реализованы в любое время, ретроспектива спринта предоставляет официальные возможности сосредоточиться на проверке и адаптации.|js},
-   eng: "Although improvements may be implemented at any time, the Sprint Retrospective provides a formal opportunities to focus on inspection and adaption."},
-
-  {rus: {js|Артефакты Scrum представляют работу или ценность для обеспечения прозрачности и возможностей для проверки и адаптации.|js},
-   eng: "Scrum's artifacts represent work or value to provide transparency and opportunities for inspection and adaption."},
-  {rus: {js|Артефакты, определенные Scrum, специально разработаны для максимальной прозрачности ключевой информации, чтобы у всех было одинаковое понимание артефакта.|js},
-   eng: "Artifacts defined by Scrum are specifically designed to maximize transparency of key information so that everybody has the same understanding of the artifact."},
-  {rus: {js|Беклог продукта-это упорядоченный список всего, что необходимо в продукте.|js},
-  eng: "The Product Backlog is an ordered list of everything that is known to be needed in the product."},
-  {rus: {js|Беклог продукта является единственным источником требований для любых изменений, которые будут внесены в продукт.|js},
-   eng: "The Product Backlog is the single source of requirements for any changes to be made to the product."},
-  {rus: {js|В списке 'Беклог продукта' перечислены все функции, функции, требования, улучшения и исправления, составляющие изменения, которые необходимо внести в продукт в будущих выпусках.|js},
-   eng: "The Product Backlog lists all the features, functions, requirements, enhancements, and fixes that constitute the changes to be made to the product in future releases."},
-
-  {rus: {js|Новый спринт начинается сразу после завершения предыдущего спринта.|js},
-   eng: "A new sprint starts immediately after the conclusion of the previous sprint."},
-  {rus: {js|Во время спринта не вносится никаких изменений, которые могли бы поставить под угрозу цель спринта.|js},
-  eng: "During the sprint no changes are made that would endanger the Sprint Goal."},
-  {rus: {js|Во время спринта область спринта может быть уточнена и повторно согласована между владельцем продукта и командой разработчиков.|js},
-   eng: "During the Sprint the Sprint scope may be clarified and re-negotiated between the Product Owner and Development Team."},
-  {rus: {js|Как и проекты, спринты используются для чего-то.|js},
-   eng: "Like projects, Sprints are used to accomplish something."},
-  {rus: {js|Спринты обеспечивают предсказуемость, обеспечивая проверку и адаптацию прогресса к цели спринта, по крайней мере, каждый календарный месяц.|js},
-   eng: "Sprints enable predictability by ensuring inspection and adaption of progress toward a Sprint Goal at least every calendar month."},
-  {rus: {js|Только владелец продукта имеет право отменить спринт, хотя он или она может сделать это под влиянием стекхолдеров, команды разработчиков или мастера Scrum.|js},
-   eng: "Only the Product Owner has the authority to cancel the Sprint, although he or she may do so under influence of the stakeholders, the Development Team, or the Scrum Master."},
-  {rus: {js|Отмена спринта потребляет ресурсы, так как все перегруппировываются в планировании другого спринта, чтобы начать другой спринт.|js},
-   eng: "Sprint cancellations consume resources, since everyone regroups in another Sprint Planning to start another Sprint."},
-  {rus: {js|Работа, которая будет выполнена в спринте, планируется при планировании спринта. Этот план создается совместной работой всей команды Scrum.|js},
-   eng: "The work to be performed in the Sprint is planned at the Sprint Planning. This plan is crated by the collaboration work of the entire Scrum Team."},
-  {rus: {js|Планирование спринта отвечает на следующее: Что может быть поставлено, как инкрементальный результат предстоящего спринта.|js},
-   eng: "Sprint Planning answers the following: What can be delivered in the Increment resulting from the upcoming Sprint."},
-
-
-   {rus: {js|Команда Scrum состоит из ПО, команды разработки и мастера Scrum.|js},
-  eng: "The Scrum Team consists of a Product Owner, the Development Team and a Scrum Master."},
-  {rus: {js|Команды Scrum являются самоорганизующимися и кросс-функциональными.|js},
-  eng: "Scrum Teams are self-organizing and cross-functional."},
-  {rus: {js|Самоорганизующиеся команды выбирают, как лучше выполнять свою работу, а не руководятся другими из вне.|js},
-   eng: "Self-organizing teams choose how best to accomplish their work, rather than being directed by other outside the team."},
-  {rus: {js|Кросс-функциональные команды обладают всеми компетенциями, необходимыми для выполнения работы и не зависят от другой части, не входящей в состав команды.|js},
-   eng: "Cross-functional teams have all competencies needed to accomplish the work without depending on the other not part of the team."},
-  {rus: {js|Командная модель в scrum разработана для оптимизации гибкости, креативности и производительности.|js},
-   eng: "The team model in scrum is designed to optimize flexibility, creativity, and productivity."},
-  {rus: {js|Команда scrum зарекомендовала себя все более эффективной для всех ранее заявленных применений и любой сложной работы.|js},
-   eng: "The scrum team has proven itself to be increasingly effective for all the earlier stated uses, and any complex work."},
-  {rus: {js|Scrum-команды поставляют продукты итеративно и инкрементально, максимизируя возможности для обратной связи.|js},
-   eng: "Scrum teams deliver products iteratively and incrementally, maximizing opportunities for feedback."},
-  {rus: {js|Дополнительные поставки готового продукта гарантируют, что потенциально полезная версия рабочего продукта всегда доступна.|js},
-  eng: "Incremental deliveries of 'Done' product ensure a potentially useful version of working product is always available."},
-
-
-  {rus: {js|ПО несет ответственность за максимизацию стоимости продукта в результате работы команды разработчиков.|js},
-   eng: "The Product Owner is responsible for maximizing the value of the product resulting from work of the Development Team."},
-  {rus: {js|ПО является единственным лицом, ответственным за управление беклога продукта.|js},
-   eng: "The Product Owner is the sole person responsible for managing the Product Backlog."},
-  {rus: {js|ПО гарантирует, беклог продукта виден, прозрачен и понятен всем, и показывает, над чем будет работать Scrum команда.|js}, eng: "PO ensures that the Product Backlog is visible, transparent, and clear to all, and shows what the Scrum Team will work on next."},
-  {rus: {js|ПО гарантирует, что команда разработчиков понимает элементы в беклоге до необходимого уровня.|js},
-  eng: "PO ensures the Development Team understands items in the Product Backlog to the level needed."},
-  {rus: {js|ПО - это один человек, а не комитет.|js}, eng: "PO is one person, not a committee."},
-  {rus: {js|Тот, кто хочет изменить приоритет элемента в беклоге, должен обратиться к ПО.|js},
-   eng: "Those wanting to change a Product Backlog item's priority must address the Product Owner."},
-  {rus: {js|Для успеха ПО вся организация должна уважать его или ее решения.|js},
-  eng: "For the PO to succeed, the entire organization must respect his or her decisions."},
-
-
-  {rus: {js|Три столпа поддерживают каждую реализацию эмпирического управления процессами: прозрачность, инспекция и адаптация.|js},
-   eng: "Three pillars uphold every implementation of empirical process control: transparency, inspection, and adaption."},
-  {rus: {js|Значительные аспекты процесса должны быть видны тем, кто несет ответственность за результат.|js},
-   eng: "Significant aspects of the process must be visible to those responsible for the outcome."},
-  {rus: {js|Transparency требует, чтобы эти аспекты определялись общим стандартом, чтобы наблюдатели разделяли общее понимание того, что наблюдается.|js},
-   eng: "Transparency requires those aspects be defined by common standard so observers share a common understanding of what is been seen."},
-  {rus: {js|Общий язык, относящийся к процессу, должен быть общим для всех участников.|js},
-   eng: "A common language referring to the process must be shared by all participants."},
-  {rus: {js|Выполняющие работу и проверяющие результирующее приращение должны иметь общее определение "сделано".|js},
-   eng: "Those performing the work and those inspecting the resulting increment must share common definition of 'Done'"},
-  {rus: {js|Пользователи Scrum должны часто проверять артефакты Scrum и продвигаться к цели Sprint для обнаружения нежелательных отклонений.|js},
-  eng: "Scrum users must frequently inspect Scrum artifacts and progress towards a Sprint Goal to detect undesired variances."},
-  {rus: {js|Их осмотр не должен быть настолько частым, чтобы он мешал работе.|js},
-   eng: "Their inspection should not be so frequent that inspection gets in the way of the work."},
-  {rus: {js|Инспекции приносят наибольшую пользу, если их добросовестно проводят квалифицированные инспекторы в месте работы.|js},
-   eng: "Inspections are most beneficial when diligently performed by skilled inspectors at the point of work."},
-  {rus: {js|Если инспектор определяет, что один или несколько аспектов процесса выходят за допустимые пределы, и что полученный продукт будет неприемлем, процесс или обрабатываемый материал должны быть скорректированы.|js},
-   eng: "If an inspector determines that one or more aspects of a process deviate outside acceptable limits, and that resulting product will be unacceptable, the process or the material being processed must be adjusted."},
-
-  {rus: {js|(Адаптация) Необходимо как можно скорее произвести корректировку, чтобы свести к минимуму дальнейшее отклонение.|js},
-   eng: "(Adaption) An adjustment must be made as soon as possible to minimize futher deviation."},
-  {rus: {js|Scrum предписывает четыре официальных события для проверки и адаптации, как описано в разделе Scrum Events этого документа. Планирование Спринта. Ежедневный Скрам. Спринт Обзор. Ретроспектива Спринта.|js},
-   eng: "Scrum prescribes four formal events for inspection and adaption, as described in the Scrum Events section of this document. Sprint Planning. Daily Scrum. Sprint Review. Sprint Retrospective."},
-  {rus: {js|В случаях, когда ценности решимости, мужества, целенаправленности, открытость и уважения воплощаются и проживаются скрам командой, скрам основы транспарентности, проверки и адаптации оживают и укрепляют доверие для всех.|js},
-   eng: "When the values of commitment, courage, focus, openness and respect are embodied and lived by Scrum Team, the Scrum pillars of transparency, inspection, and adaption come to life and build trust for everyone."},
-  {rus: {js|Успешное использование Scrum зависит от того, что люди становятся более опытными в этих пяти ценностях.|js},
-   eng: "Successful use of Scrum depends on people becoming more proficient in living these five values."},
-
-
-
-{
+let oldDictionary1 = [
+  {
+    rus: {js|К концу планирования спринта команда разработчиков должна быть в состоянии объяснить владельцу продукта и мастеру Scrum, как она намерена работать как самоорганизующаяся команда для достижения цели спринта.|js},
+    eng: "By the end of the Sprint Planning, the Development Team should be able to explain to the Product Owner and Scrum Master how it intends to work as a self-organizing team to accomplish the Sprint Goal.",
+  },
+  {
+    rus: {js|Цель спринта это набор целей, которые могут быть достигнуты путем реализации беклога продукта.|js},
+    eng: "The Sprint Goal is an objective set for the Sprint that can be met through the implementation of Product Backlog.",
+  },
+  {
+    rus: {js|Ежедневный Scrum-это 15-минутное событие для команды разработчиков.|js},
+    eng: "The Daily Scrum is a 15-minute time-boxed event for the Development Team.",
+  },
+  {
+    rus: {js|Ежедневный Scrum проводится в одно и то же время и каждый день, чтобы уменьшить сложность.|js},
+    eng: "The Daily Scrum is held at the same time and place each day to reduce complexity.",
+  },
+  {
+    rus: {js|Ежедневный Scrum-это внутреннее собрание команды разработчиков. Если присутствуют другие, Scrum Master гарантирует, что они не нарушают собрание.|js},
+    eng: "The Daily Scrum is an internal meeting for the Development Team. If other are present, the Scrum Master ensures that they do not disturb the meeting.",
+  },
+  {
+    rus: {js|Sprint Review проводится в конце спринта для проверки приращения и адаптации беклога продукта, если это необходимо.|js},
+    eng: "A Sprint Review is held at the end of the Sprint to inspect the increment and adapt the Product Backlog if needed.",
+  },
+  {
+    rus: {js|Во время Sprint Preview команда Scrum и заинтересованные стороны сотрудничают о том, что было сделано в спринте.|js},
+    eng: "During the Sprint Preview, the Scrum Team and stakeholders collaborate about what was done in the Sprint.",
+  },
+  {
+    rus: {js|Результатом Sprint Preview является пересмотренный беклог, который определяет вероятные элементы отставания продукта для следующего спринта.|js},
+    eng: "The result of the Sprint Preview is a revised Product Backlog that defines the probable Product Backlog items for the next Sprint.",
+  },
+  {
+    rus: {js|Ретроспектива спринта-это возможность для команды Scrum проверить себя и создать план улучшений, которые будут введены в действие во время следующего спринта.|js},
+    eng: "The Sprint Retrospective is an opportunity for the Scrum Team to inspect itself and create a plan for improvements to be enacted during the next Sprint.",
+  },
+  {
+    rus: {js|Цель ретроспективы спринта состоит в том, чтобы создать план реализации улучшений в том, как команда Scrum работает.|js},
+    eng: "The purpose of the Sprint Retrospective is to create a plan for implementing improvements to the way the Scrum Team does it work.",
+  },
+  {
+    rus: {js|Хотя улучшения могут быть реализованы в любое время, ретроспектива спринта предоставляет официальные возможности сосредоточиться на проверке и адаптации.|js},
+    eng: "Although improvements may be implemented at any time, the Sprint Retrospective provides a formal opportunities to focus on inspection and adaption.",
+  },
+  {
+    rus: {js|Артефакты Scrum представляют работу или ценность для обеспечения прозрачности и возможностей для проверки и адаптации.|js},
+    eng: "Scrum's artifacts represent work or value to provide transparency and opportunities for inspection and adaption.",
+  },
+  {
+    rus: {js|Артефакты, определенные Scrum, специально разработаны для максимальной прозрачности ключевой информации, чтобы у всех было одинаковое понимание артефакта.|js},
+    eng: "Artifacts defined by Scrum are specifically designed to maximize transparency of key information so that everybody has the same understanding of the artifact.",
+  },
+  {
+    rus: {js|Беклог продукта-это упорядоченный список всего, что необходимо в продукте.|js},
+    eng: "The Product Backlog is an ordered list of everything that is known to be needed in the product.",
+  },
+  {
+    rus: {js|Беклог продукта является единственным источником требований для любых изменений, которые будут внесены в продукт.|js},
+    eng: "The Product Backlog is the single source of requirements for any changes to be made to the product.",
+  },
+  {
+    rus: {js|В списке 'Беклог продукта' перечислены все функции, функции, требования, улучшения и исправления, составляющие изменения, которые необходимо внести в продукт в будущих выпусках.|js},
+    eng: "The Product Backlog lists all the features, functions, requirements, enhancements, and fixes that constitute the changes to be made to the product in future releases.",
+  },
+  {
+    rus: {js|Новый спринт начинается сразу после завершения предыдущего спринта.|js},
+    eng: "A new sprint starts immediately after the conclusion of the previous sprint.",
+  },
+  {
+    rus: {js|Во время спринта не вносится никаких изменений, которые могли бы поставить под угрозу цель спринта.|js},
+    eng: "During the sprint no changes are made that would endanger the Sprint Goal.",
+  },
+  {
+    rus: {js|Во время спринта область спринта может быть уточнена и повторно согласована между владельцем продукта и командой разработчиков.|js},
+    eng: "During the Sprint the Sprint scope may be clarified and re-negotiated between the Product Owner and Development Team.",
+  },
+  {
+    rus: {js|Как и проекты, спринты используются для чего-то.|js},
+    eng: "Like projects, Sprints are used to accomplish something.",
+  },
+  {
+    rus: {js|Спринты обеспечивают предсказуемость, обеспечивая проверку и адаптацию прогресса к цели спринта, по крайней мере, каждый календарный месяц.|js},
+    eng: "Sprints enable predictability by ensuring inspection and adaption of progress toward a Sprint Goal at least every calendar month.",
+  },
+  {
+    rus: {js|Только владелец продукта имеет право отменить спринт, хотя он или она может сделать это под влиянием стекхолдеров, команды разработчиков или мастера Scrum.|js},
+    eng: "Only the Product Owner has the authority to cancel the Sprint, although he or she may do so under influence of the stakeholders, the Development Team, or the Scrum Master.",
+  },
+  {
+    rus: {js|Отмена спринта потребляет ресурсы, так как все перегруппировываются в планировании другого спринта, чтобы начать другой спринт.|js},
+    eng: "Sprint cancellations consume resources, since everyone regroups in another Sprint Planning to start another Sprint.",
+  },
+  {
+    rus: {js|Работа, которая будет выполнена в спринте, планируется при планировании спринта. Этот план создается совместной работой всей команды Scrum.|js},
+    eng: "The work to be performed in the Sprint is planned at the Sprint Planning. This plan is crated by the collaboration work of the entire Scrum Team.",
+  },
+  {
+    rus: {js|Планирование спринта отвечает на следующее: Что может быть поставлено, как инкрементальный результат предстоящего спринта.|js},
+    eng: "Sprint Planning answers the following: What can be delivered in the Increment resulting from the upcoming Sprint.",
+  },
+  {
+    rus: {js|Команда Scrum состоит из ПО, команды разработки и мастера Scrum.|js},
+    eng: "The Scrum Team consists of a Product Owner, the Development Team and a Scrum Master.",
+  },
+  {
+    rus: {js|Команды Scrum являются самоорганизующимися и кросс-функциональными.|js},
+    eng: "Scrum Teams are self-organizing and cross-functional.",
+  },
+  {
+    rus: {js|Самоорганизующиеся команды выбирают, как лучше выполнять свою работу, а не руководятся другими из вне.|js},
+    eng: "Self-organizing teams choose how best to accomplish their work, rather than being directed by other outside the team.",
+  },
+  {
+    rus: {js|Кросс-функциональные команды обладают всеми компетенциями, необходимыми для выполнения работы и не зависят от другой части, не входящей в состав команды.|js},
+    eng: "Cross-functional teams have all competencies needed to accomplish the work without depending on the other not part of the team.",
+  },
+  {
+    rus: {js|Командная модель в scrum разработана для оптимизации гибкости, креативности и производительности.|js},
+    eng: "The team model in scrum is designed to optimize flexibility, creativity, and productivity.",
+  },
+  {
+    rus: {js|Команда scrum зарекомендовала себя все более эффективной для всех ранее заявленных применений и любой сложной работы.|js},
+    eng: "The scrum team has proven itself to be increasingly effective for all the earlier stated uses, and any complex work.",
+  },
+  {
+    rus: {js|Scrum-команды поставляют продукты итеративно и инкрементально, максимизируя возможности для обратной связи.|js},
+    eng: "Scrum teams deliver products iteratively and incrementally, maximizing opportunities for feedback.",
+  },
+  {
+    rus: {js|Дополнительные поставки готового продукта гарантируют, что потенциально полезная версия рабочего продукта всегда доступна.|js},
+    eng: "Incremental deliveries of 'Done' product ensure a potentially useful version of working product is always available.",
+  },
+  {
+    rus: {js|ПО несет ответственность за максимизацию стоимости продукта в результате работы команды разработчиков.|js},
+    eng: "The Product Owner is responsible for maximizing the value of the product resulting from work of the Development Team.",
+  },
+  {
+    rus: {js|ПО является единственным лицом, ответственным за управление беклога продукта.|js},
+    eng: "The Product Owner is the sole person responsible for managing the Product Backlog.",
+  },
+  {
+    rus: {js|ПО гарантирует, беклог продукта виден, прозрачен и понятен всем, и показывает, над чем будет работать Scrum команда.|js},
+    eng: "PO ensures that the Product Backlog is visible, transparent, and clear to all, and shows what the Scrum Team will work on next.",
+  },
+  {
+    rus: {js|ПО гарантирует, что команда разработчиков понимает элементы в беклоге до необходимого уровня.|js},
+    eng: "PO ensures the Development Team understands items in the Product Backlog to the level needed.",
+  },
+  {
+    rus: {js|ПО - это один человек, а не комитет.|js},
+    eng: "PO is one person, not a committee.",
+  },
+  {
+    rus: {js|Тот, кто хочет изменить приоритет элемента в беклоге, должен обратиться к ПО.|js},
+    eng: "Those wanting to change a Product Backlog item's priority must address the Product Owner.",
+  },
+  {
+    rus: {js|Для успеха ПО вся организация должна уважать его или ее решения.|js},
+    eng: "For the PO to succeed, the entire organization must respect his or her decisions.",
+  },
+  {
+    rus: {js|Три столпа поддерживают каждую реализацию эмпирического управления процессами: прозрачность, инспекция и адаптация.|js},
+    eng: "Three pillars uphold every implementation of empirical process control: transparency, inspection, and adaption.",
+  },
+  {
+    rus: {js|Значительные аспекты процесса должны быть видны тем, кто несет ответственность за результат.|js},
+    eng: "Significant aspects of the process must be visible to those responsible for the outcome.",
+  },
+  {
+    rus: {js|Transparency требует, чтобы эти аспекты определялись общим стандартом, чтобы наблюдатели разделяли общее понимание того, что наблюдается.|js},
+    eng: "Transparency requires those aspects be defined by common standard so observers share a common understanding of what is been seen.",
+  },
+  {
+    rus: {js|Общий язык, относящийся к процессу, должен быть общим для всех участников.|js},
+    eng: "A common language referring to the process must be shared by all participants.",
+  },
+  {
+    rus: {js|Выполняющие работу и проверяющие результирующее приращение должны иметь общее определение "сделано".|js},
+    eng: "Those performing the work and those inspecting the resulting increment must share common definition of 'Done'",
+  },
+  {
+    rus: {js|Пользователи Scrum должны часто проверять артефакты Scrum и продвигаться к цели Sprint для обнаружения нежелательных отклонений.|js},
+    eng: "Scrum users must frequently inspect Scrum artifacts and progress towards a Sprint Goal to detect undesired variances.",
+  },
+  {
+    rus: {js|Их осмотр не должен быть настолько частым, чтобы он мешал работе.|js},
+    eng: "Their inspection should not be so frequent that inspection gets in the way of the work.",
+  },
+  {
+    rus: {js|Инспекции приносят наибольшую пользу, если их добросовестно проводят квалифицированные инспекторы в месте работы.|js},
+    eng: "Inspections are most beneficial when diligently performed by skilled inspectors at the point of work.",
+  },
+  {
+    rus: {js|Если инспектор определяет, что один или несколько аспектов процесса выходят за допустимые пределы, и что полученный продукт будет неприемлем, процесс или обрабатываемый материал должны быть скорректированы.|js},
+    eng: "If an inspector determines that one or more aspects of a process deviate outside acceptable limits, and that resulting product will be unacceptable, the process or the material being processed must be adjusted.",
+  },
+  {
+    rus: {js|(Адаптация) Необходимо как можно скорее произвести корректировку, чтобы свести к минимуму дальнейшее отклонение.|js},
+    eng: "(Adaption) An adjustment must be made as soon as possible to minimize futher deviation.",
+  },
+  {
+    rus: {js|Scrum предписывает четыре официальных события для проверки и адаптации, как описано в разделе Scrum Events этого документа. Планирование Спринта. Ежедневный Скрам. Спринт Обзор. Ретроспектива Спринта.|js},
+    eng: "Scrum prescribes four formal events for inspection and adaption, as described in the Scrum Events section of this document. Sprint Planning. Daily Scrum. Sprint Review. Sprint Retrospective.",
+  },
+  {
+    rus: {js|В случаях, когда ценности решимости, мужества, целенаправленности, открытость и уважения воплощаются и проживаются скрам командой, скрам основы транспарентности, проверки и адаптации оживают и укрепляют доверие для всех.|js},
+    eng: "When the values of commitment, courage, focus, openness and respect are embodied and lived by Scrum Team, the Scrum pillars of transparency, inspection, and adaption come to life and build trust for everyone.",
+  },
+  {
+    rus: {js|Успешное использование Scrum зависит от того, что люди становятся более опытными в этих пяти ценностях.|js},
+    eng: "Successful use of Scrum depends on people becoming more proficient in living these five values.",
+  },
+  {
     rus: {js|Заказчики и разработчики должны ежедневно работать вместе на протяжении всего проекта.|js},
     eng: "Business people and developers must work together daily throughout the project.",
   },
-    {
+  {
     rus: {js|Постоянное внимание к техническому совершенству и хорошему дизайну повышает гибкость.|js},
     eng: "Continuous attention to technical excellence and good design enhances agility.",
   },
-    {
+  {
     rus: {js|Через регулярные промежутки времени, команда размышляет о том, как стать более эффективной, подстраивает и корректирует свое поведение соответствующим образом.|js},
     eng: "At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.",
   },
-    {
+  {
     rus: {js|Люди и взаимодействия выше, чем процессы и инструменты. Работающее software выше, чем всеобъемлющая документация. Сотрудничество с заказчиком выше, чем обсуждение условий контракта. Реагирование на изменения выше, чем следование плану. Мудрость и здравый смысл превыше знаний и опыта.|js},
     eng: "Individuals and interactions over processes and tools. Working software over comprehensive documentation. Customer collaboration over contract negotiation. Responding to change over following a plan. Wisdom and common sense over knowledge and expertise.",
   },
-
-
-   {
+  {
     rus: {js|Наша первоочередная задача состоит в том, чтобы удовлетворить потребности клиентов в своевременной и непрерывной поставке ценного программного обеспечения.|js},
     eng: "Our highest priority is to satisfy the customer trough early and continuous delivery of valueable software.",
   },
@@ -273,49 +383,82 @@ let oldDictionary1  = [
     rus: {js|То есть, в то время как есть ценность в элементах справа, мы ценим элементы слева больше.|js},
     eng: "That is, while there is value in the items on the right, we value the items on the left more.",
   },
-
-   {rus: {js|Оптимальный размер команды разработчиков должен быть достаточно мал, чтобы оставаться маневренным, и достаточно большим, чтобы завершить значительную работу в sprint.|js},
-   eng: "Optimal Development Team size is small enough to remain nimble and large enough to complete significant work within sprint."},
-  {rus: {js|Менее трех членов команды разработки уменьшают взаимодействие и приводят к меньшей производительности.|js},
-   eng: "Fewer than three Development Team members decreases interaction and results in smaller productivity gains."},
-  {rus: {js|Наличие более девяти членов команды разработчиков требует слишком большой координации.|js},
-   eng: "Having more than nine Development Team members requires to much coordination."},
-  {rus: {js|Большая команда разработчиков создает большую сложность, чтобы эмпирический процесс был полезен.|js},
-   eng: "Large Development Team generates to much complexity for an empirical process to be useful."},
-  {rus: {js|Scrum Master отвечает за продвижение и поддержку Scrum, как определено в руководстве Scrum.|js},
-  eng: "The Scrum Master is responsible for promoting and supporting Scrum as defined in the Scrum Guide."},
-  {rus: {js|Scrum Master помогает всем понять теорию, практику, правила и ценности Scrum.|js},
-  eng: "The Scrum Master helps everyone understand Scrum theory, practices, rules, and values."},
-  {rus: {js|Scrum Master является слугой-лидером для команды Scrum.|js},
-   eng: "The Scrum Master is servant-leader for the Scrum Team."},
-  {rus: {js|Scrum Master помогает тем, кто не входит в команду Scrum, понять, какое из их взаимодействий с командой Scrum полезно, а какое нет.|js},
-  eng: "The Scrum Master helps those outside the Scrum Team understand which of their interactions with Scrum Team are helpful and which aren't."},
-  {rus: {js|Scrum Master служит продакт оунеру несколькими способами.|js},
-  eng: "The Scrum Master servers the Product Owner in several ways."},
-  {rus: {js|Scrum Master делает коучинг команды разработчиков в самоорганизации и кросс-функциональности.|js},
-  eng: "The Scrum Master makes coaching the Development Team in self-organisation and cross-functionality."},
-  {rus: {js|Scrum Master помогает сотрудникам и стекхолдерам понять и принять Scrum и эмпирическую разработку продукта.|js},
-  eng: "The Scrum Master helps employees and stakeholders understand and enact Scrum and empirical product development."},
-
-
-  {rus: {js|Предписанные события используются в Scrum для создания регулярности и минимизации потребности в собраниях, не определенных в Scrum.|js},
-    eng: "Prescribed events are used in Scrum to create regularity and to minimise the need for meetings non defined in Scrum."},
-  {rus: {js|Все события являются событиями с временной шкалой.|js},
-  eng: "All events are time-boxed events."},
-  {rus: {js|Как только начинается спринт, его продолжительность фиксирована и не может быть сокращена или удлинена.|js},
-   eng: "Once a Sprint begins, its duration is fixed and cannot be shortened or lenghtened."},
-  {rus: {js|События кроме спринта могут заканчиваться всякий раз, когда цель события достигается.|js},
-   eng: "Other than the Sprint events may end whenever the purpose of the event is achieved."},
-  {rus: {js|Сердце Scrum-это sprint, с времмеными рамками в один месяц или меньше, в течение которого создается "сделанный", пригодный для использования и потенциально выпускаемый инкремент продукта.|js},
-   eng: "The heart of Scrum is sprint, a time-box one month or less during which a 'Done', useable, and potentially releasable product Increment is created."},
-  {rus: {js|Спринт состоит из планирования спринта, ежедневных схваток, работы по разработке, обзора спринта и ретроспективы спринта.|js},
-   eng: "Sprint consists of the Sprint Planning, Daily Scrums, the development work, the Sprint Review, and the Sprint Retrospective."},
-  {rus: {js|Каждый спринт можно рассматривать как проект с горизонтом не более одного месяца.|js},
-   eng: "Each Sprint may be considered a project with no more than a one-month horizon."},
-  {rus: {js|Каждый спринт имеет цель того, что должно быть построено.|js},
-   eng: "Each Sprint has a goal of what is to be build."},
-
-
+  {
+    rus: {js|Оптимальный размер команды разработчиков должен быть достаточно мал, чтобы оставаться маневренным, и достаточно большим, чтобы завершить значительную работу в sprint.|js},
+    eng: "Optimal Development Team size is small enough to remain nimble and large enough to complete significant work within sprint.",
+  },
+  {
+    rus: {js|Менее трех членов команды разработки уменьшают взаимодействие и приводят к меньшей производительности.|js},
+    eng: "Fewer than three Development Team members decreases interaction and results in smaller productivity gains.",
+  },
+  {
+    rus: {js|Наличие более девяти членов команды разработчиков требует слишком большой координации.|js},
+    eng: "Having more than nine Development Team members requires to much coordination.",
+  },
+  {
+    rus: {js|Большая команда разработчиков создает большую сложность, чтобы эмпирический процесс был полезен.|js},
+    eng: "Large Development Team generates to much complexity for an empirical process to be useful.",
+  },
+  {
+    rus: {js|Scrum Master отвечает за продвижение и поддержку Scrum, как определено в руководстве Scrum.|js},
+    eng: "The Scrum Master is responsible for promoting and supporting Scrum as defined in the Scrum Guide.",
+  },
+  {
+    rus: {js|Scrum Master помогает всем понять теорию, практику, правила и ценности Scrum.|js},
+    eng: "The Scrum Master helps everyone understand Scrum theory, practices, rules, and values.",
+  },
+  {
+    rus: {js|Scrum Master является слугой-лидером для команды Scrum.|js},
+    eng: "The Scrum Master is servant-leader for the Scrum Team.",
+  },
+  {
+    rus: {js|Scrum Master помогает тем, кто не входит в команду Scrum, понять, какое из их взаимодействий с командой Scrum полезно, а какое нет.|js},
+    eng: "The Scrum Master helps those outside the Scrum Team understand which of their interactions with Scrum Team are helpful and which aren't.",
+  },
+  {
+    rus: {js|Scrum Master служит продакт оунеру несколькими способами.|js},
+    eng: "The Scrum Master servers the Product Owner in several ways.",
+  },
+  {
+    rus: {js|Scrum Master делает коучинг команды разработчиков в самоорганизации и кросс-функциональности.|js},
+    eng: "The Scrum Master makes coaching the Development Team in self-organisation and cross-functionality.",
+  },
+  {
+    rus: {js|Scrum Master помогает сотрудникам и стекхолдерам понять и принять Scrum и эмпирическую разработку продукта.|js},
+    eng: "The Scrum Master helps employees and stakeholders understand and enact Scrum and empirical product development.",
+  },
+  {
+    rus: {js|Предписанные события используются в Scrum для создания регулярности и минимизации потребности в собраниях, не определенных в Scrum.|js},
+    eng: "Prescribed events are used in Scrum to create regularity and to minimise the need for meetings non defined in Scrum.",
+  },
+  {
+    rus: {js|Все события являются событиями с временной шкалой.|js},
+    eng: "All events are time-boxed events.",
+  },
+  {
+    rus: {js|Как только начинается спринт, его продолжительность фиксирована и не может быть сокращена или удлинена.|js},
+    eng: "Once a Sprint begins, its duration is fixed and cannot be shortened or lenghtened.",
+  },
+  {
+    rus: {js|События кроме спринта могут заканчиваться всякий раз, когда цель события достигается.|js},
+    eng: "Other than the Sprint events may end whenever the purpose of the event is achieved.",
+  },
+  {
+    rus: {js|Сердце Scrum-это sprint, с времмеными рамками в один месяц или меньше, в течение которого создается "сделанный", пригодный для использования и потенциально выпускаемый инкремент продукта.|js},
+    eng: "The heart of Scrum is sprint, a time-box one month or less during which a 'Done', useable, and potentially releasable product Increment is created.",
+  },
+  {
+    rus: {js|Спринт состоит из планирования спринта, ежедневных схваток, работы по разработке, обзора спринта и ретроспективы спринта.|js},
+    eng: "Sprint consists of the Sprint Planning, Daily Scrums, the development work, the Sprint Review, and the Sprint Retrospective.",
+  },
+  {
+    rus: {js|Каждый спринт можно рассматривать как проект с горизонтом не более одного месяца.|js},
+    eng: "Each Sprint may be considered a project with no more than a one-month horizon.",
+  },
+  {
+    rus: {js|Каждый спринт имеет цель того, что должно быть построено.|js},
+    eng: "Each Sprint has a goal of what is to be build.",
+  },
 ];
 
 let dictionary2 = [
