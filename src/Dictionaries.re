@@ -7,6 +7,61 @@ type pairList = list(wordPair);
 
 let dictionary1 = [
   {
+    rus: {js|JavaScript имеет очень мощную объектную литеральную нотацию. Объекты можно создавать, просто перечисляя их компоненты.|js},
+    eng: "JavaScript has a very powerful object literal notation. Objects can be created simply by listing their components.",
+  },
+  {
+    rus: {js|JavaScript имеет объектную систему без классов, в которой объекты наследуют свойства непосредственно от других объектов.|js},
+    eng: "JavaScript has a class-free object system in which objects inherit properties directly from other objects.",
+  },
+  {
+    rus: {js|У тебя нет другого выбора. Интернет стал важной платформой для разработки приложений, а JavaScript является единственным языком, который можно найти во всех браузерах.|js},
+    eng: "You don't have a choice.The Web has become an important platform for application development, and JavaScript is the only language that is found in all browsers.",
+  },
+  {
+    rus: {js|Хорошие части хороши достаточно для того чтобы скомпенсировать плохие части.|js},
+    eng: "The good parts are good enough to compensate for the bad parts.",
+  },
+  {
+    rus: {js|Cтроковый литерал может быть заключен в одинарные или двойные кавычки. Он может содержать ноль или более символов.|js},
+    eng: "A string literal can be wrapped in single quotes or double quotes. It can contain zero or more characters.",
+  },
+  {
+    rus: {js|Cтроки неизменяемы. Как только строка сделана, она никогда не может быть изменена.|js},
+    eng: "Strings are immutable. Once it is made, a string can never be changed.",
+  },
+  {
+    rus: {js|В веб-браузерах каждый тег <script> предоставляет единицу компиляции, которая компилируется и немедленно выполняется.|js},
+    eng: "In web browsers, each <script> tag delivers a compilation unit that is compiled and immediately executed.",
+  },
+  {
+    rus: {js|Так как компоновщик отсутствует, JavaScript объединяет все единицы компиляции в единое глобальное пространство имен.|js},
+    eng: "Lacking a linker, JavaScript throws all compilation units together in a common global namespace.",
+  },
+  {
+    rus: {js|При использовании внутри функции оператор var определяет приватные переменные функции.|js},
+    eng: "When used inside of a function, the var statement defines the function’s private variables.",
+  },
+  {
+    rus: {js|Операторы switch, while, for и do могут иметь необязательный префикс метки, который взаимодействует с оператором break.|js},
+    eng: "The switch, while, for, and do statements are allowed to have an optional label prefix that interacts with the break statement.",
+  },
+  {
+    rus: {js|В отличие от многих других языков, блоки в JavaScript не создают новую область видимости, поэтому переменные должны быть определены в верхней части функции, а не в блоках.|js},
+    eng: "Unlike many other languages, blocks in JavaScript do not create a new scope, so variables should be defined at the top of the function, not in blocks.",
+  },
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+];
+
+let oldDictionary1 = [
+  {
     rus: {js|API-интерфейс браузера, объектная модель документа (DOM) - довольно ужасна, и JavaScript-это несправедливо обвинили. С DOM было бы больно работать на любом языке.|js},
     eng: "The API of the browser, the Document Object Model (DOM) is quite awful, and JavaScript is unfairly blamed. The DOM would be painful to work with in any language.",
   },
@@ -46,27 +101,9 @@ let dictionary1 = [
     rus: {js|Список зарезервированных слов не включает некоторые слова, которые должны были быть зарезервированы, но не были, такие как undefined, NaN и Infinity.|js},
     eng: "The list of RESERVED words does not include some words that should have been reserved but were not, such as undefined, NaN, and Infinity.",
   },
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
 ];
 
-let oldDictionary1 = [
+let veryOldDictionary1 = [
   {
     rus: {js|К концу планирования спринта команда разработчиков должна быть в состоянии объяснить владельцу продукта и мастеру Scrum, как она намерена работать как самоорганизующаяся команда для достижения цели спринта.|js},
     eng: "By the end of the Sprint Planning, the Development Team should be able to explain to the Product Owner and Scrum Master how it intends to work as a self-organizing team to accomplish the Sprint Goal.",
