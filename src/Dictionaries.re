@@ -50,10 +50,22 @@ let dictionary1 = [
     rus: {js|В отличие от многих других языков, блоки в JavaScript не создают новую область видимости, поэтому переменные должны быть определены в верхней части функции, а не в блоках.|js},
     eng: "Unlike many other languages, blocks in JavaScript do not create a new scope, so variables should be defined at the top of the function, not in blocks.",
   },
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
+  {
+    rus: {js|В JavaScript массивы-это объекты, функции-объекты,регулярные выражения-объекты и, конечно же, объекты.|js},
+    eng: " In JavaScript, arrays are objects, functions are objects, regular expressions are objects, and, of course, objects are objects.",
+  },
+  {
+    rus: {js|Объекты в JavaScript являются мутабельными коллекциями ключей.|js},
+    eng: "Objects in JavaScript are mutable keyed collections.",
+  },
+  {
+    rus: {js|Числа, строки и логические значения являются объектно-подобными в том, что у них есть методы, но они иммутабельны.|js},
+    eng: "Numbers, strings, and booleans are object-like in that they have methods, but they are immutable.",
+  },
+  {
+    rus: {js|Объект-это контейнер свойств, в котором свойство имеет имя и значение. Имя свойства может быть любой строкой, включая пустую строку. Значением свойства может быть любое значение JavaScript, кроме undefined.|js},
+    eng: "An object is a container of properties, where a property has a name and a value. A property name can be any string, including the empty string. A property value can be any JavaScript value except for undefined.",
+  },
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
