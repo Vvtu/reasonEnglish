@@ -40,7 +40,7 @@ let dictionary1 = [
   },
   {
     rus: {js|При использовании внутри функции оператор var определяет приватные переменные функции.|js},
-    eng: "When used inside of a function, the var statement defines the function’s private variables.",
+    eng: "When used inside of a function, the var statement defines the function's private variables.",
   },
   {
     rus: {js|Операторы switch, while, for и do могут иметь необязательный префикс метки, который взаимодействует с оператором break.|js},
