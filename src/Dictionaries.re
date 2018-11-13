@@ -66,9 +66,18 @@ let dictionary1 = [
     rus: {js|Объект-это контейнер свойств, в котором свойство имеет имя и значение. Имя свойства может быть любой строкой, включая пустую строку. Значением свойства может быть любое значение JavaScript, кроме undefined.|js},
     eng: "An object is a container of properties, where a property has a name and a value. A property name can be any string, including the empty string. A property value can be any JavaScript value except for undefined.",
   },
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
+  {
+    rus: {js|Все объекты, созданные из литералов объектов, привязаны к Object.prototype, объект, который поставляется с JavaScript.|js},
+    eng: "All objects created from object literals are linked to Object.prototype, an object that comes standard with JavaScript.",
+  },
+  {
+    rus: {js|Когда вы создаете новый объект, вы можете выбрать объект, который должен быть его прототипом, но механизм, который предоставляет JavaScript для этого, грязный и сложный.|js},
+    eng: "When you make a new object, you can select the object that should be its prototype, but the mechanism that JavaScript provides to do this is messy and complex.",
+  },
+  {
+    rus: {js|Ссылка на прототип не меняется при обновлении объекта. Когда мы вносим изменения в объект, прототип объекта не трогается:|js},
+    eng: "The prototype link has no effect on updating. When we make changes to an object, the object’s prototype is not touched.",
+  },
   {rus: {js||js}, eng: ""},
 ];
 
