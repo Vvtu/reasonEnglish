@@ -76,13 +76,28 @@ let dictionary1 = [
   },
   {
     rus: {js|Ссылка на прототип не меняется при обновлении объекта. Когда мы вносим изменения в объект, прототип объекта не трогается:|js},
-    eng: "The prototype link has no effect on updating. When we make changes to an object, the object’s prototype is not touched.",
+    eng: "The prototype link has no effect on updating. When we make changes to an object, the object's prototype is not touched.",
   },
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
+  {
+    rus: {js|Простыми типами JavaScript являются числа, строки, логические значения (true и false), null и undefined. Все остальные значения являются объектами.|js},
+    eng: "The simple types of JavaScript are numbers, strings, booleans (true and false), null, and undefined. All other values are objects.",
+  },
+  {
+    rus: {js|Объекты передаются по ссылке. Они никогда не копируются.|js},
+    eng: "Objects are passed around by reference. They are never copied.",
+  },
+  {
+    rus: {js|Ссылка на прототип используется только для извлечения. Если мы пытаемся получить значение свойства из объекта, и если у объекта отсутствует имя свойства, JavaScript пытается получить значение свойства из объекта прототипа. Это называется делегированием.|js},
+    eng: "The prototype link is used only in retrieval. If we try to retrieve a property value from an object, and if the object lacks the property name, then JavaScript attempts to retrieve the property value from the prototype object. This is called delegation.",
+  },
+  {
+    rus: {js|Прототип отношения является динамическим отношением. Если мы добавим новое свойство в прототип, это свойство будет сразу видно во всех объектах, основанных на этом прототипе.|js},
+    eng: "The prototype relationship is a dynamic relationship. If we add a new property to a prototype, that property will immediately be visible in all of the objects that are based on that prototype.",
+  },
+  {
+    rus: {js|Следует использовать метод hasOwnProperty, который возвращает значение true, если объект имеет определенное свойство. Метод hasOwnProperty не смотрит на цепочку прототипов.|js},
+    eng: "You should use the hasOwnProperty method, which returns true if the object has a particular property. The hasOwnProperty method does not look at the prototype chain.",
+  },
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
