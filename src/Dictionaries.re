@@ -7,6 +7,141 @@ type pairList = list(wordPair);
 
 let dictionary1 = [
   {
+    rus: {js|Объект-это контейнер свойств, в котором свойство имеет имя и значение. Имя свойства может быть любой строкой, включая пустую строку. Значением свойства может быть любое значение JavaScript, кроме undefined.|js},
+    eng: "An object is a container of properties, where a property has a name and a value. A property name can be any string, including the empty string. A property value can be any JavaScript value except for undefined.",
+  },
+  {
+    rus: {js|Все объекты, созданные из литералов объектов, привязаны к Object.prototype, объект, который поставляется с JavaScript.|js},
+    eng: "All objects created from object literals are linked to Object.prototype, an object that comes standard with JavaScript.",
+  },
+  {
+    rus: {js|Когда вы создаете новый объект, вы можете выбрать объект, который должен быть его прототипом, но механизм, который предоставляет JavaScript для этого, грязный и сложный.|js},
+    eng: "When you make a new object, you can select the object that should be its prototype, but the mechanism that JavaScript provides to do this is messy and complex.",
+  },
+  {
+    rus: {js|Ссылка на прототип не меняется при обновлении объекта. Когда мы вносим изменения в объект, прототип объекта не трогается:|js},
+    eng: "The prototype link has no effect on updating. When we make changes to an object, the object's prototype is not touched.",
+  },
+  {
+    rus: {js|Простыми типами JavaScript являются числа, строки, логические значения (true и false), null и undefined. Все остальные значения являются объектами.|js},
+    eng: "The simple types of JavaScript are numbers, strings, booleans (true and false), null, and undefined. All other values are objects.",
+  },
+  {
+    rus: {js|Объекты передаются по ссылке. Они никогда не копируются.|js},
+    eng: "Objects are passed around by reference. They are never copied.",
+  },
+  {
+    rus: {js|Ссылка на прототип используется только для извлечения. Если мы пытаемся получить значение свойства из объекта, и если у объекта отсутствует имя свойства, JavaScript пытается получить значение свойства из объекта прототипа. Это называется делегированием.|js},
+    eng: "The prototype link is used only in retrieval. If we try to retrieve a property value from an object, and if the object lacks the property name, then JavaScript attempts to retrieve the property value from the prototype object. This is called delegation.",
+  },
+  {
+    rus: {js|Прототип отношения является динамическим отношением. Если мы добавим новое свойство в прототип, это свойство будет сразу видно во всех объектах, основанных на этом прототипе.|js},
+    eng: "The prototype relationship is a dynamic relationship. If we add a new property to a prototype, that property will immediately be visible in all of the objects that are based on that prototype.",
+  },
+  {
+    rus: {js|Следует использовать метод hasOwnProperty, который возвращает значение true, если объект имеет определенное свойство. Метод hasOwnProperty не смотрит на цепочку прототипов.|js},
+    eng: "You should use the hasOwnProperty method, which returns true if the object has a particular property. The hasOwnProperty method does not look at the prototype chain.",
+  },
+  {
+    rus: {js|Литерал функции может появляться везде, где может появляться выражение.|js},
+    eng: "A function literal can appear anywhere that an expression can appear.",
+  },
+  {
+    rus: {js|Кроме того, поскольку функции являются объектами, функции могут иметь методы.|js},
+    eng: "Also, since functions are objects, functions can have methods.",
+  },
+  {
+    rus: {js|Особенность функции заключается в том, что они могут быть вызваны.|js},
+    eng: "The thing that is special about functions is that they can be invoked.",
+  },
+  {
+    rus: {js|Внутренняя функция также имеет доступ к параметрам и переменным функций, в которые она вложена.|js},
+    eng: "An inner function also enjoys access to the parameters and variables of the functions it is nested within.",
+  },
+  {
+    rus: {js|Объект function, созданный литералом функции, содержит ссылку на этот внешний контекст. Это называется замыканием. Это источник огромной выразительной силы.|js},
+    eng: "The function object created by a function literal contains a link to that outer context. This is called closure. This is the source of enormous expressive power.",
+  },
+  {
+    rus: {js|Вызов функции приостанавливает выполнение текущей функции, передавая управление и параметры новой функции. Помимо объявленных параметров, каждая функция получает два дополнительных параметра: this и arguments.|js},
+    eng: "Invoking a function suspends the execution of the current function, passing control and parameters to the new function. In addition to the declared parameters, every function receives two additional parameters: this and arguments.",
+  },
+  {
+    rus: {js|Этот параметр очень важен в объектно-ориентированном программировании, а его значение определяется шаблоном вызова.|js},
+    eng: "The this parameter is very important in object oriented programming, and its value is determined by the invocation pattern.",
+  },
+  {
+    rus: {js|В JavaScript существует четыре шаблона вызова: шаблон вызова метода, шаблон вызова функции, шаблон вызова конструктора и шаблон вызова apply. Шаблоны отличаются тем, как инициализируется бонус параметр this.|js},
+    eng: "There are four patterns of invocation in JavaScript: the method invocation pattern, the function invocation pattern, the constructor invocation pattern, and the apply invocation pattern. The patterns differ in how the bonus parameter this is initialized.",
+  },
+  {
+    rus: {js|Оператор вызова-это пара скобок, которая следует за любым выражением, создающим значение функции.|js},
+    eng: "The invocation operator is a pair of parentheses that follow any expression that produces a function value.",
+  },
+  {
+    rus: {js|Если число аргументов и число параметров не совпадают, ошибка выполнения отсутствует.|js},
+    eng: "There is no runtime error when the number of arguments and the number of parameters do not match.",
+  },
+  {
+    rus: {js|Если значений аргументов слишком много, дополнительные значения аргументов будут проигнорированы. Если значений аргументов слишком мало, то в качестве пропущенных значений подставляется undefined.|js},
+    eng: "If there are too many argument values, the extra argument values will be ignored. If there are too few argument values, the undefined value will be substituted for the missing values.",
+  },
+  {
+    rus: {js|Когда функция хранится как свойство объекта, мы называем это метод. При вызове метода его this привязывается к этому объекту.|js},
+    eng: "When a function is stored as a property of an object, we call it a method. When a method is invoked, this is bound to that object.",
+  },
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+];
+
+let oldDictionary1 = [
+  {
+    rus: {js|API-интерфейс браузера, объектная модель документа (DOM) - довольно ужасна, и JavaScript-это несправедливо обвинили. С DOM было бы больно работать на любом языке.|js},
+    eng: "The API of the browser, the Document Object Model (DOM) is quite awful, and JavaScript is unfairly blamed. The DOM would be painful to work with in any language.",
+  },
+  {
+    rus: {js|Модель DOM плохо определена и непоследовательно реализована.|js},
+    eng: "The DOM is poorly specified and inconsistently implemented.",
+  },
+  {
+    rus: {js|Если вы хороши в каком-то другом языке, и вы должны программировать в среде, которая поддерживает только JavaScript, то вы вынуждены использовать JavaScript, и это раздражает.|js},
+    eng: "If you are good in some other language and you have to program in an environment that only supports JavaScript, then you are forced to use JavaScript, and that is annoying.",
+  },
+  {
+    rus: {js|JavaScript построен на нескольких очень хороших идеях и ряда очень плохих. Очень хорошие идеи включают функции, свободную типизацию, динамические объекты и выразительную объектную буквальную нотацию.|js},
+    eng: "JavaScript is built on some very good ideas and a few very bad ones. The very good ideas include functions, loose typing, dynamic objects, and an expressive object literal notation.",
+  },
+  {
+    rus: {js|Но оказывается, что строгая типизация не устраняет необходимости тщательного тестирования.|js},
+    eng: "But it turns out that strong typing does not eliminate the need for careful testing.",
+  },
+  {
+    rus: {js|В своей работе я обнаружил, что ошибки, которые находит сильная проверка типов, не являются ошибками, о которых я беспокоюсь.|js},
+    eng: "I have found in my work that the sorts of errors that strong type checking finds are not the errors I worry about.",
+  },
+  {
+    rus: {js|Я нахожу потерю типизации освобождающей. Мне не нужно формировать сложные иерархии классов. И мне никогда не нужно бросать или бороться с системой типов, чтобы получить поведение, которое я хочу.|js},
+    eng: "I find loose typing to be liberating. I don't need to form complex class hierarchies. And I never have to cast or wrestle with the type system to get the behavior that I want.",
+  },
+  {
+    rus: {js|JavaScript зависит от глобальных переменных для компоновки. Все переменные верхнего уровня всех единиц компиляции объединяются в общее пространство имен, называемое глобальным объектом.|js},
+    eng: "JavaScript depends on global variables for linkage. All of the top-level variables of all compilation units are tossed together in a common namespace called the global object.",
+  },
+  {
+    rus: {js|Большинство зарезервированных слов в этом списке не используются в языке.|js},
+    eng: "Most of the RESERVED words in this list are not used in the language.",
+  },
+  {
+    rus: {js|Список зарезервированных слов не включает некоторые слова, которые должны были быть зарезервированы, но не были, такие как undefined, NaN и Infinity.|js},
+    eng: "The list of RESERVED words does not include some words that should have been reserved but were not, such as undefined, NaN, and Infinity.",
+  },
+  {
     rus: {js|JavaScript имеет очень мощную объектную литеральную нотацию. Объекты можно создавать, просто перечисляя их компоненты.|js},
     eng: "JavaScript has a very powerful object literal notation. Objects can be created simply by listing their components.",
   },
@@ -61,105 +196,6 @@ let dictionary1 = [
   {
     rus: {js|Числа, строки и логические значения являются объектно-подобными в том, что у них есть методы, но они иммутабельны.|js},
     eng: "Numbers, strings, and booleans are object-like in that they have methods, but they are immutable.",
-  },
-  {
-    rus: {js|Объект-это контейнер свойств, в котором свойство имеет имя и значение. Имя свойства может быть любой строкой, включая пустую строку. Значением свойства может быть любое значение JavaScript, кроме undefined.|js},
-    eng: "An object is a container of properties, where a property has a name and a value. A property name can be any string, including the empty string. A property value can be any JavaScript value except for undefined.",
-  },
-  {
-    rus: {js|Все объекты, созданные из литералов объектов, привязаны к Object.prototype, объект, который поставляется с JavaScript.|js},
-    eng: "All objects created from object literals are linked to Object.prototype, an object that comes standard with JavaScript.",
-  },
-  {
-    rus: {js|Когда вы создаете новый объект, вы можете выбрать объект, который должен быть его прототипом, но механизм, который предоставляет JavaScript для этого, грязный и сложный.|js},
-    eng: "When you make a new object, you can select the object that should be its prototype, but the mechanism that JavaScript provides to do this is messy and complex.",
-  },
-  {
-    rus: {js|Ссылка на прототип не меняется при обновлении объекта. Когда мы вносим изменения в объект, прототип объекта не трогается:|js},
-    eng: "The prototype link has no effect on updating. When we make changes to an object, the object's prototype is not touched.",
-  },
-  {
-    rus: {js|Простыми типами JavaScript являются числа, строки, логические значения (true и false), null и undefined. Все остальные значения являются объектами.|js},
-    eng: "The simple types of JavaScript are numbers, strings, booleans (true and false), null, and undefined. All other values are objects.",
-  },
-  {
-    rus: {js|Объекты передаются по ссылке. Они никогда не копируются.|js},
-    eng: "Objects are passed around by reference. They are never copied.",
-  },
-  {
-    rus: {js|Ссылка на прототип используется только для извлечения. Если мы пытаемся получить значение свойства из объекта, и если у объекта отсутствует имя свойства, JavaScript пытается получить значение свойства из объекта прототипа. Это называется делегированием.|js},
-    eng: "The prototype link is used only in retrieval. If we try to retrieve a property value from an object, and if the object lacks the property name, then JavaScript attempts to retrieve the property value from the prototype object. This is called delegation.",
-  },
-  {
-    rus: {js|Прототип отношения является динамическим отношением. Если мы добавим новое свойство в прототип, это свойство будет сразу видно во всех объектах, основанных на этом прототипе.|js},
-    eng: "The prototype relationship is a dynamic relationship. If we add a new property to a prototype, that property will immediately be visible in all of the objects that are based on that prototype.",
-  },
-  {
-    rus: {js|Следует использовать метод hasOwnProperty, который возвращает значение true, если объект имеет определенное свойство. Метод hasOwnProperty не смотрит на цепочку прототипов.|js},
-    eng: "You should use the hasOwnProperty method, which returns true if the object has a particular property. The hasOwnProperty method does not look at the prototype chain.",
-  },
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-];
-
-let oldDictionary1 = [
-  {
-    rus: {js|API-интерфейс браузера, объектная модель документа (DOM) - довольно ужасна, и JavaScript-это несправедливо обвинили. С DOM было бы больно работать на любом языке.|js},
-    eng: "The API of the browser, the Document Object Model (DOM) is quite awful, and JavaScript is unfairly blamed. The DOM would be painful to work with in any language.",
-  },
-  {
-    rus: {js|Модель DOM плохо определена и непоследовательно реализована.|js},
-    eng: "The DOM is poorly specified and inconsistently implemented.",
-  },
-  {
-    rus: {js|Если вы хороши в каком-то другом языке, и вы должны программировать в среде, которая поддерживает только JavaScript, то вы вынуждены использовать JavaScript, и это раздражает.|js},
-    eng: "If you are good in some other language and you have to program in an environment that only supports JavaScript, then you are forced to use JavaScript, and that is annoying.",
-  },
-  {
-    rus: {js|JavaScript построен на нескольких очень хороших идеях и ряда очень плохих. Очень хорошие идеи включают функции, свободную типизацию, динамические объекты и выразительную объектную буквальную нотацию.|js},
-    eng: "JavaScript is built on some very good ideas and a few very bad ones. The very good ideas include functions, loose typing, dynamic objects, and an expressive object literal notation.",
-  },
-  {
-    rus: {js|Но оказывается, что строгая типизация не устраняет необходимости тщательного тестирования.|js},
-    eng: "But it turns out that strong typing does not eliminate the need for careful testing.",
-  },
-  {
-    rus: {js|В своей работе я обнаружил, что ошибки, которые находит сильная проверка типов, не являются ошибками, о которых я беспокоюсь.|js},
-    eng: "I have found in my work that the sorts of errors that strong type checking finds are not the errors I worry about.",
-  },
-  {
-    rus: {js|Я нахожу потерю типизации освобождающей. Мне не нужно формировать сложные иерархии классов. И мне никогда не нужно бросать или бороться с системой типов, чтобы получить поведение, которое я хочу.|js},
-    eng: "I find loose typing to be liberating. I don't need to form complex class hierarchies. And I never have to cast or wrestle with the type system to get the behavior that I want.",
-  },
-  {
-    rus: {js|JavaScript зависит от глобальных переменных для компоновки. Все переменные верхнего уровня всех единиц компиляции объединяются в общее пространство имен, называемое глобальным объектом.|js},
-    eng: "JavaScript depends on global variables for linkage. All of the top-level variables of all compilation units are tossed together in a common namespace called the global object.",
-  },
-  {
-    rus: {js|Большинство зарезервированных слов в этом списке не используются в языке.|js},
-    eng: "Most of the RESERVED words in this list are not used in the language.",
-  },
-  {
-    rus: {js|Список зарезервированных слов не включает некоторые слова, которые должны были быть зарезервированы, но не были, такие как undefined, NaN и Infinity.|js},
-    eng: "The list of RESERVED words does not include some words that should have been reserved but were not, such as undefined, NaN, and Infinity.",
   },
 ];
 
