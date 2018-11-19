@@ -1,0 +1,17 @@
+The first thing I have understood is that the Development Team should consist of motivated individuals.
+The people you can trust to.
+The seconds:  The Development Team members must share Scrum values of openness, respect, transparency.
+You should respect PO and his decisions.
+It is important to help him or her to take right decisions, to increase product value and to get the job done.
+
+primarily, foremost, above all, mainly, in particular, most notably
+
+Scrum brings together business people and developers in one team.
+
+Statistics:  50% of the developed features will not be used by customers
+
+Iterations.  Short cycles
+
+Три роли. Пять событий.  Три артифакта.  Добавить свое "мясо".
+
+

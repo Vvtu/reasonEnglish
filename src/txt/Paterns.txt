@@ -1,0 +1,7 @@
+High order components
+Render props
+Single source of truth
+One-way data flow
+Singleton
+Dependency injection
+Every function passed via props is an “injection of dependency”. End every component that declares a prop for handling events or user interactions is observing “injection of control”.
