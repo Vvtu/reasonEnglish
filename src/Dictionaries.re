@@ -6,22 +6,7 @@ type wordPair = {
 type pairList = list(wordPair);
 
 let dictionary1 = [
-  {
-    rus: {js|Объект-это контейнер свойств, в котором свойство имеет имя и значение. Имя свойства может быть любой строкой, включая пустую строку. Значением свойства может быть любое значение JavaScript, кроме undefined.|js},
-    eng: "An object is a container of properties, where a property has a name and a value. A property name can be any string, including the empty string. A property value can be any JavaScript value except for undefined.",
-  },
-  {
-    rus: {js|Все объекты, созданные из литералов объектов, привязаны к Object.prototype, объект, который поставляется с JavaScript.|js},
-    eng: "All objects created from object literals are linked to Object.prototype, an object that comes standard with JavaScript.",
-  },
-  {
-    rus: {js|Когда вы создаете новый объект, вы можете выбрать объект, который должен быть его прототипом, но механизм, который предоставляет JavaScript для этого, грязный и сложный.|js},
-    eng: "When you make a new object, you can select the object that should be its prototype, but the mechanism that JavaScript provides to do this is messy and complex.",
-  },
-  {
-    rus: {js|Ссылка на прототип не меняется при обновлении объекта. Когда мы вносим изменения в объект, прототип объекта не трогается:|js},
-    eng: "The prototype link has no effect on updating. When we make changes to an object, the object's prototype is not touched.",
-  },
+
   {
     rus: {js|Простыми типами JavaScript являются числа, строки, логические значения (true и false), null и undefined. Все остальные значения являются объектами.|js},
     eng: "The simple types of JavaScript are numbers, strings, booleans (true and false), null, and undefined. All other values are objects.",
@@ -90,11 +75,23 @@ let dictionary1 = [
     rus: {js|Когда функция хранится как свойство объекта, мы называем это метод. При вызове метода его this привязывается к этому объекту.|js},
     eng: "When a function is stored as a property of an object, we call it a method. When a method is invoked, this is bound to that object.",
   },
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
+  {
+    rus: {js||js},
+    eng: "Function objects are linked to Function.prototype (which is itself linked to Object.prototype).",
+  },
+  {
+    rus: {js||js},
+    eng: "Every function is also created with two additional hidden properties: the function’s context and the code that implements the function’s behavior.",
+  },
+  {
+    rus: {js||js},
+    eng: "Every function object is also created with a prototype property. Its value is an object with a constructor property whose value is the function. This is distinct from the hidden link to Function.prototype.",
+  },
+  {
+    rus: {js||js},
+    eng: "A method can use this to access the object so that it can retrieve values from the object or modify the object. The binding of this to the object happens at invocation time.",
+  },
+  {rus: {js||js}, eng: "This very late binding makes functions that use this highly reusable. Methods that get their object context from this are called public methods."},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
@@ -196,6 +193,22 @@ let oldDictionary1 = [
   {
     rus: {js|Числа, строки и логические значения являются объектно-подобными в том, что у них есть методы, но они иммутабельны.|js},
     eng: "Numbers, strings, and booleans are object-like in that they have methods, but they are immutable.",
+  },
+    {
+    rus: {js|Объект-это контейнер свойств, в котором свойство имеет имя и значение. Имя свойства может быть любой строкой, включая пустую строку. Значением свойства может быть любое значение JavaScript, кроме undefined.|js},
+    eng: "An object is a container of properties, where a property has a name and a value. A property name can be any string, including the empty string. A property value can be any JavaScript value except for undefined.",
+  },
+  {
+    rus: {js|Все объекты, созданные из литералов объектов, привязаны к Object.prototype, объект, который поставляется с JavaScript.|js},
+    eng: "All objects created from object literals are linked to Object.prototype, an object that comes standard with JavaScript.",
+  },
+  {
+    rus: {js|Когда вы создаете новый объект, вы можете выбрать объект, который должен быть его прототипом, но механизм, который предоставляет JavaScript для этого, грязный и сложный.|js},
+    eng: "When you make a new object, you can select the object that should be its prototype, but the mechanism that JavaScript provides to do this is messy and complex.",
+  },
+  {
+    rus: {js|Ссылка на прототип не меняется при обновлении объекта. Когда мы вносим изменения в объект, прототип объекта не трогается:|js},
+    eng: "The prototype link has no effect on updating. When we make changes to an object, the object's prototype is not touched.",
   },
 ];
 
