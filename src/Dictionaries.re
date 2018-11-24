@@ -6,7 +6,6 @@ type wordPair = {
 type pairList = list(wordPair);
 
 let dictionary1 = [
-
   {
     rus: {js|Простыми типами JavaScript являются числа, строки, логические значения (true и false), null и undefined. Все остальные значения являются объектами.|js},
     eng: "The simple types of JavaScript are numbers, strings, booleans (true and false), null, and undefined. All other values are objects.",
@@ -91,7 +90,10 @@ let dictionary1 = [
     rus: {js||js},
     eng: "A method can use this to access the object so that it can retrieve values from the object or modify the object. The binding of this to the object happens at invocation time.",
   },
-  {rus: {js||js}, eng: "This very late binding makes functions that use this highly reusable. Methods that get their object context from this are called public methods."},
+  {
+    rus: {js||js},
+    eng: "This very late binding makes functions that use this highly reusable. Methods that get their object context from this are called public methods.",
+  },
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
@@ -194,7 +196,7 @@ let oldDictionary1 = [
     rus: {js|Числа, строки и логические значения являются объектно-подобными в том, что у них есть методы, но они иммутабельны.|js},
     eng: "Numbers, strings, and booleans are object-like in that they have methods, but they are immutable.",
   },
-    {
+  {
     rus: {js|Объект-это контейнер свойств, в котором свойство имеет имя и значение. Имя свойства может быть любой строкой, включая пустую строку. Значением свойства может быть любое значение JavaScript, кроме undefined.|js},
     eng: "An object is a container of properties, where a property has a name and a value. A property name can be any string, including the empty string. A property value can be any JavaScript value except for undefined.",
   },
@@ -609,6 +611,43 @@ let veryOldDictionary1 = [
 
 let dictionary2 = [
   {
+    rus: {js||js},
+    eng: "What kind of image would your company like to project?",
+  },
+  {
+    rus: {js||js},
+    eng: "I need more details to form an opinion about this new technology.",
+  },
+  {
+    rus: {js||js},
+    eng: "He was extremely arrogant while talking to his boss.",
+  },
+  {rus: {js||js}, eng: "She comes accros as a friendly person."},
+  {
+    rus: {js||js},
+    eng: "Smart appearance makes a favourable impression at an interview.",
+  },
+  {rus: {js||js}, eng: "Many people do not see politicians as trustworthy."},
+  {
+    rus: {js||js},
+    eng: "An ostentatious person behaves or looks in a way that is meant to impress.",
+  },
+  {
+    rus: {js||js},
+    eng: "I have always been cautious about giving people my phone number.",
+  },
+  {rus: {js||js}, eng: "They've built a reputation for reliable service."},
+  {
+    rus: {js||js},
+    eng: "It's essential to build a good relationship with your team.",
+  },
+  {rus: {js||js}, eng: ""},
+];
+
+let oldDictionary2 = [];
+
+let veryOldDictionary2 = [
+  {
     rus: {js|Variants в их многочисленных формах (полиморфный вариант, открытый вариант, GADT и др.), вероятно, являются фичей системы типов, такой как Reason.|js},
     eng: "Variants, in their many forms (polymorphic variant, open variant, GADT, etc.), are likely the feature of a type system such as Reason's.",
   },
@@ -656,9 +695,6 @@ let dictionary2 = [
     rus: {js|Вам следует использовать list из за легкого изменения размера, быстрого добавления (добавления во голову) и его быстрого разделения, эти операции иммутабельны, но эффективны!|js},
     eng: "You'd use list for its resizability, its fast prepend (adding at the head), and its fast split, all of which are immutable yet efficient!",
   },
-];
-
-let oldDictionary2 = [
   {
     rus: {js|Новые записи могут быть созданы из старых записей спред оператором (...). Оригинальная запись не мутируется.|js},
     eng: "New records can be created from old records with the ... spread operator. The original record isn't mutated.",
