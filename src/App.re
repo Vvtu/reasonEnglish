@@ -223,7 +223,7 @@ let make = _children => {
                 <div
                   className="appcode__icon_rotate_back"
                   onClick=(
-                    _ => send(SwitchEnglishShowing(currentCard.rus, shown))
+                    _ => send(SwitchEnglishShowing(currentCard.eng, shown))
                   )>
                   <Icon.Arrow
                     color={state.baseTextColor}
@@ -233,7 +233,7 @@ let make = _children => {
                 <div
                   className="appcode__icon_rotate"
                   onClick=(
-                    _ => send(SwitchEnglishShowing(currentCard.rus, shown))
+                    _ => send(SwitchEnglishShowing(currentCard.eng, shown))
                   )>
                   <Icon.Arrow
                     color={state.englishTextColor}
