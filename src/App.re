@@ -73,39 +73,39 @@ let make = _children => {
     | SpeechEnd => ReasonReact.Update({...state, appcodeIsSpeaking: false})
 
     | SpeakEnglish(text) =>
-    if (state.appcodeIsSpeaking) {
-      ReasonReact.NoUpdate
-                } else {
-      ReasonReact.UpdateWithSideEffects(
-        {...state, appcodeIsSpeaking: true},
-        (
-          self => {
-            let ut = SpeechSynthesis.Utterance.create("");
-            let ti =
-              Js.Global.setTimeout(
-                _ => self.send(SpeechEnd),
-                7000 /* in case of utterThis.onend failed */
-              );
-            let voiceIndex = MyLib.getVoiceIndex();
-            if (voiceIndex >= 0 && voiceIndex < Array.length(state.voices)) {
-              SpeechSynthesis.Utterance.set_voice(
+      if (state.appcodeIsSpeaking) {
+        ReasonReact.NoUpdate;
+      } else {
+        ReasonReact.UpdateWithSideEffects(
+          {...state, appcodeIsSpeaking: true},
+          (
+            self => {
+              let ut = SpeechSynthesis.Utterance.create("");
+              let ti =
+                Js.Global.setTimeout(
+                  _ => self.send(SpeechEnd),
+                  7000 /* in case of utterThis.onend failed */
+                );
+              let voiceIndex = MyLib.getVoiceIndex();
+              if (voiceIndex >= 0 && voiceIndex < Array.length(state.voices)) {
+                SpeechSynthesis.Utterance.set_voice(
+                  ut,
+                  state.voices[voiceIndex],
+                );
+              };
+              SpeechSynthesis.Utterance.on_end(
                 ut,
-                state.voices[voiceIndex],
+                _ => {
+                  self.send(SpeechEnd);
+                  Js.Global.clearTimeout(ti);
+                },
               );
-            };
-            SpeechSynthesis.Utterance.on_end(
-              ut,
-              _ => {
-                self.send(SpeechEnd);
-                Js.Global.clearTimeout(ti);
-              },
-            );
-            SpeechSynthesis.Utterance.set_text(ut, text);
-            SpeechSynthesis.speak(ut);
-          }
-        ),
-      )
-    }
+              SpeechSynthesis.Utterance.set_text(ut, text);
+              SpeechSynthesis.speak(ut);
+            }
+          ),
+        );
+      }
 
     | SwitchEnglishShowing(str, shown) =>
       let newShowEnglish = state.showEnglish != true;
@@ -185,7 +185,7 @@ let make = _children => {
         <div className="popup__full_screen_div_opacity" />
         <div className="popup__full_screen_div">
           <div className="popup__window popup__scroll appcode__eng_text_color">
-            (ReasonReact.string("That's all!. Click to restart."))
+            {ReasonReact.string("That's all!. Click to restart.")}
           </div>
         </div>
       </div>
@@ -208,17 +208,17 @@ let make = _children => {
                 _ => send(GotoPreviousCard(countAll - countRemain - 2))
               )>
               <Icon.Arrow
-                color=state.baseTextColor
+                color={state.baseTextColor}
                 height=Constants.iconSize
               />
             </div>
             <div onClick=(_ => send(ShowSettingsMenu))>
               <Icon.Settings
-                color=state.settingsColor
+                color={state.settingsColor}
                 height=Constants.iconSize
               />
             </div>
-            (
+            {
               state.showEnglish ?
                 <div
                   className="appcode__icon_rotate_back"
@@ -226,7 +226,7 @@ let make = _children => {
                     _ => send(SwitchEnglishShowing(currentCard.rus, shown))
                   )>
                   <Icon.Arrow
-                    color=state.baseTextColor
+                    color={state.baseTextColor}
                     height=Constants.iconSize
                   />
                 </div> :
@@ -236,30 +236,30 @@ let make = _children => {
                     _ => send(SwitchEnglishShowing(currentCard.rus, shown))
                   )>
                   <Icon.Arrow
-                    color=state.englishTextColor
+                    color={state.englishTextColor}
                     height=Constants.iconSize
                   />
                 </div>
-            )
+            }
             <div>
               <span onClick=(_ => send(GotoNextCard))>
-                (
+                {
                   ReasonReact.string(
                     string_of_int(countAll - countRemain)
                     ++ "/"
                     ++ string_of_int(countAll),
                   )
-                )
+                }
               </span>
               <span className="appcode__eng_text_color">
-                (ReasonReact.string("(" ++ string_of_int(shown) ++ ")"))
+                {ReasonReact.string("(" ++ string_of_int(shown) ++ ")")}
               </span>
             </div>
             <div
               className="appcode__icon_invert__horizontal"
               onClick=(_ => send(GotoNextCard))>
               <Icon.Arrow
-                color=state.baseTextColor
+                color={state.baseTextColor}
                 height=Constants.iconSize
               />
             </div>
@@ -268,10 +268,10 @@ let make = _children => {
         /* Russian field */
         <div
           className="appcode__russian"
-          onClick=(_ => send(SwitchEnglishShowing(currentCard.rus, shown)))>
-          <div className="appcode__center" key=currentCard.eng>
+          onClick=(_ => send(SwitchEnglishShowing(currentCard.eng, shown)))>
+          <div className="appcode__center" key={currentCard.eng}>
             <div className="appcode__scroll">
-              <div> (ReasonReact.string(currentCard.rus)) </div>
+              <div> {ReasonReact.string(currentCard.rus)} </div>
             </div>
           </div>
         </div>
@@ -279,24 +279,24 @@ let make = _children => {
         <div
           className="appcode__english"
           onClick=(_ => send(SpeakEnglish(currentCard.eng)))>
-          (
+          {
             state.showEnglish ?
               <div className="appcode__center">
                 <div className="appcode__scroll">
                   <div
-                    className=(
+                    className={
                       "appcode__eng_text_color"
                       ++ (state.appcodeIsSpeaking ? " appcode__speaking" : "")
-                    )>
-                    <div> (ReasonReact.string(currentCard.eng)) </div>
+                    }>
+                    <div> {ReasonReact.string(currentCard.eng)} </div>
                   </div>
                 </div>
               </div> :
               <div className="appcode__center" />
-          )
+          }
         </div>
         /* ************** */
-        (
+        {
           state.showSettings ?
             <PopUpSettingsMenu
               handleClosePopupClicked=(_ => send(HideSettingsMenu))
@@ -307,20 +307,20 @@ let make = _children => {
                 }
               )
               handleRestart=(_ => send(Restart))
-              baseTextColor=state.baseTextColor
-              dangerColor=state.dangerColor
+              baseTextColor={state.baseTextColor}
+              dangerColor={state.dangerColor}
             /> :
             <div />
-        )
-        (
+        }
+        {
           state.showVoiceMenu ?
             <PopUpVoiceMenu
               handleClosePopupClicked=(_ => send(HideVoiceMenu))
-              baseTextColor=state.baseTextColor
-              voices=state.voices
+              baseTextColor={state.baseTextColor}
+              voices={state.voices}
             /> :
             <div />
-        )
+        }
       </div>;
     };
   },
