@@ -7,42 +7,6 @@ type pairList = list(wordPair);
 
 let dictionary1 = [
   {
-    rus: {js|Простыми типами JavaScript являются числа, строки, логические значения (true и false), null и undefined. Все остальные значения являются объектами.|js},
-    eng: "The simple types of JavaScript are numbers, strings, booleans (true and false), null, and undefined. All other values are objects.",
-  },
-  {
-    rus: {js|Объекты передаются по ссылке. Они никогда не копируются.|js},
-    eng: "Objects are passed around by reference. They are never copied.",
-  },
-  {
-    rus: {js|Ссылка на прототип используется только для извлечения. Если мы пытаемся получить значение свойства из объекта, и если у объекта отсутствует имя свойства, JavaScript пытается получить значение свойства из объекта прототипа. Это называется делегированием.|js},
-    eng: "The prototype link is used only in retrieval. If we try to retrieve a property value from an object, and if the object lacks the property name, then JavaScript attempts to retrieve the property value from the prototype object. This is called delegation.",
-  },
-  {
-    rus: {js|Прототип отношения является динамическим отношением. Если мы добавим новое свойство в прототип, это свойство будет сразу видно во всех объектах, основанных на этом прототипе.|js},
-    eng: "The prototype relationship is a dynamic relationship. If we add a new property to a prototype, that property will immediately be visible in all of the objects that are based on that prototype.",
-  },
-  {
-    rus: {js|Следует использовать метод hasOwnProperty, который возвращает значение true, если объект имеет определенное свойство. Метод hasOwnProperty не смотрит на цепочку прототипов.|js},
-    eng: "You should use the hasOwnProperty method, which returns true if the object has a particular property. The hasOwnProperty method does not look at the prototype chain.",
-  },
-  {
-    rus: {js|Литерал функции может появляться везде, где может появляться выражение.|js},
-    eng: "A function literal can appear anywhere that an expression can appear.",
-  },
-  {
-    rus: {js|Кроме того, поскольку функции являются объектами, функции могут иметь методы.|js},
-    eng: "Also, since functions are objects, functions can have methods.",
-  },
-  {
-    rus: {js|Особенность функции заключается в том, что они могут быть вызваны.|js},
-    eng: "The thing that is special about functions is that they can be invoked.",
-  },
-  {
-    rus: {js|Внутренняя функция также имеет доступ к параметрам и переменным функций, в которые она вложена.|js},
-    eng: "An inner function also enjoys access to the parameters and variables of the functions it is nested within.",
-  },
-  {
     rus: {js|Объект function, созданный литералом функции, содержит ссылку на этот внешний контекст. Это называется замыканием. Это источник огромной выразительной силы.|js},
     eng: "The function object created by a function literal contains a link to that outer context. This is called closure. This is the source of enormous expressive power.",
   },
@@ -211,6 +175,42 @@ let oldDictionary1 = [
   {
     rus: {js|Ссылка на прототип не меняется при обновлении объекта. Когда мы вносим изменения в объект, прототип объекта не трогается:|js},
     eng: "The prototype link has no effect on updating. When we make changes to an object, the object's prototype is not touched.",
+  },
+  {
+    rus: {js|Простыми типами JavaScript являются числа, строки, логические значения (true и false), null и undefined. Все остальные значения являются объектами.|js},
+    eng: "The simple types of JavaScript are numbers, strings, booleans (true and false), null, and undefined. All other values are objects.",
+  },
+  {
+    rus: {js|Объекты передаются по ссылке. Они никогда не копируются.|js},
+    eng: "Objects are passed around by reference. They are never copied.",
+  },
+  {
+    rus: {js|Ссылка на прототип используется только для извлечения. Если мы пытаемся получить значение свойства из объекта, и если у объекта отсутствует имя свойства, JavaScript пытается получить значение свойства из объекта прототипа. Это называется делегированием.|js},
+    eng: "The prototype link is used only in retrieval. If we try to retrieve a property value from an object, and if the object lacks the property name, then JavaScript attempts to retrieve the property value from the prototype object. This is called delegation.",
+  },
+  {
+    rus: {js|Прототип отношения является динамическим отношением. Если мы добавим новое свойство в прототип, это свойство будет сразу видно во всех объектах, основанных на этом прототипе.|js},
+    eng: "The prototype relationship is a dynamic relationship. If we add a new property to a prototype, that property will immediately be visible in all of the objects that are based on that prototype.",
+  },
+  {
+    rus: {js|Следует использовать метод hasOwnProperty, который возвращает значение true, если объект имеет определенное свойство. Метод hasOwnProperty не смотрит на цепочку прототипов.|js},
+    eng: "You should use the hasOwnProperty method, which returns true if the object has a particular property. The hasOwnProperty method does not look at the prototype chain.",
+  },
+  {
+    rus: {js|Литерал функции может появляться везде, где может появляться выражение.|js},
+    eng: "A function literal can appear anywhere that an expression can appear.",
+  },
+  {
+    rus: {js|Кроме того, поскольку функции являются объектами, функции могут иметь методы.|js},
+    eng: "Also, since functions are objects, functions can have methods.",
+  },
+  {
+    rus: {js|Особенность функции заключается в том, что они могут быть вызваны.|js},
+    eng: "The thing that is special about functions is that they can be invoked.",
+  },
+  {
+    rus: {js|Внутренняя функция также имеет доступ к параметрам и переменным функций, в которые она вложена.|js},
+    eng: "An inner function also enjoys access to the parameters and variables of the functions it is nested within.",
   },
 ];
 
@@ -611,36 +611,46 @@ let veryOldDictionary1 = [
 
 let dictionary2 = [
   {
-    rus: {js||js},
+    rus: {js|Какой образ хотела бы произвести ваша компания?|js},
     eng: "What kind of image would your company like to project?",
   },
   {
-    rus: {js||js},
+    rus: {js|Мне нужно больше деталей, чтобы составить мнение об этой новой технологии.|js},
     eng: "I need more details to form an opinion about this new technology.",
   },
   {
-    rus: {js||js},
+    rus: {js|Он был очень высокомерен, разговаривая со своим боссом.|js},
     eng: "He was extremely arrogant while talking to his boss.",
   },
-  {rus: {js||js}, eng: "She comes accros as a friendly person."},
   {
-    rus: {js||js},
+    rus: {js|Она производить впечатление дружелюбного человека|js},
+    eng: "She comes accros as a friendly person."
+   },
+  {
+    rus: {js|Умная внешность производит благоприятное впечатление на собеседовании.|js},
     eng: "Smart appearance makes a favourable impression at an interview.",
   },
-  {rus: {js||js}, eng: "Many people do not see politicians as trustworthy."},
   {
-    rus: {js||js},
+    rus: {js|Показной человек ведет себя или выглядит так, чтобы произвести впечатление|js},
     eng: "An ostentatious person behaves or looks in a way that is meant to impress.",
   },
   {
-    rus: {js||js},
+    rus: {js|Многие не считают политиков заслуживающими доверия.|js},
+    eng: "Many people do not see politicians as trustworthy."
+  },
+  {
+    rus: {js|Я всегда был осторожен, давая людям свой номер телефона.|js},
     eng: "I have always been cautious about giving people my phone number.",
   },
-  {rus: {js||js}, eng: "They've built a reputation for reliable service."},
   {
-    rus: {js||js},
+    rus: {js|Они построили репутацию надежного сервиса.|js},
+    eng: "They've built a reputation for reliable service."
+   },
+  {
+    rus: {js|Важно построить хорошие отношения с вашей командой|js},
     eng: "It's essential to build a good relationship with your team.",
   },
+
   {rus: {js||js}, eng: ""},
 ];
 
