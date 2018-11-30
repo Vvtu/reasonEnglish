@@ -7,57 +7,47 @@ type pairList = list(wordPair);
 
 let dictionary1 = [
   {
-    rus: {js|Объект function, созданный литералом функции, содержит ссылку на этот внешний контекст. Это называется замыканием. Это источник огромной выразительной силы.|js},
-    eng: "The function object created by a function literal contains a link to that outer context. This is called closure. This is the source of enormous expressive power.",
-  },
-  {
-    rus: {js|Вызов функции приостанавливает выполнение текущей функции, передавая управление и параметры новой функции. Помимо объявленных параметров, каждая функция получает два дополнительных параметра: this и arguments.|js},
-    eng: "Invoking a function suspends the execution of the current function, passing control and parameters to the new function. In addition to the declared parameters, every function receives two additional parameters: this and arguments.",
-  },
-  {
-    rus: {js|Этот параметр очень важен в объектно-ориентированном программировании, а его значение определяется шаблоном вызова.|js},
-    eng: "The this parameter is very important in object oriented programming, and its value is determined by the invocation pattern.",
-  },
-  {
-    rus: {js|В JavaScript существует четыре шаблона вызова: шаблон вызова метода, шаблон вызова функции, шаблон вызова конструктора и шаблон вызова apply. Шаблоны отличаются тем, как инициализируется бонус параметр this.|js},
-    eng: "There are four patterns of invocation in JavaScript: the method invocation pattern, the function invocation pattern, the constructor invocation pattern, and the apply invocation pattern. The patterns differ in how the bonus parameter this is initialized.",
-  },
-  {
-    rus: {js|Оператор вызова-это пара скобок, которая следует за любым выражением, создающим значение функции.|js},
-    eng: "The invocation operator is a pair of parentheses that follow any expression that produces a function value.",
-  },
-  {
-    rus: {js|Если число аргументов и число параметров не совпадают, ошибка выполнения отсутствует.|js},
-    eng: "There is no runtime error when the number of arguments and the number of parameters do not match.",
-  },
-  {
-    rus: {js|Если значений аргументов слишком много, дополнительные значения аргументов будут проигнорированы. Если значений аргументов слишком мало, то в качестве пропущенных значений подставляется undefined.|js},
-    eng: "If there are too many argument values, the extra argument values will be ignored. If there are too few argument values, the undefined value will be substituted for the missing values.",
-  },
-  {
-    rus: {js|Когда функция хранится как свойство объекта, мы называем это метод. При вызове метода его this привязывается к этому объекту.|js},
-    eng: "When a function is stored as a property of an object, we call it a method. When a method is invoked, this is bound to that object.",
-  },
-  {
-    rus: {js||js},
+    rus: {js|Функции связаны с Function.prototype (который сам связан с Object.prototype.)|js},
     eng: "Function objects are linked to Function.prototype (which is itself linked to Object.prototype).",
   },
   {
-    rus: {js||js},
+    rus: {js|Каждая функция также создается с двумя дополнительными скрытыми свойствами: контекстом функции и кодом, реализующим поведение функции.|js},
     eng: "Every function is also created with two additional hidden properties: the function’s context and the code that implements the function’s behavior.",
   },
   {
-    rus: {js||js},
+    rus: {js|Каждый объект функции также создается со свойством прототипа. Его значением является объект со свойством конструктора, значением которого является функция. Это отличается от скрытой ссылки на функцию.прототип.|js},
     eng: "Every function object is also created with a prototype property. Its value is an object with a constructor property whose value is the function. This is distinct from the hidden link to Function.prototype.",
   },
   {
-    rus: {js||js},
+    rus: {js|Метод может использовать this для доступа к объекту, чтобы получить значения из объекта или изменить объект. Привязка this к объекту происходит во время вызова.|js},
     eng: "A method can use this to access the object so that it can retrieve values from the object or modify the object. The binding of this to the object happens at invocation time.",
   },
   {
-    rus: {js||js},
+    rus: {js|Это очень позднее связывание делает функции, которые используют this очень многоразовым. Методы, которые получают контекст объекта из this, называются открытыми методами.|js},
     eng: "This very late binding makes functions that use this highly reusable. Methods that get their object context from this are called public methods.",
   },
+  {
+    rus: {js|Если функция не является свойством объекта, то она вызывается как функция и this привязывается к глобальному объекту.|js},
+    eng: "When a function is not the property of an object, then it is invoked as a function and THIS is bound to the global object.",
+  },
+  {
+    rus: {js|Это была ошибка в дизайне языка. Если бы язык был разработан правильно, то при вызове внутренней функции она все равно была бы привязана к переменной THIS внешней функции.|js},
+    eng: "This was a mistake in the design of the language. Had the language been designed correctly, when the inner function is invoked, THIS would still be bound to the THIS variable of the outer function.",
+  },
+  {
+    rus: {js|Если метод определяет переменную и присваивает ей значение THIS, то внутренняя функция будет иметь к ней доступ через эту переменную.|js},
+    eng: "If the method defines a variable and assigns it the value of THIS, the inner function will have access to THIS through that variable.",
+  },
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
@@ -211,6 +201,38 @@ let oldDictionary1 = [
   {
     rus: {js|Внутренняя функция также имеет доступ к параметрам и переменным функций, в которые она вложена.|js},
     eng: "An inner function also enjoys access to the parameters and variables of the functions it is nested within.",
+  },
+  {
+    rus: {js|Объект function, созданный литералом функции, содержит ссылку на этот внешний контекст. Это называется замыканием. Это источник огромной выразительной силы.|js},
+    eng: "The function object created by a function literal contains a link to that outer context. This is called closure. This is the source of enormous expressive power.",
+  },
+  {
+    rus: {js|Вызов функции приостанавливает выполнение текущей функции, передавая управление и параметры новой функции. Помимо объявленных параметров, каждая функция получает два дополнительных параметра: this и arguments.|js},
+    eng: "Invoking a function suspends the execution of the current function, passing control and parameters to the new function. In addition to the declared parameters, every function receives two additional parameters: this and arguments.",
+  },
+  {
+    rus: {js|Этот параметр очень важен в объектно-ориентированном программировании, а его значение определяется шаблоном вызова.|js},
+    eng: "The this parameter is very important in object oriented programming, and its value is determined by the invocation pattern.",
+  },
+  {
+    rus: {js|В JavaScript существует четыре шаблона вызова: шаблон вызова метода, шаблон вызова функции, шаблон вызова конструктора и шаблон вызова apply. Шаблоны отличаются тем, как инициализируется бонус параметр this.|js},
+    eng: "There are four patterns of invocation in JavaScript: the method invocation pattern, the function invocation pattern, the constructor invocation pattern, and the apply invocation pattern. The patterns differ in how the bonus parameter this is initialized.",
+  },
+  {
+    rus: {js|Оператор вызова-это пара скобок, которая следует за любым выражением, создающим значение функции.|js},
+    eng: "The invocation operator is a pair of parentheses that follow any expression that produces a function value.",
+  },
+  {
+    rus: {js|Если число аргументов и число параметров не совпадают, ошибка выполнения отсутствует.|js},
+    eng: "There is no runtime error when the number of arguments and the number of parameters do not match.",
+  },
+  {
+    rus: {js|Если значений аргументов слишком много, дополнительные значения аргументов будут проигнорированы. Если значений аргументов слишком мало, то в качестве пропущенных значений подставляется undefined.|js},
+    eng: "If there are too many argument values, the extra argument values will be ignored. If there are too few argument values, the undefined value will be substituted for the missing values.",
+  },
+  {
+    rus: {js|Когда функция хранится как свойство объекта, мы называем это метод. При вызове метода его this привязывается к этому объекту.|js},
+    eng: "When a function is stored as a property of an object, we call it a method. When a method is invoked, this is bound to that object.",
   },
 ];
 
@@ -624,8 +646,8 @@ let dictionary2 = [
   },
   {
     rus: {js|Она производить впечатление дружелюбного человека|js},
-    eng: "She comes accros as a friendly person."
-   },
+    eng: "She comes accros as a friendly person.",
+  },
   {
     rus: {js|Умная внешность производит благоприятное впечатление на собеседовании.|js},
     eng: "Smart appearance makes a favourable impression at an interview.",
@@ -636,7 +658,7 @@ let dictionary2 = [
   },
   {
     rus: {js|Многие не считают политиков заслуживающими доверия.|js},
-    eng: "Many people do not see politicians as trustworthy."
+    eng: "Many people do not see politicians as trustworthy.",
   },
   {
     rus: {js|Я всегда был осторожен, давая людям свой номер телефона.|js},
@@ -644,13 +666,12 @@ let dictionary2 = [
   },
   {
     rus: {js|Они построили репутацию надежного сервиса.|js},
-    eng: "They've built a reputation for reliable service."
-   },
+    eng: "They've built a reputation for reliable service.",
+  },
   {
     rus: {js|Важно построить хорошие отношения с вашей командой|js},
     eng: "It's essential to build a good relationship with your team.",
   },
-
   {rus: {js||js}, eng: ""},
 ];
 
