@@ -632,6 +632,32 @@ let veryOldDictionary1 = [
 ];
 
 let dictionary2 = [
+
+
+  {rus: "", eng: "Does Tuesday work for you?"},
+  {rus: "", eng: "Can we arrange a meeting to discuss any problems that might arise?"},
+  {rus: "", eng: "I hope we can book a call to iron out any last-minute problems."},
+  {rus: "", eng: "Use present simple to talk about routines. I usually arrive at work at about 8:30."},
+  {rus: "", eng: "Use present simple to talk about things we think about as permanent. I work for IBM."},
+  {rus: "", eng: "Use present simple to talk about states. Paris lies on the River Seine."},
+  {rus: "", eng: "Use present simple to talk about timetabled events in the future. The next train leaves at 11.15."},
+  {rus: "", eng: "Use present simple to talk about future time introduced by when, as soon, as, after, if, etc. When I see Margaret tomorrow, I'll give you a ring."},
+  {rus: "", eng: "Common phrases used with present simple are: as a rule, generally (speaking), on the whole, one (a week / in a while), every (winter), most of the time."},
+
+  {rus: "", eng: "Use present continuous to talk about an action happening at the moment of speaking. Mr. Takashi is waiting for you in Reception."},
+  {rus: "", eng: "Use present continuous to talk about a project that is ongoing and unfinished. I am writing a report on the takeover, and I should finish in a few days."},
+  {rus: "", eng: "Use present continuous to talk about we think as temporary. I am staying with my brother while my house is being redecorated."},
+  {rus: "", eng: "Use present continuous to talk about a gradual change or development. Because of global warming, sea levels are rising slowly."},
+  {rus: "", eng: "Use present continuous to talk about to talk about an appointment or arrangement with future reference. I am seeing Mrs. Langer next Tuesday."},
+  {rus: "", eng: "Common phrases used with present continuous are: currently, for the moment, at the moment, for the time being, tomorrow (afternoon), right now."},
+
+  {rus: "", eng: ""},
+  {rus: "", eng: ""},
+
+];
+
+
+let oldDictionary2 = [
   {
     rus: {js|Какой образ хотела бы произвести ваша компания?|js},
     eng: "What kind of image would your company like to project?",
@@ -672,10 +698,24 @@ let dictionary2 = [
     rus: {js|Важно построить хорошие отношения с вашей командой|js},
     eng: "It's essential to build a good relationship with your team.",
   },
-  {rus: {js||js}, eng: ""},
+      {rus: "(=contact information)", eng: "I was given your details by my colleague."},
+  {rus: "(calling about)", eng: "I'm calling about the email I sent you."},
+  {rus: "(=wanted to ask)", eng: "I wondered if you'd had time to look through the portfolio I sent."},
+  {rus: "(interested in)", eng: "I wanted to see if you're still interested in our proposal."},
+  {rus: "(=answering)", eng: "Thanks for responding so quickly."},
+  {rus: "(=get together)", eng: "I suggest we meet to discuss things further."},
+  {rus: "(=any option works for me)", eng: "Fine, whatever's best for you."},
+  {rus: "(=the date and time might be changed)", eng: "Let's say, provisionally, Wednesday the 15th at 11 o'clock."},
+  {rus: "(=say that our meeting will take place)", eng: "I'll get my assistant to call you later today to confirm."},
+  {rus: "(=the way to office)", eng: "Can you tell me how I get to your office?"},
+  {rus: "(=What option do you recommend?)", eng: "Is it best by taxi or public transport?"},
+  {rus: "(=instructions)", eng: "I'll email you a map and directions from your hotel."},
+  {rus: "takes minutes", eng: "It only takes 20 minutes to get from the office to the station"},
+  {rus: "(take)", eng: "How long's the meeting? Will I have time to catch the train at 5?"},
+  {rus: "(=inform me)", eng: "Let me know if you need a taxi."},
 ];
 
-let oldDictionary2 = [];
+
 
 let veryOldDictionary2 = [
   {
