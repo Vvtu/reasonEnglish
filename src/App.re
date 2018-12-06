@@ -100,7 +100,20 @@ let make = _children => {
                   Js.Global.clearTimeout(ti);
                 },
               );
-              SpeechSynthesis.Utterance.set_text(ut, text);
+              let regex = [%re "/\/\//"];
+              let splitedList0 = Js.String.splitByRe(regex, text);
+
+              let splitedList1 =
+                Js.Array.mapi(
+                  (a, index) =>
+                    Int32.(rem(of_int(index), of_int(2)) === of_int(0)) ?
+                      a : "",
+                  splitedList0,
+                );
+
+              let textWithoutComments = Js.Array.joinWith("", splitedList1);
+
+              SpeechSynthesis.Utterance.set_text(ut, textWithoutComments);
               SpeechSynthesis.speak(ut);
             }
           ),
