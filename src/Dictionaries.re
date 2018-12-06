@@ -632,65 +632,65 @@ let veryOldDictionary1 = [
 ];
 
 let dictionary2 = [
-  {rus: "", eng: "Does Tuesday work for you?"},
-  {
-    rus: "",
-    eng: "Can we arrange a meeting to discuss any problems that might arise?",
-  },
-  {
-    rus: "",
-    eng: "I hope we can book a call to iron out any last-minute problems.",
-  },
-  {
-    rus: "",
-    eng: "I usually arrive at work at about 8:30. // Use present simple to talk about routines.",
-  },
-  {
-    rus: "",
-    eng: " I work for IBM. // Use present simple to talk about things we think about as permanent.",
-  },
-  {
-    rus: "",
-    eng: "Paris lies on the River Seine. // Use present simple to talk about states.",
-  },
-  {
-    rus: "",
-    eng: "The next train leaves at 11.15. // Use present simple to talk about timetabled events in the future.",
-  },
-  {
-    rus: "",
-    eng: "When I see Margaret tomorrow, I'll give you a ring. // Use present simple to talk about future time introduced by when, as soon, as, after, if, etc.",
-  },
-  {
-    rus: "",
-    eng: "Common phrases used with present simple are: as a rule, generally (speaking), on the whole, one (a week / in a while), every (winter), most of the time.",
-  },
-  {
-    rus: "",
-    eng: "Mr. Takashi is waiting for you in Reception. // Use present continuous to talk about an action happening at the moment of speaking.",
-  },
-  {
-    rus: "",
-    eng: "I am writing a report on the takeover, and I should finish in a few days. // Use present continuous to talk about a project that is ongoing and unfinished.",
-  },
-  {
-    rus: "",
-    eng: "I am staying with my brother while my house is being redecorated. // Use present continuous to talk about we think as temporary. ",
-  },
-  {
-    rus: "",
-    eng: "Because of global warming, sea levels are rising slowly. // Use present continuous to talk about a gradual change or development.",
-  },
-  {
-    rus: "",
-    eng: "I am seeing Mrs. Langer next Tuesday. // Use present continuous to talk about to talk about an appointment or arrangement with future reference.",
-  },
-  {
-    rus: "",
-    eng: "Common phrases used with present continuous are: currently, for the moment, at the moment, for the time being, tomorrow (afternoon), right now.",
-  },
-  {rus: "", eng: ""},
-  {rus: "", eng: ""},
+  {rus: {js|CEO выразил признательность за всю нашу тяжелую работу. // (=сказал "спасибо")"|js},
+  eng: "The CEO expressed appreciation of all our hard work. // (=said 'thank you')"},
+  {rus: {js|В нашей компании внедрена новая система мотивации для поощрения эффективных сотрудников. // (=мотивация )"|js},
+  eng: "A new incentive scheme was introduced in our company to reward efficient employees. // (=motivation scheme)"},
+  {rus: {js|Служебный автомобиль, медицинская страховка и бесплатные обеды-это льготы. // (=выгоды)|js},
+  eng: "A company car, medical insurance and free lunches are perks. // (=benefits)"},
+  {rus: {js|Они заслуживают признания за отличную работу, которую они делают. // (=похвала и вознаграждение за их работу)|js},
+  eng: "They deserve recognition for the great job they are doing. // (=praise and reward for their work)"},
+  {rus: {js|В декабре мы обычно получаем ежегодный бонус. // (=раз в год)|js},
+  eng: "In December we usually receive an annual bonus. // (=paid once a year)"},
+  {rus: {js|Я получаю много удовлетворения от помощи людям. // (=чувство счастья от того, что вы делаете).|js},
+  eng: "I get a lot of fulfilment from helping people. // (=a feeling of being happy with what you are doing)."},
+  {rus: {js|Сотрудники хотят большей безопасности труда. // (=нет опасности потерять работу)|js},
+  eng: "Employees want greater job security. // (=not being in danger of losing their jobs)"},
+  {rus: {js|Я работаю по гибкому графику, что означает, что мне не нужно начинать работу рано утром.|js},
+  eng: "I work flexible hours, which means I don't have to start work early in the morning."},
+  {rus: {js|Ваше достижение-это что-то важное, что вам удается сделать своими силами.|js},
+  eng: "Your achievement is something important that you succeed in doing by your own efforts."},
+  {rus: {js|Положительные отзывы и похвалы очень важны, они многое делают для удовлетворения работой. // (=слова официального утверждения)|js},
+  eng: "Positive feedback and praise are very important, they do a lot for job satisfaction. // (=words of approval)"},
+  {rus: {js|Приятно быть признанным и признанным за мои достижения.|js},
+  eng: "It's nice to be acknowledged and recognized for my achievements."},
+  {rus: {js|Мы улучшили производительность по всей системе. // (=насколько хорошо работает система)|js},
+  eng: "We've improved performance throughout the system. // (=how well the system works)"},
+  {rus: {js|Самые успешные сотрудники были вознаграждены недельным круизом. // (=присуждается приз)|js},
+  eng: "The most successful employees were rewarded with a one-week cruise. // (=given a prize)"},
+  {rus: {js|Выпускники ИТ имеют много возможностей трудоустройства. // (=люди, имеющие высшее образование в области ИТ)|js},
+  eng: "IT graduates have a lot of job opportunities. // (=people who have a university degree in IT)"},
+  {rus: {js|В начале вашей карьеры очень важно получить практический опыт работы. // (=опыт, полученный в результате выполнения работы, а не учебы)|js}, eng: "At the beginning of your career it's really important to get some hands-on work experience. // (=experience gained from doing a job rather than studying)"},
+  {rus: {js|Ненавижу выполнять черную работу. // (=работа скучная, не важная и не требующая навыков)|js},
+  eng: "I hate doing menial tasks. // (=work that is boring, not important and doesn't require any skills)"},
+  {rus: {js|Он много работает, пытается подняться по карьерной лестнице. // (=построить успешную карьеру)|js},
+  eng: "He's working hard, trying to climb the career ladder. // (=build a successful career)"},
+  {rus: {js|Когда я учился в университете, я два месяца проходил стажировку в Google. // (=временная работа для студентов, обычно неоплачиваемая)|js},
+  eng: "When I was at university, I did an internship with Google for two months. // (=a temporary job for students, usually unpaid)"},
+  {rus: {js|Это обучение занимает много времени, но оно принесет вам пользу в долгосрочной перспективе. // (=дать вам преимущество, помочь)|js},
+  eng: "This training takes a lot of time, but it will benefit you in the long run. // (=give you an advantage, help you)"},
+  {rus: {js|Компании ценят самомотивированных сотрудников. // (=иметь личную заинтересованность в хорошем выполнении своей работы)|js},
+  eng: "Companies value employees who are self-motivated. // (=have a personal interest in doing their work well)"},
+  {rus: {js|Мы собираемся провести конкурс для сотрудников, и победитель получит денежное вознаграждение. // (=немного денег в качестве приза)|js},
+  eng: "We're going to hold a competition for staff and the winner will get a cash reward. // (=some money as a prize)"},
+  {rus: {js|Он получил рекомендацию, полную похвалы от своего предыдущего работодателя. // (=информация о его способностях и квалификации)|js},
+  eng: "He got a reference full of praise from his previous employer. // (=information about his abilities and qualifications)"},
+  {rus: {js|Ваши навыки общения могут иметь большое значение на собеседовании // (=имеют хороший эффект).|js},
+  eng: "Your communication skills could make all the difference at a job interview // (=have a good effect)."},
+
+
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
 ];
 
 let oldDictionary2 = [
@@ -782,6 +782,63 @@ let oldDictionary2 = [
     eng: "How long's the meeting? Will I have time to catch the train at 5?",
   },
   {rus: "(=inform me)", eng: "Let me know if you need a taxi."},
+  {rus: {js||js}, eng: "Does Tuesday work for you?"},
+  {
+    rus: {js||js},
+    eng: "Can we arrange a meeting to discuss any problems that might arise?",
+  },
+  {
+    rus: {js||js},
+    eng: "I hope we can book a call to iron out any last-minute problems.",
+  },
+  {
+    rus: {js||js},
+    eng: "I usually arrive at work at about 8:30. // Use present simple to talk about routines.",
+  },
+  {
+    rus: {js||js},
+    eng: " I work for IBM. // Use present simple to talk about things we think about as permanent.",
+  },
+  {
+    rus: {js||js},
+    eng: "Paris lies on the River Seine. // Use present simple to talk about states.",
+  },
+  {
+    rus: {js||js},
+    eng: "The next train leaves at 11.15. // Use present simple to talk about timetabled events in the future.",
+  },
+  {
+    rus: {js||js},
+    eng: "When I see Margaret tomorrow, I'll give you a ring. // Use present simple to talk about future time introduced by when, as soon, as, after, if, etc.",
+  },
+  {
+    rus: {js||js},
+    eng: "Common phrases used with present simple are: as a rule, generally (speaking), on the whole, one (a week / in a while), every (winter), most of the time.",
+  },
+  {
+    rus: {js||js},
+    eng: "Mr. Takashi is waiting for you in Reception. // Use present continuous to talk about an action happening at the moment of speaking.",
+  },
+  {
+    rus: {js||js},
+    eng: "I am writing a report on the takeover, and I should finish in a few days. // Use present continuous to talk about a project that is ongoing and unfinished.",
+  },
+  {
+    rus: {js||js},
+    eng: "I am staying with my brother while my house is being redecorated. // Use present continuous to talk about we think as temporary. ",
+  },
+  {
+    rus: {js||js},
+    eng: "Because of global warming, sea levels are rising slowly. // Use present continuous to talk about a gradual change or development.",
+  },
+  {
+    rus: {js||js},
+    eng: "I am seeing Mrs. Langer next Tuesday. // Use present continuous to talk about an appointment or arrangement with future reference.",
+  },
+  {
+    rus: {js||js},
+    eng: "Common phrases used with present continuous are: currently, for the moment, at the moment, for the time being, tomorrow (afternoon), right now.",
+  },
 ];
 
 let veryOldDictionary2 = [
