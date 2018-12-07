@@ -935,11 +935,11 @@ let veryOldDictionary2 = [
     eng: "The truth is that most of the times in your app, your data's shape is actually fixed, and if it's not, it can potentially be better represented as a combination of variant + record instead.",
   },
   {
-    rus: {js|��апись, так как ее поля фиксированы, компилируется в массив с доступом к индексу массива вместо JS объекта (попробуйте в playground!)|js},
+    rus: {js|Запись, так как ее поля фиксированы, компилируется в массив с доступом к индексу массива вместо JS объекта (попробуйте в playground!)|js},
     eng: "Record, since its fields are fixed, is compiled to an array with array index accesses instead of JS object (try it in the playground!).",
   },
   {
-    rus: {js|В native запись компилируется в основную область памяти, где доступ к полю-это только один пои��к поля + один фактический доступ, ака 2 инструкции по сборке.|js},
+    rus: {js|В native запись компилируется в основную область памяти, где доступ к полю-это только один поиск поля + один фактический доступ, ака 2 инструкции по сборке.|js},
     eng: "On native, Record compiles to basically a region of memory where a field access is just one field lookup + one actual access, aka 2 assembly instructions.",
   },
   {
