@@ -7,37 +7,55 @@ type pairList = list(wordPair);
 
 let dictionary1 = [
   {
-    rus: {js|Функции связаны с Function.prototype (который сам связан с Object.prototype.)|js},
-    eng: "Function objects are linked to Function.prototype (which is itself linked to Object.prototype).",
+    rus: {js|функциональный литерал состоит из четырех частей. Первая часть - зарезервированное слово 'funciton'. Необязательная вторая часть-это имя функции.|js},
+    eng: "A function literal has four parts. The first part is the reserved word function. The optional second part is the function’s name.",
   },
   {
-    rus: {js|Каждая функция также создается с двумя дополнительными скрытыми свойствами: контекстом функции и кодом, реализующим поведение функции.|js},
-    eng: "Every function is also created with two additional hidden properties: the function’s context and the code that implements the function’s behavior.",
+    rus: {js|Функция может использовать свое имя для рекурсивного вызова. Это имя также может использоваться отладчиками и средствами разработки для идентификации функции.|js},
+    eng: "The function can use its name to call itself recursively. The name can also be used by debuggers and development tools to identify the function.",
   },
   {
-    rus: {js|Каждый объект функции также создается со свойством прототипа. Его значением является объект со свойством конструктора, значением которого является функция. Это отличается от скрытой ссылки на функцию.прототип.|js},
-    eng: "Every function object is also created with a prototype property. Its value is an object with a constructor property whose value is the function. This is distinct from the hidden link to Function.prototype.",
+    rus: {js|Если функции не присвоено имя, как показано в предыдущем примере, она называется анонимной.|js},
+    eng: "If a function is not given a name, as shown in the previous example, it is said to be anonymous.",
   },
   {
-    rus: {js|Метод может использовать this для доступа к объекту, чтобы получить значения из объекта или изменить объект. Привязка this к объекту происходит во время вызова.|js},
-    eng: "A method can use this to access the object so that it can retrieve values from the object or modify the object. The binding of this to the object happens at invocation time.",
+    rus: {js|Третья часть-набор параметров функции, заключенный в круглые скобки. В скобках указан набор из нуля или более имен параметров, разделенных запятыми.|js},
+    eng: "The third part is the set of parameters of the function, wrapped in parentheses. Within the parentheses is a set of zero or more parameter names, separated by commas.",
   },
   {
-    rus: {js|Это очень позднее связывание делает функции, которые используют this очень многоразовым. Методы, которые получают контекст объекта из this, называются открытыми методами.|js},
-    eng: "This very late binding makes functions that use this highly reusable. Methods that get their object context from this are called public methods.",
+    rus: {js|Четвертая часть представляет собой набор операторов, заключенных в фигурные скобки. Эти операторы тела функции. Они выполняются при вызове функции.|js},
+    eng: "The fourth part is a set of statements wrapped in curly braces. These statements are the body of the function. They are executed when the function is invoked.",
   },
   {
-    rus: {js|Если функция не является свойством объекта, то она вызывается как функция и this привязывается к глобальному объекту.|js},
-    eng: "When a function is not the property of an object, then it is invoked as a function and THIS is bound to the global object.",
+    rus: {js|JavaScript-это язык прототипного наследования. Это означает, что объекты могут наследовать свойства от других объектов.|js},
+    eng: "JavaScript is a prototypal inheritance language. That means that objects can inherit properties directly from other objects.",
   },
   {
-    rus: {js|Это была ошибка в дизайне языка. Если бы язык был разработан правильно, то при вызове внутренней функции она все равно была бы привязана к переменной THIS внешней функции.|js},
-    eng: "This was a mistake in the design of the language. Had the language been designed correctly, when the inner function is invoked, THIS would still be bound to the THIS variable of the outer function.",
+    rus: {js|The Constructor Invocation Pattern. Если функция вызывается с префиксом' new', то будет создан новый объект со скрытой ссылкой на значение члена прототипа функции, и 'this' будет привязан к этому новому объекту.|js},
+    eng: "The Constructor Invocation Pattern. If a function is invoked with the 'new' prefix, then a new object will be created with a hidden link to the value of the function’s prototype member, and 'this' will be bound to that new object.",
   },
   {
-    rus: {js|Если метод определяет переменную и присваивает ей значение THIS, то внутренняя функция будет иметь к ней доступ через эту переменную.|js},
-    eng: "If the method defines a variable and assigns it the value of THIS, the inner function will have access to THIS through that variable.",
+    rus: {js|Префикс 'new' также изменяет поведение оператора return.|js},
+    eng: "The 'new' prefix also changes the behavior of the return statement.",
   },
+  {rus: {js|Функции, предназначенные для использования с префиксом 'new', называются конструкторами. По соглашению они хранятся в переменных с заглавной буквы.|js},
+  eng: "Functions that are intended to be used with the 'new' prefix are called constructors. By convention, they are kept in variables with a capitalized name."},
+  {rus: {js|Если конструктор вызывается без префикса 'new', могут произойти очень плохие вещи без предупреждения во время компиляции или во время выполнения, поэтому соглашение о капитализации действительно важно.|js},
+  eng: "If a constructor is called without the 'new' prefix, very bad things can happen without a compile-time or runtime warning, so the capitalization convention is really important."},
+  {rus: {js|Бонусный параметр, доступный функциям при их вызове, является массивом аргументов.|js},
+  eng: "A bonus parameter that is available to functions when they are invoked is the arguments array."},
+  {rus: {js|Из-за ошибки проектирования 'arguments' на самом деле не являются массивом. Это объект, подобный массиву. arguments имеет свойство length, но в нем отсутствуют все методы массива.|js},
+  eng: "Because of a design error, arguments is not really an array. It is an array-like object. arguments has a length property, but it lacks all of the array methods."},
+
+  {rus: {js|Если функция была вызвана с префиксом 'new' и возвращаемое значение не является объектом, то возвращается 'this' (новый объект).|js},
+  eng: "If the function was invoked with the 'new' prefix and the return value is not an object, then 'this' (the new object) is returned instead."},
+
+
+  {rus: {js||js}, eng: ""},
+
+
+  {rus: {js||js}, eng: ""},
+  {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
@@ -233,6 +251,38 @@ let oldDictionary1 = [
   {
     rus: {js|Когда функция хранится как свойство объекта, мы называем это метод. При вызове метода его this привязывается к этому объекту.|js},
     eng: "When a function is stored as a property of an object, we call it a method. When a method is invoked, this is bound to that object.",
+  },
+  {
+    rus: {js|Функции связаны с Function.prototype (который сам связан с Object.prototype.)|js},
+    eng: "Function objects are linked to Function.prototype (which is itself linked to Object.prototype).",
+  },
+  {
+    rus: {js|Каждая функция также создается с двумя дополнительными скрытыми свойствами: контекстом функции и кодом, реализующим поведение функции.|js},
+    eng: "Every function is also created with two additional hidden properties: the function’s context and the code that implements the function’s behavior.",
+  },
+  {
+    rus: {js|Каждый объект функции также создается со свойством прототипа. Его значением является объект со свойством конструктора, значением которого является функция. Это отличается от скрытой ссылки на функцию.прототип.|js},
+    eng: "Every function object is also created with a prototype property. Its value is an object with a constructor property whose value is the function. This is distinct from the hidden link to Function.prototype.",
+  },
+  {
+    rus: {js|Метод может использовать this для доступа к объекту, чтобы получить значения из объекта или изменить объект. Привязка this к объекту происходит во время вызова.|js},
+    eng: "A method can use this to access the object so that it can retrieve values from the object or modify the object. The binding of this to the object happens at invocation time.",
+  },
+  {
+    rus: {js|Это очень позднее связывание делает функции, которые используют this очень многоразовым. Методы, которые получают контекст объекта из this, называются открытыми методами.|js},
+    eng: "This very late binding makes functions that use this highly reusable. Methods that get their object context from this are called public methods.",
+  },
+  {
+    rus: {js|Если функция не является свойством объекта, то она вызывается как функция и this привязывается к глобальному объекту.|js},
+    eng: "When a function is not the property of an object, then it is invoked as a function and THIS is bound to the global object.",
+  },
+  {
+    rus: {js|Это была ошибка в дизайне языка. Если бы язык был разработан правильно, то при вызове внутренней функции она все равно была бы привязана к переменной THIS внешней функции.|js},
+    eng: "This was a mistake in the design of the language. Had the language been designed correctly, when the inner function is invoked, THIS would still be bound to the THIS variable of the outer function.",
+  },
+  {
+    rus: {js|Если метод определяет переменную и присваивает ей значение THIS, то внутренняя функция будет иметь к ней доступ через эту переменную.|js},
+    eng: "If the method defines a variable and assigns it the value of THIS, the inner function will have access to THIS through that variable.",
   },
 ];
 
@@ -632,53 +682,98 @@ let veryOldDictionary1 = [
 ];
 
 let dictionary2 = [
-  {rus: {js|CEO выразил признательность за всю нашу тяжелую работу. // (=сказал "спасибо")"|js},
-  eng: "The CEO expressed appreciation of all our hard work. // (=said 'thank you')"},
-  {rus: {js|В нашей компании внедрена новая система мотивации для поощрения эффективных сотрудников. // (=мотивация )"|js},
-  eng: "A new incentive scheme was introduced in our company to reward efficient employees. // (=motivation scheme)"},
-  {rus: {js|Служебный автомобиль, медицинская страховка и бесплатные обеды-это льготы. // (=выгоды)|js},
-  eng: "A company car, medical insurance and free lunches are perks. // (=benefits)"},
-  {rus: {js|Они заслуживают признания за отличную работу, которую они делают. // (=похвала и вознаграждение за их работу)|js},
-  eng: "They deserve recognition for the great job they are doing. // (=praise and reward for their work)"},
-  {rus: {js|В декабре мы обычно получаем ежегодный бонус. // (=раз в год)|js},
-  eng: "In December we usually receive an annual bonus. // (=paid once a year)"},
-  {rus: {js|Я получаю много удовлетворения от помощи людям. // (=чувство счастья от того, что вы делаете).|js},
-  eng: "I get a lot of fulfilment from helping people. // (=a feeling of being happy with what you are doing)."},
-  {rus: {js|Сотрудники хотят большей безопасности труда. // (=нет опасности потерять работу)|js},
-  eng: "Employees want greater job security. // (=not being in danger of losing their jobs)"},
-  {rus: {js|Я работаю по гибкому графику, что означает, что мне не нужно начинать работу рано утром.|js},
-  eng: "I work flexible hours, which means I don't have to start work early in the morning."},
-  {rus: {js|Ваше достижение-это что-то важное, что вам удается сделать своими силами.|js},
-  eng: "Your achievement is something important that you succeed in doing by your own efforts."},
-  {rus: {js|Положительные отзывы и похвалы очень важны, они многое делают для удовлетворения работой. // (=слова официального утверждения)|js},
-  eng: "Positive feedback and praise are very important, they do a lot for job satisfaction. // (=words of approval)"},
-  {rus: {js|Приятно быть признанным и признанным за мои достижения.|js},
-  eng: "It's nice to be acknowledged and recognized for my achievements."},
-  {rus: {js|Мы улучшили производительность по всей системе. // (=насколько хорошо работает система)|js},
-  eng: "We've improved performance throughout the system. // (=how well the system works)"},
-  {rus: {js|Самые успешные сотрудники были вознаграждены недельным круизом. // (=присуждается приз)|js},
-  eng: "The most successful employees were rewarded with a one-week cruise. // (=given a prize)"},
-  {rus: {js|Выпускники ИТ имеют много возможностей трудоустройства. // (=люди, имеющие высшее образование в области ИТ)|js},
-  eng: "IT graduates have a lot of job opportunities. // (=people who have a university degree in IT)"},
-  {rus: {js|В начале вашей карьеры очень важно получить практический опыт работы. // (=опыт, полученный в результате выполнения работы, а не учебы)|js}, eng: "At the beginning of your career it's really important to get some hands-on work experience. // (=experience gained from doing a job rather than studying)"},
-  {rus: {js|Ненавижу выполнять черную работу. // (=работа скучная, не важная и не требующая навыков)|js},
-  eng: "I hate doing menial tasks. // (=work that is boring, not important and doesn't require any skills)"},
-  {rus: {js|Он много работает, пытается подняться по карьерной лестнице. // (=построить успешную карьеру)|js},
-  eng: "He's working hard, trying to climb the career ladder. // (=build a successful career)"},
-  {rus: {js|Когда я учился в университете, я два месяца проходил стажировку в Google. // (=временная работа для студентов, обычно неоплачиваемая)|js},
-  eng: "When I was at university, I did an internship with Google for two months. // (=a temporary job for students, usually unpaid)"},
-  {rus: {js|Это обучение занимает много времени, но оно принесет вам пользу в долгосрочной перспективе. // (=дать вам преимущество, помочь)|js},
-  eng: "This training takes a lot of time, but it will benefit you in the long run. // (=give you an advantage, help you)"},
-  {rus: {js|Компании ценят самомотивированных сотрудников. // (=иметь личную заинтересованность в хорошем выполнении своей работы)|js},
-  eng: "Companies value employees who are self-motivated. // (=have a personal interest in doing their work well)"},
-  {rus: {js|Мы собираемся провести конкурс для сотрудников, и победитель получит денежное вознаграждение. // (=немного денег в качестве приза)|js},
-  eng: "We're going to hold a competition for staff and the winner will get a cash reward. // (=some money as a prize)"},
-  {rus: {js|Он получил рекомендацию, полную похвалы от своего предыдущего работодателя. // (=информация о его способностях и квалификации)|js},
-  eng: "He got a reference full of praise from his previous employer. // (=information about his abilities and qualifications)"},
-  {rus: {js|Ваши навыки общения могут иметь большое значение на собеседовании // (=имеют хороший эффект).|js},
-  eng: "Your communication skills could make all the difference at a job interview // (=have a good effect)."},
-
-
+  {
+    rus: {js|CEO выразил признательность за всю нашу тяжелую работу. // (=сказал "спасибо")"|js},
+    eng: "The CEO expressed appreciation of all our hard work. // (=said 'thank you')",
+  },
+  {
+    rus: {js|В нашей компании внедрена новая система мотивации для поощрения эффективных сотрудников. // (=мотивация )"|js},
+    eng: "A new incentive scheme was introduced in our company to reward efficient employees. // (=motivation scheme)",
+  },
+  {
+    rus: {js|Служебный автомобиль, медицинская страховка и бесплатные обеды-это льготы. // (=выгоды)|js},
+    eng: "A company car, medical insurance and free lunches are perks. // (=benefits)",
+  },
+  {
+    rus: {js|Они заслуживают признания за отличную работу, которую они делают. // (=похвала и вознаграждение за их работу)|js},
+    eng: "They deserve recognition for the great job they are doing. // (=praise and reward for their work)",
+  },
+  {
+    rus: {js|В декабре мы обычно получаем ежегодный бонус. // (=раз в год)|js},
+    eng: "In December we usually receive an annual bonus. // (=paid once a year)",
+  },
+  {
+    rus: {js|Я получаю много удовлетворения от помощи людям. // (=чувство счастья от того, что вы делаете).|js},
+    eng: "I get a lot of fulfilment from helping people. // (=a feeling of being happy with what you are doing).",
+  },
+  {
+    rus: {js|Сотрудники хотят большей безопасности труда. // (=нет опасности потерять работу)|js},
+    eng: "Employees want greater job security. // (=not being in danger of losing their jobs)",
+  },
+  {
+    rus: {js|Я работаю по гибкому графику, что означает, что мне не нужно начинать работу рано утром.|js},
+    eng: "I work flexible hours, which means I don't have to start work early in the morning.",
+  },
+  {
+    rus: {js|Ваше достижение-это что-то важное, что вам удается сделать своими силами.|js},
+    eng: "Your achievement is something important that you succeed in doing by your own efforts.",
+  },
+  {
+    rus: {js|Положительные отзывы и похвалы очень важны, они многое делают для удовлетворения работой. // (=слова официального утверждения)|js},
+    eng: "Positive feedback and praise are very important, they do a lot for job satisfaction. // (=words of approval)",
+  },
+  {
+    rus: {js|Приятно быть признанным и признанным за мои достижения.|js},
+    eng: "It's nice to be acknowledged and recognized for my achievements.",
+  },
+  {
+    rus: {js|Мы улучшили производительность по всей системе. // (=насколько хорошо работает система)|js},
+    eng: "We've improved performance throughout the system. // (=how well the system works)",
+  },
+  {
+    rus: {js|Самые успешные сотрудники были вознаграждены недельным круизом. // (=присуждается приз)|js},
+    eng: "The most successful employees were rewarded with a one-week cruise. // (=given a prize)",
+  },
+  {
+    rus: {js|Выпускники ИТ имеют много возможностей трудоустройства. // (=люди, имеющие высшее образование в области ИТ)|js},
+    eng: "IT graduates have a lot of job opportunities. // (=people who have a university degree in IT)",
+  },
+  {
+    rus: {js|В начале вашей карьеры очень важно получить практический опыт работы. // (=опыт, полученный в результате выполнения работы, а не учебы)|js},
+    eng: "At the beginning of your career it's really important to get some hands-on work experience. // (=experience gained from doing a job rather than studying)",
+  },
+  {
+    rus: {js|Ненавижу выполнять черную работу. // (=работа скучная, не важная и не требующая навыков)|js},
+    eng: "I hate doing menial tasks. // (=work that is boring, not important and doesn't require any skills)",
+  },
+  {
+    rus: {js|Он много работает, пытается подняться по карьерной лестнице. // (=построить успешную карьеру)|js},
+    eng: "He's working hard, trying to climb the career ladder. // (=build a successful career)",
+  },
+  {
+    rus: {js|Когда я учился в университете, я два месяца проходил стажировку в Google. // (=временная работа для студентов, обычно неоплачиваемая)|js},
+    eng: "When I was at university, I did an internship with Google for two months. // (=a temporary job for students, usually unpaid)",
+  },
+  {
+    rus: {js|Это обучение занимает много времени, но оно принесет вам пользу в долгосрочной перспективе. // (=дать вам преимущество, помочь)|js},
+    eng: "This training takes a lot of time, but it will benefit you in the long run. // (=give you an advantage, help you)",
+  },
+  {
+    rus: {js|Компании ценят самомотивированных сотрудников. // (=иметь личную заинтересованность в хорошем выполнении своей работы)|js},
+    eng: "Companies value employees who are self-motivated. // (=have a personal interest in doing their work well)",
+  },
+  {
+    rus: {js|Мы собираемся провести конкурс для сотрудников, и победитель получит денежное вознаграждение. // (=немного денег в качестве приза)|js},
+    eng: "We're going to hold a competition for staff and the winner will get a cash reward. // (=some money as a prize)",
+  },
+  {
+    rus: {js|Он получил рекомендацию, полную похвалы от своего предыдущего работодателя. // (=информация о его способностях и квалификации)|js},
+    eng: "He got a reference full of praise from his previous employer. // (=information about his abilities and qualifications)",
+  },
+  {
+    rus: {js|Ваши навыки общения могут иметь большое значение на собеседовании // (=имеют хороший эффект).|js},
+    eng: "Your communication skills could make all the difference at a job interview // (=have a good effect).",
+  },
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
