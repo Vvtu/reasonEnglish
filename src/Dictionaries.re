@@ -682,98 +682,76 @@ let veryOldDictionary1 = [
 ];
 
 let dictionary2 = [
-  {
-    rus: {js|CEO выразил признательность за всю нашу тяжелую работу. // (=сказал "спасибо")"|js},
-    eng: "The CEO expressed appreciation of all our hard work. // (=said 'thank you')",
-  },
-  {
-    rus: {js|В нашей компании внедрена новая система мотивации для поощрения эффективных сотрудников. // (=мотивация )"|js},
-    eng: "A new incentive scheme was introduced in our company to reward efficient employees. // (=motivation scheme)",
-  },
-  {
-    rus: {js|Служебный автомобиль, медицинская страховка и бесплатные обеды-это льготы. // (=выгоды)|js},
-    eng: "A company car, medical insurance and free lunches are perks. // (=benefits)",
-  },
-  {
-    rus: {js|Они заслуживают признания за отличную работу, которую они делают. // (=похвала и вознаграждение за их работу)|js},
-    eng: "They deserve recognition for the great job they are doing. // (=praise and reward for their work)",
-  },
-  {
-    rus: {js|В декабре мы обычно получаем ежегодный бонус. // (=раз в год)|js},
-    eng: "In December we usually receive an annual bonus. // (=paid once a year)",
-  },
-  {
-    rus: {js|Я получаю много удовлетворения от помощи людям. // (=чувство счастья от того, что вы делаете).|js},
-    eng: "I get a lot of fulfilment from helping people. // (=a feeling of being happy with what you are doing).",
-  },
-  {
-    rus: {js|Сотрудники хотят большей безопасности труда. // (=нет опасности потерять работу)|js},
-    eng: "Employees want greater job security. // (=not being in danger of losing their jobs)",
-  },
-  {
-    rus: {js|Я работаю по гибкому графику, что означает, что мне не нужно начинать работу рано утром.|js},
-    eng: "I work flexible hours, which means I don't have to start work early in the morning.",
-  },
-  {
-    rus: {js|Ваше достижение-это что-то важное, что вам удается сделать своими силами.|js},
-    eng: "Your achievement is something important that you succeed in doing by your own efforts.",
-  },
-  {
-    rus: {js|Положительные отзывы и похвалы очень важны, они многое делают для удовлетворения работой. // (=слова официального утверждения)|js},
-    eng: "Positive feedback and praise are very important, they do a lot for job satisfaction. // (=words of approval)",
-  },
-  {
-    rus: {js|Приятно быть признанным и признанным за мои достижения.|js},
-    eng: "It's nice to be acknowledged and recognized for my achievements.",
-  },
-  {
-    rus: {js|Мы улучшили производительность по всей системе. // (=насколько хорошо работает система)|js},
-    eng: "We've improved performance throughout the system. // (=how well the system works)",
-  },
-  {
-    rus: {js|Самые успешные сотрудники были вознаграждены недельным круизом. // (=присуждается приз)|js},
-    eng: "The most successful employees were rewarded with a one-week cruise. // (=given a prize)",
-  },
-  {
-    rus: {js|Выпускники ИТ имеют много возможностей трудоустройства. // (=люди, имеющие высшее образование в области ИТ)|js},
-    eng: "IT graduates have a lot of job opportunities. // (=people who have a university degree in IT)",
-  },
-  {
-    rus: {js|В начале вашей карьеры очень важно получить практический опыт работы. // (=опыт, полученный в результате выполнения работы, а не учебы)|js},
-    eng: "At the beginning of your career it's really important to get some hands-on work experience. // (=experience gained from doing a job rather than studying)",
-  },
-  {
-    rus: {js|Ненавижу выполнять черную работу. // (=работа скучная, не важная и не требующая навыков)|js},
-    eng: "I hate doing menial tasks. // (=work that is boring, not important and doesn't require any skills)",
-  },
-  {
-    rus: {js|Он много работает, пытается подняться по карьерной лестнице. // (=построить успешную карьеру)|js},
-    eng: "He's working hard, trying to climb the career ladder. // (=build a successful career)",
-  },
-  {
-    rus: {js|Когда я учился в университете, я два месяца проходил стажировку в Google. // (=временная работа для студентов, обычно неоплачиваемая)|js},
-    eng: "When I was at university, I did an internship with Google for two months. // (=a temporary job for students, usually unpaid)",
-  },
-  {
-    rus: {js|Это обучение занимает много времени, но оно принесет вам пользу в долгосрочной перспективе. // (=дать вам преимущество, помочь)|js},
-    eng: "This training takes a lot of time, but it will benefit you in the long run. // (=give you an advantage, help you)",
-  },
-  {
-    rus: {js|Компании ценят самомотивированных сотрудников. // (=иметь личную заинтересованность в хорошем выполнении своей работы)|js},
-    eng: "Companies value employees who are self-motivated. // (=have a personal interest in doing their work well)",
-  },
-  {
-    rus: {js|Мы собираемся провести конкурс для сотрудников, и победитель получит денежное вознаграждение. // (=немного денег в качестве приза)|js},
-    eng: "We're going to hold a competition for staff and the winner will get a cash reward. // (=some money as a prize)",
-  },
-  {
-    rus: {js|Он получил рекомендацию, полную похвалы от своего предыдущего работодателя. // (=информация о его способностях и квалификации)|js},
-    eng: "He got a reference full of praise from his previous employer. // (=information about his abilities and qualifications)",
-  },
-  {
-    rus: {js|Ваши навыки общения могут иметь большое значение на собеседовании // (=имеют хороший эффект).|js},
-    eng: "Your communication skills could make all the difference at a job interview // (=have a good effect).",
-  },
+
+{ eng: "Hi, I don't think think we've met. I'm Paolo from Napoli.",
+rus: {js|Привет, не думаю, что мы встречались. Я Паоло из Неаполя.|js}},
+
+
+{ eng: "Hello. It's Adriana, isn't it? We met before dinner.",
+rus: {js|Привет. Это Адриана, не так ли? Мы встретились перед ужином.|js}},
+
+
+{ eng: "I saw you sitting at my table at dinner but I didn't have a chance to speak to you.// (=there was no opportunity)",
+rus: {js|Я видел, как ты сидел за моим столом за ужином, но у меня не было возможности поговорить с тобой.// (=не было возможности)|js}},
+
+
+{ eng: "Is this your first company event?",
+rus: {js|Это ваше первое корпоративное мероприятие?|js}},
+
+
+{ eng: "Are you from Calcutta? What a coincidence! My parents are from India, too.",
+rus: {js|Вы из Калькутты? Какое совпадение! Мои родители тоже из Индии.|js}},
+
+
+{ eng: "Good evening, Adriana. I thought I might see you here. Back for another company event? // (=felt I could meet)",
+rus: {js|Добрый вечер, Адриана. Я думал, что увижу тебя здесь. Вернулся на другое мероприятие компании? // (=чувствовал, что могу встретиться)|js}},
+
+
+{ eng: "Currently I'm working on pension plans and other savings schemes. //(preposition)",
+rus: {js|В настоящее время я работаю над пенсионными планами и другими накопительными планами. //(предлог)|js}},
+
+
+{ eng: "How lovely to see you here. //(=nice)",
+rus: {js|Как приятно видеть вас здесь. //(=приятный)|js}},
+
+
+{ eng: "I have to go. It's been nice nice talking to you.",
+rus: {js|Я должен идти. Было приятно поговорить с тобой.|js}},
+
+
+{ eng: "I injured my leg in January in a skiing accident. Oh dear, I'm sorry to hear that!",
+rus: {js|Я повредил ногу в январе в лыжной аварии. О Боже, мне очень жаль это слышать!|js}},
+
+
+{ eng: "Have you seen the programme? It looks very entertaining. //(=a lot of fun)",
+rus: {js|Вы видели программу? Выглядит очень занимательно. // (=очень весело)|js}},
+
+
+{ eng: "Apparently, they're interested in people who've worked in different divisions. (=it seems that)",
+rus: {js|Видимо, их интересуют люди, которые работали в разных подразделениях. (=похоже, что)|js}},
+
+
+{ eng: "Hi, I'm Sumitra, based in the UK. (=working)",
+rus: {js|Привет, я Сумитра, базирующаяся в Великобритании. (=рабочий)|js}},
+
+
+{ eng: "How are things? // (=How are you?)",
+rus: {js|Как дела? // (=Как ты?)|js}},
+
+
+{ eng: "My boss and I have a lot in common, so it's easy for us to work together. // (=similar interests, attitudes)",
+rus: {js|У нас с боссом много общего, так что нам легко работать вместе. // (=схожие интересы, установки)|js}},
+
+
+{ eng: "At the beginning of the presentation the speaker made a joke to break the ice. // (=to help people to relax)",
+rus: {js|В начале презентации спикер пошутил, чтобы сломать лед. // (=чтобы помочь людям расслабиться)|js}},
+
+
+{ eng: "By the way, have you seen Ann Smith? I've heard that she's supposed to be at this conference. // (changing the topic of the conversation)",
+rus: {js|Кстати, вы не видели Энн Смит? Я слышал, что она должна быть на этой конференции. // (изменение темы разговора)|js}},
+
+
+
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
@@ -933,6 +911,98 @@ let oldDictionary2 = [
   {
     rus: {js||js},
     eng: "Common phrases used with present continuous are: currently, for the moment, at the moment, for the time being, tomorrow (afternoon), right now.",
+  },
+   {
+    rus: {js|CEO выразил признательность за всю нашу тяжелую работу. // (=сказал "спасибо")"|js},
+    eng: "The CEO expressed appreciation of all our hard work. // (=said 'thank you')",
+  },
+  {
+    rus: {js|В нашей компании внедрена новая система мотивации для поощрения эффективных сотрудников. // (=мотивация )"|js},
+    eng: "A new incentive scheme was introduced in our company to reward efficient employees. // (=motivation scheme)",
+  },
+  {
+    rus: {js|Служебный автомобиль, медицинская страховка и бесплатные обеды-это льготы. // (=выгоды)|js},
+    eng: "A company car, medical insurance and free lunches are perks. // (=benefits)",
+  },
+  {
+    rus: {js|Они заслуживают признания за отличную работу, которую они делают. // (=похвала и вознаграждение за их работу)|js},
+    eng: "They deserve recognition for the great job they are doing. // (=praise and reward for their work)",
+  },
+  {
+    rus: {js|В декабре мы обычно получаем ежегодный бонус. // (=раз в год)|js},
+    eng: "In December we usually receive an annual bonus. // (=paid once a year)",
+  },
+  {
+    rus: {js|Я получаю много удовлетворения от помощи людям. // (=чувство счастья от того, что вы делаете).|js},
+    eng: "I get a lot of fulfilment from helping people. // (=a feeling of being happy with what you are doing).",
+  },
+  {
+    rus: {js|Сотрудники хотят большей безопасности труда. // (=нет опасности потерять работу)|js},
+    eng: "Employees want greater job security. // (=not being in danger of losing their jobs)",
+  },
+  {
+    rus: {js|Я работаю по гибкому графику, что означает, что мне не нужно начинать работу рано утром.|js},
+    eng: "I work flexible hours, which means I don't have to start work early in the morning.",
+  },
+  {
+    rus: {js|Ваше достижение-это что-то важное, что вам удается сделать своими силами.|js},
+    eng: "Your achievement is something important that you succeed in doing by your own efforts.",
+  },
+  {
+    rus: {js|Положительные отзывы и похвалы очень важны, они многое делают для удовлетворения работой. // (=слова официального утверждения)|js},
+    eng: "Positive feedback and praise are very important, they do a lot for job satisfaction. // (=words of approval)",
+  },
+  {
+    rus: {js|Приятно быть признанным и признанным за мои достижения.|js},
+    eng: "It's nice to be acknowledged and recognized for my achievements.",
+  },
+  {
+    rus: {js|Мы улучшили производительность по всей системе. // (=насколько хорошо работает система)|js},
+    eng: "We've improved performance throughout the system. // (=how well the system works)",
+  },
+  {
+    rus: {js|Самые успешные сотрудники были вознаграждены недельным круизом. // (=присуждается приз)|js},
+    eng: "The most successful employees were rewarded with a one-week cruise. // (=given a prize)",
+  },
+  {
+    rus: {js|Выпускники ИТ имеют много возможностей трудоустройства. // (=люди, имеющие высшее образование в области ИТ)|js},
+    eng: "IT graduates have a lot of job opportunities. // (=people who have a university degree in IT)",
+  },
+  {
+    rus: {js|В начале вашей карьеры очень важно получить практический опыт работы. // (=опыт, полученный в результате выполнения работы, а не учебы)|js},
+    eng: "At the beginning of your career it's really important to get some hands-on work experience. // (=experience gained from doing a job rather than studying)",
+  },
+  {
+    rus: {js|Ненавижу выполнять черную работу. // (=работа скучная, не важная и не требующая навыков)|js},
+    eng: "I hate doing menial tasks. // (=work that is boring, not important and doesn't require any skills)",
+  },
+  {
+    rus: {js|Он много работает, пытается подняться по карьерной лестнице. // (=построить успешную карьеру)|js},
+    eng: "He's working hard, trying to climb the career ladder. // (=build a successful career)",
+  },
+  {
+    rus: {js|Когда я учился в университете, я два месяца проходил стажировку в Google. // (=временная работа для студентов, обычно неоплачиваемая)|js},
+    eng: "When I was at university, I did an internship with Google for two months. // (=a temporary job for students, usually unpaid)",
+  },
+  {
+    rus: {js|Это обучение занимает много времени, но оно принесет вам пользу в долгосрочной перспективе. // (=дать вам преимущество, помочь)|js},
+    eng: "This training takes a lot of time, but it will benefit you in the long run. // (=give you an advantage, help you)",
+  },
+  {
+    rus: {js|Компании ценят самомотивированных сотрудников. // (=иметь личную заинтересованность в хорошем выполнении своей работы)|js},
+    eng: "Companies value employees who are self-motivated. // (=have a personal interest in doing their work well)",
+  },
+  {
+    rus: {js|Мы собираемся провести конкурс для сотрудников, и победитель получит денежное вознаграждение. // (=немного денег в качестве приза)|js},
+    eng: "We're going to hold a competition for staff and the winner will get a cash reward. // (=some money as a prize)",
+  },
+  {
+    rus: {js|Он получил рекомендацию, полную похвалы от своего предыдущего работодателя. // (=информация о его способностях и квалификации)|js},
+    eng: "He got a reference full of praise from his previous employer. // (=information about his abilities and qualifications)",
+  },
+  {
+    rus: {js|Ваши навыки общения могут иметь большое значение на собеседовании // (=имеют хороший эффект).|js},
+    eng: "Your communication skills could make all the difference at a job interview // (=have a good effect).",
   },
 ];
 
