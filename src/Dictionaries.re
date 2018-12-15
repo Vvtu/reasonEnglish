@@ -38,22 +38,27 @@ let dictionary1 = [
     rus: {js|Префикс 'new' также изменяет поведение оператора return.|js},
     eng: "The 'new' prefix also changes the behavior of the return statement.",
   },
-  {rus: {js|Функции, предназначенные для использования с префиксом 'new', называются конструкторами. По соглашению они хранятся в переменных с заглавной буквы.|js},
-  eng: "Functions that are intended to be used with the 'new' prefix are called constructors. By convention, they are kept in variables with a capitalized name."},
-  {rus: {js|Если конструктор вызывается без префикса 'new', могут произойти очень плохие вещи без предупреждения во время компиляции или во время выполнения, поэтому соглашение о капитализации действительно важно.|js},
-  eng: "If a constructor is called without the 'new' prefix, very bad things can happen without a compile-time or runtime warning, so the capitalization convention is really important."},
-  {rus: {js|Бонусный параметр, доступный функциям при их вызове, является массивом аргументов.|js},
-  eng: "A bonus parameter that is available to functions when they are invoked is the arguments array."},
-  {rus: {js|Из-за ошибки проектирования 'arguments' на самом деле не являются массивом. Это объект, подобный массиву. arguments имеет свойство length, но в нем отсутствуют все методы массива.|js},
-  eng: "Because of a design error, arguments is not really an array. It is an array-like object. arguments has a length property, but it lacks all of the array methods."},
-
-  {rus: {js|Если функция была вызвана с префиксом 'new' и возвращаемое значение не является объектом, то возвращается 'this' (новый объект).|js},
-  eng: "If the function was invoked with the 'new' prefix and the return value is not an object, then 'this' (the new object) is returned instead."},
-
-
+  {
+    rus: {js|Функции, предназначенные для использования с префиксом 'new', называются конструкторами. По соглашению они хранятся в переменных с заглавной буквы.|js},
+    eng: "Functions that are intended to be used with the 'new' prefix are called constructors. By convention, they are kept in variables with a capitalized name.",
+  },
+  {
+    rus: {js|Если конструктор вызывается без префикса 'new', могут произойти очень плохие вещи без предупреждения во время компиляции или во время выполнения, поэтому соглашение о капитализации действительно важно.|js},
+    eng: "If a constructor is called without the 'new' prefix, very bad things can happen without a compile-time or runtime warning, so the capitalization convention is really important.",
+  },
+  {
+    rus: {js|Бонусный параметр, доступный функциям при их вызове, является массивом аргументов.|js},
+    eng: "A bonus parameter that is available to functions when they are invoked is the arguments array.",
+  },
+  {
+    rus: {js|Из-за ошибки проектирования 'arguments' на самом деле не являются массивом. Это объект, подобный массиву. arguments имеет свойство length, но в нем отсутствуют все методы массива.|js},
+    eng: "Because of a design error, arguments is not really an array. It is an array-like object. arguments has a length property, but it lacks all of the array methods.",
+  },
+  {
+    rus: {js|Если функция была вызвана с префиксом 'new' и возвращаемое значение не является объектом, то возвращается 'this' (новый объект).|js},
+    eng: "If the function was invoked with the 'new' prefix and the return value is not an object, then 'this' (the new object) is returned instead.",
+  },
   {rus: {js||js}, eng: ""},
-
-
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
@@ -682,76 +687,74 @@ let veryOldDictionary1 = [
 ];
 
 let dictionary2 = [
-
-{ eng: "Hi, I don't think think we've met. I'm Paolo from Napoli.",
-rus: {js|Привет, не думаю, что мы встречались. Я Паоло из Неаполя.|js}},
-
-
-{ eng: "Hello. It's Adriana, isn't it? We met before dinner.",
-rus: {js|Привет. Это Адриана, не так ли? Мы встретились перед ужином.|js}},
-
-
-{ eng: "I saw you sitting at my table at dinner but I didn't have a chance to speak to you.// (=there was no opportunity)",
-rus: {js|Я видел, как ты сидел за моим столом за ужином, но у меня не было возможности поговорить с тобой.// (=не было возможности)|js}},
-
-
-{ eng: "Is this your first company event?",
-rus: {js|Это ваше первое корпоративное мероприятие?|js}},
-
-
-{ eng: "Are you from Calcutta? What a coincidence! My parents are from India, too.",
-rus: {js|Вы из Калькутты? Какое совпадение! Мои родители тоже из Индии.|js}},
-
-
-{ eng: "Good evening, Adriana. I thought I might see you here. Back for another company event? // (=felt I could meet)",
-rus: {js|Добрый вечер, Адриана. Я думал, что увижу тебя здесь. Вернулся на другое мероприятие компании? // (=чувствовал, что могу встретиться)|js}},
-
-
-{ eng: "Currently I'm working on pension plans and other savings schemes. //(preposition)",
-rus: {js|В настоящее время я работаю над пенсионными планами и другими накопительными планами. //(предлог)|js}},
-
-
-{ eng: "How lovely to see you here. //(=nice)",
-rus: {js|Как приятно видеть вас здесь. //(=приятный)|js}},
-
-
-{ eng: "I have to go. It's been nice nice talking to you.",
-rus: {js|Я должен идти. Было приятно поговорить с тобой.|js}},
-
-
-{ eng: "I injured my leg in January in a skiing accident. Oh dear, I'm sorry to hear that!",
-rus: {js|Я повредил ногу в январе в лыжной аварии. О Боже, мне очень жаль это слышать!|js}},
-
-
-{ eng: "Have you seen the programme? It looks very entertaining. //(=a lot of fun)",
-rus: {js|Вы видели программу? Выглядит очень занимательно. // (=очень весело)|js}},
-
-
-{ eng: "Apparently, they're interested in people who've worked in different divisions. (=it seems that)",
-rus: {js|Видимо, их интересуют люди, которые работали в разных подразделениях. (=похоже, что)|js}},
-
-
-{ eng: "Hi, I'm Sumitra, based in the UK. (=working)",
-rus: {js|Привет, я Сумитра, базирующаяся в Великобритании. (=рабочий)|js}},
-
-
-{ eng: "How are things? // (=How are you?)",
-rus: {js|Как дела? // (=Как ты?)|js}},
-
-
-{ eng: "My boss and I have a lot in common, so it's easy for us to work together. // (=similar interests, attitudes)",
-rus: {js|У нас с боссом много общего, так что нам легко работать вместе. // (=схожие интересы, установки)|js}},
-
-
-{ eng: "At the beginning of the presentation the speaker made a joke to break the ice. // (=to help people to relax)",
-rus: {js|В начале презентации спикер пошутил, чтобы сломать лед. // (=чтобы помочь людям расслабиться)|js}},
-
-
-{ eng: "By the way, have you seen Ann Smith? I've heard that she's supposed to be at this conference. // (changing the topic of the conversation)",
-rus: {js|Кстати, вы не видели Энн Смит? Я слышал, что она должна быть на этой конференции. // (изменение темы разговора)|js}},
-
-
-
+  {
+    eng: "Hi, I don't think we've met. I'm Paolo from Napoli.",
+    rus: {js|Привет, не думаю, что мы встречались. Я Паоло из Неаполя.|js},
+  },
+  {
+    eng: "Hello. It's Adriana, isn't it? We met before dinner.",
+    rus: {js|Привет. Это Адриана, не так ли? Мы встретились перед ужином.|js},
+  },
+  {
+    eng: "I saw you sitting at my table at dinner but I didn't have a chance to speak to you.// (=there was no opportunity)",
+    rus: {js|Я видел, как ты сидел за моим столом за ужином, но у меня не было возможности поговорить с тобой.// (=не было возможности)|js},
+  },
+  {
+    eng: "Is this your first company event?",
+    rus: {js|Это ваше первое корпоративное мероприятие?|js},
+  },
+  {
+    eng: "Are you from Calcutta? What a coincidence! My parents are from India, too.",
+    rus: {js|Вы из Калькутты? Какое совпадение! Мои родители тоже из Индии.|js},
+  },
+  {
+    eng: "Good evening, Adriana. I thought I might see you here. Back for another company event? // (=felt I could meet)",
+    rus: {js|Добрый вечер, Адриана. Я думал, что увижу тебя здесь. Вернулся на другое мероприятие компании? // (=чувствовал, что могу встретиться)|js},
+  },
+  {
+    eng: "Currently I'm working on pension plans and other savings schemes. //(preposition)",
+    rus: {js|В настоящее время я работаю над пенсионными планами и другими накопительными планами. //(предлог)|js},
+  },
+  {
+    eng: "How lovely to see you here. //(=nice)",
+    rus: {js|Как приятно видеть вас здесь. //(=приятный)|js},
+  },
+  {
+    eng: "I have to go. It's been nice nice talking to you.",
+    rus: {js|Я должен идти. Было приятно поговорить с тобой.|js},
+  },
+  {
+    eng: "I injured my leg in January in a skiing accident. Oh dear, I'm sorry to hear that!",
+    rus: {js|Я повредил ногу в январе в лыжной аварии. О Боже, мне очень жаль это слышать!|js},
+  },
+  {
+    eng: "Have you seen the programme? It looks very entertaining. //(=a lot of fun)",
+    rus: {js|Вы видели программу? Выглядит очень занимательно. // (=очень весело)|js},
+  },
+  {
+    eng: "Apparently, they're interested in people who've worked in different divisions. // (=it seems that)",
+    rus: {js|Видимо, их интересуют люди, которые работали в разных подразделениях. // (=похоже, что)|js},
+  },
+  {
+    eng: "Hi, I'm Sumitra, based in the UK. // (=working)",
+    rus: {js|Привет, я Сумитра, базирующаяся в Великобритании. // (=рабочий)|js},
+  },
+  {
+    eng: "How are things? // (=How are you?)",
+    rus: {js|Как дела? // (=Как ты?)|js},
+  },
+  {
+    eng: "My boss and I have a lot in common, so it's easy for us to work together. // (=similar interests, attitudes)",
+    rus: {js|У нас с боссом много общего, так что нам легко работать вместе. // (=схожие интересы, установки)|js},
+  },
+  {
+    eng: "At the beginning of the presentation the speaker made a joke to break the ice. // (=to help people to relax)",
+    rus: {js|В начале презентации спикер пошутил, чтобы сломать лед. // (=чтобы помочь людям расслабиться)|js},
+  },
+  {
+    eng: "By the way, have you seen Ann Smith? I've heard that she's supposed to be at this conference. // (changing the topic of the conversation)",
+    rus: {js|Кстати, вы не видели Энн Смит? Я слышал, что она должна быть на этой конференции. // (изменение темы разговора)|js},
+  },
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
@@ -912,7 +915,7 @@ let oldDictionary2 = [
     rus: {js||js},
     eng: "Common phrases used with present continuous are: currently, for the moment, at the moment, for the time being, tomorrow (afternoon), right now.",
   },
-   {
+  {
     rus: {js|CEO выразил признательность за всю нашу тяжелую работу. // (=сказал "спасибо")"|js},
     eng: "The CEO expressed appreciation of all our hard work. // (=said 'thank you')",
   },
