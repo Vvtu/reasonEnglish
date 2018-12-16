@@ -7,56 +7,12 @@ type pairList = list(wordPair);
 
 let dictionary1 = [
   {
-    rus: {js|функциональный литерал состоит из четырех частей. Первая часть - зарезервированное слово 'funciton'. Необязательная вторая часть-это имя функции.|js},
-    eng: "A function literal has four parts. The first part is the reserved word function. The optional second part is the function’s name.",
+    rus: {js|Обратите внимание, что функция не имеет постоянного понятия 'this'. Это всегда устанавливается во время вызова на основе способа, которым это было вызвано.|js},
+    eng: "Notice that the function doesn't have a persistent notion of its 'this'. It is always set at call time based upon the way it was invoked by its caller.",
   },
   {
-    rus: {js|Функция может использовать свое имя для рекурсивного вызова. Это имя также может использоваться отладчиками и средствами разработки для идентификации функции.|js},
-    eng: "The function can use its name to call itself recursively. The name can also be used by debuggers and development tools to identify the function.",
-  },
-  {
-    rus: {js|Если функции не присвоено имя, как показано в предыдущем примере, она называется анонимной.|js},
-    eng: "If a function is not given a name, as shown in the previous example, it is said to be anonymous.",
-  },
-  {
-    rus: {js|Третья часть-набор параметров функции, заключенный в круглые скобки. В скобках указан набор из нуля или более имен параметров, разделенных запятыми.|js},
-    eng: "The third part is the set of parameters of the function, wrapped in parentheses. Within the parentheses is a set of zero or more parameter names, separated by commas.",
-  },
-  {
-    rus: {js|Четвертая часть представляет собой набор операторов, заключенных в фигурные скобки. Эти операторы тела функции. Они выполняются при вызове функции.|js},
-    eng: "The fourth part is a set of statements wrapped in curly braces. These statements are the body of the function. They are executed when the function is invoked.",
-  },
-  {
-    rus: {js|JavaScript-это язык прототипного наследования. Это означает, что объекты могут наследовать свойства от других объектов.|js},
-    eng: "JavaScript is a prototypal inheritance language. That means that objects can inherit properties directly from other objects.",
-  },
-  {
-    rus: {js|The Constructor Invocation Pattern. Если функция вызывается с префиксом' new', то будет создан новый объект со скрытой ссылкой на значение члена прототипа функции, и 'this' будет привязан к этому новому объекту.|js},
-    eng: "The Constructor Invocation Pattern. If a function is invoked with the 'new' prefix, then a new object will be created with a hidden link to the value of the function’s prototype member, and 'this' will be bound to that new object.",
-  },
-  {
-    rus: {js|Префикс 'new' также изменяет поведение оператора return.|js},
-    eng: "The 'new' prefix also changes the behavior of the return statement.",
-  },
-  {
-    rus: {js|Функции, предназначенные для использования с префиксом 'new', называются конструкторами. По соглашению они хранятся в переменных с заглавной буквы.|js},
-    eng: "Functions that are intended to be used with the 'new' prefix are called constructors. By convention, they are kept in variables with a capitalized name.",
-  },
-  {
-    rus: {js|Если конструктор вызывается без префикса 'new', могут произойти очень плохие вещи без предупреждения во время компиляции или во время выполнения, поэтому соглашение о капитализации действительно важно.|js},
-    eng: "If a constructor is called without the 'new' prefix, very bad things can happen without a compile-time or runtime warning, so the capitalization convention is really important.",
-  },
-  {
-    rus: {js|Бонусный параметр, доступный функциям при их вызове, является массивом аргументов.|js},
-    eng: "A bonus parameter that is available to functions when they are invoked is the arguments array.",
-  },
-  {
-    rus: {js|Из-за ошибки проектирования 'arguments' на самом деле не являются массивом. Это объект, подобный массиву. arguments имеет свойство length, но в нем отсутствуют все методы массива.|js},
-    eng: "Because of a design error, arguments is not really an array. It is an array-like object. arguments has a length property, but it lacks all of the array methods.",
-  },
-  {
-    rus: {js|Если функция была вызвана с префиксом 'new' и возвращаемое значение не является объектом, то возвращается 'this' (новый объект).|js},
-    eng: "If the function was invoked with the 'new' prefix and the return value is not an object, then 'this' (the new object) is returned instead.",
+    rus: {js|Mетод 'apply' работает точно так же, как примитив 'call', за исключением того, что он принимает объект arguments, подобный массиву, вместо того, чтобы перечислять аргументы по одному.|js},
+    eng: "'apply' method works exactly like the call primitive, except that it takes an Array-like object instead of listing the arguments out one at a time.",
   },
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
@@ -72,8 +28,7 @@ let dictionary1 = [
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
+
 ];
 
 let oldDictionary1 = [
@@ -288,6 +243,59 @@ let oldDictionary1 = [
   {
     rus: {js|Если метод определяет переменную и присваивает ей значение THIS, то внутренняя функция будет иметь к ней доступ через эту переменную.|js},
     eng: "If the method defines a variable and assigns it the value of THIS, the inner function will have access to THIS through that variable.",
+  },
+
+  {
+    rus: {js|функциональный литерал состоит из четырех частей. Первая часть - зарезервированное слово 'funciton'. Необязательная вторая часть-это имя функции.|js},
+    eng: "A function literal has four parts. The first part is the reserved word function. The optional second part is the function’s name.",
+  },
+  {
+    rus: {js|Функция может использовать свое имя для рекурсивного вызова. Это имя также может использоваться отладчиками и средствами разработки для идентификации функции.|js},
+    eng: "The function can use its name to call itself recursively. The name can also be used by debuggers and development tools to identify the function.",
+  },
+  {
+    rus: {js|Если функции не присвоено имя, как показано в предыдущем примере, она называется анонимной.|js},
+    eng: "If a function is not given a name, as shown in the previous example, it is said to be anonymous.",
+  },
+  {
+    rus: {js|Третья часть-набор параметров функции, заключенный в круглые скобки. В скобках указан набор из нуля или более имен параметров, разделенных запятыми.|js},
+    eng: "The third part is the set of parameters of the function, wrapped in parentheses. Within the parentheses is a set of zero or more parameter names, separated by commas.",
+  },
+  {
+    rus: {js|Четвертая часть представляет собой набор операторов, заключенных в фигурные скобки. Эти операторы тела функции. Они выполняются при вызове функции.|js},
+    eng: "The fourth part is a set of statements wrapped in curly braces. These statements are the body of the function. They are executed when the function is invoked.",
+  },
+  {
+    rus: {js|JavaScript-это язык прототипного наследования. Это означает, что объекты могут наследовать свойства от других объектов.|js},
+    eng: "JavaScript is a prototypal inheritance language. That means that objects can inherit properties directly from other objects.",
+  },
+  {
+    rus: {js|The Constructor Invocation Pattern. Если функция вызывается с префиксом' new', то будет создан новый объект со скрытой ссылкой на значение члена прототипа функции, и 'this' будет привязан к этому новому объекту.|js},
+    eng: "The Constructor Invocation Pattern. If a function is invoked with the 'new' prefix, then a new object will be created with a hidden link to the value of the function’s prototype member, and 'this' will be bound to that new object.",
+  },
+  {
+    rus: {js|Префикс 'new' также изменяет поведение оператора return.|js},
+    eng: "The 'new' prefix also changes the behavior of the return statement.",
+  },
+  {
+    rus: {js|Функции, предназначенные для использования с префиксом 'new', называются конструкторами. По соглашению они хранятся в переменных с заглавной буквы.|js},
+    eng: "Functions that are intended to be used with the 'new' prefix are called constructors. By convention, they are kept in variables with a capitalized name.",
+  },
+  {
+    rus: {js|Если конструктор вызывается без префикса 'new', могут произойти очень плохие вещи без предупреждения во время компиляции или во время выполнения, поэтому соглашение о капитализации действительно важно.|js},
+    eng: "If a constructor is called without the 'new' prefix, very bad things can happen without a compile-time or runtime warning, so the capitalization convention is really important.",
+  },
+  {
+    rus: {js|Бонусный параметр, доступный функциям при их вызове, является массивом аргументов.|js},
+    eng: "A bonus parameter that is available to functions when they are invoked is the arguments array.",
+  },
+  {
+    rus: {js|Из-за ошибки проектирования 'arguments' на самом деле не являются массивом. Это объект, подобный массиву. arguments имеет свойство length, но в нем отсутствуют все методы массива.|js},
+    eng: "Because of a design error, arguments is not really an array. It is an array-like object. arguments has a length property, but it lacks all of the array methods.",
+  },
+  {
+    rus: {js|Если функция была вызвана с префиксом 'new' и возвращаемое значение не является объектом, то возвращается 'this' (новый объект).|js},
+    eng: "If the function was invoked with the 'new' prefix and the return value is not an object, then 'this' (the new object) is returned instead.",
   },
 ];
 
@@ -755,6 +763,47 @@ let dictionary2 = [
     eng: "By the way, have you seen Ann Smith? I've heard that she's supposed to be at this conference. // (changing the topic of the conversation)",
     rus: {js|Кстати, вы не видели Энн Смит? Я слышал, что она должна быть на этой конференции. // (изменение темы разговора)|js},
   },
+  {rus: {js|Когда уезжает Мистер Патель? Вы знаете, когда мистер Патель уезжает?|js},
+  eng: "When is Mr Patel leaving? Do you know when Mr. Patel is leaving?"},
+  {rus: {js|Где работает Мистер Элмор?  Не подскажете, где работает Мистер Элмор?|js},
+  eng: "Where does Mr Elmore work?  Could you tell me where Mr Elmore works?"},
+  {rus: {js|Сколько это стоит? Можете сказать, сколько это стоит?|js},
+  eng: "How much does it cost? Can you tell me how much it costs?"},
+  {rus: {js|Кто оставил это сообщение? Вы знаете, кто оставил это сообщение?|js},
+  eng: "Who left this message? Do you have any idea who left this message?"},
+  {rus: {js|Завтра будет дождь? Ты знаешь, будет ли завтра дождь?|js},
+  eng: "Is it going to rain tomorrow? Do you know whether it's going to rain tomorrow?"},
+  {rus: {js|Разве вы не в Милане?|js},
+  eng: "Aren't you based in Milan?"},
+  {rus: {js|Разве они не продаете аппаратное и программное обеспечение?|js},
+  eng: "Didn't they sell hardware as well as software?"},
+  {rus: {js|Вы не можете работать позже?|js},
+  eng: "Can't you work a bit later tonight?"},
+  {rus: {js|// жалуешься // Ты еще не закончил?|js},
+  eng: "//complain// Haven't you finished yet?"},
+
+  {rus: {js|// сделайте предложение // Почему бы вам не присоединиться к нам?|js},
+  eng: "//make a suggestion// Why don't you join us?"},
+  {rus: {js|//проверка информации// Не твое?|js},
+  eng: "//check information// Isn't is yours?"},
+  {rus: {js|// сделать запрос // Можем ли мы присоединиться к вам на встрече?|js},
+  eng: "//make a request// Can't we join you at the meeting?"},
+  {rus: {js|// если утверждение положительное, то тег вопроса отрицательный.//- Жарко, не правда ли?|js},
+  eng: "//If the statement is positive, the question tag is negative.// It's hot, isn't it?"},
+  {rus: {js|//Если высказывание отрицательное, общий вопрос является положительным./- Вы не видели мой ключ, не так ли?|js},
+  eng: "//If the statement is negative, the question tag is positive.// You haven't seen my key, have you?"},
+  {rus: {js|Она не поедет в Китай, не так ли?|js},
+  eng: "She won't go to China, will she?"},
+  {rus: {js|Ты умеешь плавать, правда?|js},
+  eng: "You can swim, can't you?"},
+  {rus: {js|Вы работаете на Сименса, не так ли?|js},
+  eng: "You work for Simens, don't you?"},
+  {rus: {js|Он ушел вчера рано, не так ли?|js},
+  eng: "He left early yesterday, didn't he?"},
+  {rus: {js|// Если объект находится кто-то, кого-либо, вы, все, кто угодно - использовать 'они' в теге./ Кто угодно может воспользоваться комнатой для переговоров, не так ли?|js},
+  eng: "// If the subject is someone, sombody, evryone, everybody, anyone, anybody - use 'they' in the tag.// Anyone can use the meeting room, can't they?"},
+  {rus: {js|// если субъект никто, никто - используйте 'они' в теге./- Никто об этом не знал, не так ли?|js},
+  eng: "// If the subject is no one, nobody - use 'they' in the tag.// No one knew about that, did they?"},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
@@ -764,9 +813,9 @@ let dictionary2 = [
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
+
+
+
 ];
 
 let oldDictionary2 = [
