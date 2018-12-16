@@ -720,7 +720,7 @@ let dictionary2 = [
     rus: {js|Как приятно видеть вас здесь. //(=приятный)|js},
   },
   {
-    eng: "I have to go. It's been nice nice talking to you.",
+    eng: "I have to go. It's been nice talking to you.",
     rus: {js|Я должен идти. Было приятно поговорить с тобой.|js},
   },
   {
