@@ -250,4 +250,5 @@ let reshuffle9 = cards =>
   map(x => (Random.int(1000000), x)) @@
   cards;
 
+
 /* аргумент cards убрать не получится ! */

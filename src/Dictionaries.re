@@ -693,15 +693,34 @@ let veryOldDictionary1 = [
 ];
 
 let dictionary2 = [
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
-  {rus: {js||js}, eng: ""},
+  {rus: {js|Боюсь, у нас закончились деньги. // (=денег не осталось)|js}, eng: "I'm afraid we've run out of money. // (=there is no money left)"},
+  {rus: {js|Постарайтесь отслеживать расходы, чтобы не превышать бюджет. // (=монитор)|js}, eng: "Try to keep track of spending so that you don't go over budget. // (=monitor)"},
+  {rus: {js|Когда у вас мало времени, вы должны определить приоритеты задач и сделать самые важные из них в первую очередь.|js}, eng: "When you are short of time, you have to prioritize tasks and do the most important ones first."},
+  {rus: {js|Мы ожидаем закончить задачи этого спринта досрочно. // (=до запланированного времени)|js}, eng: "We expect to finish the tasks of this sprint ahead of schedule. // (=before the planned time)"},
+  {rus: {js|Мы отстаем от графика, но надеемся наверстать упущенное на этой неделе. // (=выполнение работ позднее запланированного срока)|js}, eng: "We're behind schedule now but hope to catch up with everything this week. // (=doing work later than planned)"},
+  {rus: {js|В данный момент все идет гладко. // (=все идет по плану, проблем нет)|js}, eng: "Things are running smoothly at the moment. // (=everything's according to plan, there are no problems)"},
+  {rus: {js|Наш менеджер пытается решить любые конфликты сразу. // (=иметь дело)|js}, eng: "Our manager tries to resolve any conflicts straight away. // (=deal with)"},
+  {rus: {js|Основная причина задержки-отсутствие планирования. // (=недостаточно)|js}, eng: "The main reason for the delay is lack of planning. // (=not enough)"},
+  {rus: {js|Мы не можем пропустить крайний срок. В противном случае мы не получим бонус. // (=завершить работу позднее запланированного срока)|js}, eng: "We can't miss the deadline. Otherwise, we won't receive a bonus. // (=complete work later than planned)"},
+
+
+{rus: {js|Как вы думаете, мы сможем уложиться в срок? // (=завершение работы в срок или ранее)|js}, eng: "Do you think we'll be able meet the deadline? // (=complete work on time or earlier)"},
+{rus: {js|Каждый проект имеет бюджетные ограничения. // (=ограничения на сумму денег, которую можно потратить)|js}, eng: "Every project has budget constraints. // (=restrictions on the amount of money that can be spent)"},
+{rus: {js|Нам нужно убедиться, что мы в рамках бюджета. // (=не тратьте слишком много денег)|js}, eng: "We need to make sure that we're within budget. // (=don't spend too much money)"},
+{rus: {js|Для того, чтобы оставаться в рамках бюджета, мы должны разработать лучшее предварительное планирование ресурсов. // (=сделано до начала работы)|js}, eng: "To stay within budget we need to develop better upfront planning of the resources. // (=done before starting work)"},
+{rus: {js|Определите контрольные точки На протяжении всего проекта, чтобы вы могли оставаться на пути. // (=вероятность достижения желаемого результата)|js}, eng: "Define checkpoints throughout the project so you can stay on track. // (=be likely to achieve the result you want)"},
+{rus: {js|Нам нужно немедленно решить проблему. // (=начать пытаться решить)|js}, eng: "We need to address the problem immediately. // (=start trying to solve it)"},
+{rus: {js|Точный прогноз поможет нам уложиться в сроки. // (=правильно и верно в каждой детали)|js}, eng: "An accurate forecast will help us meet our deadlines. // (=correct and true in every detail)"},
+{rus: {js|У нас возникли проблемы с новой системой. // (предлог)|js}, eng: "We've run into problems with the new system. // (preposition)"},
+{rus: {js|У нас ограниченный бюджет, поэтому давайте постараемся снизить расходы. // (=как можно ниже)|js}, eng: "We have a limited budget, so let's try to keep the costs down. // (=as low as possible)"},
+{rus: {js|Прежде чем начать новый проект, важно установить реалистичный бюджет. // (=выделить сумму денег, которой будет достаточно для завершения проекта)|js}, eng: "Before you start a new project, it's essential to set a realistic budget. // (=allocate a sum of money that will be enough for completing the project)"},
+{rus: {js|Компания предлагает новый ассортимент мобильных телефонов по конкурентоспособным ценам. // (=дешевле, чем другие, но все еще хорошего качества)|js}, eng: "The company offers a new range of mobile phones at competitive prices. // (=cheaper than others but still of good quality)"},
+{rus: {js|Мы отстаем от графика, поэтому нам придется работать сверхурочно, чтобы сделать дату запуска. // (=выпуск продукта вовремя)|js}, eng: "We're behind schedule, so we'll have to work overtime in order to make the launch date. // (=release the product on time)"},
+{rus: {js|Если мы сейчас перейдем к бюджету, у нас закончатся деньги к концу проекта. // (=потратить больше денег, чем первоначально планировалось)|js}, eng: "If we go over budget now, we'll run out of money by the end of the project. // (=spend more money than initially planned)"},
+{rus: {js|В прошлом месяце мы отстали от графика из-за неожиданных задержек в сборе требований, но теперь мы снова в пути.|js}, eng: "Last month we fell behind schedule due to unexpected delays in collecting requirements, but we're back on track now."},
+{rus: {js|Я представил свои идеи руководству, и они дали мне добро. // (разрешение на запуск)|js}, eng: "I've presented my ideas to the management and they've given me the go ahead. // (permission to start)"},
+{rus: {js|Фрэнк опоздает, но мы все равно продолжим встречу. // (=начать собрание, как запланировано)|js}, eng: "Frank will be late, but we'll go ahead with the meeting anyway. // (=start the meeting as planned)"},
+
 ];
 
 let oldDictionary2 = [
