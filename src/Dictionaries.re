@@ -28,7 +28,6 @@ let dictionary1 = [
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
-
 ];
 
 let oldDictionary1 = [
@@ -244,7 +243,6 @@ let oldDictionary1 = [
     rus: {js|Если метод определяет переменную и присваивает ей значение THIS, то внутренняя функция будет иметь к ней доступ через эту переменную.|js},
     eng: "If the method defines a variable and assigns it the value of THIS, the inner function will have access to THIS through that variable.",
   },
-
   {
     rus: {js|функциональный литерал состоит из четырех частей. Первая часть - зарезервированное слово 'funciton'. Необязательная вторая часть-это имя функции.|js},
     eng: "A function literal has four parts. The first part is the reserved word function. The optional second part is the function’s name.",
@@ -695,115 +693,6 @@ let veryOldDictionary1 = [
 ];
 
 let dictionary2 = [
-  {
-    eng: "Hi, I don't think we've met. I'm Paolo from Napoli.",
-    rus: {js|Привет, не думаю, что мы встречались. Я Паоло из Неаполя.|js},
-  },
-  {
-    eng: "Hello. It's Adriana, isn't it? We met before dinner.",
-    rus: {js|Привет. Это Адриана, не так ли? Мы встретились перед ужином.|js},
-  },
-  {
-    eng: "I saw you sitting at my table at dinner but I didn't have a chance to speak to you.// (=there was no opportunity)",
-    rus: {js|Я видел, как ты сидел за моим столом за ужином, но у меня не было возможности поговорить с тобой.// (=не было возможности)|js},
-  },
-  {
-    eng: "Is this your first company event?",
-    rus: {js|Это ваше первое корпоративное мероприятие?|js},
-  },
-  {
-    eng: "Are you from Calcutta? What a coincidence! My parents are from India, too.",
-    rus: {js|Вы из Калькутты? Какое совпадение! Мои родители тоже из Индии.|js},
-  },
-  {
-    eng: "Good evening, Adriana. I thought I might see you here. Back for another company event? // (=felt I could meet)",
-    rus: {js|Добрый вечер, Адриана. Я думал, что увижу тебя здесь. Вернулся на другое мероприятие компании? // (=чувствовал, что могу встретиться)|js},
-  },
-  {
-    eng: "Currently I'm working on pension plans and other savings schemes. //(preposition)",
-    rus: {js|В настоящее время я работаю над пенсионными планами и другими накопительными планами. //(предлог)|js},
-  },
-  {
-    eng: "How lovely to see you here. //(=nice)",
-    rus: {js|Как приятно видеть вас здесь. //(=приятный)|js},
-  },
-  {
-    eng: "I have to go. It's been nice talking to you.",
-    rus: {js|Я должен идти. Было приятно поговорить с тобой.|js},
-  },
-  {
-    eng: "I injured my leg in January in a skiing accident. Oh dear, I'm sorry to hear that!",
-    rus: {js|Я повредил ногу в январе в лыжной аварии. О Боже, мне очень жаль это слышать!|js},
-  },
-  {
-    eng: "Have you seen the programme? It looks very entertaining. //(=a lot of fun)",
-    rus: {js|Вы видели программу? Выглядит очень занимательно. // (=очень весело)|js},
-  },
-  {
-    eng: "Apparently, they're interested in people who've worked in different divisions. // (=it seems that)",
-    rus: {js|Видимо, их интересуют люди, которые работали в разных подразделениях. // (=похоже, что)|js},
-  },
-  {
-    eng: "Hi, I'm Sumitra, based in the UK. // (=working)",
-    rus: {js|Привет, я Сумитра, базирующаяся в Великобритании. // (=рабочий)|js},
-  },
-  {
-    eng: "How are things? // (=How are you?)",
-    rus: {js|Как дела? // (=Как ты?)|js},
-  },
-  {
-    eng: "My boss and I have a lot in common, so it's easy for us to work together. // (=similar interests, attitudes)",
-    rus: {js|У нас с боссом много общего, так что нам легко работать вместе. // (=схожие интересы, установки)|js},
-  },
-  {
-    eng: "At the beginning of the presentation the speaker made a joke to break the ice. // (=to help people to relax)",
-    rus: {js|В начале презентации спикер пошутил, чтобы сломать лед. // (=чтобы помочь людям расслабиться)|js},
-  },
-  {
-    eng: "By the way, have you seen Ann Smith? I've heard that she's supposed to be at this conference. // (changing the topic of the conversation)",
-    rus: {js|Кстати, вы не видели Энн Смит? Я слышал, что она должна быть на этой конференции. // (изменение темы разговора)|js},
-  },
-  {rus: {js|Когда уезжает Мистер Патель? Вы знаете, когда мистер Патель уезжает?|js},
-  eng: "When is Mr Patel leaving? Do you know when Mr. Patel is leaving?"},
-  {rus: {js|Где работает Мистер Элмор?  Не подскажете, где работает Мистер Элмор?|js},
-  eng: "Where does Mr Elmore work?  Could you tell me where Mr Elmore works?"},
-  {rus: {js|Сколько это стоит? Можете сказать, сколько это стоит?|js},
-  eng: "How much does it cost? Can you tell me how much it costs?"},
-  {rus: {js|Кто оставил это сообщение? Вы знаете, кто оставил это сообщение?|js},
-  eng: "Who left this message? Do you have any idea who left this message?"},
-  {rus: {js|Завтра будет дождь? Ты знаешь, будет ли завтра дождь?|js},
-  eng: "Is it going to rain tomorrow? Do you know whether it's going to rain tomorrow?"},
-  {rus: {js|Разве вы не в Милане?|js},
-  eng: "Aren't you based in Milan?"},
-  {rus: {js|Разве они не продаете аппаратное и программное обеспечение?|js},
-  eng: "Didn't they sell hardware as well as software?"},
-  {rus: {js|Вы не можете работать позже?|js},
-  eng: "Can't you work a bit later tonight?"},
-  {rus: {js|// жалуешься // Ты еще не закончил?|js},
-  eng: "//complain// Haven't you finished yet?"},
-
-  {rus: {js|// сделайте предложение // Почему бы вам не присоединиться к нам?|js},
-  eng: "//make a suggestion// Why don't you join us?"},
-  {rus: {js|//проверка информации// Не твое?|js},
-  eng: "//check information// Isn't is yours?"},
-  {rus: {js|// сделать запрос // Можем ли мы присоединиться к вам на встрече?|js},
-  eng: "//make a request// Can't we join you at the meeting?"},
-  {rus: {js|// если утверждение положительное, то тег вопроса отрицательный.//- Жарко, не правда ли?|js},
-  eng: "//If the statement is positive, the question tag is negative.// It's hot, isn't it?"},
-  {rus: {js|//Если высказывание отрицательное, общий вопрос является положительным./- Вы не видели мой ключ, не так ли?|js},
-  eng: "//If the statement is negative, the question tag is positive.// You haven't seen my key, have you?"},
-  {rus: {js|Она не поедет в Китай, не так ли?|js},
-  eng: "She won't go to China, will she?"},
-  {rus: {js|Ты умеешь плавать, правда?|js},
-  eng: "You can swim, can't you?"},
-  {rus: {js|Вы работаете на Сименса, не так ли?|js},
-  eng: "You work for Simens, don't you?"},
-  {rus: {js|Он ушел вчера рано, не так ли?|js},
-  eng: "He left early yesterday, didn't he?"},
-  {rus: {js|// Если объект находится кто-то, кого-либо, вы, все, кто угодно - использовать 'они' в теге./ Кто угодно может воспользоваться комнатой для переговоров, не так ли?|js},
-  eng: "// If the subject is someone, sombody, evryone, everybody, anyone, anybody - use 'they' in the tag.// Anyone can use the meeting room, can't they?"},
-  {rus: {js|// если субъект никто, никто - используйте 'они' в теге./- Никто об этом не знал, не так ли?|js},
-  eng: "// If the subject is no one, nobody - use 'they' in the tag.// No one knew about that, did they?"},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
@@ -813,9 +702,6 @@ let dictionary2 = [
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
-
-
-
 ];
 
 let oldDictionary2 = [
@@ -1055,6 +941,154 @@ let oldDictionary2 = [
   {
     rus: {js|Ваши навыки общения могут иметь большое значение на собеседовании // (=имеют хороший эффект).|js},
     eng: "Your communication skills could make all the difference at a job interview // (=have a good effect).",
+  },
+  {
+    eng: "Hi, I don't think we've met. I'm Paolo from Napoli.",
+    rus: {js|Привет, не думаю, что мы встречались. Я Паоло из Неаполя.|js},
+  },
+  {
+    eng: "Hello. It's Adriana, isn't it? We met before dinner.",
+    rus: {js|Привет. Это Адриана, не так ли? Мы встретились перед ужином.|js},
+  },
+  {
+    eng: "I saw you sitting at my table at dinner but I didn't have a chance to speak to you.// (=there was no opportunity)",
+    rus: {js|Я видел, как ты сидел за моим столом за ужином, но у меня не было возможности поговорить с тобой.// (=не было возможности)|js},
+  },
+  {
+    eng: "Is this your first company event?",
+    rus: {js|Это ваше первое корпоративное мероприятие?|js},
+  },
+  {
+    eng: "Are you from Calcutta? What a coincidence! My parents are from India, too.",
+    rus: {js|Вы из Калькутты? Какое совпадение! Мои родители тоже из Индии.|js},
+  },
+  {
+    eng: "Good evening, Adriana. I thought I might see you here. Back for another company event? // (=felt I could meet)",
+    rus: {js|Добрый вечер, Адриана. Я думал, что увижу тебя здесь. Вернулся на другое мероприятие компании? // (=чувствовал, что могу встретиться)|js},
+  },
+  {
+    eng: "Currently I'm working on pension plans and other savings schemes. //(preposition)",
+    rus: {js|В настоящее время я работаю над пенсионными планами и другими накопительными планами. //(предлог)|js},
+  },
+  {
+    eng: "How lovely to see you here. //(=nice)",
+    rus: {js|Как приятно видеть вас здесь. //(=приятный)|js},
+  },
+  {
+    eng: "I have to go. It's been nice talking to you.",
+    rus: {js|Я должен идти. Было приятно поговорить с тобой.|js},
+  },
+  {
+    eng: "I injured my leg in January in a skiing accident. Oh dear, I'm sorry to hear that!",
+    rus: {js|Я повредил ногу в январе в лыжной аварии. О Боже, мне очень жаль это слышать!|js},
+  },
+  {
+    eng: "Have you seen the programme? It looks very entertaining. //(=a lot of fun)",
+    rus: {js|Вы видели программу? Выглядит очень занимательно. // (=очень весело)|js},
+  },
+  {
+    eng: "Apparently, they're interested in people who've worked in different divisions. // (=it seems that)",
+    rus: {js|Видимо, их интересуют люди, которые работали в разных подразделениях. // (=похоже, что)|js},
+  },
+  {
+    eng: "Hi, I'm Sumitra, based in the UK. // (=working)",
+    rus: {js|Привет, я Сумитра, базирующаяся в Великобритании. // (=рабочий)|js},
+  },
+  {
+    eng: "How are things? // (=How are you?)",
+    rus: {js|Как дела? // (=Как ты?)|js},
+  },
+  {
+    eng: "My boss and I have a lot in common, so it's easy for us to work together. // (=similar interests, attitudes)",
+    rus: {js|У нас с боссом много общего, так что нам легко работать вместе. // (=схожие интересы, установки)|js},
+  },
+  {
+    eng: "At the beginning of the presentation the speaker made a joke to break the ice. // (=to help people to relax)",
+    rus: {js|В начале презентации спикер пошутил, чтобы сломать лед. // (=чтобы помочь людям расслабиться)|js},
+  },
+  {
+    eng: "By the way, have you seen Ann Smith? I've heard that she's supposed to be at this conference. // (changing the topic of the conversation)",
+    rus: {js|Кстати, вы не видели Энн Смит? Я слышал, что она должна быть на этой конференции. // (изменение темы разговора)|js},
+  },
+  {
+    rus: {js|Когда уезжает Мистер Патель? Вы знаете, когда мистер Патель уезжает?|js},
+    eng: "When is Mr Patel leaving? Do you know when Mr. Patel is leaving?",
+  },
+  {
+    rus: {js|Где работает Мистер Элмор?  Не подскажете, где работает Мистер Элмор?|js},
+    eng: "Where does Mr Elmore work?  Could you tell me where Mr Elmore works?",
+  },
+  {
+    rus: {js|Сколько это стоит? Можете сказать, сколько это стоит?|js},
+    eng: "How much does it cost? Can you tell me how much it costs?",
+  },
+  {
+    rus: {js|Кто оставил это сообщение? Вы знаете, кто оставил это сообщение?|js},
+    eng: "Who left this message? Do you have any idea who left this message?",
+  },
+  {
+    rus: {js|Завтра будет дождь? Ты знаешь, будет ли завтра дождь?|js},
+    eng: "Is it going to rain tomorrow? Do you know whether it's going to rain tomorrow?",
+  },
+  {
+    rus: {js|Разве вы не в Милане?|js},
+    eng: "Aren't you based in Milan?",
+  },
+  {
+    rus: {js|Разве они не продаете аппаратное и программное обеспечение?|js},
+    eng: "Didn't they sell hardware as well as software?",
+  },
+  {
+    rus: {js|Вы не можете работать позже?|js},
+    eng: "Can't you work a bit later tonight?",
+  },
+  {
+    rus: {js|// жалуешься // Ты еще не закончил?|js},
+    eng: "//complain// Haven't you finished yet?",
+  },
+  {
+    rus: {js|// сделайте предложение // Почему бы вам не присоединиться к нам?|js},
+    eng: "//make a suggestion// Why don't you join us?",
+  },
+  {
+    rus: {js|//проверка информации// Не твое?|js},
+    eng: "//check information// Isn't is yours?",
+  },
+  {
+    rus: {js|// сделать запрос // Можем ли мы присоединиться к вам на встрече?|js},
+    eng: "//make a request// Can't we join you at the meeting?",
+  },
+  {
+    rus: {js|// если утверждение положительное, то тег вопроса отрицательный.//- Жарко, не правда ли?|js},
+    eng: "//If the statement is positive, the question tag is negative.// It's hot, isn't it?",
+  },
+  {
+    rus: {js|//Если высказывание отрицательное, общий вопрос является положительным./- Вы не видели мой ключ, не так ли?|js},
+    eng: "//If the statement is negative, the question tag is positive.// You haven't seen my key, have you?",
+  },
+  {
+    rus: {js|Она не поедет в Китай, не так ли?|js},
+    eng: "She won't go to China, will she?",
+  },
+  {
+    rus: {js|Ты умеешь плавать, правда?|js},
+    eng: "You can swim, can't you?",
+  },
+  {
+    rus: {js|Вы работаете на Сименса, не так ли?|js},
+    eng: "You work for Simens, don't you?",
+  },
+  {
+    rus: {js|Он ушел вчера рано, не так ли?|js},
+    eng: "He left early yesterday, didn't he?",
+  },
+  {
+    rus: {js|// Если объект находится кто-то, кого-либо, вы, все, кто угодно - использовать 'они' в теге./ Кто угодно может воспользоваться комнатой для переговоров, не так ли?|js},
+    eng: "// If the subject is someone, sombody, evryone, everybody, anyone, anybody - use 'they' in the tag.// Anyone can use the meeting room, can't they?",
+  },
+  {
+    rus: {js|// если субъект никто, никто - используйте 'они' в теге./- Никто об этом не знал, не так ли?|js},
+    eng: "// If the subject is no one, nobody - use 'they' in the tag.// No one knew about that, did they?",
   },
 ];
 
