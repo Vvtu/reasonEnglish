@@ -18,7 +18,14 @@ let dictionary1 = [
     rus: {js|Область в языке программирования управляет видимостью и временем жизни переменных и параметров. Это важная услуга для программиста, поскольку она уменьшает конфликты имен и обеспечивает автоматическое управление памятью.|js},
     eng: "Scope in a programming language controls the visibility and lifetimes of variables and parameters. This is an important serviceto the programmer because it reduces nam- ing collisions and provides automatic memory management.",
   },
-
+{
+    rus: {js|Хорошей новостью о scope является то, что внутренние функции получают доступ к параметрам и переменным функций, в которых они определены (за исключением this и arguments).|js},
+    eng: "The good news about scope is that inner functions get access to the parameters and variables of the functions they are defined within (with the exception of this and arguments).",
+  },
+  {
+    rus: {js|Более интересным является случай, когда внутренняя функция имеет более длительный срок службы, чем ее внешняя функция.|js},
+    eng: "A more interesting case is when the inner function has a longer lifetime than its outer function.",
+  },
 
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
