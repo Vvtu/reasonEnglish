@@ -26,6 +26,12 @@ let dictionary1 = [
     rus: {js|Более интересным является случай, когда внутренняя функция имеет более длительный срок службы, чем ее внешняя функция.|js},
     eng: "A more interesting case is when the inner function has a longer lifetime than its outer function.",
   },
+  {
+    rus: {js|Область в языке программирования управляет видимостью и временем жизни переменных и параметров. Это важная услуга для программиста, поскольку она уменьшает конфликты имен и обеспечивает автоматическое управление памятью.|js},
+    eng: "Scope in a programming language controls the visibility and lifetimes of variables and parameters. This is an important serviceto the programmer because it reduces nam- ing collisions and provides automatic memory management.",
+  },
+
+
 
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
