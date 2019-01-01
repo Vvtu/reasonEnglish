@@ -18,14 +18,7 @@ let dictionary1 = [
     rus: {js|Область в языке программирования управляет видимостью и временем жизни переменных и параметров. Это важная услуга для программиста, поскольку она уменьшает конфликты имен и обеспечивает автоматическое управление памятью.|js},
     eng: "Scope in a programming language controls the visibility and lifetimes of variables and parameters. This is an important serviceto the programmer because it reduces nam- ing collisions and provides automatic memory management.",
   },
-  {
-    rus: {js|Хорошей новостью о scope является то, что внутренние функции получают доступ к параметрам и переменным функций, в которых они определены (за исключением this и arguments).|js},
-    eng: "The good news about scope is that inner functions get access to the parameters and variables of the functions they are defined within (with the exception of this and arguments).",
-  },
-  {
-    rus: {js|Более интересным является случай, когда внутренняя функция имеет более длительный срок службы, чем ее внешняя функция.|js},
-    eng: "A more interesting case is when the inner function has a longer lifetime than its outer function.",
-  },
+
 
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
@@ -706,106 +699,72 @@ let veryOldDictionary1 = [
 ];
 
 let dictionary2 = [
-  {
-    rus: {js|Боюсь, у нас закончились деньги. // (=денег не осталось)|js},
-    eng: "I'm afraid we've run out of money. // (=there is no money left)",
-  },
-  {
-    rus: {js|Постарайтесь отслеживать расходы, чтобы не превышать бюджет. // (=монитор)|js},
-    eng: "Try to keep track of spending so that you don't go over budget. // (=monitor)",
-  },
-  {
-    rus: {js|Когда у вас мало времени, вы должны определить приоритеты задач и сделать самые важные из них в первую очередь.|js},
-    eng: "When you are short of time, you have to prioritize tasks and do the most important ones first.",
-  },
-  {
-    rus: {js|Мы ожидаем закончить задачи этого спринта досрочно. // (=до запланированного времени)|js},
-    eng: "We expect to finish the tasks of this sprint ahead of schedule. // (=before the planned time)",
-  },
-  {
-    rus: {js|Мы отстаем от графика, но надеемся наверстать упущенное на этой неделе. // (=выполнение работ позднее запланированного срока)|js},
-    eng: "We're behind schedule now but hope to catch up with everything this week. // (=doing work later than planned)",
-  },
-  {
-    rus: {js|В данный момент все идет гладко. // (=все идет по плану, проблем нет)|js},
-    eng: "Things are running smoothly at the moment. // (=everything's according to plan, there are no problems)",
-  },
-  {
-    rus: {js|Наш менеджер пытается решить любые конфликты сразу. // (=иметь дело)|js},
-    eng: "Our manager tries to resolve any conflicts straight away. // (=deal with)",
-  },
-  {
-    rus: {js|Основная причина задержки-отсутствие планирования. // (=недостаточно)|js},
-    eng: "The main reason for the delay is lack of planning. // (=not enough)",
-  },
-  {
-    rus: {js|Мы не можем пропустить крайний срок. В противном случае мы не получим бонус. // (=завершить работу позднее запланированного срока)|js},
-    eng: "We can't miss the deadline. Otherwise, we won't receive a bonus. // (=complete work later than planned)",
-  },
-  {
-    rus: {js|Как вы думаете, мы сможем уложиться в срок? // (=завершение работы в срок или ранее)|js},
-    eng: "Do you think we'll be able meet the deadline? // (=complete work on time or earlier)",
-  },
-  {
-    rus: {js|Каждый проект имеет бюджетные ограничения. // (=ограничения на сумму денег, которую можно потратить)|js},
-    eng: "Every project has budget constraints. // (=restrictions on the amount of money that can be spent)",
-  },
-  {
-    rus: {js|Нам нужно убедиться, что мы в рамках бюджета. // (=не тратьте слишком много денег)|js},
-    eng: "We need to make sure that we're within budget. // (=don't spend too much money)",
-  },
-  {
-    rus: {js|Для того, чтобы оставаться в рамках бюджета, мы должны разработать лучшее предварительное планирование ресурсов. // (=сделано до начала работы)|js},
-    eng: "To stay within budget we need to develop better upfront planning of the resources. // (=done before starting work)",
-  },
-  {
-    rus: {js|Определите контрольные точки На протяжении всего проекта, чтобы вы могли оставаться на пути. // (=вероятность достижения желаемого результата)|js},
-    eng: "Define checkpoints throughout the project so you can stay on track. // (=be likely to achieve the result you want)",
-  },
-  {
-    rus: {js|Нам нужно немедленно решить проблему. // (=начать пытаться решить)|js},
-    eng: "We need to address the problem immediately. // (=start trying to solve it)",
-  },
-  {
-    rus: {js|Точный прогноз поможет нам уложиться в сроки. // (=правильно и верно в каждой детали)|js},
-    eng: "An accurate forecast will help us meet our deadlines. // (=correct and true in every detail)",
-  },
-  {
-    rus: {js|У нас возникли проблемы с новой системой. // (предлог)|js},
-    eng: "We've run into problems with the new system. // (preposition)",
-  },
-  {
-    rus: {js|У нас ограниченный бюджет, поэтому давайте постараемся снизить расходы. // (=как можно ниже)|js},
-    eng: "We have a limited budget, so let's try to keep the costs down. // (=as low as possible)",
-  },
-  {
-    rus: {js|Прежде чем начать новый проект, важно установить реалистичный бюджет. // (=выделить сумму денег, которой будет достаточно для завершения проекта)|js},
-    eng: "Before you start a new project, it's essential to set a realistic budget. // (=allocate a sum of money that will be enough for completing the project)",
-  },
-  {
-    rus: {js|Компания предлагает новый ассортимент мобильных телефонов по конкурентоспособным ценам. // (=дешевле, чем другие, но все еще хорошего качества)|js},
-    eng: "The company offers a new range of mobile phones at competitive prices. // (=cheaper than others but still of good quality)",
-  },
-  {
-    rus: {js|Мы отстаем от графика, поэтому нам придется работать сверхурочно, чтобы сделать дату запуска. // (=выпуск продукта вовремя)|js},
-    eng: "We're behind schedule, so we'll have to work overtime in order to make the launch date. // (=release the product on time)",
-  },
-  {
-    rus: {js|Если мы сейчас перейдем к бюджету, у нас закончатся деньги к концу проекта. // (=потратить больше денег, чем первоначально планировалось)|js},
-    eng: "If we go over budget now, we'll run out of money by the end of the project. // (=spend more money than initially planned)",
-  },
-  {
-    rus: {js|В прошлом месяце мы отстали от графика из-за неожиданных задержек в сборе требований, но теперь мы снова в пути.|js},
-    eng: "Last month we fell behind schedule due to unexpected delays in collecting requirements, but we're back on track now.",
-  },
-  {
-    rus: {js|Я представил свои идеи руководству, и они дали мне добро. // (разрешение на запуск)|js},
-    eng: "I've presented my ideas to the management and they've given me the go ahead. // (permission to start)",
-  },
-  {
-    rus: {js|Фрэнк опоздает, но мы все равно продолжим встречу. // (=начать собрание, как запланировано)|js},
-    eng: "Frank will be late, but we'll go ahead with the meeting anyway. // (=start the meeting as planned)",
-  },
+
+
+
+
+
+
+
+
+{rus: {js|Вчера я отправил вам предложенную повестку дня. // (перечень тем для обсуждения на совещании)|js},
+eng: "I sent you a proposed agenda yesterday. //( a list of subjects to discuss at a meeting)"},
+{rus: {js|Цель сегодняшнего заседания-информировать друг друга о достигнутом прогрессе. //( цель)|js},
+ eng: "The purpose of today's meeting is to update each other on progress. //( goal)"},
+{rus: {js|До сих пор дата запуска назначена на 15 ноября. //( дата выпуска )|js},
+eng: "Up to now the launch date has been set for the 15th of November. //( the release date)"},
+{rus: {js|Мы забронировали место проведения конференции две недели назад. // (место проведения мероприятия)|js},
+ eng: "We booked the venue for the conference two weeks ago. //( a place for an event)"},
+
+
+
+
+
+
+{rus: {js|Все не так гладко, как мы надеялись. //( не достаточно хорошо )|js},
+eng: "Things aren't r running as smoothly as we hoped. //( aren't going well enough)"},
+{rus: {js|У нас проблема с новой функциональностью. //( faced)|js},
+ eng: "We've hit a problem with the new functionality. //( faced)"},
+{rus: {js|Мы находимся на пути с развертыванием функции. //( все идет по плану)|js},
+ eng: "We're on track with deploying the feature. //( everything's going according to plan)"},
+{rus: {js|Как выглядит ваша сторона вещей? //( ваш взгляд)|js},
+ eng: "How does your side of things look? //( your view)"},
+{rus: {js|Как продвигается рекламная кампания? //( достижение прогресса)|js},
+ eng: "How's the advertising campaign coming along? //( making progress)"},
+
+{rus: {js|И как далеко вы продвинулись в подготовке к запуску? (предлог)|js},
+eng: "And how far are you with preparations for the launch party? (preposition)"},
+{rus: {js|Каково текущее состояние нагрузочного тестирования? //( существующий сейчас)|js},
+ eng: "What's the current status of the load testing? //( existing now)"},
+{rus: {js|Что именно вы имеете в виду? (просьба разъяснить)|js},
+ eng: "What do you mean exactly? (please clarify)"},
+{rus: {js|Итак, настоящая проблема заключается в производителях батарей? //( из-за )|js},
+eng: "So the real problem lies with the battery manufacturers? //( is because of)"},
+{rus: {js|Почему бы нам не подождать и не посмотреть, что предлагают техники? //( давайте)|js},
+ eng: "Why don't we wait and see what the technicians suggest? //( let's)"},
+{rus: {js|Меня это не убеждает. //( не уверенный)|js},
+eng: "I'm not convinced. //( not certain)"},
+
+{rus: {js|Это стоит попробовать. // (это хорошая идея, чтобы попробовать)|js},
+eng: "It's worth a try. //( it's a good idea to try it)"},
+{rus: {js|Наши инженеры изучают проблему. // (исследование; предлог)|js},
+ eng: "Our engineers are looking into the problem. //( investigating; preposition)"},
+{rus: {js|Возможно, придется перенести запуск. // (изменить дату)|js},
+ eng: "We may have to reschedule the launch party. //( change the date)"},
+{rus: {js|Батарея может иссякнуть в 6 часов если свои ключевые характеристики в постоянно используются. (используйте всю энергию; предлог)|js},
+ eng: "The battery can run out in six hours if its key features are in permanent use. // (use all the energy; preposition)"},
+{rus: {js|Использование другого телефона для запуска было бы моим предложением. //( будет предложение)|js},
+eng: "Using a different phone for the launch would be my proposal. //( will be suggestion)"},
+
+{rus: {js|Если вы спрашиваете меня, то мы должны обсудить вопрос с клиентом. //( на мой взгляд)|js},
+eng: "If you ask me, we should discuss the issue with the customer. //( in my opinion)"},
+{rus: {js|Можно ли решить эту проблему?|js},
+ eng: "Can this problem be resolved fixed? "},
+{rus: {js|Почему бы нам не подождать и не посмотреть, что предлагают техники?|js},
+ eng: "Why don't we wait and see what the technicians suggest?"},
+{rus: {js|Как далеко вы продвинулись в подготовке к демо? /(каков ваш прогресс?)|js},
+ eng: "How far are you with preparing for the demo? //( what's your progress?)"},
+
 ];
 
 let oldDictionary2 = [
@@ -1193,6 +1152,106 @@ let oldDictionary2 = [
   {
     rus: {js|// если субъект никто, никто - используйте 'они' в теге./- Никто об этом не знал, не так ли?|js},
     eng: "// If the subject is no one, nobody - use 'they' in the tag.// No one knew about that, did they?",
+  },
+  {
+    rus: {js|Боюсь, у нас закончились деньги. // (=денег не осталось)|js},
+    eng: "I'm afraid we've run out of money. // (=there is no money left)",
+  },
+  {
+    rus: {js|Постарайтесь отслеживать расходы, чтобы не превышать бюджет. // (=монитор)|js},
+    eng: "Try to keep track of spending so that you don't go over budget. // (=monitor)",
+  },
+  {
+    rus: {js|Когда у вас мало времени, вы должны определить приоритеты задач и сделать самые важные из них в первую очередь.|js},
+    eng: "When you are short of time, you have to prioritize tasks and do the most important ones first.",
+  },
+  {
+    rus: {js|Мы ожидаем закончить задачи этого спринта досрочно. // (=до запланированного времени)|js},
+    eng: "We expect to finish the tasks of this sprint ahead of schedule. // (=before the planned time)",
+  },
+  {
+    rus: {js|Мы отстаем от графика, но надеемся наверстать упущенное на этой неделе. // (=выполнение работ позднее запланированного срока)|js},
+    eng: "We're behind schedule now but hope to catch up with everything this week. // (=doing work later than planned)",
+  },
+  {
+    rus: {js|В данный момент все идет гладко. // (=все идет по плану, проблем нет)|js},
+    eng: "Things are running smoothly at the moment. // (=everything's according to plan, there are no problems)",
+  },
+  {
+    rus: {js|Наш менеджер пытается решить любые конфликты сразу. // (=иметь дело)|js},
+    eng: "Our manager tries to resolve any conflicts straight away. // (=deal with)",
+  },
+  {
+    rus: {js|Основная причина задержки-отсутствие планирования. // (=недостаточно)|js},
+    eng: "The main reason for the delay is lack of planning. // (=not enough)",
+  },
+  {
+    rus: {js|Мы не можем пропустить крайний срок. В противном случае мы не получим бонус. // (=завершить работу позднее запланированного срока)|js},
+    eng: "We can't miss the deadline. Otherwise, we won't receive a bonus. // (=complete work later than planned)",
+  },
+  {
+    rus: {js|Как вы думаете, мы сможем уложиться в срок? // (=завершение работы в срок или ранее)|js},
+    eng: "Do you think we'll be able meet the deadline? // (=complete work on time or earlier)",
+  },
+  {
+    rus: {js|Каждый проект имеет бюджетные ограничения. // (=ограничения на сумму денег, которую можно потратить)|js},
+    eng: "Every project has budget constraints. // (=restrictions on the amount of money that can be spent)",
+  },
+  {
+    rus: {js|Нам нужно убедиться, что мы в рамках бюджета. // (=не тратьте слишком много денег)|js},
+    eng: "We need to make sure that we're within budget. // (=don't spend too much money)",
+  },
+  {
+    rus: {js|Для того, чтобы оставаться в рамках бюджета, мы должны разработать лучшее предварительное планирование ресурсов. // (=сделано до начала работы)|js},
+    eng: "To stay within budget we need to develop better upfront planning of the resources. // (=done before starting work)",
+  },
+  {
+    rus: {js|Определите контрольные точки На протяжении всего проекта, чтобы вы могли оставаться на пути. // (=вероятность достижения желаемого результата)|js},
+    eng: "Define checkpoints throughout the project so you can stay on track. // (=be likely to achieve the result you want)",
+  },
+  {
+    rus: {js|Нам нужно немедленно начать решать проблему. // (=начать пытаться решить)|js},
+    eng: "We need to address the problem immediately. // (=start trying to solve it)",
+  },
+  {
+    rus: {js|Точный прогноз поможет нам уложиться в сроки. // (=правильно и верно в каждой детали)|js},
+    eng: "An accurate forecast will help us meet our deadlines. // (=correct and true in every detail)",
+  },
+  {
+    rus: {js|У нас возникли проблемы с новой системой. // (предлог)|js},
+    eng: "We've run into problems with the new system. // (preposition)",
+  },
+  {
+    rus: {js|У нас ограниченный бюджет, поэтому давайте постараемся снизить расходы. // (=как можно ниже)|js},
+    eng: "We have a limited budget, so let's try to keep the costs down. // (=as low as possible)",
+  },
+  {
+    rus: {js|Прежде чем начать новый проект, важно установить реалистичный бюджет. // (=выделить сумму денег, которой будет достаточно для завершения проекта)|js},
+    eng: "Before you start a new project, it's essential to set a realistic budget. // (=allocate a sum of money that will be enough for completing the project)",
+  },
+  {
+    rus: {js|Компания предлагает новый ассортимент мобильных телефонов по конкурентоспособным ценам. // (=дешевле, чем другие, но все еще хорошего качества)|js},
+    eng: "The company offers a new range of mobile phones at competitive prices. // (=cheaper than others but still of good quality)",
+  },
+  {
+    rus: {js|Мы отстаем от графика, поэтому нам придется работать сверхурочно, чтобы сделать дату запуска. // (=выпуск продукта вовремя)|js},
+    eng: "We're behind schedule, so we'll have to work overtime in order to make the launch date. // (=release the product on time)",
+  },
+  {
+    rus: {js|Если мы сейчас превысим бюджет, у нас закончатся деньги к концу проекта. // (=потратить больше денег, чем первоначально планировалось)|js},
+    eng: "If we go over budget now, we'll run out of money by the end of the project. // (=spend more money than initially planned)",
+  },
+  {
+    rus: {js|В прошлом месяце мы отстали от графика из-за неожиданных задержек в сборе требований, но теперь мы снова в пути.|js},
+    eng: "Last month we fell behind schedule due to unexpected delays in collecting requirements, but we're back on track now.",
+  },
+  {
+    rus: {js|Я представил свои идеи руководству, и они дали мне добро. // (разрешение на запуск)|js},
+    eng: "I've presented my ideas to the management and they've given me the go ahead. // (permission to start)",
+  },
+  {
+    rus: {js|Фрэнк опоздает, но мы все равно продолжим встречу. // (=начать собрание, как запланировано)|js},
+    eng: "Frank will be late, but we'll go ahead with the meeting anyway. // (=start the meeting as planned)",
   },
 ];
 
