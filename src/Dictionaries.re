@@ -18,7 +18,7 @@ let dictionary1 = [
     rus: {js|Область в языке программирования управляет видимостью и временем жизни переменных и параметров. Это важная услуга для программиста, поскольку она уменьшает конфликты имен и обеспечивает автоматическое управление памятью.|js},
     eng: "Scope in a programming language controls the visibility and lifetimes of variables and parameters. This is an important serviceto the programmer because it reduces nam- ing collisions and provides automatic memory management.",
   },
-{
+  {
     rus: {js|Хорошей новостью о scope является то, что внутренние функции получают доступ к параметрам и переменным функций, в которых они определены (за исключением this и arguments).|js},
     eng: "The good news about scope is that inner functions get access to the parameters and variables of the functions they are defined within (with the exception of this and arguments).",
   },
@@ -30,9 +30,6 @@ let dictionary1 = [
     rus: {js|Область в языке программирования управляет видимостью и временем жизни переменных и параметров. Это важная услуга для программиста, поскольку она уменьшает конфликты имен и обеспечивает автоматическое управление памятью.|js},
     eng: "Scope in a programming language controls the visibility and lifetimes of variables and parameters. This is an important serviceto the programmer because it reduces nam- ing collisions and provides automatic memory management.",
   },
-
-
-
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
   {rus: {js||js}, eng: ""},
@@ -712,72 +709,102 @@ let veryOldDictionary1 = [
 ];
 
 let dictionary2 = [
-
-
-
-
-
-
-
-
-{rus: {js|Вчера я отправил вам предложенную повестку дня. // (перечень тем для обсуждения на совещании)|js},
-eng: "I sent you a proposed agenda yesterday. //( a list of subjects to discuss at a meeting)"},
-{rus: {js|Цель сегодняшнего заседания-информировать друг друга о достигнутом прогрессе. //( цель)|js},
- eng: "The purpose of today's meeting is to update each other on progress. //( goal)"},
-{rus: {js|До сих пор дата запуска назначена на 15 ноября. //( дата выпуска )|js},
-eng: "Up to now the launch date has been set for the 15th of November. //( the release date)"},
-{rus: {js|Мы забронировали место проведения конференции две недели назад. // (место проведения мероприятия)|js},
- eng: "We booked the venue for the conference two weeks ago. //( a place for an event)"},
-
-
-
-
-
-
-{rus: {js|Все не так гладко, как мы надеялись. //( не достаточно хорошо )|js},
-eng: "Things aren't r running as smoothly as we hoped. //( aren't going well enough)"},
-{rus: {js|У нас проблема с новой функциональностью. //( faced)|js},
- eng: "We've hit a problem with the new functionality. //( faced)"},
-{rus: {js|Мы находимся на пути с развертыванием функции. //( все идет по плану)|js},
- eng: "We're on track with deploying the feature. //( everything's going according to plan)"},
-{rus: {js|Как выглядит ваша сторона вещей? //( ваш взгляд)|js},
- eng: "How does your side of things look? //( your view)"},
-{rus: {js|Как продвигается рекламная кампания? //( достижение прогресса)|js},
- eng: "How's the advertising campaign coming along? //( making progress)"},
-
-{rus: {js|И как далеко вы продвинулись в подготовке к запуску? (предлог)|js},
-eng: "And how far are you with preparations for the launch party? (preposition)"},
-{rus: {js|Каково текущее состояние нагрузочного тестирования? //( существующий сейчас)|js},
- eng: "What's the current status of the load testing? //( existing now)"},
-{rus: {js|Что именно вы имеете в виду? (просьба разъяснить)|js},
- eng: "What do you mean exactly? (please clarify)"},
-{rus: {js|Итак, настоящая проблема заключается в производителях батарей? //( из-за )|js},
-eng: "So the real problem lies with the battery manufacturers? //( is because of)"},
-{rus: {js|Почему бы нам не подождать и не посмотреть, что предлагают техники? //( давайте)|js},
- eng: "Why don't we wait and see what the technicians suggest? //( let's)"},
-{rus: {js|Меня это не убеждает. //( не уверенный)|js},
-eng: "I'm not convinced. //( not certain)"},
-
-{rus: {js|Это стоит попробовать. // (это хорошая идея, чтобы попробовать)|js},
-eng: "It's worth a try. //( it's a good idea to try it)"},
-{rus: {js|Наши инженеры изучают проблему. // (исследование; предлог)|js},
- eng: "Our engineers are looking into the problem. //( investigating; preposition)"},
-{rus: {js|Возможно, придется перенести запуск. // (изменить дату)|js},
- eng: "We may have to reschedule the launch party. //( change the date)"},
-{rus: {js|Батарея может иссякнуть в 6 часов если свои ключевые характеристики в постоянно используются. (используйте всю энергию; предлог)|js},
- eng: "The battery can run out in six hours if its key features are in permanent use. // (use all the energy; preposition)"},
-{rus: {js|Использование другого телефона для запуска было бы моим предложением. //( будет предложение)|js},
-eng: "Using a different phone for the launch would be my proposal. //( will be suggestion)"},
-
-{rus: {js|Если вы спрашиваете меня, то мы должны обсудить вопрос с клиентом. //( на мой взгляд)|js},
-eng: "If you ask me, we should discuss the issue with the customer. //( in my opinion)"},
-{rus: {js|Можно ли решить эту проблему?|js},
- eng: "Can this problem be resolved fixed? "},
-{rus: {js|Почему бы нам не подождать и не посмотреть, что предлагают техники?|js},
- eng: "Why don't we wait and see what the technicians suggest?"},
-{rus: {js|Как далеко вы продвинулись в подготовке к демо? /(каков ваш прогресс?)|js},
- eng: "How far are you with preparing for the demo? //( what's your progress?)"},
-
+  {
+    rus: {js|Вчера я отправил вам предложенную повестку дня. // (перечень тем для обсуждения на совещании)|js},
+    eng: "I sent you a proposed agenda yesterday. //( a list of subjects to discuss at a meeting)",
+  },
+  {
+    rus: {js|Цель сегодняшнего заседания-информировать друг друга о достигнутом прогрессе. //( цель)|js},
+    eng: "The purpose of today's meeting is to update each other on progress. //( goal)",
+  },
+  {
+    rus: {js|До сих пор дата запуска назначена на 15 ноября. //( дата выпуска )|js},
+    eng: "Up to now the launch date has been set for the 15th of November. //( the release date)",
+  },
+  {
+    rus: {js|Мы забронировали место проведения конференции две недели назад. // (место проведения мероприятия)|js},
+    eng: "We booked the venue for the conference two weeks ago. //( a place for an event)",
+  },
+  {
+    rus: {js|Все не так гладко, как мы надеялись. //( не достаточно хорошо )|js},
+    eng: "Things aren't r running as smoothly as we hoped. //( aren't going well enough)",
+  },
+  {
+    rus: {js|У нас проблема с новой функциональностью. //( faced)|js},
+    eng: "We've hit a problem with the new functionality. //( faced)",
+  },
+  {
+    rus: {js|Мы находимся на пути с развертыванием функции. //( все идет по плану)|js},
+    eng: "We're on track with deploying the feature. //( everything's going according to plan)",
+  },
+  {
+    rus: {js|Как выглядит ваша сторона вещей? //( ваш взгляд)|js},
+    eng: "How does your side of things look? //( your view)",
+  },
+  {
+    rus: {js|Как продвигается рекламная кампания? //( достижение прогресса)|js},
+    eng: "How's the advertising campaign coming along? //( making progress)",
+  },
+  {
+    rus: {js|И как далеко вы продвинулись в подготовке к запуску?|js},
+    eng: "And how far are you with preparations for the launch party? // (preposition)",
+  },
+  {
+    rus: {js|Каково текущее состояние нагрузочного тестирования? //( существующий сейчас)|js},
+    eng: "What's the current status of the load testing? //( existing now)",
+  },
+  {
+    rus: {js|Что именно вы имеете в виду? (просьба разъяснить)|js},
+    eng: "What do you mean exactly? (please clarify)",
+  },
+  {
+    rus: {js|Итак, настоящая проблема заключается в производителях батарей? //( из-за )|js},
+    eng: "So the real problem lies with the battery manufacturers? //( is because of)",
+  },
+  {
+    rus: {js|Почему бы нам не подождать и не посмотреть, что предлагают техники? //( давайте)|js},
+    eng: "Why don't we wait and see what the technicians suggest? //( let's)",
+  },
+  {
+    rus: {js|Меня это не убеждает. //( не уверенный)|js},
+    eng: "I'm not convinced. //( not certain)",
+  },
+  {
+    rus: {js|Это стоит попробовать. // (это хорошая идея, чтобы попробовать)|js},
+    eng: "It's worth a try. //( it's a good idea to try it)",
+  },
+  {
+    rus: {js|Наши инженеры изучают проблему. // (исследование; предлог)|js},
+    eng: "Our engineers are looking into the problem. //( investigating; preposition)",
+  },
+  {
+    rus: {js|Возможно, придется перенести запуск. // (изменить дату)|js},
+    eng: "We may have to reschedule the launch party. //( change the date)",
+  },
+  {
+    rus: {js|Батарея может иссякнуть в 6 часов если свои ключевые характеристики в постоянно используются. (используйте всю энергию; предлог)|js},
+    eng: "The battery can run out in six hours if its key features are in permanent use. // (use all the energy; preposition)",
+  },
+  {
+    rus: {js|Использование другого телефона для запуска было бы моим предложением. //( будет предложение)|js},
+    eng: "Using a different phone for the launch would be my proposal. //( will be suggestion)",
+  },
+  {
+    rus: {js|Если вы спрашиваете меня, то мы должны обсудить вопрос с клиентом. //( на мой взгляд)|js},
+    eng: "If you ask me, we should discuss the issue with the customer. //( in my opinion)",
+  },
+  {
+    rus: {js|Можно ли решить эту проблему?|js},
+    eng: "Can this problem be resolved fixed? ",
+  },
+  {
+    rus: {js|Почему бы нам не подождать и не посмотреть, что предлагают техники?|js},
+    eng: "Why don't we wait and see what the technicians suggest?",
+  },
+  {
+    rus: {js|Как далеко вы продвинулись в подготовке к демо? /(каков ваш прогресс?)|js},
+    eng: "How far are you with preparing for the demo? //( what's your progress?)",
+  },
 ];
 
 let oldDictionary2 = [
@@ -892,7 +919,7 @@ let oldDictionary2 = [
   },
   {
     rus: {js||js},
-    eng: "The next train leaves at 11.15. // Use present simple to talk about timetabled events in the future.",
+    eng: "The next train leaves at 11:15. // Use present simple to talk about timetabled events in the future.",
   },
   {
     rus: {js||js},
