@@ -795,7 +795,7 @@ let dictionary2 = [
   },
   {
     rus: {js|Можно ли решить эту проблему?|js},
-    eng: "Can this problem be resolved fixed? ",
+    eng: "Can this problem be resolved? // fixed ",
   },
   {
     rus: {js|Почему бы нам не подождать и не посмотреть, что предлагают техники?|js},
