@@ -749,6 +749,94 @@ let dictionary2 = [
     rus: {js|Вы видели Тима в воскресенье?|js},
     eng: "Did you see Tim on Sunday?",
   },
+  {
+    rus: {js|Ты много путешествовала, Джейн? Джейн: Да,я бывала во многих местах. Дэйв: Серьезно? Вы когда-нибудь были в Китае? Джейн: Да, я была в Китае дважды. Дэйв: а как насчет Индии? Джейн: Нет, я не была в Индии. Здесь Дэйв и Джейн говорят о местах, где Джейн|js},
+    eng: "Dave: Have you travelled a lot, Jane? Jane: Yes,I've been to lots of places. Dave: Really? Have you ever been to China? Jane: Yes, I've been to China twice. Dave: What about India? Jane: No, I haven't been to India. Here, Dave and Jane are talking about the places Jane",
+  },
+  {
+    rus: {js|Она побывала в ее жизни, это период времени, который продолжается до сих пор.|js},
+    eng: "She has visited in her life, which is a period of time that continues until now.",
+  },
+  {
+    rus: {js|Вы когда-нибудь ели икру?|js},
+    eng: "Have you ever eaten caviar?",
+  },
+  {
+    rus: {js|У нас никогда не было машины.|js},
+    eng: "We've never had a car.",
+  },
+  {
+    rus: {js|Вы читали 'Гамлета'? Нет, я не читал ни одной пьесы Шекспира.|js},
+    eng: "Have you read Hamlet? No, I haven't read any of Shakespeare's plays.",
+  },
+  {
+    rus: {js|Сьюзан очень нравится этот фильм. Она смотрела его восемь раз!|js},
+    eng: "Susan really loves that film. She's seen it eight times!",
+  },
+  {
+    rus: {js|Какой скучный фильм! Это самый скучный фильм, который я когда-либо видел.|js},
+    eng: "What a boring film! It's the most boring film I've ever seen.",
+  },
+  {
+    rus: {js|Я никогда не был в Китае. Вы там бывали?|js},
+    eng: "I've never been to China. Have you been there?",
+  },
+  {
+    rus: {js|Вы слышали что-нибудь от Брайана в последнее время?|js},
+    eng: "Have you heard anything from Brian recently?",
+  },
+  {
+    rus: {js|Я встретил много людей за последние несколько дней.|js},
+    eng: "I've met a lot of people in the last few days.",
+  },
+  {
+    rus: {js|Все идет хорошо. У нас пока не было никаких проблем.|js},
+    eng: "Everything is going well. We haven't had any problems so far.",
+  },
+  {
+    rus: {js|Я голоден. Я ничего не ел с самого завтрака.|js},
+    eng: "I'm hungry. I haven't eaten anything since breakfast. // past (= from breakfast until now)",
+  },
+  {
+    rus: {js|Рад снова тебя видеть. Мы давно не виделись.|js},
+    eng: "It's good to see you again. We haven't seen each other for a long time.",
+  },
+  {
+    rus: {js|Таким же образом мы используем настоящее совершенное время с сегодняшним днем /вечером /в этом году и т. д. когда эти периоды не закончены в момент выступления.|js},
+    eng: "In the same way we use the present perfect with today /this evening /this year etc. when these periods are not finished at the time of speaking.",
+  },
+  {
+    rus: {js|Я выпил сегодня четыре чашки кофе.|js},
+    eng: "I've drunk four cups of coffee today.",
+  },
+  {
+    rus: {js|У вас был отпуск в этом году?|js},
+    eng: "Have you had a holiday this year?",
+  },
+  {
+    rus: {js|Я не видела Тома сегодня утром. А ты?|js},
+    eng: "I haven't seen Tom this morning. Have you?",
+  },
+  {
+    rus: {js|Роб не очень много работал в этом семестре.|js},
+    eng: "Rob hasn't worked very hard this term.",
+  },
+  {
+    rus: {js|Мы говорим: это (первый) раз, когда что-то произошло.|js},
+    eng: "We say: It’s the (first) time something has happened.",
+  },
+  {
+    rus: {js|У Дона урок вождения. Это его первый урок. Это первый раз, когда он водит машину. Он никогда раньше не водил машину.|js},
+    eng: "Don is having a driving lesson. It’s his first one. It's the first time he has driven a car. //(not drives)//. He has never driven a car before.",
+  },
+  {
+    rus: {js|Сара снова потеряла паспорт. Это происходит уже второй раз.|js},
+    eng: "Sarah has lost her passport again. This is the second time this has happened. //(not happens)",
+  },
+  {
+    rus: {js|Билл снова звонит своей девушке. Он звонит ей уже в третий раз за вечер.|js},
+    eng: "Bill is phoning his girlfriend again. That's the third time he's phoned her this evening.",
+  },
 ];
 
 let oldDictionary2 = [
