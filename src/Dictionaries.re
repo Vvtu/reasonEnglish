@@ -743,10 +743,10 @@ let dictionary2 = [
   },
   {
     rus: {js|Вы видели Анну сегодня утром? (Сейчас полдень вечера)|js},
-    eng: "Did you see Anna this morning? (It is now afternoon of evening)",
+    eng: "Did you see Anna this morning? (It is now afternoon or evening)",
   },
   {
-    rus: {js|Вы видели время в воскресенье?|js},
+    rus: {js|Вы видели Тима в воскресенье?|js},
     eng: "Did you see Tim on Sunday?",
   },
 ];
@@ -765,7 +765,7 @@ let oldDictionary2 = [
     eng: "He was extremely arrogant while talking to his boss.",
   },
   {
-    rus: {js|Она производить впечатление дружелюбного человека|js},
+    rus: {js|Она производит впечатление дружелюбного человека|js},
     eng: "She comes accros as a friendly person.",
   },
   {
