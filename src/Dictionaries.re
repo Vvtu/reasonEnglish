@@ -233,7 +233,7 @@ let oldDictionary1 = [
   },
   {
     rus: {js|Каждая функция также создается с двумя дополнительными скрытыми свойствами: контекстом функции и кодом, реализующим поведение функции.|js},
-    eng: "Every function is also created with two additional hidden properties: the function’s context and the code that implements the function’s behavior.",
+    eng: "Every function is also created with two additional hidden properties: the function's context and the code that implements the function's behavior.",
   },
   {
     rus: {js|Каждый объект функции также создается со свойством прототипа. Его значением является объект со свойством конструктора, значением которого является функция. Это отличается от скрытой ссылки на функцию.прототип.|js},
@@ -261,7 +261,7 @@ let oldDictionary1 = [
   },
   {
     rus: {js|функциональный литерал состоит из четырех частей. Первая часть - зарезервированное слово 'funciton'. Необязательная вторая часть-это имя функции.|js},
-    eng: "A function literal has four parts. The first part is the reserved word function. The optional second part is the function’s name.",
+    eng: "A function literal has four parts. The first part is the reserved word function. The optional second part is the function's name.",
   },
   {
     rus: {js|Функция может использовать свое имя для рекурсивного вызова. Это имя также может использоваться отладчиками и средствами разработки для идентификации функции.|js},
@@ -285,7 +285,7 @@ let oldDictionary1 = [
   },
   {
     rus: {js|The Constructor Invocation Pattern. Если функция вызывается с префиксом' new', то будет создан новый объект со скрытой ссылкой на значение члена прототипа функции, и 'this' будет привязан к этому новому объекту.|js},
-    eng: "The Constructor Invocation Pattern. If a function is invoked with the 'new' prefix, then a new object will be created with a hidden link to the value of the function’s prototype member, and 'this' will be bound to that new object.",
+    eng: "The Constructor Invocation Pattern. If a function is invoked with the 'new' prefix, then a new object will be created with a hidden link to the value of the function's prototype member, and 'this' will be bound to that new object.",
   },
   {
     rus: {js|Префикс 'new' также изменяет поведение оператора return.|js},
@@ -751,7 +751,7 @@ let dictionary2 = [
   },
   {
     rus: {js|Ты много путешествовала, Джейн? Джейн: Да,я бывала во многих местах. Дэйв: Серьезно? Вы когда-нибудь были в Китае? Джейн: Да, я была в Китае дважды. Дэйв: а как насчет Индии? Джейн: Нет, я не была в Индии. Здесь Дэйв и Джейн говорят о местах, где Джейн|js},
-    eng: "Dave: Have you travelled a lot, Jane? Jane: Yes,I've been to lots of places. Dave: Really? Have you ever been to China? Jane: Yes, I've been to China twice. Dave: What about India? Jane: No, I haven't been to India. Here, Dave and Jane are talking about the places Jane",
+    eng: "Have you travelled a lot, Jane? Yes,I've been to lots of places. Really? Have you ever been to China? Yes, I've been to China twice. What about India? No, I haven't been to India. Here, Dave and Jane are talking about the places Jane has been to.",
   },
   {
     rus: {js|Она побывала в ее жизни, это период времени, который продолжается до сих пор.|js},
@@ -798,7 +798,7 @@ let dictionary2 = [
     eng: "I'm hungry. I haven't eaten anything since breakfast. // past (= from breakfast until now)",
   },
   {
-    rus: {js|Рад снова тебя видеть. Мы давно не виделись.|js},
+    rus: {js|Хорошо увидеть тебя снова. Мы давно не виделись.|js},
     eng: "It's good to see you again. We haven't seen each other for a long time.",
   },
   {
@@ -822,19 +822,19 @@ let dictionary2 = [
     eng: "Rob hasn't worked very hard this term.",
   },
   {
-    rus: {js|Мы говорим: это (первый) раз, когда что-то произошло.|js},
-    eng: "We say: It’s the (first) time something has happened.",
+    rus: {js|Мы говорим: это первый раз, когда что-то произошло.|js},
+    eng: "We say: It's the first time something has happened.",
   },
   {
     rus: {js|У Дона урок вождения. Это его первый урок. Это первый раз, когда он водит машину. Он никогда раньше не водил машину.|js},
-    eng: "Don is having a driving lesson. It’s his first one. It's the first time he has driven a car. //(not drives)//. He has never driven a car before.",
+    eng: "Don is having a driving lesson. It's his first one. It's the first time he has driven a car. //(not drives)//. He has never driven a car before.",
   },
   {
-    rus: {js|Сара снова потеряла паспорт. Это происходит уже второй раз.|js},
+    rus: {js|Сара снова потеряла паспорт. Это уже второй раз, как это происходит .|js},
     eng: "Sarah has lost her passport again. This is the second time this has happened. //(not happens)",
   },
   {
-    rus: {js|Билл снова звонит своей девушке. Он звонит ей уже в третий раз за вечер.|js},
+    rus: {js|Билл снова звонит своей девушке. Это уже третий раз он звонит ей за вечер.|js},
     eng: "Bill is phoning his girlfriend again. That's the third time he's phoned her this evening.",
   },
 ];
