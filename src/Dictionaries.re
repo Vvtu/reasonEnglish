@@ -1187,7 +1187,7 @@ let oldDictionary2 = [
   },
   {
     rus: {js|//проверка информации// Не твое?|js},
-    eng: "//check information// Isn't is yours?",
+    eng: "//check information// Isn't it yours?",
   },
   {
     rus: {js|// сделать запрос // Можем ли мы присоединиться к вам на встрече?|js},
