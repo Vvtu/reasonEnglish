@@ -750,12 +750,8 @@ let dictionary2 = [
     eng: "Did you see Tim on Sunday?",
   },
   {
-    rus: {js|Ты много путешествовала, Джейн? Джейн: Да,я бывала во многих местах. Дэйв: Серьезно? Вы когда-нибудь были в Китае? Джейн: Да, я была в Китае дважды. Дэйв: а как насчет Индии? Джейн: Нет, я не была в Индии. Здесь Дэйв и Джейн говорят о местах, где Джейн|js},
-    eng: "Have you travelled a lot, Jane? Yes,I've been to lots of places. Really? Have you ever been to China? Yes, I've been to China twice. What about India? No, I haven't been to India. Here, Dave and Jane are talking about the places Jane has been to.",
-  },
-  {
-    rus: {js|Она побывала в ее жизни, это период времени, который продолжается до сих пор.|js},
-    eng: "She has visited in her life, which is a period of time that continues until now.",
+    rus: {js|Ты много путешествовала, Джейн? Джейн: Да,я бывала во многих местах. Дэйв: Серьезно? Вы когда-нибудь были в Китае? Джейн: Да, я была в Китае дважды. Дэйв: а как насчет Индии? Джейн: Нет, я не была в Индии. Здесь Дэйв и Джейн говорят о местах, где Джейн побывала в ее жизни, это период времени, который продолжается до сих пор.|js},
+    eng: "Have you travelled a lot, Jane? Yes,I've been to lots of places. Really? Have you ever been to China? Yes, I've been to China twice. What about India? No, I haven't been to India. Here, Dave and Jane are talking about the places Jane has visited in her life, which is a period of time that continues until now.",
   },
   {
     rus: {js|Вы когда-нибудь ели икру?|js},
