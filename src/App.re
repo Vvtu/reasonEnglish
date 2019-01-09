@@ -149,7 +149,10 @@ let make = _children => {
 
       let allCards =
         append(
-          MyLib.takeItems(3, Reshuffle.reshuffle4(dictOld)),
+          MyLib.takeItems(
+            Constants.numberOfPairsFromOldDictionary,
+            Reshuffle.reshuffle4(dictOld),
+          ),
           Reshuffle.reshuffle4(dict),
         )
         |> filter(({rus, eng}: Dictionaries.wordPair) =>
