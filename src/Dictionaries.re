@@ -710,128 +710,92 @@ let veryOldDictionary1 = [
 
 let dictionary2 = [
   {
-    rus: {js|Том ищет свой ключ. Он не может его найти. Он потерял свой ключ. //present perfect// это означает, что у него нет ключа.|js},
-    eng: "Tom is looking for his key. He can't find it. He has lost his key. //present perfect// This means that he doesn't have his key now.",
+    rus: {js|Вчера Карен и Джим играли в теннис. Они начались в 10 часов и закончили в 11.30. Так, в 10.30 они играли в теннис. Они играли значит они были в середине игры. Они еще не закончили играть.|js},
+    eng: "Yesterday Karen and Jim played tennis. They started at 10 o'clock and finished at 11.30. So, at 10.30 they were playing tennis.They were playing means they were in the middle of playing. They had not finished playing.",
   },
   {
-    rus: {js|Теперь Том нашел свой ключ. Теперь он у него. Он потерял уже свой ключ? Нет, он уже нашел его. Он потерял свой ключ? Да, это так. Он потерял свой ключ, но теперь он нашел его.|js},
-    eng: "Now Tom has found his key. He has it now. Has he lost his key? No, he has found it. Did he lose his key? Yes, he did. He lost his key. //past simple// but now he has found it. //present perfect//",
+    rus: {js|Я начал делать. Я делал это. Я закончил работу. Сейчас.|js},
+    eng: "I started doing. I was doing. I finished doing. Now.",
   },
   {
-    rus: {js|Сегодня я проделал большую работу. // Используйте present perfect в течение периода времени, который продолжается до сих пор. Например: сегодня / на этой неделе / с 2007 года.|js},
-    eng: "I've done a lot of work today. //Use present perfect for a period of time that continues until now. For example: today / this week / since 2007.",
+    rus: {js|В это время в прошлом году я жил в Бразилии.|js},
+    eng: "This time last year I was living in Brazil.",
   },
   {
-    rus: {js|Я вчера много работал.// Мы используем прошлое простое для законченного времени в прошлом. Например: вчера / на прошлой неделе / с 2007 по 2010 год.|js},
-    eng: "I did a lot of work yesterday.// We use the past simple for a finished time in the past. For example: yesterday / last week / from 2007 to 2010.",
+    rus: {js|Что вы делали в 10 часов вчера вечером? Я помахал Хелен, но она не смотрела.|js},
+    eng: "What were you doing at 10 o'clock last night? I waved to Helen, but she wasn't looking.",
   },
   {
-    rus: {js|На этой неделе не было дождя.|js},
-    eng: "It hasn't rained this week.",
+    rus: {js|Сравните прошлое непрерывное (я делал) и прошлое простое (я делал).|js},
+    eng: "Compare the past continuous (I was doing) and past simple (t did).",
   },
   {
-    rus: {js|Вы видели Анну сегодня утром? (Еще утро)|js},
-    eng: "Have you seen Anna this morning? (It is still morning)",
+    rus: {js|Я шла домой, когда встретила Дэна. (в середине прогулки домой)|js},
+    eng: "I was walking home when I met Dan. (in the middle of walking home)",
   },
   {
-    rus: {js|Ты видела Тима в последнее время?|js},
-    eng: "Have you seen Tim recently?",
+    rus: {js|Кейт смотрела телевизор, когда мы приехали.|js},
+    eng: "Kate was watching TV when we arrived.",
   },
   {
-    rus: {js|На прошлой неделе дождя не было.|js},
-    eng: "It didn't rain last week.",
+    rus: {js|Я пошел домой после вчерашней вечеринки. (= полностью, полностью)|js},
+    eng: "I walked home after the party last night. (= all the way, completely)",
   },
   {
-    rus: {js|Вы видели Анну сегодня утром? (Сейчас полдень вечера)|js},
-    eng: "Did you see Anna this morning? (It is now afternoon or evening)",
+    rus: {js|Кейт много смотрела телевизор, когда болела в прошлом году.|js},
+    eng: "Kate watched television a lot when she was ill last year.",
   },
   {
-    rus: {js|Вы видели Тима в воскресенье?|js},
-    eng: "Did you see Tim on Sunday?",
+    rus: {js|Мы часто используем прошлое простое и прошлое непрерывное вместе, чтобы сказать, что что-то произошло в середине чего-то еще: Мэтт позвонил, когда мы ужинали.|js},
+    eng: "We often use the past simple and the past continuous together to say that something happened in the middle of something else: Matt phoned while we were having dinner.",
   },
   {
-    rus: {js|Ты много путешествовала, Джейн? Джейн: Да,я бывала во многих местах. Дэйв: Серьезно? Вы когда-нибудь были в Китае? Джейн: Да, я была в Китае дважды. Дэйв: а как насчет Индии? Джейн: Нет, я не была в Индии. Здесь Дэйв и Джейн говорят о местах, где Джейн побывала в ее жизни, это период времени, который продолжается до сих пор.|js},
-    eng: "Have you travelled a lot, Jane? Yes,I've been to lots of places. Really? Have you ever been to China? Yes, I've been to China twice. What about India? No, I haven't been to India. Here, Dave and Jane are talking about the places Jane has visited in her life, which is a period of time that continues until now.",
+    rus: {js|Когда я встал, шел дождь.|js},
+    eng: "It was raining when I got up.",
   },
   {
-    rus: {js|Вы когда-нибудь ели икру?|js},
-    eng: "Have you ever eaten caviar?",
+    rus: {js|Я видел тебя вчера в парке. Ты сидел на траве и читал книгу.|js},
+    eng: "I saw you in the park yesterday. You were sitting on the grass and reading a book.",
   },
   {
-    rus: {js|У нас никогда не было машины.|js},
-    eng: "We've never had a car.",
+    rus: {js|Я повредил спину, когда работал в саду.|js},
+    eng: "I hurt my back while I was working in the garden.",
   },
   {
-    rus: {js|Вы читали 'Гамлета'? Нет, я не читал ни одной пьесы Шекспира.|js},
-    eng: "Have you read Hamlet? No, I haven't read any of Shakespeare's plays.",
+    rus: {js|Но мы используем прошлое просто, чтобы сказать, что одно произошло за другим: я шел по дороге, когда увидел Дэна. Поэтому я остановился, и мы поболтали.|js},
+    eng: "But we use the past simple to say that one thing happened after another: I was walking along the road when I saw Dan. So I stopped, and we had a chat.",
   },
   {
-    rus: {js|Сьюзан очень нравится этот фильм. Она смотрела его восемь раз!|js},
-    eng: "Susan really loves that film. She's seen it eight times!",
+    rus: {js|Когда Карен приехала, мы ужинали. (= мы уже начали, прежде чем она приехала)|js},
+    eng: "When Karen arrived, we were having dinner. (= we had already started before she arrived)",
   },
   {
-    rus: {js|Какой скучный фильм! Это самый скучный фильм, который я когда-либо видел.|js},
-    eng: "What a boring film! It's the most boring film I've ever seen.",
+    rus: {js|Когда Карен приехала, мы ужинали. (=Карен приехала, а потом мы поужинали)|js},
+    eng: "When Karen arrived, we had dinner. (= Karen arrived, and then we had dinner)",
   },
   {
-    rus: {js|Я никогда не был в Китае. Вы там бывали?|js},
-    eng: "I've never been to China. Have you been there?",
+    rus: {js|Некоторые глаголы (например, знать и хотеть) обычно не используются в непрерывном.|js},
+    eng: "Some verbs (for example, know and want) are not normally used in the continuous.",
   },
   {
-    rus: {js|Вы слышали что-нибудь от Брайана в последнее время?|js},
-    eng: "Have you heard anything from Brian recently?",
+    rus: {js|Мы были хорошими друзьями. Мы хорошо знали друг друга. (мы не знали, что)|js},
+    eng: "We were good friends. We knew each other well. (not We were knowing)",
   },
   {
-    rus: {js|Я встретил много людей за последние несколько дней.|js},
-    eng: "I've met a lot of people in the last few days.",
+    rus: {js|Я наслаждалась вечеринкой, но Крис хотел домой. (не было желающих)|js},
+    eng: "I was enjoying the party, but Chris wanted to go home. (not was wanting)",
   },
   {
-    rus: {js|Все идет хорошо. У нас пока не было никаких проблем.|js},
-    eng: "Everything is going well. We haven't had any problems so far.",
+    rus: {js|Я видел Сью вчера в городе, но она не видела меня. Она смотрела в другую сторону.|js},
+    eng: "I saw Sue in town yesterday, but she wasn't seeing me. She was looking the other way.",
   },
   {
-    rus: {js|Я голоден. Я ничего не ел с самого завтрака.|js},
-    eng: "I'm hungry. I haven't eaten anything since breakfast. // past (= from breakfast until now)",
+    rus: {js|Я встретил Тома и Джейн в аэропорту несколько недель назад. Они собирались в Париж, а я собирался в Рим. Мы поболтали, пока ждали наших рейсов.|js},
+    eng: "I met Tom and Jane at the airport a few weeks ago. They were going to Paris and I was going to Rome. We had a chat while we were waiting for our flights.",
   },
   {
-    rus: {js|Хорошо увидеть тебя снова. Мы давно не виделись.|js},
-    eng: "It's good to see you again. We haven't seen each other for a long time.",
-  },
-  {
-    rus: {js|Таким же образом мы используем настоящее совершенное время с сегодняшним днем /вечером /в этом году и т. д. когда эти периоды не закончены в момент выступления.|js},
-    eng: "In the same way we use the present perfect with today /this evening /this year etc. when these periods are not finished at the time of speaking.",
-  },
-  {
-    rus: {js|Я выпил сегодня четыре чашки кофе.|js},
-    eng: "I've drunk four cups of coffee today.",
-  },
-  {
-    rus: {js|У вас был отпуск в этом году?|js},
-    eng: "Have you had a holiday this year?",
-  },
-  {
-    rus: {js|Я не видела Тома сегодня утром. А ты?|js},
-    eng: "I haven't seen Tom this morning. Have you?",
-  },
-  {
-    rus: {js|Роб не очень много работал в этом семестре.|js},
-    eng: "Rob hasn't worked very hard this term.",
-  },
-  {
-    rus: {js|Мы говорим: это первый раз, когда что-то произошло.|js},
-    eng: "We say: It's the first time something has happened.",
-  },
-  {
-    rus: {js|У Дона урок вождения. Это его первый урок. Это первый раз, когда он водит машину. Он никогда раньше не водил машину.|js},
-    eng: "Don is having a driving lesson. It's his first one. It's the first time he has driven a car. //(not drives)//. He has never driven a car before.",
-  },
-  {
-    rus: {js|Сара снова потеряла паспорт. Это уже второй раз, как это происходит .|js},
-    eng: "Sarah has lost her passport again. This is the second time this has happened. //(not happens)",
-  },
-  {
-    rus: {js|Билл снова звонит своей девушке. Это уже третий раз он звонит ей за вечер.|js},
-    eng: "Bill is phoning his girlfriend again. That's the third time he's phoned her this evening.",
+    rus: {js|Вчера я ехал на велосипеде домой, когда мужчина выходил на дорогу передо мной. Я ехал довольно быстро, но, к счастью, успел вовремя остановиться и не ударил его.|js},
+    eng: "I cycled home yesterday when a man was stepping out into the road in front of me. I was going quite fast, but luckily I managedto stop in time and not hit him.",
   },
 ];
 
@@ -1420,6 +1384,130 @@ let oldDictionary2 = [
   {
     rus: {js|Have you seen Anna this morning? (It is still morning)|js},
     eng: "Tom is looking for his key. He can't find it. He has lost his key. //present perfect// This means that he doesn't have his key now.",
+  },
+  {
+    rus: {js|Том ищет свой ключ. Он не может его найти. Он потерял свой ключ. //present perfect// это означает, что у него нет ключа.|js},
+    eng: "Tom is looking for his key. He can't find it. He has lost his key. //present perfect// This means that he doesn't have his key now.",
+  },
+  {
+    rus: {js|Теперь Том нашел свой ключ. Теперь он у него. Он потерял уже свой ключ? Нет, он уже нашел его. Он потерял свой ключ? Да, это так. Он потерял свой ключ, но теперь он нашел его.|js},
+    eng: "Now Tom has found his key. He has it now. Has he lost his key? No, he has found it. Did he lose his key? Yes, he did. He lost his key. //past simple// but now he has found it. //present perfect//",
+  },
+  {
+    rus: {js|Сегодня я проделал большую работу. // Используйте present perfect в течение периода времени, который продолжается до сих пор. Например: сегодня / на этой неделе / с 2007 года.|js},
+    eng: "I've done a lot of work today. //Use present perfect for a period of time that continues until now. For example: today / this week / since 2007.",
+  },
+  {
+    rus: {js|Я вчера много работал.// Мы используем прошлое простое для законченного времени в прошлом. Например: вчера / на прошлой неделе / с 2007 по 2010 год.|js},
+    eng: "I did a lot of work yesterday.// We use the past simple for a finished time in the past. For example: yesterday / last week / from 2007 to 2010.",
+  },
+  {
+    rus: {js|На этой неделе не было дождя.|js},
+    eng: "It hasn't rained this week.",
+  },
+  {
+    rus: {js|Вы видели Анну сегодня утром? (Еще утро)|js},
+    eng: "Have you seen Anna this morning? (It is still morning)",
+  },
+  {
+    rus: {js|Ты видела Тима в последнее время?|js},
+    eng: "Have you seen Tim recently?",
+  },
+  {
+    rus: {js|На прошлой неделе дождя не было.|js},
+    eng: "It didn't rain last week.",
+  },
+  {
+    rus: {js|Вы видели Анну сегодня утром? (Сейчас полдень вечера)|js},
+    eng: "Did you see Anna this morning? (It is now afternoon or evening)",
+  },
+  {
+    rus: {js|Вы видели Тима в воскресенье?|js},
+    eng: "Did you see Tim on Sunday?",
+  },
+  {
+    rus: {js|Ты много путешествовала, Джейн? Джейн: Да,я бывала во многих местах. Дэйв: Серьезно? Вы когда-нибудь были в Китае? Джейн: Да, я была в Китае дважды. Дэйв: а как насчет Индии? Джейн: Нет, я не была в Индии. Здесь Дэйв и Джейн говорят о местах, где Джейн побывала в ее жизни, это период времени, который продолжается до сих пор.|js},
+    eng: "Have you travelled a lot, Jane? Yes,I've been to lots of places. Really? Have you ever been to China? Yes, I've been to China twice. What about India? No, I haven't been to India. Here, Dave and Jane are talking about the places Jane has visited in her life, which is a period of time that continues until now.",
+  },
+  {
+    rus: {js|Вы когда-нибудь ели икру?|js},
+    eng: "Have you ever eaten caviar?",
+  },
+  {
+    rus: {js|У нас никогда не было машины.|js},
+    eng: "We've never had a car.",
+  },
+  {
+    rus: {js|Вы читали 'Гамлета'? Нет, я не читал ни одной пьесы Шекспира.|js},
+    eng: "Have you read Hamlet? No, I haven't read any of Shakespeare's plays.",
+  },
+  {
+    rus: {js|Сьюзан очень нравится этот фильм. Она смотрела его восемь раз!|js},
+    eng: "Susan really loves that film. She's seen it eight times!",
+  },
+  {
+    rus: {js|Какой скучный фильм! Это самый скучный фильм, который я когда-либо видел.|js},
+    eng: "What a boring film! It's the most boring film I've ever seen.",
+  },
+  {
+    rus: {js|Я никогда не был в Китае. Вы там бывали?|js},
+    eng: "I've never been to China. Have you been there?",
+  },
+  {
+    rus: {js|Вы слышали что-нибудь от Брайана в последнее время?|js},
+    eng: "Have you heard anything from Brian recently?",
+  },
+  {
+    rus: {js|Я встретил много людей за последние несколько дней.|js},
+    eng: "I've met a lot of people in the last few days.",
+  },
+  {
+    rus: {js|Все идет хорошо. У нас пока не было никаких проблем.|js},
+    eng: "Everything is going well. We haven't had any problems so far.",
+  },
+  {
+    rus: {js|Я голоден. Я ничего не ел с самого завтрака.|js},
+    eng: "I'm hungry. I haven't eaten anything since breakfast. // past (= from breakfast until now)",
+  },
+  {
+    rus: {js|Хорошо увидеть тебя снова. Мы давно не виделись.|js},
+    eng: "It's good to see you again. We haven't seen each other for a long time.",
+  },
+  {
+    rus: {js|Таким же образом мы используем настоящее совершенное время с сегодняшним днем /вечером /в этом году и т. д. когда эти периоды не закончены в момент выступления.|js},
+    eng: "In the same way we use the present perfect with today /this evening /this year etc. when these periods are not finished at the time of speaking.",
+  },
+  {
+    rus: {js|Я выпил сегодня четыре чашки кофе.|js},
+    eng: "I've drunk four cups of coffee today.",
+  },
+  {
+    rus: {js|У вас был отпуск в этом году?|js},
+    eng: "Have you had a holiday this year?",
+  },
+  {
+    rus: {js|Я не видела Тома сегодня утром. А ты?|js},
+    eng: "I haven't seen Tom this morning. Have you?",
+  },
+  {
+    rus: {js|Роб не очень много работал в этом семестре.|js},
+    eng: "Rob hasn't worked very hard this term.",
+  },
+  {
+    rus: {js|Мы говорим: это первый раз, когда что-то произошло.|js},
+    eng: "We say: It's the first time something has happened.",
+  },
+  {
+    rus: {js|У Дона урок вождения. Это его первый урок. Это первый раз, когда он водит машину. Он никогда раньше не водил машину.|js},
+    eng: "Don is having a driving lesson. It's his first one. It's the first time he has driven a car. //(not drives)//. He has never driven a car before.",
+  },
+  {
+    rus: {js|Сара снова потеряла паспорт. Это уже второй раз, как это происходит .|js},
+    eng: "Sarah has lost her passport again. This is the second time this has happened. //(not happens)",
+  },
+  {
+    rus: {js|Билл снова звонит своей девушке. Это уже третий раз он звонит ей за вечер.|js},
+    eng: "Bill is phoning his girlfriend again. That's the third time he's phoned her this evening.",
   },
 ];
 
