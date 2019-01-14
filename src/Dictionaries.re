@@ -710,8 +710,8 @@ let veryOldDictionary1 = [
 
 let dictionary2 = [
   {
-    rus: {js|Вчера Карен и Джим играли в теннис. Они начались в 10 часов и закончили в 11.30. Так, в 10.30 они играли в теннис. Они играли значит они были в середине игры. Они еще не закончили играть.|js},
-    eng: "Yesterday Karen and Jim played tennis. They started at 10 o'clock and finished at 11.30. So, at 10.30 they were playing tennis.They were playing means they were in the middle of playing. They had not finished playing.",
+    rus: {js|Вчера Карен и Джим играли в теннис. Они начались в 10 часов и закончили в 11:30. Так, в 10:30 они играли в теннис. Они играли значит они были в середине игры. Они еще не закончили играть.|js},
+    eng: "Yesterday Karen and Jim played tennis. They started at 10 o'clock and finished at 11:30. So, at 10:30 they were playing tennis.They were playing means they were in the middle of playing. They had not finished playing.",
   },
   {
     rus: {js|Я начал делать. Я делал это. Я закончил работу. Сейчас.|js},
@@ -723,14 +723,14 @@ let dictionary2 = [
   },
   {
     rus: {js|Что вы делали в 10 часов вчера вечером? Я помахал Хелен, но она не смотрела.|js},
-    eng: "What were you doing at 10 o'clock last night? I waved to Helen, but she wasn't looking.",
+    eng: "What were you doing at 10 o'clock last night?",
   },
   {
     rus: {js|Сравните прошлое непрерывное (я делал) и прошлое простое (я делал).|js},
-    eng: "Compare the past continuous (I was doing) and past simple (t did).",
+    eng: "Compare the past continuous (I was doing) and past simple (I did).",
   },
   {
-    rus: {js|Я шла домой, когда встретила Дэна. (в середине прогулки домой)|js},
+    rus: {js|Я шёл домой, когда встретил Дэна. (в середине прогулки домой)|js},
     eng: "I was walking home when I met Dan. (in the middle of walking home)",
   },
   {
@@ -738,8 +738,8 @@ let dictionary2 = [
     eng: "Kate was watching TV when we arrived.",
   },
   {
-    rus: {js|Я пошел домой после вчерашней вечеринки. (= полностью, полностью)|js},
-    eng: "I walked home after the party last night. (= all the way, completely)",
+    rus: {js|Я пошел домой после вчерашней вечеринки. ( полностью, полностью)|js},
+    eng: "I walked home after the party last night. ( all the way, completely)",
   },
   {
     rus: {js|Кейт много смотрела телевизор, когда болела в прошлом году.|js},
@@ -766,12 +766,12 @@ let dictionary2 = [
     eng: "But we use the past simple to say that one thing happened after another: I was walking along the road when I saw Dan. So I stopped, and we had a chat.",
   },
   {
-    rus: {js|Когда Карен приехала, мы ужинали. (= мы уже начали, прежде чем она приехала)|js},
-    eng: "When Karen arrived, we were having dinner. (= we had already started before she arrived)",
+    rus: {js|Когда Карен приехала, мы ужинали. ( мы уже начали, прежде чем она приехала)|js},
+    eng: "When Karen arrived, we were having dinner. ( we had already started before she arrived)",
   },
   {
-    rus: {js|Когда Карен приехала, мы ужинали. (=Карен приехала, а потом мы поужинали)|js},
-    eng: "When Karen arrived, we had dinner. (= Karen arrived, and then we had dinner)",
+    rus: {js|Когда Карен приехала, мы ужинали. (Карен приехала, а потом мы поужинали)|js},
+    eng: "When Karen arrived, we had dinner. ( Karen arrived, and then we had dinner)",
   },
   {
     rus: {js|Некоторые глаголы (например, знать и хотеть) обычно не используются в непрерывном.|js},
@@ -783,11 +783,11 @@ let dictionary2 = [
   },
   {
     rus: {js|Я наслаждалась вечеринкой, но Крис хотел домой. (не было желающих)|js},
-    eng: "I was enjoying the party, but Chris wanted to go home. (not was wanting)",
+    eng: "I was enjoying the party, but Chris wanted to go home. // (not was wanting)",
   },
   {
     rus: {js|Я видел Сью вчера в городе, но она не видела меня. Она смотрела в другую сторону.|js},
-    eng: "I saw Sue in town yesterday, but she wasn't seeing me. She was looking the other way.",
+    eng: "I saw Sue in town yesterday, but she wasn't seeing me. She was looking the other way. I waved to her, but she wasn't looking.",
   },
   {
     rus: {js|Я встретил Тома и Джейн в аэропорту несколько недель назад. Они собирались в Париж, а я собирался в Рим. Мы поболтали, пока ждали наших рейсов.|js},
@@ -795,7 +795,7 @@ let dictionary2 = [
   },
   {
     rus: {js|Вчера я ехал на велосипеде домой, когда мужчина выходил на дорогу передо мной. Я ехал довольно быстро, но, к счастью, успел вовремя остановиться и не ударил его.|js},
-    eng: "I cycled home yesterday when a man was stepping out into the road in front of me. I was going quite fast, but luckily I managedto stop in time and not hit him.",
+    eng: "I cycled home yesterday when a man was stepping out into the road in front of me. I was going quite fast, but luckily I managed to stop in time and not hit him.",
   },
 ];
 
@@ -841,42 +841,42 @@ let oldDictionary2 = [
     eng: "It's essential to build a good relationship with your team.",
   },
   {
-    rus: "(=contact information)",
+    rus: "(contact information)",
     eng: "I was given your details by my colleague.",
   },
   {rus: "(calling about)", eng: "I'm calling about the email I sent you."},
   {
-    rus: "(=wanted to ask)",
+    rus: "(wanted to ask)",
     eng: "I wondered if you'd had time to look through the portfolio I sent.",
   },
   {
     rus: "(interested in)",
     eng: "I wanted to see if you're still interested in our proposal.",
   },
-  {rus: "(=answering)", eng: "Thanks for responding so quickly."},
+  {rus: "(answering)", eng: "Thanks for responding so quickly."},
   {
-    rus: "(=get together)",
+    rus: "(get together)",
     eng: "I suggest we meet to discuss things further.",
   },
-  {rus: "(=any option works for me)", eng: "Fine, whatever's best for you."},
+  {rus: "(any option works for me)", eng: "Fine, whatever's best for you."},
   {
-    rus: "(=the date and time might be changed)",
+    rus: "(the date and time might be changed)",
     eng: "Let's say, provisionally, Wednesday the 15th at 11 o'clock.",
   },
   {
-    rus: "(=say that our meeting will take place)",
+    rus: "(say that our meeting will take place)",
     eng: "I'll get my assistant to call you later today to confirm.",
   },
   {
-    rus: "(=the way to office)",
+    rus: "(the way to office)",
     eng: "Can you tell me how I get to your office?",
   },
   {
-    rus: "(=What option do you recommend?)",
+    rus: "(What option do you recommend?)",
     eng: "Is it best by taxi or public transport?",
   },
   {
-    rus: "(=instructions)",
+    rus: "(instructions)",
     eng: "I'll email you a map and directions from your hotel.",
   },
   {
@@ -887,7 +887,7 @@ let oldDictionary2 = [
     rus: "(take)",
     eng: "How long's the meeting? Will I have time to catch the train at 5?",
   },
-  {rus: "(=inform me)", eng: "Let me know if you need a taxi."},
+  {rus: "(inform me)", eng: "Let me know if you need a taxi."},
   {rus: {js||js}, eng: "Does Tuesday work for you?"},
   {
     rus: {js||js},
@@ -946,32 +946,32 @@ let oldDictionary2 = [
     eng: "Common phrases used with present continuous are: currently, for the moment, at the moment, for the time being, tomorrow (afternoon), right now.",
   },
   {
-    rus: {js|CEO выразил признательность за всю нашу тяжелую работу. // (=сказал "спасибо")"|js},
-    eng: "The CEO expressed appreciation of all our hard work. // (=said 'thank you')",
+    rus: {js|CEO выразил признательность за всю нашу тяжелую работу. // (сказал "спасибо")"|js},
+    eng: "The CEO expressed appreciation of all our hard work. // (said 'thank you')",
   },
   {
-    rus: {js|В нашей компании внедрена новая система мотивации для поощрения эффективных сотрудников. // (=мотивация )"|js},
-    eng: "A new incentive scheme was introduced in our company to reward efficient employees. // (=motivation scheme)",
+    rus: {js|В нашей компании внедрена новая система мотивации для поощрения эффективных сотрудников. // (мотивация )"|js},
+    eng: "A new incentive scheme was introduced in our company to reward efficient employees. // (motivation scheme)",
   },
   {
-    rus: {js|Служебный автомобиль, медицинская страховка и бесплатные обеды-это льготы. // (=выгоды)|js},
-    eng: "A company car, medical insurance and free lunches are perks. // (=benefits)",
+    rus: {js|Служебный автомобиль, медицинская страховка и бесплатные обеды-это льготы. // (выгоды)|js},
+    eng: "A company car, medical insurance and free lunches are perks. // (benefits)",
   },
   {
-    rus: {js|Они заслуживают признания за отличную работу, которую они делают. // (=похвала и вознаграждение за их работу)|js},
-    eng: "They deserve recognition for the great job they are doing. // (=praise and reward for their work)",
+    rus: {js|Они заслуживают признания за отличную работу, которую они делают. // (похвала и вознаграждение за их работу)|js},
+    eng: "They deserve recognition for the great job they are doing. // (praise and reward for their work)",
   },
   {
-    rus: {js|В декабре мы обычно получаем ежегодный бонус. // (=раз в год)|js},
-    eng: "In December we usually receive an annual bonus. // (=paid once a year)",
+    rus: {js|В декабре мы обычно получаем ежегодный бонус. // (раз в год)|js},
+    eng: "In December we usually receive an annual bonus. // (paid once a year)",
   },
   {
-    rus: {js|Я получаю много удовлетворения от помощи людям. // (=чувство счастья от того, что вы делаете).|js},
-    eng: "I get a lot of fulfilment from helping people. // (=a feeling of being happy with what you are doing).",
+    rus: {js|Я получаю много удовлетворения от помощи людям. // (чувство счастья от того, что вы делаете).|js},
+    eng: "I get a lot of fulfilment from helping people. // (a feeling of being happy with what you are doing).",
   },
   {
-    rus: {js|Сотрудники хотят большей безопасности труда. // (=нет опасности потерять работу)|js},
-    eng: "Employees want greater job security. // (=not being in danger of losing their jobs)",
+    rus: {js|Сотрудники хотят большей безопасности труда. // (нет опасности потерять работу)|js},
+    eng: "Employees want greater job security. // (not being in danger of losing their jobs)",
   },
   {
     rus: {js|Я работаю по гибкому графику, что означает, что мне не нужно начинать работу рано утром.|js},
@@ -982,60 +982,60 @@ let oldDictionary2 = [
     eng: "Your achievement is something important that you succeed in doing by your own efforts.",
   },
   {
-    rus: {js|Положительные отзывы и похвалы очень важны, они многое делают для удовлетворения работой. // (=слова официального утверждения)|js},
-    eng: "Positive feedback and praise are very important, they do a lot for job satisfaction. // (=words of approval)",
+    rus: {js|Положительные отзывы и похвалы очень важны, они многое делают для удовлетворения работой. // (слова официального утверждения)|js},
+    eng: "Positive feedback and praise are very important, they do a lot for job satisfaction. // (words of approval)",
   },
   {
     rus: {js|Приятно быть признанным и признанным за мои достижения.|js},
     eng: "It's nice to be acknowledged and recognized for my achievements.",
   },
   {
-    rus: {js|Мы улучшили производительность по всей системе. // (=насколько хорошо работает система)|js},
-    eng: "We've improved performance throughout the system. // (=how well the system works)",
+    rus: {js|Мы улучшили производительность по всей системе. // (насколько хорошо работает система)|js},
+    eng: "We've improved performance throughout the system. // (how well the system works)",
   },
   {
-    rus: {js|Самые успешные сотрудники были вознаграждены недельным круизом. // (=присуждается приз)|js},
-    eng: "The most successful employees were rewarded with a one-week cruise. // (=given a prize)",
+    rus: {js|Самые успешные сотрудники были вознаграждены недельным круизом. // (присуждается приз)|js},
+    eng: "The most successful employees were rewarded with a one-week cruise. // (given a prize)",
   },
   {
-    rus: {js|Выпускники ИТ имеют много возможностей трудоустройства. // (=люди, имеющие высшее образование в области ИТ)|js},
-    eng: "IT graduates have a lot of job opportunities. // (=people who have a university degree in IT)",
+    rus: {js|Выпускники ИТ имеют много возможностей трудоустройства. // (люди, имеющие высшее образование в области ИТ)|js},
+    eng: "IT graduates have a lot of job opportunities. // (people who have a university degree in IT)",
   },
   {
-    rus: {js|В начале вашей карьеры очень важно получить практический опыт работы. // (=опыт, полученный в результате выполнения работы, а не учебы)|js},
-    eng: "At the beginning of your career it's really important to get some hands-on work experience. // (=experience gained from doing a job rather than studying)",
+    rus: {js|В начале вашей карьеры очень важно получить практический опыт работы. // (опыт, полученный в результате выполнения работы, а не учебы)|js},
+    eng: "At the beginning of your career it's really important to get some hands-on work experience. // (experience gained from doing a job rather than studying)",
   },
   {
-    rus: {js|Ненавижу выполнять черную работу. // (=работа скучная, не важная и не требующая навыков)|js},
-    eng: "I hate doing menial tasks. // (=work that is boring, not important and doesn't require any skills)",
+    rus: {js|Ненавижу выполнять черную работу. // (работа скучная, не важная и не требующая навыков)|js},
+    eng: "I hate doing menial tasks. // (work that is boring, not important and doesn't require any skills)",
   },
   {
-    rus: {js|Он много работает, пытается подняться по карьерной лестнице. // (=построить успешную карьеру)|js},
-    eng: "He's working hard, trying to climb the career ladder. // (=build a successful career)",
+    rus: {js|Он много работает, пытается подняться по карьерной лестнице. // (построить успешную карьеру)|js},
+    eng: "He's working hard, trying to climb the career ladder. // (build a successful career)",
   },
   {
-    rus: {js|Когда я учился в университете, я два месяца проходил стажировку в Google. // (=временная работа для студентов, обычно неоплачиваемая)|js},
-    eng: "When I was at university, I did an internship with Google for two months. // (=a temporary job for students, usually unpaid)",
+    rus: {js|Когда я учился в университете, я два месяца проходил стажировку в Google. // (временная работа для студентов, обычно неоплачиваемая)|js},
+    eng: "When I was at university, I did an internship with Google for two months. // (a temporary job for students, usually unpaid)",
   },
   {
-    rus: {js|Это обучение занимает много времени, но оно принесет вам пользу в долгосрочной перспективе. // (=дать вам преимущество, помочь)|js},
-    eng: "This training takes a lot of time, but it will benefit you in the long run. // (=give you an advantage, help you)",
+    rus: {js|Это обучение занимает много времени, но оно принесет вам пользу в долгосрочной перспективе. // (дать вам преимущество, помочь)|js},
+    eng: "This training takes a lot of time, but it will benefit you in the long run. // (give you an advantage, help you)",
   },
   {
-    rus: {js|Компании ценят самомотивированных сотрудников. // (=иметь личную заинтересованность в хорошем выполнении своей работы)|js},
-    eng: "Companies value employees who are self-motivated. // (=have a personal interest in doing their work well)",
+    rus: {js|Компании ценят самомотивированных сотрудников. // (иметь личную заинтересованность в хорошем выполнении своей работы)|js},
+    eng: "Companies value employees who are self-motivated. // (have a personal interest in doing their work well)",
   },
   {
-    rus: {js|Мы собираемся провести конкурс для сотрудников, и победитель получит денежное вознаграждение. // (=немного денег в качестве приза)|js},
-    eng: "We're going to hold a competition for staff and the winner will get a cash reward. // (=some money as a prize)",
+    rus: {js|Мы собираемся провести конкурс для сотрудников, и победитель получит денежное вознаграждение. // (немного денег в качестве приза)|js},
+    eng: "We're going to hold a competition for staff and the winner will get a cash reward. // (some money as a prize)",
   },
   {
-    rus: {js|Он получил рекомендацию, полную похвалы от своего предыдущего работодателя. // (=информация о его способностях и квалификации)|js},
-    eng: "He got a reference full of praise from his previous employer. // (=information about his abilities and qualifications)",
+    rus: {js|Он получил рекомендацию, полную похвалы от своего предыдущего работодателя. // (информация о его способностях и квалификации)|js},
+    eng: "He got a reference full of praise from his previous employer. // (information about his abilities and qualifications)",
   },
   {
-    rus: {js|Ваши навыки общения могут иметь большое значение на собеседовании // (=имеют хороший эффект).|js},
-    eng: "Your communication skills could make all the difference at a job interview // (=have a good effect).",
+    rus: {js|Ваши навыки общения могут иметь большое значение на собеседовании // (имеют хороший эффект).|js},
+    eng: "Your communication skills could make all the difference at a job interview // (have a good effect).",
   },
   {
     eng: "Hi, I don't think we've met. I'm Paolo from Napoli.",
@@ -1046,8 +1046,8 @@ let oldDictionary2 = [
     rus: {js|Привет. Это Адриана, не так ли? Мы встретились перед ужином.|js},
   },
   {
-    eng: "I saw you sitting at my table at dinner but I didn't have a chance to speak to you.// (=there was no opportunity)",
-    rus: {js|Я видел, как ты сидел за моим столом за ужином, но у меня не было возможности поговорить с тобой.// (=не было возможности)|js},
+    eng: "I saw you sitting at my table at dinner but I didn't have a chance to speak to you.// (there was no opportunity)",
+    rus: {js|Я видел, как ты сидел за моим столом за ужином, но у меня не было возможности поговорить с тобой.// (не было возможности)|js},
   },
   {
     eng: "Is this your first company event?",
@@ -1058,16 +1058,16 @@ let oldDictionary2 = [
     rus: {js|Вы из Калькутты? Какое совпадение! Мои родители тоже из Индии.|js},
   },
   {
-    eng: "Good evening, Adriana. I thought I might see you here. Back for another company event? // (=felt I could meet)",
-    rus: {js|Добрый вечер, Адриана. Я думал, что увижу тебя здесь. Вернулся на другое мероприятие компании? // (=чувствовал, что могу встретиться)|js},
+    eng: "Good evening, Adriana. I thought I might see you here. Back for another company event? // (felt I could meet)",
+    rus: {js|Добрый вечер, Адриана. Я думал, что увижу тебя здесь. Вернулся на другое мероприятие компании? // (чувствовал, что могу встретиться)|js},
   },
   {
     eng: "Currently I'm working on pension plans and other savings schemes. //(preposition)",
     rus: {js|В настоящее время я работаю над пенсионными планами и другими накопительными планами. //(предлог)|js},
   },
   {
-    eng: "How lovely to see you here. //(=nice)",
-    rus: {js|Как приятно видеть вас здесь. //(=приятный)|js},
+    eng: "How lovely to see you here. //(nice)",
+    rus: {js|Как приятно видеть вас здесь. //(приятный)|js},
   },
   {
     eng: "I have to go. It's been nice talking to you.",
@@ -1078,28 +1078,28 @@ let oldDictionary2 = [
     rus: {js|Я повредил ногу в январе в лыжной аварии. О Боже, мне очень жаль это слышать!|js},
   },
   {
-    eng: "Have you seen the programme? It looks very entertaining. //(=a lot of fun)",
-    rus: {js|Вы видели программу? Выглядит очень занимательно. // (=очень весело)|js},
+    eng: "Have you seen the programme? It looks very entertaining. //(a lot of fun)",
+    rus: {js|Вы видели программу? Выглядит очень занимательно. // (очень весело)|js},
   },
   {
-    eng: "Apparently, they're interested in people who've worked in different divisions. // (=it seems that)",
-    rus: {js|Видимо, их интересуют люди, которые работали в разных подразделениях. // (=похоже, что)|js},
+    eng: "Apparently, they're interested in people who've worked in different divisions. // (it seems that)",
+    rus: {js|Видимо, их интересуют люди, которые работали в разных подразделениях. // (похоже, что)|js},
   },
   {
-    eng: "Hi, I'm Sumitra, based in the UK. // (=working)",
-    rus: {js|Привет, я Сумитра, базирующаяся в Великобритании. // (=рабочий)|js},
+    eng: "Hi, I'm Sumitra, based in the UK. // (working)",
+    rus: {js|Привет, я Сумитра, базирующаяся в Великобритании. // (рабочий)|js},
   },
   {
-    eng: "How are things? // (=How are you?)",
-    rus: {js|Как дела? // (=Как ты?)|js},
+    eng: "How are things? // (How are you?)",
+    rus: {js|Как дела? // (Как ты?)|js},
   },
   {
-    eng: "My boss and I have a lot in common, so it's easy for us to work together. // (=similar interests, attitudes)",
-    rus: {js|У нас с боссом много общего, так что нам легко работать вместе. // (=схожие интересы, установки)|js},
+    eng: "My boss and I have a lot in common, so it's easy for us to work together. // (similar interests, attitudes)",
+    rus: {js|У нас с боссом много общего, так что нам легко работать вместе. // (схожие интересы, установки)|js},
   },
   {
-    eng: "At the beginning of the presentation the speaker made a joke to break the ice. // (=to help people to relax)",
-    rus: {js|В начале презентации спикер пошутил, чтобы сломать лед. // (=чтобы помочь людям расслабиться)|js},
+    eng: "At the beginning of the presentation the speaker made a joke to break the ice. // (to help people to relax)",
+    rus: {js|В начале презентации спикер пошутил, чтобы сломать лед. // (чтобы помочь людям расслабиться)|js},
   },
   {
     eng: "By the way, have you seen Ann Smith? I've heard that she's supposed to be at this conference. // (changing the topic of the conversation)",
@@ -1186,92 +1186,92 @@ let oldDictionary2 = [
     eng: "// If the subject is no one, nobody - use 'they' in the tag.// No one knew about that, did they?",
   },
   {
-    rus: {js|Боюсь, у нас закончились деньги. // (=денег не осталось)|js},
-    eng: "I'm afraid we've run out of money. // (=there is no money left)",
+    rus: {js|Боюсь, у нас закончились деньги. // (денег не осталось)|js},
+    eng: "I'm afraid we've run out of money. // (there is no money left)",
   },
   {
-    rus: {js|Постарайтесь отслеживать расходы, чтобы не превышать бюджет. // (=монитор)|js},
-    eng: "Try to keep track of spending so that you don't go over budget. // (=monitor)",
+    rus: {js|Постарайтесь отслеживать расходы, чтобы не превышать бюджет. // (монитор)|js},
+    eng: "Try to keep track of spending so that you don't go over budget. // (monitor)",
   },
   {
     rus: {js|Когда у вас мало времени, вы должны определить приоритеты задач и сделать самые важные из них в первую очередь.|js},
     eng: "When you are short of time, you have to prioritize tasks and do the most important ones first.",
   },
   {
-    rus: {js|Мы ожидаем закончить задачи этого спринта досрочно. // (=до запланированного времени)|js},
-    eng: "We expect to finish the tasks of this sprint ahead of schedule. // (=before the planned time)",
+    rus: {js|Мы ожидаем закончить задачи этого спринта досрочно. // (до запланированного времени)|js},
+    eng: "We expect to finish the tasks of this sprint ahead of schedule. // (before the planned time)",
   },
   {
-    rus: {js|Мы отстаем от графика, но надеемся наверстать упущенное на этой неделе. // (=выполнение работ позднее запланированного срока)|js},
-    eng: "We're behind schedule now but hope to catch up with everything this week. // (=doing work later than planned)",
+    rus: {js|Мы отстаем от графика, но надеемся наверстать упущенное на этой неделе. // (выполнение работ позднее запланированного срока)|js},
+    eng: "We're behind schedule now but hope to catch up with everything this week. // (doing work later than planned)",
   },
   {
-    rus: {js|В данный момент все идет гладко. // (=все идет по плану, проблем нет)|js},
-    eng: "Things are running smoothly at the moment. // (=everything's according to plan, there are no problems)",
+    rus: {js|В данный момент все идет гладко. // (все идет по плану, проблем нет)|js},
+    eng: "Things are running smoothly at the moment. // (everything's according to plan, there are no problems)",
   },
   {
-    rus: {js|Наш менеджер пытается решить любые конфликты сразу. // (=иметь дело)|js},
-    eng: "Our manager tries to resolve any conflicts straight away. // (=deal with)",
+    rus: {js|Наш менеджер пытается решить любые конфликты сразу. // (иметь дело)|js},
+    eng: "Our manager tries to resolve any conflicts straight away. // (deal with)",
   },
   {
-    rus: {js|Основная причина задержки-отсутствие планирования. // (=недостаточно)|js},
-    eng: "The main reason for the delay is lack of planning. // (=not enough)",
+    rus: {js|Основная причина задержки-отсутствие планирования. // (недостаточно)|js},
+    eng: "The main reason for the delay is lack of planning. // (not enough)",
   },
   {
-    rus: {js|Мы не можем пропустить крайний срок. В противном случае мы не получим бонус. // (=завершить работу позднее запланированного срока)|js},
-    eng: "We can't miss the deadline. Otherwise, we won't receive a bonus. // (=complete work later than planned)",
+    rus: {js|Мы не можем пропустить крайний срок. В противном случае мы не получим бонус. // (завершить работу позднее запланированного срока)|js},
+    eng: "We can't miss the deadline. Otherwise, we won't receive a bonus. // (complete work later than planned)",
   },
   {
-    rus: {js|Как вы думаете, мы сможем уложиться в срок? // (=завершение работы в срок или ранее)|js},
-    eng: "Do you think we'll be able meet the deadline? // (=complete work on time or earlier)",
+    rus: {js|Как вы думаете, мы сможем уложиться в срок? // (завершение работы в срок или ранее)|js},
+    eng: "Do you think we'll be able meet the deadline? // (complete work on time or earlier)",
   },
   {
-    rus: {js|Каждый проект имеет бюджетные ограничения. // (=ограничения на сумму денег, которую можно потратить)|js},
-    eng: "Every project has budget constraints. // (=restrictions on the amount of money that can be spent)",
+    rus: {js|Каждый проект имеет бюджетные ограничения. // (ограничения на сумму денег, которую можно потратить)|js},
+    eng: "Every project has budget constraints. // (restrictions on the amount of money that can be spent)",
   },
   {
-    rus: {js|Нам нужно убедиться, что мы в рамках бюджета. // (=не тратьте слишком много денег)|js},
-    eng: "We need to make sure that we're within budget. // (=don't spend too much money)",
+    rus: {js|Нам нужно убедиться, что мы в рамках бюджета. // (не тратьте слишком много денег)|js},
+    eng: "We need to make sure that we're within budget. // (don't spend too much money)",
   },
   {
-    rus: {js|Для того, чтобы оставаться в рамках бюджета, мы должны разработать лучшее предварительное планирование ресурсов. // (=сделано до начала работы)|js},
-    eng: "To stay within budget we need to develop better upfront planning of the resources. // (=done before starting work)",
+    rus: {js|Для того, чтобы оставаться в рамках бюджета, мы должны разработать лучшее предварительное планирование ресурсов. // (сделано до начала работы)|js},
+    eng: "To stay within budget we need to develop better upfront planning of the resources. // (done before starting work)",
   },
   {
-    rus: {js|Определите контрольные точки На протяжении всего проекта, чтобы вы могли оставаться на пути. // (=вероятность достижения желаемого результата)|js},
-    eng: "Define checkpoints throughout the project so you can stay on track. // (=be likely to achieve the result you want)",
+    rus: {js|Определите контрольные точки На протяжении всего проекта, чтобы вы могли оставаться на пути. // (вероятность достижения желаемого результата)|js},
+    eng: "Define checkpoints throughout the project so you can stay on track. // (be likely to achieve the result you want)",
   },
   {
-    rus: {js|Нам нужно немедленно начать решать проблему. // (=начать пытаться решить)|js},
-    eng: "We need to address the problem immediately. // (=start trying to solve it)",
+    rus: {js|Нам нужно немедленно начать решать проблему. // (начать пытаться решить)|js},
+    eng: "We need to address the problem immediately. // (start trying to solve it)",
   },
   {
-    rus: {js|Точный прогноз поможет нам уложиться в сроки. // (=правильно и верно в каждой детали)|js},
-    eng: "An accurate forecast will help us meet our deadlines. // (=correct and true in every detail)",
+    rus: {js|Точный прогноз поможет нам уложиться в сроки. // (правильно и верно в каждой детали)|js},
+    eng: "An accurate forecast will help us meet our deadlines. // (correct and true in every detail)",
   },
   {
     rus: {js|У нас возникли проблемы с новой системой. // (предлог)|js},
     eng: "We've run into problems with the new system. // (preposition)",
   },
   {
-    rus: {js|У нас ограниченный бюджет, поэтому давайте постараемся снизить расходы. // (=как можно ниже)|js},
-    eng: "We have a limited budget, so let's try to keep the costs down. // (=as low as possible)",
+    rus: {js|У нас ограниченный бюджет, поэтому давайте постараемся снизить расходы. // (как можно ниже)|js},
+    eng: "We have a limited budget, so let's try to keep the costs down. // (as low as possible)",
   },
   {
-    rus: {js|Прежде чем начать новый проект, важно установить реалистичный бюджет. // (=выделить сумму денег, которой будет достаточно для завершения проекта)|js},
-    eng: "Before you start a new project, it's essential to set a realistic budget. // (=allocate a sum of money that will be enough for completing the project)",
+    rus: {js|Прежде чем начать новый проект, важно установить реалистичный бюджет. // (выделить сумму денег, которой будет достаточно для завершения проекта)|js},
+    eng: "Before you start a new project, it's essential to set a realistic budget. // (allocate a sum of money that will be enough for completing the project)",
   },
   {
-    rus: {js|Компания предлагает новый ассортимент мобильных телефонов по конкурентоспособным ценам. // (=дешевле, чем другие, но все еще хорошего качества)|js},
-    eng: "The company offers a new range of mobile phones at competitive prices. // (=cheaper than others but still of good quality)",
+    rus: {js|Компания предлагает новый ассортимент мобильных телефонов по конкурентоспособным ценам. // (дешевле, чем другие, но все еще хорошего качества)|js},
+    eng: "The company offers a new range of mobile phones at competitive prices. // (cheaper than others but still of good quality)",
   },
   {
-    rus: {js|Мы отстаем от графика, поэтому нам придется работать сверхурочно, чтобы сделать дату запуска. // (=выпуск продукта вовремя)|js},
-    eng: "We're behind schedule, so we'll have to work overtime in order to make the launch date. // (=release the product on time)",
+    rus: {js|Мы отстаем от графика, поэтому нам придется работать сверхурочно, чтобы сделать дату запуска. // (выпуск продукта вовремя)|js},
+    eng: "We're behind schedule, so we'll have to work overtime in order to make the launch date. // (release the product on time)",
   },
   {
-    rus: {js|Если мы сейчас превысим бюджет, у нас закончатся деньги к концу проекта. // (=потратить больше денег, чем первоначально планировалось)|js},
-    eng: "If we go over budget now, we'll run out of money by the end of the project. // (=spend more money than initially planned)",
+    rus: {js|Если мы сейчас превысим бюджет, у нас закончатся деньги к концу проекта. // (потратить больше денег, чем первоначально планировалось)|js},
+    eng: "If we go over budget now, we'll run out of money by the end of the project. // (spend more money than initially planned)",
   },
   {
     rus: {js|В прошлом месяце мы отстали от графика из-за неожиданных задержек в сборе требований, но теперь мы снова в пути.|js},
@@ -1282,8 +1282,8 @@ let oldDictionary2 = [
     eng: "I've presented my ideas to the management and they've given me the go ahead. // (permission to start)",
   },
   {
-    rus: {js|Фрэнк опоздает, но мы все равно продолжим встречу. // (=начать собрание, как запланировано)|js},
-    eng: "Frank will be late, but we'll go ahead with the meeting anyway. // (=start the meeting as planned)",
+    rus: {js|Фрэнк опоздает, но мы все равно продолжим встречу. // (начать собрание, как запланировано)|js},
+    eng: "Frank will be late, but we'll go ahead with the meeting anyway. // (start the meeting as planned)",
   },
   {
     rus: {js|Вчера я отправил вам предложенную повестку дня. // (перечень тем для обсуждения на совещании)|js},
@@ -1467,7 +1467,7 @@ let oldDictionary2 = [
   },
   {
     rus: {js|Я голоден. Я ничего не ел с самого завтрака.|js},
-    eng: "I'm hungry. I haven't eaten anything since breakfast. // past (= from breakfast until now)",
+    eng: "I'm hungry. I haven't eaten anything since breakfast. // past ( from breakfast until now)",
   },
   {
     rus: {js|Хорошо увидеть тебя снова. Мы давно не виделись.|js},

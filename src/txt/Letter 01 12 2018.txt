@@ -10,6 +10,8 @@ So, we are looking forward receving your answer if you decide to do so.
 Best regards!
 Tuev Viacheslav.
 
+---------------------------------------------------------------------
+
 
 Hi Andrew!
 I am writing this email to you to say that I am sorry I am not able to have lunch with you on Wensday.
@@ -20,10 +22,43 @@ I am looking forward to seeing you on Friday.
 Sincirely yours,
 Viacheslav
 
-
+---------------------------------------------------------------------
 EPAM benefits!
 There are many benefints for emploies in EPAM company.
 We have a comfortable office with nice kitchen, where we could use coffee machine,
 a microwave owen and other facilities.
+In the office we have some recreation areas and sport inventories.
+It is very important for software developers to do some sport execises to our heath in good state.
+In additional to that  we have a lot of training courses to improve our skills.  I like them very much.
+Currently I am taking English training and Node JS development course.
+We had medical insurance also, and sometimes doctors come to our office to help us to understand the condition of our heath.
+The one more interesting opportunities employees have in EPAP is an opportunity to work in different projects.
+By the way I have been working in EPAM for two years and I've partisipated in five different interesting projects with different teams and styles.
+
+There are many other benefits in EPAM like reolacation, flexible hours, meetups, conferences.
+So it's a very good company. I like it very much.
+
+---------------------------------------------------------------------
+
+My last project.
+
+I am currently working on Sberbank black list project.
+It is very important project because the bank any other banks must stop any of the finance transactions which made by criminal people.
+The are five EPAM developers and four Sberbank employees in our team.
+We have worked for four months already and we are going to to work for two months more.
+Our task is to migrate the Sberbank stop-list database to the new framework.
+In additional to that we also are to develop a new application which will allow to add, edit and delete records in this database.
+It is unbelievable that we have had difficulties with computers during our work in the project.
+We have been sharing our computer between two or three developers.
+But now this problem has been fixed. We have taken the equipment we needed.
+One more thing I have to mention is that the office we are working in is far from tube stations.
+It takes a lot of time to get there and to get home from the office.
+Nevertheless we will do our best to get the work done.
+Our team consists of motivated employees and we have very qualified and active team leader.
+Things are running smoothly at the moment. We are ahead of schedule.
+This is not bad project, but I would prefer to not to work in Sberbank in my next project.
+I would change it to another EPAM project to get to know something new and to meet new people.
+
+---------------------------------------------------------------------
 
 
