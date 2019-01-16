@@ -710,92 +710,117 @@ let veryOldDictionary1 = [
 
 let dictionary2 = [
   {
-    rus: {js|Вчера Карен и Джим играли в теннис. Они начались в 10 часов и закончили в 11:30. Так, в 10:30 они играли в теннис. Они играли значит они были в середине игры. Они еще не закончили играть.|js},
-    eng: "Yesterday Karen and Jim played tennis. They started at 10 o'clock and finished at 11:30. So, at 10:30 they were playing tennis.They were playing means they were in the middle of playing. They had not finished playing.",
+    rus: {js|Мы используем "can", чтобы сказать, что что-то возможно или разрешено, или что у кого-то есть способность делать|js},
+    eng: "We use 'can' to say that something is possible or allowed, or that somebody has the ability to do",
   },
   {
-    rus: {js|Я начал делать. Я делал это. Я закончил работу. Сейчас.|js},
-    eng: "I started doing. I was doing. I finished doing. Now.",
+    rus: {js|нечто. Мы используем' can ' + инфинитив (can do / can see etc.).|js},
+    eng: "something. We use 'can' + infinitive (can do / can see etc.).",
   },
   {
-    rus: {js|В это время в прошлом году я жил в Бразилии.|js},
-    eng: "This time last year I was living in Brazil.",
+    rus: {js|Мы можем видеть озеро из нашего отеля.|js},
+    eng: "We can see the lake from our hotel.",
   },
   {
-    rus: {js|Что вы делали в 10 часов вчера вечером? Я помахал Хелен, но она не смотрела.|js},
-    eng: "What were you doing at 10 o'clock last night?",
+    rus: {js|У меня нет ручки. - Ты можешь воспользоваться моей.|js},
+    eng: "I don't have a pen. - You can use mine.",
   },
   {
-    rus: {js|Сравните прошлое непрерывное (я делал) и прошлое простое (я делал).|js},
-    eng: "Compare the past continuous (I was doing) and past simple (I did).",
+    rus: {js|Вы говорите на иностранных языках?|js},
+    eng: "Can you speak any foreign languages?",
   },
   {
-    rus: {js|Я шёл домой, когда встретил Дэна. (в середине прогулки домой)|js},
-    eng: "I was walking home when I met Dan. (in the middle of walking home)",
+    rus: {js|Я могу прийти к вам завтра, если хотите.|js},
+    eng: "I can come and see you tomorrow if you like.",
   },
   {
-    rus: {js|Кейт смотрела телевизор, когда мы приехали.|js},
-    eng: "Kate was watching TV when we arrived.",
+    rus: {js|Слово " сон " может быть существительным или глаголом.|js},
+    eng: "The word 'dream' can be a noun or a verb.",
   },
   {
-    rus: {js|Я пошел домой после вчерашней вечеринки. ( полностью, полностью)|js},
-    eng: "I walked home after the party last night. ( all the way, completely)",
+    rus: {js|Боюсь, я не смогу прийти на вечеринку в пятницу.|js},
+    eng: "I'm afraid I can't come to the party on Friday.",
   },
   {
-    rus: {js|Кейт много смотрела телевизор, когда болела в прошлом году.|js},
-    eng: "Kate watched television a lot when she was ill last year.",
+    rus: {js|Вы можете сказать, что кто-то "способен" что-то сделать, но "может" более обычно.|js},
+    eng: "You can say that somebody 'is able' to do something, but 'can' is more usual.",
   },
   {
-    rus: {js|Мы часто используем прошлое простое и прошлое непрерывное вместе, чтобы сказать, что что-то произошло в середине чего-то еще: Мэтт позвонил, когда мы ужинали.|js},
-    eng: "We often use the past simple and the past continuous together to say that something happened in the middle of something else: Matt phoned while we were having dinner.",
+    rus: {js|Мы можем увидеть озеро из нашего отеля.|js},
+    eng: "We are able to see the lake from our hotel.",
   },
   {
-    rus: {js|Когда я встал, шел дождь.|js},
-    eng: "It was raining when I got up.",
+    rus: {js|Но "может" имеет только две формы: может (Настоящее) и может (прошлое). Поэтому иногда необходимо использовать (быть)|js},
+    eng: "But 'can' has only two forms: can (present) and could (past). So sometimes it is necessary to use (be)",
+  },
+  {rus: {js|в состоянии.|js}, eng: "able to."},
+  {
+    rus: {js|Я не могу уснуть.  В последнее время я не могу заснуть.|js},
+    eng: "I can't sleep. / I haven't been able to sleep recently.",
   },
   {
-    rus: {js|Я видел тебя вчера в парке. Ты сидел на траве и читал книгу.|js},
-    eng: "I saw you in the park yesterday. You were sitting on the grass and reading a book.",
+    rus: {js|Том может прийти завтра.  Том может прийти завтра.|js},
+    eng: "Tom can come tomorrow. / Tom might be able to come tomorrow.",
   },
   {
-    rus: {js|Я повредил спину, когда работал в саду.|js},
-    eng: "I hurt my back while I was working in the garden.",
+    rus: {js|Мария говорит на французском, испанском и английском языках. / Кандидаты на работу должны уметь говорить на двух иностранных языках.|js},
+    eng: "Maria can speak French, Spanish and English. / Applicants for the job must be able to speak two foreign languages.",
   },
   {
-    rus: {js|Но мы используем прошлое просто, чтобы сказать, что одно произошло за другим: я шел по дороге, когда увидел Дэна. Поэтому я остановился, и мы поболтали.|js},
-    eng: "But we use the past simple to say that one thing happened after another: I was walking along the road when I saw Dan. So I stopped, and we had a chat.",
+    rus: {js|Иногда прошлое может. Мы могли бы использовать, особенно с: вижу, слышу запах, вкус, чувствовать, помнить, понимать|js},
+    eng: "Sometimes could is the past of can. We use could especially with: see hear smell taste feel remember understand",
   },
   {
-    rus: {js|Когда Карен приехала, мы ужинали. ( мы уже начали, прежде чем она приехала)|js},
-    eng: "When Karen arrived, we were having dinner. ( we had already started before she arrived)",
+    rus: {js|У нас был прекрасный номер в гостинице. Мы могли видеть озеро.|js},
+    eng: "We had a lovely room in the hotel. We could see the lake.",
   },
   {
-    rus: {js|Когда Карен приехала, мы ужинали. (Карен приехала, а потом мы поужинали)|js},
-    eng: "When Karen arrived, we had dinner. ( Karen arrived, and then we had dinner)",
+    rus: {js|Как только я вошел в комнату, я почувствовал запах газа.|js},
+    eng: "As soon as I walked into the room, I could smell gas.",
   },
   {
-    rus: {js|Некоторые глаголы (например, знать и хотеть) обычно не используются в непрерывном.|js},
-    eng: "Some verbs (for example, know and want) are not normally used in the continuous.",
+    rus: {js|Я сидел в задней части театра и не слышали.|js},
+    eng: "I was sitting at the back of the theatre and couldn't hear very well.",
   },
   {
-    rus: {js|Мы были хорошими друзьями. Мы хорошо знали друг друга. (мы не знали, что)|js},
-    eng: "We were good friends. We knew each other well. (not We were knowing)",
+    rus: {js|Мы также используем могли бы сказать, что кто-то имел общую способность или разрешение сделать что-то:|js},
+    eng: "We also use could to say that somebody had the general ability or permission to do something:",
   },
   {
-    rus: {js|Я наслаждалась вечеринкой, но Крис хотел домой. (не было желающих)|js},
-    eng: "I was enjoying the party, but Chris wanted to go home. // (not was wanting)",
+    rus: {js|Мой дед говорил на пяти языках.|js},
+    eng: "My grandfather could speak five languages.",
   },
   {
-    rus: {js|Я видел Сью вчера в городе, но она не видела меня. Она смотрела в другую сторону.|js},
-    eng: "I saw Sue in town yesterday, but she wasn't seeing me. She was looking the other way. I waved to her, but she wasn't looking.",
+    rus: {js|Мы были абсолютно свободны. Мы могли делать, что хотели. (нам разрешили это сделать)|js},
+    eng: "We were totally free. We could do what we wanted. (we were allowed to do)",
   },
   {
-    rus: {js|Я встретил Тома и Джейн в аэропорту несколько недель назад. Они собирались в Париж, а я собирался в Рим. Мы поболтали, пока ждали наших рейсов.|js},
-    eng: "I met Tom and Jane at the airport a few weeks ago. They were going to Paris and I was going to Rome. We had a chat while we were waiting for our flights.",
+    rus: {js|Мы используем "смогло" для общей способности. Но если вы хотите сказать, что кто-то сделал что-то в конкретной ситуации, используйте "был / был в состоянии" или "сумел" (не мог):|js},
+    eng: "We use 'could' for general ability. But if you want to say that somebody did something in a specific situation, use 'was/were able to' or 'managed to' (not could):",
   },
   {
-    rus: {js|Вчера я ехал на велосипеде домой, когда мужчина выходил на дорогу передо мной. Я ехал довольно быстро, но, к счастью, успел вовремя остановиться и не ударил его.|js},
-    eng: "I cycled home yesterday when a man was stepping out into the road in front of me. I was going quite fast, but luckily I managed to stop in time and not hit him.",
+    rus: {js|Огонь распространился по зданию очень быстро, но, к счастью, все смогли спастись / удалось спастись, (не удалось спастись).|js},
+    eng: "The fire spread through the building very quickly, but fortunately everybody was able to escape / managed to escape, (not could escape).",
+  },
+  {
+    rus: {js|Мы не знали, где Дэвид, но нам удалось найти его в конце концов. (не смог найти)|js},
+    eng: "We didn't know where David was, but we managed to find / were able to find him in the end. (not could find)",
+  },
+  {
+    rus: {js|Джек был отличным теннисистом, когда был моложе. Он мог победить кого угодно. (у него была общая способность победить кого угодно), но вчера Джек и Энди сыграли матч. Энди играл хорошо, но Джеку удалось обыграть его. ( на этот раз ему удалось победить его)|js},
+    eng: "Jack was an excellent tennis player when he was younger. He could beat anybody. (he had the general ability to beat anybody) But Jack and Andy played a match yesterday. Andy played well, but Jack managed to beat him. ( he managed to beat him this time)",
+  },
+  {
+    rus: {js|Негатив не мог (не мог) возможен во всех ситуациях: мой дед не умел плавать.|js},
+    eng: "The negative couldn't (could not) is possible in all situations: My grandfather couldn't swim.",
+  },
+  {
+    rus: {js|Мы искали Дэвида повсюду, но не могли его найти.|js},
+    eng: "We looked for David everywhere, but we couldn't find him.",
+  },
+  {
+    rus: {js|Энди играл хорошо, но он не мог победить Джека.|js},
+    eng: "Andy played well, but he couldn't beat Jack.",
   },
 ];
 
@@ -1508,6 +1533,94 @@ let oldDictionary2 = [
   {
     rus: {js|Билл снова звонит своей девушке. Это уже третий раз он звонит ей за вечер.|js},
     eng: "Bill is phoning his girlfriend again. That's the third time he's phoned her this evening.",
+  },
+  {
+    rus: {js|Вчера Карен и Джим играли в теннис. Они начались в 10 часов и закончили в 11:30. Так, в 10:30 они играли в теннис. Они играли значит они были в середине игры. Они еще не закончили играть.|js},
+    eng: "Yesterday Karen and Jim played tennis. They started at 10 o'clock and finished at 11:30. So, at 10:30 they were playing tennis.They were playing means they were in the middle of playing. They had not finished playing.",
+  },
+  {
+    rus: {js|Я начал делать. Я делал это. Я закончил работу. Сейчас.|js},
+    eng: "I started doing. I was doing. I finished doing. Now.",
+  },
+  {
+    rus: {js|В это время в прошлом году я жил в Бразилии.|js},
+    eng: "This time last year I was living in Brazil.",
+  },
+  {
+    rus: {js|Что вы делали в 10 часов вчера вечером? Я помахал Хелен, но она не смотрела.|js},
+    eng: "What were you doing at 10 o'clock last night?",
+  },
+  {
+    rus: {js|Сравните прошлое непрерывное (я делал) и прошлое простое (я делал).|js},
+    eng: "Compare the past continuous (I was doing) and past simple (I did).",
+  },
+  {
+    rus: {js|Я шёл домой, когда встретил Дэна. (в середине прогулки домой)|js},
+    eng: "I was walking home when I met Dan. (in the middle of walking home)",
+  },
+  {
+    rus: {js|Кейт смотрела телевизор, когда мы приехали.|js},
+    eng: "Kate was watching TV when we arrived.",
+  },
+  {
+    rus: {js|Я пошел домой после вчерашней вечеринки. ( полностью, полностью)|js},
+    eng: "I walked home after the party last night. ( all the way, completely)",
+  },
+  {
+    rus: {js|Кейт много смотрела телевизор, когда болела в прошлом году.|js},
+    eng: "Kate watched television a lot when she was ill last year.",
+  },
+  {
+    rus: {js|Мы часто используем прошлое простое и прошлое непрерывное вместе, чтобы сказать, что что-то произошло в середине чего-то еще: Мэтт позвонил, когда мы ужинали.|js},
+    eng: "We often use the past simple and the past continuous together to say that something happened in the middle of something else: Matt phoned while we were having dinner.",
+  },
+  {
+    rus: {js|Когда я встал, шел дождь.|js},
+    eng: "It was raining when I got up.",
+  },
+  {
+    rus: {js|Я видел тебя вчера в парке. Ты сидел на траве и читал книгу.|js},
+    eng: "I saw you in the park yesterday. You were sitting on the grass and reading a book.",
+  },
+  {
+    rus: {js|Я повредил спину, когда работал в саду.|js},
+    eng: "I hurt my back while I was working in the garden.",
+  },
+  {
+    rus: {js|Но мы используем прошлое просто, чтобы сказать, что одно произошло за другим: я шел по дороге, когда увидел Дэна. Поэтому я остановился, и мы поболтали.|js},
+    eng: "But we use the past simple to say that one thing happened after another: I was walking along the road when I saw Dan. So I stopped, and we had a chat.",
+  },
+  {
+    rus: {js|Когда Карен приехала, мы ужинали. ( мы уже начали, прежде чем она приехала)|js},
+    eng: "When Karen arrived, we were having dinner. ( we had already started before she arrived)",
+  },
+  {
+    rus: {js|Когда Карен приехала, мы ужинали. (Карен приехала, а потом мы поужинали)|js},
+    eng: "When Karen arrived, we had dinner. ( Karen arrived, and then we had dinner)",
+  },
+  {
+    rus: {js|Некоторые глаголы (например, знать и хотеть) обычно не используются в непрерывном.|js},
+    eng: "Some verbs (for example, know and want) are not normally used in the continuous.",
+  },
+  {
+    rus: {js|Мы были хорошими друзьями. Мы хорошо знали друг друга. (мы не знали, что)|js},
+    eng: "We were good friends. We knew each other well. (not We were knowing)",
+  },
+  {
+    rus: {js|Я наслаждалась вечеринкой, но Крис хотел домой. (не было желающих)|js},
+    eng: "I was enjoying the party, but Chris wanted to go home. // (not was wanting)",
+  },
+  {
+    rus: {js|Я видел Сью вчера в городе, но она не видела меня. Она смотрела в другую сторону.|js},
+    eng: "I saw Sue in town yesterday, but she wasn't seeing me. She was looking the other way. I waved to her, but she wasn't looking.",
+  },
+  {
+    rus: {js|Я встретил Тома и Джейн в аэропорту несколько недель назад. Они собирались в Париж, а я собирался в Рим. Мы поболтали, пока ждали наших рейсов.|js},
+    eng: "I met Tom and Jane at the airport a few weeks ago. They were going to Paris and I was going to Rome. We had a chat while we were waiting for our flights.",
+  },
+  {
+    rus: {js|Вчера я ехал на велосипеде домой, когда мужчина выходил на дорогу передо мной. Я ехал довольно быстро, но, к счастью, успел вовремя остановиться и не ударил его.|js},
+    eng: "I cycled home yesterday when a man was stepping out into the road in front of me. I was going quite fast, but luckily I managed to stop in time and not hit him.",
   },
 ];
 
