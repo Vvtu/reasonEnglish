@@ -710,12 +710,8 @@ let veryOldDictionary1 = [
 
 let dictionary2 = [
   {
-    rus: {js|Мы используем "can", чтобы сказать, что что-то возможно или разрешено, или что у кого-то есть способность делать|js},
-    eng: "We use 'can' to say that something is possible or allowed, or that somebody has the ability to do",
-  },
-  {
-    rus: {js|нечто. Мы используем' can ' + инфинитив (can do / can see etc.).|js},
-    eng: "something. We use 'can' + infinitive (can do / can see etc.).",
+    rus: {js|Мы используем "can", чтобы сказать, что что-то возможно или разрешено, или что у кого-то есть способность делать нечто. Мы используем' can ' + инфинитив (can do, can see etc.).|js},
+    eng: "We use 'can' to say that something is possible or allowed, or that somebody has the ability to do something. We use 'can' + infinitive (can do, can see etc.).",
   },
   {
     rus: {js|Мы можем видеть озеро из нашего отеля.|js},
@@ -750,29 +746,24 @@ let dictionary2 = [
     eng: "We are able to see the lake from our hotel.",
   },
   {
-    rus: {js|Но "может" имеет только две формы: может (Настоящее) и может (прошлое). Поэтому иногда необходимо использовать (быть)|js},
-    eng: "But 'can' has only two forms: can (present) and could (past). So sometimes it is necessary to use (be)",
+    rus: {js|"can" имеет только две формы: может (Настоящее) и может (прошлое). Поэтому иногда необходимо использовать (быть) в состоянии.|js},
+    eng: "'can' has only two forms: can (present) and could (past). So sometimes it is necessary to use (be) able to.",
   },
-  {rus: {js|в состоянии.|js}, eng: "able to."},
   {
     rus: {js|Я не могу уснуть.  В последнее время я не могу заснуть.|js},
-    eng: "I can't sleep. / I haven't been able to sleep recently.",
+    eng: "I can't sleep. ( I haven't been able to sleep recently. )",
   },
   {
-    rus: {js|Том может прийти завтра.  Том может прийти завтра.|js},
-    eng: "Tom can come tomorrow. / Tom might be able to come tomorrow.",
+    rus: {js|Том может прийти завтра.  Том мог бы прийти завтра.|js},
+    eng: "Tom can come tomorrow. ( Tom might be able to come tomorrow.)",
   },
   {
-    rus: {js|Мария говорит на французском, испанском и английском языках. / Кандидаты на работу должны уметь говорить на двух иностранных языках.|js},
-    eng: "Maria can speak French, Spanish and English. / Applicants for the job must be able to speak two foreign languages.",
+    rus: {js|Мария говорит на французском, испанском и английском языках. ( Кандидаты на работу должны уметь говорить на двух иностранных языках.)|js},
+    eng: "Maria can speak French, Spanish and English. ( Applicants for the job must be able to speak two foreign languages.)",
   },
   {
-    rus: {js|Иногда прошлое может. Мы могли бы использовать, особенно с: вижу, слышу запах, вкус, чувствовать, помнить, понимать|js},
-    eng: "Sometimes could is the past of can. We use could especially with: see hear smell taste feel remember understand",
-  },
-  {
-    rus: {js|У нас был прекрасный номер в гостинице. Мы могли видеть озеро.|js},
-    eng: "We had a lovely room in the hotel. We could see the lake.",
+    rus: {js|Иногда 'could' это прошедшее время от 'can'. особенно с: вижу, слышу запах, вкус, чувствовать, помнить, понимать. У нас был прекрасный номер в гостинице. Мы могли видеть озеро.|js},
+    eng: "Sometimes 'could' is the past of 'can'. especially with: see, hear, smell, taste, feel, remember, understand. We had a lovely room in the hotel. We could see the lake.",
   },
   {
     rus: {js|Как только я вошел в комнату, я почувствовал запах газа.|js},
@@ -795,16 +786,16 @@ let dictionary2 = [
     eng: "We were totally free. We could do what we wanted. (we were allowed to do)",
   },
   {
-    rus: {js|Мы используем "смогло" для общей способности. Но если вы хотите сказать, что кто-то сделал что-то в конкретной ситуации, используйте "был / был в состоянии" или "сумел" (не мог):|js},
+    rus: {js|Мы используем "could" для общей способности. Но если вы хотите сказать, что кто-то сделал что-то в конкретной ситуации, используйте "was/were able to" или "managed to" (не "could"):|js},
     eng: "We use 'could' for general ability. But if you want to say that somebody did something in a specific situation, use 'was/were able to' or 'managed to' (not could):",
   },
   {
-    rus: {js|Огонь распространился по зданию очень быстро, но, к счастью, все смогли спастись / удалось спастись, (не удалось спастись).|js},
-    eng: "The fire spread through the building very quickly, but fortunately everybody was able to escape / managed to escape, (not could escape).",
+    rus: {js|Огонь распространился по зданию очень быстро, но, к счастью, все смогли спастись ( удалось спастись, не удалось спастись).|js},
+    eng: "The fire spread through the building very quickly, but fortunately everybody was able to escape ( managed to escape, not could escape).",
   },
   {
     rus: {js|Мы не знали, где Дэвид, но нам удалось найти его в конце концов. (не смог найти)|js},
-    eng: "We didn't know where David was, but we managed to find / were able to find him in the end. (not could find)",
+    eng: "We didn't know where David was, but we managed to find ( were able to find him in the end. not could find)",
   },
   {
     rus: {js|Джек был отличным теннисистом, когда был моложе. Он мог победить кого угодно. (у него была общая способность победить кого угодно), но вчера Джек и Энди сыграли матч. Энди играл хорошо, но Джеку удалось обыграть его. ( на этот раз ему удалось победить его)|js},
@@ -944,7 +935,7 @@ let oldDictionary2 = [
   },
   {
     rus: {js||js},
-    eng: "Common phrases used with present simple are: as a rule, generally (speaking), on the whole, one (a week / in a while), every (winter), most of the time.",
+    eng: "Common phrases used with present simple are: as a rule, generally (speaking), on the whole, one (a week , in a while), every (winter), most of the time.",
   },
   {
     rus: {js||js},
@@ -1419,12 +1410,12 @@ let oldDictionary2 = [
     eng: "Now Tom has found his key. He has it now. Has he lost his key? No, he has found it. Did he lose his key? Yes, he did. He lost his key. //past simple// but now he has found it. //present perfect//",
   },
   {
-    rus: {js|Сегодня я проделал большую работу. // Используйте present perfect в течение периода времени, который продолжается до сих пор. Например: сегодня / на этой неделе / с 2007 года.|js},
-    eng: "I've done a lot of work today. //Use present perfect for a period of time that continues until now. For example: today / this week / since 2007.",
+    rus: {js|Сегодня я проделал большую работу. // Используйте present perfect в течение периода времени, который продолжается до сих пор. Например: сегодня , на этой неделе , с 2007 года.|js},
+    eng: "I've done a lot of work today. //Use present perfect for a period of time that continues until now. For example: today , this week , since 2007.",
   },
   {
-    rus: {js|Я вчера много работал.// Мы используем прошлое простое для законченного времени в прошлом. Например: вчера / на прошлой неделе / с 2007 по 2010 год.|js},
-    eng: "I did a lot of work yesterday.// We use the past simple for a finished time in the past. For example: yesterday / last week / from 2007 to 2010.",
+    rus: {js|Я вчера много работал.// Мы используем прошлое простое для законченного времени в прошлом. Например: вчера,на прошлой неделе,с 2007 по 2010 год.|js},
+    eng: "I did a lot of work yesterday.// We use the past simple for a finished time in the past. For example: yesterday,last week,from 2007 to 2010.",
   },
   {
     rus: {js|На этой неделе не было дождя.|js},
@@ -1547,7 +1538,7 @@ let oldDictionary2 = [
     eng: "This time last year I was living in Brazil.",
   },
   {
-    rus: {js|Что вы делали в 10 часов вчера вечером? Я помахал Хелен, но она не смотрела.|js},
+    rus: {js|Что вы делали в 10 часов вчера вечером?|js},
     eng: "What were you doing at 10 o'clock last night?",
   },
   {
