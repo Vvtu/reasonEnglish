@@ -710,108 +710,76 @@ let veryOldDictionary1 = [
 
 let dictionary2 = [
   {
-    rus: {js|Мы используем "can", чтобы сказать, что что-то возможно или разрешено, или что у кого-то есть способность делать нечто. Мы используем' can ' + инфинитив (can do, can see etc.).|js},
-    eng: "We use 'can' to say that something is possible or allowed, or that somebody has the ability to do something. We use 'can' + infinitive (can do, can see etc.).",
+    rus: {js|Мы очень ценим возможность работать с вашей компанией. (спасибо тебе)|js},
+    eng: "We really appreciate the opportunity to work with your company. (thank you)",
   },
   {
-    rus: {js|Мы можем видеть озеро из нашего отеля.|js},
-    eng: "We can see the lake from our hotel.",
+    rus: {js|В этой презентации я хотел бы показать вам основные возможности нашей новой системы.|js},
+    eng: "What I'd like to do in this presentation is show you the main features of our new system.",
   },
   {
-    rus: {js|У меня нет ручки. - Ты можешь воспользоваться моей.|js},
-    eng: "I don't have a pen. - You can use mine.",
+    rus: {js|В принципе, это система безопасности, основанная на сканировании отпечатков пальцев. (проще говоря)|js},
+    eng: "Basically, it's a security system based on fingerprint scanning. (to put it simply)",
   },
   {
-    rus: {js|Вы говорите на иностранных языках?|js},
-    eng: "Can you speak any foreign languages?",
+    rus: {js|Это довольно простая концепция. (идея)|js},
+    eng: "It's a pretty simple concept. (idea)",
   },
   {
-    rus: {js|Я могу прийти к вам завтра, если хотите.|js},
-    eng: "I can come and see you tomorrow if you like.",
+    rus: {js|Во-первых, я дам вам краткий обзор продукции. (краткое описание, которое дает основные идеи)|js},
+    eng: "First, I'll give you a brief overview of the product. (a short description that gives the main ideas)",
   },
   {
-    rus: {js|Слово " сон " может быть существительным или глаголом.|js},
-    eng: "The word 'dream' can be a noun or a verb.",
+    rus: {js|С вашей текущей системой вы не можете идентифицировать человека в безопасной зоне. (система, которую вы используете сейчас)|js},
+    eng: "With your current system you can't identify the person in the secure area. (the system that you're using now)",
   },
   {
-    rus: {js|Боюсь, я не смогу прийти на вечеринку в пятницу.|js},
-    eng: "I'm afraid I can't come to the party on Friday.",
+    rus: {js|Теперь вы можете только сказать, что кто-то находится в безопасной зоне, в то время как в будущем вы сможете точно сказать, кто этот человек. (отличие)|js},
+    eng: "Now you can only tell that someone is in a secure area, whereas in the future, you'll be able to tell exactly who that person is. (contrast)",
   },
   {
-    rus: {js|Вы можете сказать, что кто-то "способен" что-то сделать, но "может" более обычно.|js},
-    eng: "You can say that somebody 'is able' to do something, but 'can' is more usual.",
+    rus: {js|Теперь я хотел бы перейти к некоторым другим преимуществам нашего продукта. (начать говорить о новой теме)|js},
+    eng: "Now I'd like to move on to some other advantages of our product. (start talking about a new subject)",
   },
   {
-    rus: {js|Мы можем увидеть озеро из нашего отеля.|js},
-    eng: "We are able to see the lake from our hotel.",
+    rus: {js|Другим важным преимуществом системы является ее гибкость. (важный, главный)|js},
+    eng: "The other major advantage of the system is its flexibility. (important, main)",
   },
   {
-    rus: {js|"can" имеет только две формы: может (Настоящее) и может (прошлое). Поэтому иногда необходимо использовать (быть) в состоянии.|js},
-    eng: "'can' has only two forms: can (present) and could (past). So sometimes it is necessary to use (be) able to.",
+    rus: {js|Это звучит нормально?|js},
+    eng: "Does that sound ok?",
   },
   {
-    rus: {js|Я не могу уснуть.  В последнее время я не могу заснуть.|js},
-    eng: "I can't sleep. ( I haven't been able to sleep recently. )",
+    rus: {js|Давайте посмотрим, что DiScan может предложить. (может обеспечить)|js},
+    eng: "Let's look at what DiScan has to offer. (can provide)",
   },
   {
-    rus: {js|Том может прийти завтра.  Том мог бы прийти завтра.|js},
-    eng: "Tom can come tomorrow. ( Tom might be able to come tomorrow.)",
+    rus: {js|С новой системой вы можете обрабатывать информацию гораздо быстрее.|js},
+    eng: "With the new system you can process the information much faster.",
   },
   {
-    rus: {js|Мария говорит на французском, испанском и английском языках. ( Кандидаты на работу должны уметь говорить на двух иностранных языках.)|js},
-    eng: "Maria can speak French, Spanish and English. ( Applicants for the job must be able to speak two foreign languages.)",
+    rus: {js|И вот еще одна интересная вещь о новом приложении.|js},
+    eng: "And here's another great thing about the new application.",
   },
   {
-    rus: {js|Иногда 'could' это прошедшее время от 'can'. особенно с: вижу, слышу запах, вкус, чувствовать, помнить, понимать. У нас был прекрасный номер в гостинице. Мы могли видеть озеро.|js},
-    eng: "Sometimes 'could' is the past of 'can'. especially with: see, hear, smell, taste, feel, remember, understand. We had a lovely room in the hotel. We could see the lake.",
+    rus: {js|DiScan2 весьма безопасно по сравнению с вашей настоящей системой где код необходим. (показывает разницу)|js},
+    eng: "DiScan2 is extremely secure in comparison to your current system where the code is needed. (showing the difference)",
   },
   {
-    rus: {js|Как только я вошел в комнату, я почувствовал запах газа.|js},
-    eng: "As soon as I walked into the room, I could smell gas.",
+    rus: {js|Самое большое потенциальное преимущество заключается в том, что вы также можете использовать приложение в автономном режиме.(возможное преимущество)|js},
+    eng: "The biggest potential benefit is that you can use the application off-line, too. (possible advantage)",
   },
   {
-    rus: {js|Я сидел в задней части театра и не слышали.|js},
-    eng: "I was sitting at the back of the theatre and couldn't hear very well.",
+    rus: {js|Прежде всего, я хотел бы поблагодарить вас за приглашение. (для начала)|js},
+    eng: "First of all, I'd like to thank you for inviting me here today. (to start with)",
   },
   {
-    rus: {js|Мы также используем могли бы сказать, что кто-то имел общую способность или разрешение сделать что-то:|js},
-    eng: "We also use could to say that somebody had the general ability or permission to do something:",
+    rus: {js|Подводя итог, использование Agile поможет вам повысить производительность команды. (резюмировать)|js},
+    eng: "To sum up, using Agile will help you to enhance the team performance. (to recap)",
   },
   {
-    rus: {js|Мой дед говорил на пяти языках.|js},
-    eng: "My grandfather could speak five languages.",
-  },
-  {
-    rus: {js|Мы были абсолютно свободны. Мы могли делать, что хотели. (нам разрешили это сделать)|js},
-    eng: "We were totally free. We could do what we wanted. (we were allowed to do)",
-  },
-  {
-    rus: {js|Мы используем "could" для общей способности. Но если вы хотите сказать, что кто-то сделал что-то в конкретной ситуации, используйте "was/were able to" или "managed to" (не "could"):|js},
-    eng: "We use 'could' for general ability. But if you want to say that somebody did something in a specific situation, use 'was/were able to' or 'managed to' (not could):",
-  },
-  {
-    rus: {js|Огонь распространился по зданию очень быстро, но, к счастью, все смогли спастись ( удалось спастись, не удалось спастись).|js},
-    eng: "The fire spread through the building very quickly, but fortunately everybody was able to escape ( managed to escape, not could escape).",
-  },
-  {
-    rus: {js|Мы не знали, где Дэвид, но нам удалось найти его в конце концов. (не смог найти)|js},
-    eng: "We didn't know where David was, but we managed to find ( were able to find him in the end. not could find)",
-  },
-  {
-    rus: {js|Джек был отличным теннисистом, когда был моложе. Он мог победить кого угодно. (у него была общая способность победить кого угодно), но вчера Джек и Энди сыграли матч. Энди играл хорошо, но Джеку удалось обыграть его. ( на этот раз ему удалось победить его)|js},
-    eng: "Jack was an excellent tennis player when he was younger. He could beat anybody. (he had the general ability to beat anybody) But Jack and Andy played a match yesterday. Andy played well, but Jack managed to beat him. ( he managed to beat him this time)",
-  },
-  {
-    rus: {js|Негатив не мог (не мог) возможен во всех ситуациях: мой дед не умел плавать.|js},
-    eng: "The negative couldn't (could not) is possible in all situations: My grandfather couldn't swim.",
-  },
-  {
-    rus: {js|Мы искали Дэвида повсюду, но не могли его найти.|js},
-    eng: "We looked for David everywhere, but we couldn't find him.",
-  },
-  {
-    rus: {js|Энди играл хорошо, но он не мог победить Джека.|js},
-    eng: "Andy played well, but he couldn't beat Jack.",
+    rus: {js|В этой презентации я хотел бы сделать три вещи.|js},
+    eng: "What I'd like to do in this presentation is three things.",
   },
 ];
 
@@ -1612,6 +1580,110 @@ let oldDictionary2 = [
   {
     rus: {js|Вчера я ехал на велосипеде домой, когда мужчина выходил на дорогу передо мной. Я ехал довольно быстро, но, к счастью, успел вовремя остановиться и не ударил его.|js},
     eng: "I cycled home yesterday when a man was stepping out into the road in front of me. I was going quite fast, but luckily I managed to stop in time and not hit him.",
+  },
+  {
+    rus: {js|Мы используем "can", чтобы сказать, что что-то возможно или разрешено, или что у кого-то есть способность делать нечто. Мы используем' can ' + инфинитив (can do, can see etc.).|js},
+    eng: "We use 'can' to say that something is possible or allowed, or that somebody has the ability to do something. We use 'can' + infinitive (can do, can see etc.).",
+  },
+  {
+    rus: {js|Мы можем видеть озеро из нашего отеля.|js},
+    eng: "We can see the lake from our hotel.",
+  },
+  {
+    rus: {js|У меня нет ручки. - Ты можешь воспользоваться моей.|js},
+    eng: "I don't have a pen. - You can use mine.",
+  },
+  {
+    rus: {js|Вы говорите на иностранных языках?|js},
+    eng: "Can you speak any foreign languages?",
+  },
+  {
+    rus: {js|Я могу прийти к вам завтра, если хотите.|js},
+    eng: "I can come and see you tomorrow if you like.",
+  },
+  {
+    rus: {js|Слово " сон " может быть существительным или глаголом.|js},
+    eng: "The word 'dream' can be a noun or a verb.",
+  },
+  {
+    rus: {js|Боюсь, я не смогу прийти на вечеринку в пятницу.|js},
+    eng: "I'm afraid I can't come to the party on Friday.",
+  },
+  {
+    rus: {js|Вы можете сказать, что кто-то "способен" что-то сделать, но "может" более обычно.|js},
+    eng: "You can say that somebody 'is able' to do something, but 'can' is more usual.",
+  },
+  {
+    rus: {js|Мы можем увидеть озеро из нашего отеля.|js},
+    eng: "We are able to see the lake from our hotel.",
+  },
+  {
+    rus: {js|"can" имеет только две формы: может (Настоящее) и может (прошлое). Поэтому иногда необходимо использовать (быть) в состоянии.|js},
+    eng: "'can' has only two forms: can (present) and could (past). So sometimes it is necessary to use (be) able to.",
+  },
+  {
+    rus: {js|Я не могу уснуть.  В последнее время я не могу заснуть.|js},
+    eng: "I can't sleep. ( I haven't been able to sleep recently. )",
+  },
+  {
+    rus: {js|Том может прийти завтра.  Том мог бы прийти завтра.|js},
+    eng: "Tom can come tomorrow. ( Tom might be able to come tomorrow.)",
+  },
+  {
+    rus: {js|Мария говорит на французском, испанском и английском языках. ( Кандидаты на работу должны уметь говорить на двух иностранных языках.)|js},
+    eng: "Maria can speak French, Spanish and English. ( Applicants for the job must be able to speak two foreign languages.)",
+  },
+  {
+    rus: {js|Иногда 'could' это прошедшее время от 'can'. особенно с: вижу, слышу запах, вкус, чувствовать, помнить, понимать. У нас был прекрасный номер в гостинице. Мы могли видеть озеро.|js},
+    eng: "Sometimes 'could' is the past of 'can'. especially with: see, hear, smell, taste, feel, remember, understand. We had a lovely room in the hotel. We could see the lake.",
+  },
+  {
+    rus: {js|Как только я вошел в комнату, я почувствовал запах газа.|js},
+    eng: "As soon as I walked into the room, I could smell gas.",
+  },
+  {
+    rus: {js|Я сидел в задней части театра и не слышали.|js},
+    eng: "I was sitting at the back of the theatre and couldn't hear very well.",
+  },
+  {
+    rus: {js|Мы также используем могли бы сказать, что кто-то имел общую способность или разрешение сделать что-то:|js},
+    eng: "We also use could to say that somebody had the general ability or permission to do something:",
+  },
+  {
+    rus: {js|Мой дед говорил на пяти языках.|js},
+    eng: "My grandfather could speak five languages.",
+  },
+  {
+    rus: {js|Мы были абсолютно свободны. Мы могли делать, что хотели. (нам разрешили это сделать)|js},
+    eng: "We were totally free. We could do what we wanted. (we were allowed to do)",
+  },
+  {
+    rus: {js|Мы используем "could" для общей способности. Но если вы хотите сказать, что кто-то сделал что-то в конкретной ситуации, используйте "was/were able to" или "managed to" (не "could"):|js},
+    eng: "We use 'could' for general ability. But if you want to say that somebody did something in a specific situation, use 'was/were able to' or 'managed to' (not could):",
+  },
+  {
+    rus: {js|Огонь распространился по зданию очень быстро, но, к счастью, все смогли спастись ( удалось спастись, не удалось спастись).|js},
+    eng: "The fire spread through the building very quickly, but fortunately everybody was able to escape ( managed to escape, not could escape).",
+  },
+  {
+    rus: {js|Мы не знали, где Дэвид, но нам удалось найти его в конце концов. (не смог найти)|js},
+    eng: "We didn't know where David was, but we managed to find ( were able to find him in the end. not could find)",
+  },
+  {
+    rus: {js|Джек был отличным теннисистом, когда был моложе. Он мог победить кого угодно. (у него была общая способность победить кого угодно), но вчера Джек и Энди сыграли матч. Энди играл хорошо, но Джеку удалось обыграть его. ( на этот раз ему удалось победить его)|js},
+    eng: "Jack was an excellent tennis player when he was younger. He could beat anybody. (he had the general ability to beat anybody) But Jack and Andy played a match yesterday. Andy played well, but Jack managed to beat him. ( he managed to beat him this time)",
+  },
+  {
+    rus: {js|Негатив не мог (не мог) возможен во всех ситуациях: мой дед не умел плавать.|js},
+    eng: "The negative couldn't (could not) is possible in all situations: My grandfather couldn't swim.",
+  },
+  {
+    rus: {js|Мы искали Дэвида повсюду, но не могли его найти.|js},
+    eng: "We looked for David everywhere, but we couldn't find him.",
+  },
+  {
+    rus: {js|Энди играл хорошо, но он не мог победить Джека.|js},
+    eng: "Andy played well, but he couldn't beat Jack.",
   },
 ];
 
