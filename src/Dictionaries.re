@@ -710,48 +710,48 @@ let veryOldDictionary1 = [
 
 let dictionary2 = [
   {
-    rus: {js|Мы очень ценим возможность работать с вашей компанией. (спасибо тебе)|js},
-    eng: "We really appreciate the opportunity to work with your company. (thank you)",
+    rus: {js|Мы очень ценим возможность работать с вашей компанией. //спасибо тебе)|js},
+    eng: "We really appreciate the opportunity to work with your company. //thank you)",
   },
   {
     rus: {js|В этой презентации я хотел бы показать вам основные возможности нашей новой системы.|js},
     eng: "What I'd like to do in this presentation is show you the main features of our new system.",
   },
   {
-    rus: {js|В принципе, это система безопасности, основанная на сканировании отпечатков пальцев. (проще говоря)|js},
-    eng: "Basically, it's a security system based on fingerprint scanning. (to put it simply)",
+    rus: {js|В принципе, это система безопасности, основанная на сканировании отпечатков пальцев. //проще говоря)|js},
+    eng: "Basically, it's a security system based on fingerprint scanning. //to put it simply)",
   },
   {
-    rus: {js|Это довольно простая концепция. (идея)|js},
-    eng: "It's a pretty simple concept. (idea)",
+    rus: {js|Это довольно простая концепция. //идея)|js},
+    eng: "It's a pretty simple concept. //idea)",
   },
   {
-    rus: {js|Во-первых, я дам вам краткий обзор продукции. (краткое описание, которое дает основные идеи)|js},
-    eng: "First, I'll give you a brief overview of the product. (a short description that gives the main ideas)",
+    rus: {js|Во-первых, я дам вам краткий обзор продукции. //краткое описание, которое дает основные идеи)|js},
+    eng: "First, I'll give you a brief overview of the product. //a short description that gives the main ideas)",
   },
   {
-    rus: {js|С вашей текущей системой вы не можете идентифицировать человека в безопасной зоне. (система, которую вы используете сейчас)|js},
-    eng: "With your current system you can't identify the person in the secure area. (the system that you're using now)",
+    rus: {js|С вашей текущей системой вы не можете идентифицировать человека в безопасной зоне. //система, которую вы используете сейчас)|js},
+    eng: "With your current system you can't identify the person in the secure area. //the system that you're using now)",
   },
   {
-    rus: {js|Теперь вы можете только сказать, что кто-то находится в безопасной зоне, в то время как в будущем вы сможете точно сказать, кто этот человек. (отличие)|js},
-    eng: "Now you can only tell that someone is in a secure area, whereas in the future, you'll be able to tell exactly who that person is. (contrast)",
+    rus: {js|Теперь вы можете только сказать, что кто-то находится в безопасной зоне, в то время как в будущем вы сможете точно сказать, кто этот человек. //отличие)|js},
+    eng: "Now you can only tell that someone is in a secure area, whereas in the future, you'll be able to tell exactly who that person is. //contrast)",
   },
   {
-    rus: {js|Теперь я хотел бы перейти к некоторым другим преимуществам нашего продукта. (начать говорить о новой теме)|js},
-    eng: "Now I'd like to move on to some other advantages of our product. (start talking about a new subject)",
+    rus: {js|Теперь я хотел бы перейти к некоторым другим преимуществам нашего продукта. //начать говорить о новой теме)|js},
+    eng: "Now I'd like to move on to some other advantages of our product. //start talking about a new subject)",
   },
   {
-    rus: {js|Другим важным преимуществом системы является ее гибкость. (важный, главный)|js},
-    eng: "The other major advantage of the system is its flexibility. (important, main)",
+    rus: {js|Другим важным преимуществом системы является ее гибкость. //важный, главный)|js},
+    eng: "The other major advantage of the system is its flexibility. //important, main)",
   },
   {
     rus: {js|Это звучит нормально?|js},
     eng: "Does that sound ok?",
   },
   {
-    rus: {js|Давайте посмотрим, что DiScan может предложить. (может обеспечить)|js},
-    eng: "Let's look at what DiScan has to offer. (can provide)",
+    rus: {js|Давайте посмотрим, что DiScan может предложить. //может обеспечить)|js},
+    eng: "Let's look at what DiScan has to offer. //can provide)",
   },
   {
     rus: {js|С новой системой вы можете обрабатывать информацию гораздо быстрее.|js},
@@ -762,20 +762,20 @@ let dictionary2 = [
     eng: "And here's another great thing about the new application.",
   },
   {
-    rus: {js|DiScan2 весьма безопасно по сравнению с вашей настоящей системой где код необходим. (показывает разницу)|js},
-    eng: "DiScan2 is extremely secure in comparison to your current system where the code is needed. (showing the difference)",
+    rus: {js|DiScan2 весьма безопасно по сравнению с вашей настоящей системой где код необходим. //показывает разницу)|js},
+    eng: "DiScan2 is extremely secure in comparison to your current system where the code is needed. //showing the difference)",
   },
   {
-    rus: {js|Самое большое потенциальное преимущество заключается в том, что вы также можете использовать приложение в автономном режиме.(возможное преимущество)|js},
-    eng: "The biggest potential benefit is that you can use the application off-line, too. (possible advantage)",
+    rus: {js|Самое большое потенциальное преимущество заключается в том, что вы также можете использовать приложение в автономном режиме.//возможное преимущество)|js},
+    eng: "The biggest potential benefit is that you can use the application off-line, too. //possible advantage)",
   },
   {
-    rus: {js|Прежде всего, я хотел бы поблагодарить вас за приглашение. (для начала)|js},
-    eng: "First of all, I'd like to thank you for inviting me here today. (to start with)",
+    rus: {js|Прежде всего, я хотел бы поблагодарить вас за приглашение. //для начала)|js},
+    eng: "First of all, I'd like to thank you for inviting me here today. //to start with)",
   },
   {
-    rus: {js|Подводя итог, использование Agile поможет вам повысить производительность команды. (резюмировать)|js},
-    eng: "To sum up, using Agile will help you to enhance the team performance. (to recap)",
+    rus: {js|Подводя итог, использование Agile поможет вам повысить производительность команды. //резюмировать)|js},
+    eng: "To sum up, using Agile will help you to enhance the team performance. //to recap)",
   },
   {
     rus: {js|В этой презентации я хотел бы сделать три вещи.|js},
