@@ -710,76 +710,140 @@ let veryOldDictionary1 = [
 
 let dictionary2 = [
   {
-    rus: {js|Мы очень ценим возможность работать с вашей компанией. //спасибо тебе)|js},
-    eng: "We really appreciate the opportunity to work with your company. //thank you)",
+    rus: {js|обходить, приближаться|js},
+    eng: "get around",
   },
   {
-    rus: {js|В этой презентации я хотел бы показать вам основные возможности нашей новой системы.|js},
-    eng: "What I'd like to do in this presentation is show you the main features of our new system.",
+    rus: {js|вызвать, осуществлять, быть причиной|js},
+    eng: "bring about",
+  },
+  {rus: {js|придумывать|js}, eng: "come up with"},
+  {
+    rus: {js|продвигать, принять, проводить|js},
+    eng: "take forward",
+  },
+  {rus: {js|окупиться|js}, eng: "pay off"},
+  {rus: {js|проводить|js}, eng: "carry out"},
+  {rus: {js|снизить|js}, eng: "bring down"},
+  {
+    rus: {js|рассмотреть, приступить к рассмотрению, заняться|js},
+    eng: "take up",
   },
   {
-    rus: {js|В принципе, это система безопасности, основанная на сканировании отпечатков пальцев. //проще говоря)|js},
-    eng: "Basically, it's a security system based on fingerprint scanning. //to put it simply)",
+    rus: {js|устанавливать, учреждать, открывать|js},
+    eng: "set up",
   },
   {
-    rus: {js|Это довольно простая концепция. //идея)|js},
-    eng: "It's a pretty simple concept. //idea)",
+    rus: {js|Я подумываю уйти из компании, чтобы открыть собственный бизнес.|js},
+    eng: "I'm thinking of leaving the company to set up my own business.",
   },
   {
-    rus: {js|Во-первых, я дам вам краткий обзор продукции. //краткое описание, которое дает основные идеи)|js},
-    eng: "First, I'll give you a brief overview of the product. //a short description that gives the main ideas)",
+    rus: {js|У нас слишком большой бюджет на этот проект - нам нужно что-то сделать, чтобы снизить расходы.|js},
+    eng: "We're over budget on this project - we need to do something to bring down the costs.",
   },
   {
-    rus: {js|С вашей текущей системой вы не можете идентифицировать человека в безопасной зоне. //система, которую вы используете сейчас)|js},
-    eng: "With your current system you can't identify the person in the secure area. //the system that you're using now)",
+    rus: {js|Это отличная идея - я знал, что ты придумаешь план решения проблемы.|js},
+    eng: "That's great idea - I knew you would come up with a plan to solve the problem.",
   },
   {
-    rus: {js|Теперь вы можете только сказать, что кто-то находится в безопасной зоне, в то время как в будущем вы сможете точно сказать, кто этот человек. //отличие)|js},
-    eng: "Now you can only tell that someone is in a secure area, whereas in the future, you'll be able to tell exactly who that person is. //contrast)",
+    rus: {js|Я очень рад, что компания приняла вызов рекрутинга по всему ЕС.|js},
+    eng: "I'm really pleased the company has taken up to the challenge of the recruiting across the EU.",
   },
   {
-    rus: {js|Теперь я хотел бы перейти к некоторым другим преимуществам нашего продукта. //начать говорить о новой теме)|js},
-    eng: "Now I'd like to move on to some other advantages of our product. //start talking about a new subject)",
+    rus: {js|Мы провели много тестов перед запуском продукта.|js},
+    eng: "We carried out a lot of tests before we launch the product.",
   },
   {
-    rus: {js|Другим важным преимуществом системы является ее гибкость. //важный, главный)|js},
-    eng: "The other major advantage of the system is its flexibility. //important, main)",
+    rus: {js|Обеспокоенность по поводу глобального потепления привела к ряду изменений в экологических руководствах.|js},
+    eng: "Concern about global warming has brought about a number of changes to environmental guides.",
   },
   {
-    rus: {js|Это звучит нормально?|js},
-    eng: "Does that sound ok?",
+    rus: {js|Мы вложили много денег в эту идею - надеюсь, что инвестиции окупятся.|js},
+    eng: "We put a lot of money into this idea - hopefully the investment will pay off.",
   },
   {
-    rus: {js|Давайте посмотрим, что DiScan может предложить. //может обеспечить)|js},
-    eng: "Let's look at what DiScan has to offer. //can provide)",
+    rus: {js|Мы обошли проблему перемещения дополнительного персонала, набрав местный персонал.|js},
+    eng: "We got around the problem of relocation extra staff by recruiting locally.",
   },
   {
-    rus: {js|С новой системой вы можете обрабатывать информацию гораздо быстрее.|js},
-    eng: "With the new system you can process the information much faster.",
+    rus: {js|Первый этап проекта прошел хорошо, и сейчас мы продвигаем наши планы на следующий этап.|js},
+    eng: "The first stage of the project went well, and we're now taking forward our plans for the next stage.",
   },
   {
-    rus: {js|И вот еще одна интересная вещь о новом приложении.|js},
-    eng: "And here's another great thing about the new application.",
+    rus: {js|И я настоятельно призываю вас продвигать вперед насущную работу Конференции в духе компромисса и согласия.|js},
+    eng: "I urge you to take forward the vital work of the Conference in a spirit of compromise and accommodation.",
   },
   {
-    rus: {js|DiScan2 весьма безопасно по сравнению с вашей настоящей системой где код необходим. //показывает разницу)|js},
-    eng: "DiScan2 is extremely secure in comparison to your current system where the code is needed. //showing the difference)",
+    rus: {js|Германия проголосовала за резолюцию 68/46, касающуюся продвижения вперед процесса ядерного разоружения.|js},
+    eng: "Germany voted in favour of resolution 68/46 to take forward nuclear disarmament.",
   },
   {
-    rus: {js|Самое большое потенциальное преимущество заключается в том, что вы также можете использовать приложение в автономном режиме.//возможное преимущество)|js},
-    eng: "The biggest potential benefit is that you can use the application off-line, too. //possible advantage)",
+    rus: {js|И он рассчитывает поступательно продвигать эти усилия на всем протяжении 2010 года.|js},
+    eng: "He is looking to take forward this effort throughout 2010.",
   },
   {
-    rus: {js|Прежде всего, я хотел бы поблагодарить вас за приглашение. //для начала)|js},
-    eng: "First of all, I'd like to thank you for inviting me here today. //to start with)",
+    rus: {js|Он пытался заблокировать все мои аккаунты, как будто я не смогу обойти родительский контроль.|js},
+    eng: "He tried blocking all of my accounts, like I can't get around parental controls.",
   },
   {
-    rus: {js|Подводя итог, использование Agile поможет вам повысить производительность команды. //резюмировать)|js},
-    eng: "To sum up, using Agile will help you to enhance the team performance. //to recap)",
+    rus: {js|Том не может передвигаться без инвалидной коляски.|js},
+    eng: "Tom can't get around without a wheelchair.",
   },
   {
-    rus: {js|В этой презентации я хотел бы сделать три вещи.|js},
-    eng: "What I'd like to do in this presentation is three things.",
+    rus: {js|Она больше не может передвигаться.|js},
+    eng: "She can't get around anymore.",
+  },
+  {
+    rus: {js|Одна из присущих промышленно развитым странам проблем заключается в том, что работодатели могут обходить законодательство, реклассифицируя рабочие места.|js},
+    eng: "One problem in industrialized countries is that employers can get around legislation by re-labelling jobs.",
+  },
+  {
+    rus: {js|Эти возможности могут обеспечить ускорение процесса получения выгод от развития.|js},
+    eng: "These opportunities can bring about accelerated developmental gains.",
+  },
+  {
+    rus: {js|Лишь ответственное и подотчетное управление может обеспечить необходимые изменения и прогресс для всех.|js},
+    eng: "Only responsible and accountable governance can bring about necessary changes and progress for all.",
+  },
+  {
+    rus: {js|На проведенных после этого с талибскими властями переговорах Организации Объединенных Наций не удалось добиться изменения позиции «Талибана».|js},
+    eng: "The ensuing negotiations between the United Nations and the Taliban authorities did not bring about change in the Taliban's position.",
+  },
+  {
+    rus: {js|Никто не может считать, что только своими действиями Организация Объединенных Наций способна добиться явно относимых на ее счет существенных перемен на уровне стран.|js},
+    eng: "Nobody could pretend that United Nations action alone could bring about easily attributable and significant change at the country level.",
+  },
+  {
+    rus: {js|Г-н Тюгесен отметил, что на международном уровне использование национальных административных источников может привести к возникновению методологических расхождений.|js},
+    eng: "Mr. Thygesen pointed out that at the international level, the use of national administrative sources may bring about methodological inconsistencies.",
+  },
+  {
+    rus: {js|Он призвал сомалийских лидеров предложить новые идеи о том, как решить их проблемы.|js},
+    eng: "He called on the Somali leaders to come up with new ideas on how to solve their problems.",
+  },
+  {
+    rus: {js|Журналисты, работающие в частных средствах массовой информации, больше не имеют возможности свободно осуществлять свои функции.|js},
+    eng: "Journalists working for private media can no longer carry out their functions freely.",
+  },
+  {
+    rus: {js|Вместе с тем, важнейшее требование заключается в том, что эту проверку объединения должны проводить постоянно.|js},
+    eng: "But the crucial requirement is that the Associations must carry out this verification continuously.",
+  },
+  {
+    rus: {js|Всё, что мы можем сделать - это продолжать в том же духе.|js},
+    eng: "All we can do is carry on.",
+  },
+  {
+    rus: {js|Потому что ваше лицо выглядит так, как будто вы хотите продолжать говорить.|js},
+    eng: "Because your face looks like it wants to carry on speaking.",
+  },
+  {
+    rus: {js|Он предложил Бюро заняться этим вопросом.|js},
+    eng: "He suggested that the Bureau take up this issue.",
+  },
+  {
+    rus: {js|Рабочая группа также обсудила вопрос о том, какой общий комментарий следует рассмотреть Комитету в следующий раз.|js},
+    eng: "The Working Group had also considered which general comment the Committee should take up next.",
   },
 ];
 
@@ -1684,6 +1748,78 @@ let oldDictionary2 = [
   {
     rus: {js|Энди играл хорошо, но он не мог победить Джека.|js},
     eng: "Andy played well, but he couldn't beat Jack.",
+  },
+  {
+    rus: {js|Мы очень ценим возможность работать с вашей компанией. //спасибо тебе)|js},
+    eng: "We really appreciate the opportunity to work with your company. //thank you)",
+  },
+  {
+    rus: {js|В этой презентации я хотел бы показать вам основные возможности нашей новой системы.|js},
+    eng: "What I'd like to do in this presentation is show you the main features of our new system.",
+  },
+  {
+    rus: {js|В принципе, это система безопасности, основанная на сканировании отпечатков пальцев. //проще говоря)|js},
+    eng: "Basically, it's a security system based on fingerprint scanning. //to put it simply)",
+  },
+  {
+    rus: {js|Это довольно простая концепция. //идея)|js},
+    eng: "It's a pretty simple concept. //idea)",
+  },
+  {
+    rus: {js|Во-первых, я дам вам краткий обзор продукции. //краткое описание, которое дает основные идеи)|js},
+    eng: "First, I'll give you a brief overview of the product. //a short description that gives the main ideas)",
+  },
+  {
+    rus: {js|С вашей текущей системой вы не можете идентифицировать человека в безопасной зоне. //система, которую вы используете сейчас)|js},
+    eng: "With your current system you can't identify the person in the secure area. //the system that you're using now)",
+  },
+  {
+    rus: {js|Теперь вы можете только сказать, что кто-то находится в безопасной зоне, в то время как в будущем вы сможете точно сказать, кто этот человек. //отличие)|js},
+    eng: "Now you can only tell that someone is in a secure area, whereas in the future, you'll be able to tell exactly who that person is. //contrast)",
+  },
+  {
+    rus: {js|Теперь я хотел бы перейти к некоторым другим преимуществам нашего продукта. //начать говорить о новой теме)|js},
+    eng: "Now I'd like to move on to some other advantages of our product. //start talking about a new subject)",
+  },
+  {
+    rus: {js|Другим важным преимуществом системы является ее гибкость. //важный, главный)|js},
+    eng: "The other major advantage of the system is its flexibility. //important, main)",
+  },
+  {
+    rus: {js|Это звучит нормально?|js},
+    eng: "Does that sound ok?",
+  },
+  {
+    rus: {js|Давайте посмотрим, что DiScan может предложить. //может обеспечить)|js},
+    eng: "Let's look at what DiScan has to offer. //can provide)",
+  },
+  {
+    rus: {js|С новой системой вы можете обрабатывать информацию гораздо быстрее.|js},
+    eng: "With the new system you can process the information much faster.",
+  },
+  {
+    rus: {js|И вот еще одна интересная вещь о новом приложении.|js},
+    eng: "And here's another great thing about the new application.",
+  },
+  {
+    rus: {js|DiScan2 весьма безопасно по сравнению с вашей настоящей системой где код необходим. //показывает разницу)|js},
+    eng: "DiScan2 is extremely secure in comparison to your current system where the code is needed. //showing the difference)",
+  },
+  {
+    rus: {js|Самое большое потенциальное преимущество заключается в том, что вы также можете использовать приложение в автономном режиме.//возможное преимущество)|js},
+    eng: "The biggest potential benefit is that you can use the application off-line, too. //possible advantage)",
+  },
+  {
+    rus: {js|Прежде всего, я хотел бы поблагодарить вас за приглашение. //для начала)|js},
+    eng: "First of all, I'd like to thank you for inviting me here today. //to start with)",
+  },
+  {
+    rus: {js|Подводя итог, использование Agile поможет вам повысить производительность команды. //резюмировать)|js},
+    eng: "To sum up, using Agile will help you to enhance the team performance. //to recap)",
+  },
+  {
+    rus: {js|В этой презентации я хотел бы сделать три вещи.|js},
+    eng: "What I'd like to do in this presentation is three things.",
   },
 ];
 
