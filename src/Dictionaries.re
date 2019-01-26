@@ -738,7 +738,7 @@ let dictionary2 = [
     eng: "I'm thinking of leaving the company to set up my own business.",
   },
   {
-    rus: {js|У нас слишком большой бюджет на этот проект - нам нужно что-то сделать, чтобы снизить расходы.|js},
+    rus: {js|Мы превысисли бюджет на этот проект - нам нужно что-то сделать, чтобы снизить расходы.|js},
     eng: "We're over budget on this project - we need to do something to bring down the costs.",
   },
   {
