@@ -718,7 +718,7 @@ let dictionary2 = [
     eng: "I eat rice every day. I like rice. // uncountable",
   },
   {
-    rus: {js|Счетное существительное может быть сингулярным (банан) или множественным (бананы).|js},
+    rus: {js|Счетное существительное может быть в единственном числе (банан) или во множественном (бананы).|js},
     eng: "A countable noun can be singular (banana) or plural (bananas).",
   },
   {
@@ -730,7 +730,7 @@ let dictionary2 = [
     eng: "We can use numbers with countable nouns. So we can say 'one banana', 'two bananas' etc.",
   },
   {
-    rus: {js|Мы не можем использовать числа с исчисляемыми существительными. Мы не можем сказать одним рисом', 'два Рисы' и т. д.|js},
+    rus: {js|Мы не можем использовать числа с исчисляемыми существительными. Мы не можем сказать один рис', 'два риса' и т. д.|js},
     eng: "We cannot use numbers with uncountable nouns. We cannot say 'one rice', 'two rices' etc.",
   },
   {
@@ -766,7 +766,7 @@ let dictionary2 = [
     eng: "Do you have any money?",
   },
   {
-    rus: {js|Это была не твоя вина. Это была плохая примета.|js},
+    rus: {js|Это была не твоя вина. Это было невезение.|js},
     eng: "It wasn't your fault. It was bad luck.",
   },
   {
@@ -778,15 +778,15 @@ let dictionary2 = [
     eng: "We don't have enough water.",
   },
   {
-    rus: {js|Нельзя использовать один исчисляемыми существительными (без/С/мой ДР.). Я хочу банан. (не хочу банан). Произошел несчастный случай, (не было ДТП)|js},
+    rus: {js|Нельзя использовать исчисляемыt существительныt в единственном числе без the/my/some etc. Я хочу банан. Произошел несчастный случай.|js},
     eng: "You cannot use singular countable nouns alone (without a/the/my etc.). I want a banana. (not I want banana). There's been an accident, (not There's been accident)",
   },
   {
-    rus: {js|Вы можете использовать только множественное число счетных существительных. Я люблю бананы. ( бананы вообще). Несчастные случаи могут быть предотвращены.|js},
+    rus: {js|Вы можете использовать множественное число счетных существительных без артиклей. Я люблю бананы. ( бананы вообще). Несчастные случаи могут быть предотвращены.|js},
     eng: "You can use plural countable nouns alone. I like bananas. ( bananas in general). Accidents can be prevented.",
   },
   {
-    rus: {js|Вы можете использовать только неисчисляемые существительные (без/мое/некоторые др.): Я ем рис каждый день. На твоей рубашке кровь. Вы слышите музыку?|js},
+    rus: {js|Вы можете использовать неисчисляемые существительные без the/my/some etc.): Я ем рис каждый день. На твоей рубашке кровь. Вы слышите музыку?|js},
     eng: "You can use uncountable nouns alone (without the/my/some etc.): I eat rice every day. There's blood on your shirt. Can you hearmusic?",
   },
   {
@@ -802,11 +802,11 @@ let dictionary2 = [
     eng: "We listened to some music. Did you buy any apple juice?",
   },
   {
-    rus: {js|Мы используем много и мало с множественным числом исчисляемых существительных: мы не сделали много снимков. Мне нужно кое-что сделать.|js},
+    rus: {js|Мы используем many и few с множественным числом исчисляемых существительных: мы не сделали много снимков. Мне нужно кое-что сделать.|js},
     eng: "We use many and few with plural countable nouns: We didn't take many pictures. I have a few things to do.",
   },
   {
-    rus: {js|Мы используем много и мало с бесчисленными существительными: мы не делали много покупок. Мне нужно немного поработать.|js},
+    rus: {js|Мы используем much и little с бесчисленными существительными: мы не делали много покупок. Мне нужно немного поработать.|js},
     eng: "We use much and little with uncountable nouns: We didn't do much shopping. I have a little work to do.",
   },
 ];
