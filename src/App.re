@@ -239,7 +239,7 @@ let make = _children => {
                 <div
                   className="appcode__icon_rotate_back"
                   onClick=(
-                    _ => send(SwitchEnglishShowing(currentCard.eng, shown))
+                    _ => send(SwitchEnglishShowing(currentCard.rus, shown))
                   )>
                   <Icon.Arrow
                     color={state.baseTextColor}
@@ -249,7 +249,7 @@ let make = _children => {
                 <div
                   className="appcode__icon_rotate"
                   onClick=(
-                    _ => send(SwitchEnglishShowing(currentCard.eng, shown))
+                    _ => send(SwitchEnglishShowing(currentCard.rus, shown))
                   )>
                   <Icon.Arrow
                     color={state.englishTextColor}
@@ -284,7 +284,7 @@ let make = _children => {
         /* Russian field */
         <div
           className="appcode__russian"
-          onClick=(_ => send(SwitchEnglishShowing(currentCard.eng, shown)))>
+          onClick=(_ => send(SwitchEnglishShowing(currentCard.rus, shown)))>
           <div className="appcode__center" key={currentCard.eng}>
             <div className="appcode__scroll">
               <div> {ReasonReact.string(currentCard.rus)} </div>
