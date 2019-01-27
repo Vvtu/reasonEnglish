@@ -710,140 +710,104 @@ let veryOldDictionary1 = [
 
 let dictionary2 = [
   {
-    rus: {js|обходить, приближаться|js},
-    eng: "get around",
+    rus: {js|Я ем бананы каждый день. Я люблю бананы. // счетный|js},
+    eng: "I eat a banana every day. I like bananas. // countable",
   },
   {
-    rus: {js|вызвать, осуществлять, быть причиной|js},
-    eng: "bring about",
-  },
-  {rus: {js|придумывать|js}, eng: "come up with"},
-  {
-    rus: {js|продвигать, принять, проводить|js},
-    eng: "take forward",
-  },
-  {rus: {js|окупиться|js}, eng: "pay off"},
-  {rus: {js|проводить|js}, eng: "carry out"},
-  {rus: {js|снизить|js}, eng: "bring down"},
-  {
-    rus: {js|рассмотреть, приступить к рассмотрению, заняться|js},
-    eng: "take up",
+    rus: {js|Я ем рис каждый день. Я люблю рис. // неисчислимый|js},
+    eng: "I eat rice every day. I like rice. // uncountable",
   },
   {
-    rus: {js|устанавливать, учреждать, открывать|js},
-    eng: "set up",
+    rus: {js|Счетное существительное может быть сингулярным (банан) или множественным (бананы).|js},
+    eng: "A countable noun can be singular (banana) or plural (bananas).",
   },
   {
-    rus: {js|Я подумываю уйти из компании, чтобы открыть собственный бизнес.|js},
-    eng: "I'm thinking of leaving the company to set up my own business.",
+    rus: {js|Несчетное существительное имеет только одну форму (рис).|js},
+    eng: "An uncountable noun has only one form (rice).",
   },
   {
-    rus: {js|Мы превысисли бюджет на этот проект - нам нужно что-то сделать, чтобы снизить расходы.|js},
-    eng: "We're over budget on this project - we need to do something to bring down the costs.",
+    rus: {js|Мы можем использовать числа со счетными существительными. Поэтому мы можем сказать, 'банан', 'два банана' и т. д.|js},
+    eng: "We can use numbers with countable nouns. So we can say 'one banana', 'two bananas' etc.",
   },
   {
-    rus: {js|Это отличная идея - я знал, что ты придумаешь план решения проблемы.|js},
-    eng: "That's great idea - I knew you would come up with a plan to solve the problem.",
+    rus: {js|Мы не можем использовать числа с исчисляемыми существительными. Мы не можем сказать одним рисом', 'два Рисы' и т. д.|js},
+    eng: "We cannot use numbers with uncountable nouns. We cannot say 'one rice', 'two rices' etc.",
   },
   {
-    rus: {js|Я очень рад, что компания приняла вызов рекрутинга по всему ЕС.|js},
-    eng: "I'm really pleased the company has taken up to the challenge of the recruiting across the EU.",
+    rus: {js|Катя пела песню.|js},
+    eng: "Kate was singing a song.",
   },
   {
-    rus: {js|Мы провели много тестов перед запуском продукта.|js},
-    eng: "We carried out a lot of tests before we launch the product.",
+    rus: {js|Рядом есть хороший пляж.|js},
+    eng: "There's a nice beach near here.",
   },
   {
-    rus: {js|Обеспокоенность по поводу глобального потепления привела к ряду изменений в экологических руководствах.|js},
-    eng: "Concern about global warming has brought about a number of changes to environmental guides.",
+    rus: {js|У тебя есть десятифунтовая купюра?|js},
+    eng: "Do you have a ten-pound note?",
   },
   {
-    rus: {js|Мы вложили много денег в эту идею - надеюсь, что инвестиции окупятся.|js},
-    eng: "We put a lot of money into this idea - hopefully the investment will pay off.",
+    rus: {js|Это была не твоя вина. Это был несчастный случай. В рации нет батареек.|js},
+    eng: "It wasn't your fault. It was an accident. There are no batteries in the radio.",
   },
   {
-    rus: {js|Мы обошли проблему перемещения дополнительного персонала, набрав местный персонал.|js},
-    eng: "We got around the problem of relocation extra staff by recruiting locally.",
+    rus: {js|У нас недостаточно чашек.|js},
+    eng: "We don't have enough cups.",
   },
   {
-    rus: {js|Первый этап проекта прошел хорошо, и сейчас мы продвигаем наши планы на следующий этап.|js},
-    eng: "The first stage of the project went well, and we're now taking forward our plans for the next stage.",
+    rus: {js|Кейт слушала музыку.|js},
+    eng: "Kate was listening to (some) music.",
   },
   {
-    rus: {js|И я настоятельно призываю вас продвигать вперед насущную работу Конференции в духе компромисса и согласия.|js},
-    eng: "I urge you to take forward the vital work of the Conference in a spirit of compromise and accommodation.",
+    rus: {js|В моих ботинках песок.|js},
+    eng: "There's sand in my shoes.",
   },
   {
-    rus: {js|Германия проголосовала за резолюцию 68/46, касающуюся продвижения вперед процесса ядерного разоружения.|js},
-    eng: "Germany voted in favour of resolution 68/46 to take forward nuclear disarmament.",
+    rus: {js|У тебя есть деньги?|js},
+    eng: "Do you have any money?",
   },
   {
-    rus: {js|И он рассчитывает поступательно продвигать эти усилия на всем протяжении 2010 года.|js},
-    eng: "He is looking to take forward this effort throughout 2010.",
+    rus: {js|Это была не твоя вина. Это была плохая примета.|js},
+    eng: "It wasn't your fault. It was bad luck.",
   },
   {
-    rus: {js|Он пытался заблокировать все мои аккаунты, как будто я не смогу обойти родительский контроль.|js},
-    eng: "He tried blocking all of my accounts, like I can't get around parental controls.",
+    rus: {js|В этом доме нет электричества.|js},
+    eng: "There is no electricity in this house.",
   },
   {
-    rus: {js|Том не может передвигаться без инвалидной коляски.|js},
-    eng: "Tom can't get around without a wheelchair.",
+    rus: {js|У нас недостаточно воды.|js},
+    eng: "We don't have enough water.",
   },
   {
-    rus: {js|Она больше не может передвигаться.|js},
-    eng: "She can't get around anymore.",
+    rus: {js|Нельзя использовать один исчисляемыми существительными (без/С/мой ДР.). Я хочу банан. (не хочу банан). Произошел несчастный случай, (не было ДТП)|js},
+    eng: "You cannot use singular countable nouns alone (without a/the/my etc.). I want a banana. (not I want banana). There's been an accident, (not There's been accident)",
   },
   {
-    rus: {js|Одна из присущих промышленно развитым странам проблем заключается в том, что работодатели могут обходить законодательство, реклассифицируя рабочие места.|js},
-    eng: "One problem in industrialized countries is that employers can get around legislation by re-labelling jobs.",
+    rus: {js|Вы можете использовать только множественное число счетных существительных. Я люблю бананы. ( бананы вообще). Несчастные случаи могут быть предотвращены.|js},
+    eng: "You can use plural countable nouns alone. I like bananas. ( bananas in general). Accidents can be prevented.",
   },
   {
-    rus: {js|Эти возможности могут обеспечить ускорение процесса получения выгод от развития.|js},
-    eng: "These opportunities can bring about accelerated developmental gains.",
+    rus: {js|Вы можете использовать только неисчисляемые существительные (без/мое/некоторые др.): Я ем рис каждый день. На твоей рубашке кровь. Вы слышите музыку?|js},
+    eng: "You can use uncountable nouns alone (without the/my/some etc.): I eat rice every day. There's blood on your shirt. Can you hearmusic?",
   },
   {
-    rus: {js|Лишь ответственное и подотчетное управление может обеспечить необходимые изменения и прогресс для всех.|js},
-    eng: "Only responsible and accountable governance can bring about necessary changes and progress for all.",
+    rus: {js|Вы можете использовать some и any с исчисляемыми существительными во множественном числе и неисчисляемые существительные!|js},
+    eng: "You can use some and any with plural countable nouns and with uncountable nouns!",
   },
   {
-    rus: {js|На проведенных после этого с талибскими властями переговорах Организации Объединенных Наций не удалось добиться изменения позиции «Талибана».|js},
-    eng: "The ensuing negotiations between the United Nations and the Taliban authorities did not bring about change in the Taliban's position.",
+    rus: {js|Мы спели несколько песен. Ты купил яблоки?|js},
+    eng: "We sang some songs. Did you buy any apples?",
   },
   {
-    rus: {js|Никто не может считать, что только своими действиями Организация Объединенных Наций способна добиться явно относимых на ее счет существенных перемен на уровне стран.|js},
-    eng: "Nobody could pretend that United Nations action alone could bring about easily attributable and significant change at the country level.",
+    rus: {js|Мы слушали музыку. Вы покупали яблочный сок?|js},
+    eng: "We listened to some music. Did you buy any apple juice?",
   },
   {
-    rus: {js|Г-н Тюгесен отметил, что на международном уровне использование национальных административных источников может привести к возникновению методологических расхождений.|js},
-    eng: "Mr. Thygesen pointed out that at the international level, the use of national administrative sources may bring about methodological inconsistencies.",
+    rus: {js|Мы используем много и мало с множественным числом исчисляемых существительных: мы не сделали много снимков. Мне нужно кое-что сделать.|js},
+    eng: "We use many and few with plural countable nouns: We didn't take many pictures. I have a few things to do.",
   },
   {
-    rus: {js|Он призвал сомалийских лидеров предложить новые идеи о том, как решить их проблемы.|js},
-    eng: "He called on the Somali leaders to come up with new ideas on how to solve their problems.",
-  },
-  {
-    rus: {js|Журналисты, работающие в частных средствах массовой информации, больше не имеют возможности свободно осуществлять свои функции.|js},
-    eng: "Journalists working for private media can no longer carry out their functions freely.",
-  },
-  {
-    rus: {js|Вместе с тем, важнейшее требование заключается в том, что эту проверку объединения должны проводить постоянно.|js},
-    eng: "But the crucial requirement is that the Associations must carry out this verification continuously.",
-  },
-  {
-    rus: {js|Всё, что мы можем сделать - это продолжать в том же духе.|js},
-    eng: "All we can do is carry on.",
-  },
-  {
-    rus: {js|Потому что ваше лицо выглядит так, как будто вы хотите продолжать говорить.|js},
-    eng: "Because your face looks like it wants to carry on speaking.",
-  },
-  {
-    rus: {js|Он предложил Бюро заняться этим вопросом.|js},
-    eng: "He suggested that the Bureau take up this issue.",
-  },
-  {
-    rus: {js|Рабочая группа также обсудила вопрос о том, какой общий комментарий следует рассмотреть Комитету в следующий раз.|js},
-    eng: "The Working Group had also considered which general comment the Committee should take up next.",
+    rus: {js|Мы используем много и мало с бесчисленными существительными: мы не делали много покупок. Мне нужно немного поработать.|js},
+    eng: "We use much and little with uncountable nouns: We didn't do much shopping. I have a little work to do.",
   },
 ];
 
@@ -1820,6 +1784,146 @@ let oldDictionary2 = [
   {
     rus: {js|В этой презентации я хотел бы сделать три вещи.|js},
     eng: "What I'd like to do in this presentation is three things.",
+  },
+  {
+    rus: {js|обходить, приближаться|js},
+    eng: "get around",
+  },
+  {
+    rus: {js|вызвать, осуществлять, быть причиной|js},
+    eng: "bring about",
+  },
+  {rus: {js|придумывать|js}, eng: "come up with"},
+  {
+    rus: {js|продвигать, принять, проводить|js},
+    eng: "take forward",
+  },
+  {rus: {js|окупиться|js}, eng: "pay off"},
+  {rus: {js|проводить|js}, eng: "carry out"},
+  {rus: {js|снизить|js}, eng: "bring down"},
+  {
+    rus: {js|рассмотреть, приступить к рассмотрению, заняться|js},
+    eng: "take up",
+  },
+  {
+    rus: {js|устанавливать, учреждать, открывать|js},
+    eng: "set up",
+  },
+  {
+    rus: {js|Я подумываю уйти из компании, чтобы открыть собственный бизнес.|js},
+    eng: "I'm thinking of leaving the company to set up my own business.",
+  },
+  {
+    rus: {js|Мы превысисли бюджет на этот проект - нам нужно что-то сделать, чтобы снизить расходы.|js},
+    eng: "We're over budget on this project - we need to do something to bring down the costs.",
+  },
+  {
+    rus: {js|Это отличная идея - я знал, что ты придумаешь план решения проблемы.|js},
+    eng: "That's great idea - I knew you would come up with a plan to solve the problem.",
+  },
+  {
+    rus: {js|Я очень рад, что компания приняла вызов рекрутинга по всему ЕС.|js},
+    eng: "I'm really pleased the company has taken up to the challenge of the recruiting across the EU.",
+  },
+  {
+    rus: {js|Мы провели много тестов перед запуском продукта.|js},
+    eng: "We carried out a lot of tests before we launch the product.",
+  },
+  {
+    rus: {js|Обеспокоенность по поводу глобального потепления привела к ряду изменений в экологических руководствах.|js},
+    eng: "Concern about global warming has brought about a number of changes to environmental guides.",
+  },
+  {
+    rus: {js|Мы вложили много денег в эту идею - надеюсь, что инвестиции окупятся.|js},
+    eng: "We put a lot of money into this idea - hopefully the investment will pay off.",
+  },
+  {
+    rus: {js|Мы обошли проблему перемещения дополнительного персонала, набрав местный персонал.|js},
+    eng: "We got around the problem of relocation extra staff by recruiting locally.",
+  },
+  {
+    rus: {js|Первый этап проекта прошел хорошо, и сейчас мы продвигаем наши планы на следующий этап.|js},
+    eng: "The first stage of the project went well, and we're now taking forward our plans for the next stage.",
+  },
+  {
+    rus: {js|И я настоятельно призываю вас продвигать вперед насущную работу Конференции в духе компромисса и согласия.|js},
+    eng: "I urge you to take forward the vital work of the Conference in a spirit of compromise and accommodation.",
+  },
+  {
+    rus: {js|Германия проголосовала за резолюцию 68/46, касающуюся продвижения вперед процесса ядерного разоружения.|js},
+    eng: "Germany voted in favour of resolution 68/46 to take forward nuclear disarmament.",
+  },
+  {
+    rus: {js|И он рассчитывает поступательно продвигать эти усилия на всем протяжении 2010 года.|js},
+    eng: "He is looking to take forward this effort throughout 2010.",
+  },
+  {
+    rus: {js|Он пытался заблокировать все мои аккаунты, как будто я не смогу обойти родительский контроль.|js},
+    eng: "He tried blocking all of my accounts, like I can't get around parental controls.",
+  },
+  {
+    rus: {js|Том не может передвигаться без инвалидной коляски.|js},
+    eng: "Tom can't get around without a wheelchair.",
+  },
+  {
+    rus: {js|Она больше не может передвигаться.|js},
+    eng: "She can't get around anymore.",
+  },
+  {
+    rus: {js|Одна из присущих промышленно развитым странам проблем заключается в том, что работодатели могут обходить законодательство, реклассифицируя рабочие места.|js},
+    eng: "One problem in industrialized countries is that employers can get around legislation by re-labelling jobs.",
+  },
+  {
+    rus: {js|Эти возможности могут обеспечить ускорение процесса получения выгод от развития.|js},
+    eng: "These opportunities can bring about accelerated developmental gains.",
+  },
+  {
+    rus: {js|Лишь ответственное и подотчетное управление может обеспечить необходимые изменения и прогресс для всех.|js},
+    eng: "Only responsible and accountable governance can bring about necessary changes and progress for all.",
+  },
+  {
+    rus: {js|На проведенных после этого с талибскими властями переговорах Организации Объединенных Наций не удалось добиться изменения позиции «Талибана».|js},
+    eng: "The ensuing negotiations between the United Nations and the Taliban authorities did not bring about change in the Taliban's position.",
+  },
+  {
+    rus: {js|Никто не может считать, что только своими действиями Организация Объединенных Наций способна добиться явно относимых на ее счет существенных перемен на уровне стран.|js},
+    eng: "Nobody could pretend that United Nations action alone could bring about easily attributable and significant change at the country level.",
+  },
+  {
+    rus: {js|Г-н Тюгесен отметил, что на международном уровне использование национальных административных источников может привести к возникновению методологических расхождений.|js},
+    eng: "Mr. Thygesen pointed out that at the international level, the use of national administrative sources may bring about methodological inconsistencies.",
+  },
+  {
+    rus: {js|Он призвал сомалийских лидеров предложить новые идеи о том, как решить их проблемы.|js},
+    eng: "He called on the Somali leaders to come up with new ideas on how to solve their problems.",
+  },
+  {
+    rus: {js|Журналисты, работающие в частных средствах массовой информации, больше не имеют возможности свободно осуществлять свои функции.|js},
+    eng: "Journalists working for private media can no longer carry out their functions freely.",
+  },
+  {
+    rus: {js|Вместе с тем, важнейшее требование заключается в том, что эту проверку объединения должны проводить постоянно.|js},
+    eng: "But the crucial requirement is that the Associations must carry out this verification continuously.",
+  },
+  {
+    rus: {js|Всё, что мы можем сделать - это продолжать в том же духе.|js},
+    eng: "All we can do is carry on.",
+  },
+  {
+    rus: {js|Потому что ваше лицо выглядит так, как будто вы хотите продолжать говорить.|js},
+    eng: "Because your face looks like it wants to carry on speaking.",
+  },
+  {
+    rus: {js|Он предложил Бюро заняться этим вопросом.|js},
+    eng: "He suggested that the Bureau take up this issue.",
+  },
+  {
+    rus: {js|Рабочая группа также обсудила вопрос о том, какой общий комментарий следует рассмотреть Комитету в следующий раз.|js},
+    eng: "The Working Group had also considered which general comment the Committee should take up next.",
+  },
+  {
+    rus: {js|Существительное может быть счетным или несчетным.|js},
+    eng: "A noun can be countable or uncountable.",
   },
 ];
 
