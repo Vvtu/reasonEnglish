@@ -809,6 +809,90 @@ let dictionary2 = [
     rus: {js|Мы используем much и little с бесчисленными существительными: мы не делали много покупок. Мне нужно немного поработать.|js},
     eng: "We use much and little with uncountable nouns: We didn't do much shopping. I have a little work to do.",
   },
+  {
+    rus: {js|Многие существительные могут использоваться как счетные или бесчисленные существительные, обычно с разницей в значении.|js},
+    eng: "Many nouns can be used as countable or uncountable nouns, usually with a difference in meaning.",
+  },
+  {
+    rus: {js|Ты только что слышала шум? // (специфический шум)|js},
+    eng: "Did you hear a noise just now? // (a specific noise)",
+  },
+  {
+    rus: {js|Я не могу здесь работать. Слишком много шума. // (шум в целом)|js},
+    eng: "I can't work here. There's too much  noise. // (noise in general)",
+  },
+  {
+    rus: {js|Я купил газету, чтобы почитать. // (= газета)|js},
+    eng: "I bought a paper to read. // (= a newspaper)",
+  },
+  {
+    rus: {js|Мне нужна бумага, чтобы писать. // (= материал для написания на)|js},
+    eng: "I need some paper to write on. // (= material for writing on)",
+  },
+  {
+    rus: {js|У меня в супе волосок остался! // (= один волос)|js},
+    eng: "There's a hair in my soup! // (= one single hair)",
+  },
+  {
+    rus: {js|У тебя очень длинные волосы // (не волосы - все волосы на голове)|js},
+    eng: "You've got very long hair // (not hairs - all the hair on your head)",
+  },
+  {
+    rus: {js|Ты можешь остаться с нами. Есть свободная комната. // (= комната в доме)|js},
+    eng: "You can stay with us. There's a spare room. // (= a room in a house)",
+  },
+  {
+    rus: {js|Ты не можешь здесь сидеть. Нет.  // (= пространство)|js},
+    eng: "You can't sit here. There isn't room.  // (= space)",
+  },
+  {
+    rus: {js|Во время путешествия у меня было несколько интересных впечатлений.|js},
+    eng: "I had some interesting experiences while I was travelling.",
+  },
+  {
+    rus: {js|Они предложили мне работу, потому что у меня много опыта.|js},
+    eng: "They offered me the job because I had a lot of experience.",
+  },
+  {
+    rus: {js|Приятного путешествия. Желаю хорошо провести время!|js},
+    eng: "Enjoy your trip. Have a good time!",
+  },
+  {
+    rus: {js|Не могу дождаться. У меня нет на это времени.|js},
+    eng: "I can't wait. I don't have time.",
+  },
+  {
+    rus: {js|Кофе/чай/сок/пиво etc. (напитки) обычно неисчислимы: я не очень люблю кофе. Но вы можете сказать, что кофе //кофе// две чашки кофе //две чашки// и т. д.|js},
+    eng: "Coffee/tea/juice/beer etc. (drinks) are normalLy uncountable: I don't like coffee very much. But you can say a coffee //a cup of coffee//, two coffees //two cups// etc.",
+  },
+  {
+    rus: {js|Два кофе и апельсиновый сок, пожалуйста.|js},
+    eng: "Two coffees and an orange juice, please.",
+  },
+  {
+    rus: {js|Я ищу работу. Я ищу работу. // (не работа)|js},
+    eng: "I'm looking for a job. I'm looking for work. // (not a work)",
+  },
+  {
+    rus: {js|Какой прекрасный вид! Какой прекрасный пейзаж!|js},
+    eng: "What a beautiful view! What beautiful scenery!",
+  },
+  {
+    rus: {js|Сегодня прекрасный день. Сегодня хорошая погода.|js},
+    eng: "It's a nice day today. It's nice weather today.",
+  },
+  {
+    rus: {js|У нас было много сумок и чемоданов. У нас было много багажа, багажа.|js},
+    eng: "We had a lot of bags and cases. We had a lot of baggage, luggage.",
+  },
+  {
+    rus: {js|Эти стулья принадлежат мне. Эта мебель принадлежит мне.|js},
+    eng: "These chairs are mine. This furniture is mine.",
+  },
+  {
+    rus: {js|Это хорошее предложение. Это хороший совет.|js},
+    eng: "That's a good suggestion. That's good advice.",
+  },
 ];
 
 let oldDictionary2 = [
