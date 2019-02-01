@@ -709,190 +709,69 @@ let veryOldDictionary1 = [
 ];
 
 let dictionary2 = [
-  {
-    rus: {js|Я ем бананы каждый день. Я люблю бананы. // счетный|js},
-    eng: "I eat a banana every day. I like bananas. // countable",
-  },
-  {
-    rus: {js|Я ем рис каждый день. Я люблю рис. // неисчислимый|js},
-    eng: "I eat rice every day. I like rice. // uncountable",
-  },
-  {
-    rus: {js|Счетное существительное может быть в единственном числе (банан) или во множественном (бананы).|js},
-    eng: "A countable noun can be singular (banana) or plural (bananas).",
-  },
-  {
-    rus: {js|Несчетное существительное имеет только одну форму (рис).|js},
-    eng: "An uncountable noun has only one form (rice).",
-  },
-  {
-    rus: {js|Мы можем использовать числа со счетными существительными. Поэтому мы можем сказать, 'банан', 'два банана' и т. д.|js},
-    eng: "We can use numbers with countable nouns. So we can say 'one banana', 'two bananas' etc.",
-  },
-  {
-    rus: {js|Мы не можем использовать числа с исчисляемыми существительными. Мы не можем сказать один рис', 'два риса' и т. д.|js},
-    eng: "We cannot use numbers with uncountable nouns. We cannot say 'one rice', 'two rices' etc.",
-  },
-  {
-    rus: {js|Катя пела песню.|js},
-    eng: "Kate was singing a song.",
-  },
-  {
-    rus: {js|Рядом есть хороший пляж.|js},
-    eng: "There's a nice beach near here.",
-  },
-  {
-    rus: {js|У тебя есть десятифунтовая купюра?|js},
-    eng: "Do you have a ten-pound note?",
-  },
-  {
-    rus: {js|Это была не твоя вина. Это был несчастный случай. В рации нет батареек.|js},
-    eng: "It wasn't your fault. It was an accident. There are no batteries in the radio.",
-  },
-  {
-    rus: {js|У нас недостаточно чашек.|js},
-    eng: "We don't have enough cups.",
-  },
-  {
-    rus: {js|Кейт слушала музыку.|js},
-    eng: "Kate was listening to (some) music.",
-  },
-  {
-    rus: {js|В моих ботинках песок.|js},
-    eng: "There's sand in my shoes.",
-  },
-  {
-    rus: {js|У тебя есть деньги?|js},
-    eng: "Do you have any money?",
-  },
-  {
-    rus: {js|Это была не твоя вина. Это было невезение.|js},
-    eng: "It wasn't your fault. It was bad luck.",
-  },
-  {
-    rus: {js|В этом доме нет электричества.|js},
-    eng: "There is no electricity in this house.",
-  },
-  {
-    rus: {js|У нас недостаточно воды.|js},
-    eng: "We don't have enough water.",
-  },
-  {
-    rus: {js|Нельзя использовать исчисляемыt существительныt в единственном числе без the/my/some etc. Я хочу банан. Произошел несчастный случай.|js},
-    eng: "You cannot use singular countable nouns alone (without a/the/my etc.). I want a banana. (not I want banana). There's been an accident, (not There's been accident)",
-  },
-  {
-    rus: {js|Вы можете использовать множественное число счетных существительных без артиклей. Я люблю бананы. ( бананы вообще). Несчастные случаи могут быть предотвращены.|js},
-    eng: "You can use plural countable nouns alone. I like bananas. ( bananas in general). Accidents can be prevented.",
-  },
-  {
-    rus: {js|Вы можете использовать неисчисляемые существительные без the/my/some etc.): Я ем рис каждый день. На твоей рубашке кровь. Вы слышите музыку?|js},
-    eng: "You can use uncountable nouns alone (without the/my/some etc.): I eat rice every day. There's blood on your shirt. Can you hearmusic?",
-  },
-  {
-    rus: {js|Вы можете использовать some и any с исчисляемыми существительными во множественном числе и неисчисляемые существительные!|js},
-    eng: "You can use some and any with plural countable nouns and with uncountable nouns!",
-  },
-  {
-    rus: {js|Мы спели несколько песен. Ты купил яблоки?|js},
-    eng: "We sang some songs. Did you buy any apples?",
-  },
-  {
-    rus: {js|Мы слушали музыку. Вы покупали яблочный сок?|js},
-    eng: "We listened to some music. Did you buy any apple juice?",
-  },
-  {
-    rus: {js|Мы используем many и few с множественным числом исчисляемых существительных: мы не сделали много снимков. Мне нужно кое-что сделать.|js},
-    eng: "We use many and few with plural countable nouns: We didn't take many pictures. I have a few things to do.",
-  },
-  {
-    rus: {js|Мы используем much и little с бесчисленными существительными: мы не делали много покупок. Мне нужно немного поработать.|js},
-    eng: "We use much and little with uncountable nouns: We didn't do much shopping. I have a little work to do.",
-  },
-  {
-    rus: {js|Многие существительные могут использоваться как счетные или бесчисленные существительные, обычно с разницей в значении.|js},
-    eng: "Many nouns can be used as countable or uncountable nouns, usually with a difference in meaning.",
-  },
-  {
-    rus: {js|Ты только что слышала шум? // (специфический шум)|js},
-    eng: "Did you hear a noise just now? // (a specific noise)",
-  },
-  {
-    rus: {js|Я не могу здесь работать. Слишком много шума. // (шум в целом)|js},
-    eng: "I can't work here. There's too much  noise. // (noise in general)",
-  },
-  {
-    rus: {js|Я купил газету, чтобы почитать. // (= газета)|js},
-    eng: "I bought a paper to read. // (= a newspaper)",
-  },
-  {
-    rus: {js|Мне нужна бумага, чтобы писать. // (= материал для написания на)|js},
-    eng: "I need some paper to write on. // (= material for writing on)",
-  },
-  {
-    rus: {js|У меня в супе волосок остался! // (= один волос)|js},
-    eng: "There's a hair in my soup! // (= one single hair)",
-  },
-  {
-    rus: {js|У тебя очень длинные волосы // (не волосы - все волосы на голове)|js},
-    eng: "You've got very long hair // (not hairs - all the hair on your head)",
-  },
-  {
-    rus: {js|Ты можешь остаться с нами. Есть свободная комната. // (= комната в доме)|js},
-    eng: "You can stay with us. There's a spare room. // (= a room in a house)",
-  },
-  {
-    rus: {js|Ты не можешь здесь сидеть. Нет.  // (= пространство)|js},
-    eng: "You can't sit here. There isn't room.  // (= space)",
-  },
-  {
-    rus: {js|Во время путешествия у меня было несколько интересных впечатлений.|js},
-    eng: "I had some interesting experiences while I was travelling.",
-  },
-  {
-    rus: {js|Они предложили мне работу, потому что у меня много опыта.|js},
-    eng: "They offered me the job because I had a lot of experience.",
-  },
-  {
-    rus: {js|Приятного путешествия. Желаю хорошо провести время!|js},
-    eng: "Enjoy your trip. Have a good time!",
-  },
-  {
-    rus: {js|Не могу дождаться. У меня нет на это времени.|js},
-    eng: "I can't wait. I don't have time.",
-  },
-  {
-    rus: {js|Кофе/чай/сок/пиво etc. (напитки) обычно неисчислимы: я не очень люблю кофе. Но вы можете сказать, что кофе //кофе// две чашки кофе //две чашки// и т. д.|js},
-    eng: "Coffee/tea/juice/beer etc. (drinks) are normalLy uncountable: I don't like coffee very much. But you can say a coffee //a cup of coffee//, two coffees //two cups// etc.",
-  },
-  {
-    rus: {js|Два кофе и апельсиновый сок, пожалуйста.|js},
-    eng: "Two coffees and an orange juice, please.",
-  },
-  {
-    rus: {js|Я ищу работу. Я ищу работу. // (не работа)|js},
-    eng: "I'm looking for a job. I'm looking for work. // (not a work)",
-  },
-  {
-    rus: {js|Какой прекрасный вид! Какой прекрасный пейзаж!|js},
-    eng: "What a beautiful view! What beautiful scenery!",
-  },
-  {
-    rus: {js|Сегодня прекрасный день. Сегодня хорошая погода.|js},
-    eng: "It's a nice day today. It's nice weather today.",
-  },
-  {
-    rus: {js|У нас было много сумок и чемоданов. У нас было много багажа, багажа.|js},
-    eng: "We had a lot of bags and cases. We had a lot of baggage, luggage.",
-  },
-  {
-    rus: {js|Эти стулья принадлежат мне. Эта мебель принадлежит мне.|js},
-    eng: "These chairs are mine. This furniture is mine.",
-  },
-  {
-    rus: {js|Это хорошее предложение. Это хороший совет.|js},
-    eng: "That's a good suggestion. That's good advice.",
-  },
+
+
+
+{
+  rus: {js|маршрут - план или список мест, которые вы посетите в путешествие|js},
+  eng: "itinerary - a plan or list of the places you will visit on a journey",
+},
+{
+  rus: {js|Этот визит дает вам реальный insightinto нашей повседневной работе. // (=четкое понимание)|js},
+  eng: "This visit will give you a real insightinto our daily work. // (=clear understanding)",
+},
+{
+  rus: {js|Поездка будет включать в себя много автомобильных поездок. //(=включать)|js},
+  eng: "The trip will involve a lot of road travel. //(=include)",
+},
+{
+  rus: {js|Мы настоятельно рекомендуем вам остаться с нашим гидом. // (=Я вам очень советую)|js},
+  eng: "We strongly recommend you stay with our guide. // (=I advise you that very much)",
+},
+{
+  rus: {js|С удовольствием познакомлю вас со своей командой. // (=очень счастливый)|js},
+  eng: "I'd be delighted to introduce you to my team. // (=very happy)",
+},
+{
+  rus: {js|Достопримечательности нашего города стоит посетить. // (=это хорошая идея, чтобы посетить их.)|js},
+  eng: "The sights of our city are well worth a visit. // (=it's a good idea to visit them.)",
+},
+{
+  rus: {js|Давайте просто пробежимся по маршруту вашей поездки. // (=читать быстро и объяснить)|js},
+  eng: "Let's just run through the itinerary of your trip. // (=read quickly and explain)",
+},
+{
+  rus: {js|Не стесняйтесь задавать любые вопросы. // (=добро пожаловать)|js},
+  eng: "Feel free to ask any questions you may have. // (=you're welcome)",
+},
+{
+  rus: {js|Мы организуем визит в наш новый офис. // (=организовать)|js},
+  eng: "We're going to arrange a visit to our new office. // (=organize)",
+},
+{
+  rus: {js|Звучит очень интересно. Я бы хотел обсудить это с тобой. // (=Я рад принять ваше приглашение)|js},
+  eng: "That sounds really interesting. I'd like to take you up on that. // (=I'm happy to accept your invitation)",
+},
+{
+  rus: {js|Это не совсем то, что я ищу. // (=Мне это не интересно)|js},
+  eng: "That's not really what I'm looking for. // (=I'm not interested)",
+},
+{
+  rus: {js|Это как раз то, что мне нужно. // (=Мне очень нравится ваше предложение)|js},
+  eng: "It's just the kind of thing I need. // (=I really like you suggestion)",
+},
+{
+  rus: {js|Имеет смысл приехать за 5 минут до начала презентации. // (=это разумно)|js},
+  eng: "It makes sense to arrive 5 minutes before the presentation starts. // (=it's reasonable)",
+},
+{
+  rus: {js|Звучит очень интересно. // (=Похоже)|js},
+  eng: "That sounds really interesting. // (=It seems)",
+},
+{
+  rus: {js|Звучит очень интересно. Я бы хотел обсудить это с тобой. // (=Я рад принять ваше приглашение)|js},
+  eng: "That sounds really interesting. I'd like to take you up on that. // (=I'm happy to accept your invitation)",
+},
 ];
 
 let oldDictionary2 = [
@@ -2257,6 +2136,193 @@ let veryOldDictionary2 = [
     rus: {js|Char компилируется в целое число от 0 до 255, для дополнительной скорости. Вы можете также паттерн-матчинг на нем.|js},
     eng: "A character compiles to an integer ranging from 0 to 255, for extra speed. You can also pattern-match on it.",
   },
+
+
+  {
+    rus: {js|Я ем бананы каждый день. Я люблю бананы. // счетный|js},
+    eng: "I eat a banana every day. I like bananas. // countable",
+  },
+  {
+    rus: {js|Я ем рис каждый день. Я люблю рис. // неисчислимый|js},
+    eng: "I eat rice every day. I like rice. // uncountable",
+  },
+  {
+    rus: {js|Счетное существительное может быть в единственном числе (банан) или во множественном (бананы).|js},
+    eng: "A countable noun can be singular (banana) or plural (bananas).",
+  },
+  {
+    rus: {js|Несчетное существительное имеет только одну форму (рис).|js},
+    eng: "An uncountable noun has only one form (rice).",
+  },
+  {
+    rus: {js|Мы можем использовать числа со счетными существительными. Поэтому мы можем сказать, 'банан', 'два банана' и т. д.|js},
+    eng: "We can use numbers with countable nouns. So we can say 'one banana', 'two bananas' etc.",
+  },
+  {
+    rus: {js|Мы не можем использовать числа с исчисляемыми существительными. Мы не можем сказать один рис', 'два риса' и т. д.|js},
+    eng: "We cannot use numbers with uncountable nouns. We cannot say 'one rice', 'two rices' etc.",
+  },
+  {
+    rus: {js|Катя пела песню.|js},
+    eng: "Kate was singing a song.",
+  },
+  {
+    rus: {js|Рядом есть хороший пляж.|js},
+    eng: "There's a nice beach near here.",
+  },
+  {
+    rus: {js|У тебя есть десятифунтовая купюра?|js},
+    eng: "Do you have a ten-pound note?",
+  },
+  {
+    rus: {js|Это была не твоя вина. Это был несчастный случай. В рации нет батареек.|js},
+    eng: "It wasn't your fault. It was an accident. There were no batteries in the radio.",
+  },
+  {
+    rus: {js|У нас недостаточно чашек.|js},
+    eng: "We don't have enough cups.",
+  },
+  {
+    rus: {js|Кейт слушала музыку.|js},
+    eng: "Kate was listening to (some) music.",
+  },
+  {
+    rus: {js|В моих ботинках песок.|js},
+    eng: "There's sand in my shoes.",
+  },
+  {
+    rus: {js|У тебя есть деньги?|js},
+    eng: "Do you have any money?",
+  },
+  {
+    rus: {js|Это была не твоя вина. Это было невезение.|js},
+    eng: "It wasn't your fault. It was bad luck.",
+  },
+  {
+    rus: {js|В этом доме нет электричества.|js},
+    eng: "There is no electricity in this house.",
+  },
+  {
+    rus: {js|У нас недостаточно воды.|js},
+    eng: "We don't have enough water.",
+  },
+  {
+    rus: {js|Нельзя использовать исчисляемыt существительныt в единственном числе без the/my/some etc. Я хочу банан. Произошел несчастный случай.|js},
+    eng: "You cannot use singular countable nouns alone (without a/the/my etc.). I want a banana. (not I want banana). There's been an accident, (not There's been accident)",
+  },
+  {
+    rus: {js|Вы можете использовать множественное число счетных существительных без артиклей. Я люблю бананы. ( бананы вообще). Несчастные случаи могут быть предотвращены.|js},
+    eng: "You can use plural countable nouns alone. I like bananas. ( bananas in general). Accidents can be prevented.",
+  },
+  {
+    rus: {js|Вы можете использовать неисчисляемые существительные без the/my/some etc.): Я ем рис каждый день. На твоей рубашке кровь. Вы слышите музыку?|js},
+    eng: "You can use uncountable nouns alone (without the/my/some etc.): I eat rice every day. There's blood on your shirt. Can you hear music?",
+  },
+  {
+    rus: {js|Вы можете использовать some и any с исчисляемыми существительными во множественном числе и неисчисляемые существительные!|js},
+    eng: "You can use some and any with plural countable nouns and with uncountable nouns!",
+  },
+  {
+    rus: {js|Мы спели несколько песен. Ты купил яблоки?|js},
+    eng: "We sang some songs. Did you buy any apples?",
+  },
+  {
+    rus: {js|Мы слушали музыку. Вы покупали яблочный сок?|js},
+    eng: "We listened to some music. Did you buy any apple juice?",
+  },
+  {
+    rus: {js|Мы используем many и few с множественным числом исчисляемых существительных: мы не сделали много снимков. Мне нужно кое-что сделать.|js},
+    eng: "We use many and few with plural countable nouns: We didn't take many pictures. I have a few things to do.",
+  },
+  {
+    rus: {js|Мы используем much и little с бесчисленными существительными: мы не делали много покупок. Мне нужно немного поработать.|js},
+    eng: "We use much and little with uncountable nouns: We didn't do much shopping. I have a little work to do.",
+  },
+  {
+    rus: {js|Многие существительные могут использоваться как счетные или бесчисленные существительные, обычно с разницей в значении.|js},
+    eng: "Many nouns can be used as countable or uncountable nouns, usually with a difference in meaning.",
+  },
+  {
+    rus: {js|Ты только что слышала шум? // (специфический шум)|js},
+    eng: "Did you hear a noise just now? // (a specific noise)",
+  },
+  {
+    rus: {js|Я не могу здесь работать. Слишком много шума. // (шум в целом)|js},
+    eng: "I can't work here. There's too much  noise. // (noise in general)",
+  },
+  {
+    rus: {js|Я купил газету, чтобы почитать. // (= газета)|js},
+    eng: "I bought a paper to read. // (= a newspaper)",
+  },
+  {
+    rus: {js|Мне нужна бумага, чтобы писать. // (= материал для написания на)|js},
+    eng: "I need some paper to write on. // (= material for writing on)",
+  },
+  {
+    rus: {js|У меня в супе волосок остался! // (= один волос)|js},
+    eng: "There's a hair in my soup! // (= one single hair)",
+  },
+  {
+    rus: {js|У тебя очень длинные волосы // (не волосы - все волосы на голове)|js},
+    eng: "You've got very long hair. // (not hairs - all the hair on your head)",
+  },
+  {
+    rus: {js|Ты можешь остаться с нами. Есть свободная комната. // (= комната в доме)|js},
+    eng: "You can stay with us. There's a spare room. // (= a room in a house)",
+  },
+  {
+    rus: {js|Ты не можешь здесь сидеть. Нет.  // (= пространство)|js},
+    eng: "You can't sit here. There isn't room.  // (= space)",
+  },
+  {
+    rus: {js|Во время путешествия у меня было несколько интересных впечатлений.|js},
+    eng: "I had some interesting experiences while I was travelling.",
+  },
+  {
+    rus: {js|Они предложили мне работу, потому что у меня много опыта.|js},
+    eng: "They offered me the job because I had a lot of experience.",
+  },
+  {
+    rus: {js|Приятного путешествия. Желаю хорошо провести время!|js},
+    eng: "Enjoy your trip. Have a good time!",
+  },
+  {
+    rus: {js|Не могу дождаться. У меня нет на это времени.|js},
+    eng: "I can't wait. I don't have time.",
+  },
+  {
+    rus: {js|Кофе/чай/сок/пиво etc. (напитки) обычно неисчислимы: я не очень люблю кофе. Но вы можете сказать, что кофе //кофе// две чашки кофе //две чашки// и т. д.|js},
+    eng: "Coffee/tea/juice/beer etc. (drinks) are normalLy uncountable: I don't like coffee very much. But you can say a coffee //a cup of coffee//, two coffees //two cups// etc.",
+  },
+  {
+    rus: {js|Два кофе и апельсиновый сок, пожалуйста.|js},
+    eng: "Two coffees and an orange juice, please.",
+  },
+  {
+    rus: {js|Я ищу работу. Я ищу работу. // (не работа)|js},
+    eng: "I'm looking for a job. I'm looking for work. // (not a work)",
+  },
+  {
+    rus: {js|Какой прекрасный вид! Какой прекрасный пейзаж!|js},
+    eng: "What a beautiful view! What beautiful scenery!",
+  },
+  {
+    rus: {js|Сегодня прекрасный день. Сегодня хорошая погода.|js},
+    eng: "It's a nice day today. It's nice weather today.",
+  },
+  {
+    rus: {js|У нас было много сумок и чемоданов. У нас было много багажа, багажа.|js},
+    eng: "We had a lot of bags and cases. We had a lot of baggage, luggage.",
+  },
+  {
+    rus: {js|Эти стулья принадлежат мне. Эта мебель принадлежит мне.|js},
+    eng: "These chairs are mine. This furniture is mine.",
+  },
+  {
+    rus: {js|Это хорошее предложение. Это хороший совет.|js},
+    eng: "That's a good suggestion. That's good advice.",
+  },
+
 ];
 
 let oldOldDictionary2 = [
