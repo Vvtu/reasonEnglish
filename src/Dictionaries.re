@@ -710,6 +710,71 @@ let veryOldDictionary1 = [
 
 let dictionary2 = [
 
+{
+  rus: {js|Он чувствует сильную ответственность перед сотрудниками своего стартапа. // (=обязанность заботиться и помогать)|js},
+  eng: "He feels a strong sense of responsibility towards the employees of his start-up. // (=duty to care and help)",
+},
+{
+  rus: {js|Мы пытаемся уменьшить воздействие производственного процесса на окружающую среду. // (=влияние)|js},
+  eng: "We're trying to reduce the impact that our manufacturing process has on the environment. // (=influence)",
+},
+{
+  rus: {js|Наши сотрудники жертвуют время и деньги на благотворительные проекты.|js},
+  eng: "Our employees donate time and money to charity projects.",
+},
+{
+  rus: {js|Мы остаемся верны нашим ценностям и принципам. // (предлог)|js},
+  eng: "We stay true to our values and principles. // (preposition)",
+},
+{
+  rus: {js|У нас всегда была сильная приверженность к нашей рабочей силе.|js},
+  eng: "We've always had a strong commitment to our workforce.",
+},
+{
+  rus: {js|Все сотрудники должны соблюдать правила и положения компании. // (=следовать)|js},
+  eng: "All members of staff should comply with company rules and regulations. // (=follow)",
+},
+{
+  rus: {js|Вы никогда не должны принимать дорогие подарки, чтобы избежать обвинения в подкупе. // (=коррупция)|js},
+  eng: "You should never accept expensive gifts to avoid being charged with bribery. // (=corruption)",
+},
+{
+  rus: {js|Это предубеждение против женщин в нем не принесет никакой пользы. // (=несправедливые мнения, не основанные на знаниях)|js},
+  eng: "This prejudice against women in IT won't do any good. // (=unfair opinions not based on knowledge)",
+},
+{
+  rus: {js|Эта глупая жалоба не может подорвать доверие Джека. // (=тот факт, что ему можно доверять, его честность)|js},
+  eng: "This silly complaint can't undermine Jack's credibility. // (=that fact that he can be trusted, his honesty)",
+},
+{
+  rus: {js|Я хотел бы поблагодарить всех за проявленную приверженность. // (=энтузиазм упорно трудиться)|js},
+  eng: "I'd like to thank everybody for having shown such commitment. // (=enthusiasm to work hard)",
+},
+{
+  rus: {js|В развивающихся странах глобализация рассматривается как посягательство на традиционные культурные ценности. // (=принципы, убеждения)|js},
+  eng: "In the developing world, globalization is seen as an attack on traditional cultural values. // (=principles, beliefs)",
+},
+{
+  rus: {js|Тим был виновен в обмане, преувеличивая цифры перед клиентом.// (=сокрытие правды)|js},
+  eng: "Tim was guilty of deception by exaggerating figures in front of the customer.// (=hiding the truth)",
+},
+{
+  rus: {js|Просто ничто не могло удовлетворить жадность Мистера Мориарти к власти.// (=сильное желание получить больше)|js},
+  eng: "Simply nothing would satisfy Mr.Moriarty's greed for power.// (=a strong desire to get more)",
+},
+{
+  rus: {js|Кажется, ваш друг воспользовался вашей щедростью.// (=желание помочь и поделиться)|js},
+  eng: "Your friend seems to take advantage of your generosity.// (=desire to help and share)",
+},
+{
+  rus: {js|Наша деятельность приводит к загрязнению как побочный продукт, поэтому мы стараемся действовать ответственно и использовать экологически чистые технологии.// (=работайте разумно и будьте надежны)|js},
+  eng: "Our business activity creates pollution as a by-product, so we try to act responsibly and use eco-friendly technologies.// (=work in a sensible way and be reliable)",
+},
+{
+  rus: {js|Я управляю этой компанией более 10 лет и горжусь этим. // (=управляющий)|js},
+  eng: "I have been running this company for more than 10 years and I'm proud of it. // (=managing)",
+},
+
 
 
 {
