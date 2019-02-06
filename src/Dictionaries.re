@@ -709,134 +709,42 @@ let veryOldDictionary1 = [
 ];
 
 let dictionary2 = [
-
-{
-  rus: {js|Он чувствует сильную ответственность перед сотрудниками своего стартапа. // (=обязанность заботиться и помогать)|js},
-  eng: "He feels a strong sense of responsibility towards the employees of his start-up. // (=duty to care and help)",
-},
-{
-  rus: {js|Мы пытаемся уменьшить воздействие производственного процесса на окружающую среду. // (=влияние)|js},
-  eng: "We're trying to reduce the impact that our manufacturing process has on the environment. // (=influence)",
-},
-{
-  rus: {js|Наши сотрудники жертвуют время и деньги на благотворительные проекты.|js},
-  eng: "Our employees donate time and money to charity projects.",
-},
-{
-  rus: {js|Мы остаемся верны нашим ценностям и принципам. // (предлог)|js},
-  eng: "We stay true to our values and principles. // (preposition)",
-},
-{
-  rus: {js|У нас всегда была сильная приверженность к нашей рабочей силе.|js},
-  eng: "We've always had a strong commitment to our workforce.",
-},
-{
-  rus: {js|Все сотрудники должны соблюдать правила и положения компании. // (=следовать)|js},
-  eng: "All members of staff should comply with company rules and regulations. // (=follow)",
-},
-{
-  rus: {js|Вы никогда не должны принимать дорогие подарки, чтобы избежать обвинения в подкупе. // (=коррупция)|js},
-  eng: "You should never accept expensive gifts to avoid being charged with bribery. // (=corruption)",
-},
-{
-  rus: {js|Это предубеждение против женщин в нем не принесет никакой пользы. // (=несправедливые мнения, не основанные на знаниях)|js},
-  eng: "This prejudice against women in IT won't do any good. // (=unfair opinions not based on knowledge)",
-},
-{
-  rus: {js|Эта глупая жалоба не может подорвать доверие Джека. // (=тот факт, что ему можно доверять, его честность)|js},
-  eng: "This silly complaint can't undermine Jack's credibility. // (=that fact that he can be trusted, his honesty)",
-},
-{
-  rus: {js|Я хотел бы поблагодарить всех за проявленную приверженность. // (=энтузиазм упорно трудиться)|js},
-  eng: "I'd like to thank everybody for having shown such commitment. // (=enthusiasm to work hard)",
-},
-{
-  rus: {js|В развивающихся странах глобализация рассматривается как посягательство на традиционные культурные ценности. // (=принципы, убеждения)|js},
-  eng: "In the developing world, globalization is seen as an attack on traditional cultural values. // (=principles, beliefs)",
-},
-{
-  rus: {js|Тим был виновен в обмане, преувеличивая цифры перед клиентом.// (=сокрытие правды)|js},
-  eng: "Tim was guilty of deception by exaggerating figures in front of the customer.// (=hiding the truth)",
-},
-{
-  rus: {js|Просто ничто не могло удовлетворить жадность Мистера Мориарти к власти.// (=сильное желание получить больше)|js},
-  eng: "Simply nothing would satisfy Mr.Moriarty's greed for power.// (=a strong desire to get more)",
-},
-{
-  rus: {js|Кажется, ваш друг воспользовался вашей щедростью.// (=желание помочь и поделиться)|js},
-  eng: "Your friend seems to take advantage of your generosity.// (=desire to help and share)",
-},
-{
-  rus: {js|Наша деятельность приводит к загрязнению как побочный продукт, поэтому мы стараемся действовать ответственно и использовать экологически чистые технологии.// (=работайте разумно и будьте надежны)|js},
-  eng: "Our business activity creates pollution as a by-product, so we try to act responsibly and use eco-friendly technologies.// (=work in a sensible way and be reliable)",
-},
-{
-  rus: {js|Я управляю этой компанией более 10 лет и горжусь этим. // (=управляющий)|js},
-  eng: "I have been running this company for more than 10 years and I'm proud of it. // (=managing)",
-},
-
-
-
-{
-  rus: {js|маршрут - план или список мест, которые вы посетите в путешествие|js},
-  eng: "itinerary - a plan or list of the places you will visit on a journey",
-},
-{
-  rus: {js|Этот визит дает вам реальный insightinto нашей повседневной работе. // (=четкое понимание)|js},
-  eng: "This visit will give you a real insightinto our daily work. // (=clear understanding)",
-},
-{
-  rus: {js|Поездка будет включать в себя много автомобильных поездок. //(=включать)|js},
-  eng: "The trip will involve a lot of road travel. //(=include)",
-},
-{
-  rus: {js|Мы настоятельно рекомендуем вам остаться с нашим гидом. // (=Я вам очень советую)|js},
-  eng: "We strongly recommend you stay with our guide. // (=I advise you that very much)",
-},
-{
-  rus: {js|С удовольствием познакомлю вас со своей командой. // (=очень счастливый)|js},
-  eng: "I'd be delighted to introduce you to my team. // (=very happy)",
-},
-{
-  rus: {js|Достопримечательности нашего города стоит посетить. // (=это хорошая идея, чтобы посетить их.)|js},
-  eng: "The sights of our city are well worth a visit. // (=it's a good idea to visit them.)",
-},
-{
-  rus: {js|Давайте просто пробежимся по маршруту вашей поездки. // (=читать быстро и объяснить)|js},
-  eng: "Let's just run through the itinerary of your trip. // (=read quickly and explain)",
-},
-{
-  rus: {js|Не стесняйтесь задавать любые вопросы. // (=добро пожаловать)|js},
-  eng: "Feel free to ask any questions you may have. // (=you're welcome)",
-},
-{
-  rus: {js|Мы организуем визит в наш новый офис. // (=организовать)|js},
-  eng: "We're going to arrange a visit to our new office. // (=organize)",
-},
-{
-  rus: {js|Звучит очень интересно. Я бы хотел обсудить это с тобой. // (=Я рад принять ваше приглашение)|js},
-  eng: "That sounds really interesting. I'd like to take you up on that. // (=I'm happy to accept your invitation)",
-},
-{
-  rus: {js|Это не совсем то, что я ищу. // (=Мне это не интересно)|js},
-  eng: "That's not really what I'm looking for. // (=I'm not interested)",
-},
-{
-  rus: {js|Это как раз то, что мне нужно. // (=Мне очень нравится ваше предложение)|js},
-  eng: "It's just the kind of thing I need. // (=I really like you suggestion)",
-},
-{
-  rus: {js|Имеет смысл приехать за 5 минут до начала презентации. // (=это разумно)|js},
-  eng: "It makes sense to arrive 5 minutes before the presentation starts. // (=it's reasonable)",
-},
-{
-  rus: {js|Звучит очень интересно. // (=Похоже)|js},
-  eng: "That sounds really interesting. // (=It seems)",
-},
-{
-  rus: {js|Звучит очень интересно. Я бы хотел обсудить это с тобой. // (=Я рад принять ваше приглашение)|js},
-  eng: "That sounds really interesting. I'd like to take you up on that. // (=I'm happy to accept your invitation)",
-},
+  {
+    rus: {js|Я решил попробовать выучить иностранный язык. Да ну? Какой язык вы собираетесь изучать?|js},
+    eng: "I've deceded to try and learn a foreign language. Have you? Which language are you going to learn?",
+  },
+  {
+    rus: {js|Ты собираешься пройти курс? Да. Он начнется на следующей неделе. Это здорово. Я уверен, вам понравится.|js},
+    eng: "Are you going to do a cource? Yes. It starts next week. That's great. I am sure you will enjoy it.",
+  },
+  {
+    rus: {js|Надеюсь, что так. Но я думаю, что это будет сложно.|js},
+    eng: "I hope so. But I think it will be difficult.",
+  },
+  {
+    rus: {js|Я слышал, ты скоро уезжаешь в отпуск. Вот именно. Мы собираемся поехать в Финляндию.|js},
+    eng: "I hear you are going on holiday soon. That's right. We are going to go to Finland.",
+  },
+  {
+    rus: {js|Надеюсь, вы хорошо проведете время.|js},
+    eng: "I hope you will have a nice time.",
+  },
+  {
+    rus: {js|Благодарю. Я пришлю тебе открытку и свяжусь с тобой, когда вернусь.|js},
+    eng: "Thanks. I'll send you a postcard and I'll get in touch with you when I get back.",
+  },
+  {
+    rus: {js|У меня вечеринка в следующую субботу. Ты можешь прийти?|js},
+    eng: "I am having a party next Saturday. Can you come?",
+  },
+  {
+    rus: {js|В Субботу? Я не уверен. На следующей неделе ко мне приедут друзья. Но я думаю, что они уедут в субботу. Но если они будут все еще здесь я не смогу прийти на вечеринку.|js},
+    eng: "On Saturday? I'm not sure. Some friends of mine are coming to stay with me next week. But I think they will leave by Saturday. But if they are still here I won't be able to come to party.",
+  },
+  {
+    rus: {js|Ладно. Скажи мне, как только узнаешь. Я позвоню тебе в течение недели.|js},
+    eng: "OK. Tell me as soon as you know. I'll call you during the week.",
+  },
 ];
 
 let oldDictionary2 = [
@@ -1953,6 +1861,130 @@ let oldDictionary2 = [
     rus: {js|Существительное может быть счетным или несчетным.|js},
     eng: "A noun can be countable or uncountable.",
   },
+  {
+    rus: {js|Он чувствует сильную ответственность перед сотрудниками своего стартапа. // (=обязанность заботиться и помогать)|js},
+    eng: "He feels a strong sense of responsibility towards the employees of his start-up. // (=duty to care and help)",
+  },
+  {
+    rus: {js|Мы пытаемся уменьшить воздействие производственного процесса на окружающую среду. // (=влияние)|js},
+    eng: "We're trying to reduce the impact that our manufacturing process has on the environment. // (=influence)",
+  },
+  {
+    rus: {js|Наши сотрудники жертвуют время и деньги на благотворительные проекты.|js},
+    eng: "Our employees donate time and money to charity projects.",
+  },
+  {
+    rus: {js|Мы остаемся верны нашим ценностям и принципам. // (предлог)|js},
+    eng: "We stay true to our values and principles. // (preposition)",
+  },
+  {
+    rus: {js|У нас всегда была сильная приверженность к нашей рабочей силе.|js},
+    eng: "We've always had a strong commitment to our workforce.",
+  },
+  {
+    rus: {js|Все сотрудники должны соблюдать правила и положения компании. // (=следовать)|js},
+    eng: "All members of staff should comply with company rules and regulations. // (=follow)",
+  },
+  {
+    rus: {js|Вы никогда не должны принимать дорогие подарки, чтобы избежать обвинения в подкупе. // (=коррупция)|js},
+    eng: "You should never accept expensive gifts to avoid being charged with bribery. // (=corruption)",
+  },
+  {
+    rus: {js|Это предубеждение против женщин в нем не принесет никакой пользы. // (=несправедливые мнения, не основанные на знаниях)|js},
+    eng: "This prejudice against women in IT won't do any good. // (=unfair opinions not based on knowledge)",
+  },
+  {
+    rus: {js|Эта глупая жалоба не может подорвать доверие Джека. // (=тот факт, что ему можно доверять, его честность)|js},
+    eng: "This silly complaint can't undermine Jack's credibility. // (=that fact that he can be trusted, his honesty)",
+  },
+  {
+    rus: {js|Я хотел бы поблагодарить всех за проявленную приверженность. // (=энтузиазм упорно трудиться)|js},
+    eng: "I'd like to thank everybody for having shown such commitment. // (=enthusiasm to work hard)",
+  },
+  {
+    rus: {js|В развивающихся странах глобализация рассматривается как посягательство на традиционные культурные ценности. // (=принципы, убеждения)|js},
+    eng: "In the developing world, globalization is seen as an attack on traditional cultural values. // (=principles, beliefs)",
+  },
+  {
+    rus: {js|Тим был виновен в обмане, преувеличивая цифры перед клиентом.// (=сокрытие правды)|js},
+    eng: "Tim was guilty of deception by exaggerating figures in front of the customer.// (=hiding the truth)",
+  },
+  {
+    rus: {js|Просто ничто не могло удовлетворить жадность Мистера Мориарти к власти.// (=сильное желание получить больше)|js},
+    eng: "Simply nothing would satisfy Mr.Moriarty's greed for power.// (=a strong desire to get more)",
+  },
+  {
+    rus: {js|Кажется, ваш друг воспользовался вашей щедростью.// (=желание помочь и поделиться)|js},
+    eng: "Your friend seems to take advantage of your generosity.// (=desire to help and share)",
+  },
+  {
+    rus: {js|Наша деятельность приводит к загрязнению как побочный продукт, поэтому мы стараемся действовать ответственно и использовать экологически чистые технологии.// (=работайте разумно и будьте надежны)|js},
+    eng: "Our business activity creates pollution as a by-product, so we try to act responsibly and use eco-friendly technologies.// (=work in a sensible way and be reliable)",
+  },
+  {
+    rus: {js|Я управляю этой компанией более 10 лет и горжусь этим. // (=управляющий)|js},
+    eng: "I have been running this company for more than 10 years and I'm proud of it. // (=managing)",
+  },
+  {
+    rus: {js|маршрут - план или список мест, которые вы посетите в путешествие|js},
+    eng: "itinerary - a plan or list of the places you will visit on a journey",
+  },
+  {
+    rus: {js|Этот визит даст вам реальное представление о нашей повседневной работе // (=четкое понимание)|js},
+    eng: "This visit will give you a real insight into our daily work. // (=clear understanding)",
+  },
+  {
+    rus: {js|Поездка будет включать в себя много автомобильных поездок. //(=включать)|js},
+    eng: "The trip will involve a lot of road travel. //(=include)",
+  },
+  {
+    rus: {js|Мы настоятельно рекомендуем вам остаться с нашим гидом. // (=Я вам очень советую)|js},
+    eng: "We strongly recommend you stay with our guide. // (=I advise you that very much)",
+  },
+  {
+    rus: {js|С удовольствием познакомлю вас со своей командой. // (=очень счастливый)|js},
+    eng: "I'd be delighted to introduce you to my team. // (=very happy)",
+  },
+  {
+    rus: {js|Достопримечательности нашего города стоит посетить. // (=это хорошая идея, чтобы посетить их.)|js},
+    eng: "The sights of our city are well worth a visit. // (=it's a good idea to visit them.)",
+  },
+  {
+    rus: {js|Давайте просто пробежимся по маршруту вашей поездки. // (=читать быстро и объяснить)|js},
+    eng: "Let's just run through the itinerary of your trip. // (=read quickly and explain)",
+  },
+  {
+    rus: {js|Не стесняйтесь задавать любые вопросы. // (=добро пожаловать)|js},
+    eng: "Feel free to ask any questions you may have. // (=you're welcome)",
+  },
+  {
+    rus: {js|Мы организуем визит в наш новый офис. // (=организовать)|js},
+    eng: "We're going to arrange a visit to our new office. // (=organize)",
+  },
+  {
+    rus: {js|Звучит очень интересно. Я бы хотел обсудить это с тобой. // (=Я рад принять ваше приглашение)|js},
+    eng: "That sounds really interesting. I'd like to take you up on that. // (=I'm happy to accept your invitation)",
+  },
+  {
+    rus: {js|Это не совсем то, что я ищу. // (=Мне это не интересно)|js},
+    eng: "That's not really what I'm looking for. // (=I'm not interested)",
+  },
+  {
+    rus: {js|Это как раз то, что мне нужно. // (=Мне очень нравится ваше предложение)|js},
+    eng: "It's just the kind of thing I need. // (=I really like you suggestion)",
+  },
+  {
+    rus: {js|Имеет смысл приехать за 5 минут до начала презентации. // (=это разумно)|js},
+    eng: "It makes sense to arrive 5 minutes before the presentation starts. // (=it's reasonable)",
+  },
+  {
+    rus: {js|Звучит очень интересно. // (=Похоже)|js},
+    eng: "That sounds really interesting. // (=It seems)",
+  },
+  {
+    rus: {js|Звучит очень интересно. Я бы хотел обсудить это с тобой. // (=Я рад принять ваше приглашение)|js},
+    eng: "That sounds really interesting. I'd like to take you up on that. // (=I'm happy to accept your invitation)",
+  },
 ];
 
 let veryOldDictionary2 = [
@@ -2201,8 +2233,6 @@ let veryOldDictionary2 = [
     rus: {js|Char компилируется в целое число от 0 до 255, для дополнительной скорости. Вы можете также паттерн-матчинг на нем.|js},
     eng: "A character compiles to an integer ranging from 0 to 255, for extra speed. You can also pattern-match on it.",
   },
-
-
   {
     rus: {js|Я ем бананы каждый день. Я люблю бананы. // счетный|js},
     eng: "I eat a banana every day. I like bananas. // countable",
@@ -2387,7 +2417,6 @@ let veryOldDictionary2 = [
     rus: {js|Это хорошее предложение. Это хороший совет.|js},
     eng: "That's a good suggestion. That's good advice.",
   },
-
 ];
 
 let oldOldDictionary2 = [
