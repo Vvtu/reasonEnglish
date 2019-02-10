@@ -746,7 +746,7 @@ let dictionary2 = [
     eng: "OK. Tell me as soon as you know. I'll call you during the week.",
   },
   {
-    rus: {js|Мой новый партнер по команде такой общительный: дружелюбный, энергичный, ему легко и приятно быть с другими.|js},
+    rus: {js|Мой новый партнер по команде такой общительный: дружелюбный, энергичный, ей легко и приятно быть с другими.|js},
     eng: "My new teammate is so outgoing: she's friendly, energetic and finds it easy and enjoyable to be with the others.",
   },
   {
@@ -807,7 +807,7 @@ let dictionary2 = [
   },
   {
     rus: {js|Вы должны быть уверены в своих собственных суждениях. (предлог)|js},
-    eng: "You need to have confidence in your own judgment. (preposition)",
+    eng: "You need to have confidence in your own judgment. //(preposition)",
   },
   {
     rus: {js|Я не могу выбрать между двумя вариантами. //(выбирать)|js},
@@ -822,7 +822,7 @@ let dictionary2 = [
     eng: "Let's delay the decision until we've talked to the customer. //(postpone)",
   },
   {
-    rus: {js|Я собираюсь поговорить со своей командой, чтобы получить другую точку зрения на этот вопрос. //(вид)|js},
+    rus: {js|Я собираюсь поговорить со своим тимлидом, чтобы получить другую точку зрения на этот вопрос. //(вид)|js},
     eng: "I'm going to talk to my team lead to get a different perspective on the issue. //(view)",
   },
   {
