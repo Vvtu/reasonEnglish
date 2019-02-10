@@ -711,7 +711,7 @@ let veryOldDictionary1 = [
 let dictionary2 = [
   {
     rus: {js|Я решил попробовать выучить иностранный язык. Да ну? Какой язык вы собираетесь изучать?|js},
-    eng: "I've deceded to try and learn a foreign language. Have you? Which language are you going to learn?",
+    eng: "I've decided to try and learn a foreign language. Have you? Which language are you going to learn?",
   },
   {
     rus: {js|Ты собираешься пройти курс? Да. Он начнется на следующей неделе. Это здорово. Я уверен, вам понравится.|js},
