@@ -745,6 +745,102 @@ let dictionary2 = [
     rus: {js|Ладно. Скажи мне, как только узнаешь. Я позвоню тебе в течение недели.|js},
     eng: "OK. Tell me as soon as you know. I'll call you during the week.",
   },
+  {
+    rus: {js|Мой новый партнер по команде такой общительный: дружелюбный, энергичный, ему легко и приятно быть с другими.|js},
+    eng: "My new teammate is so outgoing: she's friendly, energetic and finds it easy and enjoyable to be with the others.",
+  },
+  {
+    rus: {js|Я считаю, что я гибкий человек, что означает, что я могу легко измениться в соответствии с любой новой ситуацией.|js},
+    eng: "I believe I'm a flexible person, which means I can change easily to suit any new situation.",
+  },
+  {
+    rus: {js|Мой руководитель очень условен, что означает, что у него есть поведение и отношение, которые большинство людей считают нормальными.|js},
+    eng: "My team lead is very conventional, which means he has the behaviour and attitudes that most people consider to be normal.",
+  },
+  {
+    rus: {js|Мой друг настроен решительно: он тверд в своих решениях и никому не позволит помешать ему делать то, что он хочет.|js},
+    eng: "My friend is determined: he's firm in his decisions and won't let anyone prevent him from doing what he wants to do.",
+  },
+  {
+    rus: {js|Мне просто нравится работать с вдумчивыми коллегами: они добры и заботятся о чувствах и потребностях других людей.|js},
+    eng: "I just love working with thoughtful colleagues: they're kind and care about other people's feelings and needs.",
+  },
+  {
+    rus: {js|Я хотел бы быть самодостаточным, когда мне не придется зависеть от других.|js},
+    eng: "I'd love to be self-contained when I wouldn't have to depend on others for support.",
+  },
+  {
+    rus: {js|Джейн очень тактична: она старается не говорить и не делать ничего, что может раздражать или расстраивать других людей.|js},
+    eng: "Jane is really tactful: she's careful not to say or do anything that will annoy or upset other people.",
+  },
+  {
+    rus: {js|Я методичный человек, который делает все тщательно и логично.|js},
+    eng: "I'm a methodical person, who does things in a careful and logical way.",
+  },
+  {
+    rus: {js|Мой руководитель команды очень отстранен: на него не влияют другие люди или его собственные чувства.|js},
+    eng: "My team lead is really detached: he isn't influenced by other people or by his own feelings.",
+  },
+  {
+    rus: {js|Трудно работать с очень импульсивными людьми, поскольку они действуют внезапно, не задумываясь о том, что может произойти из-за их действий.|js},
+    eng: "It's hard to work with very impulsive people as they act suddenly without thinking carefully about what might happen because of their actions.",
+  },
+  {
+    rus: {js|Мне не нравится работать с нерешительными людьми: им трудно принимать решения, и это все тормозит.|js},
+    eng: "I don't like working with indecisive people: they find it difficult to make decisions and it slows everything.",
+  },
+  {
+    rus: {js|Мне нужно оставаться сосредоточенным, что означает, что я должен иметь четкие цели и уделять внимание их достижению.|js},
+    eng: "I need to stay focused, which means I need to have clear aims and give my attention to achieving them.",
+  },
+  {
+    rus: {js|Мой руководитель очень прагматичен и всегда решает проблемы практично и разумно.|js},
+    eng: "My team lead is very pragmatic and always solves problems in a practical and sensible way.",
+  },
+  {
+    rus: {js|Нам нужно принять рациональное решение. //(на основе разума, а не эмоций)|js},
+    eng: "We need to make a rational decision. //(based on reason rather than emotions)",
+  },
+  {
+    rus: {js|Обычно я взвешиваю всю информацию перед принятием решения. //(рассмотрим хорошие и плохие аспекты)|js},
+    eng: "I usually weigh up all the information before making a decision. //(consider good and bad aspects)",
+  },
+  {
+    rus: {js|Вы должны быть уверены в своих собственных суждениях. (предлог)|js},
+    eng: "You need to have confidence in your own judgment. (preposition)",
+  },
+  {
+    rus: {js|Я не могу выбрать между двумя вариантами. //(выбирать)|js},
+    eng: "I can't decide between the two options. //(choose)",
+  },
+  {
+    rus: {js|Нужно продумать все возможные решения, а потом сделать выбор. //(подумайте о них внимательно)|js},
+    eng: "We need to consider all the possible solutions and then make a choice. //(think about them carefully)",
+  },
+  {
+    rus: {js|Давайте отложим решение, пока не поговорим с клиентом. //(откладывать)|js},
+    eng: "Let's delay the decision until we've talked to the customer. //(postpone)",
+  },
+  {
+    rus: {js|Я собираюсь поговорить со своей командой, чтобы получить другую точку зрения на этот вопрос. //(вид)|js},
+    eng: "I'm going to talk to my team lead to get a different perspective on the issue. //(view)",
+  },
+  {
+    rus: {js|Когда мне трудно принять решение, я обычно полагаюсь на интуицию. //(доверие)|js},
+    eng: "When I find it difficult to make a decision, I usually rely on my intuition. //(trust)",
+  },
+  {
+    rus: {js|Я собираюсь поговорить со своей командой, чтобы получить другую точку зрения на этот вопрос.|js},
+    eng: "I'm going to talk to my team lead to get a different perspective on the issue.",
+  },
+  {
+    rus: {js|Вы должны быть уверены в своих собственных суждениях. //(обязательно)|js},
+    eng: "You need to have confidence in your own judgment. //(be sure about)",
+  },
+  {
+    rus: {js|Пока еще слишком рано судить об этом предложении. //(мнение после тщательного размышления)|js},
+    eng: "It is still too soon to form a judgement about this suggestion. //(opinion after thinking carefully)",
+  },
 ];
 
 let oldDictionary2 = [
