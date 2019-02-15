@@ -772,7 +772,96 @@ let dictionary2 = [
   rus: {js|Я рекомендовал, чтобы мы сейчас организовали профессиональную поддержку и управление стрессом, чтобы помочь ему.|js},
   eng: "I recommended that we now arrange professional support and stress management to help him.",
 },
-
+/*
+{
+  rus: {js|Какова ваша позиция по этому вопросу? //(мнение)|js},
+  eng: "What's your position on this? //(view)",
+},
+{
+  rus: {js|Насколько я понимаю, мы вряд ли продвинемся в этом направлении. //(на мой взгляд)|js},
+  eng: "As far as I'm concerned, we'd hardly make any progress this way. //(in my opinion)",
+},
+{
+  rus: {js|Меня это не убедило. /(Я думаю, что ты ошибаешься.)|js},
+  eng: "I'm not convinced. //(I think you're wrong.)",
+},
+{
+  rus: {js|Я думаю, было бы безумием принять этот срок. /(Это плохая идея.)|js},
+  eng: "I think it would be crazy to accept this deadline. //(It's a bad idea.)",
+},
+{
+  rus: {js|Посмотрите на цифры сверхурочных. Они здесь в письменной форме. //(в письменном виде, в печатном виде)|js},
+  eng: "Look at the overtime figures. They're here in black and white. //(in written form, and therefore definite)",
+},
+{
+  rus: {js|Давайте подготовим список действий из того, что мы уже обсуждали. //(подготовка списка)|js},
+  eng: "Let's draw up some action points on what we've discussed so far. //(prepare a list)",
+},
+{
+  rus: {js|Майк, не мог бы ты начать, пожалуйста? //(начало обсуждения)|js},
+  eng: "Mike, could you start us off, please? //(begin the discussion)",
+},
+{
+  rus: {js|Давайте углубимся в проблему и обсудим ее еще раз на следующей встрече. //(исследовать)|js},
+  eng: "Let's look into the problem and discuss it again at our next meeting. //(investigate)",
+},
+{
+  rus: {js|Перейдем к следующему пункту повестки дня.|js},
+  eng: "Let's turn to the next item on the agenda.",
+},
+{
+  rus: {js|Подожди, давай послушаем, что Крис хочет сказать. (дело прерывая)|js},
+  eng: "Hang on, let's hear what Chris has to say. (dealing with interrupting)",
+},
+{
+  rus: {js|Недостатком этого решения является то, что нам придется делать много лишней работы. //(неудобство)|js},
+  eng: "The drawback of this solution is that we'll have to do a lot of extra work. //(disadvantage)",
+},
+{
+  rus: {js|То есть ты хочешь сказать, что мы пропустим крайний срок? //(то, что вы пытаетесь сказать,)|js},
+  eng: "So what you're getting at is we're going to miss the deadline? //(what you're trying to say is)",
+},
+{
+  rus: {js|Мы можем перейти к другому вопросу? //(начать говорить о)|js},
+  eng: "Can we move on to another issue? //(start talking about)",
+},
+{
+  rus: {js|Хорошо, похоже, мы кое-куда продвинулись. //(Я думаю, мы делаем успехи)|js},
+  eng: "Good, we seem to be getting somewhere. //(I think we're making progress)",
+},
+{
+  rus: {js|Какова ваша позиция по этому вопросу? (предлог)|js},
+  eng: "What's your position on this? //(preposition)",
+},
+{
+  rus: {js|Перейдем к следующему пункту повестки дня. (предлог)|js},
+  eng: "Let's turn to the next item on the agenda. //(preposition)",
+},
+{
+  rus: {js|Если мы внимательно посмотрим на факты, то увидим, что наши расходы слишком высоки. //(см. подробно )|js},
+  eng: "If we look closely at the facts, we'll see that our costs are too high. //(see in detail)",
+},
+{
+  rus: {js|Дело в том, что нам нужно выяснить, почему у нас так много сверхурочных.//(в чем проблема)|js},
+  eng: "The thing is that we need to find out why we have so much overtime.//(what the problem is)",
+},
+{
+  rus: {js|Они попросили его уйти, - другими словами, он был уволен. //(те средства)|js},
+  eng: "They asked him to leave - in other words he was fired. //(that means)",
+},
+{
+  rus: {js|Сегодня я хотел бы установить, где мы можем улучшить рабочий процесс проекта. //(выяснить)|js},
+  eng: "Today I'd like to establish where we can improve the project workflow. //(find out)",
+},
+{
+  rus: {js|Я не хочу тратить на это слишком много времени. //(много времени для обсуждения)|js},
+  eng: "I don't want to spend too long on this point. //(much time to discuss)",
+},
+{
+  rus: {js|Я имею в виду, нам нужно больше информации об атмосфере в офисе.|js},
+  eng: "What I mean is we need more information about the atmosphere in the office.",
+},
+*/
 
 
 ];
