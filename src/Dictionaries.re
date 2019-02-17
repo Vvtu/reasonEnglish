@@ -764,7 +764,7 @@ let dictionary2 = [
     rus: {js|Я рекомендовал, чтобы мы сейчас организовали профессиональную поддержку и управление стрессом, чтобы помочь ему.|js},
     eng: "I recommended that we now arrange professional support and stress management to help him.",
   },
-  /*
+
    {
      rus: {js|Какова ваша позиция по этому вопросу? //(мнение)|js},
      eng: "What's your position on this? //(view)",
@@ -853,7 +853,7 @@ let dictionary2 = [
      rus: {js|Я имею в виду, нам нужно больше информации об атмосфере в офисе.|js},
      eng: "What I mean is we need more information about the atmosphere in the office.",
    },
-   */
+
 ];
 
 let oldDictionary2 = [
