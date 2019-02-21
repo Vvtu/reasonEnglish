@@ -707,153 +707,106 @@ let veryOldDictionary1 = [
 ];
 
 let dictionary2 = [
-  {rus: {js|Хорошие новости!|js}, eng: "The news is good!"},
   {
-    rus: {js|( few = not enough ) ( a few = several )|js},
-    eng: "( few = not enough ) ( a few = several )",
+    rus: {js|Ситуация серьезная. Нужно что-то сделать, пока не поздно.|js},
+    eng: "The situation is serious. Something must be done before it's too late.",
   },
   {
-    rus: {js|( little = not enough ) ( a little = some / enough )|js},
-    eng: "( little = not enough ) ( a little = some / enough )",
+    rus: {js|Я уже должен был получить письмо. Возможно, его отправили не по тому адресу.|js},
+    eng: "I should have received the letter by now. It might have been sent to the wrong address.",
   },
   {
-    rus: {js|Джозеф всегда был одним из самых эффективных членов команды.|js},
-    eng: "Jozef was always one of the most effective members of the team.",
+    rus: {js|Решение не будет принято до следующего заседания.|js},
+    eng: "A decision will not have been made until next the next meeting.",
   },
   {
-    rus: {js|Кроме того, он добросовестен и проявляет большой потенциал.|js},
-    eng: "Furthermore he is conscientious and shows great potential.",
+    rus: {js|Считаете ли вы, что больше денег нужно было потратить на образование?|js},
+    eng: "Do you think that more money should have been spent on education?",
   },
   {
-    rus: {js|Несмотря на то, что у него мало опыта в туристической отрасли, он быстро достиг превосходного уровня знаний.|js},
-    eng: "Despite having little experience in the travel industry, he has quickly attained an excellent level of expertise.",
+    rus: {js|Дорога находится в очень плохом состоянии. Она должна была быть отремонтирована давным-давно.|js},
+    eng: "The road is in very bad condition. It should have been repaired a long time ago.",
   },
   {
-    rus: {js|Однако в последнее время появились опасения по поводу его работы.|js},
-    eng: "However recently there have been concerns about his performance at work.",
+    rus: {js|Раненый не мог ходить и его должны были нести.|js},
+    eng: "The injured man couldn't walk and had to have been carried.",
   },
   {
-    rus: {js|В то время как в прошлом он был пунктуальным и надежным, он начал приходить поздно.|js},
-    eng: "Whereas in the past he has been punctual and reliable, he has started to arrive late.",
+    rus: {js|Я сказал администратору отеля, что хотел бы, чтобы меня разбудили в 6.30 на следующее утро.|js},
+    eng: "I told the hotel receptionist I wanted to have been waken up at 6.30 the next morning.",
   },
   {
-    rus: {js|Кроме того, он брал слишком много выходных.|js},
-    eng: "In addition he has had a lot of time off.",
+    rus: {js|Если бы вы не толкнули полицейского, вас бы не арестовали.|js},
+    eng: "If you hadn't pushed the policeman, you wouldn't have been arrested.",
   },
   {
-    rus: {js|В связи с этим его коллегам пришлось взять на себя часть работы.|js},
-    eng: "Owing to this, his colleagues have had to take on some of his workflow.",
+    rus: {js|Неизвестно, как начался пожар, но он мог быть вызван неисправностью электричества.|js},
+    eng: "It's not certain how the fire started, but it might have been caused by an electrical fault.",
   },
   {
-    rus: {js|Кроме того, некоторые члены его команды сообщили, что в последнее время он начал проявлять признаки стресса.|js},
-    eng: "Furthermore some of his team have reported that he has started to show signs of stress recently.",
+    rus: {js|Кто-то убрался в комнате. Номер был очищен.|js},
+    eng: "Somebody has cleaned the room. The room has been cleaned.",
   },
   {
-    rus: {js|Поэтому я запросил встречу с Джозефом для обсуждения этих вопросов.|js},
-    eng: "Consequently I requested a meeting with Jozef to discuss these matters.",
+    rus: {js|Кто-то сейчас пользуется компьютером. Компьютер используется прямо сейчас.|js},
+    eng: "Somebody is using the computer right now. The computer is being used right now.",
   },
   {
-    rus: {js|Хотя сначала он не хотел обсуждать эту проблему, в конце концов нам удалось прояснить этот вопрос.|js},
-    eng: "Although he was reluctant to discuss the problem at first, we were eventually able to clarify the matter.",
+    rus: {js|Я не знал, что кто-то записывает наш разговор. Я не знал, что наш разговор записывается.|js},
+    eng: "I didn't realize that somebody was recording our conversation. I didn't realize that out conversation was being recorded.",
   },
   {
-    rus: {js|Помимо работы над рядом сложных проектов, Джозеф также ухаживал за больным родственником и был в процессе переезда.|js},
-    eng: "As well as working on a number of difficult projects, Jozef has also been looking after ill relative and in the process of moving house.",
+    rus: {js|Когда мы прибыли на стадион, мы обнаружили, что они отменили игру. Когда мы добрались до стадиона, то обнаружили, что игру отменили.|js},
+    eng: "When we got to the stadium, we found that they had canceled the game. When we got to the stadium, we found that the game had been canceled.",
   },
   {
-    rus: {js|Я рекомендовал, чтобы мы сейчас организовали профессиональную поддержку и управление стрессом, чтобы помочь ему.|js},
-    eng: "I recommended that we now arrange professional support and stress management to help him.",
+    rus: {js|Вокруг города строят новую кольцевую дорогу. Вокруг города строится новая дорога.|js},
+    eng: "They are building a new ring road round the city. The new road is being built round the city.",
   },
-
-   {
-     rus: {js|Какова ваша позиция по этому вопросу? //(мнение)|js},
-     eng: "What's your position on this? //(view)",
-   },
-   {
-     rus: {js|Насколько я понимаю, мы вряд ли продвинемся в этом направлении. //(на мой взгляд)|js},
-     eng: "As far as I'm concerned, we'd hardly make any progress this way. //(in my opinion)",
-   },
-   {
-     rus: {js|Меня это не убедило. /(Я думаю, что ты ошибаешься.)|js},
-     eng: "I'm not convinced. //(I think you're wrong.)",
-   },
-   {
-     rus: {js|Я думаю, было бы безумием принять этот срок. /(Это плохая идея.)|js},
-     eng: "I think it would be crazy to accept this deadline. //(It's a bad idea.)",
-   },
-   {
-     rus: {js|Посмотрите на цифры сверхурочных. Они здесь в письменной форме. //(в письменном виде, в печатном виде)|js},
-     eng: "Look at the overtime figures. They're here in black and white. //(in written form, and therefore definite)",
-   },
-   {
-     rus: {js|Давайте подготовим список действий из того, что мы уже обсуждали. //(подготовка списка)|js},
-     eng: "Let's draw up some action points on what we've discussed so far. //(prepare a list)",
-   },
-   {
-     rus: {js|Майк, не мог бы ты начать, пожалуйста? //(начало обсуждения)|js},
-     eng: "Mike, could you start us off, please? //(begin the discussion)",
-   },
-   {
-     rus: {js|Давайте углубимся в проблему и обсудим ее еще раз на следующей встрече. //(исследовать)|js},
-     eng: "Let's look into the problem and discuss it again at our next meeting. //(investigate)",
-   },
-   {
-     rus: {js|Перейдем к следующему пункту повестки дня.|js},
-     eng: "Let's turn to the next item on the agenda.",
-   },
-   {
-     rus: {js|Подожди, давай послушаем, что Крис хочет сказать. (дело прерывая)|js},
-     eng: "Hang on, let's hear what Chris has to say. (dealing with interrupting)",
-   },
-   {
-     rus: {js|Недостатком этого решения является то, что нам придется делать много лишней работы. //(неудобство)|js},
-     eng: "The drawback of this solution is that we'll have to do a lot of extra work. //(disadvantage)",
-   },
-   {
-     rus: {js|То есть ты хочешь сказать, что мы пропустим крайний срок? //(то, что вы пытаетесь сказать,)|js},
-     eng: "So what you're getting at is we're going to miss the deadline? //(what you're trying to say is)",
-   },
-   {
-     rus: {js|Мы можем перейти к другому вопросу? //(начать говорить о)|js},
-     eng: "Can we move on to another issue? //(start talking about)",
-   },
-   {
-     rus: {js|Хорошо, похоже, мы кое-куда продвинулись. //(Я думаю, мы делаем успехи)|js},
-     eng: "Good, we seem to be getting somewhere. //(I think we're making progress)",
-   },
-   {
-     rus: {js|Какова ваша позиция по этому вопросу? (предлог)|js},
-     eng: "What's your position on this? //(preposition)",
-   },
-   {
-     rus: {js|Перейдем к следующему пункту повестки дня. (предлог)|js},
-     eng: "Let's turn to the next item on the agenda. //(preposition)",
-   },
-   {
-     rus: {js|Если мы внимательно посмотрим на факты, то увидим, что наши расходы слишком высоки. //(см. подробно )|js},
-     eng: "If we look closely at the facts, we'll see that our costs are too high. //(see in detail)",
-   },
-   {
-     rus: {js|Дело в том, что нам нужно выяснить, почему у нас так много сверхурочных.//(в чем проблема)|js},
-     eng: "The thing is that we need to find out why we have so much overtime.//(what the problem is)",
-   },
-   {
-     rus: {js|Они попросили его уйти, - другими словами, он был уволен. //(те средства)|js},
-     eng: "They asked him to leave - in other words he was fired. //(that means)",
-   },
-   {
-     rus: {js|Сегодня я хотел бы установить, где мы можем улучшить рабочий процесс проекта. //(выяснить)|js},
-     eng: "Today I'd like to establish where we can improve the project workflow. //(find out)",
-   },
-   {
-     rus: {js|Я не хочу тратить на это слишком много времени. //(много времени для обсуждения)|js},
-     eng: "I don't want to spend too long on this point. //(much time to discuss)",
-   },
-   {
-     rus: {js|Я имею в виду, нам нужно больше информации об атмосфере в офисе.|js},
-     eng: "What I mean is we need more information about the atmosphere in the office.",
-   },
-
+  {
+    rus: {js|Они построили новую больницу рядом с аэропортом. Рядом с аэропортом построена новая больница.|js},
+    eng: "They have built a new hospital near the airport. The new hospital has been built near the airport.",
+  },
+  {
+    rus: {js|За нами кто-то следит. Думаю, за нами следят.|js},
+    eng: "There's somebody behind us. I think we're being followed.",
+  },
+  {
+    rus: {js|Эта комната выглядит по-другому. Вы покрасили стены?|js},
+    eng: "This room looks different. Have you painted the walls?",
+  },
+  {
+    rus: {js|Мой зонтик исчез. Кто-то забрал мой зонтик.|js},
+    eng: "My umbrella has disappeared. Somebody has taken my umbrella.",
+  },
+  {
+    rus: {js|Сэм теперь получает более высокую зарплату. Его повысили в должности.|js},
+    eng: "Sam gets a higher salary now. He has been promoted.",
+  },
+  {
+    rus: {js|Энн не сможет использовать свой офис на этой неделе. Он ремонтируется.|js},
+    eng: "Ann can't use her office this week. It is being redecorated.",
+  },
+  {
+    rus: {js|Вчера была проблема с ксероксом, но теперь все в порядке. Он снова работает. Он был отремонтирован.|js},
+    eng: "There was a problem with the photocopier yesterday, but now it's OK. It is working again. It has been repaired.",
+  },
+  {
+    rus: {js|Когда я вошел в комнату, то увидел, что стол и стулья находятся в разных местах. Мебель была перемещена.|js},
+    eng: "When I went into the room, I saw that the table and chairs were not in the same place. The furniture has been moved.",
+  },
+  {
+    rus: {js|Мой сосед исчез полгода назад.  С тех пор его никто не видел.|js},
+    eng: "A neighbor of mine disappeared six month ago. He has not been seen since then.",
+  },
+  {
+    rus: {js|Интересно, как Джейн сейчас. Я не видел ее целую вечность.|js},
+    eng: "I wonder how Jane is these days. I haven't seen her for ages.",
+  },
+  {
+    rus: {js|Моего друга ограбили по дороге домой несколько дней назад. Тебя когда-нибудь грабили?|js},
+    eng: "A friend of mine was mugged on his way home a few nights ago. Have you ever been mugged?",
+  },
 ];
 
 let oldDictionary2 = [
@@ -2225,6 +2178,151 @@ let oldDictionary2 = [
   {
     rus: {js|Пока еще слишком рано судить об этом предложении. //(мнение после тщательного размышления)|js},
     eng: "It is still too soon to form a judgement about this suggestion. //(opinion after thinking carefully)",
+  },
+  {rus: {js|Хорошие новости!|js}, eng: "The news is good!"},
+  {
+    rus: {js|( few = not enough ) ( a few = several )|js},
+    eng: "( few = not enough ) ( a few = several )",
+  },
+  {
+    rus: {js|( little = not enough ) ( a little = some / enough )|js},
+    eng: "( little = not enough ) ( a little = some / enough )",
+  },
+  {
+    rus: {js|Джозеф всегда был одним из самых эффективных членов команды.|js},
+    eng: "Jozef was always one of the most effective members of the team.",
+  },
+  {
+    rus: {js|Кроме того, он добросовестен и проявляет большой потенциал.|js},
+    eng: "Furthermore he is conscientious and shows great potential.",
+  },
+  {
+    rus: {js|Несмотря на то, что у него мало опыта в туристической отрасли, он быстро достиг превосходного уровня знаний.|js},
+    eng: "Despite having little experience in the travel industry, he has quickly attained an excellent level of expertise.",
+  },
+  {
+    rus: {js|Однако в последнее время появились опасения по поводу его работы.|js},
+    eng: "However recently there have been concerns about his performance at work.",
+  },
+  {
+    rus: {js|В то время как в прошлом он был пунктуальным и надежным, он начал приходить поздно.|js},
+    eng: "Whereas in the past he has been punctual and reliable, he has started to arrive late.",
+  },
+  {
+    rus: {js|Кроме того, он брал слишком много выходных.|js},
+    eng: "In addition he has had a lot of time off.",
+  },
+  {
+    rus: {js|В связи с этим его коллегам пришлось взять на себя часть работы.|js},
+    eng: "Owing to this, his colleagues have had to take on some of his workflow.",
+  },
+  {
+    rus: {js|Кроме того, некоторые члены его команды сообщили, что в последнее время он начал проявлять признаки стресса.|js},
+    eng: "Furthermore some of his team have reported that he has started to show signs of stress recently.",
+  },
+  {
+    rus: {js|Поэтому я запросил встречу с Джозефом для обсуждения этих вопросов.|js},
+    eng: "Consequently I requested a meeting with Jozef to discuss these matters.",
+  },
+  {
+    rus: {js|Хотя сначала он не хотел обсуждать эту проблему, в конце концов нам удалось прояснить этот вопрос.|js},
+    eng: "Although he was reluctant to discuss the problem at first, we were eventually able to clarify the matter.",
+  },
+  {
+    rus: {js|Помимо работы над рядом сложных проектов, Джозеф также ухаживал за больным родственником и был в процессе переезда.|js},
+    eng: "As well as working on a number of difficult projects, Jozef has also been looking after ill relative and in the process of moving house.",
+  },
+  {
+    rus: {js|Я рекомендовал, чтобы мы сейчас организовали профессиональную поддержку и управление стрессом, чтобы помочь ему.|js},
+    eng: "I recommended that we now arrange professional support and stress management to help him.",
+  },
+  {
+    rus: {js|Какова ваша позиция по этому вопросу? //(мнение)|js},
+    eng: "What's your position on this? //(view)",
+  },
+  {
+    rus: {js|Насколько я понимаю, мы вряд ли продвинемся в этом направлении. //(на мой взгляд)|js},
+    eng: "As far as I'm concerned, we'd hardly make any progress this way. //(in my opinion)",
+  },
+  {
+    rus: {js|Меня это не убедило. /(Я думаю, что ты ошибаешься.)|js},
+    eng: "I'm not convinced. //(I think you're wrong.)",
+  },
+  {
+    rus: {js|Я думаю, было бы безумием принять этот срок. /(Это плохая идея.)|js},
+    eng: "I think it would be crazy to accept this deadline. //(It's a bad idea.)",
+  },
+  {
+    rus: {js|Посмотрите на цифры сверхурочных. Они здесь в письменной форме. //(в письменном виде, в печатном виде)|js},
+    eng: "Look at the overtime figures. They're here in black and white. //(in written form, and therefore definite)",
+  },
+  {
+    rus: {js|Давайте подготовим список действий из того, что мы уже обсуждали. //(подготовка списка)|js},
+    eng: "Let's draw up some action points on what we've discussed so far. //(prepare a list)",
+  },
+  {
+    rus: {js|Майк, не мог бы ты начать, пожалуйста? //(начало обсуждения)|js},
+    eng: "Mike, could you start us off, please? //(begin the discussion)",
+  },
+  {
+    rus: {js|Давайте углубимся в проблему и обсудим ее еще раз на следующей встрече. //(исследовать)|js},
+    eng: "Let's look into the problem and discuss it again at our next meeting. //(investigate)",
+  },
+  {
+    rus: {js|Перейдем к следующему пункту повестки дня.|js},
+    eng: "Let's turn to the next item on the agenda.",
+  },
+  {
+    rus: {js|Подожди, давай послушаем, что Крис хочет сказать. (дело прерывая)|js},
+    eng: "Hang on, let's hear what Chris has to say. (dealing with interrupting)",
+  },
+  {
+    rus: {js|Недостатком этого решения является то, что нам придется делать много лишней работы. //(неудобство)|js},
+    eng: "The drawback of this solution is that we'll have to do a lot of extra work. //(disadvantage)",
+  },
+  {
+    rus: {js|То есть ты хочешь сказать, что мы пропустим крайний срок? //(то, что вы пытаетесь сказать,)|js},
+    eng: "So what you're getting at is we're going to miss the deadline? //(what you're trying to say is)",
+  },
+  {
+    rus: {js|Мы можем перейти к другому вопросу? //(начать говорить о)|js},
+    eng: "Can we move on to another issue? //(start talking about)",
+  },
+  {
+    rus: {js|Хорошо, похоже, мы кое-куда продвинулись. //(Я думаю, мы делаем успехи)|js},
+    eng: "Good, we seem to be getting somewhere. //(I think we're making progress)",
+  },
+  {
+    rus: {js|Какова ваша позиция по этому вопросу? (предлог)|js},
+    eng: "What's your position on this? //(preposition)",
+  },
+  {
+    rus: {js|Перейдем к следующему пункту повестки дня. (предлог)|js},
+    eng: "Let's turn to the next item on the agenda. //(preposition)",
+  },
+  {
+    rus: {js|Если мы внимательно посмотрим на факты, то увидим, что наши расходы слишком высоки. //(см. подробно )|js},
+    eng: "If we look closely at the facts, we'll see that our costs are too high. //(see in detail)",
+  },
+  {
+    rus: {js|Дело в том, что нам нужно выяснить, почему у нас так много сверхурочных.//(в чем проблема)|js},
+    eng: "The thing is that we need to find out why we have so much overtime.//(what the problem is)",
+  },
+  {
+    rus: {js|Они попросили его уйти, - другими словами, он был уволен. //(те средства)|js},
+    eng: "They asked him to leave - in other words he was fired. //(that means)",
+  },
+  {
+    rus: {js|Сегодня я хотел бы установить, где мы можем улучшить рабочий процесс проекта. //(выяснить)|js},
+    eng: "Today I'd like to establish where we can improve the project workflow. //(find out)",
+  },
+  {
+    rus: {js|Я не хочу тратить на это слишком много времени. //(много времени для обсуждения)|js},
+    eng: "I don't want to spend too long on this point. //(much time to discuss)",
+  },
+  {
+    rus: {js|Я имею в виду, нам нужно больше информации об атмосфере в офисе.|js},
+    eng: "What I mean is we need more information about the atmosphere in the office.",
   },
 ];
 
