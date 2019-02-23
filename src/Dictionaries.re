@@ -717,7 +717,7 @@ let dictionary2 = [
   },
   {
     rus: {js|Решение не будет принято до следующего заседания.|js},
-    eng: "A decision will not have been made until next the next meeting.",
+    eng: "A decision will not have been made until the next meeting.",
   },
   {
     rus: {js|Считаете ли вы, что больше денег нужно было потратить на образование?|js},
