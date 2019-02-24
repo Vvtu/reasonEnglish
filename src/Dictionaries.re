@@ -793,7 +793,7 @@ let dictionary2 = [
   },
   {
     rus: {js|Когда я вошел в комнату, то увидел, что стол и стулья находятся в разных местах. Мебель была перемещена.|js},
-    eng: "When I went into the room, I saw that the table and chairs were not in the same place. The furniture has been moved.",
+    eng: "When I went into the room, I saw that the table and chairs were not in the same place. The furniture had been moved.",
   },
   {
     rus: {js|Мой сосед исчез полгода назад.  С тех пор его никто не видел.|js},
