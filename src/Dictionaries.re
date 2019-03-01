@@ -708,104 +708,148 @@ let veryOldDictionary1 = [
 
 let dictionary2 = [
   {
+    rus: {js|Мой дед был строителем. Он построил этот дом в 1961 году.|js},
+    eng: "My grandfather was a builder. He built this house in 1961. // When we use an active verb, we say what the subject does:",
+  },
+  {
+    rus: {js|Это большая компания. Здесь работают двести человек.|js},
+    eng: "It's a big company. It employs two hundred people. // When we use an active verb, we say what the subject does:",
+  },
+  {
+    rus: {js|Сколько лет этому дому? Он был построен в 1961 году.|js},
+    eng: "How old is this house? It was built in 1961. // When we use a passive verb, we say what happens to the subject:",
+  },
+  {
+    rus: {js|В компании работает двести человек.|js},
+    eng: "Two hundred people are employed by the company. // When we use a passive verb, we say what happens to the subject:",
+  },
+  {
+    rus: {js|При ограблении было украдено много денег. (кто-то украл его, но мы не знаем, кто)|js},
+    eng: "A lot of money was stolen in the robbery. (somebody stole it, but we don't know who)",
+  },
+  {
+    rus: {js|Эта комната убирается каждый день? (кто-нибудь его чистит? - это не важно, кто)|js},
+    eng: "Is this room cleaned every day? (does somebody clean it? - it's not important who)",
+  },
+  {
+    rus: {js|Этот дом был построен моим дедом.|js},
+    eng: "This house was built by my grandfather. // If we want to say who does or what causes the action, we use by:",
+  },
+  {
+    rus: {js|В компании работает двести человек.|js},
+    eng: "Two hundred people are employed by the company. // If we want to say who does or what causes the action, we use by:",
+  },
+  {
+    rus: {js|Многие аварии происходят из-за неосторожного вождения.|js},
+    eng: "Many accidents are caused by careless driving.",
+  },
+  {
+    rus: {js|Меня не приглашают на вечеринки очень часто.|js},
+    eng: "I'm not invited to parties very often.",
+  },
+  {
+    rus: {js|Как произносится это слово?|js},
+    eng: "How is this word pronounced?",
+  },
+  {
+    rus: {js|Ночью нас разбудил громкий шум.|js},
+    eng: "We were woken up by a loud noise during the night.",
+  },
+  {
+    rus: {js|Ты ходила на вечеринку? Нет, меня не приглашали.|js},
+    eng: "Did you go to the party? No, I wasn't invited.",
+  },
+  {
+    rus: {js|Сколько денег было украдено во время ограбления?|js},
+    eng: "How much money was stolen in the robbery?",
+  },
+  {
+    rus: {js|Кто-нибудь уберет эту комнату позже.|js},
+    eng: "Somebody will clean this room later.",
+  },
+  {
+    rus: {js|Эта комната будет убрана позже.|js},
+    eng: "This room will be cleaned later.",
+  },
+  {
     rus: {js|Ситуация серьезная. Нужно что-то сделать, пока не поздно.|js},
     eng: "The situation is serious. Something must be done before it's too late.",
   },
   {
-    rus: {js|Я уже должен был получить письмо. Возможно, его отправили не по тому адресу.|js},
-    eng: "I should have received the letter by now. It might have been sent to the wrong address.",
+    rus: {js|Тайна - это то, что невозможно объяснить.|js},
+    eng: "A mystery is something that can't be explained.",
   },
   {
-    rus: {js|Решение не будет принято до следующего заседания.|js},
-    eng: "A decision will not have been made until the next meeting.",
+    rus: {js|Музыка была очень громкой и слышалась издалека.|js},
+    eng: "The music was very loud and could be heard from a long way away.",
   },
   {
-    rus: {js|Считаете ли вы, что больше денег нужно было потратить на образование?|js},
-    eng: "Do you think that more money should have been spent on education?",
+    rus: {js|В следующем году будет построен новый супермаркет.|js},
+    eng: "A new supermarket is going to be built next year.",
   },
   {
-    rus: {js|Дорога находится в очень плохом состоянии. Она должна была быть отремонтирована давным-давно.|js},
-    eng: "The road is in very bad condition. It should have been repaired a long time ago.",
+    rus: {js|Пожалуйста, уходи. Я хочу, чтобы меня оставили в покое.|js},
+    eng: "Please go away. I want to be left alone.",
   },
   {
-    rus: {js|Раненый не мог ходить и его должны были нести.|js},
-    eng: "The injured man couldn't walk and had to have been carried.",
+    rus: {js|Кто-то должен был убраться в комнате.|js},
+    eng: "Somebody should have cleaned the room.",
   },
   {
-    rus: {js|Я сказал администратору отеля, что хотел бы, чтобы меня разбудили в 6.30 на следующее утро.|js},
-    eng: "I told the hotel receptionist I wanted to have been waken up at 6.30 the next morning.",
+    rus: {js|Номер должен был быть убран.|js},
+    eng: "The room should have been cleaned.",
   },
   {
-    rus: {js|Если бы вы не толкнули полицейского, вас бы не арестовали.|js},
-    eng: "If you hadn't pushed the policeman, you wouldn't have been arrested.",
+    rus: {js|Сначала были какие-то проблемы, но, похоже, они решены.|js},
+    eng: "There were some problems at first, but they seem to have been solved.",
   },
   {
-    rus: {js|Неизвестно, как начался пожар, но он мог быть вызван неисправностью электричества.|js},
-    eng: "It's not certain how the fire started, but it might have been caused by an electrical fault.",
+    rus: {js|Комната выглядит хорошо. Кто-то убрал её.|js},
+    eng: "The room looks nice. Somebody has cleaned it.",
   },
   {
-    rus: {js|Кто-то убрался в комнате. Номер был очищен.|js},
-    eng: "Somebody has cleaned the room. The room has been cleaned.",
+    rus: {js|Комната выглядит хорошо. Она была убрана.|js},
+    eng: "The room looks nice. It has been cleaned.",
   },
   {
-    rus: {js|Кто-то сейчас пользуется компьютером. Компьютер используется прямо сейчас.|js},
-    eng: "Somebody is using the computer right now. The computer is being used right now.",
+    rus: {js|Вы слышали? Поездка была отменена.|js},
+    eng: "Have you heard? The trip has been cancelled.",
   },
   {
-    rus: {js|Я не знал, что кто-то записывает наш разговор. Я не знал, что наш разговор записывается.|js},
-    eng: "I didn't realize that somebody was recording our conversation. I didn't realize that out conversation was being recorded.",
+    rus: {js|Тебя когда-нибудь кусала собака?|js},
+    eng: "Have you ever been bitten by a dog?",
   },
   {
-    rus: {js|Когда мы прибыли на стадион, мы обнаружили, что они отменили игру. Когда мы добрались до стадиона, то обнаружили, что игру отменили.|js},
-    eng: "When we got to the stadium, we found that they had canceled the game. When we got to the stadium, we found that the game had been canceled.",
+    rus: {js|Ты идешь на вечеринку? Нет, меня не приглашали.|js},
+    eng: "Are you going to the party? No, I haven't been invited.",
   },
   {
-    rus: {js|Вокруг города строят новую кольцевую дорогу. Вокруг города строится новая дорога.|js},
-    eng: "They are building a new ring road round the city. The new road is being built round the city.",
+    rus: {js|Номер выглядел хорошо. Кто-то вычистил его.|js},
+    eng: "The room looked nice. Somebody had cleaned it.",
   },
   {
-    rus: {js|Они построили новую больницу рядом с аэропортом. Рядом с аэропортом построена новая больница.|js},
-    eng: "They have built a new hospital near the airport. The new hospital has been built near the airport.",
+    rus: {js|Номер выглядел хорошо. Он был убрана.|js},
+    eng: "The room looked nice. It had been cleaned.",
   },
   {
-    rus: {js|За нами кто-то следит. Думаю, за нами следят.|js},
-    eng: "There's somebody behind us. I think we're being followed.",
+    rus: {js|Овощи не очень вкусные. Их слишком долго готовили.|js},
+    eng: "The vegetables didn't taste good. They had been cooked too long.",
   },
   {
-    rus: {js|Эта комната выглядит по-другому. Вы покрасили стены?|js},
-    eng: "This room looks different. Have you painted the walls?",
+    rus: {js|Машине было три года, но она почти не использовалась.|js},
+    eng: "The car was three years old, but hadn't been used very much.",
   },
   {
-    rus: {js|Мой зонтик исчез. Кто-то забрал мой зонтик.|js},
-    eng: "My umbrella has disappeared. Somebody has taken my umbrella.",
+    rus: {js|Кто-то убирает комнату в данный момент.|js},
+    eng: "Somebody is cleaning the room at the moment.",
   },
   {
-    rus: {js|Сэм теперь получает более высокую зарплату. Его повысили в должности.|js},
-    eng: "Sam gets a higher salary now. He has been promoted.",
+    rus: {js|В данный момент в комнате проводится уборка.|js},
+    eng: "The room is being cleaned at the moment.",
   },
   {
-    rus: {js|Энн не сможет использовать свой офис на этой неделе. Он ремонтируется.|js},
-    eng: "Ann can't use her office this week. It is being redecorated.",
-  },
-  {
-    rus: {js|Вчера была проблема с ксероксом, но теперь все в порядке. Он снова работает. Он был отремонтирован.|js},
-    eng: "There was a problem with the photocopier yesterday, but now it's OK. It is working again. It has been repaired.",
-  },
-  {
-    rus: {js|Когда я вошел в комнату, то увидел, что стол и стулья находятся в разных местах. Мебель была перемещена.|js},
-    eng: "When I went into the room, I saw that the table and chairs were not in the same place. The furniture had been moved.",
-  },
-  {
-    rus: {js|Мой сосед исчез полгода назад.  С тех пор его никто не видел.|js},
-    eng: "A neighbor of mine disappeared six month ago. He has not been seen since then.",
-  },
-  {
-    rus: {js|Интересно, как Джейн сейчас. Я не видел ее целую вечность.|js},
-    eng: "I wonder how Jane is these days. I haven't seen her for ages.",
-  },
-  {
-    rus: {js|Моего друга ограбили по дороге домой несколько дней назад. Тебя когда-нибудь грабили?|js},
-    eng: "A friend of mine was mugged on his way home a few nights ago. Have you ever been mugged?",
+    rus: {js|Чем я могу вам помочь? Нет, спасибо, меня уже обслуживают.|js},
+    eng: "Can I help you? No, thanks, I'm being served.",
   },
 ];
 
@@ -2323,6 +2367,106 @@ let oldDictionary2 = [
   {
     rus: {js|Я имею в виду, нам нужно больше информации об атмосфере в офисе.|js},
     eng: "What I mean is we need more information about the atmosphere in the office.",
+  },
+  {
+    rus: {js|Ситуация серьезная. Нужно что-то сделать, пока не поздно.|js},
+    eng: "The situation is serious. Something must be done before it's too late.",
+  },
+  {
+    rus: {js|Я уже должен был получить письмо. Возможно, его отправили не по тому адресу.|js},
+    eng: "I should have received the letter by now. It might have been sent to the wrong address.",
+  },
+  {
+    rus: {js|Решение не будет принято до следующего заседания.|js},
+    eng: "A decision will not have been made until the next meeting.",
+  },
+  {
+    rus: {js|Считаете ли вы, что больше денег нужно было потратить на образование?|js},
+    eng: "Do you think that more money should have been spent on education?",
+  },
+  {
+    rus: {js|Дорога находится в очень плохом состоянии. Она должна была быть отремонтирована давным-давно.|js},
+    eng: "The road is in very bad condition. It should have been repaired a long time ago.",
+  },
+  {
+    rus: {js|Раненый не мог ходить и его должны были нести.|js},
+    eng: "The injured man couldn't walk and had to have been carried.",
+  },
+  {
+    rus: {js|Я сказал администратору отеля, что хотел бы, чтобы меня разбудили в 6.30 на следующее утро.|js},
+    eng: "I told the hotel receptionist I wanted to have been waken up at 6.30 the next morning.",
+  },
+  {
+    rus: {js|Если бы вы не толкнули полицейского, вас бы не арестовали.|js},
+    eng: "If you hadn't pushed the policeman, you wouldn't have been arrested.",
+  },
+  {
+    rus: {js|Неизвестно, как начался пожар, но он мог быть вызван неисправностью электричества.|js},
+    eng: "It's not certain how the fire started, but it might have been caused by an electrical fault.",
+  },
+  {
+    rus: {js|Кто-то убрался в комнате. Номер был очищен.|js},
+    eng: "Somebody has cleaned the room. The room has been cleaned.",
+  },
+  {
+    rus: {js|Кто-то сейчас пользуется компьютером. Компьютер используется прямо сейчас.|js},
+    eng: "Somebody is using the computer right now. The computer is being used right now.",
+  },
+  {
+    rus: {js|Я не знал, что кто-то записывает наш разговор. Я не знал, что наш разговор записывается.|js},
+    eng: "I didn't realize that somebody was recording our conversation. I didn't realize that out conversation was being recorded.",
+  },
+  {
+    rus: {js|Когда мы прибыли на стадион, мы обнаружили, что они отменили игру. Когда мы добрались до стадиона, то обнаружили, что игру отменили.|js},
+    eng: "When we got to the stadium, we found that they had canceled the game. When we got to the stadium, we found that the game had been canceled.",
+  },
+  {
+    rus: {js|Вокруг города строят новую кольцевую дорогу. Вокруг города строится новая дорога.|js},
+    eng: "They are building a new ring road round the city. The new road is being built round the city.",
+  },
+  {
+    rus: {js|Они построили новую больницу рядом с аэропортом. Рядом с аэропортом построена новая больница.|js},
+    eng: "They have built a new hospital near the airport. The new hospital has been built near the airport.",
+  },
+  {
+    rus: {js|За нами кто-то следит. Думаю, за нами следят.|js},
+    eng: "There's somebody behind us. I think we're being followed.",
+  },
+  {
+    rus: {js|Эта комната выглядит по-другому. Вы покрасили стены?|js},
+    eng: "This room looks different. Have you painted the walls?",
+  },
+  {
+    rus: {js|Мой зонтик исчез. Кто-то забрал мой зонтик.|js},
+    eng: "My umbrella has disappeared. Somebody has taken my umbrella.",
+  },
+  {
+    rus: {js|Сэм теперь получает более высокую зарплату. Его повысили в должности.|js},
+    eng: "Sam gets a higher salary now. He has been promoted.",
+  },
+  {
+    rus: {js|Энн не сможет использовать свой офис на этой неделе. Он ремонтируется.|js},
+    eng: "Ann can't use her office this week. It is being redecorated.",
+  },
+  {
+    rus: {js|Вчера была проблема с ксероксом, но теперь все в порядке. Он снова работает. Он был отремонтирован.|js},
+    eng: "There was a problem with the photocopier yesterday, but now it's OK. It is working again. It has been repaired.",
+  },
+  {
+    rus: {js|Когда я вошел в комнату, то увидел, что стол и стулья находятся в разных местах. Мебель была перемещена.|js},
+    eng: "When I went into the room, I saw that the table and chairs were not in the same place. The furniture had been moved.",
+  },
+  {
+    rus: {js|Мой сосед исчез полгода назад.  С тех пор его никто не видел.|js},
+    eng: "A neighbor of mine disappeared six month ago. He has not been seen since then.",
+  },
+  {
+    rus: {js|Интересно, как Джейн сейчас. Я не видел ее целую вечность.|js},
+    eng: "I wonder how Jane is these days. I haven't seen her for ages.",
+  },
+  {
+    rus: {js|Моего друга ограбили по дороге домой несколько дней назад. Тебя когда-нибудь грабили?|js},
+    eng: "A friend of mine was mugged on his way home a few nights ago. Have you ever been mugged?",
   },
 ];
 
