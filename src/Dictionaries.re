@@ -2378,11 +2378,11 @@ let oldDictionary2 = [
   },
   {
     rus: {js|Решение не будет принято до следующего заседания.|js},
-    eng: "A decision will not have been made until the next meeting.",
+    eng: "A decision will not be made until the next meeting.",
   },
   {
     rus: {js|Считаете ли вы, что больше денег нужно было потратить на образование?|js},
-    eng: "Do you think that more money should have been spent on education?",
+    eng: "Do you think that more money should be spent on education?",
   },
   {
     rus: {js|Дорога находится в очень плохом состоянии. Она должна была быть отремонтирована давным-давно.|js},
@@ -2390,11 +2390,11 @@ let oldDictionary2 = [
   },
   {
     rus: {js|Раненый не мог ходить и его должны были нести.|js},
-    eng: "The injured man couldn't walk and had to have been carried.",
+    eng: "The injured man couldn't walk and had to be carried.",
   },
   {
     rus: {js|Я сказал администратору отеля, что хотел бы, чтобы меня разбудили в 6.30 на следующее утро.|js},
-    eng: "I told the hotel receptionist I wanted to have been waken up at 6.30 the next morning.",
+    eng: "I told the hotel receptionist I wanted to be waken up at 6:30 the next morning.",
   },
   {
     rus: {js|Если бы вы не толкнули полицейского, вас бы не арестовали.|js},
