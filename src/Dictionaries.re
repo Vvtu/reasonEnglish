@@ -708,148 +708,88 @@ let veryOldDictionary1 = [
 
 let dictionary2 = [
   {
-    rus: {js|Мой дед был строителем. Он построил этот дом в 1961 году.|js},
-    eng: "My grandfather was a builder. He built this house in 1961. // When we use an active verb, we say what the subject does:",
+    rus: {js|Наука о данных на самом деле не моя область знаний. //(навыки и знания, которые вы приобретаете на основе опыта или подготовки)|js},
+    eng: "Data science is not really my area of expertise. //(skills and knowledge that you learn by experience or training)",
   },
   {
-    rus: {js|Это большая компания. Здесь работают двести человек.|js},
-    eng: "It's a big company. It employs two hundred people. // When we use an active verb, we say what the subject does:",
+    rus: {js|Городская инфраструктура должна быть развита таким образом, чтобы она отвечала потребностям современных компаний. //(основные системы и услуги, такие как транспорт, энергоснабжение)|js},
+    eng: "The city infrastructure should be developed so that it can meet the needs of the modern companies. //(basic systems and services such as transport, power supplies)",
   },
   {
-    rus: {js|Сколько лет этому дому? Он был построен в 1961 году.|js},
-    eng: "How old is this house? It was built in 1961. // When we use a passive verb, we say what happens to the subject:",
+    rus: {js|Аутсорсинг бизнес-процессов (BPO), когда ответственность за запуск конкретной системы или услуги возлагается на людей вне компании, становится все более популярным.|js},
+    eng: "Business process outsourcing (BPO) when the responsibility for running a particular system or service are given to people outside the company is getting more popular.",
   },
   {
-    rus: {js|В компании работает двести человек.|js},
-    eng: "Two hundred people are employed by the company. // When we use a passive verb, we say what happens to the subject:",
+    rus: {js|Оффшорное расположение базируется в иностранном государстве.|js},
+    eng: "Offshore location is based in a foreign country.",
   },
   {
-    rus: {js|При ограблении было украдено много денег. (кто-то украл его, но мы не знаем, кто)|js},
-    eng: "A lot of money was stolen in the robbery. (somebody stole it, but we don't know who)",
+    rus: {js|Аутсорсинг может помочь компаниям снизить накладные расходы. //(get, reach)|js},
+    eng: "Outsourcing can help companies achieve lower overheads. //(get, reach)",
   },
   {
-    rus: {js|Эта комната убирается каждый день? (кто-нибудь его чистит? - это не важно, кто)|js},
-    eng: "Is this room cleaned every day? (does somebody clean it? - it's not important who)",
+    rus: {js|Мы предпринимаем шаги по оптимизации работы и повышению производительности. //(сделать нашу работу более эффективной)|js},
+    eng: "We're taking steps to streamline operations and increase productivity. //(make our work more efficient)",
   },
   {
-    rus: {js|Этот дом был построен моим дедом.|js},
-    eng: "This house was built by my grandfather. // If we want to say who does or what causes the action, we use by:",
+    rus: {js|Аутсорсинг может привести к потере рабочих мест в европейских странах. //(привести)|js},
+    eng: "Outsourcing can lead to job losses in European countries. //(result in)",
   },
   {
-    rus: {js|В компании работает двести человек.|js},
-    eng: "Two hundred people are employed by the company. // If we want to say who does or what causes the action, we use by:",
+    rus: {js|У нас есть бюджетные ограничения по проекту, поэтому нужно принимать меры по сокращению расходов и сокращать расходы.|js},
+    eng: "We have budget constraints on the project, so we need to take cost-cutting measures and reduce spending.",
   },
   {
-    rus: {js|Многие аварии происходят из-за неосторожного вождения.|js},
-    eng: "Many accidents are caused by careless driving.",
+    rus: {js|Аутсорсинг ИТ-услуг может помочь компании высвободить ресурсы для своей основной деятельности. (предоставлять)|js},
+    eng: "Outsourcing IT services can help a company free up resources for its core activities. (make available)",
   },
   {
-    rus: {js|Меня не приглашают на вечеринки очень часто.|js},
-    eng: "I'm not invited to parties very often.",
+    rus: {js|Новая технология может помочь нам получить конкурентное преимущество над нашими конкурентами. //(преимущество)|js},
+    eng: "The new technology can help us gain a competitive edge over our competitors. //(advantage)",
   },
   {
-    rus: {js|Как произносится это слово?|js},
-    eng: "How is this word pronounced?",
+    rus: {js|Наша новая дочерняя компания создала много рабочих мест и улучшила качество жизни местного населения. //(сделать лучше)|js},
+    eng: "Our new subsidiary has created a lot of jobs and improved the quality of life for local people. //(made better)",
   },
   {
-    rus: {js|Ночью нас разбудил громкий шум.|js},
-    eng: "We were woken up by a loud noise during the night.",
+    rus: {js|Мы наняли новых специалистов, так что теперь мы можем справиться с большим объемом работы. //(дело с; предлог)|js},
+    eng: "We've hired some new specialists, so now we're able to get through a bigger volume of work. //(deal with; preposition)",
   },
   {
-    rus: {js|Ты ходила на вечеринку? Нет, меня не приглашали.|js},
-    eng: "Did you go to the party? No, I wasn't invited.",
+    rus: {js|Правительство должно разработать стратегии борьбы с безработицей. //(создавать)|js},
+    eng: "The government has to develop strategies to cope with unemployment. //(create)",
   },
   {
-    rus: {js|Сколько денег было украдено во время ограбления?|js},
-    eng: "How much money was stolen in the robbery?",
+    rus: {js|Для руководства этой командой в проекте требуется высокая степень технической экспертизы. //(навыки и знания, приобретенные на основе опыта и профессиональной подготовки)|js},
+    eng: "A high degree of technical expertise is required to lead this team on the project. //(skills and knowledge learnt by experience and training)",
   },
   {
-    rus: {js|Кто-нибудь уберет эту комнату позже.|js},
-    eng: "Somebody will clean this room later.",
+    rus: {js|Компании ЕС передают задачи бизнес-процессов на аутсорсинг развивающимся экономикам, таким как Индия, из-за снижения затрат на рабочую силу. //(развивающийся)|js},
+    eng: "EU companies are outsourcing business process tasks to emerging economies like India due to lower labour costs. //(developing)",
   },
   {
-    rus: {js|Эта комната будет убрана позже.|js},
-    eng: "This room will be cleaned later.",
+    rus: {js|Компания имеет несколько средств тренировки как Лаборатория Java и Лаборатория испытания. (оборудованные места для обучения)|js},
+    eng: "The company has a number of training facilities like Java Lab and Testing Lab. (equipped places for learning)",
   },
   {
-    rus: {js|Ситуация серьезная. Нужно что-то сделать, пока не поздно.|js},
-    eng: "The situation is serious. Something must be done before it's too late.",
+    rus: {js|Даже основная деятельность компании сегодня может быть передана на аутсорсинг в оффшоры. //(главный)|js},
+    eng: "Even core activities of the company can be outsourced to offshore locations nowadays. //(main)",
   },
   {
-    rus: {js|Тайна - это то, что невозможно объяснить.|js},
-    eng: "A mystery is something that can't be explained.",
+    rus: {js|Мы переехали в огромный офис, так что наши накладные расходы намного выше. //(расходы на электроэнергию, отопление и т. д.)|js},
+    eng: "We've moved to a huge office so our overheads are much higher. //(spending on electricity, heating, etc.)",
   },
   {
-    rus: {js|Музыка была очень громкой и слышалась издалека.|js},
-    eng: "The music was very loud and could be heard from a long way away.",
+    rus: {js|В IT-сфере много аутсорсинговых вендоров. //(компании, продающие услуги аутсорсинга)|js},
+    eng: "There are a lot of outsourcing vendors in IT area. //(companies that sell outsourcing services)",
   },
   {
-    rus: {js|В следующем году будет построен новый супермаркет.|js},
-    eng: "A new supermarket is going to be built next year.",
+    rus: {js|Экономия является одним из главных причин, почему европейские и американские компании передают на аутсорсинг в Индию. //(тратя меньше денег)|js},
+    eng: "Cost-saving is one of the main reasons why European and American companies outsource to India. //(spending less money)",
   },
   {
-    rus: {js|Пожалуйста, уходи. Я хочу, чтобы меня оставили в покое.|js},
-    eng: "Please go away. I want to be left alone.",
-  },
-  {
-    rus: {js|Кто-то должен был убраться в комнате.|js},
-    eng: "Somebody should have cleaned the room.",
-  },
-  {
-    rus: {js|Номер должен был быть убран.|js},
-    eng: "The room should have been cleaned.",
-  },
-  {
-    rus: {js|Сначала были какие-то проблемы, но, похоже, они решены.|js},
-    eng: "There were some problems at first, but they seem to have been solved.",
-  },
-  {
-    rus: {js|Комната выглядит хорошо. Кто-то убрал её.|js},
-    eng: "The room looks nice. Somebody has cleaned it.",
-  },
-  {
-    rus: {js|Комната выглядит хорошо. Она была убрана.|js},
-    eng: "The room looks nice. It has been cleaned.",
-  },
-  {
-    rus: {js|Вы слышали? Поездка была отменена.|js},
-    eng: "Have you heard? The trip has been cancelled.",
-  },
-  {
-    rus: {js|Тебя когда-нибудь кусала собака?|js},
-    eng: "Have you ever been bitten by a dog?",
-  },
-  {
-    rus: {js|Ты идешь на вечеринку? Нет, меня не приглашали.|js},
-    eng: "Are you going to the party? No, I haven't been invited.",
-  },
-  {
-    rus: {js|Номер выглядел хорошо. Кто-то вычистил его.|js},
-    eng: "The room looked nice. Somebody had cleaned it.",
-  },
-  {
-    rus: {js|Номер выглядел хорошо. Он был убрана.|js},
-    eng: "The room looked nice. It had been cleaned.",
-  },
-  {
-    rus: {js|Овощи не очень вкусные. Их слишком долго готовили.|js},
-    eng: "The vegetables didn't taste good. They had been cooked too long.",
-  },
-  {
-    rus: {js|Машине было три года, но она почти не использовалась.|js},
-    eng: "The car was three years old, but hadn't been used very much.",
-  },
-  {
-    rus: {js|Кто-то убирает комнату в данный момент.|js},
-    eng: "Somebody is cleaning the room at the moment.",
-  },
-  {
-    rus: {js|В данный момент в комнате проводится уборка.|js},
-    eng: "The room is being cleaned at the moment.",
-  },
-  {
-    rus: {js|Чем я могу вам помочь? Нет, спасибо, меня уже обслуживают.|js},
-    eng: "Can I help you? No, thanks, I'm being served.",
+    rus: {js|Общая выручка компании в прошлом году оценивается в 1,5 миллиарда долларов. //(регулярный доход компании)|js},
+    eng: "The total revenue of the company last year was estimated at $1.5 billion. //(the company regular income)",
   },
 ];
 
@@ -2467,6 +2407,146 @@ let oldDictionary2 = [
   {
     rus: {js|Моего друга ограбили по дороге домой несколько дней назад. Тебя когда-нибудь грабили?|js},
     eng: "A friend of mine was mugged on his way home a few nights ago. Have you ever been mugged?",
+  },
+  {
+    rus: {js|Мой дед был строителем. Он построил этот дом в 1961 году.|js},
+    eng: "My grandfather was a builder. He built this house in 1961. // When we use an active verb, we say what the subject does:",
+  },
+  {
+    rus: {js|Это большая компания. Здесь работают двести человек.|js},
+    eng: "It's a big company. It employs two hundred people. // When we use an active verb, we say what the subject does:",
+  },
+  {
+    rus: {js|Сколько лет этому дому? Он был построен в 1961 году.|js},
+    eng: "How old is this house? It was built in 1961. // When we use a passive verb, we say what happens to the subject:",
+  },
+  {
+    rus: {js|При ограблении было украдено много денег. (кто-то украл его, но мы не знаем, кто)|js},
+    eng: "A lot of money was stolen in the robbery. (somebody stole it, but we don't know who)",
+  },
+  {
+    rus: {js|Эта комната убирается каждый день? (кто-нибудь его чистит? - это не важно, кто)|js},
+    eng: "Is this room cleaned every day? (does somebody clean it? - it's not important who)",
+  },
+  {
+    rus: {js|Этот дом был построен моим дедом.|js},
+    eng: "This house was built by my grandfather. // If we want to say who does or what causes the action, we use by:",
+  },
+  {
+    rus: {js|В компании работает двести человек.|js},
+    eng: "Two hundred people are employed by the company. // If we want to say who does or what causes the action, we use by:",
+  },
+  {
+    rus: {js|Многие аварии происходят из-за неосторожного вождения.|js},
+    eng: "Many accidents are caused by careless driving.",
+  },
+  {
+    rus: {js|Меня не приглашают на вечеринки очень часто.|js},
+    eng: "I'm not invited to parties very often.",
+  },
+  {
+    rus: {js|Как произносится это слово?|js},
+    eng: "How is this word pronounced?",
+  },
+  {
+    rus: {js|Ночью нас разбудил громкий шум.|js},
+    eng: "We were woken up by a loud noise during the night.",
+  },
+  {
+    rus: {js|Ты ходила на вечеринку? Нет, меня не приглашали.|js},
+    eng: "Did you go to the party? No, I wasn't invited.",
+  },
+  {
+    rus: {js|Сколько денег было украдено во время ограбления?|js},
+    eng: "How much money was stolen in the robbery?",
+  },
+  {
+    rus: {js|Кто-нибудь уберет эту комнату позже.|js},
+    eng: "Somebody will clean this room later.",
+  },
+  {
+    rus: {js|Эта комната будет убрана позже.|js},
+    eng: "This room will be cleaned later.",
+  },
+  {
+    rus: {js|Ситуация серьезная. Нужно что-то сделать, пока не поздно.|js},
+    eng: "The situation is serious. Something must be done before it's too late.",
+  },
+  {
+    rus: {js|Тайна - это то, что невозможно объяснить.|js},
+    eng: "A mystery is something that can't be explained.",
+  },
+  {
+    rus: {js|Музыка была очень громкой и слышалась издалека.|js},
+    eng: "The music was very loud and could be heard from a long way away.",
+  },
+  {
+    rus: {js|В следующем году будет построен новый супермаркет.|js},
+    eng: "A new supermarket is going to be built next year.",
+  },
+  {
+    rus: {js|Пожалуйста, уходи. Я хочу, чтобы меня оставили в покое.|js},
+    eng: "Please go away. I want to be left alone.",
+  },
+  {
+    rus: {js|Кто-то должен был убраться в комнате.|js},
+    eng: "Somebody should have cleaned the room.",
+  },
+  {
+    rus: {js|Номер должен был быть убран.|js},
+    eng: "The room should have been cleaned.",
+  },
+  {
+    rus: {js|Сначала были какие-то проблемы, но, похоже, они решены.|js},
+    eng: "There were some problems at first, but they seem to have been solved.",
+  },
+  {
+    rus: {js|Комната выглядит хорошо. Кто-то убрал её.|js},
+    eng: "The room looks nice. Somebody has cleaned it.",
+  },
+  {
+    rus: {js|Комната выглядит хорошо. Она была убрана.|js},
+    eng: "The room looks nice. It has been cleaned.",
+  },
+  {
+    rus: {js|Вы слышали? Поездка была отменена.|js},
+    eng: "Have you heard? The trip has been cancelled.",
+  },
+  {
+    rus: {js|Тебя когда-нибудь кусала собака?|js},
+    eng: "Have you ever been bitten by a dog?",
+  },
+  {
+    rus: {js|Ты идешь на вечеринку? Нет, меня не приглашали.|js},
+    eng: "Are you going to the party? No, I haven't been invited.",
+  },
+  {
+    rus: {js|Номер выглядел хорошо. Кто-то вычистил его.|js},
+    eng: "The room looked nice. Somebody had cleaned it.",
+  },
+  {
+    rus: {js|Номер выглядел хорошо. Он был убрана.|js},
+    eng: "The room looked nice. It had been cleaned.",
+  },
+  {
+    rus: {js|Овощи не очень вкусные. Их слишком долго готовили.|js},
+    eng: "The vegetables didn't taste good. They had been cooked too long.",
+  },
+  {
+    rus: {js|Машине было три года, но она почти не использовалась.|js},
+    eng: "The car was three years old, but hadn't been used very much.",
+  },
+  {
+    rus: {js|Кто-то убирает комнату в данный момент.|js},
+    eng: "Somebody is cleaning the room at the moment.",
+  },
+  {
+    rus: {js|В данный момент в комнате проводится уборка.|js},
+    eng: "The room is being cleaned at the moment.",
+  },
+  {
+    rus: {js|Чем я могу вам помочь? Нет, спасибо, меня уже обслуживают.|js},
+    eng: "Can I help you? No, thanks, I'm being served.",
   },
 ];
 
