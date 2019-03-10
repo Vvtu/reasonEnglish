@@ -708,88 +708,84 @@ let veryOldDictionary1 = [
 
 let dictionary2 = [
   {
-    rus: {js|Наука о данных на самом деле не моя область знаний. //(навыки и знания, которые вы приобретаете на основе опыта или подготовки)|js},
-    eng: "Data science is not really my area of expertise. //(skills and knowledge that you learn by experience or training)",
+    rus: {js|Мы поедем на автобусе или на поезде? Если мы поедем на автобусе, это будет дешевле.|js},
+    eng: "Shall we go by bus or by train? If we go by bus, it will be cheaper.",
   },
   {
-    rus: {js|Городская инфраструктура должна быть развита таким образом, чтобы она отвечала потребностям современных компаний. //(основные системы и услуги, такие как транспорт, энергоснабжение)|js},
-    eng: "The city infrastructure should be developed so that it can meet the needs of the modern companies. //(basic systems and services such as transport, power supplies)",
+    rus: {js|Как вы собираетесь путешествовать?  Мы едем поездом. Если бы мы ехали на автобусе, это было бы дешевле, но поезд быстрее.|js},
+    eng: "How are you going to travel?  We're going by train. If we went by bus, it would be cheaper, but the train is quicker.",
   },
   {
-    rus: {js|Аутсорсинг бизнес-процессов (BPO), когда ответственность за запуск конкретной системы или услуги возлагается на людей вне компании, становится все более популярным.|js},
-    eng: "Business process outsourcing (BPO) when the responsibility for running a particular system or service are given to people outside the company is getting more popular.",
+    rus: {js|Что бы вы сделали, если бы выиграли много денег?|js},
+    eng: "What would you do if you won a lot of money?",
   },
   {
-    rus: {js|Оффшорное расположение базируется в иностранном государстве.|js},
-    eng: "Offshore location is based in a foreign country.",
+    rus: {js|Если завтра были выборы, за кого бы вы проголосовали?|js},
+    eng: "If there was an election tomorrow, who would you vote for?",
   },
   {
-    rus: {js|Аутсорсинг может помочь компаниям снизить накладные расходы. //(get, reach)|js},
-    eng: "Outsourcing can help companies achieve lower overheads. //(get, reach)",
+    rus: {js|Кажется, я оставила свои часы у тебя дома. Если найдешь, можешь мне позвонить?|js},
+    eng: "I think I left my watch at your house. If you find it, can you call me?",
   },
   {
-    rus: {js|Мы предпринимаем шаги по оптимизации работы и повышению производительности. //(сделать нашу работу более эффективной)|js},
-    eng: "We're taking steps to streamline operations and increase productivity. //(make our work more efficient)",
+    rus: {js|Если бы вы нашли бумажник на улице, что бы вы с ним сделали?|js},
+    eng: "If you found a wallet in the street, what would you do with it?",
   },
   {
-    rus: {js|Аутсорсинг может привести к потере рабочих мест в европейских странах. //(привести)|js},
-    eng: "Outsourcing can lead to job losses in European countries. //(result in)",
+    rus: {js|Мы обычно не используем would в if-части предложения: я бы очень испугался, если бы кто-то направил на меня пистолет.|js},
+    eng: "We do not normally use would in the if-part of the sentence: I'd be very scared if somebody pointed a gun at me.",
   },
   {
-    rus: {js|У нас есть бюджетные ограничения по проекту, поэтому нужно принимать меры по сокращению расходов и сокращать расходы.|js},
-    eng: "We have budget constraints on the project, so we need to take cost-cutting measures and reduce spending.",
+    rus: {js|Буду признателен, если вы сообщите мне о своем решении как можно скорее. / Но вы можете использовать 'if ... would' когда вы попросите кого-либо сделать что-то: (из официального письма)|js},
+    eng: "I would be grateful if you would let me know your decision as soon as possible. // But you can use if ... would when you ask somebody to do something: (from a formal letter)",
   },
   {
-    rus: {js|Аутсорсинг ИТ-услуг может помочь компании высвободить ресурсы для своей основной деятельности. (предоставлять)|js},
-    eng: "Outsourcing IT services can help a company free up resources for its core activities. (make available)",
+    rus: {js|Что бы вы сделали, если бы вас укусила змея?|js},
+    eng: "What would you do if you were bitten by a snake?",
   },
   {
-    rus: {js|Новая технология может помочь нам получить конкурентное преимущество над нашими конкурентами. //(преимущество)|js},
-    eng: "The new technology can help us gain a competitive edge over our competitors. //(advantage)",
+    rus: {js|Я еще не собираюсь ложиться спать. Я не устала. Если бы я сейчас легла спать, я бы не спала.|js},
+    eng: "I'm not going to bed yet. I'm not tired. If I went to bed now, I wouldn't sleep.",
   },
   {
-    rus: {js|Наша новая дочерняя компания создала много рабочих мест и улучшила качество жизни местного населения. //(сделать лучше)|js},
-    eng: "Our new subsidiary has created a lot of jobs and improved the quality of life for local people. //(made better)",
+    rus: {js|Вы не возражаете, если я воспользуюсь вашим телефоном?|js},
+    eng: "Would you mind if I used your phone?",
   },
   {
-    rus: {js|Мы наняли новых специалистов, так что теперь мы можем справиться с большим объемом работы. //(дело с; предлог)|js},
-    eng: "We've hired some new specialists, so now we're able to get through a bigger volume of work. //(deal with; preposition)",
+    rus: {js|Если бы я выиграл много денег, я мог бы купить дом. //(= возможно, что я бы купил дом)|js},
+    eng: "If I won a lot of money, I might buy a house. //(= it is possible that I would buy a house)",
   },
   {
-    rus: {js|Правительство должно разработать стратегии борьбы с безработицей. //(создавать)|js},
-    eng: "The government has to develop strategies to cope with unemployment. //(create)",
+    rus: {js|Если бы дождь прекратился, мы могли бы выйти. //(= мы могли бы выйти)|js},
+    eng: "If it stopped raining, we could go out. //(= we would be able to go out)",
   },
   {
-    rus: {js|Для руководства этой командой в проекте требуется высокая степень технической экспертизы. //(навыки и знания, приобретенные на основе опыта и профессиональной подготовки)|js},
-    eng: "A high degree of technical expertise is required to lead this team on the project. //(skills and knowledge learnt by experience and training)",
+    rus: {js|Если бы я выиграл в лотерею, я бы купил большой дом.|js},
+    eng: "If I won the lottery, I'd buy a big house.",
   },
   {
-    rus: {js|Компании ЕС передают задачи бизнес-процессов на аутсорсинг развивающимся экономикам, таким как Индия, из-за снижения затрат на рабочую силу. //(развивающийся)|js},
-    eng: "EU companies are outsourcing business process tasks to emerging economies like India due to lower labour costs. //(developing)",
+    rus: {js|Вы не собираетесь продавать свою машину, потому что она старая и не стоит много.  Если бы я продал свою машину, я бы не получил за нее много денег.|js},
+    eng: "You're not going to sell your car because it's old and not worth much.  If I sold my car, I wouldn't get much money for it.",
   },
   {
-    rus: {js|Компания имеет несколько средств тренировки как Лаборатория Java и Лаборатория испытания. (оборудованные места для обучения)|js},
-    eng: "The company has a number of training facilities like Java Lab and Testing Lab. (equipped places for learning)",
+    rus: {js|Ты часто встречаешься с Сарой. Твой друг хочет с ней связаться. Если я увижу Сару, я скажу ей позвонить тебе.|js},
+    eng: "You often see Sarah. A friend of yours wants to contact her. If I see Sarah, I'll tell her to call you.",
   },
   {
-    rus: {js|Даже основная деятельность компании сегодня может быть передана на аутсорсинг в оффшоры. //(главный)|js},
-    eng: "Even core activities of the company can be outsourced to offshore locations nowadays. //(main)",
+    rus: {js|Вы не ожидаете, что в здании будет пожар. - Что бы вы сделали, если бы в здании произошел пожар?|js},
+    eng: "You don't expect that there will be a fire in the building. - What would you do if there was a fire in the building?",
   },
   {
-    rus: {js|Мы переехали в огромный офис, так что наши накладные расходы намного выше. //(расходы на электроэнергию, отопление и т. д.)|js},
-    eng: "We've moved to a huge office so our overheads are much higher. //(spending on electricity, heating, etc.)",
+    rus: {js|Вы никогда не теряли паспорт. Вы можете только представить. - Я не знаю, что я буду делать, если потеряю паспорт.|js},
+    eng: "You’ve never lost your passport. You can only imagine it. - I don't know what I would do if I lost my passport.",
   },
   {
-    rus: {js|В IT-сфере много аутсорсинговых вендоров. //(компании, продающие услуги аутсорсинга)|js},
-    eng: "There are a lot of outsourcing vendors in IT area. //(companies that sell outsourcing services)",
+    rus: {js|Кто-то останавливает вас и спрашивает дорогу в банк. - Если вы пойдете направо в конце этой улицы, вы увидите банк слева от вас.|js},
+    eng: "Somebody stops you and asks the way to a bank. - If you go right at the end of this street, you'll see a bank on your left.",
   },
   {
-    rus: {js|Экономия является одним из главных причин, почему европейские и американские компании передают на аутсорсинг в Индию. //(тратя меньше денег)|js},
-    eng: "Cost-saving is one of the main reasons why European and American companies outsource to India. //(spending less money)",
-  },
-  {
-    rus: {js|Общая выручка компании в прошлом году оценивается в 1,5 миллиарда долларов. //(регулярный доход компании)|js},
-    eng: "The total revenue of the company last year was estimated at $1.5 billion. //(the company regular income)",
+    rus: {js|Вы находитесь в лифте. Есть аварийная кнопка. Никто не будет на него давить. Что произойдет, если кто-то нажмет эту кнопку?|js},
+    eng: "You’re in a lift. There is an emergency button. Nobody is going to press it. What would happen if somebody pressed that button?",
   },
 ];
 
@@ -2547,6 +2543,90 @@ let oldDictionary2 = [
   {
     rus: {js|Чем я могу вам помочь? Нет, спасибо, меня уже обслуживают.|js},
     eng: "Can I help you? No, thanks, I'm being served.",
+  },
+  {
+    rus: {js|Наука о данных на самом деле не моя область знаний. //(навыки и знания, которые вы приобретаете на основе опыта или подготовки)|js},
+    eng: "Data science is not really my area of expertise. //(skills and knowledge that you learn by experience or training)",
+  },
+  {
+    rus: {js|Городская инфраструктура должна быть развита таким образом, чтобы она отвечала потребностям современных компаний. //(основные системы и услуги, такие как транспорт, энергоснабжение)|js},
+    eng: "The city infrastructure should be developed so that it can meet the needs of the modern companies. //(basic systems and services such as transport, power supplies)",
+  },
+  {
+    rus: {js|Аутсорсинг бизнес-процессов (BPO), когда ответственность за запуск конкретной системы или услуги возлагается на людей вне компании, становится все более популярным.|js},
+    eng: "Business process outsourcing (BPO) when the responsibility for running a particular system or service are given to people outside the company is getting more popular.",
+  },
+  {
+    rus: {js|Оффшорное расположение базируется в иностранном государстве.|js},
+    eng: "Offshore location is based in a foreign country.",
+  },
+  {
+    rus: {js|Аутсорсинг может помочь компаниям снизить накладные расходы. //(get, reach)|js},
+    eng: "Outsourcing can help companies achieve lower overheads. //(get, reach)",
+  },
+  {
+    rus: {js|Мы предпринимаем шаги по оптимизации работы и повышению производительности. //(сделать нашу работу более эффективной)|js},
+    eng: "We're taking steps to streamline operations and increase productivity. //(make our work more efficient)",
+  },
+  {
+    rus: {js|Аутсорсинг может привести к потере рабочих мест в европейских странах. //(привести)|js},
+    eng: "Outsourcing can lead to job losses in European countries. //(result in)",
+  },
+  {
+    rus: {js|У нас есть бюджетные ограничения по проекту, поэтому нужно принимать меры по сокращению расходов и сокращать расходы.|js},
+    eng: "We have budget constraints on the project, so we need to take cost-cutting measures and reduce spending.",
+  },
+  {
+    rus: {js|Аутсорсинг ИТ-услуг может помочь компании высвободить ресурсы для своей основной деятельности. (предоставлять)|js},
+    eng: "Outsourcing IT services can help a company free up resources for its core activities. (make available)",
+  },
+  {
+    rus: {js|Новая технология может помочь нам получить конкурентное преимущество над нашими конкурентами. //(преимущество)|js},
+    eng: "The new technology can help us gain a competitive edge over our competitors. //(advantage)",
+  },
+  {
+    rus: {js|Наша новая дочерняя компания создала много рабочих мест и улучшила качество жизни местного населения. //(сделать лучше)|js},
+    eng: "Our new subsidiary has created a lot of jobs and improved the quality of life for local people. //(made better)",
+  },
+  {
+    rus: {js|Мы наняли новых специалистов, так что теперь мы можем справиться с большим объемом работы. //(дело с; предлог)|js},
+    eng: "We've hired some new specialists, so now we're able to get through a bigger volume of work. //(deal with; preposition)",
+  },
+  {
+    rus: {js|Правительство должно разработать стратегии борьбы с безработицей. //(создавать)|js},
+    eng: "The government has to develop strategies to cope with unemployment. //(create)",
+  },
+  {
+    rus: {js|Для руководства этой командой в проекте требуется высокая степень технической экспертизы. //(навыки и знания, приобретенные на основе опыта и профессиональной подготовки)|js},
+    eng: "A high degree of technical expertise is required to lead this team on the project. //(skills and knowledge learnt by experience and training)",
+  },
+  {
+    rus: {js|Компании ЕС передают задачи бизнес-процессов на аутсорсинг развивающимся экономикам, таким как Индия, из-за снижения затрат на рабочую силу. //(развивающийся)|js},
+    eng: "EU companies are outsourcing business process tasks to emerging economies like India due to lower labour costs. //(developing)",
+  },
+  {
+    rus: {js|Компания имеет несколько средств тренировки как Лаборатория Java и Лаборатория испытания. (оборудованные места для обучения)|js},
+    eng: "The company has a number of training facilities like Java Lab and Testing Lab. (equipped places for learning)",
+  },
+  {
+    rus: {js|Даже основная деятельность компании сегодня может быть передана на аутсорсинг в оффшоры. //(главный)|js},
+    eng: "Even core activities of the company can be outsourced to offshore locations nowadays. //(main)",
+  },
+  {
+    rus: {js|Мы переехали в огромный офис, так что наши накладные расходы намного выше. //(расходы на электроэнергию, отопление и т. д.)|js},
+    eng: "We've moved to a huge office so our overheads are much higher. //(spending on electricity, heating, etc.)",
+  },
+  {
+    rus: {js|В IT-сфере много аутсорсинговых вендоров. //(компании, продающие услуги аутсорсинга)|js},
+    eng: "There are a lot of outsourcing vendors in IT area. //(companies that sell outsourcing services)",
+  },
+  {
+    rus: {js|Экономия является одним из главных причин, почему европейские и американские компании передают на аутсорсинг в Индию. //(тратя меньше денег)|js},
+    eng: "Cost-saving is one of the main reasons why European and American companies outsource to India. //(spending less money)",
+  },
+  {
+    rus: {js|Общая выручка компании в прошлом году оценивается в 1,5 миллиарда долларов. //(регулярный доход компании)|js},
+    eng: "The total revenue of the company last year was estimated at $1.5 billion. //(the company regular income)",
   },
 ];
 
