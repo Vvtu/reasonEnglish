@@ -777,7 +777,7 @@ let dictionary2 = [
   },
   {
     rus: {js|Вы никогда не теряли паспорт. Вы можете только представить. - Я не знаю, что я буду делать, если потеряю паспорт.|js},
-    eng: "You’ve never lost your passport. You can only imagine it. - I don't know what I would do if I lost my passport.",
+    eng: "You've never lost your passport. You can only imagine it. - I don't know what I would do if I lost my passport.",
   },
   {
     rus: {js|Кто-то останавливает вас и спрашивает дорогу в банк. - Если вы пойдете направо в конце этой улицы, вы увидите банк слева от вас.|js},
@@ -785,7 +785,7 @@ let dictionary2 = [
   },
   {
     rus: {js|Вы находитесь в лифте. Есть аварийная кнопка. Никто не будет на него давить. Что произойдет, если кто-то нажмет эту кнопку?|js},
-    eng: "You’re in a lift. There is an emergency button. Nobody is going to press it. What would happen if somebody pressed that button?",
+    eng: "You're in a lift. There is an emergency button. Nobody is going to press it. What would happen if somebody pressed that button?",
   },
 ];
 
