@@ -787,6 +787,58 @@ let dictionary2 = [
     rus: {js|Вы находитесь в лифте. Есть аварийная кнопка. Никто не будет на него давить. Что произойдет, если кто-то нажмет эту кнопку?|js},
     eng: "You're in a lift. There is an emergency button. Nobody is going to press it. What would happen if somebody pressed that button?",
   },
+  {
+    rus: {js|Я организую страховку на случай, если заболею.|js},
+    eng: "I'm organizing some insurance in case I get ill.",
+  },
+  {
+    rus: {js|Я очень занята, поэтому, пожалуйста, не беспокойте меня, если это не чрезвычайная ситуация.|js},
+    eng: "I'm very busy so please don't disturb me unless it's an emergency.",
+  },
+  {
+    rus: {js|При условии, что продажи не начнут падать, мы достигнем наших целей в этом году.|js},
+    eng: "Provided that sales don't start falling, we'll reach our targets this year.",
+  },
+  {
+    rus: {js|Я должен быть в состоянии добраться туда к 10:30, но я дам вам знать, если возникнут проблемы.|js},
+    eng: "I should be able to get there by 10:30, but I'll let you know if there's a problem.",
+  },
+  {
+    rus: {js|Пока мы получаем финансирование, мы можем продолжить проект в октябре.|js},
+    eng: "As long as we get the funding, we can go ahead with the project in October.",
+  },
+  {
+    rus: {js|если нам помогут, мы сможем закончить вовремя.|js},
+    eng: "if we got a bit more help, we could finish on time.",
+  },
+  {
+    rus: {js|Я помогу тебе, обеспечу мою смену в пятницу.|js},
+    eng: "I'll help you providing you do my shift on Friday.",
+  },
+  {
+    rus: {js|Предположим, они предложат тебе работу, ты согласишься?|js},
+    eng: "Supposing they offered you a job, would you take it?",
+  },
+  {
+    rus: {js|Я буду дома к 5:30, если только совещание закончилось поздно.|js},
+    eng: "I'll be home by 5:30 unless the meeting finished late.",
+  },
+  {
+    rus: {js|Мы используем "на всякий случай", чтобы поговорить о действиях, предпринятых, чтобы чего-то избежать.: Я возьму запасную батарею на случай, если основная закончится.|js},
+    eng: "We use 'in case' to talk about action taken to avoid something.: I'll take a spare battery in case the main runs out.",
+  },
+  {
+    rus: {js|Если меня не повысят, я уйду из компании.|js},
+    eng: "If I'm not promoted, I'll leave the company.",
+  },
+  {
+    rus: {js|если вы приказываете 20 блоков, то мы передадим Вам скидка 15%.|js},
+    eng: "if you order 20 units, we will give you a 15% discount.",
+  },
+  {
+    rus: {js|Если поторопимся, успеем вовремя.|js},
+    eng: "If we hurry, we can get there in time.",
+  },
 ];
 
 let oldDictionary2 = [
