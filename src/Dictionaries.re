@@ -733,7 +733,7 @@ let dictionary2 = [
   },
   {
     rus: {js|Позвольте мне только резюмировать то, что обсуждалось сегодня. //(=повторить основные моменты)|js},
-    eng: "Let me just recap what's been discussed today. //(=repeat the main points)",
+    eng: "Let me just recap what has been discussed today. //(=repeat the main points)",
   },
   {
     rus: {js|Я могу жить с этим.//(=это нормально для меня; предлог)|js},
