@@ -708,136 +708,72 @@ let veryOldDictionary1 = [
 
 let dictionary2 = [
   {
-    rus: {js|Мы поедем на автобусе или на поезде? Если мы поедем на автобусе, это будет дешевле.|js},
-    eng: "Shall we go by bus or by train? If we go by bus, it will be cheaper.",
+    rus: {js|Сегодня нам нужно решить, какое решение мы собираемся предложить клиенту. //(=выберите после тщательного обдумывания)|js},
+    eng: "What we need to decide on today is what solution we're going to offer the customer. //(=choose after thinking carefully)",
   },
   {
-    rus: {js|Как вы собираетесь путешествовать?  Мы едем поездом. Если бы мы ехали на автобусе, это было бы дешевле, но поезд быстрее.|js},
-    eng: "How are you going to travel?  We're going by train. If we went by bus, it would be cheaper, but the train is quicker.",
+    rus: {js|Давайте посмотрим, какие у нас есть варианты. //(=усмотрение)|js},
+    eng: "Let's look at what our options are. //(=choices)",
   },
   {
-    rus: {js|Что бы вы сделали, если бы выиграли много денег?|js},
-    eng: "What would you do if you won a lot of money?",
+    rus: {js|Похоже на план. //(=Я думаю, это хорошая идея)|js},
+    eng: "That sounds like a plan. //(=I think it's a good idea)",
   },
   {
-    rus: {js|Если завтра были выборы, за кого бы вы проголосовали?|js},
-    eng: "If there was an election tomorrow, who would you vote for?",
+    rus: {js|Нам нужно обсудить кадровый состав и бюджет. //(=тематика)|js},
+    eng: "The areas we need to discuss are staffing and budget. //(=subjects)",
   },
   {
-    rus: {js|Кажется, я оставила свои часы у тебя дома. Если найдешь, можешь мне позвонить?|js},
-    eng: "I think I left my watch at your house. If you find it, can you call me?",
+    rus: {js|Давайте просто подведем итоги. //(=предоставить основную информацию)|js},
+    eng: "Let's just summarize the situation. //(=give the main information)",
   },
   {
-    rus: {js|Если бы вы нашли бумажник на улице, что бы вы с ним сделали?|js},
-    eng: "If you found a wallet in the street, what would you do with it?",
+    rus: {js|Так что мы решили? //(=до настоящего времени)|js},
+    eng: "So what have we decided so far? //(=up to now)",
   },
   {
-    rus: {js|Мы обычно не используем would в if-части предложения: я бы очень испугался, если бы кто-то направил на меня пистолет.|js},
-    eng: "We do not normally use would in the if-part of the sentence: I'd be very scared if somebody pointed a gun at me.",
+    rus: {js|Позвольте мне только резюмировать то, что обсуждалось сегодня. //(=повторить основные моменты)|js},
+    eng: "Let me just recap what's been discussed today. //(=repeat the main points)",
   },
   {
-    rus: {js|Буду признателен, если вы сообщите мне о своем решении как можно скорее. / Но вы можете использовать 'if ... would' когда вы попросите кого-либо сделать что-то: (из официального письма)|js},
-    eng: "I would be grateful if you would let me know your decision as soon as possible. // But you can use if ... would when you ask somebody to do something: (from a formal letter)",
+    rus: {js|Я могу жить с этим.//(=это нормально для меня; предлог)|js},
+    eng: "I can live with that.//(=it's ok for me; preposition)",
   },
   {
-    rus: {js|Что бы вы сделали, если бы вас укусила змея?|js},
-    eng: "What would you do if you were bitten by a snake?",
+    rus: {js|Я предлагаю получить отзывы клиентов о нашей новой системе. //(=предлагать)|js},
+    eng: "What I propose is we get customer feedback on our new system. //(=suggest)",
   },
   {
-    rus: {js|Я еще не собираюсь ложиться спать. Я не устала. Если бы я сейчас легла спать, я бы не спала.|js},
-    eng: "I'm not going to bed yet. I'm not tired. If I went to bed now, I wouldn't sleep.",
+    rus: {js|Давайте оставим наши варианты открытыми, пока мы не получим больше информации. //(=дождаться принятия решения)|js},
+    eng: "Let's keep our options open until we've received more information. //(=wait before making a decision)",
   },
   {
-    rus: {js|Вы не возражаете, если я воспользуюсь вашим телефоном?|js},
-    eng: "Would you mind if I used your phone?",
+    rus: {js|Предположим, мы немного растянем бюджет, почему бы нам не добавить еще одного человека в команду? //(=только представить себе)|js},
+    eng: "Supposing we stretch the budget a little, why don't we add one more person to the team? //(=just imagine)",
   },
   {
-    rus: {js|Если бы я выиграл много денег, я мог бы купить дом. //(= возможно, что я бы купил дом)|js},
-    eng: "If I won a lot of money, I might buy a house. //(= it is possible that I would buy a house)",
+    rus: {js|Если мы просим нашу команду работать сверхурочно на этой неделе, как вы думаете, мы сможем уложиться в срок? //(=при условии, что)|js},
+    eng: "Provided we ask our team to work overtime this week, do you think we'll be able to meet the deadline? //(=on condition that)",
   },
   {
-    rus: {js|Если бы дождь прекратился, мы могли бы выйти. //(= мы могли бы выйти)|js},
-    eng: "If it stopped raining, we could go out. //(= we would be able to go out)",
+    rus: {js|Мы не завершим проект вовремя, если не будем работать более эффективно. //(=если мы не)|js},
+    eng: "We won't complete the project on time unless we work more efficiently. //(=if we don't)",
   },
   {
-    rus: {js|Если бы я выиграл в лотерею, я бы купил большой дом.|js},
-    eng: "If I won the lottery, I'd buy a big house.",
+    rus: {js|Почему бы нам не назначить новую встречу для обсуждения этого вопроса? //(=Я предлагаю)|js},
+    eng: "Why don't we schedule a new meeting to discuss this issue? //(=I suggest)",
   },
   {
-    rus: {js|Вы не собираетесь продавать свою машину, потому что она старая и не стоит много.  Если бы я продал свою машину, я бы не получил за нее много денег.|js},
-    eng: "You're not going to sell your car because it's old and not worth much.  If I sold my car, I wouldn't get much money for it.",
+    rus: {js|Это не сработало бы для меня. //(=Я не согласен)|js},
+    eng: "That wouldn't work for me. //(=I don't agree)",
   },
   {
-    rus: {js|Ты часто встречаешься с Сарой. Твой друг хочет с ней связаться. Если я увижу Сару, я скажу ей позвонить тебе.|js},
-    eng: "You often see Sarah. A friend of yours wants to contact her. If I see Sarah, I'll tell her to call you.",
+    rus: {js|Это решит проблему.//(=он может исправить)|js},
+    eng: "That will solve the problem.//(=it can fix)",
   },
   {
-    rus: {js|Вы не ожидаете, что в здании будет пожар. - Что бы вы сделали, если бы в здании произошел пожар?|js},
-    eng: "You don't expect that there will be a fire in the building. - What would you do if there was a fire in the building?",
-  },
-  {
-    rus: {js|Вы никогда не теряли паспорт. Вы можете только представить. - Я не знаю, что я буду делать, если потеряю паспорт.|js},
-    eng: "You've never lost your passport. You can only imagine it. - I don't know what I would do if I lost my passport.",
-  },
-  {
-    rus: {js|Кто-то останавливает вас и спрашивает дорогу в банк. - Если вы пойдете направо в конце этой улицы, вы увидите банк слева от вас.|js},
-    eng: "Somebody stops you and asks the way to a bank. - If you go right at the end of this street, you'll see a bank on your left.",
-  },
-  {
-    rus: {js|Вы находитесь в лифте. Есть аварийная кнопка. Никто не будет на него давить. Что произойдет, если кто-то нажмет эту кнопку?|js},
-    eng: "You're in a lift. There is an emergency button. Nobody is going to press it. What would happen if somebody pressed that button?",
-  },
-  {
-    rus: {js|Я организую страховку на случай, если заболею.|js},
-    eng: "I'm organizing some insurance in case I get ill.",
-  },
-  {
-    rus: {js|Я очень занята, поэтому, пожалуйста, не беспокойте меня, если это не чрезвычайная ситуация.|js},
-    eng: "I'm very busy so please don't disturb me unless it's an emergency.",
-  },
-  {
-    rus: {js|При условии, что продажи не начнут падать, мы достигнем наших целей в этом году.|js},
-    eng: "Provided that sales don't start falling, we'll reach our targets this year.",
-  },
-  {
-    rus: {js|Я должен быть в состоянии добраться туда к 10:30, но я дам вам знать, если возникнут проблемы.|js},
-    eng: "I should be able to get there by 10:30, but I'll let you know if there's a problem.",
-  },
-  {
-    rus: {js|Пока мы получаем финансирование, мы можем продолжить проект в октябре.|js},
-    eng: "As long as we get the funding, we can go ahead with the project in October.",
-  },
-  {
-    rus: {js|если нам помогут, мы сможем закончить вовремя.|js},
-    eng: "if we got a bit more help, we could finish on time.",
-  },
-  {
-    rus: {js|Я помогу тебе, обеспечу мою смену в пятницу.|js},
-    eng: "I'll help you providing you do my shift on Friday.",
-  },
-  {
-    rus: {js|Предположим, они предложат тебе работу, ты согласишься?|js},
-    eng: "Supposing they offered you a job, would you take it?",
-  },
-  {
-    rus: {js|Я буду дома к 5:30, если только совещание закончилось поздно.|js},
-    eng: "I'll be home by 5:30 unless the meeting finished late.",
-  },
-  {
-    rus: {js|Мы используем "на всякий случай", чтобы поговорить о действиях, предпринятых, чтобы чего-то избежать.: Я возьму запасную батарею на случай, если основная закончится.|js},
-    eng: "We use 'in case' to talk about action taken to avoid something.: I'll take a spare battery in case the main runs out.",
-  },
-  {
-    rus: {js|Если меня не повысят, я уйду из компании.|js},
-    eng: "If I'm not promoted, I'll leave the company.",
-  },
-  {
-    rus: {js|если вы приказываете 20 блоков, то мы передадим Вам скидка 15%.|js},
-    eng: "if you order 20 units, we will give you a 15% discount.",
-  },
-  {
-    rus: {js|Если поторопимся, успеем вовремя.|js},
-    eng: "If we hurry, we can get there in time.",
+    rus: {js|Один из вариантов заключался бы в проведении обследования среди персонала.|js},
+    eng: "One option would be to conduct a survey among the staff.",
   },
 ];
 
@@ -2679,6 +2615,138 @@ let oldDictionary2 = [
   {
     rus: {js|Общая выручка компании в прошлом году оценивается в 1,5 миллиарда долларов. //(регулярный доход компании)|js},
     eng: "The total revenue of the company last year was estimated at $1.5 billion. //(the company regular income)",
+  },
+  {
+    rus: {js|Мы поедем на автобусе или на поезде? Если мы поедем на автобусе, это будет дешевле.|js},
+    eng: "Shall we go by bus or by train? If we go by bus, it will be cheaper.",
+  },
+  {
+    rus: {js|Как вы собираетесь путешествовать?  Мы едем поездом. Если бы мы ехали на автобусе, это было бы дешевле, но поезд быстрее.|js},
+    eng: "How are you going to travel?  We're going by train. If we went by bus, it would be cheaper, but the train is quicker.",
+  },
+  {
+    rus: {js|Что бы вы сделали, если бы выиграли много денег?|js},
+    eng: "What would you do if you won a lot of money?",
+  },
+  {
+    rus: {js|Если завтра были выборы, за кого бы вы проголосовали?|js},
+    eng: "If there was an election tomorrow, who would you vote for?",
+  },
+  {
+    rus: {js|Кажется, я оставила свои часы у тебя дома. Если найдешь, можешь мне позвонить?|js},
+    eng: "I think I left my watch at your house. If you find it, can you call me?",
+  },
+  {
+    rus: {js|Если бы вы нашли бумажник на улице, что бы вы с ним сделали?|js},
+    eng: "If you found a wallet in the street, what would you do with it?",
+  },
+  {
+    rus: {js|Мы обычно не используем would в if-части предложения: я бы очень испугался, если бы кто-то направил на меня пистолет.|js},
+    eng: "We do not normally use would in the if-part of the sentence: I'd be very scared if somebody pointed a gun at me.",
+  },
+  {
+    rus: {js|Буду признателен, если вы сообщите мне о своем решении как можно скорее. / Но вы можете использовать 'if ... would' когда вы попросите кого-либо сделать что-то: (из официального письма)|js},
+    eng: "I would be grateful if you would let me know your decision as soon as possible. // But you can use if ... would when you ask somebody to do something: (from a formal letter)",
+  },
+  {
+    rus: {js|Что бы вы сделали, если бы вас укусила змея?|js},
+    eng: "What would you do if you were bitten by a snake?",
+  },
+  {
+    rus: {js|Я еще не собираюсь ложиться спать. Я не устала. Если бы я сейчас легла спать, я бы не спала.|js},
+    eng: "I'm not going to bed yet. I'm not tired. If I went to bed now, I wouldn't sleep.",
+  },
+  {
+    rus: {js|Вы не возражаете, если я воспользуюсь вашим телефоном?|js},
+    eng: "Would you mind if I used your phone?",
+  },
+  {
+    rus: {js|Если бы я выиграл много денег, я мог бы купить дом. //(= возможно, что я бы купил дом)|js},
+    eng: "If I won a lot of money, I might buy a house. //(= it is possible that I would buy a house)",
+  },
+  {
+    rus: {js|Если бы дождь прекратился, мы могли бы выйти. //(= мы могли бы выйти)|js},
+    eng: "If it stopped raining, we could go out. //(= we would be able to go out)",
+  },
+  {
+    rus: {js|Если бы я выиграл в лотерею, я бы купил большой дом.|js},
+    eng: "If I won the lottery, I'd buy a big house.",
+  },
+  {
+    rus: {js|Вы не собираетесь продавать свою машину, потому что она старая и не стоит много.  Если бы я продал свою машину, я бы не получил за нее много денег.|js},
+    eng: "You're not going to sell your car because it's old and not worth much.  If I sold my car, I wouldn't get much money for it.",
+  },
+  {
+    rus: {js|Ты часто встречаешься с Сарой. Твой друг хочет с ней связаться. Если я увижу Сару, я скажу ей позвонить тебе.|js},
+    eng: "You often see Sarah. A friend of yours wants to contact her. If I see Sarah, I'll tell her to call you.",
+  },
+  {
+    rus: {js|Вы не ожидаете, что в здании будет пожар. - Что бы вы сделали, если бы в здании произошел пожар?|js},
+    eng: "You don't expect that there will be a fire in the building. - What would you do if there was a fire in the building?",
+  },
+  {
+    rus: {js|Вы никогда не теряли паспорт. Вы можете только представить. - Я не знаю, что я буду делать, если потеряю паспорт.|js},
+    eng: "You've never lost your passport. You can only imagine it. - I don't know what I would do if I lost my passport.",
+  },
+  {
+    rus: {js|Кто-то останавливает вас и спрашивает дорогу в банк. - Если вы пойдете направо в конце этой улицы, вы увидите банк слева от вас.|js},
+    eng: "Somebody stops you and asks the way to a bank. - If you go right at the end of this street, you'll see a bank on your left.",
+  },
+  {
+    rus: {js|Вы находитесь в лифте. Есть аварийная кнопка. Никто не будет на него давить. Что произойдет, если кто-то нажмет эту кнопку?|js},
+    eng: "You're in a lift. There is an emergency button. Nobody is going to press it. What would happen if somebody pressed that button?",
+  },
+  {
+    rus: {js|Я организую страховку на случай, если заболею.|js},
+    eng: "I'm organizing some insurance in case I get ill.",
+  },
+  {
+    rus: {js|Я очень занята, поэтому, пожалуйста, не беспокойте меня, если это не чрезвычайная ситуация.|js},
+    eng: "I'm very busy so please don't disturb me unless it's an emergency.",
+  },
+  {
+    rus: {js|При условии, что продажи не начнут падать, мы достигнем наших целей в этом году.|js},
+    eng: "Provided that sales don't start falling, we'll reach our targets this year.",
+  },
+  {
+    rus: {js|Я должен быть в состоянии добраться туда к 10:30, но я дам вам знать, если возникнут проблемы.|js},
+    eng: "I should be able to get there by 10:30, but I'll let you know if there's a problem.",
+  },
+  {
+    rus: {js|Пока мы получаем финансирование, мы можем продолжить проект в октябре.|js},
+    eng: "As long as we get the funding, we can go ahead with the project in October.",
+  },
+  {
+    rus: {js|если нам помогут, мы сможем закончить вовремя.|js},
+    eng: "if we got a bit more help, we could finish on time.",
+  },
+  {
+    rus: {js|Я помогу тебе, обеспечу мою смену в пятницу.|js},
+    eng: "I'll help you providing you do my shift on Friday.",
+  },
+  {
+    rus: {js|Предположим, они предложат тебе работу, ты согласишься?|js},
+    eng: "Supposing they offered you a job, would you take it?",
+  },
+  {
+    rus: {js|Я буду дома к 5:30, если только совещание закончилось поздно.|js},
+    eng: "I'll be home by 5:30 unless the meeting finished late.",
+  },
+  {
+    rus: {js|Мы используем "на всякий случай", чтобы поговорить о действиях, предпринятых, чтобы чего-то избежать.: Я возьму запасную батарею на случай, если основная закончится.|js},
+    eng: "We use 'in case' to talk about action taken to avoid something.: I'll take a spare battery in case the main runs out.",
+  },
+  {
+    rus: {js|Если меня не повысят, я уйду из компании.|js},
+    eng: "If I'm not promoted, I'll leave the company.",
+  },
+  {
+    rus: {js|если вы приказываете 20 блоков, то мы передадим Вам скидка 15%.|js},
+    eng: "if you order 20 units, we will give you a 15% discount.",
+  },
+  {
+    rus: {js|Если поторопимся, успеем вовремя.|js},
+    eng: "If we hurry, we can get there in time.",
   },
 ];
 
