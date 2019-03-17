@@ -775,6 +775,94 @@ let dictionary2 = [
     rus: {js|Один из вариантов заключался бы в проведении обследования среди персонала.|js},
     eng: "One option would be to conduct a survey among the staff.",
   },
+  {
+    rus: {js|Сара хочет позвонить полу, но не может, потому что не знает его номера. Она говорит: если бы я знала его номер, я бы ему позвонила.|js},
+    eng: "Sarah wants to phone Paul, but she can't do this because she doesn't know his number. She says: If I knew his number, I would phone him.",
+  },
+  {
+    rus: {js|Сара говорит: если бы я знала его номер... . Это говорит о том, что она не знает его номер. Она воображает ситуацию. На самом деле она не знает его номера.|js},
+    eng: "Sarah says: If I knew his number... . This tells us that she doesn't know his number. She is imagining the situation. The real situation is that she doesn't know his number.",
+  },
+  {
+    rus: {js|Когда мы представляем себе такую ситуацию, мы используем if + past(если бы я знал / если бы Вы были / если бы мы этого не делали и т. д.). Но смысл в настоящем, а не в прошлом.|js},
+    eng: "When we imagine a situation like this, we use if +past (if I knew / if you were / if we didn't etc.). But the meaning is present, not past",
+  },
+  {
+    rus: {js|Есть много вещей, которые я хотел бы сделать если бы у меня было больше времени, (но у меня нет времени)|js},
+    eng: "There are many things I'd like to do if I had more time, (but I don't have time)",
+  },
+  {
+    rus: {js|Если бы я не хотела идти на вечеринку, я бы не пошла. (но я хочу пойти.)|js},
+    eng: "If I didn't want to go to the party, I wouldn't go. (but I want to go)",
+  },
+  {
+    rus: {js|У нас не было бы денег, если бы мы не работали, (но мы работаем)|js},
+    eng: "We wouldn't have any money if we didn't work, (but we work)",
+  },
+  {
+    rus: {js|На моем месте, что бы ты сделал?|js},
+    eng: "If you were in my position, what would you do?",
+  },
+  {
+    rus: {js|Жаль, что он не умеет водить. Было бы полезно, если бы мог.|js},
+    eng: "It's a pity he can't drive. It would be useful if he could.",
+  },
+  {
+    rus: {js|Мы используем прошлое таким же образом после желания (я хотел бы знать / я хотел бы, чтобы Вы были и т. д.). Мы говорим, что сожалеем о чем-то, что что-то не так, как нам хотелось бы.|js},
+    eng: "We use the past in the same way after wish (I wish I knew / I wish you were etc.). We use wish to say that we regret something, that something is not as we would like it to be.",
+  },
+  {
+    rus: {js|Хотел бы я знать номер телефона пола. // (= Я не знаю, и я сожалею об этом)|js},
+    eng: "I wish I knew Paul's phone number. // (= I don't know it and I regret this)",
+  },
+  {
+    rus: {js|Ты когда-нибудь хотел летать? // (ты не можешь летать)|js},
+    eng: "Do you ever wish you could fly? // (you can't fly)",
+  },
+  {
+    rus: {js|Здесь много дождей. Хотел бы я, чтобы не было так много дождя.|js},
+    eng: "It rains a lot here. I wish it didn't rain so much.",
+  },
+  {
+    rus: {js|Здесь очень людно. Я хотел бы, чтобы не было так много людей, / / (есть много людей)|js},
+    eng: "It's very crowded here. I wish there weren't so many people, // (there are a lot of people)",
+  },
+  {
+    rus: {js|Хотел бы я не работать завтра, но, к сожалению, работаю.|js},
+    eng: "I wish I didn't have to work tomorrow, but unfortunately I do.",
+  },
+  {
+    rus: {js|На твоем месте я бы не покупал это пальто.|js},
+    eng: "If I were you, I wouldn't buy that coat.",
+  },
+  {
+    rus: {js|Я бы пошел гулять, если бы не было так холодно.|js},
+    eng: "I'd go for a walk if it weren't so cold.",
+  },
+  {
+    rus: {js|Хотел бы я, чтобы она была здесь.|js},
+    eng: "I wish she were here.",
+  },
+  {
+    rus: {js|Если бы я был богат, я бы много путешествовал.|js},
+    eng: "If I were rich, I would travel a lot.",
+  },
+  {
+    rus: {js|Кого бы вы спросили, если бы вам нужна была помощь?|js},
+    eng: "Who would you ask if you needed help?",
+  },
+  {
+    rus: {js|Жаль, что мне нечего читать.|js},
+    eng: "I wish I had something to read.",
+  },
+  {
+    rus: {js|Она могла бы найти работу получше, если бы говорила по-английски.|js},
+    eng: "She could get a better job if she could speak English.",
+  },
+  {
+    rus: {js|Хотел бы я вам помочь.|js},
+    eng: "I wish I could help you.",
+  },
 ];
 
 let oldDictionary2 = [
