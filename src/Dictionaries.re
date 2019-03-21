@@ -708,160 +708,72 @@ let veryOldDictionary1 = [
 
 let dictionary2 = [
   {
-    rus: {js|Сегодня нам нужно решить, какое решение мы собираемся предложить клиенту. //(=выберите после тщательного обдумывания)|js},
-    eng: "What we need to decide on today is what solution we're going to offer the customer. //(=choose after thinking carefully)",
+    rus: {js|Если вы заметили разрыв на рынке, вы можете использовать эту возможность для создания собственного бизнеса.//(=возможность для продукта / услуги, которая еще не существует)|js},
+    eng: "If you've spotted a gap in the market, you can use this opportunity to set up your own business.//(=an opportunity for a product/service that doesn't exist yet)",
   },
   {
-    rus: {js|Давайте посмотрим, какие у нас есть варианты. //(=усмотрение)|js},
-    eng: "Let's look at what our options are. //(=choices)",
+    rus: {js|Одной из самых больших проблем для нового бизнеса является привлечение достаточного начального капитала. //(=собирать)|js},
+    eng: "One of the biggest challenges for a new business is to raise enough start-up capital. //(=collect)",
   },
   {
-    rus: {js|Похоже на план. //(=Я думаю, это хорошая идея)|js},
-    eng: "That sounds like a plan. //(=I think it's a good idea)",
+    rus: {js|Большинство инвесторов хотят быть уверенными, что они получат хорошую отдачу от инвестиций. //(=прибыль)|js},
+    eng: "Most investors want to be confident that they'll get a good return on investment. //(=profit)",
   },
   {
-    rus: {js|Нам нужно обсудить кадровый состав и бюджет. //(=тематика)|js},
-    eng: "The areas we need to discuss are staffing and budget. //(=subjects)",
+    rus: {js|Если мы не сможем обеспечить большую финансовую поддержку, мы не сможем продолжать этот проект. //(=поддержка)|js},
+    eng: "Unless we can secure more financial backing, we won't be able to go ahead with this project. //(=support)",
   },
   {
-    rus: {js|Давайте просто подведем итоги. //(=предоставить основную информацию)|js},
-    eng: "Let's just summarize the situation. //(=give the main information)",
+    rus: {js|Сеть контактов поможет вам найти новых клиентов для вашей компании.|js},
+    eng: "A network of contacts can help you find new customers for your company.",
   },
   {
-    rus: {js|Так что мы решили? //(=до настоящего времени)|js},
-    eng: "So what have we decided so far? //(=up to now)",
+    rus: {js|Чтобы получить кредит в банке, нужно придумать солидный бизнес-план. //(=занимать деньги)|js},
+    eng: "To get a loan from a bank, you need to come up with a solid business plan. //(=borrow money)",
   },
   {
-    rus: {js|Позвольте мне только резюмировать то, что обсуждалось сегодня. //(=повторить основные моменты)|js},
-    eng: "Let me just recap what has been discussed today. //(=repeat the main points)",
+    rus: {js|Оборот предприятия - это объем бизнеса в течение определенного периода времени.|js},
+    eng: "A company's turnover is the amount of business done during a particular period of time.",
   },
   {
-    rus: {js|Я могу жить с этим.//(=это нормально для меня; предлог)|js},
-    eng: "I can live with that.//(=it's ok for me; preposition)",
+    rus: {js|Их прибыль в этом году была невероятно высокой. //(=очень высоко; трудно поверить)|js},
+    eng: "Their profits this year have been incredibly high. //(=very high; it's hard to believe)",
   },
   {
-    rus: {js|Я предлагаю получить отзывы клиентов о нашей новой системе. //(=предлагать)|js},
-    eng: "What I propose is we get customer feedback on our new system. //(=suggest)",
+    rus: {js|Я считаю этот бизнес-план крайне рискованным. //(=очень)|js},
+    eng: "I think this business plan is extremely risky. //(=very)",
   },
   {
-    rus: {js|Давайте оставим наши варианты открытыми, пока мы не получим больше информации. //(=дождаться принятия решения)|js},
-    eng: "Let's keep our options open until we've received more information. //(=wait before making a decision)",
+    rus: {js|Это предложение совершенно нелепо, я никогда на него не соглашусь! //(=неразумный)|js},
+    eng: "This proposal is totally ridiculous, I'll never agree to it! //(=unreasonable)",
   },
   {
-    rus: {js|Предположим, мы немного растянем бюджет, почему бы нам не добавить еще одного человека в команду? //(=только представить себе)|js},
-    eng: "Supposing we stretch the budget a little, why don't we add one more person to the team? //(=just imagine)",
+    rus: {js|К сожалению, новое устройство, которое я купил, абсолютно бесполезно. //(=неэффективный)|js},
+    eng: "Unfortunately, the new device I bought is absolutely useless. //(=inefficient)",
   },
   {
-    rus: {js|Если мы просим нашу команду работать сверхурочно на этой неделе, как вы думаете, мы сможем уложиться в срок? //(=при условии, что)|js},
-    eng: "Provided we ask our team to work overtime this week, do you think we'll be able to meet the deadline? //(=on condition that)",
+    rus: {js|То, как он разговаривал со мной на встрече, было совершенно возмутительно. //(=странный, шокирующий, неразумный)|js},
+    eng: "The way he talked to me at the meeting was totally outrageous. //(=strange, shocking, unreasonable)",
   },
   {
-    rus: {js|Мы не завершим проект вовремя, если не будем работать более эффективно. //(=если мы не)|js},
-    eng: "We won't complete the project on time unless we work more efficiently. //(=if we don't)",
+    rus: {js|Если вы придумали отличную бизнес-идею, не тратьте свое время, пойти на это! //(=пытаться)|js},
+    eng: "If you've come up with a great business idea, don't waste your time, go for it! //(=try)",
   },
   {
-    rus: {js|Почему бы нам не назначить новую встречу для обсуждения этого вопроса? //(=Я предлагаю)|js},
-    eng: "Why don't we schedule a new meeting to discuss this issue? //(=I suggest)",
+    rus: {js|Его запуск планирует привлечь €5 млн от венчурных капиталистов. //(=люди/организации, которые вкладывают деньги в новые рискованные предприятия)|js},
+    eng: "His start-up is looking to raise €5 million from venture capitalists. //(=people/organizations that invest money into new, risky businesses)",
   },
   {
-    rus: {js|Это не сработало бы для меня. //(=Я не согласен)|js},
-    eng: "That wouldn't work for me. //(=I don't agree)",
+    rus: {js|Мой друг - потенциальный предприниматель, он пытается создать свой собственный бизнес.|js},
+    eng: "My friend is a would-be entrepreneur - he's trying to set up his own business.",
   },
   {
-    rus: {js|Это решит проблему.//(=он может исправить)|js},
-    eng: "That will solve the problem.//(=it can fix)",
+    rus: {js|Чтобы рекламировать свою продукцию на фестивале, Adidas создала временную розетку в виде обувной коробки.// (=магазин, который не является постоянным)|js},
+    eng: "To advertise their products at a festival, Adidas set up a temporary outlet in the shape of a shoebox.//(=a shop that isn't permanent)",
   },
   {
-    rus: {js|Один из вариантов заключался бы в проведении обследования среди персонала.|js},
-    eng: "One option would be to conduct a survey among the staff.",
-  },
-  {
-    rus: {js|Сара хочет позвонить полу, но не может, потому что не знает его номера. Она говорит: если бы я знала его номер, я бы ему позвонила.|js},
-    eng: "Sarah wants to phone Paul, but she can't do this because she doesn't know his number. She says: If I knew his number, I would phone him.",
-  },
-  {
-    rus: {js|Сара говорит: если бы я знала его номер... . Это говорит о том, что она не знает его номер. Она воображает ситуацию. На самом деле она не знает его номера.|js},
-    eng: "Sarah says: If I knew his number... . This tells us that she doesn't know his number. She is imagining the situation. The real situation is that she doesn't know his number.",
-  },
-  {
-    rus: {js|Когда мы представляем себе такую ситуацию, мы используем if + past(если бы я знал / если бы Вы были / если бы мы этого не делали и т. д.). Но смысл в настоящем, а не в прошлом.|js},
-    eng: "When we imagine a situation like this, we use if +past (if I knew / if you were / if we didn't etc.). But the meaning is present, not past",
-  },
-  {
-    rus: {js|Есть много вещей, которые я хотел бы сделать если бы у меня было больше времени, (но у меня нет времени)|js},
-    eng: "There are many things I'd like to do if I had more time, (but I don't have time)",
-  },
-  {
-    rus: {js|Если бы я не хотела идти на вечеринку, я бы не пошла. (но я хочу пойти.)|js},
-    eng: "If I didn't want to go to the party, I wouldn't go. (but I want to go)",
-  },
-  {
-    rus: {js|У нас не было бы денег, если бы мы не работали, (но мы работаем)|js},
-    eng: "We wouldn't have any money if we didn't work, (but we work)",
-  },
-  {
-    rus: {js|На моем месте, что бы ты сделал?|js},
-    eng: "If you were in my position, what would you do?",
-  },
-  {
-    rus: {js|Жаль, что он не умеет водить. Было бы полезно, если бы мог.|js},
-    eng: "It's a pity he can't drive. It would be useful if he could.",
-  },
-  {
-    rus: {js|Мы используем прошлое таким же образом после желания (я хотел бы знать / я хотел бы, чтобы Вы были и т. д.). Мы говорим, что сожалеем о чем-то, что что-то не так, как нам хотелось бы.|js},
-    eng: "We use the past in the same way after wish (I wish I knew / I wish you were etc.). We use wish to say that we regret something, that something is not as we would like it to be.",
-  },
-  {
-    rus: {js|Хотел бы я знать номер телефона пола. // (= Я не знаю, и я сожалею об этом)|js},
-    eng: "I wish I knew Paul's phone number. // (= I don't know it and I regret this)",
-  },
-  {
-    rus: {js|Ты когда-нибудь хотел летать? // (ты не можешь летать)|js},
-    eng: "Do you ever wish you could fly? // (you can't fly)",
-  },
-  {
-    rus: {js|Здесь много дождей. Хотел бы я, чтобы не было так много дождя.|js},
-    eng: "It rains a lot here. I wish it didn't rain so much.",
-  },
-  {
-    rus: {js|Здесь очень людно. Я хотел бы, чтобы не было так много людей, / / (есть много людей)|js},
-    eng: "It's very crowded here. I wish there weren't so many people, // (there are a lot of people)",
-  },
-  {
-    rus: {js|Хотел бы я не работать завтра, но, к сожалению, работаю.|js},
-    eng: "I wish I didn't have to work tomorrow, but unfortunately I do.",
-  },
-  {
-    rus: {js|На твоем месте я бы не покупал это пальто.|js},
-    eng: "If I were you, I wouldn't buy that coat.",
-  },
-  {
-    rus: {js|Я бы пошел гулять, если бы не было так холодно.|js},
-    eng: "I'd go for a walk if it weren't so cold.",
-  },
-  {
-    rus: {js|Хотел бы я, чтобы она была здесь.|js},
-    eng: "I wish she were here.",
-  },
-  {
-    rus: {js|Если бы я был богат, я бы много путешествовал.|js},
-    eng: "If I were rich, I would travel a lot.",
-  },
-  {
-    rus: {js|Кого бы вы спросили, если бы вам нужна была помощь?|js},
-    eng: "Who would you ask if you needed help?",
-  },
-  {
-    rus: {js|Жаль, что мне нечего читать.|js},
-    eng: "I wish I had something to read.",
-  },
-  {
-    rus: {js|Она могла бы найти работу получше, если бы говорила по-английски.|js},
-    eng: "She could get a better job if she could speak English.",
-  },
-  {
-    rus: {js|Хотел бы я вам помочь.|js},
-    eng: "I wish I could help you.",
+    rus: {js|Обратите внимание, что мы добавили новую функцию всплывающего меню. //(=скрытое меню, которое появляется при щелчке правой кнопкой мыши)|js},
+    eng: "Please note that we've added a new pop-up menu feature. //(=a hidden menu that appear when you right-click)",
   },
 ];
 
@@ -2835,6 +2747,162 @@ let oldDictionary2 = [
   {
     rus: {js|Если поторопимся, успеем вовремя.|js},
     eng: "If we hurry, we can get there in time.",
+  },
+  {
+    rus: {js|Сегодня нам нужно решить, какое решение мы собираемся предложить клиенту. //(=выберите после тщательного обдумывания)|js},
+    eng: "What we need to decide on today is what solution we're going to offer the customer. //(=choose after thinking carefully)",
+  },
+  {
+    rus: {js|Давайте посмотрим, какие у нас есть варианты. //(=усмотрение)|js},
+    eng: "Let's look at what our options are. //(=choices)",
+  },
+  {
+    rus: {js|Похоже на план. //(=Я думаю, это хорошая идея)|js},
+    eng: "That sounds like a plan. //(=I think it's a good idea)",
+  },
+  {
+    rus: {js|Нам нужно обсудить кадровый состав и бюджет. //(=тематика)|js},
+    eng: "The areas we need to discuss are staffing and budget. //(=subjects)",
+  },
+  {
+    rus: {js|Давайте просто подведем итоги. //(=предоставить основную информацию)|js},
+    eng: "Let's just summarize the situation. //(=give the main information)",
+  },
+  {
+    rus: {js|Так что мы решили? //(=до настоящего времени)|js},
+    eng: "So what have we decided so far? //(=up to now)",
+  },
+  {
+    rus: {js|Позвольте мне только резюмировать то, что обсуждалось сегодня. //(=повторить основные моменты)|js},
+    eng: "Let me just recap what has been discussed today. //(=repeat the main points)",
+  },
+  {
+    rus: {js|Я могу жить с этим.//(=это нормально для меня; предлог)|js},
+    eng: "I can live with that.//(=it's ok for me; preposition)",
+  },
+  {
+    rus: {js|Я предлагаю получить отзывы клиентов о нашей новой системе. //(=предлагать)|js},
+    eng: "What I propose is we get customer feedback on our new system. //(=suggest)",
+  },
+  {
+    rus: {js|Давайте оставим наши варианты открытыми, пока мы не получим больше информации. //(=дождаться принятия решения)|js},
+    eng: "Let's keep our options open until we've received more information. //(=wait before making a decision)",
+  },
+  {
+    rus: {js|Предположим, мы немного растянем бюджет, почему бы нам не добавить еще одного человека в команду? //(=только представить себе)|js},
+    eng: "Supposing we stretch the budget a little, why don't we add one more person to the team? //(=just imagine)",
+  },
+  {
+    rus: {js|Если мы просим нашу команду работать сверхурочно на этой неделе, как вы думаете, мы сможем уложиться в срок? //(=при условии, что)|js},
+    eng: "Provided we ask our team to work overtime this week, do you think we'll be able to meet the deadline? //(=on condition that)",
+  },
+  {
+    rus: {js|Мы не завершим проект вовремя, если не будем работать более эффективно. //(=если мы не)|js},
+    eng: "We won't complete the project on time unless we work more efficiently. //(=if we don't)",
+  },
+  {
+    rus: {js|Почему бы нам не назначить новую встречу для обсуждения этого вопроса? //(=Я предлагаю)|js},
+    eng: "Why don't we schedule a new meeting to discuss this issue? //(=I suggest)",
+  },
+  {
+    rus: {js|Это не сработало бы для меня. //(=Я не согласен)|js},
+    eng: "That wouldn't work for me. //(=I don't agree)",
+  },
+  {
+    rus: {js|Это решит проблему.//(=он может исправить)|js},
+    eng: "That will solve the problem.//(=it can fix)",
+  },
+  {
+    rus: {js|Один из вариантов заключался бы в проведении обследования среди персонала.|js},
+    eng: "One option would be to conduct a survey among the staff.",
+  },
+  {
+    rus: {js|Сара хочет позвонить полу, но не может, потому что не знает его номера. Она говорит: если бы я знала его номер, я бы ему позвонила.|js},
+    eng: "Sarah wants to phone Paul, but she can't do this because she doesn't know his number. She says: If I knew his number, I would phone him.",
+  },
+  {
+    rus: {js|Сара говорит: если бы я знала его номер... . Это говорит о том, что она не знает его номер. Она воображает ситуацию. На самом деле она не знает его номера.|js},
+    eng: "Sarah says: If I knew his number... . This tells us that she doesn't know his number. She is imagining the situation. The real situation is that she doesn't know his number.",
+  },
+  {
+    rus: {js|Когда мы представляем себе такую ситуацию, мы используем if + past(если бы я знал / если бы Вы были / если бы мы этого не делали и т. д.). Но смысл в настоящем, а не в прошлом.|js},
+    eng: "When we imagine a situation like this, we use if +past (if I knew / if you were / if we didn't etc.). But the meaning is present, not past",
+  },
+  {
+    rus: {js|Есть много вещей, которые я хотел бы сделать если бы у меня было больше времени, (но у меня нет времени)|js},
+    eng: "There are many things I'd like to do if I had more time, (but I don't have time)",
+  },
+  {
+    rus: {js|Если бы я не хотела идти на вечеринку, я бы не пошла. (но я хочу пойти.)|js},
+    eng: "If I didn't want to go to the party, I wouldn't go. (but I want to go)",
+  },
+  {
+    rus: {js|У нас не было бы денег, если бы мы не работали, (но мы работаем)|js},
+    eng: "We wouldn't have any money if we didn't work, (but we work)",
+  },
+  {
+    rus: {js|На моем месте, что бы ты сделал?|js},
+    eng: "If you were in my position, what would you do?",
+  },
+  {
+    rus: {js|Жаль, что он не умеет водить. Было бы полезно, если бы мог.|js},
+    eng: "It's a pity he can't drive. It would be useful if he could.",
+  },
+  {
+    rus: {js|Мы используем прошлое таким же образом после желания (я хотел бы знать / я хотел бы, чтобы Вы были и т. д.). Мы говорим, что сожалеем о чем-то, что что-то не так, как нам хотелось бы.|js},
+    eng: "We use the past in the same way after wish (I wish I knew / I wish you were etc.). We use wish to say that we regret something, that something is not as we would like it to be.",
+  },
+  {
+    rus: {js|Хотел бы я знать номер телефона пола. // (= Я не знаю, и я сожалею об этом)|js},
+    eng: "I wish I knew Paul's phone number. // (= I don't know it and I regret this)",
+  },
+  {
+    rus: {js|Ты когда-нибудь хотел летать? // (ты не можешь летать)|js},
+    eng: "Do you ever wish you could fly? // (you can't fly)",
+  },
+  {
+    rus: {js|Здесь много дождей. Хотел бы я, чтобы не было так много дождя.|js},
+    eng: "It rains a lot here. I wish it didn't rain so much.",
+  },
+  {
+    rus: {js|Здесь очень людно. Я хотел бы, чтобы не было так много людей, / / (есть много людей)|js},
+    eng: "It's very crowded here. I wish there weren't so many people, // (there are a lot of people)",
+  },
+  {
+    rus: {js|Хотел бы я не работать завтра, но, к сожалению, работаю.|js},
+    eng: "I wish I didn't have to work tomorrow, but unfortunately I do.",
+  },
+  {
+    rus: {js|На твоем месте я бы не покупал это пальто.|js},
+    eng: "If I were you, I wouldn't buy that coat.",
+  },
+  {
+    rus: {js|Я бы пошел гулять, если бы не было так холодно.|js},
+    eng: "I'd go for a walk if it weren't so cold.",
+  },
+  {
+    rus: {js|Хотел бы я, чтобы она была здесь.|js},
+    eng: "I wish she were here.",
+  },
+  {
+    rus: {js|Если бы я был богат, я бы много путешествовал.|js},
+    eng: "If I were rich, I would travel a lot.",
+  },
+  {
+    rus: {js|Кого бы вы спросили, если бы вам нужна была помощь?|js},
+    eng: "Who would you ask if you needed help?",
+  },
+  {
+    rus: {js|Жаль, что мне нечего читать.|js},
+    eng: "I wish I had something to read.",
+  },
+  {
+    rus: {js|Она могла бы найти работу получше, если бы говорила по-английски.|js},
+    eng: "She could get a better job if she could speak English.",
+  },
+  {
+    rus: {js|Хотел бы я вам помочь.|js},
+    eng: "I wish I could help you.",
   },
 ];
 
