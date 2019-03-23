@@ -760,15 +760,15 @@ let dictionary2 = [
     eng: "If you've come up with a great business idea, don't waste your time, go for it! //(=try)",
   },
   {
-    rus: {js|Его запуск планирует привлечь €5 млн от венчурных капиталистов. //(=люди/организации, которые вкладывают деньги в новые рискованные предприятия)|js},
-    eng: "His start-up is looking to raise €5 million from venture capitalists. //(=people/organizations that invest money into new, risky businesses)",
+    rus: {js|Его запуск планирует привлечь 5 млн от венчурных капиталистов. //(=люди/организации, которые вкладывают деньги в новые рискованные предприятия)|js},
+    eng: "His start-up is looking to raise 5 million from venture capitalists. //(=people/organizations that invest money into new, risky businesses)",
   },
   {
     rus: {js|Мой друг - потенциальный предприниматель, он пытается создать свой собственный бизнес.|js},
     eng: "My friend is a would-be entrepreneur - he's trying to set up his own business.",
   },
   {
-    rus: {js|Чтобы рекламировать свою продукцию на фестивале, Adidas создала временную розетку в виде обувной коробки.// (=магазин, который не является постоянным)|js},
+    rus: {js|Чтобы рекламировать свою продукцию на фестивале, Adidas создала временный магазинчик в виде обувной коробки.// (=магазин, который не является постоянным)|js},
     eng: "To advertise their products at a festival, Adidas set up a temporary outlet in the shape of a shoebox.//(=a shop that isn't permanent)",
   },
   {
