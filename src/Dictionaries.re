@@ -707,73 +707,178 @@ let veryOldDictionary1 = [
 ];
 
 let dictionary2 = [
+  {rus: {js|Чем могу помочь?|js}, eng: "What can I do for you?"},
   {
-    rus: {js|Если вы заметили разрыв на рынке, вы можете использовать эту возможность для создания собственного бизнеса.//(=возможность для продукта / услуги, которая еще не существует)|js},
-    eng: "If you've spotted a gap in the market, you can use this opportunity to set up your own business.//(=an opportunity for a product/service that doesn't exist yet)",
+    rus: {js|У меня вопрос по поводу заказа, который мы сделали. //(=сделанный)|js},
+    eng: "I have a question about an order we placed. //(=made)",
   },
   {
-    rus: {js|Одной из самых больших проблем для нового бизнеса является привлечение достаточного начального капитала. //(=собирать)|js},
-    eng: "One of the biggest challenges for a new business is to raise enough start-up capital. //(=collect)",
+    rus: {js|Не могли бы вы дать мне номер заказа и я проверю это. //(=исследовать проблему)|js},
+    eng: "Could you give me the order number and I'll look into it. //(=investigate the problem)",
   },
   {
-    rus: {js|Большинство инвесторов хотят быть уверенными, что они получат хорошую отдачу от инвестиций. //(=прибыль)|js},
-    eng: "Most investors want to be confident that they'll get a good return on investment. //(=profit)",
+    rus: {js|Позвольте мне уточнить. //(=прояснить)|js},
+    eng: "Let me get this straight. //(=clarify)",
   },
   {
-    rus: {js|Если мы не сможем обеспечить большую финансовую поддержку, мы не сможем продолжать этот проект. //(=поддержка)|js},
-    eng: "Unless we can secure more financial backing, we won't be able to go ahead with this project. //(=support)",
+    rus: {js|Будет ли он готов к сроку сдачи? (предлог)|js},
+    eng: "Will it be ready in time for the deadline? (preposition)",
   },
   {
-    rus: {js|Сеть контактов поможет вам найти новых клиентов для вашей компании.|js},
-    eng: "A network of contacts can help you find new customers for your company.",
+    rus: {js|Мой экран продолжает гаснуть. //(=это неоднократно)|js},
+    eng: "My screen keeps going blank. //(=does it repeatedly)",
   },
   {
-    rus: {js|Чтобы получить кредит в банке, нужно придумать солидный бизнес-план. //(=занимать деньги)|js},
-    eng: "To get a loan from a bank, you need to come up with a solid business plan. //(=borrow money)",
+    rus: {js|Не могли бы вы объяснить, в чем проблема? //(=детально описать)|js},
+    eng: "Could you explain exactly what the problem is? //(=describe in details)",
   },
   {
-    rus: {js|Оборот предприятия - это объем бизнеса в течение определенного периода времени.|js},
-    eng: "A company's turnover is the amount of business done during a particular period of time.",
+    rus: {js|Расскажи мне об этом. //(=опишите мне проблему)|js},
+    eng: "Talk me through it. //(=describe the problem to me)",
   },
   {
-    rus: {js|Их прибыль в этом году была невероятно высокой. //(=очень высоко; трудно поверить)|js},
-    eng: "Their profits this year have been incredibly high. //(=very high; it's hard to believe)",
+    rus: {js|Я скоро вам перезвоню. //(=скоро)|js},
+    eng: "I'll get back to you shortly. //(=soon)",
   },
   {
-    rus: {js|Я считаю этот бизнес-план крайне рискованным. //(=очень)|js},
-    eng: "I think this business plan is extremely risky. //(=very)",
+    rus: {js|Возможно, я смогу решить проблему. //(=решать)|js},
+    eng: "I might be able to sort out the problem. //(=solve)",
   },
   {
-    rus: {js|Это предложение совершенно нелепо, я никогда на него не соглашусь! //(=неразумный)|js},
-    eng: "This proposal is totally ridiculous, I'll never agree to it! //(=unreasonable)",
+    rus: {js|Вы можете сказать мне, есть ли у вас номер заказа?|js},
+    eng: "Can you tell me if you've got an order number?",
   },
   {
-    rus: {js|К сожалению, новое устройство, которое я купил, абсолютно бесполезно. //(=неэффективный)|js},
-    eng: "Unfortunately, the new device I bought is absolutely useless. //(=inefficient)",
+    rus: {js|Как только я проверю детали, я вам перезвоню. //(=как только)|js},
+    eng: "Once I've checked the details, I'll call you back. //(=as soon as)",
   },
   {
-    rus: {js|То, как он разговаривал со мной на встрече, было совершенно возмутительно. //(=странный, шокирующий, неразумный)|js},
-    eng: "The way he talked to me at the meeting was totally outrageous. //(=strange, shocking, unreasonable)",
+    rus: {js|Ваша доставка прибыла в нерабочее время. (предлог)|js},
+    eng: "Your delivery arrived out of office hours. (preposition)",
   },
   {
-    rus: {js|Если вы придумали отличную бизнес-идею, не тратьте свое время, пойти на это! //(=пытаться)|js},
-    eng: "If you've come up with a great business idea, don't waste your time, go for it! //(=try)",
+    rus: {js|Не могли бы вы дать мне знать, сколько времени это займет? //(=сколько времени требуется)|js},
+    eng: "Could you let me know how long it will take? //(=how much time is required)",
   },
   {
-    rus: {js|Его запуск планирует привлечь 5 млн от венчурных капиталистов. //(=люди/организации, которые вкладывают деньги в новые рискованные предприятия)|js},
-    eng: "His start-up is looking to raise 5 million from venture capitalists. //(=people/organizations that invest money into new, risky businesses)",
+    rus: {js|Мой экран продолжает гаснуть.|js},
+    eng: "My screen keeps going blank.",
   },
   {
-    rus: {js|Мой друг - потенциальный предприниматель, он пытается создать свой собственный бизнес.|js},
-    eng: "My friend is a would-be entrepreneur - he's trying to set up his own business.",
+    rus: {js|Я скоро вам перезвоню. //(=с вами связаться)|js},
+    eng: "I'll get back to you shortly. //(=contact you)",
   },
   {
-    rus: {js|Чтобы рекламировать свою продукцию на фестивале, Adidas создала временный магазинчик в виде обувной коробки.// (=магазин, который не является постоянным)|js},
-    eng: "To advertise their products at a festival, Adidas set up a temporary outlet in the shape of a shoebox.//(=a shop that isn't permanent)",
+    rus: {js|Могу я уточнить, о чем вы говорите? //(=перефразировать, чтобы сделать его более ясным)|js},
+    eng: "Could I just clarify what you're saying? //(=rephrase to make it clearer)",
   },
   {
-    rus: {js|Обратите внимание, что мы добавили новую функцию всплывающего меню. //(=скрытое меню, которое появляется при щелчке правой кнопкой мыши)|js},
-    eng: "Please note that we've added a new pop-up menu feature. //(=a hidden menu that appear when you right-click)",
+    rus: {js|Я займусь этим прямо сейчас. //(=сразу)|js},
+    eng: "I'll look into it straightaway. //(=immediately)",
+  },
+  {
+    rus: {js|Если я правильно вас понял, компьютер продолжает перезагружаться. //(=получить это право)|js},
+    eng: "If I understand you correctly, the computer keeps rebooting. //(=get it right)",
+  },
+  {
+    rus: {js|Когда я работаю в офисе клиента, у меня нет доступа к нашей внутренней сети. (предлог)|js},
+    eng: "When I work at the customer's office, I don't have access to our internal network. (preposition)",
+  },
+  {
+    rus: {js|В этом проекте мы будем сотрудничать с некоторыми коллегами из британского офиса. //(=работать вместе)|js},
+    eng: "On this project we're going to collaborate with some colleagues from the UK office. //(=work together)",
+  },
+  {
+    rus: {js|На этой встрече я хотел бы сосредоточиться на кадровых вопросах. (предлог)|js},
+    eng: "In this meeting I'd like to focus on our staffing issues. (preposition)",
+  },
+  {
+    rus: {js|Удобный интерфейс позволяет легко взаимодействовать с нашим приложением. (предлог)|js},
+    eng: "The user-friendly interface makes it very easy to interact with our app. (preposition)",
+  },
+  {
+    rus: {js|На данный момент мы не можем понять, какое влияние наши изменения в приложении окажут на конечных пользователей. //(=эффект)|js},
+    eng: "At the moment we can't understand the impact that our changes in the application will have on the end users. //(=effect)",
+  },
+  {
+    rus: {js|Развитие технологий оказало огромное влияние на то, как мы работаем. (предлог)|js},
+    eng: "The developments in technology have had a huge impact on the way we work. (preposition)",
+  },
+  {
+    rus: {js|Одна из вещей, которые мы построили в комплект разработки программного обеспечения является возможность интеграции приложений друг с другом. //(=объединять)|js},
+    eng: "One of the things that we've built into the software development kit is the ability to integrate applications with one another. //(=combine)",
+  },
+  {
+    rus: {js|Необходимо подключить USB-кабель с компьютера к устройству. (предлог)|js},
+    eng: "You need to connect the USB cable from your computer to your device. (preposition)",
+  },
+  {
+    rus: {js|Для решения этой задачи необходим логический, аналитический подход. //(=очень внимательно изучает вещи)|js},
+    eng: "To solve this problem you need a logical, analytical approach. //(=examining things very carefully)",
+  },
+  {
+    rus: {js|Джон не очень общителен, он почти никогда не разговаривает со своими коллегами. // (=готов поговорить с людьми)|js},
+    eng: "John is not very communicative, he hardly ever talks to his colleagues. //(=willing to talk to people)",
+  },
+  {
+    rus: {js|Мой новый автомобиль действительно экономичен, он не использует много бензина. //(=использование ресурсов тщательно, без потерь)|js},
+    eng: "My new car is really economical, it doesn't use much petrol. //(=using resources carefully, without wasting any)",
+  },
+  {
+    rus: {js|Я подал заявление на перевод в другой отдел. //(=двигаться)|js},
+    eng: "I've applied for a transfer to another department. //(=move)",
+  },
+  {
+    rus: {js|Вчера на тренировке было пятнадцать участников. //(=присутствующий)|js},
+    eng: "We had fifteen participants at the training session yesterday. //(=attendees)",
+  },
+  {
+    rus: {js|Компания наняла консультанта по управлению, чтобы помочь с их стратегией на будущее. //(=тот, кто дает советы)|js},
+    eng: "The company employed a management consultant to help with their strategy for the future. //(=someone who gives advice)",
+  },
+  {
+    rus: {js|Наш новый продукт имеет новаторскую конструкцию. //(=новые, иные и лучшие, чем те, что существовали ранее)|js},
+    eng: "Our new product has innovative design. //(=new, different and better than those that existed before)",
+  },
+  {
+    rus: {js|В проекте приняли участие более десяти разработчиков. (предлог)|js},
+    eng: "More than ten developers were involved in the project. (preposition)",
+  },
+  {
+    rus: {js|Легче взаимодействовать с товарищами по команде в телеконференции с включенными камерами. //(=общаться)|js},
+    eng: "It's easier to interact with teammates in a teleconference call with the cams on. //(=communicate)",
+  },
+  {
+    rus: {js|Прежде всего, мы должны сосредоточиться на улучшении отношений в команде. //(=уделять внимание)|js},
+    eng: "First of all, we should focus on improving the relationships in the team. //(=give attention)",
+  },
+  {
+    rus: {js|Мы провели опрос, чтобы узнать, что думают сотрудники о новой политике. //(=набор вопросов, которые вы задаете большому количеству людей)|js},
+    eng: "We conducted a survey to find out what the employees think of the new policy. //(=a set of questions that you ask a large number of people)",
+  },
+  {
+    rus: {js|Я стараюсь избегать работы из дома, так как слишком много отвлекающих факторов. //(=все, что мешает мне обращать внимание на то, что я делаю)|js},
+    eng: "I try to avoid working from home as there are too many distractions. //(=things that stop me from paying attention to what I'm doing)",
+  },
+  {
+    rus: {js|Наша компания имеет строгую политику по установке нового программного обеспечения. (предлог)|js},
+    eng: "Our company has a strict policy on installing new software. (preposition)",
+  },
+  {
+    rus: {js|Мобильная связь здесь ужасна! Можешь позвонить мне по стационарному телефону? //(=телефонное соединение, использующее провода)|js},
+    eng: "The mobile connection is terrible here! Can you call me on the landline? //(=a telephone connection that uses wires)",
+  },
+  {
+    rus: {js|Цифровые технологии привели к огромным изменениям в процессе работы. (предлог)|js},
+    eng: "Digital technologies have brought about huge changes in our work process. (preposition)",
+  },
+  {
+    rus: {js|Считаете ли вы, что компании должны ограничить время, которое их сотрудники могут тратить на сайты социальных сетей? //(=ограничивать)|js},
+    eng: "Do you think companies should put limits on the time that their employees can spend on social networking sites? //(=restrict)",
+  },
+  {
+    rus: {js|Мы провели опрос, чтобы выяснить, удовлетворены ли сотрудники текущими льготами. //(=проведенный)|js},
+    eng: "We've conducted a survey to find out if the employees are satisfied with the current perks. //(=carried out)",
   },
 ];
 
@@ -2903,6 +3008,78 @@ let oldDictionary2 = [
   {
     rus: {js|Хотел бы я вам помочь.|js},
     eng: "I wish I could help you.",
+  },
+  {
+    rus: {js|Если вы заметили разрыв на рынке, вы можете использовать эту возможность для создания собственного бизнеса.//(=возможность для продукта / услуги, которая еще не существует)|js},
+    eng: "If you've spotted a gap in the market, you can use this opportunity to set up your own business.//(=an opportunity for a product/service that doesn't exist yet)",
+  },
+  {
+    rus: {js|Одной из самых больших проблем для нового бизнеса является привлечение достаточного начального капитала. //(=собирать)|js},
+    eng: "One of the biggest challenges for a new business is to raise enough start-up capital. //(=collect)",
+  },
+  {
+    rus: {js|Большинство инвесторов хотят быть уверенными, что они получат хорошую отдачу от инвестиций. //(=прибыль)|js},
+    eng: "Most investors want to be confident that they'll get a good return on investment. //(=profit)",
+  },
+  {
+    rus: {js|Если мы не сможем обеспечить большую финансовую поддержку, мы не сможем продолжать этот проект. //(=поддержка)|js},
+    eng: "Unless we can secure more financial backing, we won't be able to go ahead with this project. //(=support)",
+  },
+  {
+    rus: {js|Сеть контактов поможет вам найти новых клиентов для вашей компании.|js},
+    eng: "A network of contacts can help you find new customers for your company.",
+  },
+  {
+    rus: {js|Чтобы получить кредит в банке, нужно придумать солидный бизнес-план. //(=занимать деньги)|js},
+    eng: "To get a loan from a bank, you need to come up with a solid business plan. //(=borrow money)",
+  },
+  {
+    rus: {js|Оборот предприятия - это объем бизнеса в течение определенного периода времени.|js},
+    eng: "A company's turnover is the amount of business done during a particular period of time.",
+  },
+  {
+    rus: {js|Их прибыль в этом году была невероятно высокой. //(=очень высоко; трудно поверить)|js},
+    eng: "Their profits this year have been incredibly high. //(=very high; it's hard to believe)",
+  },
+  {
+    rus: {js|Я считаю этот бизнес-план крайне рискованным. //(=очень)|js},
+    eng: "I think this business plan is extremely risky. //(=very)",
+  },
+  {
+    rus: {js|Это предложение совершенно нелепо, я никогда на него не соглашусь! //(=неразумный)|js},
+    eng: "This proposal is totally ridiculous, I'll never agree to it! //(=unreasonable)",
+  },
+  {
+    rus: {js|К сожалению, новое устройство, которое я купил, абсолютно бесполезно. //(=неэффективный)|js},
+    eng: "Unfortunately, the new device I bought is absolutely useless. //(=inefficient)",
+  },
+  {
+    rus: {js|То, как он разговаривал со мной на встрече, было совершенно возмутительно. //(=странный, шокирующий, неразумный)|js},
+    eng: "The way he talked to me at the meeting was totally outrageous. //(=strange, shocking, unreasonable)",
+  },
+  {
+    rus: {js|Если вы придумали отличную бизнес-идею, не тратьте свое время, пойти на это! //(=пытаться)|js},
+    eng: "If you've come up with a great business idea, don't waste your time, go for it! //(=try)",
+  },
+  {
+    rus: {js|Его запуск планирует привлечь 5 млн от венчурных капиталистов. //(=люди/организации, которые вкладывают деньги в новые рискованные предприятия)|js},
+    eng: "His start-up is looking to raise 5 million from venture capitalists. //(=people/organizations that invest money into new, risky businesses)",
+  },
+  {
+    rus: {js|Мой друг - потенциальный предприниматель, он пытается создать свой собственный бизнес.|js},
+    eng: "My friend is a would-be entrepreneur - he's trying to set up his own business.",
+  },
+  {
+    rus: {js|Чтобы рекламировать свою продукцию на фестивале, Adidas создала временный магазинчик в виде обувной коробки.// (=магазин, который не является постоянным)|js},
+    eng: "To advertise their products at a festival, Adidas set up a temporary outlet in the shape of a shoebox.//(=a shop that isn't permanent)",
+  },
+  {
+    rus: {js|Обратите внимание, что мы добавили новую функцию всплывающего меню. //(=скрытое меню, которое появляется при щелчке правой кнопкой мыши)|js},
+    eng: "Please note that we've added a new pop-up menu feature. //(=a hidden menu that appear when you right-click)",
+  },
+  {
+    rus: {js|В чем проблема? //(=как вы думаете, в чем проблема?)|js},
+    eng: "What seems to be the problem? //(=what do you think is the problem?)",
   },
 ];
 
