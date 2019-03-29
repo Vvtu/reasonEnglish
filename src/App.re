@@ -114,7 +114,9 @@ let make = _children => {
               let textWithoutComments = Js.Array.joinWith("", splitedList1);
 
               SpeechSynthesis.Utterance.set_text(ut, textWithoutComments);
-              SpeechSynthesis.speak(ut);
+              let _ =
+                Js.Global.setTimeout(_ => SpeechSynthesis.speak(ut), 150);
+              ();
             }
           ),
         );
