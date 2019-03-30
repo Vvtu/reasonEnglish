@@ -722,7 +722,7 @@ let dictionary2 = [
   },
   {
     rus: {js|Будет ли он готов к сроку сдачи? (предлог)|js},
-    eng: "Will it be ready in time for the deadline? (preposition)",
+    eng: "Will it be ready in time for the deadline? ",
   },
   {
     rus: {js|Мой экран продолжает гаснуть. //(=это неоднократно)|js},
@@ -754,7 +754,7 @@ let dictionary2 = [
   },
   {
     rus: {js|Ваша доставка прибыла в нерабочее время. (предлог)|js},
-    eng: "Your delivery arrived out of office hours. (preposition)",
+    eng: "Your delivery arrived out of office hours. ",
   },
   {
     rus: {js|Не могли бы вы дать мне знать, сколько времени это займет? //(=сколько времени требуется)|js},
@@ -782,7 +782,7 @@ let dictionary2 = [
   },
   {
     rus: {js|Когда я работаю в офисе клиента, у меня нет доступа к нашей внутренней сети. (предлог)|js},
-    eng: "When I work at the customer's office, I don't have access to our internal network. (preposition)",
+    eng: "When I work at the customer's office, I don't have access to our internal network. ",
   },
   {
     rus: {js|В этом проекте мы будем сотрудничать с некоторыми коллегами из британского офиса. //(=работать вместе)|js},
@@ -790,11 +790,11 @@ let dictionary2 = [
   },
   {
     rus: {js|На этой встрече я хотел бы сосредоточиться на кадровых вопросах. (предлог)|js},
-    eng: "In this meeting I'd like to focus on our staffing issues. (preposition)",
+    eng: "In this meeting I'd like to focus on our staffing issues. ",
   },
   {
     rus: {js|Удобный интерфейс позволяет легко взаимодействовать с нашим приложением. (предлог)|js},
-    eng: "The user-friendly interface makes it very easy to interact with our app. (preposition)",
+    eng: "The user-friendly interface makes it very easy to interact with our app. ",
   },
   {
     rus: {js|На данный момент мы не можем понять, какое влияние наши изменения в приложении окажут на конечных пользователей. //(=эффект)|js},
@@ -802,7 +802,7 @@ let dictionary2 = [
   },
   {
     rus: {js|Развитие технологий оказало огромное влияние на то, как мы работаем. (предлог)|js},
-    eng: "The developments in technology have had a huge impact on the way we work. (preposition)",
+    eng: "The developments in technology have had a huge impact on the way we work. ",
   },
   {
     rus: {js|Одна из вещей, которые мы построили в комплект разработки программного обеспечения является возможность интеграции приложений друг с другом. //(=объединять)|js},
@@ -810,7 +810,7 @@ let dictionary2 = [
   },
   {
     rus: {js|Необходимо подключить USB-кабель с компьютера к устройству. (предлог)|js},
-    eng: "You need to connect the USB cable from your computer to your device. (preposition)",
+    eng: "You need to connect the USB cable from your computer to your device. ",
   },
   {
     rus: {js|Для решения этой задачи необходим логический, аналитический подход. //(=очень внимательно изучает вещи)|js},
@@ -842,7 +842,7 @@ let dictionary2 = [
   },
   {
     rus: {js|В проекте приняли участие более десяти разработчиков. (предлог)|js},
-    eng: "More than ten developers were involved in the project. (preposition)",
+    eng: "More than ten developers were involved in the project. ",
   },
   {
     rus: {js|Легче взаимодействовать с товарищами по команде в телеконференции с включенными камерами. //(=общаться)|js},
@@ -862,7 +862,7 @@ let dictionary2 = [
   },
   {
     rus: {js|Наша компания имеет строгую политику по установке нового программного обеспечения. (предлог)|js},
-    eng: "Our company has a strict policy on installing new software. (preposition)",
+    eng: "Our company has a strict policy on installing new software. ",
   },
   {
     rus: {js|Мобильная связь здесь ужасна! Можешь позвонить мне по стационарному телефону? //(=телефонное соединение, использующее провода)|js},
@@ -870,7 +870,7 @@ let dictionary2 = [
   },
   {
     rus: {js|Цифровые технологии привели к огромным изменениям в процессе работы. (предлог)|js},
-    eng: "Digital technologies have brought about huge changes in our work process. (preposition)",
+    eng: "Digital technologies have brought about huge changes in our work process. ",
   },
   {
     rus: {js|Считаете ли вы, что компании должны ограничить время, которое их сотрудники могут тратить на сайты социальных сетей? //(=ограничивать)|js},
@@ -1145,7 +1145,7 @@ let oldDictionary2 = [
     rus: {js|Добрый вечер, Адриана. Я думал, что увижу тебя здесь. Вернулся на другое мероприятие компании? // (чувствовал, что могу встретиться)|js},
   },
   {
-    eng: "Currently I'm working on pension plans and other savings schemes. //(preposition)",
+    eng: "Currently I'm working on pension plans and other savings schemes. //",
     rus: {js|В настоящее время я работаю над пенсионными планами и другими накопительными планами. //(предлог)|js},
   },
   {
@@ -1334,7 +1334,7 @@ let oldDictionary2 = [
   },
   {
     rus: {js|У нас возникли проблемы с новой системой. // (предлог)|js},
-    eng: "We've run into problems with the new system. // (preposition)",
+    eng: "We've run into problems with the new system. // ",
   },
   {
     rus: {js|У нас ограниченный бюджет, поэтому давайте постараемся снизить расходы. // (как можно ниже)|js},
@@ -1406,7 +1406,7 @@ let oldDictionary2 = [
   },
   {
     rus: {js|И как далеко вы продвинулись в подготовке к запуску?|js},
-    eng: "And how far are you with preparations for the launch party? // (preposition)",
+    eng: "And how far are you with preparations for the launch party? // ",
   },
   {
     rus: {js|Каково текущее состояние нагрузочного тестирования? //( существующий сейчас)|js},
@@ -2010,7 +2010,7 @@ let oldDictionary2 = [
   },
   {
     rus: {js|Мы остаемся верны нашим ценностям и принципам. // (предлог)|js},
-    eng: "We stay true to our values and principles. // (preposition)",
+    eng: "We stay true to our values and principles. // ",
   },
   {
     rus: {js|У нас всегда была сильная приверженность к нашей рабочей силе.|js},
@@ -2218,7 +2218,7 @@ let oldDictionary2 = [
   },
   {
     rus: {js|Вы должны быть уверены в своих собственных суждениях. (предлог)|js},
-    eng: "You need to have confidence in your own judgment. //(preposition)",
+    eng: "You need to have confidence in your own judgment. //",
   },
   {
     rus: {js|Я не могу выбрать между двумя вариантами. //(выбирать)|js},
@@ -2367,11 +2367,11 @@ let oldDictionary2 = [
   },
   {
     rus: {js|Какова ваша позиция по этому вопросу? (предлог)|js},
-    eng: "What's your position on this? //(preposition)",
+    eng: "What's your position on this? //",
   },
   {
     rus: {js|Перейдем к следующему пункту повестки дня. (предлог)|js},
-    eng: "Let's turn to the next item on the agenda. //(preposition)",
+    eng: "Let's turn to the next item on the agenda. //",
   },
   {
     rus: {js|Если мы внимательно посмотрим на факты, то увидим, что наши расходы слишком высоки. //(см. подробно )|js},
