@@ -43,6 +43,7 @@ let dictionary1 = [
     eng: "'apply', 'call' и 'bind' methods can't influence the behavior of arrow fuctions.",
   },
 ];
+let dictionary10 = [];
 
 let oldDictionary1 = [
   {
@@ -706,7 +707,7 @@ let veryOldDictionary1 = [
   },
 ];
 
-let dictionary2 = [
+let dictionary20 = [
   {
     rus: {js|Какой образ хотела бы произвести ваша компания?|js},
     eng: "What kind of image would your company like to project?",
@@ -805,8 +806,9 @@ let dictionary2 = [
     eng: "I hope we can book a call to iron out any last-minute problems.",
   },
 ];
+let dictionary2 = [
 
-let oldDictionary2 = [
+
   {
     rus: {js||js},
     eng: "I usually arrive at work at about 8:30. // Use present simple to talk about routines.",
@@ -946,7 +948,9 @@ let oldDictionary2 = [
   {
     rus: {js|Ваши навыки общения могут иметь большое значение на собеседовании // (имеют хороший эффект).|js},
     eng: "Your communication skills could make all the difference at a job interview // (have a good effect).",
-  },
+  }
+];
+  let oldDictionary2 = [
   {
     eng: "Hi, I don't think we've met. I'm Paolo from Napoli.",
     rus: {js|Привет, не думаю, что мы встречались. Я Паоло из Неаполя.|js},
