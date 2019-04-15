@@ -805,10 +805,7 @@ let dictionary20 = [
     rus: {js||js},
     eng: "I hope we can book a call to iron out any last-minute problems.",
   },
-];
-let dictionary2 = [
-
-
+  /*  **************************** */
   {
     rus: {js||js},
     eng: "I usually arrive at work at about 8:30. // Use present simple to talk about routines.",
@@ -948,9 +945,9 @@ let dictionary2 = [
   {
     rus: {js|Ваши навыки общения могут иметь большое значение на собеседовании // (имеют хороший эффект).|js},
     eng: "Your communication skills could make all the difference at a job interview // (have a good effect).",
-  }
+  },
 ];
-  let oldDictionary2 = [
+let dictionary2 = [
   {
     eng: "Hi, I don't think we've met. I'm Paolo from Napoli.",
     rus: {js|Привет, не думаю, что мы встречались. Я Паоло из Неаполя.|js},
@@ -1099,6 +1096,8 @@ let dictionary2 = [
     rus: {js|// если субъект никто, никто - используйте 'они' в теге./- Никто об этом не знал, не так ли?|js},
     eng: "// If the subject is no one, nobody - use 'they' in the tag.// No one knew about that, did they?",
   },
+];
+let oldDictionary2 = [
   {
     rus: {js|Боюсь, у нас закончились деньги. // (денег не осталось)|js},
     eng: "I'm afraid we've run out of money. // (there is no money left)",
