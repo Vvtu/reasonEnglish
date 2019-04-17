@@ -144,8 +144,11 @@ let make = _children => {
       let (dict, dictOld) =
         Dictionaries.(
           switch (item) {
-          | Some(_) => (dictionary2, List.append( dictionary20, oldDictionary2))
-          | None => (dictionary1, List.append( dictionary10, oldDictionary1))
+          | Some(_) => (
+              dictionary2,
+              List.append(dictionary20, oldDictionary2),
+            )
+          | None => (dictionary1, List.append(dictionary10, oldDictionary1))
           }
         );
 
