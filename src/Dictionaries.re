@@ -946,8 +946,7 @@ let dictionary20 = [
     rus: {js|Ваши навыки общения могут иметь большое значение на собеседовании // (имеют хороший эффект).|js},
     eng: "Your communication skills could make all the difference at a job interview // (have a good effect).",
   },
-];
-let dictionary2 = [
+  /*  **************************** */
   {
     eng: "Hi, I don't think we've met. I'm Paolo from Napoli.",
     rus: {js|Привет, не думаю, что мы встречались. Я Паоло из Неаполя.|js},
@@ -1097,7 +1096,7 @@ let dictionary2 = [
     eng: "// If the subject is no one, nobody - use 'they' in the tag.// No one knew about that, did they?",
   },
 ];
-let oldDictionary2 = [
+let dictionary2 = [
   {
     rus: {js|Боюсь, у нас закончились деньги. // (денег не осталось)|js},
     eng: "I'm afraid we've run out of money. // (there is no money left)",
@@ -1242,6 +1241,8 @@ let oldDictionary2 = [
     rus: {js|Каково текущее состояние нагрузочного тестирования? //( существующий сейчас)|js},
     eng: "What's the current status of the load testing? //( existing now)",
   },
+];
+let oldDictionary2 = [
   {
     rus: {js|Что именно вы имеете в виду? (просьба разъяснить)|js},
     eng: "What do you mean exactly? (please clarify)",
