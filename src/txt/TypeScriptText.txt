@@ -3,7 +3,7 @@ I consider it very important to keep up with times and to choose carefully what 
 Once I made a great decision to learn such web technologies, as React and Redux.
 This choice turned out to be very useful for me as it made me a modern and demanded developer for some years.
 But the question is of what can be such next driver for me?
-After studying several approaches to fronted development and patterns I think I have found out that NodeJs and Typescript can be the drivers.
+After studying several approaches to frontend development and patterns I think I have found out that NodeJs and Typescript can be the drivers.
 I believe I am familiar with this frameworks to some extent, though I didn't have a chance to use it in production development.
 I have only tried them for some time.
 I didn't like them very much at first sight.
